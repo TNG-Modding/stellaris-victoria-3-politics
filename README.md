@@ -39,6 +39,11 @@ This project uses a tool I made called Intemplator. Intemplator turns json blobs
 - `cd ./stellaris-victoria-3-politics/zintemplator`
 - `intemplator go`. This should take the specs, run them through our templates, and create the files for our mod. 
 
+## Submitting Your Changes
+
+Create a new branch for your changes, and submit a pull request to master. You can ping me on Discord @thenextguy if you want to bring it to my attention.
+
 ## Creating your Own Content
 
 The easiest way to create new content for the mod is to expand existing content in the specs files. For instance, copy a json blob about defensive wars and turn it into a different policy.
+
