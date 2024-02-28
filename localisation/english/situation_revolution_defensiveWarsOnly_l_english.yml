@@ -1,0 +1,11 @@
+﻿l_english:
+ # Situation
+ situation_revolution_defensiveWarsOnly:0 "Revolution for Defensive Wars Only"
+ situation_revolution_defensiveWarsOnly_type:0 "Revolution for Defensive Wars Only"
+ situation_revolution_defensiveWarsOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
+ situation_revolution_defensiveWarsOnly_desc:0 "A revolution is brewing. §YPacifist§! revolutionaries demand we pass §BDefensive Wars Only§!. They assert that violence should be the last resort to ensure the integrity of our nation. If we do not quell this revolution we will be plunged into total war with a §YPacifist§! breakaway state."
+ situation_revolution_finisher_defensiveWarsOnly:0 "Begin total war with a §YPacifist§! breakaway state that supports §BDefensive Wars Only§!."
+ 
+ # Event
+ situation_revolution_defensiveWarsOnly.1.name:0 "Revolution for Defensive Wars Only"
+ situation_revolution_defensiveWarsOnly.1.desc:0 "These revolutionaries believe that violence should be the last resort to ensure the integrity of our nation"

@@ -1,0 +1,41 @@
+namespace = situation_passPolicy_roboticWorkersOutlawed
+country_event = {
+	id = situation_passPolicy_roboticWorkersOutlawed.1
+	title = situation_passPolicy_roboticWorkersOutlawed.1.name
+	desc = situation_passPolicy_roboticWorkersOutlawed.1.desc
+	picture = GFX_evt_voting
+	
+	show_sound = {
+		sound = advisor_notification_planet_in_revolt
+		sound_is_advisor = yes
+	}
+	
+	location = root
+	is_triggered_only = yes
+	situation = event_target:new_situation
+
+	immediate = {
+		owner = {
+			start_situation = {
+				type = situation_passPolicy_roboticWorkersOutlawed
+				target = root
+				effect = {
+					save_event_target_as = new_situation
+				}
+			}
+		}
+	}
+
+	option = {
+		name = passPolicy_ack
+
+		tooltip = {
+			owner = {
+				start_situation = {
+					type = situation_passPolicy_roboticWorkersOutlawed
+					target = root
+				}
+			}
+		}
+	}
+}

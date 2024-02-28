@@ -1,0 +1,11 @@
+﻿l_english:
+ # Situation
+ situation_passPolicy_roboticWorkersOutlawed:0 "Legislation for Robotic Workers Outlawed"
+ situation_passPolicy_roboticWorkersOutlawed_type:0 "Legislation for Robotic Workers Outlawed"
+ situation_passPolicy_roboticWorkersOutlawed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSpiritualist§! presence in our empire."
+ situation_passPolicy_roboticWorkersOutlawed_desc:0 "We are working on passing the policy §BRobotic Workers Outlawed§! as robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself."
+ situation_passPolicy_finisher_roboticWorkersOutlawed:0 "Pass §BRobotic Workers Outlawed§!."
+ 
+ # Event
+ situation_passPolicy_roboticWorkersOutlawed.1.name:0 "Legislation for Robotic Workers Outlawed"
+ situation_passPolicy_roboticWorkersOutlawed.1.desc:0 "We move that robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself"

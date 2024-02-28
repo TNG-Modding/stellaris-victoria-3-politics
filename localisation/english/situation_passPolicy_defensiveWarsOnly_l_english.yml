@@ -1,0 +1,11 @@
+﻿l_english:
+ # Situation
+ situation_passPolicy_defensiveWarsOnly:0 "Legislation for Defensive Wars Only"
+ situation_passPolicy_defensiveWarsOnly_type:0 "Legislation for Defensive Wars Only"
+ situation_passPolicy_defensiveWarsOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
+ situation_passPolicy_defensiveWarsOnly_desc:0 "We are working on passing the policy §BDefensive Wars Only§! as violence should be the last resort to ensure the integrity of our nation."
+ situation_passPolicy_finisher_defensiveWarsOnly:0 "Pass §BDefensive Wars Only§!."
+ 
+ # Event
+ situation_passPolicy_defensiveWarsOnly.1.name:0 "Legislation for Defensive Wars Only"
+ situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation"

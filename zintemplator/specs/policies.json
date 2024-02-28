@@ -1,0 +1,17 @@
+[
+    {
+        "varname": "defensiveWarsOnly",
+        "displayName": "Defensive Wars Only",
+        "ethicAdjective": "Pacifist",
+        "description": "violence should be the last resort to ensure the integrity of our nation",
+        "picture": "surrender"
+    },
+    {
+        "varname": "roboticWorkersOutlawed",
+        "displayName": "Robotic Workers Outlawed",
+        "policyDisplayName": "Robotic Workers Outlawed",
+        "ethicAdjective": "Spiritualist",
+        "description": "robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself",
+        "picture": "organic_oppression"
+    }
+]

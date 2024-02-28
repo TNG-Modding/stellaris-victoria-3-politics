@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Revolution Situation for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/revolutions/situation_revolution",
+        "outputDirectoryPath": "../common/situations",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "Revolution Event for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/revolutions/situation_revolution_events",
+        "outputDirectoryPath": "../events",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "Revolution Localisation for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/revolutions/situation_revolution_localisation",
+        "outputDirectoryPath": "../localisation/english",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": true
+    },
+
+    {
+        "name": "Situation for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy",
+        "outputDirectoryPath": "../common/situations",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "Event for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy_events",
+        "outputDirectoryPath": "../events",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "Localisation for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy_localisation",
+        "outputDirectoryPath": "../localisation/english",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": true
+    }
+]

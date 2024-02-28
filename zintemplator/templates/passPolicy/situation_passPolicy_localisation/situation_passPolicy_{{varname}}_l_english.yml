@@ -1,0 +1,11 @@
+l_english:
+ # Situation
+ situation_passPolicy_{{varname}}:0 "Legislation for {{displayName}}"
+ situation_passPolicy_{{varname}}_type:0 "Legislation for {{displayName}}"
+ situation_passPolicy_{{varname}}_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y{{ethicAdjective}}§! presence in our empire."
+ situation_passPolicy_{{varname}}_desc:0 "We are working on passing the policy §B{{displayName}}§! as {{description}}."
+ situation_passPolicy_finisher_{{varname}}:0 "Pass §B{{displayName}}§!."
+ 
+ # Event
+ situation_passPolicy_{{varname}}.1.name:0 "Legislation for {{displayName}}"
+ situation_passPolicy_{{varname}}.1.desc:0 "We move that {{description}}."
