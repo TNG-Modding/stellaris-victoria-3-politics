@@ -50,3 +50,4 @@ Create a new branch for your changes, and submit a pull request to master. You c
 
 The easiest way to create new content for the mod is to expand existing content in the specs files. For instance, copy a json blob about defensive wars and turn it into a different policy.
 
+The [https://github.com/TNG-Modding/paradox-gamefiles-templatemaker](README of the Intemplator tool) has a guide to using it.
