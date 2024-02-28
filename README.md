@@ -2,6 +2,9 @@
 
 We are going to add Victoria 3 style revolutions and law passing but with Stellaris ethics and flavor. Metrics of success will be whether large empires splinter under ethic strain and whether internal politics and factions feel alive.
 
+![Pass Robotic Worker Banned](https://i.imgur.com/4Rft5qz.png)
+
+
 ## Changes to Policy Passing
 
 - Disable the instant policy passing
