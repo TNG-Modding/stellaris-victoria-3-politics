@@ -38,6 +38,7 @@ Install python then `cd "C:\Users\YOUR USER NAME\Documents\Paradox Interactive\S
 git clone https://github.com/TNG-Modding/paradox-gamefiles-templatemaker.git
 cd paradox-gamefiles-templatemaker
 python setup.py install
+cd ..
 git clone https://github.com/TNG-Modding/stellaris-victoria-3-politics.git
 cd ./stellaris-victoria-3-politics/zintemplator
 ```
