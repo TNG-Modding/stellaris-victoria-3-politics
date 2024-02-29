@@ -33,7 +33,7 @@ This project uses a tool I made called Intemplator. Intemplator turns json blobs
 
 ## Environment Setup
 
-- Install python
+Install python then `cd "C:\Users\YOUR USER NAME\Documents\Paradox Interactive\Stellaris\mod"`
 ```
 git clone https://github.com/TNG-Modding/paradox-gamefiles-templatemaker.git
 cd paradox-gamefiles-templatemaker
@@ -41,7 +41,7 @@ python setup.py install
 git clone https://github.com/TNG-Modding/stellaris-victoria-3-politics.git
 cd ./stellaris-victoria-3-politics/zintemplator
 ```
-You're setup! Now run `intemplator go` in the `zintemplator` directory to take the specs, run them through our templates, and create the files for our mod. 
+Now you're setup! Now run `intemplator go` in the `zintemplator` directory to take the specs, run them through our templates, and create the files for our mod. 
 
 ## Submitting Your Changes
 
