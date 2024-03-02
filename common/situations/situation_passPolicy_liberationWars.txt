@@ -57,8 +57,10 @@ situation_passPolicy_liberationWars = {
 		}
 	}
 	on_monthly = {
+		# Advance every sixth month
 		random_events = {
-			100 = situation_passPolicy_liberationWars.3
+			17 = situation_passPolicy_liberationWars.2 # Just recalculate
+			83 = situation_passPolicy_liberationWars.3 # Recalc and Reroll
 		}
 	}
 	monthly_progress = {

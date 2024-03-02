@@ -291,10 +291,6 @@ situation_event = {
 	}
 	option = {
 		name = situation_passPolicy_roboticWorkersOutlawed.7.a
-
-		tooltip = {
-			
-		}
 	}
 }
 # Failure due to abort
