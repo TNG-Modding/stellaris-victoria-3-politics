@@ -12,7 +12,6 @@ situation_passPolicy_unrestrictedWars = {
 		custom_tooltip = situation_passPolicy_finisher_unrestrictedWars
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_unrestrictedWars.7 }
-			
 		}
 	}
 

@@ -84,7 +84,6 @@ situation_event = {
 					export_trigger_value_to_variable = { trigger = support variable = technologist_support }
 					multiply_variable = {which = technologist_support value = 100}
 					ROOT = {
-						log = "[PREV.technologist_support]"
 						change_variable = { which = faction_support value = PREV.technologist_support }		
 					}
 				}
@@ -96,7 +95,6 @@ situation_event = {
 					export_trigger_value_to_variable = { trigger = support variable = prosperity_support }
 					multiply_variable = {which = prosperity_support value = 100}
 					ROOT = {
-						log = "[PREV.prosperity_support]"
 						change_variable = { which = faction_support value = PREV.prosperity_support }		
 					}
 				}
@@ -120,7 +118,7 @@ situation_event = {
 		subtract_variable = { which = faction_ambivalence value = faction_support }
 		subtract_variable = { which = faction_ambivalence value = faction_detraction }
 		
-		log = "PRE MATH: roboticWorkersOutlawed support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
+		# log = "PRE MATH: roboticWorkersOutlawed support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
 
 		# If swayed is positive, give it support, if negative, give it to detraction
 		
@@ -176,10 +174,10 @@ situation_event = {
 		ceiling_variable = faction_support
 		ceiling_variable = faction_detraction
 		ceiling_variable = faction_ambivalence
-		log = "POST MATH: roboticWorkersOutlawed support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
+		# log = "POST MATH: roboticWorkersOutlawed support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
 	}
 }
-# Advance or not
+# Decide whether or not to roll
 situation_event = {
 	id = situation_passPolicy_roboticWorkersOutlawed.3
 	is_triggered_only = yes
@@ -190,8 +188,26 @@ situation_event = {
 		situation_event = {
 			id = situation_passPolicy_roboticWorkersOutlawed.2	
 		}
+		set_variable_to_random_value = { which = should_attempt min = 0 max = 100 rounded = yes}
+		if = {
+			limit = {
+				check_variable = { which = should_attempt value > 66 }
+			}
+		}
+		# Advance or fail
+		situation_event = {
+			id = situation_passPolicy_roboticWorkersOutlawed.10
+		}
+	}
+}
+# Advance Fail or Ambivalent
+situation_event = {
+	id = situation_passPolicy_roboticWorkersOutlawed.10
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
 		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
-		log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
+		# log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
 		if = {
 			limit = {
 				check_variable = { which = advancement_roll value < faction_support  }
@@ -221,7 +237,7 @@ situation_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		log = "roboticWorkersOutlawed success!"
+		# log = "roboticWorkersOutlawed success!"
 		add_situation_progress = 34
 	}
 }
@@ -232,10 +248,10 @@ situation_event = {
 	hide_window = yes
 	immediate = {
 		change_variable = { which = setback_count value = 1 }
-		log = "roboticWorkersOutlawed fail! [this.setback_count]/3"
+		# log = "roboticWorkersOutlawed fail! [this.setback_count]/3"
 		if = {
 			limit = { check_variable = { which = setback_count value = 3}}
-			log = "roboticWorkersOutlawed failed due to setbacks [this.setback_count]/3!"
+			# log = "roboticWorkersOutlawed failed due to setbacks [this.setback_count]/3!"
 			situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.9}
 		}
 	}
@@ -256,17 +272,17 @@ situation_event = {
 				limit = {
 					check_variable = { which = sway_roll value > 50 }
 				}
-				log = "roboticWorkersOutlawed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
+				# log = "roboticWorkersOutlawed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
 				change_variable = { which = swayed_to_support value = 10}
 			}
 			else = {
-				log = "roboticWorkersOutlawed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
+				# log = "roboticWorkersOutlawed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
 				change_variable = { which = swayed_to_detract value = 10}
 			}
 			situation_event = {id = situation_passPolicy_roboticWorkersOutlawed.2 }
 		}
 		else = {
-			log = "roboticWorkersOutlawed ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
+			# log = "roboticWorkersOutlawed ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
 		}
 	}
 }

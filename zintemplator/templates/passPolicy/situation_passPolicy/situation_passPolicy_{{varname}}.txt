@@ -12,7 +12,6 @@ situation_passPolicy_{{varname}} = {
 		custom_tooltip = situation_passPolicy_finisher_{{varname}}
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_{{varname}}.7 }
-			
 		}
 	}
 

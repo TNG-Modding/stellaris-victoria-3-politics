@@ -12,7 +12,6 @@ situation_passPolicy_roboticWorkersOutlawed = {
 		custom_tooltip = situation_passPolicy_finisher_roboticWorkersOutlawed
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.7 }
-			
 		}
 	}
 
