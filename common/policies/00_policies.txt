@@ -13,7 +13,8 @@
 
 diplomatic_stance = {
 	potential = {
-		OR = {
+		always = no
+        OR = {
 			is_country_type = default
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire
@@ -24,6 +25,7 @@ diplomatic_stance = {
 	}
 
 	allow = {
+
 		is_at_war = no # Not allowed to change policies in this group while at war
 	}
 
@@ -32,7 +34,9 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_belligerent"
 
 		potential = {
-			OR = {
+			always = no
+                
+            OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
 			}
@@ -143,7 +147,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_cooperative"
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
 				is_country_type = mirrored_country
@@ -255,7 +260,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_isolationist"
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
 			}
@@ -327,7 +333,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_expansionist"
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
 			}
@@ -367,7 +374,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_mercantile"
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
 				is_country_type = mirrored_country
@@ -439,7 +447,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_supremacy"
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = awakened_fallen_empire
 				is_country_type = awakened_marauders
 				is_country_type = default
@@ -577,7 +586,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_animosity"
 
 		potential = {
-			is_country_type = default
+			always = no
+            is_country_type = default
 		}
 		valid = {
 			is_homicidal = no
@@ -674,7 +684,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_rest"
 
 		potential = {
-			has_authority = auth_hive_mind
+			always = no
+            has_authority = auth_hive_mind
 		}
 
 		valid = {
@@ -698,7 +709,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_recompiling"
 
 		potential = {
-			has_authority = auth_machine_intelligence
+			always = no
+            has_authority = auth_machine_intelligence
 		}
 
 		valid = {
@@ -722,7 +734,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_withdrawn"
 
 		potential = {
-			has_utopia = yes
+			always = no
+            has_utopia = yes
 		}
 
 		valid = {
@@ -746,7 +759,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_isolationist"
 
 		potential = {
-			is_country_type = fallen_empire
+			always = no
+            is_country_type = fallen_empire
 		}
 
 		policy_flags = {
@@ -766,7 +780,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_isolationist"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			current_awareness_level < medium
 			capital_scope = {
 				NOT = { has_modifier = culture_shock_diplomacy }
@@ -790,7 +805,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_expansionist"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			current_awareness_level = medium
 			capital_scope = {
 				NOT = { has_modifier = culture_shock_diplomacy }
@@ -814,7 +830,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_cooperative"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			current_awareness_level >= high
 			is_xenophile = yes
 			capital_scope = {
@@ -839,7 +856,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_withdrawn"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			current_awareness_level >= high
 			is_xenophobe = yes
 			capital_scope = {
@@ -864,7 +882,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_isolationist"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			current_awareness_level >= high
 			is_xenophile = no
 			is_xenophobe = no
@@ -890,7 +909,8 @@ diplomatic_stance = {
 		icon = "GFX_diplomatic_stance_belligerent"
 
 		potential = {
-			is_country_type = primitive
+			always = no
+            is_country_type = primitive
 			capital_scope = {
 				has_modifier = culture_shock_diplomacy
 			}
@@ -913,7 +933,8 @@ diplomatic_stance = {
 war_philosophy = {
 
 	potential = {
-		OR = {
+		always = no
+        OR = {
 			is_country_type = default
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire
@@ -921,6 +942,7 @@ war_philosophy = {
 	}
 
 	allow = {
+
 		is_at_war = no # Not allowed to change policies in this group while at war
 	}
 
@@ -1003,7 +1025,8 @@ war_philosophy = {
 		}
 
 		potential = {
-			NOT = { has_ethic = ethic_gestalt_consciousness }
+			always = no
+            NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 
 		valid = {
@@ -1082,8 +1105,12 @@ war_philosophy = {
 }
 
 war_doctrine = {
+	allow = {
+
+	}
 	potential = {
-		OR = {
+		always = no
+        OR = {
 			AND = {
 				is_country_type = default
 				has_tradition = tr_supremacy_finish
@@ -1178,8 +1205,12 @@ war_doctrine = {
 }
 
 subjugation_war_terms = {
+	allow = {
+
+	}
 	potential = {
-		is_subject = no
+		always = no
+        is_subject = no
 		OR = {
 			is_country_type = default
 			is_country_type = fallen_empire
@@ -1195,7 +1226,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			NOT = { has_authority = auth_corporate }
+			always = no
+            NOT = { has_authority = auth_corporate }
 		}
 
 		on_enabled = {
@@ -1262,7 +1294,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			NOT = { has_authority = auth_corporate }
+			always = no
+            NOT = { has_authority = auth_corporate }
 		}
 
 		on_enabled = {
@@ -1311,7 +1344,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			NOT = { has_authority = auth_corporate }
+			always = no
+            NOT = { has_authority = auth_corporate }
 		}
 
 		on_enabled = {
@@ -1378,7 +1412,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			has_authority = auth_corporate
+			always = no
+            has_authority = auth_corporate
 		}
 
 		on_enabled = {
@@ -1456,7 +1491,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			has_authority = auth_corporate
+			always = no
+            has_authority = auth_corporate
 		}
 
 		ai_weight = {
@@ -1494,7 +1530,8 @@ subjugation_war_terms = {
 		}
 
 		potential = {
-			has_authority = auth_corporate
+			always = no
+            has_authority = auth_corporate
 		}
 
 		on_enabled = {
@@ -1555,9 +1592,12 @@ subjugation_war_terms = {
 }
 
 orbital_bombardment = {
+	allow = {
 
+	}
 	potential = {
-		OR = {
+		always = no
+        OR = {
 			is_country_type = default
 			is_country_type = vol
 		}
@@ -1641,7 +1681,8 @@ orbital_bombardment = {
 		}
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_machine_terminator
 			}
@@ -1670,8 +1711,12 @@ orbital_bombardment = {
 
 orbital_bombardment_accept_surrender = {
 
+	allow = {
+
+	}
 	potential = {
-		is_homicidal = no
+        is_homicidal = no
+		always = no
 	}
 
 	option = {
@@ -1691,7 +1736,8 @@ orbital_bombardment_accept_surrender = {
 		name = "orbital_bombardment_surrender_allowed"
 
 		potential = {
-			is_homicidal = no #locked to "forbidden"
+			always = no
+            is_homicidal = no #locked to "forbidden"
 		}
 
 		policy_flags = {
@@ -1701,9 +1747,12 @@ orbital_bombardment_accept_surrender = {
 }
 
 interference = {
+	allow = {
 
+	}
 	potential = {
-		has_met_primitives = yes
+        has_met_primitives = yes
+		always = no
 	}
 
 	option = {
@@ -1933,9 +1982,12 @@ interference = {
 }
 
 enlightenment = {
+	allow = {
 
+	}
 	potential = {
-		has_met_primitives = yes
+		always = no
+        has_met_primitives = yes
 	}
 
 	option = {
@@ -2014,9 +2066,12 @@ enlightenment = {
 
 resettlement = {
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		always = no
+        NOT = { has_ethic = "ethic_gestalt_consciousness" }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "resettlement_not_allowed"
 
@@ -2048,10 +2103,13 @@ resettlement = {
 
 appropriation = {
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+		always = no
+        NOT = { has_ethic = ethic_gestalt_consciousness }
 		has_comms_with_alien_empire = yes
 	}
+	allow = {
 
+	}
 	option = {
 		name = "appropriation_not_allowed"
 
@@ -2085,9 +2143,12 @@ appropriation = {
 }
 
 leader_enhancement = {
+	allow = {
 
+	}
 	potential = {
-		has_technology = tech_selected_lineages
+		always = no
+        has_technology = tech_selected_lineages
 	}
 
 	option = {
@@ -2210,9 +2271,12 @@ leader_enhancement = {
 }
 
 first_contact_protocol = {
+	allow = {
 
+	}
 	potential = {
-		always = yes
+		always = no
+        always = yes
 	}
 
 	option = {
@@ -2313,9 +2377,12 @@ first_contact_protocol = {
 }
 
 border_policy = {
+	allow = {
 
+	}
 	potential = {
-		always = yes
+		always = no
+        always = yes
 	}
 
 	option = {
@@ -2326,7 +2393,8 @@ border_policy = {
 		}
 
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				is_country_type = default
 				is_country_type = mirrored_country
 				is_primitive = yes
@@ -2387,8 +2455,11 @@ border_policy = {
 food_policy = {
 	potential = {
 		always = no
+        always = no
 	}
+	allow = {
 
+	}
 	option = {
 		name = "food_policy_rationing"
 
@@ -2435,8 +2506,11 @@ food_policy = {
 food_policy_gestalt = {
 	potential = {
 		always = no
+        always = no
 	}
+	allow = {
 
+	}
 	option = {
 		name = "food_policy_gestalt_rationing"
 
@@ -2477,8 +2551,11 @@ food_policy_gestalt = {
 research_policy = {
 	potential = {
 		always = no
+        always = no
 	}
+	allow = {
 
+	}
 	option = {
 		name = "research_policy_no_focus"
 
@@ -2637,9 +2714,12 @@ research_policy = {
 
 economic_policy = {
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+		always = no
+        NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "economic_policy_civilian"
 
@@ -2701,9 +2781,12 @@ economic_policy = {
 
 trade_policy = {
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+		always = no
+        NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "trade_policy_default"
 
@@ -2715,7 +2798,8 @@ trade_policy = {
 	option = {
 		name = "trade_policy_consumer_goods"
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				has_federation = no
 				AND = {
 					has_federation = yes
@@ -2739,7 +2823,8 @@ trade_policy = {
 	option = {
 		name = "trade_policy_unity"
 		potential = {
-			OR = {
+			always = no
+            OR = {
 				has_federation = no
 				AND = {
 					has_federation = yes
@@ -2769,7 +2854,8 @@ trade_policy = {
 	option = {
 		name = "trade_policy_trade_league"
 		potential = {
-			has_federation = yes
+			always = no
+            has_federation = yes
 			federation = { has_federation_perk = trade_federation_passive }
 		}
 
@@ -2788,7 +2874,8 @@ trade_policy = {
 	option = {
 		name = "trade_policy_holy_covenant"
 		potential = {
-			has_federation = yes
+			always = no
+            has_federation = yes
 			federation = { has_federation_perk = unity_trade_1 }
 		}
 
@@ -2807,7 +2894,8 @@ trade_policy = {
 	option = {
 		name = "trade_policy_mutual_aid"
 		potential = {
-			is_worker_coop_empire = yes
+			always = no
+            is_worker_coop_empire = yes
 		}
 
 		policy_flags = {
@@ -2825,9 +2913,12 @@ trade_policy = {
 
 drone_policy = {
 	potential = {
-		has_ethic = ethic_gestalt_consciousness
+		always = no
+        has_ethic = ethic_gestalt_consciousness
 	}
+	allow = {
 
+	}
 	option = {
 		name = "drone_policy_balanced"
 
@@ -2868,13 +2959,16 @@ drone_policy = {
 artificial_intelligence_policy = {
 
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+			always = no
+            NOT = { has_ethic = ethic_gestalt_consciousness }
 		OR = {
 			can_set_ai_policy = yes
 			has_country_flag = synthetic_empire
 		}
 	}
+	allow = {
 
+	}
 	option = {
 		name = "ai_outlawed"
 
@@ -3036,9 +3130,12 @@ artificial_intelligence_policy = {
 robot_pop_policy = {
 
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
+		always = no
+        NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "robot_pops_outlawed"
 
@@ -3110,7 +3207,8 @@ robot_pop_policy = {
 
 pre_sapients = {
 	potential = {
-		OR = {
+		always = no
+        OR = {
 			has_country_flag = found_presapients
 			any_planet_within_border = {
 				any_owned_pop = {
@@ -3119,12 +3217,15 @@ pre_sapients = {
 			}
 		}
 	}
+	allow = {
 
+	}
 	option = {
 		name = "pre_sapients_protect"
 
 		potential = {
-			NOR = {
+			always = no
+            NOR = {
 				has_valid_civic = civic_machine_terminator
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_fanatic_purifiers
@@ -3154,7 +3255,8 @@ pre_sapients = {
 		name = "pre_sapients_allow"
 
 		potential = {
-			NOR = {
+			always = no
+            NOR = {
 				has_valid_civic = civic_machine_terminator
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_fanatic_purifiers
@@ -3180,7 +3282,8 @@ pre_sapients = {
 		name = "pre_sapients_eat"
 
 		potential = {
-			host_has_dlc = "Utopia"
+			always = no
+            host_has_dlc = "Utopia"
 			is_synthetic_empire = no
 			NOT = {
 				has_valid_civic = civic_fanatic_purifiers
@@ -3253,6 +3356,7 @@ pre_sapients = {
 
 debris = {
 	potential = {
+		always = no
 		has_encountered_other_species = yes
 		OR = {
 			is_country_type = default
@@ -3260,12 +3364,15 @@ debris = {
 			is_country_type = awakened_fallen_empire
 		}
 	}
+	allow = {
 
+	}
 	option = {
 		name = "research_debris"
 
 		potential = {
-			is_scavenger = no
+			always = no
+            is_scavenger = no
 		}
 
 		policy_flags = {
@@ -3276,7 +3383,8 @@ debris = {
 		name = "scavenge_debris"
 
 		potential = {
-			is_scavenger = no
+			always = no
+            is_scavenger = no
 		}
 
 		policy_flags = {
@@ -3288,7 +3396,8 @@ debris = {
 		name = "scavenge_and_research_debris"
 
 		potential = {
-			is_scavenger = yes
+			always = no
+            is_scavenger = yes
 		}
 
 		policy_flags = {
@@ -3300,13 +3409,16 @@ debris = {
 refugees = {
 	potential = {
 		has_encountered_other_species = yes
+		always = no
 		is_country_type = default
 		OR = {
 			NOT = { has_ethic = "ethic_gestalt_consciousness" }
 			has_valid_civic = civic_machine_servitor
 		}
 	}
+	allow = {
 
+	}
 	option = {
 		name = "refugees_not_allowed"
 
@@ -3326,7 +3438,8 @@ refugees = {
 		name = "refugees_only_citizens"
 
 		potential = {
-			NOT = { has_ethic = "ethic_gestalt_consciousness" }
+			always = no
+            NOT = { has_ethic = "ethic_gestalt_consciousness" }
 		}
 
 		policy_flags = {
@@ -3378,9 +3491,12 @@ refugees = {
 
 population_controls = {
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		always = no
+        NOT = { has_ethic = "ethic_gestalt_consciousness" }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "population_controls_not_allowed"
 
@@ -3422,9 +3538,12 @@ population_controls = {
 
 slavery = {
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		always = no
+        NOT = { has_ethic = "ethic_gestalt_consciousness" }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "slavery_not_allowed"
 
@@ -3522,6 +3641,12 @@ slavery = {
 }
 
 purge = {
+	potential = {
+		always = no
+	}
+	allow = {
+
+	}
 	option = {
 		name = "purge_not_allowed"
 
@@ -3656,11 +3781,14 @@ purge = {
 
 knightly_duties = {
 	potential = {
-		is_country_type = default
+        is_country_type = default
+		always = no
 		has_origin = origin_toxic_knights
 		NOT = { has_country_flag = quest_abandoned }
 	}
+	allow = {
 
+	}
 	option = {
 		name = "questing_knights"
 
@@ -3708,7 +3836,8 @@ knightly_duties = {
 		name = "herald_knights"
 
 		potential = {
-			owner = { has_country_flag = toxoids_7090_a }
+			always = no
+            owner = { has_country_flag = toxoids_7090_a }
 		}
 
 		policy_flags = {
@@ -3724,11 +3853,14 @@ knightly_duties = {
 
 relentless_industrialists_policy = {
 	potential = {
-		is_country_type = default
+		always = no
+        is_country_type = default
 		is_relentless_industrialist_empire = yes
 		has_country_flag = relentless_industrialists_situation_finished
 	}
+	allow = {
 
+	}
 	#Fires when the policy group first becomes available
 	on_activate = {
 		set_policy_cooldown = relentless_industrialists_policy
@@ -3794,7 +3926,8 @@ relentless_industrialists_policy = {
 
 roboticist_output = {
 	potential = {
-		has_tradition = tr_cybernetics_assembly_standards
+		always = no
+        has_tradition = tr_cybernetics_assembly_standards
 		is_regular_empire = yes
 	}
 
