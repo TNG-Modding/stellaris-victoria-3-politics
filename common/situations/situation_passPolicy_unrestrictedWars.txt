@@ -53,7 +53,7 @@ situation_passPolicy_unrestrictedWars = {
 		icon = GFX_situation_approach_shrug
 		icon_background = GFX_situation_approach_bg_red
 		on_select = {
-			situation_event = {id = situation_passPolicy_unrestrictedWars.9}
+			situation_event = {id = situation_passPolicy_unrestrictedWars.8}
 		}
 	}
 	on_monthly = {
