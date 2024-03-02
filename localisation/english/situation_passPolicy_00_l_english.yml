@@ -1,6 +1,7 @@
 ﻿l_english:
  passPolicy_ack:0 "Let us decide."
  passPolicy_approach.1:0 "Legislate"
+passPolicy_approach.1.on_select:0 "Give full government support."
  passPolicy_approach.2:0 "Give Up"
  passPolicy_stageOneEffects:0 "Introduction"
  passPolicy_stageTwoEffects:0 "Consideration"
