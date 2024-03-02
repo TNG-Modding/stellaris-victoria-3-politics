@@ -12,6 +12,18 @@
         "detractingFactions": [ "imperialist", "supremacist", "xenoist"]
     },
     {
+        "varname": "unrestrictedWars",
+        "displayName": "Unrestricted Wars",
+        "ethicAdjective": "Militarist",
+        "description": "war is a dish best served frequently",
+        "picture": "surrender",
+        "rebellionEthics": "{ ethic = ethic_fanatic_militarist ethic = ethic_egalitarian }",
+        "policyCategory": "war_philosophy",
+        "policyOption": "unrestricted_wars",
+        "supportingFactions": [ "imperialist", "supremacist" ],
+        "detractingFactions": [ "prosperity", "isolationist"]
+    },
+    {
         "varname": "roboticWorkersOutlawed",
         "displayName": "Robotic Workers Outlawed",
         "policyDisplayName": "Robotic Workers Outlawed",

@@ -1,17 +1,17 @@
-situation_passPolicy_roboticWorkersOutlawed = {
-	picture = GFX_evt_organic_oppression
+situation_passPolicy_unrestrictedWars = {
+	picture = GFX_evt_surrender
 	complete_icon_frame = GFX_situation_outcome_frame_green
 	complete_icon = GFX_situation_outcome_positive
 
 	on_start = { 
 		set_situation_approach = passPolicy_approach.1
-		situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.2 } 
+		situation_event = { id = situation_passPolicy_unrestrictedWars.2 } 
 	}
 
 	on_progress_complete = {
-		custom_tooltip = situation_passPolicy_finisher_roboticWorkersOutlawed
+		custom_tooltip = situation_passPolicy_finisher_unrestrictedWars
 		hidden_effect = {
-			situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.7 }
+			situation_event = { id = situation_passPolicy_unrestrictedWars.7 }
 			
 		}
 	}
@@ -53,12 +53,12 @@ situation_passPolicy_roboticWorkersOutlawed = {
 		icon = GFX_situation_approach_shrug
 		icon_background = GFX_situation_approach_bg_red
 		on_select = {
-			situation_event = {id = situation_passPolicy_roboticWorkersOutlawed.9}
+			situation_event = {id = situation_passPolicy_unrestrictedWars.9}
 		}
 	}
 	on_monthly = {
 		random_events = {
-			100 = situation_passPolicy_roboticWorkersOutlawed.3
+			100 = situation_passPolicy_unrestrictedWars.3
 		}
 	}
 	monthly_progress = {

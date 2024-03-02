@@ -1,14 +1,29 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_defensiveWarsOnly:0 "Legislation for Defensive Wars Only"
- situation_passPolicy_defensiveWarsOnly_type:0 "Legislation for Defensive Wars Only"
+ situation_passPolicy_defensiveWarsOnly:0 "Defensive Wars Only Legislation"
+ situation_passPolicy_defensiveWarsOnly_type:0 "Defensive Wars Only Legislation"
  situation_passPolicy_defensiveWarsOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
- situation_passPolicy_defensiveWarsOnly_desc:0 "We are working on passing the policy §BDefensive Wars Only§! as violence should be the last resort to ensure the integrity of our nation."
+ situation_passPolicy_defensiveWarsOnly_desc:0 "We are working on passing the policy §BDefensive Wars Only§! as violence should be the last resort to ensure the integrity of our nation.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_defensiveWarsOnly:0 "Pass §BDefensive Wars Only§!."
+
+ situation_passPolicy_defensiveWarsOnly.7.name:0 "Defensive Wars Only Passed!"
+ situation_passPolicy_defensiveWarsOnly.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over legislative stalemate to enact §BDefensive Wars Only§!. Against all odds, a breakthrough emerged, ushering in a new era. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_defensiveWarsOnly.7.a:0 "Finally!"
+
+ situation_passPolicy_defensiveWarsOnly.8.name:0 "Defensive Wars Only Abandoned!"
+ situation_passPolicy_defensiveWarsOnly.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BDefensive Wars Only§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BDefensive Wars Only§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_defensiveWarsOnly.8.a:0 "It seems it was not §BDefensive Wars Only's§! time."
+
+ situation_passPolicy_defensiveWarsOnly.9.name:0 "Defensive Wars Only Failed to Pass!"
+ situation_passPolicy_defensiveWarsOnly.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BDefensive Wars Only§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_defensiveWarsOnly.9.a:0 "Blast!"
  
  # Event
  situation_passPolicy_defensiveWarsOnly.1.name:0 "Legislation for Defensive Wars Only"
  situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation."
+
+ situation_passPolicy_defensiveWarsOnly.2.name:0 "Defensive Wars Only Support"
+ situation_passPolicy_defensiveWarsOnly.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
 
  faction_supportPolicy_defensiveWarsOnly.1.name:0 "Defensive Wars Only"
  faction_supportPolicy_defensiveWarsOnly.1.desc:0 "Overall Support: [Root.faction_support_defensiveWarsOnly]\n\nSupporters:\nisolationist: [Root.isolationist_support_defensiveWarsOnly]\nprosperity: [Root.prosperity_support_defensiveWarsOnly]\n\nDetractors:\nimperialist: [Root.imperialist_support_defensiveWarsOnly]\nsupremacist: [Root.supremacist_support_defensiveWarsOnly]\nxenoist: [Root.xenoist_support_defensiveWarsOnly]\n"

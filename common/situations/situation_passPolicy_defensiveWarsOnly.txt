@@ -1,15 +1,18 @@
 situation_passPolicy_defensiveWarsOnly = {
 	picture = GFX_evt_surrender
 	complete_icon_frame = GFX_situation_outcome_frame_green
-	complete_icon = GFX_situation_outcome_unknown
-	
+	complete_icon = GFX_situation_outcome_positive
+
+	on_start = { 
+		set_situation_approach = passPolicy_approach.1
+		situation_event = { id = situation_passPolicy_defensiveWarsOnly.2 } 
+	}
+
 	on_progress_complete = {
 		custom_tooltip = situation_passPolicy_finisher_defensiveWarsOnly
 		hidden_effect = {
-			root.owner = {
-				set_policy = { policy = war_philosophy option = no_wars cooldown = no }
-			}
-			destroy_situation = this
+			situation_event = { id = situation_passPolicy_defensiveWarsOnly.7 }
+			
 		}
 	}
 
@@ -41,18 +44,21 @@ situation_passPolicy_defensiveWarsOnly = {
 	}
 	approach = {
 		name = passPolicy_approach.1
-		icon = GFX_situation_approach_shrug
+		icon = GFX_situation_approach_influence
 		icon_background = GFX_situation_approach_bg_green
+		
+	}
+	approach = {
+		name = passPolicy_approach.2
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_red
 		on_select = {
-			custom_tooltip = approach_outcome_tooltip
+			situation_event = {id = situation_passPolicy_defensiveWarsOnly.9}
 		}
 	}
 	on_monthly = {
 		random_events = {
-			120 = 0
-			# 20 = situation.160
-			# 15 = situation.170
-			# 10 = situation.175
+			100 = situation_passPolicy_defensiveWarsOnly.3
 		}
 	}
 	monthly_progress = {
