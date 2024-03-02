@@ -277,7 +277,6 @@ situation_event = {
 			root.owner = {
 				set_policy = { policy = {{policyCategory}} option = {{policyOption}} cooldown = no }
 			}
-			destroy_situation = this
 		}
 	}
 }
@@ -295,9 +294,6 @@ situation_event = {
 	}
 	option = {
 		name = situation_passPolicy_{{varname}}.8.a
-		tooltip = {
-			destroy_situation = this
-		}
 	}
 }
 # Failure due to setbacks
@@ -314,8 +310,5 @@ situation_event = {
 	
 	option = {
 		name = situation_passPolicy_{{varname}}.9.a
-		tooltip = {
-			destroy_situation = this
-		}
 	}
 }

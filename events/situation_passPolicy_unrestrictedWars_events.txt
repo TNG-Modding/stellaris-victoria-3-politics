@@ -300,7 +300,6 @@ situation_event = {
 			root.owner = {
 				set_policy = { policy = war_philosophy option = unrestricted_wars cooldown = no }
 			}
-			destroy_situation = this
 		}
 	}
 }
@@ -318,9 +317,6 @@ situation_event = {
 	}
 	option = {
 		name = situation_passPolicy_unrestrictedWars.8.a
-		tooltip = {
-			destroy_situation = this
-		}
 	}
 }
 # Failure due to setbacks
@@ -337,8 +333,5 @@ situation_event = {
 	
 	option = {
 		name = situation_passPolicy_unrestrictedWars.9.a
-		tooltip = {
-			destroy_situation = this
-		}
 	}
 }
