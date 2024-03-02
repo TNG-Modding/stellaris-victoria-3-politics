@@ -288,7 +288,8 @@ situation_event = {
 		tooltip = {
 			root.owner = {
 				set_policy = { policy = artificial_intelligence_policy option = ai_outlawed cooldown = no }
-			}	
+			}
+			destroy_situation = this
 		}
 	}
 }
@@ -306,6 +307,9 @@ situation_event = {
 	}
 	option = {
 		name = situation_passPolicy_roboticWorkersOutlawed.8.a
+		tooltip = {
+			destroy_situation = this
+		}
 	}
 }
 # Failure due to setbacks
@@ -322,5 +326,8 @@ situation_event = {
 	
 	option = {
 		name = situation_passPolicy_roboticWorkersOutlawed.9.a
+		tooltip = {
+			destroy_situation = this
+		}
 	}
 }
