@@ -2,6 +2,9 @@
 
 We are going to add Victoria 3 style revolutions and law passing but with Stellaris ethics and flavor. Metrics of success will be whether large empires splinter under ethic strain and whether internal politics and factions feel alive.
 
+![Pass Robotic Worker Banned](https://i.imgur.com/4Rft5qz.png)
+
+
 ## Changes to Policy Passing
 
 - Disable the instant policy passing
@@ -30,14 +33,16 @@ This project uses a tool I made called Intemplator. Intemplator turns json blobs
 
 ## Environment Setup
 
-- Install python
-- `git clone https://github.com/TNG-Modding/paradox-gamefiles-templatemaker.git`
-- `cd paradox-gamefiles-templatemaker`
-- `python setup.py install`
-- Test that intemplator is installed by running `intemplator` in your terminal it should give you options
-- `git clone https://github.com/TNG-Modding/stellaris-victoria-3-politics.git`
-- `cd ./stellaris-victoria-3-politics/zintemplator`
-- `intemplator go`. This should take the specs, run them through our templates, and create the files for our mod. 
+Install python then `cd "C:\Users\YOUR USER NAME\Documents\Paradox Interactive\Stellaris\mod"`
+```
+git clone https://github.com/TNG-Modding/paradox-gamefiles-templatemaker.git
+cd paradox-gamefiles-templatemaker
+python setup.py install
+cd ..
+git clone https://github.com/TNG-Modding/stellaris-victoria-3-politics.git
+cd ./stellaris-victoria-3-politics/zintemplator
+```
+Now you're setup! Now run `intemplator go` in the `zintemplator` directory to take the specs, run them through our templates, and create the files for our mod. 
 
 ## Submitting Your Changes
 
@@ -47,3 +52,4 @@ Create a new branch for your changes, and submit a pull request to master. You c
 
 The easiest way to create new content for the mod is to expand existing content in the specs files. For instance, copy a json blob about defensive wars and turn it into a different policy.
 
+The [README of the Intemplator tool](https://github.com/TNG-Modding/paradox-gamefiles-templatemaker) has a guide to using it.
