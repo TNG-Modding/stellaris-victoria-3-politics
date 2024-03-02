@@ -210,24 +210,6 @@ situation_event = {
 		situation_event = {
 			id = situation_passPolicy_defensiveWarsOnly.2	
 		}
-		set_variable_to_random_value = { which = should_attempt min = 0 max = 100 rounded = yes}
-		if = {
-			limit = {
-				check_variable = { which = should_attempt value > 66 }
-			}
-		}
-		# Advance or fail
-		situation_event = {
-			id = situation_passPolicy_defensiveWarsOnly.10
-		}
-	}
-}
-# Advance Fail or Ambivalent
-situation_event = {
-	id = situation_passPolicy_defensiveWarsOnly.10
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
 		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
 		# log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
 		if = {
@@ -253,6 +235,7 @@ situation_event = {
 		}	
 	}
 }
+
 # Advance
 situation_event = {
 	id = situation_passPolicy_defensiveWarsOnly.4
