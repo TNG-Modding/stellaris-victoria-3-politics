@@ -8,4 +8,7 @@
  
  # Event
  situation_passPolicy_defensiveWarsOnly.1.name:0 "Legislation for Defensive Wars Only"
- situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation"
+ situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation."
+
+ faction_supportPolicy_defensiveWarsOnly.1.name:0 "Defensive Wars Only"
+ faction_supportPolicy_defensiveWarsOnly.1.desc:0 "Overall Support: [Root.faction_support_defensiveWarsOnly]\n\nSupporters:\nisolationist: [Root.isolationist_support_defensiveWarsOnly]\nprosperity: [Root.prosperity_support_defensiveWarsOnly]\n\nDetractors:\nimperialist: [Root.imperialist_support_defensiveWarsOnly]\nsupremacist: [Root.supremacist_support_defensiveWarsOnly]\nxenoist: [Root.xenoist_support_defensiveWarsOnly]\n"

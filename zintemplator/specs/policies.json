@@ -4,7 +4,12 @@
         "displayName": "Defensive Wars Only",
         "ethicAdjective": "Pacifist",
         "description": "violence should be the last resort to ensure the integrity of our nation",
-        "picture": "surrender"
+        "picture": "surrender",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+        "policyCategory": "war_philosophy",
+        "policyOption": "no_wars",
+        "supportingFactions": [ "isolationist", "prosperity" ],
+        "detractingFactions": [ "imperialist", "supremacist", "xenoist"]
     },
     {
         "varname": "roboticWorkersOutlawed",
@@ -12,6 +17,10 @@
         "policyDisplayName": "Robotic Workers Outlawed",
         "ethicAdjective": "Spiritualist",
         "description": "robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself",
-        "picture": "organic_oppression"
+        "picture": "organic_oppression",
+        "policyCategory": "artificial_intelligence_policy",
+        "policyOption": "ai_outlawed",
+        "supportingFactions": [ "technologist", "prosperity"],
+        "detractingFactions": [ "traditionalist" ]
     }
 ]

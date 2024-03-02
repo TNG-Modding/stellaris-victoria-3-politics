@@ -1,0 +1,73 @@
+namespace = faction_supportPolicy_{{varname}}
+
+# Conditions
+# faction_approval
+# num_pops
+# faction support level
+
+# Modifiers
+# faction_approval
+
+# Do the math to determine progress
+country_event = {
+	id = faction_supportPolicy_{{varname}}.1
+	
+	is_triggered_only = yes
+	title = faction_supportPolicy_{{varname}}.1.name
+	desc = faction_supportPolicy_{{varname}}.1.desc
+	picture = GFX_evt_voting
+
+	immediate = { 
+		set_variable = { which = faction_support_{{varname}} value = 0}
+		# To get the support for this policy we need to set
+		{% for supportingFaction in supportingFactions %}
+		set_variable = { which = {{supportingFaction}}_support_{{varname}} value = 0}
+		every_pop_faction = {
+			limit = {
+				is_pop_faction_type = {{supportingFaction}}
+			}
+			{% for supportLevel in [ 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0 ] %}
+			if = {
+				limit = {
+					support > {{supportLevel}}
+				}
+				PREV = {
+					change_variable = { which = faction_support_{{varname}} value = 10 }
+					change_variable = { which = {{supportingFaction}}_support_{{varname}} value = 10 }
+				}
+			}
+			{% endfor %}
+		}
+		log = "{{varname}} {{supportingFaction}} support: [ROOT.{{supportingFaction}}_support_{{varname}}]"
+		{% endfor %}
+		{% for detractingFaction in detractingFactions %}
+		set_variable = { which = {{detractingFaction}}_support_{{varname}} value = 0}
+		every_pop_faction = {
+			limit = {
+				is_pop_faction_type = {{detractingFaction}}
+			}
+			{% for supportLevel in [ 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0 ] %}
+			if = {
+				limit = {
+					support > {{supportLevel}}
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_{{varname}} value = 10 }
+					change_variable = { which = {{detractingFaction}}_support_{{varname}} value = 10 }
+				}
+			}
+			{% endfor %}
+			
+		}
+		log = "{{varname}} {{detractingFaction}} support: [ROOT.{{detractingFaction}}_support_{{varname}}]"
+		{% endfor %}
+		change_variable = { which = faction_support_{{varname}} value = 100}
+		divide_variable = { which = faction_support_{{varname}} value = 200}
+		multiply_variable  = { which = faction_support_{{varname}} value = 100}
+		log = "{{varname}} support: [ROOT.faction_support_{{varname}}]"
+		# Faction Support {{varname}} is now a 0-100 with 0 meaning ALL negative support and 100 meaning all positive support and 50 meaning cancelled out support
+	}
+	option = {
+		name = passPolicy_ack
+	}
+}

@@ -1,0 +1,362 @@
+namespace = faction_supportPolicy_roboticWorkersOutlawed
+
+# Conditions
+# faction_approval
+# num_pops
+# faction support level
+
+# Modifiers
+# faction_approval
+
+# Do the math to determine progress
+country_event = {
+	id = faction_supportPolicy_roboticWorkersOutlawed.1
+	
+	is_triggered_only = yes
+	title = faction_supportPolicy_roboticWorkersOutlawed.1.name
+	desc = faction_supportPolicy_roboticWorkersOutlawed.1.desc
+	picture = GFX_evt_voting
+
+	immediate = { 
+		set_variable = { which = faction_support_roboticWorkersOutlawed value = 0}
+		# To get the support for this policy we need to set
+		
+		set_variable = { which = technologist_support_roboticWorkersOutlawed value = 0}
+		every_pop_faction = {
+			limit = {
+				is_pop_faction_type = technologist
+			}
+			
+			if = {
+				limit = {
+					support > 0.9
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.8
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.7
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.6
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.5
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.4
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.3
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.2
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.1
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = technologist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+		}
+		log = "roboticWorkersOutlawed technologist support: [ROOT.technologist_support_roboticWorkersOutlawed]"
+		
+		set_variable = { which = prosperity_support_roboticWorkersOutlawed value = 0}
+		every_pop_faction = {
+			limit = {
+				is_pop_faction_type = prosperity
+			}
+			
+			if = {
+				limit = {
+					support > 0.9
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.8
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.7
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.6
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.5
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.4
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.3
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.2
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.1
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0
+				}
+				PREV = {
+					change_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = prosperity_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+		}
+		log = "roboticWorkersOutlawed prosperity support: [ROOT.prosperity_support_roboticWorkersOutlawed]"
+		
+		
+		set_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 0}
+		every_pop_faction = {
+			limit = {
+				is_pop_faction_type = traditionalist
+			}
+			
+			if = {
+				limit = {
+					support > 0.9
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.8
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.7
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.6
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.5
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.4
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.3
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.2
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0.1
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			if = {
+				limit = {
+					support > 0
+				}
+				PREV = {
+					subtract_variable = { which = faction_support_roboticWorkersOutlawed value = 10 }
+					change_variable = { which = traditionalist_support_roboticWorkersOutlawed value = 10 }
+				}
+			}
+			
+			
+		}
+		log = "roboticWorkersOutlawed traditionalist support: [ROOT.traditionalist_support_roboticWorkersOutlawed]"
+		
+		change_variable = { which = faction_support_roboticWorkersOutlawed value = 100}
+		divide_variable = { which = faction_support_roboticWorkersOutlawed value = 200}
+		multiply_variable  = { which = faction_support_roboticWorkersOutlawed value = 100}
+		log = "roboticWorkersOutlawed support: [ROOT.faction_support_roboticWorkersOutlawed]"
+		# Faction Support roboticWorkersOutlawed is now a 0-100 with 0 meaning ALL negative support and 100 meaning all positive support and 50 meaning cancelled out support
+	}
+	option = {
+		name = passPolicy_ack
+	}
+}

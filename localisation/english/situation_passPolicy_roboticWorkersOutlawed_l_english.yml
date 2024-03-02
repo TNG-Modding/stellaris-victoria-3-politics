@@ -8,4 +8,7 @@
  
  # Event
  situation_passPolicy_roboticWorkersOutlawed.1.name:0 "Legislation for Robotic Workers Outlawed"
- situation_passPolicy_roboticWorkersOutlawed.1.desc:0 "We move that robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself"
+ situation_passPolicy_roboticWorkersOutlawed.1.desc:0 "We move that robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself."
+
+ faction_supportPolicy_roboticWorkersOutlawed.1.name:0 "Robotic Workers Outlawed"
+ faction_supportPolicy_roboticWorkersOutlawed.1.desc:0 "Overall Support: [Root.faction_support_roboticWorkersOutlawed]\n\nSupporters:\ntechnologist: [Root.technologist_support_roboticWorkersOutlawed]\nprosperity: [Root.prosperity_support_roboticWorkersOutlawed]\n\nDetractors:\ntraditionalist: [Root.traditionalist_support_roboticWorkersOutlawed]\n"

@@ -1,12 +1,15 @@
 situation_passPolicy_defensiveWarsOnly = {
 	picture = GFX_evt_surrender
-	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon_frame = GFX_situation_outcome_frame_green
 	complete_icon = GFX_situation_outcome_unknown
 	
 	on_progress_complete = {
 		custom_tooltip = situation_passPolicy_finisher_defensiveWarsOnly
 		hidden_effect = {
-			
+			root.owner = {
+				set_policy = { policy = war_philosophy option = no_wars cooldown = no }
+			}
+			destroy_situation = this
 		}
 	}
 
@@ -14,32 +17,32 @@ situation_passPolicy_defensiveWarsOnly = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-			end = 25
-			custom_tooltip = stage_unknown_effects
+			end = 33
+			custom_tooltip = passPolicy_stageOneEffects
 		}
 		stage_2 = {
 			icon = GFX_situation_stage_2
-			icon_background = GFX_situation_stage_frame_blue
-			end = 80
+			icon_background = GFX_situation_stage_frame_green
+			end = 66
 			on_first_enter = {
 				# situation_event = { id = situation.155 }
 			}
-			custom_tooltip = stage_unknown_effects
+			custom_tooltip = passPolicy_stageTwoEffects
 		}
 		stage_3 = {
 			icon = GFX_situation_stage_3
-			icon_background = GFX_situation_stage_frame_blue
+			icon_background = GFX_situation_stage_frame_red
 			end = 100
 			on_first_enter = {
 				# situation_event = { id = situation.165 }
 			}
-			custom_tooltip = stage_unknown_effects
+			custom_tooltip = passPolicy_stageThreeEffects
 		}
 	}
 	approach = {
 		name = passPolicy_approach.1
 		icon = GFX_situation_approach_shrug
-		icon_background = GFX_situation_approach_bg_blue
+		icon_background = GFX_situation_approach_bg_green
 		on_select = {
 			custom_tooltip = approach_outcome_tooltip
 		}

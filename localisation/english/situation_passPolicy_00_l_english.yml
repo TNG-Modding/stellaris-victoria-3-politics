@@ -1,0 +1,6 @@
+﻿l_english:
+ passPolicy_ack:0 "Let us decide."
+ passPolicy_approach.1:0 "Give Up"
+ passPolicy_stageOneEffects:0 "Introduction"
+ passPolicy_stageTwoEffects:0 "Consideration"
+ passPolicy_stageThreeEffects:0 "Adoption"

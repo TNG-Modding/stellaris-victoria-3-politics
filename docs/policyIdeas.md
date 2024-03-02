@@ -1,0 +1,15 @@
+
+- Cybersecurity
+- Gene Privacy
+- Right to be Forgotten
+- Freedom of Information
+- Colonization Rights
+- Terrorism
+- Military
+- Reproductive Rights
+- Education
+- Leisure
+- Galactic Law
+- Fleet Doctrine
+- Rights of Assembly
+- Policing
