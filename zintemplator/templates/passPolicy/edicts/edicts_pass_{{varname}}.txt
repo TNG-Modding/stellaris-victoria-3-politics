@@ -1,0 +1,20 @@
+pass_{{varname}} = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = {{policyOption}} }
+		{{potential}}
+	}
+
+	allow = {
+		
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_{{varname}}.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

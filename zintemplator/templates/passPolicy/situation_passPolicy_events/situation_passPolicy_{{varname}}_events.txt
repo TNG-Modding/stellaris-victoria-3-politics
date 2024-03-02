@@ -268,16 +268,17 @@ situation_event = {
 	
 	is_triggered_only = yes
 	immediate = {
+		owner = {
+			set_policy = { 
+				policy = {{policyCategory}} 
+				option = {{policyOption}} 
+				cooldown = yes 
+			}
+		}
 		destroy_situation = this
 	}
 	option = {
 		name = situation_passPolicy_{{varname}}.7.a
-
-		tooltip = {
-			root.owner = {
-				set_policy = { policy = {{policyCategory}} option = {{policyOption}} cooldown = no }
-			}
-		}
 	}
 }
 # Failure due to abort

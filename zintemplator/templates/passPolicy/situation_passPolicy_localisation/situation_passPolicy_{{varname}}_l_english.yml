@@ -27,3 +27,6 @@ l_english:
 
  faction_supportPolicy_{{varname}}.1.name:0 "{{displayName}}"
  faction_supportPolicy_{{varname}}.1.desc:0 "Overall Support: [Root.faction_support_{{varname}}]\n\nSupporters:\n{% for supportingFaction in supportingFactions %}{{supportingFaction}}: [Root.{{supportingFaction}}_support_{{varname}}]\n{% endfor %}\nDetractors:\n{% for detractingFaction in detractingFactions %}{{detractingFaction}}: [Root.{{detractingFaction}}_support_{{varname}}]\n{% endfor %}"
+
+ edict_pass_{{varname}}:0 "Move to Pass §B{{displayName}}§!"
+ edict_pass_{{varname}}_desc:0 "We move that {{description}}."

@@ -1,0 +1,20 @@
+pass_unrestrictedWars = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = unrestricted_wars }
+		NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }
+	}
+
+	allow = {
+		
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_unrestrictedWars.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

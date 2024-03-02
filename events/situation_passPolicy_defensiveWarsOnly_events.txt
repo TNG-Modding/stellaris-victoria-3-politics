@@ -302,15 +302,20 @@ situation_event = {
 	
 	is_triggered_only = yes
 	immediate = {
+		owner = {
+			set_policy = { 
+				policy = war_philosophy 
+				option = no_wars 
+				cooldown = yes 
+			}
+		}
 		destroy_situation = this
 	}
 	option = {
 		name = situation_passPolicy_defensiveWarsOnly.7.a
 
 		tooltip = {
-			root.owner = {
-				set_policy = { policy = war_philosophy option = no_wars cooldown = no }
-			}
+			
 		}
 	}
 }

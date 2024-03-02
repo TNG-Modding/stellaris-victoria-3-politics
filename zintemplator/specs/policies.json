@@ -8,8 +8,10 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
         "policyCategory": "war_philosophy",
         "policyOption": "no_wars",
+        "supportingEthics": [ "xenophobe", "pacifist" ],
         "supportingFactions": [ "isolationist", "prosperity" ],
-        "detractingFactions": [ "imperialist", "supremacist", "xenoist"]
+        "detractingFactions": [ "imperialist", "supremacist", "xenoist"],
+        "potential": "NOR = { has_ethic = ethic_fanatic_militarist has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator has_civic = civic_crusader_spirit }"
     },
     {
         "varname": "unrestrictedWars",
@@ -20,19 +22,37 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_militarist ethic = ethic_egalitarian }",
         "policyCategory": "war_philosophy",
         "policyOption": "unrestricted_wars",
+        "supportingEthics": [ "militarist", "xenophobe" ],
         "supportingFactions": [ "imperialist", "supremacist" ],
-        "detractingFactions": [ "prosperity", "isolationist"]
+        "detractingFactions": [ "prosperity", "isolationist"],
+        "potential": "NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }"
+    },
+    {
+        "varname": "liberationWars",
+        "displayName": "Liberation Wars Only",
+        "ethicAdjective": "Xenophile",
+        "description": "we must further our own interests, even when they run contrary to the interests of others",
+        "picture": "surrender",
+        "rebellionEthics": "{ ethic = ethic_fanatic_xenophile ethic = ethic_pacifist }",
+        "policyCategory": "war_philosophy",
+        "policyOption": "liberation_wars",
+        "supportingEthics": [ "militarist", "xenophile" ],
+        "supportingFactions": [ "imperialist", "xenoist" ],
+        "detractingFactions": [ "prosperity", "isolationist", "supremacist" ],
+        "potential": "NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers}"
     },
     {
         "varname": "roboticWorkersOutlawed",
         "displayName": "Robotic Workers Outlawed",
         "policyDisplayName": "Robotic Workers Outlawed",
         "ethicAdjective": "Spiritualist",
-        "description": "robotic automatons are a threat to not only our people's livelihoods but to the very fabric of society itself",
+        "description": "robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself",
         "picture": "organic_oppression",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_outlawed",
+        "supportingEthics": [ "materialist", "pacifist" ],
         "supportingFactions": [ "technologist", "prosperity"],
-        "detractingFactions": [ "traditionalist" ]
+        "detractingFactions": [ "traditionalist" ],
+        "potential": "NOR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist has_country_flag = synthetic_empire }"
     }
 ]

@@ -53,5 +53,14 @@
         "disabled": false, 
         "dumpContents": true, 
         "isBom": true
+    },
+    {
+        "name": "Edicts for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/passPolicy/edicts",
+        "outputDirectoryPath": "../common/edicts",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
     }
 ]

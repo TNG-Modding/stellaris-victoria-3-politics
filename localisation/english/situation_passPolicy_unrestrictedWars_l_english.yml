@@ -27,3 +27,6 @@
 
  faction_supportPolicy_unrestrictedWars.1.name:0 "Unrestricted Wars"
  faction_supportPolicy_unrestrictedWars.1.desc:0 "Overall Support: [Root.faction_support_unrestrictedWars]\n\nSupporters:\nimperialist: [Root.imperialist_support_unrestrictedWars]\nsupremacist: [Root.supremacist_support_unrestrictedWars]\n\nDetractors:\nprosperity: [Root.prosperity_support_unrestrictedWars]\nisolationist: [Root.isolationist_support_unrestrictedWars]\n"
+
+ edict_pass_unrestrictedWars:0 "Move to Pass §BUnrestricted Wars§!"
+ edict_pass_unrestrictedWars_desc:0 "We move that war is a dish best served frequently."

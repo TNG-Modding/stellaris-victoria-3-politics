@@ -280,15 +280,20 @@ situation_event = {
 	
 	is_triggered_only = yes
 	immediate = {
+		owner = {
+			set_policy = { 
+				policy = artificial_intelligence_policy 
+				option = ai_outlawed 
+				cooldown = yes 
+			}
+		}
 		destroy_situation = this
 	}
 	option = {
 		name = situation_passPolicy_roboticWorkersOutlawed.7.a
 
 		tooltip = {
-			root.owner = {
-				set_policy = { policy = artificial_intelligence_policy option = ai_outlawed cooldown = no }
-			}
+			
 		}
 	}
 }
