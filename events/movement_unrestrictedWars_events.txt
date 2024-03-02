@@ -1,0 +1,114 @@
+namespace = movement_unrestrictedWars
+
+country_event = {
+	id = movement_unrestrictedWars.1
+	
+	is_triggered_only = yes
+	# mean_time_to_happen = {years = 10}
+
+	hide_window = yes
+
+	pre_triggers = {
+		is_ai = no # Testing only
+	}
+	immediate = {
+		set_variable = { which = movement_unrestrictedWars_support value = 0}
+		set_variable = { which = movement_unrestrictedWars_radicalism value = 0}
+	
+		if = {
+			limit = {
+				NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }
+			}
+			country_event = { id = movement_unrestrictedWars.2 }
+		}
+	}
+}
+country_event = {
+	id = movement_unrestrictedWars.2
+	title = movement_unrestrictedWars.2.name
+	desc = movement_unrestrictedWars.2.desc
+	picture = GFX_evt_surrender
+	hide_window = no
+	is_triggered_only = yes
+
+	immediate = {
+		every_pop_faction = {
+			
+			if = {
+				limit = {
+					is_pop_faction_type = imperialist
+				}
+				export_trigger_value_to_variable = { trigger = support variable = unrestrictedWars_faction_support }
+				multiply_variable = {which = unrestrictedWars_faction_support value = 100}
+				# unrestrictedWars_faction_support is 0 to 100
+				log = "Movement unrestrictedWars imperialist support: [THIS.unrestrictedWars_faction_support]"
+				export_modifier_to_variable = { modifier = faction_approval variable = unrestrictedWars_faction_approval }
+				subtract_variable = {which = unrestrictedWars_faction_approval value = 0.5}
+				multiply_variable = {which = unrestrictedWars_faction_approval value = 2}
+				# unrestrictedWars_faction_approval is -1 to 1
+				
+				multiply_variable = { which = unrestrictedWars_faction_approval value=unrestrictedWars_faction_support }
+
+				ROOT = {
+					change_variable = { which = movement_unrestrictedWars_support value = PREV.unrestrictedWars_faction_support }
+					if = {
+						limit = { 
+							check_variable = { which = PREV.unrestrictedWars_faction_approval value < 0}
+						}
+						change_variable = { which = movement_unrestrictedWars_radicalism value = PREV.unrestrictedWars_faction_support }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					is_pop_faction_type = supremacist
+				}
+				export_trigger_value_to_variable = { trigger = support variable = unrestrictedWars_faction_support }
+				multiply_variable = {which = unrestrictedWars_faction_support value = 100}
+				# unrestrictedWars_faction_support is 0 to 100
+				log = "Movement unrestrictedWars supremacist support: [THIS.unrestrictedWars_faction_support]"
+				export_modifier_to_variable = { modifier = faction_approval variable = unrestrictedWars_faction_approval }
+				subtract_variable = {which = unrestrictedWars_faction_approval value = 0.5}
+				multiply_variable = {which = unrestrictedWars_faction_approval value = 2}
+				# unrestrictedWars_faction_approval is -1 to 1
+				
+				multiply_variable = { which = unrestrictedWars_faction_approval value=unrestrictedWars_faction_support }
+
+				ROOT = {
+					change_variable = { which = movement_unrestrictedWars_support value = PREV.unrestrictedWars_faction_support }
+					if = {
+						limit = { 
+							check_variable = { which = PREV.unrestrictedWars_faction_approval value < 0}
+						}
+						change_variable = { which = movement_unrestrictedWars_radicalism value = PREV.unrestrictedWars_faction_support }
+					}
+				}
+			}
+			
+			
+			# every_owned_pop = {
+			# 	limit = {
+			# 		OR = {
+			# 			
+			# 			has_ethic = ethic_militarist
+			# 			has_ethic = ethic_fanatic_militarist
+			# 			
+			# 			has_ethic = ethic_xenophobe
+			# 			has_ethic = ethic_fanatic_xenophobe
+			# 			
+			# 		}
+			# 	}
+			# 	export_modifier_to_variable = { modifier = pop_political_power variable = pop_support }
+			# 	export_modifier_to_variable = { modifier = pop_happiness variable = pop_approval }
+			# }
+		}
+
+		ceiling_variable = movement_unrestrictedWars_support
+		ceiling_variable = movement_unrestrictedWars_radicalism
+		log = "Movement unrestrictedWars support: [THIS.movement_unrestrictedWars_support] radicalism: [THIS.movement_unrestrictedWars_radicalism]"	
+	}
+	option = {
+		name = OK
+	}
+}
