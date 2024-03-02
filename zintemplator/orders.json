@@ -4,7 +4,7 @@
         "specFilePath": "./specs/policies.json",
         "templateDirectoryPath": "./templates/revolutions/situation_revolution",
         "outputDirectoryPath": "../common/situations",
-        "disabled": false, 
+        "disabled": true, 
         "dumpContents": true, 
         "isBom": false
     },
@@ -13,7 +13,7 @@
         "specFilePath": "./specs/policies.json",
         "templateDirectoryPath": "./templates/revolutions/situation_revolution_events",
         "outputDirectoryPath": "../events",
-        "disabled": false, 
+        "disabled": true, 
         "dumpContents": true, 
         "isBom": false
     },
@@ -22,7 +22,7 @@
         "specFilePath": "./specs/policies.json",
         "templateDirectoryPath": "./templates/revolutions/situation_revolution_localisation",
         "outputDirectoryPath": "../localisation/english",
-        "disabled": false, 
+        "disabled": true, 
         "dumpContents": true, 
         "isBom": true
     },

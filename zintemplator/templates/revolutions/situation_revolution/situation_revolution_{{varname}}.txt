@@ -1,25 +1,43 @@
 situation_revolution_{{varname}} = {
 	picture = GFX_evt_{{picture}}
-	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon_frame = GFX_situation_outcome_frame_green
 	complete_icon = GFX_situation_outcome_unknown
 	
 	on_progress_complete = {
 		custom_tooltip = situation_revolution_finisher_{{varname}}
 		hidden_effect = {
-			
+			# create_country
+			# create_fleet
+			# set_capital
+			# declare_war
+			# set_relation_flag
+			# establish_communications
+			# play_sound
+			#set_origin
+			#create_rebels
+			# every_planet_within_border = {
+				
+			# }
+			# create_rebels = {
+			# 	name = random
+			# 	authority = random
+			# 	civics = random
+			# 	species = <target>
+			# 	ethos = {{rebellionEthics}}
+			# }
 		}
 	}
 
 	stages = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
-			icon_background = GFX_situation_stage_frame_blue
+			icon_background = GFX_situation_stage_frame_green
 			end = 25
 			custom_tooltip = stage_unknown_effects
 		}
 		stage_2 = {
 			icon = GFX_situation_stage_2
-			icon_background = GFX_situation_stage_frame_blue
+			icon_background = GFX_situation_stage_frame_green
 			end = 80
 			on_first_enter = {
 				# situation_event = { id = situation.155 }
@@ -28,7 +46,7 @@ situation_revolution_{{varname}} = {
 		}
 		stage_3 = {
 			icon = GFX_situation_stage_3
-			icon_background = GFX_situation_stage_frame_blue
+			icon_background = GFX_situation_stage_frame_green
 			end = 100
 			on_first_enter = {
 				# situation_event = { id = situation.165 }
@@ -39,7 +57,7 @@ situation_revolution_{{varname}} = {
 	approach = {
 		name = revolution_approach.1
 		icon = GFX_situation_approach_shrug
-		icon_background = GFX_situation_approach_bg_blue
+		icon_background = GFX_situation_approach_bg_green
 		on_select = {
 			custom_tooltip = approach_outcome_tooltip
 		}
