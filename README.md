@@ -53,3 +53,13 @@ Create a new branch for your changes, and submit a pull request to master. You c
 The easiest way to create new content for the mod is to expand existing content in the specs files. For instance, copy a json blob about defensive wars and turn it into a different policy.
 
 The [README of the Intemplator tool](https://github.com/TNG-Modding/paradox-gamefiles-templatemaker) has a guide to using it.
+
+# Reference
+
+https://stellaris.paradoxwikis.com/Effects
+https://stellaris.paradoxwikis.com/Event_modding
+https://stellaris.paradoxwikis.com/Conditions
+https://stellaris.paradoxwikis.com/Modifiers
+https://stellaris.paradoxwikis.com/Scopes
+https://stellaris.paradoxwikis.com/Variables
+https://vic3.paradoxwikis.com/Political_movement
