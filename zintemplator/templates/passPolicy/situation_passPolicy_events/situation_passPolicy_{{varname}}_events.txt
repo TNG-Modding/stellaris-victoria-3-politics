@@ -9,34 +9,18 @@ country_event = {
 		sound = advisor_notification_planet_in_revolt
 		sound_is_advisor = yes
 	}
-	
-	location = root
+	hide_window = no
 	is_triggered_only = yes
-	situation = event_target:new_situation
-
-	immediate = {
-		owner = {
-			start_situation = {
-				type = situation_passPolicy_{{varname}}
-				target = root
-				effect = {
-					save_event_target_as = new_situation
-				}
-			}
-		}
-	}
 
 	option = {
 		name = passPolicy_ack
-
-		tooltip = {
-			owner = {
-				start_situation = {
-					type = situation_passPolicy_{{varname}}
-					target = root
-				}
-			}
+		start_situation = {
+			type = situation_passPolicy_{{varname}}
+			target = root
 		}
+	}
+	option = {
+		name = passPolicy_nevermind
 	}
 }
 

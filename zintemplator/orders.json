@@ -73,6 +73,15 @@
         "isBom": false
     },
     {
+        "name": "On Action for Movements",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/movements/movement_on_actions",
+        "outputDirectoryPath": "../common/on_actions",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
         "name": "Localisation for Movements",
         "specFilePath": "./specs/policies.json",
         "templateDirectoryPath": "./templates/movements/movement_localisation",

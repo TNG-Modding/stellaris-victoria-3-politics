@@ -1,3 +1,3 @@
 l_english:
  movement_{{varname}}.2.name:0 "Movement for {{displayName}}"
- movement_{{varname}}.2.desc:0 "Support: [THIS.movement_{{varname}}_support]\nRadicalism: [THIS.movement_{{varname}}_radicalism]"
+ movement_{{varname}}.2.desc:0 "Support: [This.movement_{{varname}}_support]\nRadicalism: [This.movement_{{varname}}_radicalism]"

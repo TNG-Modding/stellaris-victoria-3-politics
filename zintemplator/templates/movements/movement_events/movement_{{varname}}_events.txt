@@ -1,37 +1,67 @@
 namespace = movement_{{varname}}
 
-country_event = {
+# Called on monthly pulse
+event = {
 	id = movement_{{varname}}.1
 	
 	is_triggered_only = yes
-	# mean_time_to_happen = {years = 10}
-
 	hide_window = yes
 
-	pre_triggers = {
-		is_ai = no # Testing only
-	}
 	immediate = {
-		set_variable = { which = movement_{{varname}}_support value = 0}
-		set_variable = { which = movement_{{varname}}_radicalism value = 0}
-	
-		if = {
-			limit = {
-				{{potential}}
+		every_playable_country = {
+			set_variable = { which = movement_{{varname}}_support value = 0}
+			set_variable = { which = movement_{{varname}}_radicalism value = 0}
+		
+			if = {
+				limit = {
+					{{potential}}
+					NOT = { has_policy_flag = {{policyOption}} }
+				}
+				country_event = { id = movement_{{varname}}.2 }
 			}
-			country_event = { id = movement_{{varname}}.2 }
 		}
 	}
 }
 country_event = {
 	id = movement_{{varname}}.2
-	title = movement_{{varname}}.2.name
-	desc = movement_{{varname}}.2.desc
-	picture = GFX_evt_{{picture}}
-	hide_window = no
+	
+	# title = movement_{{varname}}.2.name
+	# desc = movement_{{varname}}.2.desc
+	# picture = GFX_evt_{{picture}}
+	# option = {
+	# 	name = OK
+	# }
+
+	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
+		set_variable = { which = movement_{{varname}}_faction_support value = 0 }
+		set_variable = { which = movement_{{varname}}_faction_radicalism value = 0 }
+		set_variable = { which = movement_{{varname}}_numerical_support value = 0 }
+
+		if = {
+			limit = {
+				{{potential}}
+			}
+			country_event = { id = movement_{{varname}}.3 }
+			country_event = { id = movement_{{varname}}.4 }
+			log = "Faction Support: [This.movement_{{varname}}_faction_support] Faction Radicalism: [This.movement_{{varname}}_faction_radicalism] Numerical Support: [This.movement_{{varname}}_numerical_support]"
+		}		
+	}
+}
+
+# Calculate support from factions
+# Outputs:
+# - country.movement_{{varname}}_faction_support
+# - country.movement_{{varname}}_faction_radicalism
+country_event = {
+	id = movement_{{varname}}.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
 		every_pop_faction = {
 			{% for supportingFaction in supportingFactions %}
 			if = {
@@ -41,7 +71,7 @@ country_event = {
 				export_trigger_value_to_variable = { trigger = support variable = {{varname}}_faction_support }
 				multiply_variable = {which = {{varname}}_faction_support value = 100}
 				# {{varname}}_faction_support is 0 to 100
-				log = "Movement {{varname}} {{supportingFaction}} support: [THIS.{{varname}}_faction_support]"
+				
 				export_modifier_to_variable = { modifier = faction_approval variable = {{varname}}_faction_approval }
 				subtract_variable = {which = {{varname}}_faction_approval value = 0.5}
 				multiply_variable = {which = {{varname}}_faction_approval value = 2}
@@ -50,36 +80,57 @@ country_event = {
 				multiply_variable = { which = {{varname}}_faction_approval value={{varname}}_faction_support }
 
 				ROOT = {
-					change_variable = { which = movement_{{varname}}_support value = PREV.{{varname}}_faction_support }
+					change_variable = { which = movement_{{varname}}_faction_support value = PREV.{{varname}}_faction_support }
 					if = {
 						limit = { 
 							check_variable = { which = PREV.{{varname}}_faction_approval value < 0}
 						}
-						change_variable = { which = movement_{{varname}}_radicalism value = PREV.{{varname}}_faction_support }
+						change_variable = { which = movement_{{varname}}_faction_radicalism value = PREV.{{varname}}_faction_support }
 					}
 				}
 			}
 			{% endfor %}
-			
-			# every_owned_pop = {
-			# 	limit = {
-			# 		OR = {
-			# 			{% for supportingEthic in supportingEthics%}
-			# 			has_ethic = ethic_{{supportingEthic}}
-			# 			has_ethic = ethic_fanatic_{{supportingEthic}}
-			# 			{% endfor %}
-			# 		}
-			# 	}
-			# 	export_modifier_to_variable = { modifier = pop_political_power variable = pop_support }
-			# 	export_modifier_to_variable = { modifier = pop_happiness variable = pop_approval }
-			# }
 		}
-
-		ceiling_variable = movement_{{varname}}_support
-		ceiling_variable = movement_{{varname}}_radicalism
-		log = "Movement {{varname}} support: [THIS.movement_{{varname}}_support] radicalism: [THIS.movement_{{varname}}_radicalism]"	
 	}
-	option = {
-		name = OK
+}
+
+# Calculate support based on numbers
+# Outputs:
+# - country.movement_{{varname}}_numerical_support
+country_event = {
+	id = movement_{{varname}}.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { which = {{varname}}_population value = 0}
+		set_variable = { which = {{varname}}_supporting_population value = 0}
+		
+		every_owned_pop = {
+			ROOT = {
+				change_variable = { which = {{varname}}_population value = 1}
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						{% for supportingEthic in supportingEthics%}
+						has_ethic = ethic_{{supportingEthic}}
+						has_ethic = ethic_fanatic_{{supportingEthic}}
+						{% endfor %}
+					}
+				}
+				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 numerical support whereas his happy cousin contributes none.
+				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+				set_variable = {which = pop_{{varname}}_support value = 1}
+				subtract_variable = { which = pop_{{varname}}_support value = pop_happiness }
+				ROOT = {
+					change_variable = { which = {{varname}}_supporting_population value = PREV.pop_{{varname}}_support }
+				}
+			}
+		}
+		
+		set_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_supporting_population}
+		divide_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_population }
 	}
 }

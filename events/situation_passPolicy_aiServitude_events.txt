@@ -1,9 +1,9 @@
-namespace = situation_passPolicy_unrestrictedWars
+namespace = situation_passPolicy_aiServitude
 country_event = {
-	id = situation_passPolicy_unrestrictedWars.1
-	title = situation_passPolicy_unrestrictedWars.1.name
-	desc = situation_passPolicy_unrestrictedWars.1.desc
-	picture = GFX_evt_surrender
+	id = situation_passPolicy_aiServitude.1
+	title = situation_passPolicy_aiServitude.1.name
+	desc = situation_passPolicy_aiServitude.1.desc
+	picture = GFX_evt_organic_oppression
 	
 	show_sound = {
 		sound = advisor_notification_planet_in_revolt
@@ -15,7 +15,7 @@ country_event = {
 	option = {
 		name = passPolicy_ack
 		start_situation = {
-			type = situation_passPolicy_unrestrictedWars
+			type = situation_passPolicy_aiServitude
 			target = root
 		}
 	}
@@ -26,7 +26,7 @@ country_event = {
 
 # Determine advance fail or stall
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.2	
+	id = situation_passPolicy_aiServitude.2	
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -63,48 +63,26 @@ situation_event = {
 				
 				if = {
 					limit = {
-						is_pop_faction_type = imperialist
+						is_pop_faction_type = technologist
 					}
-					export_trigger_value_to_variable = { trigger = support variable = imperialist_support }
-					multiply_variable = {which = imperialist_support value = 100}
+					export_trigger_value_to_variable = { trigger = support variable = technologist_support }
+					multiply_variable = {which = technologist_support value = 100}
 					ROOT = {
-						change_variable = { which = faction_support value = PREV.imperialist_support }		
+						change_variable = { which = faction_support value = PREV.technologist_support }		
 					}
 				}
 				
 				if = {
 					limit = {
-						is_pop_faction_type = supremacist
+						is_pop_faction_type = traditionalist
 					}
-					export_trigger_value_to_variable = { trigger = support variable = supremacist_support }
-					multiply_variable = {which = supremacist_support value = 100}
+					export_trigger_value_to_variable = { trigger = support variable = traditionalist_support }
+					multiply_variable = {which = traditionalist_support value = 100}
 					ROOT = {
-						change_variable = { which = faction_support value = PREV.supremacist_support }		
+						change_variable = { which = faction_support value = PREV.traditionalist_support }		
 					}
 				}
 				
-				
-				if = {
-					limit = {
-						is_pop_faction_type = prosperity
-					}
-					export_trigger_value_to_variable = { trigger = support variable = prosperity_support }
-					multiply_variable = {which = prosperity_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_detraction value = PREV.prosperity_support }	
-					}
-				}
-				
-				if = {
-					limit = {
-						is_pop_faction_type = isolationist
-					}
-					export_trigger_value_to_variable = { trigger = support variable = isolationist_support }
-					multiply_variable = {which = isolationist_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_detraction value = PREV.isolationist_support }	
-					}
-				}
 				
 			}
 		}
@@ -113,7 +91,7 @@ situation_event = {
 		subtract_variable = { which = faction_ambivalence value = faction_support }
 		subtract_variable = { which = faction_ambivalence value = faction_detraction }
 		
-		# log = "PRE MATH: unrestrictedWars support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
+		# log = "PRE MATH: aiServitude support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
 
 		# If swayed is positive, give it support, if negative, give it to detraction
 		
@@ -169,19 +147,19 @@ situation_event = {
 		ceiling_variable = faction_support
 		ceiling_variable = faction_detraction
 		ceiling_variable = faction_ambivalence
-		# log = "POST MATH: unrestrictedWars support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
+		# log = "POST MATH: aiServitude support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
 	}
 }
 # Decide whether or not to roll
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.3
+	id = situation_passPolicy_aiServitude.3
 	is_triggered_only = yes
 	hide_window = yes
 	
 	immediate = {
 		# Update all values
 		situation_event = {
-			id = situation_passPolicy_unrestrictedWars.2	
+			id = situation_passPolicy_aiServitude.2	
 		}
 		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
 		# log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
@@ -190,7 +168,7 @@ situation_event = {
 				check_variable = { which = advancement_roll value < faction_support  }
 			}
 			# Advance!
-			situation_event = { id = situation_passPolicy_unrestrictedWars.4}
+			situation_event = { id = situation_passPolicy_aiServitude.4}
 		}
 		else = {
 			subtract_variable = { which = advancement_roll value = faction_support }
@@ -199,11 +177,11 @@ situation_event = {
 					check_variable = { which = advancement_roll value < faction_detraction }
 				}
 				# Fail!
-				situation_event = {id = situation_passPolicy_unrestrictedWars.5}
+				situation_event = {id = situation_passPolicy_aiServitude.5}
 			}
 			else = {
 				# Ambivalence!
-				situation_event = {id = situation_passPolicy_unrestrictedWars.6}
+				situation_event = {id = situation_passPolicy_aiServitude.6}
 			}
 		}	
 	}
@@ -211,33 +189,33 @@ situation_event = {
 
 # Advance
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.4
+	id = situation_passPolicy_aiServitude.4
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		# log = "unrestrictedWars success!"
+		# log = "aiServitude success!"
 		add_situation_progress = 34
 	}
 }
 # Fail
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.5
+	id = situation_passPolicy_aiServitude.5
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
 		change_variable = { which = setback_count value = 1 }
-		# log = "unrestrictedWars fail! [this.setback_count]/3"
+		# log = "aiServitude fail! [this.setback_count]/3"
 		if = {
 			limit = { check_variable = { which = setback_count value = 3}}
-			# log = "unrestrictedWars failed due to setbacks [this.setback_count]/3!"
-			situation_event = { id = situation_passPolicy_unrestrictedWars.9}
+			# log = "aiServitude failed due to setbacks [this.setback_count]/3!"
+			situation_event = { id = situation_passPolicy_aiServitude.9}
 		}
 	}
 }
 
 # Ambivalent
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.6
+	id = situation_passPolicy_aiServitude.6
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
@@ -250,49 +228,49 @@ situation_event = {
 				limit = {
 					check_variable = { which = sway_roll value > 50 }
 				}
-				# log = "unrestrictedWars ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
+				# log = "aiServitude ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
 				change_variable = { which = swayed_to_support value = 10}
 			}
 			else = {
-				# log = "unrestrictedWars ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
+				# log = "aiServitude ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
 				change_variable = { which = swayed_to_detract value = 10}
 			}
-			situation_event = {id = situation_passPolicy_unrestrictedWars.2 }
+			situation_event = {id = situation_passPolicy_aiServitude.2 }
 		}
 		else = {
-			# log = "unrestrictedWars ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
+			# log = "aiServitude ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
 		}
 	}
 }
 
 # Success
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.7
-	title = situation_passPolicy_unrestrictedWars.7.name
-	desc = situation_passPolicy_unrestrictedWars.7.desc
-	picture = GFX_evt_surrender
+	id = situation_passPolicy_aiServitude.7
+	title = situation_passPolicy_aiServitude.7.name
+	desc = situation_passPolicy_aiServitude.7.desc
+	picture = GFX_evt_organic_oppression
 	
 	is_triggered_only = yes
 	immediate = {
 		owner = {
 			set_policy = { 
-				policy = war_philosophy 
-				option = unrestricted_wars 
+				policy = artificial_intelligence_policy 
+				option = ai_servitude 
 				cooldown = yes 
 			}
 		}
 		destroy_situation = this
 	}
 	option = {
-		name = situation_passPolicy_unrestrictedWars.7.a
+		name = situation_passPolicy_aiServitude.7.a
 	}
 }
 # Failure due to abort
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.8
-	title = situation_passPolicy_unrestrictedWars.8.name
-	desc = situation_passPolicy_unrestrictedWars.8.desc
-	picture = GFX_evt_surrender
+	id = situation_passPolicy_aiServitude.8
+	title = situation_passPolicy_aiServitude.8.name
+	desc = situation_passPolicy_aiServitude.8.desc
+	picture = GFX_evt_organic_oppression
 	
 	is_triggered_only = yes
 
@@ -300,15 +278,15 @@ situation_event = {
 		destroy_situation = this
 	}
 	option = {
-		name = situation_passPolicy_unrestrictedWars.8.a
+		name = situation_passPolicy_aiServitude.8.a
 	}
 }
 # Failure due to setbacks
 situation_event = {
-	id = situation_passPolicy_unrestrictedWars.9
-	title = situation_passPolicy_unrestrictedWars.9.name
-	desc = situation_passPolicy_unrestrictedWars.9.desc
-	picture = GFX_evt_surrender
+	id = situation_passPolicy_aiServitude.9
+	title = situation_passPolicy_aiServitude.9.name
+	desc = situation_passPolicy_aiServitude.9.desc
+	picture = GFX_evt_organic_oppression
 	
 	is_triggered_only = yes
 	immediate = {
@@ -316,6 +294,6 @@ situation_event = {
 	}
 	
 	option = {
-		name = situation_passPolicy_unrestrictedWars.9.a
+		name = situation_passPolicy_aiServitude.9.a
 	}
 }

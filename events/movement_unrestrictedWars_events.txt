@@ -1,37 +1,67 @@
 namespace = movement_unrestrictedWars
 
-country_event = {
+# Called on monthly pulse
+event = {
 	id = movement_unrestrictedWars.1
 	
 	is_triggered_only = yes
-	# mean_time_to_happen = {years = 10}
-
 	hide_window = yes
 
-	pre_triggers = {
-		is_ai = no # Testing only
-	}
 	immediate = {
-		set_variable = { which = movement_unrestrictedWars_support value = 0}
-		set_variable = { which = movement_unrestrictedWars_radicalism value = 0}
-	
-		if = {
-			limit = {
-				NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }
+		every_playable_country = {
+			set_variable = { which = movement_unrestrictedWars_support value = 0}
+			set_variable = { which = movement_unrestrictedWars_radicalism value = 0}
+		
+			if = {
+				limit = {
+					NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }
+					NOT = { has_policy_flag = unrestricted_wars }
+				}
+				country_event = { id = movement_unrestrictedWars.2 }
 			}
-			country_event = { id = movement_unrestrictedWars.2 }
 		}
 	}
 }
 country_event = {
 	id = movement_unrestrictedWars.2
-	title = movement_unrestrictedWars.2.name
-	desc = movement_unrestrictedWars.2.desc
-	picture = GFX_evt_surrender
-	hide_window = no
+	
+	# title = movement_unrestrictedWars.2.name
+	# desc = movement_unrestrictedWars.2.desc
+	# picture = GFX_evt_surrender
+	# option = {
+	# 	name = OK
+	# }
+
+	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
+		set_variable = { which = movement_unrestrictedWars_faction_support value = 0 }
+		set_variable = { which = movement_unrestrictedWars_faction_radicalism value = 0 }
+		set_variable = { which = movement_unrestrictedWars_numerical_support value = 0 }
+
+		if = {
+			limit = {
+				NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }
+			}
+			country_event = { id = movement_unrestrictedWars.3 }
+			country_event = { id = movement_unrestrictedWars.4 }
+			log = "Faction Support: [This.movement_unrestrictedWars_faction_support] Faction Radicalism: [This.movement_unrestrictedWars_faction_radicalism] Numerical Support: [This.movement_unrestrictedWars_numerical_support]"
+		}		
+	}
+}
+
+# Calculate support from factions
+# Outputs:
+# - country.movement_unrestrictedWars_faction_support
+# - country.movement_unrestrictedWars_faction_radicalism
+country_event = {
+	id = movement_unrestrictedWars.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
 		every_pop_faction = {
 			
 			if = {
@@ -41,7 +71,7 @@ country_event = {
 				export_trigger_value_to_variable = { trigger = support variable = unrestrictedWars_faction_support }
 				multiply_variable = {which = unrestrictedWars_faction_support value = 100}
 				# unrestrictedWars_faction_support is 0 to 100
-				log = "Movement unrestrictedWars imperialist support: [THIS.unrestrictedWars_faction_support]"
+				
 				export_modifier_to_variable = { modifier = faction_approval variable = unrestrictedWars_faction_approval }
 				subtract_variable = {which = unrestrictedWars_faction_approval value = 0.5}
 				multiply_variable = {which = unrestrictedWars_faction_approval value = 2}
@@ -50,12 +80,12 @@ country_event = {
 				multiply_variable = { which = unrestrictedWars_faction_approval value=unrestrictedWars_faction_support }
 
 				ROOT = {
-					change_variable = { which = movement_unrestrictedWars_support value = PREV.unrestrictedWars_faction_support }
+					change_variable = { which = movement_unrestrictedWars_faction_support value = PREV.unrestrictedWars_faction_support }
 					if = {
 						limit = { 
 							check_variable = { which = PREV.unrestrictedWars_faction_approval value < 0}
 						}
-						change_variable = { which = movement_unrestrictedWars_radicalism value = PREV.unrestrictedWars_faction_support }
+						change_variable = { which = movement_unrestrictedWars_faction_radicalism value = PREV.unrestrictedWars_faction_support }
 					}
 				}
 			}
@@ -67,7 +97,7 @@ country_event = {
 				export_trigger_value_to_variable = { trigger = support variable = unrestrictedWars_faction_support }
 				multiply_variable = {which = unrestrictedWars_faction_support value = 100}
 				# unrestrictedWars_faction_support is 0 to 100
-				log = "Movement unrestrictedWars supremacist support: [THIS.unrestrictedWars_faction_support]"
+				
 				export_modifier_to_variable = { modifier = faction_approval variable = unrestrictedWars_faction_approval }
 				subtract_variable = {which = unrestrictedWars_faction_approval value = 0.5}
 				multiply_variable = {which = unrestrictedWars_faction_approval value = 2}
@@ -76,39 +106,60 @@ country_event = {
 				multiply_variable = { which = unrestrictedWars_faction_approval value=unrestrictedWars_faction_support }
 
 				ROOT = {
-					change_variable = { which = movement_unrestrictedWars_support value = PREV.unrestrictedWars_faction_support }
+					change_variable = { which = movement_unrestrictedWars_faction_support value = PREV.unrestrictedWars_faction_support }
 					if = {
 						limit = { 
 							check_variable = { which = PREV.unrestrictedWars_faction_approval value < 0}
 						}
-						change_variable = { which = movement_unrestrictedWars_radicalism value = PREV.unrestrictedWars_faction_support }
+						change_variable = { which = movement_unrestrictedWars_faction_radicalism value = PREV.unrestrictedWars_faction_support }
 					}
 				}
 			}
 			
-			
-			# every_owned_pop = {
-			# 	limit = {
-			# 		OR = {
-			# 			
-			# 			has_ethic = ethic_militarist
-			# 			has_ethic = ethic_fanatic_militarist
-			# 			
-			# 			has_ethic = ethic_xenophobe
-			# 			has_ethic = ethic_fanatic_xenophobe
-			# 			
-			# 		}
-			# 	}
-			# 	export_modifier_to_variable = { modifier = pop_political_power variable = pop_support }
-			# 	export_modifier_to_variable = { modifier = pop_happiness variable = pop_approval }
-			# }
 		}
-
-		ceiling_variable = movement_unrestrictedWars_support
-		ceiling_variable = movement_unrestrictedWars_radicalism
-		log = "Movement unrestrictedWars support: [THIS.movement_unrestrictedWars_support] radicalism: [THIS.movement_unrestrictedWars_radicalism]"	
 	}
-	option = {
-		name = OK
+}
+
+# Calculate support based on numbers
+# Outputs:
+# - country.movement_unrestrictedWars_numerical_support
+country_event = {
+	id = movement_unrestrictedWars.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { which = unrestrictedWars_population value = 0}
+		set_variable = { which = unrestrictedWars_supporting_population value = 0}
+		
+		every_owned_pop = {
+			ROOT = {
+				change_variable = { which = unrestrictedWars_population value = 1}
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+						
+						has_ethic = ethic_xenophobe
+						has_ethic = ethic_fanatic_xenophobe
+						
+					}
+				}
+				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 numerical support whereas his happy cousin contributes none.
+				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+				set_variable = {which = pop_unrestrictedWars_support value = 1}
+				subtract_variable = { which = pop_unrestrictedWars_support value = pop_happiness }
+				ROOT = {
+					change_variable = { which = unrestrictedWars_supporting_population value = PREV.pop_unrestrictedWars_support }
+				}
+			}
+		}
+		
+		set_variable = { which = movement_unrestrictedWars_numerical_support value = unrestrictedWars_supporting_population}
+		divide_variable = { which = movement_unrestrictedWars_numerical_support value = unrestrictedWars_population }
 	}
 }

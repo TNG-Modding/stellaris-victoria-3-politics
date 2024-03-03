@@ -4,14 +4,25 @@ situation_passPolicy_unrestrictedWars = {
 	complete_icon = GFX_situation_outcome_positive
 
 	on_start = { 
+		OWNER = {
+			set_country_flag = enacting_policy
+		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_unrestrictedWars.2 } 
 	}
 
 	on_progress_complete = {
+		OWNER = {
+			remove_country_flag = enacting_policy
+		}
 		custom_tooltip = situation_passPolicy_finisher_unrestrictedWars
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_unrestrictedWars.7 }
+		}
+	}
+	on_abort = {
+		OWNER = {
+			remove_country_flag = enacting_policy
 		}
 	}
 

@@ -8,7 +8,18 @@ pass_liberationWars = {
 	}
 
 	allow = {
-		
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_liberationWars_faction_support
+			}
+			check_variable = { which = movement_liberationWars_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = war_philosophy
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_liberationWars.1 }
