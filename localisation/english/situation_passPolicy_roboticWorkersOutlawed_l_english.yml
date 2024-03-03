@@ -26,7 +26,7 @@
  situation_passPolicy_roboticWorkersOutlawed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
 
  faction_supportPolicy_roboticWorkersOutlawed.1.name:0 "Robotic Workers Outlawed"
- faction_supportPolicy_roboticWorkersOutlawed.1.desc:0 "Overall Support: [Root.faction_support_roboticWorkersOutlawed]\n\nSupporters:\ntechnologist: [Root.technologist_support_roboticWorkersOutlawed]\nprosperity: [Root.prosperity_support_roboticWorkersOutlawed]\n\nDetractors:\ntraditionalist: [Root.traditionalist_support_roboticWorkersOutlawed]\n"
+ faction_supportPolicy_roboticWorkersOutlawed.1.desc:0 "Overall Support: [Root.faction_support_roboticWorkersOutlawed]\n\nSupporters:\ntraditionalist: [Root.traditionalist_support_roboticWorkersOutlawed]\n\nDetractors:\ntechnologist: [Root.technologist_support_roboticWorkersOutlawed]\n"
 
- edict_pass_roboticWorkersOutlawed:0 "Move to Pass §BRobotic Workers Outlawed§!"
+ edict_pass_roboticWorkersOutlawed:0 "Pass §BRobotic Workers Outlawed§!"
  edict_pass_roboticWorkersOutlawed_desc:0 "We move that robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself."

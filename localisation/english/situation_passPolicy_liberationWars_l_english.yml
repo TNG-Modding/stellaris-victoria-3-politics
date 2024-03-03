@@ -28,5 +28,5 @@
  faction_supportPolicy_liberationWars.1.name:0 "Liberation Wars Only"
  faction_supportPolicy_liberationWars.1.desc:0 "Overall Support: [Root.faction_support_liberationWars]\n\nSupporters:\nimperialist: [Root.imperialist_support_liberationWars]\nxenoist: [Root.xenoist_support_liberationWars]\n\nDetractors:\nprosperity: [Root.prosperity_support_liberationWars]\nisolationist: [Root.isolationist_support_liberationWars]\nsupremacist: [Root.supremacist_support_liberationWars]\n"
 
- edict_pass_liberationWars:0 "Move to Pass §BLiberation Wars Only§!"
+ edict_pass_liberationWars:0 "Pass §BLiberation Wars Only§!"
  edict_pass_liberationWars_desc:0 "We move that we must further our own interests, even when they run contrary to the interests of others."
