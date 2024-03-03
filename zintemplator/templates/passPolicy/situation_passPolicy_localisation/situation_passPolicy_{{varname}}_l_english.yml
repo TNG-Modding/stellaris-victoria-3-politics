@@ -20,7 +20,7 @@ l_english:
  
  # Event
  situation_passPolicy_{{varname}}.1.name:0 "Legislation for {{displayName}}"
- situation_passPolicy_{{varname}}.1.desc:0 "We move that {{description}}."
+ situation_passPolicy_{{varname}}.1.desc:0 "We move that {{description}}.\n\nSupport: §G[This.movement_{{varname}}_faction_support]%§!"
 
  situation_passPolicy_{{varname}}.2.name:0 "{{displayName}} Support"
  situation_passPolicy_{{varname}}.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"

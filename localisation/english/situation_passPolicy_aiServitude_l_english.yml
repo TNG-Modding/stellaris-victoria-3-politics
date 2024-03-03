@@ -20,7 +20,7 @@
  
  # Event
  situation_passPolicy_aiServitude.1.name:0 "Legislation for AI Servitude"
- situation_passPolicy_aiServitude.1.desc:0 "We move that synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim."
+ situation_passPolicy_aiServitude.1.desc:0 "We move that synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim.\n\nSupport: §G[This.movement_aiServitude_faction_support]%§!"
 
  situation_passPolicy_aiServitude.2.name:0 "AI Servitude Support"
  situation_passPolicy_aiServitude.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"

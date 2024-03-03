@@ -20,7 +20,7 @@
  
  # Event
  situation_passPolicy_liberationWars.1.name:0 "Legislation for Liberation Wars Only"
- situation_passPolicy_liberationWars.1.desc:0 "We move that we must further our own interests, even when they run contrary to the interests of others."
+ situation_passPolicy_liberationWars.1.desc:0 "We move that we must further our own interests, even when they run contrary to the interests of others.\n\nSupport: §G[This.movement_liberationWars_faction_support]%§!"
 
  situation_passPolicy_liberationWars.2.name:0 "Liberation Wars Only Support"
  situation_passPolicy_liberationWars.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"

@@ -20,7 +20,7 @@
  
  # Event
  situation_passPolicy_defensiveWarsOnly.1.name:0 "Legislation for Defensive Wars Only"
- situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation."
+ situation_passPolicy_defensiveWarsOnly.1.desc:0 "We move that violence should be the last resort to ensure the integrity of our nation.\n\nSupport: §G[This.movement_defensiveWarsOnly_faction_support]%§!"
 
  situation_passPolicy_defensiveWarsOnly.2.name:0 "Defensive Wars Only Support"
  situation_passPolicy_defensiveWarsOnly.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
