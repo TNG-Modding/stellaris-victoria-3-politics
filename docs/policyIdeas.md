@@ -13,3 +13,9 @@
 - Fleet Doctrine
 - Rights of Assembly
 - Policing
+
+- Identification based on home star is outdated
+- Currency
+- Interstellar trade
+- Market control
+- Private property

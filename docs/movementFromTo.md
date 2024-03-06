@@ -1,0 +1,1 @@
+You can use intemplator to generate templates
