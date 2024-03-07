@@ -490,7 +490,7 @@ situation_event = {
 						}
 					}	
 					{% for supportingEthic in supportingEthics %}
-					shift_ethic = {supportingEthic}
+					shift_ethic = {{supportingEthic}}
 					{% endfor %}
 					
 					change_government = {

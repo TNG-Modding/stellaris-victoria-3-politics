@@ -519,9 +519,9 @@ situation_event = {
 						}
 					}	
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = authoritarian
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = xenophile
 					
 					
 					change_government = {
@@ -556,9 +556,6 @@ situation_event = {
 	}
 	option = {
 		name = movement_refugeesAllowed.6.join
-		# OWNER = {
-		# 	set_player = event_target:rebel_empire
-		# }
 		event_target:rebel_empire = {
 			set_player = root.owner
 		}

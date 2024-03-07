@@ -548,11 +548,11 @@ situation_event = {
 						}
 					}	
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = xenophile
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = pacifist
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = egalitarian
 					
 					
 					change_government = {
@@ -587,9 +587,6 @@ situation_event = {
 	}
 	option = {
 		name = movement_purgeAllowed.6.join
-		# OWNER = {
-		# 	set_player = event_target:rebel_empire
-		# }
 		event_target:rebel_empire = {
 			set_player = root.owner
 		}

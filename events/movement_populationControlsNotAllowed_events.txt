@@ -519,9 +519,9 @@ situation_event = {
 						}
 					}	
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = egalitarian
 					
-					shift_ethic = {supportingEthic}
+					shift_ethic = militarist
 					
 					
 					change_government = {
@@ -556,9 +556,6 @@ situation_event = {
 	}
 	option = {
 		name = movement_populationControlsNotAllowed.6.join
-		# OWNER = {
-		# 	set_player = event_target:rebel_empire
-		# }
 		event_target:rebel_empire = {
 			set_player = root.owner
 		}
