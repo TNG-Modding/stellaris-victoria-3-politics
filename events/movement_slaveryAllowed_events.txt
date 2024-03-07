@@ -548,18 +548,13 @@ situation_event = {
 						}
 					}
 					
-					create_fleet_from_naval_cap = 0.8
+					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
 						name = "Civil War over Slavery Allowed"
 						attacker_war_goal = wg_conquest
 					}
-					
 				}
-				
-		
-				
-				
 			}
 		}
 		destroy_situation = this
@@ -569,8 +564,11 @@ situation_event = {
 	}
 	option = {
 		name = movement_slaveryAllowed.6.join
-		OWNER = {
-			set_player = event_target:rebel_empire
+		# OWNER = {
+		# 	set_player = event_target:rebel_empire
+		# }
+		event_target:rebel_empire = {
+			set_player = root.owner
 		}
 	}
 }

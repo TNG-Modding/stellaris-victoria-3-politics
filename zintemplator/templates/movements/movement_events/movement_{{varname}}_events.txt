@@ -525,8 +525,8 @@ situation_event = {
 	}
 	option = {
 		name = movement_{{varname}}.6.join
-		OWNER = {
-			set_player = event_target:rebel_empire
+		event_target:rebel_empire = {
+			set_player = root.owner
 		}
 	}
 }

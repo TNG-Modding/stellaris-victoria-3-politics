@@ -28,6 +28,14 @@ situation_movement_aiServitude = {
 			situation_progress > 0
 			add = -1
 		}
+		modifier = {
+			desc = movement_satisfied_with_passing_law
+			OWNER = {
+				has_country_flag = enacting_aiServitude
+			}
+			situation_progress > 0
+			add = -1
+		}
 		
 	}
 
