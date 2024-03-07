@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_slaveryAllowed
+	text = {
+		localization_key = movement_slaveryAllowed_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_slaveryAllowed_radicalism value > 25 }
+			has_country_flag = enacting_slaveryAllowed
+		}
+	}
+	text = {
+		localization_key = movement_slaveryAllowed_revolution
+		trigger = {
+			check_variable = { which = movement_slaveryAllowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_slaveryAllowed}
+		}
+	}
+	text = {
+		localization_key = movement_slaveryAllowed_preserve
+		trigger = {
+			check_variable = { which = movement_slaveryAllowed_radicalism value < 25 }
+			has_country_flag = enacting_slaveryAllowed
+		}
+	}
+	text = {
+		localization_key = movement_slaveryAllowed
+		trigger = {
+			check_variable = { which = movement_slaveryAllowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_slaveryAllowed}
+		}
+	}
+}

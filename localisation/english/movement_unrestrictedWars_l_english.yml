@@ -1,3 +1,24 @@
 ﻿l_english:
  movement_unrestrictedWars.2.name:0 "Movement for Unrestricted Warfare"
  movement_unrestrictedWars.2.desc:0 "Support: [This.movement_unrestrictedWars_support]\nRadicalism: [This.movement_unrestrictedWars_radicalism]"
+
+ #  Situation
+ situation_movement_unrestrictedWars:0 "[Owner.MovementName_unrestrictedWars]"
+ situation_movement_unrestrictedWars_type:0 "[Owner.MovementName_unrestrictedWars]"
+ situation_movement_unrestrictedWars_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YMilitarist§! presence in our empire."
+# 
+ situation_movement_unrestrictedWars_desc:0 "The people are calling for §BUnrestricted Warfare§! as they believe war is a dish best served frequently.\n\nmilitarist xenophobe \nSupport: [Owner.movement_unrestrictedWars_support] Radicalism: [Owner.movement_unrestrictedWars_radicalism] Inertia: [Owner.movement_unrestrictedWars_inertia]\nFaction Support [Owner.movement_unrestrictedWars_faction_support] \nFaction Radicalism: [Owner.movement_unrestrictedWars_faction_radicalism] \nNumerical Support: [Owner.unrestrictedWars_supporting_population]/[Owner.unrestrictedWars_population]=[Owner.movement_unrestrictedWars_numerical_support] \nNumerical Radicalism: [Owner.unrestrictedWars_radical_population]/[Owner.unrestrictedWars_population]=[Owner.movement_unrestrictedWars_numerical_radicalism]"
+ situation_movement_finisher_unrestrictedWars:0 "Revolution for Unrestricted Warfare."
+ 
+ movement_unrestrictedWars_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_unrestrictedWars_radicalism]§! is above 25."
+
+ movement_unrestrictedWars_revolution_preserve:0 "§RRevolution to Preserve Unrestricted Warfare§!"
+ movement_unrestrictedWars_revolution:0 "§RRevolution for Unrestricted Warfare§!"
+ movement_unrestrictedWars:0 "Movement for Unrestricted Warfare"
+ movement_unrestrictedWars_preserve:0 "Movement to Preserve Unrestricted Warfare"
+
+ movement_unrestrictedWars.6.title:0 "Secession over §BUnrestricted Warfare§!"
+ movement_unrestrictedWars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BUnrestricted Warfare§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BUnrestricted Warfare§!."
+ movement_unrestrictedWars.6.fight:0 "Make them drink vacuum!"
+ movement_unrestrictedWars.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

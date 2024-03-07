@@ -1,3 +1,24 @@
 ﻿l_english:
  movement_aiServitude.2.name:0 "Movement for AI Servitude"
  movement_aiServitude.2.desc:0 "Support: [This.movement_aiServitude_support]\nRadicalism: [This.movement_aiServitude_radicalism]"
+
+ #  Situation
+ situation_movement_aiServitude:0 "[Owner.MovementName_aiServitude]"
+ situation_movement_aiServitude_type:0 "[Owner.MovementName_aiServitude]"
+ situation_movement_aiServitude_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSpiritualist§! presence in our empire."
+# 
+ situation_movement_aiServitude_desc:0 "The people are calling for §BAI Servitude§! as they believe synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim.\n\nmaterialist spiritualist \nSupport: [Owner.movement_aiServitude_support] Radicalism: [Owner.movement_aiServitude_radicalism] Inertia: [Owner.movement_aiServitude_inertia]\nFaction Support [Owner.movement_aiServitude_faction_support] \nFaction Radicalism: [Owner.movement_aiServitude_faction_radicalism] \nNumerical Support: [Owner.aiServitude_supporting_population]/[Owner.aiServitude_population]=[Owner.movement_aiServitude_numerical_support] \nNumerical Radicalism: [Owner.aiServitude_radical_population]/[Owner.aiServitude_population]=[Owner.movement_aiServitude_numerical_radicalism]"
+ situation_movement_finisher_aiServitude:0 "Revolution for AI Servitude."
+ 
+ movement_aiServitude_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_aiServitude_radicalism]§! is above 25."
+
+ movement_aiServitude_revolution_preserve:0 "§RRevolution to Preserve AI Servitude§!"
+ movement_aiServitude_revolution:0 "§RRevolution for AI Servitude§!"
+ movement_aiServitude:0 "Movement for AI Servitude"
+ movement_aiServitude_preserve:0 "Movement to Preserve AI Servitude"
+
+ movement_aiServitude.6.title:0 "Secession over §BAI Servitude§!"
+ movement_aiServitude.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BAI Servitude§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BAI Servitude§!."
+ movement_aiServitude.6.fight:0 "Make them drink vacuum!"
+ movement_aiServitude.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

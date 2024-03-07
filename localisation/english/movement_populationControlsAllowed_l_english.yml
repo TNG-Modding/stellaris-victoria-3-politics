@@ -1,0 +1,24 @@
+﻿l_english:
+ movement_populationControlsAllowed.2.name:0 "Movement for Allow Pop Controls"
+ movement_populationControlsAllowed.2.desc:0 "Support: [This.movement_populationControlsAllowed_support]\nRadicalism: [This.movement_populationControlsAllowed_radicalism]"
+
+ #  Situation
+ situation_movement_populationControlsAllowed:0 "[Owner.MovementName_populationControlsAllowed]"
+ situation_movement_populationControlsAllowed_type:0 "[Owner.MovementName_populationControlsAllowed]"
+ situation_movement_populationControlsAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YAuthoritarian§! presence in our empire."
+# 
+ situation_movement_populationControlsAllowed_desc:0 "The people are calling for §BAllow Pop Controls§! as they believe long-term demographics is too important a matter to be left solely in the hands of individual actors.\n\nauthoritarian pacifist \nSupport: [Owner.movement_populationControlsAllowed_support] Radicalism: [Owner.movement_populationControlsAllowed_radicalism] Inertia: [Owner.movement_populationControlsAllowed_inertia]\nFaction Support [Owner.movement_populationControlsAllowed_faction_support] \nFaction Radicalism: [Owner.movement_populationControlsAllowed_faction_radicalism] \nNumerical Support: [Owner.populationControlsAllowed_supporting_population]/[Owner.populationControlsAllowed_population]=[Owner.movement_populationControlsAllowed_numerical_support] \nNumerical Radicalism: [Owner.populationControlsAllowed_radical_population]/[Owner.populationControlsAllowed_population]=[Owner.movement_populationControlsAllowed_numerical_radicalism]"
+ situation_movement_finisher_populationControlsAllowed:0 "Revolution for Allow Pop Controls."
+ 
+ movement_populationControlsAllowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_populationControlsAllowed_radicalism]§! is above 25."
+
+ movement_populationControlsAllowed_revolution_preserve:0 "§RRevolution to Preserve Allow Pop Controls§!"
+ movement_populationControlsAllowed_revolution:0 "§RRevolution for Allow Pop Controls§!"
+ movement_populationControlsAllowed:0 "Movement for Allow Pop Controls"
+ movement_populationControlsAllowed_preserve:0 "Movement to Preserve Allow Pop Controls"
+
+ movement_populationControlsAllowed.6.title:0 "Secession over §BAllow Pop Controls§!"
+ movement_populationControlsAllowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BAllow Pop Controls§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BAllow Pop Controls§!."
+ movement_populationControlsAllowed.6.fight:0 "Make them drink vacuum!"
+ movement_populationControlsAllowed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

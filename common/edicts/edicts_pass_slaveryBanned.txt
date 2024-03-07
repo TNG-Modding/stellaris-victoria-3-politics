@@ -1,0 +1,31 @@
+pass_slaveryBanned = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = slavery_not_allowed }
+		NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_slaveryBanned_faction_support
+			}
+			check_variable = { which = movement_slaveryBanned_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = slavery
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_slaveryBanned.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

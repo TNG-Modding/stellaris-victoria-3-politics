@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_purgeNotAllowed
+	text = {
+		localization_key = movement_purgeNotAllowed_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_purgeNotAllowed_radicalism value > 25 }
+			has_country_flag = enacting_purgeNotAllowed
+		}
+	}
+	text = {
+		localization_key = movement_purgeNotAllowed_revolution
+		trigger = {
+			check_variable = { which = movement_purgeNotAllowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_purgeNotAllowed}
+		}
+	}
+	text = {
+		localization_key = movement_purgeNotAllowed_preserve
+		trigger = {
+			check_variable = { which = movement_purgeNotAllowed_radicalism value < 25 }
+			has_country_flag = enacting_purgeNotAllowed
+		}
+	}
+	text = {
+		localization_key = movement_purgeNotAllowed
+		trigger = {
+			check_variable = { which = movement_purgeNotAllowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_purgeNotAllowed}
+		}
+	}
+}

@@ -6,6 +6,7 @@ situation_passPolicy_defensiveWarsOnly = {
 	on_start = { 
 		OWNER = {
 			set_country_flag = enacting_policy
+			set_country_flag = enacting_defensiveWarsOnly
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_defensiveWarsOnly.2 } 
@@ -13,6 +14,7 @@ situation_passPolicy_defensiveWarsOnly = {
 
 	on_progress_complete = {
 		OWNER = {
+			remove_country_flag = enacting_defensiveWarsOnly
 			remove_country_flag = enacting_policy
 		}
 		custom_tooltip = situation_passPolicy_finisher_defensiveWarsOnly
@@ -22,6 +24,7 @@ situation_passPolicy_defensiveWarsOnly = {
 	}
 	on_abort = {
 		OWNER = {
+			remove_country_flag = enacting_defensiveWarsOnly
 			remove_country_flag = enacting_policy
 		}
 	}
@@ -85,9 +88,13 @@ situation_passPolicy_defensiveWarsOnly = {
 		# }
 	}
 	abort_trigger = {
+		NOT = {
+			
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }
+			target.owner = { NOT = { NOR = { has_ethic = ethic_fanatic_militarist has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator has_civic = civic_crusader_spirit } } }
 		}
 	}
 }

@@ -1,0 +1,31 @@
+pass_slaveryAllowed = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = slavery_not_allowed }
+		NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_slaveryAllowed_faction_support
+			}
+			check_variable = { which = movement_slaveryAllowed_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = slavery
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_slaveryAllowed.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

@@ -1,3 +1,24 @@
 ﻿l_english:
  movement_roboticWorkersOutlawed.2.name:0 "Movement for Robotic Workers Outlawed"
  movement_roboticWorkersOutlawed.2.desc:0 "Support: [This.movement_roboticWorkersOutlawed_support]\nRadicalism: [This.movement_roboticWorkersOutlawed_radicalism]"
+
+ #  Situation
+ situation_movement_roboticWorkersOutlawed:0 "[Owner.MovementName_roboticWorkersOutlawed]"
+ situation_movement_roboticWorkersOutlawed_type:0 "[Owner.MovementName_roboticWorkersOutlawed]"
+ situation_movement_roboticWorkersOutlawed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSpiritualist§! presence in our empire."
+# 
+ situation_movement_roboticWorkersOutlawed_desc:0 "The people are calling for §BRobotic Workers Outlawed§! as they believe robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself.\n\nspiritualist \nSupport: [Owner.movement_roboticWorkersOutlawed_support] Radicalism: [Owner.movement_roboticWorkersOutlawed_radicalism] Inertia: [Owner.movement_roboticWorkersOutlawed_inertia]\nFaction Support [Owner.movement_roboticWorkersOutlawed_faction_support] \nFaction Radicalism: [Owner.movement_roboticWorkersOutlawed_faction_radicalism] \nNumerical Support: [Owner.roboticWorkersOutlawed_supporting_population]/[Owner.roboticWorkersOutlawed_population]=[Owner.movement_roboticWorkersOutlawed_numerical_support] \nNumerical Radicalism: [Owner.roboticWorkersOutlawed_radical_population]/[Owner.roboticWorkersOutlawed_population]=[Owner.movement_roboticWorkersOutlawed_numerical_radicalism]"
+ situation_movement_finisher_roboticWorkersOutlawed:0 "Revolution for Robotic Workers Outlawed."
+ 
+ movement_roboticWorkersOutlawed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_roboticWorkersOutlawed_radicalism]§! is above 25."
+
+ movement_roboticWorkersOutlawed_revolution_preserve:0 "§RRevolution to Preserve Robotic Workers Outlawed§!"
+ movement_roboticWorkersOutlawed_revolution:0 "§RRevolution for Robotic Workers Outlawed§!"
+ movement_roboticWorkersOutlawed:0 "Movement for Robotic Workers Outlawed"
+ movement_roboticWorkersOutlawed_preserve:0 "Movement to Preserve Robotic Workers Outlawed"
+
+ movement_roboticWorkersOutlawed.6.title:0 "Secession over §BRobotic Workers Outlawed§!"
+ movement_roboticWorkersOutlawed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BRobotic Workers Outlawed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BRobotic Workers Outlawed§!."
+ movement_roboticWorkersOutlawed.6.fight:0 "Make them drink vacuum!"
+ movement_roboticWorkersOutlawed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

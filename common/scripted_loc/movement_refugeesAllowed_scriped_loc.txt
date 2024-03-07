@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_refugeesAllowed
+	text = {
+		localization_key = movement_refugeesAllowed_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_refugeesAllowed_radicalism value > 25 }
+			has_country_flag = enacting_refugeesAllowed
+		}
+	}
+	text = {
+		localization_key = movement_refugeesAllowed_revolution
+		trigger = {
+			check_variable = { which = movement_refugeesAllowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_refugeesAllowed}
+		}
+	}
+	text = {
+		localization_key = movement_refugeesAllowed_preserve
+		trigger = {
+			check_variable = { which = movement_refugeesAllowed_radicalism value < 25 }
+			has_country_flag = enacting_refugeesAllowed
+		}
+	}
+	text = {
+		localization_key = movement_refugeesAllowed
+		trigger = {
+			check_variable = { which = movement_refugeesAllowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_refugeesAllowed}
+		}
+	}
+}

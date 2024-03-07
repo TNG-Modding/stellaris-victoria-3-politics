@@ -6,6 +6,7 @@ situation_passPolicy_unrestrictedWars = {
 	on_start = { 
 		OWNER = {
 			set_country_flag = enacting_policy
+			set_country_flag = enacting_unrestrictedWars
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_unrestrictedWars.2 } 
@@ -13,6 +14,7 @@ situation_passPolicy_unrestrictedWars = {
 
 	on_progress_complete = {
 		OWNER = {
+			remove_country_flag = enacting_unrestrictedWars
 			remove_country_flag = enacting_policy
 		}
 		custom_tooltip = situation_passPolicy_finisher_unrestrictedWars
@@ -22,6 +24,7 @@ situation_passPolicy_unrestrictedWars = {
 	}
 	on_abort = {
 		OWNER = {
+			remove_country_flag = enacting_unrestrictedWars
 			remove_country_flag = enacting_policy
 		}
 	}
@@ -85,9 +88,13 @@ situation_passPolicy_unrestrictedWars = {
 		# }
 	}
 	abort_trigger = {
+		NOT = {
+			
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }
+			target.owner = { NOT = { NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit } } }
 		}
 	}
 }

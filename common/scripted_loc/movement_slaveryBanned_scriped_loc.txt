@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_slaveryBanned
+	text = {
+		localization_key = movement_slaveryBanned_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_slaveryBanned_radicalism value > 25 }
+			has_country_flag = enacting_slaveryBanned
+		}
+	}
+	text = {
+		localization_key = movement_slaveryBanned_revolution
+		trigger = {
+			check_variable = { which = movement_slaveryBanned_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_slaveryBanned}
+		}
+	}
+	text = {
+		localization_key = movement_slaveryBanned_preserve
+		trigger = {
+			check_variable = { which = movement_slaveryBanned_radicalism value < 25 }
+			has_country_flag = enacting_slaveryBanned
+		}
+	}
+	text = {
+		localization_key = movement_slaveryBanned
+		trigger = {
+			check_variable = { which = movement_slaveryBanned_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_slaveryBanned}
+		}
+	}
+}

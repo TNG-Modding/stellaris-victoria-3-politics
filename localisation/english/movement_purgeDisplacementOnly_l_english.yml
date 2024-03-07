@@ -1,0 +1,24 @@
+﻿l_english:
+ movement_purgeDisplacementOnly.2.name:0 "Movement for Purge Displacement Only"
+ movement_purgeDisplacementOnly.2.desc:0 "Support: [This.movement_purgeDisplacementOnly_support]\nRadicalism: [This.movement_purgeDisplacementOnly_radicalism]"
+
+ #  Situation
+ situation_movement_purgeDisplacementOnly:0 "[Owner.MovementName_purgeDisplacementOnly]"
+ situation_movement_purgeDisplacementOnly_type:0 "[Owner.MovementName_purgeDisplacementOnly]"
+ situation_movement_purgeDisplacementOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YXenoist§! presence in our empire."
+# 
+ situation_movement_purgeDisplacementOnly_desc:0 "The people are calling for §BPurge Displacement Only§! as they believe it is not our responsibility to see to the needs of those who would undermine the foundations of our society.\n\nxenophile pacifist egalitarian \nSupport: [Owner.movement_purgeDisplacementOnly_support] Radicalism: [Owner.movement_purgeDisplacementOnly_radicalism] Inertia: [Owner.movement_purgeDisplacementOnly_inertia]\nFaction Support [Owner.movement_purgeDisplacementOnly_faction_support] \nFaction Radicalism: [Owner.movement_purgeDisplacementOnly_faction_radicalism] \nNumerical Support: [Owner.purgeDisplacementOnly_supporting_population]/[Owner.purgeDisplacementOnly_population]=[Owner.movement_purgeDisplacementOnly_numerical_support] \nNumerical Radicalism: [Owner.purgeDisplacementOnly_radical_population]/[Owner.purgeDisplacementOnly_population]=[Owner.movement_purgeDisplacementOnly_numerical_radicalism]"
+ situation_movement_finisher_purgeDisplacementOnly:0 "Revolution for Purge Displacement Only."
+ 
+ movement_purgeDisplacementOnly_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_purgeDisplacementOnly_radicalism]§! is above 25."
+
+ movement_purgeDisplacementOnly_revolution_preserve:0 "§RRevolution to Preserve Purge Displacement Only§!"
+ movement_purgeDisplacementOnly_revolution:0 "§RRevolution for Purge Displacement Only§!"
+ movement_purgeDisplacementOnly:0 "Movement for Purge Displacement Only"
+ movement_purgeDisplacementOnly_preserve:0 "Movement to Preserve Purge Displacement Only"
+
+ movement_purgeDisplacementOnly.6.title:0 "Secession over §BPurge Displacement Only§!"
+ movement_purgeDisplacementOnly.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BPurge Displacement Only§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BPurge Displacement Only§!."
+ movement_purgeDisplacementOnly.6.fight:0 "Make them drink vacuum!"
+ movement_purgeDisplacementOnly.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

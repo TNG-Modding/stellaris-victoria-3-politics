@@ -6,6 +6,7 @@ situation_passPolicy_aiServitude = {
 	on_start = { 
 		OWNER = {
 			set_country_flag = enacting_policy
+			set_country_flag = enacting_aiServitude
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_aiServitude.2 } 
@@ -13,6 +14,7 @@ situation_passPolicy_aiServitude = {
 
 	on_progress_complete = {
 		OWNER = {
+			remove_country_flag = enacting_aiServitude
 			remove_country_flag = enacting_policy
 		}
 		custom_tooltip = situation_passPolicy_finisher_aiServitude
@@ -22,6 +24,7 @@ situation_passPolicy_aiServitude = {
 	}
 	on_abort = {
 		OWNER = {
+			remove_country_flag = enacting_aiServitude
 			remove_country_flag = enacting_policy
 		}
 	}
@@ -85,9 +88,13 @@ situation_passPolicy_aiServitude = {
 		# }
 	}
 	abort_trigger = {
+		NOT = {
+			
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }
+			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOT = { has_country_flag = synthetic_empire } } }
 		}
 	}
 }

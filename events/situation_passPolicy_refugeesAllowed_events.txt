@@ -1,0 +1,321 @@
+namespace = situation_passPolicy_refugeesAllowed
+country_event = {
+	id = situation_passPolicy_refugeesAllowed.1
+	title = situation_passPolicy_refugeesAllowed.1.name
+	desc = situation_passPolicy_refugeesAllowed.1.desc
+	picture = GFX_evt_fleet_from_surface
+	
+	show_sound = {
+		sound = advisor_notification_planet_in_revolt
+		sound_is_advisor = yes
+	}
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = passPolicy_ack
+		start_situation = {
+			type = situation_passPolicy_refugeesAllowed
+			target = root
+		}
+	}
+	option = {
+		name = passPolicy_nevermind
+	}
+}
+
+# Determine advance fail or stall
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.2	
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = setback_count
+				}
+			}
+			set_variable = { which = setback_count value = 0}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = swayed_to_support
+				}
+			}
+			set_variable = { which = swayed_to_support value = 0}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = swayed_to_detract
+				}
+			}
+			set_variable = { which = swayed_to_detract value = 0}
+		}
+		set_variable = { which = faction_support value = 0}
+		set_variable = { which = faction_detraction value = 0}
+	
+		OWNER = {
+			every_pop_faction = {
+				
+				if = {
+					limit = {
+						is_pop_faction_type = totalitarian
+					}
+					export_trigger_value_to_variable = { trigger = support variable = totalitarian_support }
+					multiply_variable = {which = totalitarian_support value = 100}
+					ROOT = {
+						change_variable = { which = faction_support value = PREV.totalitarian_support }		
+					}
+				}
+				
+				if = {
+					limit = {
+						is_pop_faction_type = xenoist
+					}
+					export_trigger_value_to_variable = { trigger = support variable = xenoist_support }
+					multiply_variable = {which = xenoist_support value = 100}
+					ROOT = {
+						change_variable = { which = faction_support value = PREV.xenoist_support }		
+					}
+				}
+				
+				
+				if = {
+					limit = {
+						is_pop_faction_type = supremacist
+					}
+					export_trigger_value_to_variable = { trigger = support variable = supremacist_support }
+					multiply_variable = {which = supremacist_support value = 100}
+					ROOT = {
+						change_variable = { which = faction_detraction value = PREV.supremacist_support }	
+					}
+				}
+				
+				if = {
+					limit = {
+						is_pop_faction_type = progressive
+					}
+					export_trigger_value_to_variable = { trigger = support variable = progressive_support }
+					multiply_variable = {which = progressive_support value = 100}
+					ROOT = {
+						change_variable = { which = faction_detraction value = PREV.progressive_support }	
+					}
+				}
+				
+			}
+		}
+
+		set_variable = {which = faction_ambivalence value = 100}
+		subtract_variable = { which = faction_ambivalence value = faction_support }
+		subtract_variable = { which = faction_ambivalence value = faction_detraction }
+		
+		# log = "PRE MATH: refugeesAllowed support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
+
+		# If swayed is positive, give it support, if negative, give it to detraction
+		
+		change_variable = { which = faction_support value = swayed_to_support }
+		change_variable = { which = faction_detraction value = swayed_to_detract }
+		
+
+		# Clamp variables
+		if = {
+			limit = {
+				check_variable = { which = faction_support value > 100}
+			}
+			set_variable = { which = faction_support value = 100}
+		}
+		if = {
+			limit = {
+				check_variable = { which = faction_support value < 0}
+			}
+			set_variable = { which = faction_support value = 0}
+		}
+		
+		if = {
+			limit = {
+				check_variable = { which = faction_detraction value > 100}
+			}
+			set_variable = { which = faction_detraction value = 100}
+		}
+		if = {
+			limit = {
+				check_variable = { which = faction_detraction value < 0}
+			}
+			set_variable = { which = faction_detraction value = 0}
+		}
+
+		set_variable = {which = faction_ambivalence value = 100}
+		subtract_variable = { which = faction_ambivalence value = faction_support }
+		subtract_variable = { which = faction_ambivalence value = faction_detraction }
+
+		if = {
+			limit = {
+				check_variable = { which = faction_ambivalence value > 100}
+			}
+			set_variable = { which = faction_ambivalence value = 100}
+		}
+		if = {
+			limit = {
+				check_variable = { which = faction_ambivalence value < 0}
+			}
+			set_variable = { which = faction_ambivalence value = 0}
+		}
+
+
+		ceiling_variable = faction_support
+		ceiling_variable = faction_detraction
+		ceiling_variable = faction_ambivalence
+		# log = "POST MATH: refugeesAllowed support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
+	}
+}
+# Decide whether or not to roll
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		# Update all values
+		situation_event = {
+			id = situation_passPolicy_refugeesAllowed.2	
+		}
+		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
+		# log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
+		if = {
+			limit = {
+				check_variable = { which = advancement_roll value < faction_support  }
+			}
+			# Advance!
+			situation_event = { id = situation_passPolicy_refugeesAllowed.4}
+		}
+		else = {
+			subtract_variable = { which = advancement_roll value = faction_support }
+			if = {
+				limit = {
+					check_variable = { which = advancement_roll value < faction_detraction }
+				}
+				# Fail!
+				situation_event = {id = situation_passPolicy_refugeesAllowed.5}
+			}
+			else = {
+				# Ambivalence!
+				situation_event = {id = situation_passPolicy_refugeesAllowed.6}
+			}
+		}	
+	}
+}
+
+# Advance
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.4
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		# log = "refugeesAllowed success!"
+		add_situation_progress = 34
+	}
+}
+# Fail
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.5
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		change_variable = { which = setback_count value = 1 }
+		# log = "refugeesAllowed fail! [this.setback_count]/3"
+		if = {
+			limit = { check_variable = { which = setback_count value = 3}}
+			# log = "refugeesAllowed failed due to setbacks [this.setback_count]/3!"
+			situation_event = { id = situation_passPolicy_refugeesAllowed.9}
+		}
+	}
+}
+
+# Ambivalent
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.6
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { which = faction_ambivalence value > 10}
+			}
+			set_variable_to_random_value = { which = sway_roll min = 0 max = 100 rounded = yes}
+			if = {
+				limit = {
+					check_variable = { which = sway_roll value > 50 }
+				}
+				# log = "refugeesAllowed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
+				change_variable = { which = swayed_to_support value = 10}
+			}
+			else = {
+				# log = "refugeesAllowed ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
+				change_variable = { which = swayed_to_detract value = 10}
+			}
+			situation_event = {id = situation_passPolicy_refugeesAllowed.2 }
+		}
+		else = {
+			# log = "refugeesAllowed ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
+		}
+	}
+}
+
+# Success
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.7
+	title = situation_passPolicy_refugeesAllowed.7.name
+	desc = situation_passPolicy_refugeesAllowed.7.desc
+	picture = GFX_evt_fleet_from_surface
+	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_policy = { 
+				policy = refugees 
+				option = refugees_allowed 
+				cooldown = yes 
+			}
+		}
+		destroy_situation = this
+	}
+	option = {
+		name = situation_passPolicy_refugeesAllowed.7.a
+	}
+}
+# Failure due to abort
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.8
+	title = situation_passPolicy_refugeesAllowed.8.name
+	desc = situation_passPolicy_refugeesAllowed.8.desc
+	picture = GFX_evt_fleet_from_surface
+	
+	is_triggered_only = yes
+
+	immediate = {
+		destroy_situation = this
+	}
+	option = {
+		name = situation_passPolicy_refugeesAllowed.8.a
+	}
+}
+# Failure due to setbacks
+situation_event = {
+	id = situation_passPolicy_refugeesAllowed.9
+	title = situation_passPolicy_refugeesAllowed.9.name
+	desc = situation_passPolicy_refugeesAllowed.9.desc
+	picture = GFX_evt_fleet_from_surface
+	
+	is_triggered_only = yes
+	immediate = {
+		destroy_situation = this
+	}
+	
+	option = {
+		name = situation_passPolicy_refugeesAllowed.9.a
+	}
+}

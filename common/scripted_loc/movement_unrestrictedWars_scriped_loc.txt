@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_unrestrictedWars
+	text = {
+		localization_key = movement_unrestrictedWars_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_unrestrictedWars_radicalism value > 25 }
+			has_country_flag = enacting_unrestrictedWars
+		}
+	}
+	text = {
+		localization_key = movement_unrestrictedWars_revolution
+		trigger = {
+			check_variable = { which = movement_unrestrictedWars_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_unrestrictedWars}
+		}
+	}
+	text = {
+		localization_key = movement_unrestrictedWars_preserve
+		trigger = {
+			check_variable = { which = movement_unrestrictedWars_radicalism value < 25 }
+			has_country_flag = enacting_unrestrictedWars
+		}
+	}
+	text = {
+		localization_key = movement_unrestrictedWars
+		trigger = {
+			check_variable = { which = movement_unrestrictedWars_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_unrestrictedWars}
+		}
+	}
+}

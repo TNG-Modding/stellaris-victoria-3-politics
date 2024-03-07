@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_roboticWorkersOutlawed
+	text = {
+		localization_key = movement_roboticWorkersOutlawed_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value > 25 }
+			has_country_flag = enacting_roboticWorkersOutlawed
+		}
+	}
+	text = {
+		localization_key = movement_roboticWorkersOutlawed_revolution
+		trigger = {
+			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_roboticWorkersOutlawed}
+		}
+	}
+	text = {
+		localization_key = movement_roboticWorkersOutlawed_preserve
+		trigger = {
+			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value < 25 }
+			has_country_flag = enacting_roboticWorkersOutlawed
+		}
+	}
+	text = {
+		localization_key = movement_roboticWorkersOutlawed
+		trigger = {
+			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_roboticWorkersOutlawed}
+		}
+	}
+}

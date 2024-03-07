@@ -1,0 +1,5 @@
+﻿l_english:
+ movement_stageOneEffects:0 "Introduction"
+ movement_approach.1:0 "Ignore"
+ movement_approach.1.on_select:0 "Ignore."
+ 

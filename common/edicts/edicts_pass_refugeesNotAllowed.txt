@@ -1,0 +1,31 @@
+pass_refugeesNotAllowed = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = refugees_not_allowed }
+		has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_refugeesNotAllowed_faction_support
+			}
+			check_variable = { which = movement_refugeesNotAllowed_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = refugees
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_refugeesNotAllowed.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

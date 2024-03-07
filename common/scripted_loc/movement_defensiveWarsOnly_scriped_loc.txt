@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_defensiveWarsOnly
+	text = {
+		localization_key = movement_defensiveWarsOnly_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_defensiveWarsOnly_radicalism value > 25 }
+			has_country_flag = enacting_defensiveWarsOnly
+		}
+	}
+	text = {
+		localization_key = movement_defensiveWarsOnly_revolution
+		trigger = {
+			check_variable = { which = movement_defensiveWarsOnly_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_defensiveWarsOnly}
+		}
+	}
+	text = {
+		localization_key = movement_defensiveWarsOnly_preserve
+		trigger = {
+			check_variable = { which = movement_defensiveWarsOnly_radicalism value < 25 }
+			has_country_flag = enacting_defensiveWarsOnly
+		}
+	}
+	text = {
+		localization_key = movement_defensiveWarsOnly
+		trigger = {
+			check_variable = { which = movement_defensiveWarsOnly_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_defensiveWarsOnly}
+		}
+	}
+}

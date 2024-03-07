@@ -1,3 +1,24 @@
 l_english:
  movement_{{varname}}.2.name:0 "Movement for {{displayName}}"
  movement_{{varname}}.2.desc:0 "Support: [This.movement_{{varname}}_support]\nRadicalism: [This.movement_{{varname}}_radicalism]"
+
+ #  Situation
+ situation_movement_{{varname}}:0 "[Owner.MovementName_{{varname}}]"
+ situation_movement_{{varname}}_type:0 "[Owner.MovementName_{{varname}}]"
+ situation_movement_{{varname}}_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y{{ethicAdjective}}§! presence in our empire."
+# 
+ situation_movement_{{varname}}_desc:0 "The people are calling for §B{{displayName}}§! as they believe {{description}}.\n\n{% for supportingEthic in supportingEthics %}{{supportingEthic}} {% endfor %}\nSupport: [Owner.movement_{{varname}}_support] Radicalism: [Owner.movement_{{varname}}_radicalism] Inertia: [Owner.movement_{{varname}}_inertia]\nFaction Support [Owner.movement_{{varname}}_faction_support] \nFaction Radicalism: [Owner.movement_{{varname}}_faction_radicalism] \nNumerical Support: [Owner.{{varname}}_supporting_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_support] \nNumerical Radicalism: [Owner.{{varname}}_radical_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_radicalism]"
+ situation_movement_finisher_{{varname}}:0 "Revolution for {{displayName}}."
+ 
+ movement_{{varname}}_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_{{varname}}_radicalism]§! is above 25."
+
+ movement_{{varname}}_revolution_preserve:0 "§RRevolution to Preserve {{displayName}}§!"
+ movement_{{varname}}_revolution:0 "§RRevolution for {{displayName}}§!"
+ movement_{{varname}}:0 "Movement for {{displayName}}"
+ movement_{{varname}}_preserve:0 "Movement to Preserve {{displayName}}"
+
+ movement_{{varname}}.6.title:0 "Secession over §B{{displayName}}§!"
+ movement_{{varname}}.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B{{displayName}}§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B{{displayName}}§!."
+ movement_{{varname}}.6.fight:0 "Make them drink vacuum!"
+ movement_{{varname}}.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

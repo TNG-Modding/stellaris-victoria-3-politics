@@ -89,5 +89,23 @@
         "disabled": false, 
         "dumpContents": true, 
         "isBom": true
+    },
+    {
+        "name": "Movement Situation",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/movements/movement_situation",
+        "outputDirectoryPath": "../common/situations",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "Movement Scripted Loc",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/movements/scripted_loc",
+        "outputDirectoryPath": "../common/scripted_loc",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
     }
 ]

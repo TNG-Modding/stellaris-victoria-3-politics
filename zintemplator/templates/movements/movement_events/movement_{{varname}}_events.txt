@@ -22,15 +22,14 @@ event = {
 		}
 	}
 }
+
+# Calculate support and radicalism by combining faction and numerical support
+# Outputs:
+# - country.movement_{{varname}}_support
+# - country.movement_{{varname}}_radicalism
+# - country.movement_{{varname}}_inertia
 country_event = {
 	id = movement_{{varname}}.2
-	
-	# title = movement_{{varname}}.2.name
-	# desc = movement_{{varname}}.2.desc
-	# picture = GFX_evt_{{picture}}
-	# option = {
-	# 	name = OK
-	# }
 
 	hide_window = yes
 	is_triggered_only = yes
@@ -39,15 +38,37 @@ country_event = {
 		set_variable = { which = movement_{{varname}}_faction_support value = 0 }
 		set_variable = { which = movement_{{varname}}_faction_radicalism value = 0 }
 		set_variable = { which = movement_{{varname}}_numerical_support value = 0 }
+		set_variable = { which = movement_{{varname}}_numerical_radicalism value = 0 }
 
 		if = {
 			limit = {
 				{{potential}}
+				
 			}
 			country_event = { id = movement_{{varname}}.3 }
 			country_event = { id = movement_{{varname}}.4 }
-			log = "Faction Support: [This.movement_{{varname}}_faction_support] Faction Radicalism: [This.movement_{{varname}}_faction_radicalism] Numerical Support: [This.movement_{{varname}}_numerical_support]"
+			
+			if = {
+				limit = {
+					check_variable = {which = movement_{{varname}}_faction_support value > 0 }
+					NOR = { 
+						has_country_flag = movement_for_{{varname}}  
+						has_country_flag = {{varname}}_revolt
+					}
+				}
+				country_event = { id = movement_{{varname}}.5 }
+			}
 		}		
+		set_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_faction_support }
+		change_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_numerical_support }
+		divide_variable = { which = movement_{{varname}}_support value = 2 }
+
+		set_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_faction_radicalism }
+		change_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_numerical_radicalism }
+		divide_variable = { which = movement_{{varname}}_radicalism value = 2 }
+
+		set_variable = {which = movement_{{varname}}_inertia value = movement_{{varname}}_support}
+		multiply_variable = { which = movement_{{varname}}_inertia value = movement_{{varname}}_radicalism }
 	}
 }
 
@@ -68,25 +89,22 @@ country_event = {
 				limit = {
 					is_pop_faction_type = {{supportingFaction}}
 				}
-				export_trigger_value_to_variable = { trigger = support variable = {{varname}}_faction_support }
-				multiply_variable = {which = {{varname}}_faction_support value = 100}
-				# {{varname}}_faction_support is 0 to 100
+				export_trigger_value_to_variable = { trigger = support variable = {{varname}}_{{supportingFaction}}_support }
+				multiply_variable = {which = {{varname}}_{{supportingFaction}}_support value = 100}
+				# {{varname}}_{{supportingFaction}}_support is 0 to 100
 				
-				export_modifier_to_variable = { modifier = faction_approval variable = {{varname}}_faction_approval }
-				subtract_variable = {which = {{varname}}_faction_approval value = 0.5}
-				multiply_variable = {which = {{varname}}_faction_approval value = 2}
-				# {{varname}}_faction_approval is -1 to 1
-				
-				multiply_variable = { which = {{varname}}_faction_approval value={{varname}}_faction_support }
+				export_trigger_value_to_variable = { trigger = faction_approval variable = {{varname}}_{{supportingFaction}}_approval }
+				# {{varname}}_{{supportingFaction}}_approval is 0 to 1
 
 				ROOT = {
-					change_variable = { which = movement_{{varname}}_faction_support value = PREV.{{varname}}_faction_support }
-					if = {
-						limit = { 
-							check_variable = { which = PREV.{{varname}}_faction_approval value < 0}
-						}
-						change_variable = { which = movement_{{varname}}_faction_radicalism value = PREV.{{varname}}_faction_support }
-					}
+					change_variable = { which = movement_{{varname}}_faction_support value = PREV.{{varname}}_{{supportingFaction}}_support }
+					
+					set_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = 1 }
+					subtract_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = PREV.{{varname}}_{{supportingFaction}}_approval }
+					
+					multiply_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = PREV.{{varname}}_{{supportingFaction}}_support }
+
+					change_variable = { which = movement_{{varname}}_faction_radicalism value = {{varname}}_{{supportingFaction}}_radicalism }
 				}
 			}
 			{% endfor %}
@@ -97,6 +115,7 @@ country_event = {
 # Calculate support based on numbers
 # Outputs:
 # - country.movement_{{varname}}_numerical_support
+# - country.movement_{{varname}}_numerical_radicalism
 country_event = {
 	id = movement_{{varname}}.4
 	hide_window = yes
@@ -105,6 +124,7 @@ country_event = {
 	immediate = {
 		set_variable = { which = {{varname}}_population value = 0}
 		set_variable = { which = {{varname}}_supporting_population value = 0}
+		set_variable = { which = {{varname}}_radical_population value = 0}
 		
 		every_owned_pop = {
 			ROOT = {
@@ -120,17 +140,394 @@ country_event = {
 						{% endfor %}
 					}
 				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 numerical support whereas his happy cousin contributes none.
+				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
 				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				set_variable = {which = pop_{{varname}}_support value = 1}
-				subtract_variable = { which = pop_{{varname}}_support value = pop_happiness }
 				ROOT = {
-					change_variable = { which = {{varname}}_supporting_population value = PREV.pop_{{varname}}_support }
+					set_variable = {which = pop_{{varname}}_radicalism value = 1}
+					subtract_variable = { which = pop_{{varname}}_radicalism value = PREV.pop_happiness }
+
+					change_variable = { which = {{varname}}_supporting_population value = 1 }
+					change_variable = { which = {{varname}}_radical_population value = pop_{{varname}}_radicalism }
 				}
 			}
 		}
 		
 		set_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_supporting_population}
 		divide_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_population }
+		multiply_variable = {which = movement_{{varname}}_numerical_support value = 100}
+
+		set_variable = { which = movement_{{varname}}_numerical_radicalism value = {{varname}}_radical_population}
+		divide_variable = { which = movement_{{varname}}_numerical_radicalism value = {{varname}}_population }
+		multiply_variable = {which = movement_{{varname}}_numerical_radicalism value = 100}
 	}
 }
+
+# Create movement
+country_event = {
+	id = movement_{{varname}}.5
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				{{potential}}
+			}
+			start_situation = {
+				type = situation_movement_{{varname}}
+				target = root
+			}
+		}
+	}
+}
+
+# Create a revolution
+situation_event = {
+	id = movement_{{varname}}.6
+	title = movement_{{varname}}.6.title
+	desc = movement_{{varname}}.6.desc
+	picture = GFX_evt_night_raid
+	is_triggered_only = yes
+	hide_window = no
+
+	immediate = {
+		set_variable = { which = {{varname}}_largest_planet_inertia value = 0}
+		OWNER = {
+			set_country_flag = {{varname}}_revolt
+			every_owned_planet = {
+				set_variable = { which = {{varname}}_planet_inertia value = 0}
+				
+				every_owned_pop = {
+					
+					# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
+					export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+					change_variable = { which = pop_happiness value = 0.5 }
+
+					export_modifier_to_variable = { modifier = pop_political_power variable = pop_political_power }
+					change_variable = { which = pop_political_power value = 0.5 }
+					
+					set_variable = {which = pop_{{varname}}_radicalism value = 1}
+					subtract_variable = { which = pop_{{varname}}_radicalism value = pop_happiness }
+					
+					set_variable = { which = {{varname}}_pop_inertia value = pop_political_power }
+					multiply_variable = { which = {{varname}}_pop_inertia value = pop_{{varname}}_radicalism }
+					log = "Planet [Prev.GetName] - Pop Happiness: [This.pop_happiness] Political Power: [This.pop_political_power] Inertia: [This.{{varname}}_pop_inertia]"
+
+					if = {
+						limit = {
+							NOR = {
+								{% for supportingEthic in supportingEthics %}
+								has_ethic = ethic_{{supportingEthic}}
+								has_ethic = ethic_fanatic_{{supportingEthic}}
+								{% endfor %}
+							}
+						}
+						multiply_variable = { which = {{varname}}_pop_inertia value = -1 }
+					}
+					PREV = {
+						change_variable = { which = {{varname}}_planet_inertia value = PREV.{{varname}}_pop_inertia }
+					}
+				}
+				log = "Total Planet [This.GetName] revolt inertia: [This.{{varname}}_planet_inertia]"
+				if = {
+					limit = {
+						check_variable = { which = {{varname}}_planet_inertia value > ROOT.{{varname}}_largest_planet_inertia }
+					}
+					save_event_target_as = {{varname}}_revolting_capital
+					ROOT = {
+						set_variable = { which = {{varname}}_largest_planet_inertia value = PREV.{{varname}}_planet_inertia }
+					}
+				}
+			}
+		}
+		log = "Revolt Chosen Capital: [event_target:{{varname}}_revolting_capital.GetName]"
+		event_target:{{varname}}_revolting_capital = {
+			random_owned_species = {
+				save_event_target_as = {{varname}}_revolting_species
+			}
+			create_rebels = {
+				name = random
+				ethos = random
+				authority = random
+				civics = random
+				origin = "origin_separatists"
+				species = event_target:{{varname}}_revolting_species
+				flag = random
+				effect = {
+					save_event_target_as = rebel_empire
+					set_country_type = default
+					establish_communications_no_message = root.owner
+		
+					event_target:{{varname}}_revolting_capital = { #Flip the target planet
+						set_owner = event_target:rebel_empire
+			
+						solar_system = {
+							if = {
+								limit = { exists = starbase }
+								starbase = {
+									if = {
+										limit = {
+											is_owned_by = root.owner
+										}
+										set_owner = event_target:rebel_empire
+										if = {
+											limit = { has_starbase_size = starbase_outpost }
+											set_starbase_size = starbase_starport
+											set_starbase_module = {
+												slot = 1
+												module = shipyard
+											}
+											set_starbase_module = {
+												slot = 2
+												module = shipyard
+											}
+										}
+										else_if = {
+											limit = {
+												NOT = { has_starbase_module = shipyard }
+											}
+											set_starbase_module = {
+												slot = 1
+												module = shipyard
+											}
+											set_starbase_module = {
+												slot = 2
+												module = shipyard
+											}
+										}
+									}
+								}
+							}
+							else = {
+								create_starbase = {
+									size = starbase_starport
+									module = shipyard
+									module = shipyard
+									owner = event_target:rebel_empire
+								}
+							}
+							add_claims = {
+								who = root.owner
+								show_notification = no
+							}
+
+							every_system_planet = {
+								limit = {
+									is_colony = yes
+									NOT = { is_same_value = event_target:rebel_planet }
+									is_owned_by = root.owner
+								}
+								set_owner = event_target:rebel_empire
+							}
+							every_fleet_in_system = {
+								limit = {
+									is_owned_by = root.owner
+									can_go_mia = yes
+								}
+								set_mia = mia_return_home
+							}
+						}
+					}
+					set_policy = { 
+						policy = {{policyCategory}} 
+						option = {{policyOption}} 
+						cooldown = yes 
+					}
+					add_resource = {
+						minerals = 15000
+						energy = 15000
+						food = 15000
+						consumer_goods = 10000
+						alloys = 10000
+						rare_crystals = 1000
+						volatile_motes = 1000
+						exotic_gases = 1000
+						influence = 1000
+						unity = 10000
+					}
+
+					root.owner = {
+						every_owned_planet = { #Flip the additional joiner planets
+							limit = {
+								check_variable = { which = {{varname}}_planet_inertia value > 0}
+								
+								OR = {
+									NOT = { exists = starbase }
+									starbase = { is_owned_by = root.owner }
+								}
+								has_ground_combat = no
+								has_orbital_bombardment = no
+							}
+							if = { #if you check this in the original limit of every_owned_planet, it calcs it before the loop is executed. Which means it will set the owner of the system twice if there are two colonies in the system.
+								limit = {
+									exists = controller
+									controller = { is_same_value = root.owner }
+								}
+								set_variable = { which = {{varname}}_planet_inertia value = 0}
+								set_owner = event_target:rebel_empire
+		
+								solar_system = {
+									if = {
+										limit = { exists = starbase }
+										starbase = { set_owner = event_target:rebel_empire }
+									}
+									add_claims = {
+										who = root.owner
+										show_notification = no
+									}
+									every_system_planet = {
+										limit = {
+											is_colony = yes
+											NOT = { is_same_value = prevprev }
+											is_owned_by = root.owner
+										}
+										set_owner = event_target:rebel_empire
+									}
+									every_fleet_in_system = {
+										limit = {
+											is_owned_by = root.owner
+											can_go_mia = yes
+										}
+										set_mia = mia_return_home
+									}
+								}
+							}
+						}
+					}
+					every_system_within_border = { #Add a few systems
+						every_neighbor_system = {
+							limit = {
+								exists = owner
+								owner = { is_same_value = root.owner }
+								exists = starbase
+								NOR = {
+									starbase = {
+										OR = {
+											is_starbase_type = sfortress
+											NOT = { is_owned_by = root.owner }
+										}
+									}
+									any_system_planet = {
+										is_colony = yes
+									}
+								}
+							}
+							starbase = { set_owner = event_target:rebel_empire }
+							add_claims = {
+								who = root.owner
+								show_notification = no
+							}
+							every_fleet_in_system = {
+								limit = {
+									is_owned_by = root.owner
+									can_go_mia = yes
+								}
+								set_mia = mia_return_home
+							}
+						}
+					}
+					while = { #Get rid of bordergore systems
+						limit = { #Note: system_within_border caching is quite funky at a time like this when many borders are changing hands. The starbase ownership is checked to be extra sure, since it is not cached (unlike system ownership - though that probably would have worked too)
+							root.owner = {
+								any_system_within_border = {
+									exists = starbase
+									starbase.owner = { is_same_value = prevprev }
+									count_neighbor_system = {
+										count >= 2
+										limit = {
+											exists = starbase.owner
+											starbase.owner = {
+												is_same_value = event_target:rebel_empire
+											}
+										}
+									}
+									NOR = {
+										starbase = { is_starbase_type = sfortress }
+										any_system_planet = {
+											is_colony = yes
+										}
+									}
+								}
+							}
+						}
+						root.owner = {
+							every_system_within_border = {
+								limit = {
+									exists = starbase
+									starbase.owner = { is_same_value = prevprev }
+									count_neighbor_system = {
+										count >= 2
+										limit = {
+											exists = starbase.owner
+											starbase.owner = {
+												is_same_value = event_target:rebel_empire
+											}
+										}
+									}
+									NOR = {
+										starbase = { is_starbase_type = sfortress }
+										any_system_planet = {
+											is_colony = yes
+										}
+									}
+								}
+								starbase = {
+									set_owner = event_target:rebel_empire
+								}
+								add_claims = {
+									who = root.owner
+									show_notification = no
+								}
+								every_fleet_in_system = {
+									limit = {
+										is_owned_by = root.owner
+										can_go_mia = yes
+									}
+									set_mia = mia_return_home
+								}
+							}
+						}
+					}	
+					{% for supportingEthic in supportingEthics %}
+					shift_ethic = {supportingEthic}
+					{% endfor %}
+					
+					change_government = {
+						authority = random
+						civics = random
+					}
+					create_leader = {
+						class = random_ruler
+						species = owner_main_species
+						name = random
+						skill = 5
+						effect = {
+							event_target:rebel_empire = { assign_leader = prev }
+							add_random_leader_trait = yes
+							add_random_leader_trait = yes
+						}
+					}
+					
+					create_fleet_from_naval_cap = 2
+					declare_war = {
+						target = Root.Owner
+						name = "Civil War over {{displayName}}"
+						attacker_war_goal = wg_conquest
+					}
+				}
+			}
+		}
+		destroy_situation = this
+	}
+	option = {
+		name = movement_{{varname}}.6.fight
+	}
+	option = {
+		name = movement_{{varname}}.6.join
+		OWNER = {
+			set_player = event_target:rebel_empire
+		}
+	}
+}
+

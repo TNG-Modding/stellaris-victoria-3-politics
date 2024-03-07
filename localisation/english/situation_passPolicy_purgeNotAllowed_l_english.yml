@@ -1,0 +1,32 @@
+﻿l_english:
+ # Situation
+ situation_passPolicy_purgeNotAllowed:0 "Purge not Allowed Legislation"
+ situation_passPolicy_purgeNotAllowed_type:0 "Purge not Allowed Legislation"
+ situation_passPolicy_purgeNotAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSupremacist§! presence in our empire."
+ situation_passPolicy_purgeNotAllowed_desc:0 "We are working on passing the policy §BPurge not Allowed§! as purging is an atrocity and should always be treated as such.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_purgeNotAllowed:0 "Pass §BPurge not Allowed§!."
+
+ situation_passPolicy_purgeNotAllowed.7.name:0 "§BPurge not Allowed§! Passed!"
+ situation_passPolicy_purgeNotAllowed.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BPurge not Allowed§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_purgeNotAllowed.7.a:0 "Finally!"
+
+ situation_passPolicy_purgeNotAllowed.8.name:0 "§BPurge not Allowed§! Abandoned!"
+ situation_passPolicy_purgeNotAllowed.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BPurge not Allowed§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BPurge not Allowed§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_purgeNotAllowed.8.a:0 "It seems it was not §BPurge not Allowed's§! time."
+
+ situation_passPolicy_purgeNotAllowed.9.name:0 "§BPurge not Allowed§! Failed to Pass!"
+ situation_passPolicy_purgeNotAllowed.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BPurge not Allowed§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_purgeNotAllowed.9.a:0 "Blast!"
+ 
+ # Event
+ situation_passPolicy_purgeNotAllowed.1.name:0 "Legislation for Purge not Allowed"
+ situation_passPolicy_purgeNotAllowed.1.desc:0 "We move that purging is an atrocity and should always be treated as such.\n\nSupport: §G[This.movement_purgeNotAllowed_faction_support]%§!"
+
+ situation_passPolicy_purgeNotAllowed.2.name:0 "Purge not Allowed Support"
+ situation_passPolicy_purgeNotAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+
+ faction_supportPolicy_purgeNotAllowed.1.name:0 "Purge not Allowed"
+ faction_supportPolicy_purgeNotAllowed.1.desc:0 "Overall Support: [Root.faction_support_purgeNotAllowed]\n\nSupporters:\nxenoist: [Root.xenoist_support_purgeNotAllowed]\nprogressive: [Root.progressive_support_purgeNotAllowed]\n\nDetractors:\nsupremacist: [Root.supremacist_support_purgeNotAllowed]\nimperialist: [Root.imperialist_support_purgeNotAllowed]\ntotalitarian: [Root.totalitarian_support_purgeNotAllowed]\n"
+
+ edict_pass_purgeNotAllowed:0 "Pass §BPurge not Allowed§!"
+ edict_pass_purgeNotAllowed_desc:0 "We move that purging is an atrocity and should always be treated as such."
