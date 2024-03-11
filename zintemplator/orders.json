@@ -107,5 +107,24 @@
         "disabled": false, 
         "dumpContents": true, 
         "isBom": false
+    },
+
+    {
+        "name": "Policy Localisation",
+        "specFilePath": "./specs/newPolicies.json",
+        "templateDirectoryPath": "./templates/newPolicies/localisation",
+        "outputDirectoryPath": "../localisation/english",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": true
+    },
+    {
+        "name": "Policies",
+        "specFilePath": "./specs/newPolicies.json",
+        "templateDirectoryPath": "./templates/newPolicies/policies",
+        "outputDirectoryPath": "../common/policies",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
     }
 ]

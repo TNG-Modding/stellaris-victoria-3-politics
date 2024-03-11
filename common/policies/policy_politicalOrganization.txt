@@ -1,0 +1,21 @@
+politicalOrganization = {
+	potential = {
+		
+	}
+
+	
+	option = {
+		name = "preFtlPoliticalOrganization"
+		policy_flags = {
+			preFtlPoliticalOrganization
+		}
+	}
+	
+	option = {
+		name = "interplanetaryPoliticalOrganization"
+		policy_flags = {
+			interplanetaryPoliticalOrganization
+		}
+	}
+	
+}

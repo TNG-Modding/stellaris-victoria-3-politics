@@ -1,0 +1,14 @@
+{{varname}} = {
+	potential = {
+		{{potential}}
+	}
+
+	{% for option in options %}
+	option = {
+		name = "{{option.varname}}"
+		policy_flags = {
+			{{option.varname}}
+		}
+	}
+	{% endfor %}
+}

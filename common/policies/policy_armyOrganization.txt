@@ -1,0 +1,28 @@
+armyOrganization = {
+	potential = {
+		
+	}
+
+	
+	option = {
+		name = "preFtlMilitaries"
+		policy_flags = {
+			preFtlMilitaries
+		}
+	}
+	
+	option = {
+		name = "spacefaringStandingArmy"
+		policy_flags = {
+			spacefaringStandingArmy
+		}
+	}
+	
+	option = {
+		name = "grandArmy"
+		policy_flags = {
+			grandArmy
+		}
+	}
+	
+}

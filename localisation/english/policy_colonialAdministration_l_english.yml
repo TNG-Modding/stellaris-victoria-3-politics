@@ -1,0 +1,14 @@
+﻿l_english:
+
+ policy_colonialAdministration:0 "Colonial Administration"
+ policy_colonialAdministration_name:0 "Colonial Administration"
+ policy_colonialAdministration_desc:0 "The structure of our colonial holdings."
+ 
+ dependentColonies:0 "Pre-FTL Colonial Dependents"
+ dependentColonies_name:0 "Pre-FTL Colonial Dependents"
+ dependentColonies_desc:0 "Colonial administration based off crude pre-ftl techniques of supporting the center at the expense of the periphery. Prevents upgrading Colonial Shelters and building non-resource extraction buildings and districts on planets other than the capital."
+ 
+ interplanetaryGoverance:0 "Interplanetary Governance"
+ interplanetaryGoverance_name:0 "Interplanetary Governance"
+ interplanetaryGoverance_desc:0 "A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax colonial holdings."
+ 

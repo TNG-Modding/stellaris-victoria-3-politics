@@ -1,0 +1,28 @@
+fleetFormation = {
+	potential = {
+		
+	}
+
+	
+	option = {
+		name = "merchantMarine"
+		policy_flags = {
+			merchantMarine
+		}
+	}
+	
+	option = {
+		name = "floatingNavy"
+		policy_flags = {
+			floatingNavy
+		}
+	}
+	
+	option = {
+		name = "armada"
+		policy_flags = {
+			armada
+		}
+	}
+	
+}

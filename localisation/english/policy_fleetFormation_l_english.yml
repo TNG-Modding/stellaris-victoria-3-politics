@@ -1,0 +1,18 @@
+﻿l_english:
+
+ policy_fleetFormation:0 "Fleet Formation"
+ policy_fleetFormation_name:0 "Fleet Formation"
+ policy_fleetFormation_desc:0 "The powers and extent of our navy."
+ 
+ merchantMarine:0 "Pre-FTL Merchant Marine"
+ merchantMarine_name:0 "Pre-FTL Merchant Marine"
+ merchantMarine_desc:0 "A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates."
+ 
+ floatingNavy:0 "Floating Navy"
+ floatingNavy_name:0 "Floating Navy"
+ floatingNavy_desc:0 "A modern navy without restrictions."
+ 
+ armada:0 "Armada"
+ armada_name:0 "Armada"
+ armada_desc:0 "A fleet that is a civilization unto itself. Untold millions will live and die aboard our navy vessels."
+ 

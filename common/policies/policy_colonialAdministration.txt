@@ -1,0 +1,21 @@
+colonialAdministration = {
+	potential = {
+		
+	}
+
+	
+	option = {
+		name = "dependentColonies"
+		policy_flags = {
+			dependentColonies
+		}
+	}
+	
+	option = {
+		name = "interplanetaryGoverance"
+		policy_flags = {
+			interplanetaryGoverance
+		}
+	}
+	
+}
