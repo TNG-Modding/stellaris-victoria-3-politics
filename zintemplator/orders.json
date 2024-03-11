@@ -1,36 +1,8 @@
 [
     {
-        "name": "Revolution Situation for Passing Policies",
-        "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/revolutions/situation_revolution",
-        "outputDirectoryPath": "../common/situations",
-        "disabled": true, 
-        "dumpContents": true, 
-        "isBom": false
-    },
-    {
-        "name": "Revolution Event for Passing Policies",
-        "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/revolutions/situation_revolution_events",
-        "outputDirectoryPath": "../events",
-        "disabled": true, 
-        "dumpContents": true, 
-        "isBom": false
-    },
-    {
-        "name": "Revolution Localisation for Passing Policies",
-        "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/revolutions/situation_revolution_localisation",
-        "outputDirectoryPath": "../localisation/english",
-        "disabled": true, 
-        "dumpContents": true, 
-        "isBom": true
-    },
-
-    {
         "name": "Situation for Passing Policies",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy",
+        "templateDirectoryPath": "./templates/passPolicy/situation",
         "outputDirectoryPath": "../common/situations",
         "disabled": false, 
         "dumpContents": true, 
@@ -39,7 +11,7 @@
     {
         "name": "Event for Passing Policies",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy_events",
+        "templateDirectoryPath": "./templates/passPolicy/events",
         "outputDirectoryPath": "../events",
         "disabled": false, 
         "dumpContents": true, 
@@ -48,7 +20,7 @@
     {
         "name": "Localisation for Passing Policies",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/passPolicy/situation_passPolicy_localisation",
+        "templateDirectoryPath": "./templates/passPolicy/localisation",
         "outputDirectoryPath": "../localisation/english",
         "disabled": false, 
         "dumpContents": true, 
@@ -75,7 +47,7 @@
     {
         "name": "Events for Movements",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/movements/movement_events",
+        "templateDirectoryPath": "./templates/movements/events",
         "outputDirectoryPath": "../events",
         "disabled": false, 
         "dumpContents": true, 
@@ -84,7 +56,7 @@
     {
         "name": "On Action for Movements",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/movements/movement_on_actions",
+        "templateDirectoryPath": "./templates/movements/on_action",
         "outputDirectoryPath": "../common/on_actions",
         "disabled": false, 
         "dumpContents": true, 
@@ -93,7 +65,7 @@
     {
         "name": "Localisation for Movements",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/movements/movement_localisation",
+        "templateDirectoryPath": "./templates/movements/localisation",
         "outputDirectoryPath": "../localisation/english",
         "disabled": false, 
         "dumpContents": true, 
@@ -102,7 +74,7 @@
     {
         "name": "Movement Situation",
         "specFilePath": "./specs/policies.json",
-        "templateDirectoryPath": "./templates/movements/movement_situation",
+        "templateDirectoryPath": "./templates/movements/situation",
         "outputDirectoryPath": "../common/situations",
         "disabled": false, 
         "dumpContents": true, 
