@@ -3,7 +3,7 @@
  situation_passPolicy_purgeDisplacementOnly:0 "Purge Displacement Only Legislation"
  situation_passPolicy_purgeDisplacementOnly_type:0 "Purge Displacement Only Legislation"
  situation_passPolicy_purgeDisplacementOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YXenoist§! presence in our empire."
- situation_passPolicy_purgeDisplacementOnly_desc:0 "We are working on passing the policy §BPurge Displacement Only§! as it is not our responsibility to see to the needs of those who would undermine the foundations of our society.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_purgeDisplacementOnly_desc:0 "We are working on passing the policy §BPurge Displacement Only§! as it is not our responsibility to see to the needs of those who would undermine the foundations of our society.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_purgeDisplacementOnly:0 "Pass §BPurge Displacement Only§!."
 
  situation_passPolicy_purgeDisplacementOnly.7.name:0 "§BPurge Displacement Only§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_purgeDisplacementOnly.1.desc:0 "We move that it is not our responsibility to see to the needs of those who would undermine the foundations of our society.\n\nSupport: §G[This.movement_purgeDisplacementOnly_faction_support]%§!"
 
  situation_passPolicy_purgeDisplacementOnly.2.name:0 "Purge Displacement Only Support"
- situation_passPolicy_purgeDisplacementOnly.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_purgeDisplacementOnly.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_purgeDisplacementOnly.1.name:0 "Purge Displacement Only"
  faction_supportPolicy_purgeDisplacementOnly.1.desc:0 "Overall Support: [Root.faction_support_purgeDisplacementOnly]\n\nSupporters:\nxenoist: [Root.xenoist_support_purgeDisplacementOnly]\nprogressive: [Root.progressive_support_purgeDisplacementOnly]\n\nDetractors:\nsupremacist: [Root.supremacist_support_purgeDisplacementOnly]\nimperialist: [Root.imperialist_support_purgeDisplacementOnly]\ntotalitarian: [Root.totalitarian_support_purgeDisplacementOnly]\n"

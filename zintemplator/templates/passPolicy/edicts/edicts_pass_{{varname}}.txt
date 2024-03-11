@@ -8,6 +8,7 @@ pass_{{varname}} = {
 	}
 
 	allow = {
+		{{potential}}
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

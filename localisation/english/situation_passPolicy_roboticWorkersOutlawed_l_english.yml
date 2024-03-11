@@ -3,7 +3,7 @@
  situation_passPolicy_roboticWorkersOutlawed:0 "Robotic Workers Outlawed Legislation"
  situation_passPolicy_roboticWorkersOutlawed_type:0 "Robotic Workers Outlawed Legislation"
  situation_passPolicy_roboticWorkersOutlawed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSpiritualist§! presence in our empire."
- situation_passPolicy_roboticWorkersOutlawed_desc:0 "We are working on passing the policy §BRobotic Workers Outlawed§! as robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_roboticWorkersOutlawed_desc:0 "We are working on passing the policy §BRobotic Workers Outlawed§! as robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_roboticWorkersOutlawed:0 "Pass §BRobotic Workers Outlawed§!."
 
  situation_passPolicy_roboticWorkersOutlawed.7.name:0 "§BRobotic Workers Outlawed§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_roboticWorkersOutlawed.1.desc:0 "We move that robotic automatons are a threat to not only our peoples livelihoods but to the very fabric of society itself.\n\nSupport: §G[This.movement_roboticWorkersOutlawed_faction_support]%§!"
 
  situation_passPolicy_roboticWorkersOutlawed.2.name:0 "Robotic Workers Outlawed Support"
- situation_passPolicy_roboticWorkersOutlawed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_roboticWorkersOutlawed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_roboticWorkersOutlawed.1.name:0 "Robotic Workers Outlawed"
  faction_supportPolicy_roboticWorkersOutlawed.1.desc:0 "Overall Support: [Root.faction_support_roboticWorkersOutlawed]\n\nSupporters:\ntraditionalist: [Root.traditionalist_support_roboticWorkersOutlawed]\n\nDetractors:\ntechnologist: [Root.technologist_support_roboticWorkersOutlawed]\n"

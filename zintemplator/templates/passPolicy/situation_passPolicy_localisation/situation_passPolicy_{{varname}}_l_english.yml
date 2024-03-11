@@ -3,7 +3,7 @@ l_english:
  situation_passPolicy_{{varname}}:0 "{{displayName}} Legislation"
  situation_passPolicy_{{varname}}_type:0 "{{displayName}} Legislation"
  situation_passPolicy_{{varname}}_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y{{ethicAdjective}}§! presence in our empire."
- situation_passPolicy_{{varname}}_desc:0 "We are working on passing the policy §B{{displayName}}§! as {{description}}.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_{{varname}}_desc:0 "We are working on passing the policy §B{{displayName}}§! as {{description}}.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_{{varname}}:0 "Pass §B{{displayName}}§!."
 
  situation_passPolicy_{{varname}}.7.name:0 "§B{{displayName}}§! Passed!"
@@ -23,7 +23,7 @@ l_english:
  situation_passPolicy_{{varname}}.1.desc:0 "We move that {{description}}.\n\nSupport: §G[This.movement_{{varname}}_faction_support]%§!"
 
  situation_passPolicy_{{varname}}.2.name:0 "{{displayName}} Support"
- situation_passPolicy_{{varname}}.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_{{varname}}.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_{{varname}}.1.name:0 "{{displayName}}"
  faction_supportPolicy_{{varname}}.1.desc:0 "Overall Support: [Root.faction_support_{{varname}}]\n\nSupporters:\n{% for supportingFaction in supportingFactions %}{{supportingFaction}}: [Root.{{supportingFaction}}_support_{{varname}}]\n{% endfor %}\nDetractors:\n{% for detractingFaction in detractingFactions %}{{detractingFaction}}: [Root.{{detractingFaction}}_support_{{varname}}]\n{% endfor %}"

@@ -3,7 +3,7 @@
  situation_passPolicy_refugeesNotAllowed:0 "Refugees Not Allowed Legislation"
  situation_passPolicy_refugeesNotAllowed_type:0 "Refugees Not Allowed Legislation"
  situation_passPolicy_refugeesNotAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YXenophile§! presence in our empire."
- situation_passPolicy_refugeesNotAllowed_desc:0 "We are working on passing the policy §BRefugees Not Allowed§! as we cannot allow compassion to overpower good sense. Only those who would be worthwhile additions to society should be brought into our borders.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_refugeesNotAllowed_desc:0 "We are working on passing the policy §BRefugees Not Allowed§! as we cannot allow compassion to overpower good sense. Only those who would be worthwhile additions to society should be brought into our borders.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_refugeesNotAllowed:0 "Pass §BRefugees Not Allowed§!."
 
  situation_passPolicy_refugeesNotAllowed.7.name:0 "§BRefugees Not Allowed§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_refugeesNotAllowed.1.desc:0 "We move that we cannot allow compassion to overpower good sense. Only those who would be worthwhile additions to society should be brought into our borders.\n\nSupport: §G[This.movement_refugeesNotAllowed_faction_support]%§!"
 
  situation_passPolicy_refugeesNotAllowed.2.name:0 "Refugees Not Allowed Support"
- situation_passPolicy_refugeesNotAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_refugeesNotAllowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_refugeesNotAllowed.1.name:0 "Refugees Not Allowed"
  faction_supportPolicy_refugeesNotAllowed.1.desc:0 "Overall Support: [Root.faction_support_refugeesNotAllowed]\n\nSupporters:\nisolationist: [Root.isolationist_support_refugeesNotAllowed]\nprosperity: [Root.prosperity_support_refugeesNotAllowed]\n\nDetractors:\nxenoist: [Root.xenoist_support_refugeesNotAllowed]\nimperialist: [Root.imperialist_support_refugeesNotAllowed]\n"

@@ -8,6 +8,7 @@ pass_refugeesAllowed = {
 	}
 
 	allow = {
+		has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

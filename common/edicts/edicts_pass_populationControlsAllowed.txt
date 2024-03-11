@@ -8,6 +8,7 @@ pass_populationControlsAllowed = {
 	}
 
 	allow = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

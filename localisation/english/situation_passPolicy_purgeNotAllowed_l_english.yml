@@ -3,7 +3,7 @@
  situation_passPolicy_purgeNotAllowed:0 "Purge not Allowed Legislation"
  situation_passPolicy_purgeNotAllowed_type:0 "Purge not Allowed Legislation"
  situation_passPolicy_purgeNotAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSupremacist§! presence in our empire."
- situation_passPolicy_purgeNotAllowed_desc:0 "We are working on passing the policy §BPurge not Allowed§! as purging is an atrocity and should always be treated as such.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_purgeNotAllowed_desc:0 "We are working on passing the policy §BPurge not Allowed§! as purging is an atrocity and should always be treated as such.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_purgeNotAllowed:0 "Pass §BPurge not Allowed§!."
 
  situation_passPolicy_purgeNotAllowed.7.name:0 "§BPurge not Allowed§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_purgeNotAllowed.1.desc:0 "We move that purging is an atrocity and should always be treated as such.\n\nSupport: §G[This.movement_purgeNotAllowed_faction_support]%§!"
 
  situation_passPolicy_purgeNotAllowed.2.name:0 "Purge not Allowed Support"
- situation_passPolicy_purgeNotAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_purgeNotAllowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_purgeNotAllowed.1.name:0 "Purge not Allowed"
  faction_supportPolicy_purgeNotAllowed.1.desc:0 "Overall Support: [Root.faction_support_purgeNotAllowed]\n\nSupporters:\nxenoist: [Root.xenoist_support_purgeNotAllowed]\nprogressive: [Root.progressive_support_purgeNotAllowed]\n\nDetractors:\nsupremacist: [Root.supremacist_support_purgeNotAllowed]\nimperialist: [Root.imperialist_support_purgeNotAllowed]\ntotalitarian: [Root.totalitarian_support_purgeNotAllowed]\n"

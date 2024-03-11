@@ -82,7 +82,9 @@ situation_movement_citizenRefugees = {
 		NOT = {
 			target.owner = { has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOT = { has_authority = auth_hive_mind has_ethic = ethic_gestalt_consciousness } }
 		}
-		
+		target.owner = {
+			has_policy_flag = refugees_only_citizens
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }

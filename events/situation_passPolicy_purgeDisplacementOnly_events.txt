@@ -25,162 +25,59 @@ country_event = {
 }
 
 # Determine advance fail or stall
+# situation.success_chance
+# situation.advance_chance
+# situation.stall_chance
+# situation.debate_chance
 situation_event = {
 	id = situation_passPolicy_purgeDisplacementOnly.2	
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					is_variable_set = setback_count
-				}
-			}
-			set_variable = { which = setback_count value = 0}
-		}
-		if = {
-			limit = {
-				NOT = {
-					is_variable_set = swayed_to_support
-				}
-			}
-			set_variable = { which = swayed_to_support value = 0}
-		}
-		if = {
-			limit = {
-				NOT = {
-					is_variable_set = swayed_to_detract
-				}
-			}
-			set_variable = { which = swayed_to_detract value = 0}
-		}
-		set_variable = { which = faction_support value = 0}
-		set_variable = { which = faction_detraction value = 0}
+		set_to_value_if_missing = { WHICH = setback_count VALUE = 0 }
+		set_to_value_if_missing = { WHICH = swayed_to_support VALUE = 0 }
 	
-		OWNER = {
-			every_pop_faction = {
-				
-				if = {
-					limit = {
-						is_pop_faction_type = xenoist
-					}
-					export_trigger_value_to_variable = { trigger = support variable = xenoist_support }
-					multiply_variable = {which = xenoist_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_support value = PREV.xenoist_support }		
-					}
-				}
-				
-				if = {
-					limit = {
-						is_pop_faction_type = progressive
-					}
-					export_trigger_value_to_variable = { trigger = support variable = progressive_support }
-					multiply_variable = {which = progressive_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_support value = PREV.progressive_support }		
-					}
-				}
-				
-				
-				if = {
-					limit = {
-						is_pop_faction_type = supremacist
-					}
-					export_trigger_value_to_variable = { trigger = support variable = supremacist_support }
-					multiply_variable = {which = supremacist_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_detraction value = PREV.supremacist_support }	
-					}
-				}
-				
-				if = {
-					limit = {
-						is_pop_faction_type = imperialist
-					}
-					export_trigger_value_to_variable = { trigger = support variable = imperialist_support }
-					multiply_variable = {which = imperialist_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_detraction value = PREV.imperialist_support }	
-					}
-				}
-				
-				if = {
-					limit = {
-						is_pop_faction_type = totalitarian
-					}
-					export_trigger_value_to_variable = { trigger = support variable = totalitarian_support }
-					multiply_variable = {which = totalitarian_support value = 100}
-					ROOT = {
-						change_variable = { which = faction_detraction value = PREV.totalitarian_support }	
-					}
-				}
-				
-			}
-		}
+		set_purgeDisplacementOnly_base_success_chance = { WHICH = success_chance }
+		set_purgeDisplacementOnly_base_stall_chance = { WHICH = stall_chance }
 
-		set_variable = {which = faction_ambivalence value = 100}
-		subtract_variable = { which = faction_ambivalence value = faction_support }
-		subtract_variable = { which = faction_ambivalence value = faction_detraction }
+		# Add previous sways
+		change_variable = { which = success_chance value = swayed_to_support }
+
+		clamp = { WHICH = success_chance MIN = 0 MAX = 100}
+		clamp = { WHICH = stall_chance MIN = 0 MAX = 100}
+
+		# Advance chance is double success minus stall then clamped
+		set_variable = { which = advance_chance value = success_chance }
+		multiply_variable = { which = advance_chance value = 2 }
+		subtract_variable = { which = advance_chance value = stall_chance }
+		max = { WHICH = advance_chance MAX = 0 }
+
+		set_variable = {which = debate_chance value = 100}
+		subtract_variable = { which = debate_chance value = success_chance }
+		subtract_variable = { which = debate_chance value = stall_chance }
+		subtract_variable = { which = debate_chance value = advance_chance }
 		
-		# log = "PRE MATH: purgeDisplacementOnly support: [THIS.faction_support]+[THIS.swayed_to_support] detraction: [THIS.faction_detraction]+[THIS.swayed_to_detract]"	
-
-		# If swayed is positive, give it support, if negative, give it to detraction
-		
-		change_variable = { which = faction_support value = swayed_to_support }
-		change_variable = { which = faction_detraction value = swayed_to_detract }
-		
-
-		# Clamp variables
+		# If the chance of debate would go to less than 0% an end-of-discussion factor is applied to scale the lower of success or stall chances so the sum chance remains 100%.
 		if = {
 			limit = {
-				check_variable = { which = faction_support value > 100}
+				check_variable = { which = debate_chance value < 0}
 			}
-			set_variable = { which = faction_support value = 100}
-		}
-		if = {
-			limit = {
-				check_variable = { which = faction_support value < 0}
-			}
-			set_variable = { which = faction_support value = 0}
-		}
-		
-		if = {
-			limit = {
-				check_variable = { which = faction_detraction value > 100}
-			}
-			set_variable = { which = faction_detraction value = 100}
-		}
-		if = {
-			limit = {
-				check_variable = { which = faction_detraction value < 0}
-			}
-			set_variable = { which = faction_detraction value = 0}
+			purgeDisplacementOnly_end_of_discussion = {}
 		}
 
-		set_variable = {which = faction_ambivalence value = 100}
-		subtract_variable = { which = faction_ambivalence value = faction_support }
-		subtract_variable = { which = faction_ambivalence value = faction_detraction }
+		ceiling_variable = success_chance
+		ceiling_variable = stall_chance
+		ceiling_variable = debate_chance
+		ceiling_variable = advance_chance
 
-		if = {
-			limit = {
-				check_variable = { which = faction_ambivalence value > 100}
-			}
-			set_variable = { which = faction_ambivalence value = 100}
-		}
-		if = {
-			limit = {
-				check_variable = { which = faction_ambivalence value < 0}
-			}
-			set_variable = { which = faction_ambivalence value = 0}
-		}
+		set_variable = {which = total_chance value = 0}
+		change_variable = { which = total_chance value = success_chance }
+		change_variable = { which = total_chance value = stall_chance }
+		change_variable = { which = total_chance value = advance_chance }
+		change_variable = { which = total_chance value = debate_chance }
 
-
-		ceiling_variable = faction_support
-		ceiling_variable = faction_detraction
-		ceiling_variable = faction_ambivalence
-		# log = "POST MATH: purgeDisplacementOnly support: [THIS.faction_support] detraction: [THIS.faction_detraction] ambivalence: [THIS.faction_ambivalence]"	
+		# log = "POST MATH: purgeDisplacementOnly support: [THIS.success_chance] detraction: [THIS.stall_chance] ambivalence: [THIS.debate_chance]"	
 	}
 }
 # Decide whether or not to roll
@@ -195,19 +92,19 @@ situation_event = {
 			id = situation_passPolicy_purgeDisplacementOnly.2	
 		}
 		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
-		# log = "Rolled: [THIS.advancement_roll] [THIS.faction_support]:[THIS.faction_detraction]:[THIS.faction_ambivalence]"
+		# log = "Rolled: [THIS.advancement_roll] [THIS.success_chance]:[THIS.stall_chance]:[THIS.debate_chance]"
 		if = {
 			limit = {
-				check_variable = { which = advancement_roll value < faction_support  }
+				check_variable = { which = advancement_roll value < success_chance  }
 			}
 			# Advance!
 			situation_event = { id = situation_passPolicy_purgeDisplacementOnly.4}
 		}
 		else = {
-			subtract_variable = { which = advancement_roll value = faction_support }
+			subtract_variable = { which = advancement_roll value = success_chance }
 			if = {
 				limit = {
-					check_variable = { which = advancement_roll value < faction_detraction }
+					check_variable = { which = advancement_roll value < stall_chance }
 				}
 				# Fail!
 				situation_event = {id = situation_passPolicy_purgeDisplacementOnly.5}
@@ -254,7 +151,7 @@ situation_event = {
 	immediate = {
 		if = {
 			limit = {
-				check_variable = { which = faction_ambivalence value > 10}
+				check_variable = { which = debate_chance value > 10}
 			}
 			set_variable_to_random_value = { which = sway_roll min = 0 max = 100 rounded = yes}
 			if = {
@@ -266,12 +163,12 @@ situation_event = {
 			}
 			else = {
 				# log = "purgeDisplacementOnly ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
-				change_variable = { which = swayed_to_detract value = 10}
+				subtract_variable = { which = swayed_to_support value = 10}
 			}
 			situation_event = {id = situation_passPolicy_purgeDisplacementOnly.2 }
 		}
 		else = {
-			# log = "purgeDisplacementOnly ambivalent! No ambivalence to give at [THIS.faction_ambivalence]."
+			# log = "purgeDisplacementOnly ambivalent! No ambivalence to give at [THIS.debate_chance]."
 		}
 	}
 }
@@ -291,8 +188,11 @@ situation_event = {
 				option = purge_displacement_only 
 				cooldown = yes 
 			}
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_purgeDisplacementOnly
 		}
 		destroy_situation = this
+		
 	}
 	option = {
 		name = situation_passPolicy_purgeDisplacementOnly.7.a
@@ -308,6 +208,10 @@ situation_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		owner = {
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_purgeDisplacementOnly
+		}
 		destroy_situation = this
 	}
 	option = {
@@ -323,6 +227,10 @@ situation_event = {
 	
 	is_triggered_only = yes
 	immediate = {
+		owner = {
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_purgeDisplacementOnly
+		}
 		destroy_situation = this
 	}
 	

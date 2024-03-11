@@ -3,7 +3,7 @@
  situation_passPolicy_populationControlsNotAllowed:0 "Disallow Pop Controls Legislation"
  situation_passPolicy_populationControlsNotAllowed_type:0 "Disallow Pop Controls Legislation"
  situation_passPolicy_populationControlsNotAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YEgalitarian§! presence in our empire."
- situation_passPolicy_populationControlsNotAllowed_desc:0 "We are working on passing the policy §BDisallow Pop Controls§! as to reproduce and propagate their species is the inalienable right of all our citizens.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_populationControlsNotAllowed_desc:0 "We are working on passing the policy §BDisallow Pop Controls§! as to reproduce and propagate their species is the inalienable right of all our citizens.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_populationControlsNotAllowed:0 "Pass §BDisallow Pop Controls§!."
 
  situation_passPolicy_populationControlsNotAllowed.7.name:0 "§BDisallow Pop Controls§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_populationControlsNotAllowed.1.desc:0 "We move that to reproduce and propagate their species is the inalienable right of all our citizens.\n\nSupport: §G[This.movement_populationControlsNotAllowed_faction_support]%§!"
 
  situation_passPolicy_populationControlsNotAllowed.2.name:0 "Disallow Pop Controls Support"
- situation_passPolicy_populationControlsNotAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_populationControlsNotAllowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_populationControlsNotAllowed.1.name:0 "Disallow Pop Controls"
  faction_supportPolicy_populationControlsNotAllowed.1.desc:0 "Overall Support: [Root.faction_support_populationControlsNotAllowed]\n\nSupporters:\nimperialist: [Root.imperialist_support_populationControlsNotAllowed]\nprogressive: [Root.progressive_support_populationControlsNotAllowed]\n\nDetractors:\nprosperity: [Root.prosperity_support_populationControlsNotAllowed]\ntotalitarian: [Root.totalitarian_support_populationControlsNotAllowed]\n"

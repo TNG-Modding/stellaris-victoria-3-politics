@@ -82,7 +82,9 @@ situation_movement_{{varname}} = {
 		NOT = {
 			target.owner = { {{potential}} }
 		}
-		
+		target.owner = {
+			has_policy_flag = {{policyOption}}
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }

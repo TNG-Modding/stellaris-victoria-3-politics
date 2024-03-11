@@ -490,7 +490,7 @@ situation_event = {
 						}
 					}	
 					
-					shift_ethic = spiritualist
+					shift_ethic = ethic_spiritualist
 					
 					
 					change_government = {
@@ -504,8 +504,8 @@ situation_event = {
 						skill = 5
 						effect = {
 							event_target:rebel_empire = { assign_leader = prev }
-							add_random_leader_trait = yes
-							add_random_leader_trait = yes
+							# add_random_leader_trait = yes
+							# add_random_leader_trait = yes
 						}
 					}
 					

@@ -8,6 +8,7 @@ pass_aiServitude = {
 	}
 
 	allow = {
+		NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOT = { has_country_flag = synthetic_empire }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

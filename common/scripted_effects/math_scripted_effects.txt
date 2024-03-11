@@ -1,0 +1,53 @@
+# MIN
+# MAX
+# WHICH
+
+clamp = {
+	if = {
+		limit = {
+			check_variable = { which = $WHICH$ value > $MAX$}
+		}
+		set_variable = { which = $WHICH$ value = $MAX$}
+	}
+	if = {
+		limit = {
+			check_variable = { which = $WHICH$ value < $MIN$}
+		}
+		set_variable = { which = $WHICH$ value = $MIN$}
+	}
+}
+# WHICH
+# MAX
+max = {
+	if = {
+		limit = {
+			check_variable = { which = $WHICH$ value < $MAX$}
+		}
+		set_variable = { which = $WHICH$ value = $MAX$}
+	}
+}
+
+# WHICH
+# MIN
+min = {
+	if = {
+		limit = {
+			check_variable = { which = $WHICH$ value > $MIN$}
+		}
+		set_variable = { which = $WHICH$ value = $MIN$}
+	}
+}
+
+# any
+# WHICH
+# VALUE
+set_to_value_if_missing = {
+	if = {
+		limit = {
+			NOT = {
+				is_variable_set = $WHICH$
+			}
+		}
+		set_variable = { which = $WHICH$ value = $VALUE$ }
+	}
+}

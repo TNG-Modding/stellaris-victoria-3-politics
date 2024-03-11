@@ -64,6 +64,15 @@
         "isBom": false
     },
     {
+        "name": "Scriped Effects for Passing Policies",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/passPolicy/scripted_effects",
+        "outputDirectoryPath": "../common/scripted_effects",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
         "name": "Events for Movements",
         "specFilePath": "./specs/policies.json",
         "templateDirectoryPath": "./templates/movements/movement_events",

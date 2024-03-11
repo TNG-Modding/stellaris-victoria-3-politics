@@ -1,0 +1,1 @@
+Make factions happy while enacting laws

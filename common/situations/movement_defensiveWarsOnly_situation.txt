@@ -82,7 +82,9 @@ situation_movement_defensiveWarsOnly = {
 		NOT = {
 			target.owner = { NOR = { has_ethic = ethic_fanatic_militarist has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator has_civic = civic_crusader_spirit } }
 		}
-		
+		target.owner = {
+			has_policy_flag = no_wars
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }

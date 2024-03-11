@@ -8,6 +8,7 @@ pass_defensiveWarsOnly = {
 	}
 
 	allow = {
+		NOR = { has_ethic = ethic_fanatic_militarist has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator has_civic = civic_crusader_spirit }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

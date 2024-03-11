@@ -3,7 +3,7 @@
  situation_passPolicy_aiServitude:0 "AI Servitude Legislation"
  situation_passPolicy_aiServitude_type:0 "AI Servitude Legislation"
  situation_passPolicy_aiServitude_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSpiritualist§! presence in our empire."
- situation_passPolicy_aiServitude_desc:0 "We are working on passing the policy §BAI Servitude§! as synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_aiServitude_desc:0 "We are working on passing the policy §BAI Servitude§! as synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_aiServitude:0 "Pass §BAI Servitude§!."
 
  situation_passPolicy_aiServitude.7.name:0 "§BAI Servitude§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_aiServitude.1.desc:0 "We move that synthetics should to be held in absolute servitude to their organic masters and may be used or discarded whim.\n\nSupport: §G[This.movement_aiServitude_faction_support]%§!"
 
  situation_passPolicy_aiServitude.2.name:0 "AI Servitude Support"
- situation_passPolicy_aiServitude.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_aiServitude.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_aiServitude.1.name:0 "AI Servitude"
  faction_supportPolicy_aiServitude.1.desc:0 "Overall Support: [Root.faction_support_aiServitude]\n\nSupporters:\ntechnologist: [Root.technologist_support_aiServitude]\ntraditionalist: [Root.traditionalist_support_aiServitude]\n\nDetractors:\n"

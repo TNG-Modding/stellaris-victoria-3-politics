@@ -3,7 +3,7 @@
  situation_passPolicy_refugeesAllowed:0 "Refugees Allowed Legislation"
  situation_passPolicy_refugeesAllowed_type:0 "Refugees Allowed Legislation"
  situation_passPolicy_refugeesAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YXenophile§! presence in our empire."
- situation_passPolicy_refugeesAllowed_desc:0 "We are working on passing the policy §BRefugees Allowed§! as those fleeing death and persecution at the hands of tyrants will be welcome within our borders.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_refugeesAllowed_desc:0 "We are working on passing the policy §BRefugees Allowed§! as those fleeing death and persecution at the hands of tyrants will be welcome within our borders.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_refugeesAllowed:0 "Pass §BRefugees Allowed§!."
 
  situation_passPolicy_refugeesAllowed.7.name:0 "§BRefugees Allowed§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_refugeesAllowed.1.desc:0 "We move that those fleeing death and persecution at the hands of tyrants will be welcome within our borders.\n\nSupport: §G[This.movement_refugeesAllowed_faction_support]%§!"
 
  situation_passPolicy_refugeesAllowed.2.name:0 "Refugees Allowed Support"
- situation_passPolicy_refugeesAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_refugeesAllowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_refugeesAllowed.1.name:0 "Refugees Allowed"
  faction_supportPolicy_refugeesAllowed.1.desc:0 "Overall Support: [Root.faction_support_refugeesAllowed]\n\nSupporters:\ntotalitarian: [Root.totalitarian_support_refugeesAllowed]\nxenoist: [Root.xenoist_support_refugeesAllowed]\n\nDetractors:\nsupremacist: [Root.supremacist_support_refugeesAllowed]\nprogressive: [Root.progressive_support_refugeesAllowed]\n"

@@ -8,6 +8,7 @@ pass_slaveryAllowed = {
 	}
 
 	allow = {
+		NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

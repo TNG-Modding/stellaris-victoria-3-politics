@@ -82,7 +82,9 @@ situation_movement_purgeNotAllowed = {
 		NOT = {
 			target.owner = { NOT = { has_ethic = ethic_gestalt_consciousness } NOT = { has_valid_civic = civic_fanatic_purifiers } }
 		}
-		
+		target.owner = {
+			has_policy_flag = purge_not_allowed
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }

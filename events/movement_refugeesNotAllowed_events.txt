@@ -519,9 +519,9 @@ situation_event = {
 						}
 					}	
 					
-					shift_ethic = authoritarian
+					shift_ethic = ethic_authoritarian
 					
-					shift_ethic = militarist
+					shift_ethic = ethic_militarist
 					
 					
 					change_government = {
@@ -535,8 +535,8 @@ situation_event = {
 						skill = 5
 						effect = {
 							event_target:rebel_empire = { assign_leader = prev }
-							add_random_leader_trait = yes
-							add_random_leader_trait = yes
+							# add_random_leader_trait = yes
+							# add_random_leader_trait = yes
 						}
 					}
 					

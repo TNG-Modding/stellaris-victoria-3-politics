@@ -8,6 +8,7 @@ pass_purgeDisplacementOnly = {
 	}
 
 	allow = {
+		NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } is_homicidal = no
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

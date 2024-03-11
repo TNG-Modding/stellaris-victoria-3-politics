@@ -82,7 +82,9 @@ situation_movement_purgeAllowed = {
 		NOT = {
 			target.owner = { NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker } }
 		}
-		
+		target.owner = {
+			has_policy_flag = purge_allowed
+		}
 		OR = {
 			NOT = { exists = target.owner }
 			target.owner = { NOT = { is_same_value = root.owner } }

@@ -8,6 +8,7 @@ pass_slaveryBanned = {
 	}
 
 	allow = {
+		NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets }
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

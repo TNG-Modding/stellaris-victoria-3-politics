@@ -3,7 +3,7 @@
  situation_passPolicy_populationControlsAllowed:0 "Allow Pop Controls Legislation"
  situation_passPolicy_populationControlsAllowed_type:0 "Allow Pop Controls Legislation"
  situation_passPolicy_populationControlsAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YAuthoritarian§! presence in our empire."
- situation_passPolicy_populationControlsAllowed_desc:0 "We are working on passing the policy §BAllow Pop Controls§! as long-term demographics is too important a matter to be left solely in the hands of individual actors.\n\n§GSupport: [This.faction_support]%§! §RDetraction: [This.faction_detraction]%§! §WAmbivalent: [This.faction_ambivalence]%§!\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_populationControlsAllowed_desc:0 "We are working on passing the policy §BAllow Pop Controls§! as long-term demographics is too important a matter to be left solely in the hands of individual actors.\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
  situation_passPolicy_finisher_populationControlsAllowed:0 "Pass §BAllow Pop Controls§!."
 
  situation_passPolicy_populationControlsAllowed.7.name:0 "§BAllow Pop Controls§! Passed!"
@@ -23,7 +23,7 @@
  situation_passPolicy_populationControlsAllowed.1.desc:0 "We move that long-term demographics is too important a matter to be left solely in the hands of individual actors.\n\nSupport: §G[This.movement_populationControlsAllowed_faction_support]%§!"
 
  situation_passPolicy_populationControlsAllowed.2.name:0 "Allow Pop Controls Support"
- situation_passPolicy_populationControlsAllowed.2.desc:0 "Support: [This.faction_support]%\nDetraction: [This.faction_detraction]%\nAmbivalent: [This.faction_ambivalence]%"
+ situation_passPolicy_populationControlsAllowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_populationControlsAllowed.1.name:0 "Allow Pop Controls"
  faction_supportPolicy_populationControlsAllowed.1.desc:0 "Overall Support: [Root.faction_support_populationControlsAllowed]\n\nSupporters:\ntotalitarian: [Root.totalitarian_support_populationControlsAllowed]\nprosperity: [Root.prosperity_support_populationControlsAllowed]\n\nDetractors:\nimperialist: [Root.imperialist_support_populationControlsAllowed]\nprogressive: [Root.progressive_support_populationControlsAllowed]\n"
