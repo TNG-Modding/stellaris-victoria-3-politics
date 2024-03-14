@@ -52,7 +52,7 @@
         "varname": "nativists",
         "displayName": "Nativists",
         "icon": "nativists",
-        "desc": "believe that fruits of empire should be enjoyed by our primary species alone.",
+        "desc": "believe that the fruits of empire should be enjoyed by our primary species alone.",
         "ethics": [ "xenophobe", "egalitarian" ],
         "preferredPolicies": [
             "purge_displacement_only",
