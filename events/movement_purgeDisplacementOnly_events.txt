@@ -17,6 +17,7 @@ event = {
 					NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } is_homicidal = no
 					NOT = { has_policy_flag = purge_displacement_only }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_purgeDisplacementOnly.2 }
 			}
 		}

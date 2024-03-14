@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_nativists"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_nativists.dds"
+		noOfFrames = 1
+	}
+}

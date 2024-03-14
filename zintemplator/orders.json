@@ -107,5 +107,50 @@
         "disabled": false, 
         "dumpContents": true, 
         "isBom": false
+    },
+    {
+        "name": "New Factions",
+        "specFilePath": "./specs/newFactions.json",
+        "templateDirectoryPath": "./templates/newFactions/pop_faction",
+        "outputDirectoryPath": "../common/pop_faction_types",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "New Faction Localisation",
+        "specFilePath": "./specs/newFactions.json",
+        "templateDirectoryPath": "./templates/newFactions/localisation",
+        "outputDirectoryPath": "../localisation/english",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": true
+    },
+    {
+        "name": "New Faction Random Names Localisation",
+        "specFilePath": "./specs/newFactions.json",
+        "templateDirectoryPath": "./templates/newFactions/random_names",
+        "outputDirectoryPath": "../localisation/english/random_names",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": true
+    },
+    {
+        "name": "New Faction Interface",
+        "specFilePath": "./specs/newFactions.json",
+        "templateDirectoryPath": "./templates/newFactions/interface",
+        "outputDirectoryPath": "../interface",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
+    {
+        "name": "New Faction Random Name",
+        "specFilePath": "./specs/newFactions.json",
+        "templateDirectoryPath": "./templates/newFactions/random_name",
+        "outputDirectoryPath": "../common/random_names",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
     }
 ]

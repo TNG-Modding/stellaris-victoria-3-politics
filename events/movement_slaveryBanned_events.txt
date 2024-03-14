@@ -17,6 +17,7 @@ event = {
 					NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets }
 					NOT = { has_policy_flag = slavery_not_allowed }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_slaveryBanned.2 }
 			}
 		}

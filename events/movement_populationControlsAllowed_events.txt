@@ -17,6 +17,7 @@ event = {
 					NOT = { has_ethic = ethic_gestalt_consciousness }
 					NOT = { has_policy_flag = population_controls_allowed }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_populationControlsAllowed.2 }
 			}
 		}

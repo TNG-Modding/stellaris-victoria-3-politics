@@ -1,0 +1,4 @@
+﻿l_english:
+ consolidationists:0 "Consolidationists Faction"
+ pft_consolidationists:0 "Consolidationists Faction"
+ pft_consolidationists_desc:2 "Consolidationists Factions believe that the creation of a galactic bureuacracy is a matter of national security.\n\nSupports: \n  $population_controls_allowed_name$\n  $refugees_not_allowed_name$\n  $pre_sapients_allow_name$\n  $first_contact_cautious_name$\n  $appropriation_allowed_name$\n  $resettlement_allowed_name$\n  $diplo_stance_isolationist_name$\n  $interplanetaryGoverance_name$"

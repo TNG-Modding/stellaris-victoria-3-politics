@@ -17,6 +17,7 @@ event = {
 					{{potential}}
 					NOT = { has_policy_flag = {{policyOption}} }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_{{varname}}.2 }
 			}
 		}

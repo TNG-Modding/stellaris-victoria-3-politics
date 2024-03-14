@@ -17,6 +17,7 @@ event = {
 					NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker }
 					NOT = { has_policy_flag = purge_allowed }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_purgeAllowed.2 }
 			}
 		}

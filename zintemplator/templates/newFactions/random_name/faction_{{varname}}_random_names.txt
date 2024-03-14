@@ -1,0 +1,17 @@
+pop_faction_name_parts_list = {
+	key = "{{varname}}_names"
+	parts = {
+		{{varname}} = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "{{varname}}"
+		}
+	}
+	format = "{<{{varname}}_names>}"
+}

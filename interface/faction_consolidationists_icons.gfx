@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_consolidationists"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_galactic.dds"
+		noOfFrames = 1
+	}
+}

@@ -17,6 +17,7 @@ event = {
 					has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile }
 					NOT = { has_policy_flag = refugees_not_allowed }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_refugeesNotAllowed.2 }
 			}
 		}

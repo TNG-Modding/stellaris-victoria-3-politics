@@ -1,0 +1,4 @@
+l_english:
+ {{varname}}:0 "{{displayName}} Faction"
+ pft_{{varname}}:0 "{{displayName}} Faction"
+ pft_{{varname}}_desc:2 "{{displayName}} Factions {{desc}}\n\nSupports: \n{%for preferredPolicy in preferredPolicies %}  ${{preferredPolicy}}_name${%if loop.index < preferredPolicies|length %}\n{%endif%}{% endfor%}"

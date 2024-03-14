@@ -17,6 +17,7 @@ event = {
 					NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers}
 					NOT = { has_policy_flag = liberation_wars }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_liberationWars.2 }
 			}
 		}

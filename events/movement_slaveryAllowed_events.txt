@@ -17,6 +17,7 @@ event = {
 					NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }
 					NOT = { has_policy_flag = slavery_not_allowed }
 				}
+				set_country_flag = suppress_vanilla_factions
 				country_event = { id = movement_slaveryAllowed.2 }
 			}
 		}

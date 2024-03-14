@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_preFtlConservatives"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_preftl_conservatives.dds"
+		noOfFrames = 1
+	}
+}

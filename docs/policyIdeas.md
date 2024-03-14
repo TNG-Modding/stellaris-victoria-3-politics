@@ -21,3 +21,4 @@
 - Private property
 - Faction Existence policies
 - How can you affect factions
+- Xenofaiths

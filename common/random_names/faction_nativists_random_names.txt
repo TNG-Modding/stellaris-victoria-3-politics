@@ -1,0 +1,17 @@
+pop_faction_name_parts_list = {
+	key = "nativists_names"
+	parts = {
+		nativists = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "nativists"
+		}
+	}
+	format = "{<nativists_names>}"
+}
