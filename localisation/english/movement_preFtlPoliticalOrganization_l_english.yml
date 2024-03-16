@@ -1,0 +1,24 @@
+﻿l_english:
+ movement_preFtlPoliticalOrganization.2.name:0 "Movement for Pre-FTL Political Units"
+ movement_preFtlPoliticalOrganization.2.desc:0 "Support: [This.movement_preFtlPoliticalOrganization_support]\nRadicalism: [This.movement_preFtlPoliticalOrganization_radicalism]"
+
+ #  Situation
+ situation_movement_preFtlPoliticalOrganization:0 "[Owner.MovementName_preFtlPoliticalOrganization]"
+ situation_movement_preFtlPoliticalOrganization_type:0 "[Owner.MovementName_preFtlPoliticalOrganization]"
+ situation_movement_preFtlPoliticalOrganization_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
+# 
+ situation_movement_preFtlPoliticalOrganization_desc:0 "The people are calling for §BPre-FTL Political Units§! as they believe the political organization of our pre-FTL days suffices.\n\nSupporting Factions:\n§G$pft_preFtlConservatives$\n$pft_colonists$\n§!\nDetracting Factions:\n§R§!\nEthics: §Y$ethic_xenophobe$ $ethic_xenophile$ $ethic_militarist$ $ethic_pacifist$ $ethic_spiritualist$ $ethic_materialist$ $ethic_authoritarian$ §!\nSupport: [Owner.movement_preFtlPoliticalOrganization_support] Radicalism: [Owner.movement_preFtlPoliticalOrganization_radicalism] Inertia: [Owner.movement_preFtlPoliticalOrganization_inertia]\nFaction Support [Owner.movement_preFtlPoliticalOrganization_faction_support] \nFaction Radicalism: [Owner.movement_preFtlPoliticalOrganization_faction_radicalism] \nNumerical Support: [Owner.preFtlPoliticalOrganization_supporting_population]/[Owner.preFtlPoliticalOrganization_population]=[Owner.movement_preFtlPoliticalOrganization_numerical_support] \nNumerical Radicalism: [Owner.preFtlPoliticalOrganization_radical_population]/[Owner.preFtlPoliticalOrganization_population]=[Owner.movement_preFtlPoliticalOrganization_numerical_radicalism]"
+ situation_movement_finisher_preFtlPoliticalOrganization:0 "Revolution for Pre-FTL Political Units."
+ 
+ movement_preFtlPoliticalOrganization_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_preFtlPoliticalOrganization_radicalism]§! is above 25."
+
+ movement_preFtlPoliticalOrganization_revolution_preserve:0 "§RRevolution to Preserve Pre-FTL Political Units§!"
+ movement_preFtlPoliticalOrganization_revolution:0 "§RRevolution for Pre-FTL Political Units§!"
+ movement_preFtlPoliticalOrganization:0 "Movement for Pre-FTL Political Units"
+ movement_preFtlPoliticalOrganization_preserve:0 "Movement to Preserve Pre-FTL Political Units"
+
+ movement_preFtlPoliticalOrganization.6.title:0 "Secession over §BPre-FTL Political Units§!"
+ movement_preFtlPoliticalOrganization.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BPre-FTL Political Units§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BPre-FTL Political Units§!."
+ movement_preFtlPoliticalOrganization.6.fight:0 "Make them drink vacuum!"
+ movement_preFtlPoliticalOrganization.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

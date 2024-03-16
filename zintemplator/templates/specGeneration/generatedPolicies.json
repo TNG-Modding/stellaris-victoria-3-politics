@@ -1,0 +1,35 @@
+[
+    {% for policy in policies %}
+    {
+    
+        "varname": "{{policy.varname}}",
+        "displayName": "{{policy.displayName}}",
+        "desc": "{{policy.desc}}",
+        "potential": "{{policy.potential}}",
+        "options": [
+            {% for option in policy.options %}
+            {
+                "varname": "{{option.varname}}",
+                "displayName": "{{option.displayName}}",
+                "desc": "{{option.desc}}",
+                "policyCategory": "{{policy.varname}}",
+                "policyOption": "{{option.varname}}",
+                "description": "{{option.description}}",
+                "ethicAdjective": "{{option.ethicAdjective}}",
+                "picture": "{{option.picture}}",
+                "rebellionEthics": "{{option.rebellionEthics}}",
+                "supportingEthics": [{% for ethic in option.supportingEthics %}"{{ethic}}"{%if loop.index < option.supportingEthics|length %},{%endif%}{% endfor %}],
+                "potential": "{{option.potential}}",
+                "supportingFactions": [
+                    {% for faction in factions %}{% for supportedPolicy in faction.supportedPolicies %}{%if supportedPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
+                ],
+                "detractingFactions": [
+                    {% for faction in factions %}{% for againstPolicy in faction.againstPolicies %}{%if againstPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
+                ]
+            }{%if loop.index < policy.options|length %},{%endif%}
+            {% endfor %}
+        ]
+        
+    }{%if loop.index < policies|length %},{%endif%}
+    {% endfor %}
+]

@@ -152,5 +152,14 @@
         "disabled": false, 
         "dumpContents": true, 
         "isBom": false
+    },
+    {
+        "name": "Generate Specs",
+        "specFilePath": "./specs/factionPolicyJoinTable.json",
+        "templateDirectoryPath": "./templates/specGeneration",
+        "outputDirectoryPath": "./specs",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
     }
 ]

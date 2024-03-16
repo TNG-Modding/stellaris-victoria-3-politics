@@ -1,0 +1,93 @@
+situation_movement_merchantMarine = {
+	picture = GFX_evt_surrender
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	complete_icon = GFX_situation_outcome_negative
+
+	on_start = { 
+		set_situation_approach = movement_approach.1
+		# situation_event = { id = situation_movement_merchantMarine.2 } 
+		OWNER = {
+			set_country_flag = movement_for_merchantMarine
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		modifier = {
+			desc = movement_merchantMarine_gaining_revolutionary_progress
+			OWNER = {
+				check_variable = { which = movement_merchantMarine_radicalism value > 25}
+			}
+			add = 1
+		}
+		modifier = {
+			desc = movement_merchantMarine_gaining_revolutionary_progress
+			OWNER = {
+				check_variable = { which = movement_merchantMarine_radicalism value < 25}
+			}
+			situation_progress > 0
+			add = -1
+		}
+		modifier = {
+			desc = movement_satisfied_with_passing_law
+			OWNER = {
+				has_country_flag = enacting_merchantMarine
+			}
+			situation_progress > 0
+			add = -1
+		}
+		
+	}
+
+	on_progress_complete = {
+		custom_tooltip = situation_movement_finisher_merchantMarine
+		situation_event = { id = movement_merchantMarine.6 }
+		
+		OWNER = {
+			remove_country_flag = movement_for_merchantMarine
+		}
+	}
+	on_abort = {
+		OWNER = {
+			remove_country_flag = movement_for_merchantMarine
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			custom_tooltip = movement_stageOneEffects
+		}
+	}
+	approach = {
+		name = movement_approach.1
+		icon = GFX_situation_approach_influence
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = movement_approach.1.on_select
+		}
+	}
+	on_monthly = {
+		# random_events = {
+		# 	17 = situation_movement_merchantMarine.2 # Just recalculate
+		# 	83 = situation_movement_merchantMarine.3 # Recalc and Reroll
+		# }
+	}
+	monthly_progress = {
+		base = 0
+	}
+	abort_trigger = {
+		NOT = {
+			target.owner = {  }
+		}
+		target.owner = {
+			has_policy_flag = merchantMarine
+		}
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

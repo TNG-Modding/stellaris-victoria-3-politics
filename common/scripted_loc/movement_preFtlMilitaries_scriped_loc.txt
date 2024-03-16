@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_preFtlMilitaries
+	text = {
+		localization_key = movement_preFtlMilitaries_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_preFtlMilitaries_radicalism value > 25 }
+			has_country_flag = enacting_preFtlMilitaries
+		}
+	}
+	text = {
+		localization_key = movement_preFtlMilitaries_revolution
+		trigger = {
+			check_variable = { which = movement_preFtlMilitaries_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_preFtlMilitaries}
+		}
+	}
+	text = {
+		localization_key = movement_preFtlMilitaries_preserve
+		trigger = {
+			check_variable = { which = movement_preFtlMilitaries_radicalism value < 25 }
+			has_country_flag = enacting_preFtlMilitaries
+		}
+	}
+	text = {
+		localization_key = movement_preFtlMilitaries
+		trigger = {
+			check_variable = { which = movement_preFtlMilitaries_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_preFtlMilitaries}
+		}
+	}
+}

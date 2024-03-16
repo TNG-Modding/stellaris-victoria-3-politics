@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_preFtlPoliticalOrganization
+	text = {
+		localization_key = movement_preFtlPoliticalOrganization_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_preFtlPoliticalOrganization_radicalism value > 25 }
+			has_country_flag = enacting_preFtlPoliticalOrganization
+		}
+	}
+	text = {
+		localization_key = movement_preFtlPoliticalOrganization_revolution
+		trigger = {
+			check_variable = { which = movement_preFtlPoliticalOrganization_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_preFtlPoliticalOrganization}
+		}
+	}
+	text = {
+		localization_key = movement_preFtlPoliticalOrganization_preserve
+		trigger = {
+			check_variable = { which = movement_preFtlPoliticalOrganization_radicalism value < 25 }
+			has_country_flag = enacting_preFtlPoliticalOrganization
+		}
+	}
+	text = {
+		localization_key = movement_preFtlPoliticalOrganization
+		trigger = {
+			check_variable = { which = movement_preFtlPoliticalOrganization_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_preFtlPoliticalOrganization}
+		}
+	}
+}

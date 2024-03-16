@@ -4,9 +4,17 @@
         "displayName": "Pre-FTL Conservatives",
         "icon": "preftl_conservatives",
         "desc": "wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.",
+        "ethics": [],
         "supportedPolicies": [
             "preFtlPoliticalOrganization",
-            "dependentColonies"
+            "dependentColonies",
+            "preFtlMilitaries"
+        ],
+        "againstPolicies": [
+            "interplanetaryPoliticalOrganization",
+            "interplanetaryGoverance",
+            "spacefaringStandingArmy",
+            "grandArmy"
         ]
     },
     {
@@ -14,21 +22,19 @@
         "displayName": "Colonialist Lobby",
         "icon": "hand_planet",
         "desc": "see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.",
-        "ethics": [ "xenophobe", "egalitarian", "pacifist" ],
-        "preferredPolicies": [
+        "ethics": [
+            "xenophobe",
+            "egalitarian",
+            "pacifist"
+        ],
+        "supportedPolicies": [
             "diplo_stance_expansionist",
-            "defense_in_depth_doctrine",
-            "interference_aggressive",
-            "first_contact_attack_allowed",
-            "border_policy_closed",
-            "economic_policy_civilian",
-            "pre_sapients_purge",
-            "refugees_not_allowed",
-            "population_controls_not_allowed",
-            "purge_allowed",
             "dependentColonies",
             "merchantMarine",
             "preFtlPoliticalOrganization"
+        ],
+        "againstPolicies": [
+            "interplanetaryGoverance"
         ]
     },
     {
@@ -36,16 +42,18 @@
         "displayName": "Consolidationists",
         "icon": "galactic",
         "desc": "believe that the creation of a galactic bureuacracy is a matter of national security.",
-        "ethics": [ "xenophobe", "egalitarian", "pacifist" ],
-        "preferredPolicies": [
-            "population_controls_allowed",
-            "refugees_not_allowed",
-            "pre_sapients_allow",
-            "first_contact_cautious",
-            "appropriation_allowed",
+        "ethics": [
+            "xenophobe",
+            "egalitarian",
+            "pacifist"
+        ],
+        "supportedPolicies": [
             "resettlement_allowed",
-            "diplo_stance_isolationist",
             "interplanetaryGoverance"
+        ],
+        "againstPolicies": [
+            "dependentColonies",
+            "resettlement_not_allowed"
         ]
     },
     {
@@ -53,12 +61,19 @@
         "displayName": "Nativists",
         "icon": "nativists",
         "desc": "believe that the fruits of empire should be enjoyed by our primary species alone.",
-        "ethics": [ "xenophobe", "egalitarian" ],
-        "preferredPolicies": [
+        "ethics": [
+            "xenophobe",
+            "egalitarian"
+        ],
+        "supportedPolicies": [
             "purge_displacement_only",
             "slavery_allowed",
             "population_controls_allowed",
             "refugees_not_allowed"
+        ],
+        "againstPolicies": [
+            "purge_allowed",
+            "refugees_allowed"
         ]
     }
 ]

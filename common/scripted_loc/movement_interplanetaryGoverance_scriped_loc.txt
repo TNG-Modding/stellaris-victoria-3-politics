@@ -1,0 +1,31 @@
+defined_text = {
+	name = MovementName_interplanetaryGoverance
+	text = {
+		localization_key = movement_interplanetaryGoverance_revolution_preserve
+		trigger = {
+			check_variable = { which = movement_interplanetaryGoverance_radicalism value > 25 }
+			has_country_flag = enacting_interplanetaryGoverance
+		}
+	}
+	text = {
+		localization_key = movement_interplanetaryGoverance_revolution
+		trigger = {
+			check_variable = { which = movement_interplanetaryGoverance_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_interplanetaryGoverance}
+		}
+	}
+	text = {
+		localization_key = movement_interplanetaryGoverance_preserve
+		trigger = {
+			check_variable = { which = movement_interplanetaryGoverance_radicalism value < 25 }
+			has_country_flag = enacting_interplanetaryGoverance
+		}
+	}
+	text = {
+		localization_key = movement_interplanetaryGoverance
+		trigger = {
+			check_variable = { which = movement_interplanetaryGoverance_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_interplanetaryGoverance}
+		}
+	}
+}

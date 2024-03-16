@@ -1,0 +1,17 @@
+[
+    {% for faction in factions %}
+    {
+        "varname": "{{faction.varname}}",
+        "displayName": "{{faction.displayName}}",
+        "icon": "{{faction.icon}}",
+        "desc": "{{faction.desc}}",
+        "ethics": [{% for ethic in faction.ethics %}"{{ethic}}"{%if loop.index < faction.ethics|length %},{%endif%}{% endfor %}],
+        "supportedPolicies": [
+            {% for supportedPolicy in faction.supportedPolicies %}"{{supportedPolicy}}"{%if loop.index < faction.supportedPolicies|length %},{%endif%}{% endfor %}
+        ],
+        "againstPolicies": [
+            {% for detractingPolicy in faction.againstPolicies %}"{{detractingPolicy}}"{%if loop.index < faction.againstPolicies|length %},{%endif%}{% endfor %}
+        ]
+    }{%if loop.index < factions|length %},{%endif%}
+    {% endfor %}
+]

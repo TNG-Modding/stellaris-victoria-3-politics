@@ -1,0 +1,24 @@
+﻿l_english:
+ movement_interplanetaryGoverance.2.name:0 "Movement for Interplanetary Governance"
+ movement_interplanetaryGoverance.2.desc:0 "Support: [This.movement_interplanetaryGoverance_support]\nRadicalism: [This.movement_interplanetaryGoverance_radicalism]"
+
+ #  Situation
+ situation_movement_interplanetaryGoverance:0 "[Owner.MovementName_interplanetaryGoverance]"
+ situation_movement_interplanetaryGoverance_type:0 "[Owner.MovementName_interplanetaryGoverance]"
+ situation_movement_interplanetaryGoverance_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
+# 
+ situation_movement_interplanetaryGoverance_desc:0 "The people are calling for §BInterplanetary Governance§! as they believe our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies.\n\nSupporting Factions:\n§G$pft_consolidationists$\n§!\nDetracting Factions:\n§R$pft_preFtlConservatives$\n$pft_colonists$\n§!\nEthics: §Y$ethic_authoritarian$ §!\nSupport: [Owner.movement_interplanetaryGoverance_support] Radicalism: [Owner.movement_interplanetaryGoverance_radicalism] Inertia: [Owner.movement_interplanetaryGoverance_inertia]\nFaction Support [Owner.movement_interplanetaryGoverance_faction_support] \nFaction Radicalism: [Owner.movement_interplanetaryGoverance_faction_radicalism] \nNumerical Support: [Owner.interplanetaryGoverance_supporting_population]/[Owner.interplanetaryGoverance_population]=[Owner.movement_interplanetaryGoverance_numerical_support] \nNumerical Radicalism: [Owner.interplanetaryGoverance_radical_population]/[Owner.interplanetaryGoverance_population]=[Owner.movement_interplanetaryGoverance_numerical_radicalism]"
+ situation_movement_finisher_interplanetaryGoverance:0 "Revolution for Interplanetary Governance."
+ 
+ movement_interplanetaryGoverance_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_interplanetaryGoverance_radicalism]§! is above 25."
+
+ movement_interplanetaryGoverance_revolution_preserve:0 "§RRevolution to Preserve Interplanetary Governance§!"
+ movement_interplanetaryGoverance_revolution:0 "§RRevolution for Interplanetary Governance§!"
+ movement_interplanetaryGoverance:0 "Movement for Interplanetary Governance"
+ movement_interplanetaryGoverance_preserve:0 "Movement to Preserve Interplanetary Governance"
+
+ movement_interplanetaryGoverance.6.title:0 "Secession over §BInterplanetary Governance§!"
+ movement_interplanetaryGoverance.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BInterplanetary Governance§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BInterplanetary Governance§!."
+ movement_interplanetaryGoverance.6.fight:0 "Make them drink vacuum!"
+ movement_interplanetaryGoverance.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 
