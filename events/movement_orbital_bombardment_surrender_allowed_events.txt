@@ -425,7 +425,7 @@ situation_event = {
 					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
-						name = "Civil War over orbital_bombardment_surrender_allowed"
+						name = "Civil War over Allow Bombardment Surrender"
 						attacker_war_goal = wg_conquest
 					}
 				}

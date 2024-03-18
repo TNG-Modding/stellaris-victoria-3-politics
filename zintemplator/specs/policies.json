@@ -1,7 +1,7 @@
 [
     {
         "varname": "diplo_stance_belligerent",
-        "displayName": "diplo_stance_belligerent",
+        "displayName": "Belligerent",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_belligerent",
@@ -49,7 +49,7 @@
     },
     {
         "varname": "diplo_stance_cooperative",
-        "displayName": "diplo_stance_cooperative",
+        "displayName": "Cooperative",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_cooperative",
@@ -99,7 +99,7 @@
     },
     {
         "varname": "diplo_stance_isolationist",
-        "displayName": "diplo_stance_isolationist",
+        "displayName": "Isolationist",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_isolationist",
@@ -141,7 +141,7 @@
     },
     {
         "varname": "diplo_stance_expansionist",
-        "displayName": "diplo_stance_expansionist",
+        "displayName": "Expansionist",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_expansionist",
@@ -189,7 +189,7 @@
     },
     {
         "varname": "diplo_stance_mercantile",
-        "displayName": "diplo_stance_mercantile",
+        "displayName": "Mercantile",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_mercantile",
@@ -239,7 +239,7 @@
     },
     {
         "varname": "diplo_stance_supremacist",
-        "displayName": "diplo_stance_supremacist",
+        "displayName": "Supremacist",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_supremacist",
@@ -289,7 +289,7 @@
     },
     {
         "varname": "diplo_stance_animosity",
-        "displayName": "diplo_stance_animosity",
+        "displayName": "Animosity",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_animosity",
@@ -339,7 +339,7 @@
     },
     {
         "varname": "diplo_stance_hunger",
-        "displayName": "diplo_stance_hunger",
+        "displayName": "Hunger",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_hunger",
@@ -389,7 +389,7 @@
     },
     {
         "varname": "diplo_stance_extermination",
-        "displayName": "diplo_stance_extermination",
+        "displayName": "Extermination",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_extermination",
@@ -439,7 +439,7 @@
     },
     {
         "varname": "diplo_stance_purification",
-        "displayName": "diplo_stance_purification",
+        "displayName": "Purification",
         "desc": "",
         "policyCategory": "diplomatic_stance",
         "policyOption": "diplo_stance_purification",
@@ -489,7 +489,7 @@
     },
     {
         "varname": "unrestricted_wars",
-        "displayName": "unrestricted_wars",
+        "displayName": "Unrestricted Wars",
         "desc": "",
         "policyCategory": "war_philosophy",
         "policyOption": "unrestricted_wars",
@@ -524,7 +524,7 @@
     },
     {
         "varname": "liberation_wars",
-        "displayName": "liberation_wars",
+        "displayName": "Liberation Wars",
         "desc": "",
         "policyCategory": "war_philosophy",
         "policyOption": "liberation_wars",
@@ -557,7 +557,7 @@
     },
     {
         "varname": "no_wars",
-        "displayName": "no_wars",
+        "displayName": "No Wars",
         "desc": "",
         "policyCategory": "war_philosophy",
         "policyOption": "no_wars",
@@ -587,7 +587,7 @@
     },
     {
         "varname": "defense_in_depth_doctrine",
-        "displayName": "defense_in_depth_doctrine",
+        "displayName": "Defense in Depth",
         "desc": "",
         "policyCategory": "war_doctrine",
         "policyOption": "defense_in_depth_doctrine",
@@ -611,7 +611,7 @@
     },
     {
         "varname": "hit_and_run_doctrine",
-        "displayName": "hit_and_run_doctrine",
+        "displayName": "Hit and Run",
         "desc": "",
         "policyCategory": "war_doctrine",
         "policyOption": "hit_and_run_doctrine",
@@ -638,7 +638,7 @@
     },
     {
         "varname": "rapid_deployment_doctrine",
-        "displayName": "rapid_deployment_doctrine",
+        "displayName": "Rapid Deployment",
         "desc": "",
         "policyCategory": "war_doctrine",
         "policyOption": "rapid_deployment_doctrine",
@@ -665,7 +665,7 @@
     },
     {
         "varname": "no_retreat_doctrine",
-        "displayName": "no_retreat_doctrine",
+        "displayName": "No Retreat",
         "desc": "",
         "policyCategory": "war_doctrine",
         "policyOption": "no_retreat_doctrine",
@@ -692,7 +692,7 @@
     },
     {
         "varname": "oppressive_terms",
-        "displayName": "oppressive_terms",
+        "displayName": "Opressive Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "oppressive_terms",
@@ -721,7 +721,7 @@
     },
     {
         "varname": "balanced_terms",
-        "displayName": "balanced_terms",
+        "displayName": "Balanced Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "balanced_terms",
@@ -750,7 +750,7 @@
     },
     {
         "varname": "benevolent_terms",
-        "displayName": "benevolent_terms",
+        "displayName": "Benevolent Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "benevolent_terms",
@@ -776,7 +776,7 @@
     },
     {
         "varname": "oppressive_corporate_terms",
-        "displayName": "oppressive_corporate_terms",
+        "displayName": "Opressive Corporate Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "oppressive_corporate_terms",
@@ -805,7 +805,7 @@
     },
     {
         "varname": "balanced_corporate_terms",
-        "displayName": "balanced_corporate_terms",
+        "displayName": "Balanced Corporate Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "balanced_corporate_terms",
@@ -834,7 +834,7 @@
     },
     {
         "varname": "benevolent_corporate_terms",
-        "displayName": "benevolent_corporate_terms",
+        "displayName": "Benevolent Corporate Terms",
         "desc": "",
         "policyCategory": "subjugation_war_terms",
         "policyOption": "benevolent_corporate_terms",
@@ -863,7 +863,7 @@
     },
     {
         "varname": "orbital_bombardment_selective",
-        "displayName": "orbital_bombardment_selective",
+        "displayName": "Selective Orbital Bombadment",
         "desc": "",
         "policyCategory": "orbital_bombardment",
         "policyOption": "orbital_bombardment_selective",
@@ -884,7 +884,7 @@
     },
     {
         "varname": "orbital_bombardment_indiscriminate",
-        "displayName": "orbital_bombardment_indiscriminate",
+        "displayName": "Indiscriminate Orbital Bombadment",
         "desc": "",
         "policyCategory": "orbital_bombardment",
         "policyOption": "orbital_bombardment_indiscriminate",
@@ -905,7 +905,7 @@
     },
     {
         "varname": "orbital_bombardment_armageddon",
-        "displayName": "orbital_bombardment_armageddon",
+        "displayName": "Armageddon Orbital Bombardment",
         "desc": "",
         "policyCategory": "orbital_bombardment",
         "policyOption": "orbital_bombardment_armageddon",
@@ -926,7 +926,7 @@
     },
     {
         "varname": "orbital_bombardment_surrender_forbidden",
-        "displayName": "orbital_bombardment_surrender_forbidden",
+        "displayName": "Forbid Bombardment Surrender",
         "desc": "",
         "policyCategory": "orbital_bombardment_accept_surrender",
         "policyOption": "orbital_bombardment_surrender_forbidden",
@@ -946,7 +946,7 @@
     },
     {
         "varname": "orbital_bombardment_surrender_allowed",
-        "displayName": "orbital_bombardment_surrender_allowed",
+        "displayName": "Allow Bombardment Surrender",
         "desc": "",
         "policyCategory": "orbital_bombardment_accept_surrender",
         "policyOption": "orbital_bombardment_surrender_allowed",
@@ -966,7 +966,7 @@
     },
     {
         "varname": "interference_not_allowed",
-        "displayName": "interference_not_allowed",
+        "displayName": "No Interference",
         "desc": "",
         "policyCategory": "interference",
         "policyOption": "interference_not_allowed",
@@ -995,7 +995,7 @@
     },
     {
         "varname": "interference_subtle",
-        "displayName": "interference_subtle",
+        "displayName": "Subtle Interference",
         "desc": "",
         "policyCategory": "interference",
         "policyOption": "interference_subtle",
@@ -1027,7 +1027,7 @@
     },
     {
         "varname": "interference_active",
-        "displayName": "interference_active",
+        "displayName": "Active Interference",
         "desc": "",
         "policyCategory": "interference",
         "policyOption": "interference_active",
@@ -1059,7 +1059,7 @@
     },
     {
         "varname": "interference_aggressive",
-        "displayName": "interference_aggressive",
+        "displayName": "Aggressive Interference",
         "desc": "",
         "policyCategory": "interference",
         "policyOption": "interference_aggressive",
@@ -1088,7 +1088,7 @@
     },
     {
         "varname": "enlightenment_not_allowed",
-        "displayName": "enlightenment_not_allowed",
+        "displayName": "Forbid Enlightment",
         "desc": "",
         "policyCategory": "enlightenment",
         "policyOption": "enlightenment_not_allowed",
@@ -1116,7 +1116,7 @@
     },
     {
         "varname": "enlightenment_covert_only",
-        "displayName": "enlightenment_covert_only",
+        "displayName": "Covert Enlightenment Only",
         "desc": "",
         "policyCategory": "enlightenment",
         "policyOption": "enlightenment_covert_only",
@@ -1147,7 +1147,7 @@
     },
     {
         "varname": "enlightenment_allowed",
-        "displayName": "enlightenment_allowed",
+        "displayName": "Allow Enlightment",
         "desc": "",
         "policyCategory": "enlightenment",
         "policyOption": "enlightenment_allowed",
@@ -1175,7 +1175,7 @@
     },
     {
         "varname": "resettlement_not_allowed",
-        "displayName": "resettlement_not_allowed",
+        "displayName": "Forbid Resettlement",
         "desc": "",
         "policyCategory": "resettlement",
         "policyOption": "resettlement_not_allowed",
@@ -1200,7 +1200,7 @@
     },
     {
         "varname": "resettlement_allowed",
-        "displayName": "resettlement_allowed",
+        "displayName": "Allow Resettlement",
         "desc": "",
         "policyCategory": "resettlement",
         "policyOption": "resettlement_allowed",
@@ -1222,7 +1222,7 @@
     },
     {
         "varname": "appropriation_not_allowed",
-        "displayName": "appropriation_not_allowed",
+        "displayName": "Allow Appropriation",
         "desc": "",
         "policyCategory": "appropriation",
         "policyOption": "appropriation_not_allowed",
@@ -1242,7 +1242,7 @@
     },
     {
         "varname": "appropriation_allowed",
-        "displayName": "appropriation_allowed",
+        "displayName": "Appropriation Allowed",
         "desc": "",
         "policyCategory": "appropriation",
         "policyOption": "appropriation_allowed",
@@ -1262,7 +1262,7 @@
     },
     {
         "varname": "first_contact_proactive",
-        "displayName": "first_contact_proactive",
+        "displayName": "Proactive First Contact",
         "desc": "",
         "policyCategory": "first_contact_protocol",
         "policyOption": "first_contact_proactive",
@@ -1290,7 +1290,7 @@
     },
     {
         "varname": "first_contact_cautious",
-        "displayName": "first_contact_cautious",
+        "displayName": "Cautious First Contact",
         "desc": "",
         "policyCategory": "first_contact_protocol",
         "policyOption": "first_contact_cautious",
@@ -1318,7 +1318,7 @@
     },
     {
         "varname": "first_contact_attack_allowed",
-        "displayName": "first_contact_attack_allowed",
+        "displayName": "Aggressive First Contact",
         "desc": "",
         "policyCategory": "first_contact_protocol",
         "policyOption": "first_contact_attack_allowed",
@@ -1349,7 +1349,7 @@
     },
     {
         "varname": "border_policy_open",
-        "displayName": "border_policy_open",
+        "displayName": "Open Borders",
         "desc": "",
         "policyCategory": "border_policy",
         "policyOption": "border_policy_open",
@@ -1369,7 +1369,7 @@
     },
     {
         "varname": "border_policy_closed",
-        "displayName": "border_policy_closed",
+        "displayName": "Closed Borders",
         "desc": "",
         "policyCategory": "border_policy",
         "policyOption": "border_policy_closed",
@@ -1389,7 +1389,7 @@
     },
     {
         "varname": "economic_policy_civilian",
-        "displayName": "economic_policy_civilian",
+        "displayName": "Civilian Economics",
         "desc": "",
         "policyCategory": "economic_policy",
         "policyOption": "economic_policy_civilian",
@@ -1410,7 +1410,7 @@
     },
     {
         "varname": "economic_policy_balanced",
-        "displayName": "economic_policy_balanced",
+        "displayName": "Balanced Economics",
         "desc": "",
         "policyCategory": "economic_policy",
         "policyOption": "economic_policy_balanced",
@@ -1431,7 +1431,7 @@
     },
     {
         "varname": "economic_policy_military",
-        "displayName": "economic_policy_military",
+        "displayName": "Military Economics",
         "desc": "",
         "policyCategory": "economic_policy",
         "policyOption": "economic_policy_military",
@@ -1452,7 +1452,7 @@
     },
     {
         "varname": "trade_policy_default",
-        "displayName": "trade_policy_default",
+        "displayName": "Default Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_default",
@@ -1476,7 +1476,7 @@
     },
     {
         "varname": "trade_policy_consumer_goods",
-        "displayName": "trade_policy_consumer_goods",
+        "displayName": "Consumer Goods Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_consumer_goods",
@@ -1500,7 +1500,7 @@
     },
     {
         "varname": "trade_policy_unity",
-        "displayName": "trade_policy_unity",
+        "displayName": "Unity Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_unity",
@@ -1524,7 +1524,7 @@
     },
     {
         "varname": "trade_policy_trade_league",
-        "displayName": "trade_policy_trade_league",
+        "displayName": "Trade League Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_trade_league",
@@ -1548,7 +1548,7 @@
     },
     {
         "varname": "trade_policy_holy_covenant",
-        "displayName": "trade_policy_holy_covenant",
+        "displayName": "Holy Covenant Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_holy_covenant",
@@ -1572,7 +1572,7 @@
     },
     {
         "varname": "trade_policy_mutual_aid",
-        "displayName": "trade_policy_mutual_aid",
+        "displayName": "Mutual Aid Trade Policy",
         "desc": "",
         "policyCategory": "trade_policy",
         "policyOption": "trade_policy_mutual_aid",
@@ -1596,7 +1596,7 @@
     },
     {
         "varname": "ai_outlawed",
-        "displayName": "ai_outlawed",
+        "displayName": "Outlawed AI",
         "desc": "",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_outlawed",
@@ -1617,7 +1617,7 @@
     },
     {
         "varname": "ai_servitude",
-        "displayName": "ai_servitude",
+        "displayName": "AI Servitude",
         "desc": "",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_servitude",
@@ -1638,7 +1638,7 @@
     },
     {
         "varname": "ai_full_rights",
-        "displayName": "ai_full_rights",
+        "displayName": "Full AI Rights",
         "desc": "",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_full_rights",
@@ -1659,7 +1659,7 @@
     },
     {
         "varname": "robot_pops_outlawed",
-        "displayName": "robot_pops_outlawed",
+        "displayName": "Outlawed Robot Pops",
         "desc": "",
         "policyCategory": "robot_pop_policy",
         "policyOption": "robot_pops_outlawed",
@@ -1679,7 +1679,7 @@
     },
     {
         "varname": "robot_pops_allowed",
-        "displayName": "robot_pops_allowed",
+        "displayName": "Allowed Robot Pops",
         "desc": "",
         "policyCategory": "robot_pop_policy",
         "policyOption": "robot_pops_allowed",
@@ -1699,7 +1699,7 @@
     },
     {
         "varname": "pre_sapients_protect",
-        "displayName": "pre_sapients_protect",
+        "displayName": "Protected Pre-Sapients",
         "desc": "",
         "policyCategory": "pre_sapients",
         "policyOption": "pre_sapients_protect",
@@ -1721,7 +1721,7 @@
     },
     {
         "varname": "pre_sapients_allow",
-        "displayName": "pre_sapients_allow",
+        "displayName": "Allowed Pre-Sapients",
         "desc": "",
         "policyCategory": "pre_sapients",
         "policyOption": "pre_sapients_allow",
@@ -1743,7 +1743,7 @@
     },
     {
         "varname": "pre_sapients_eat",
-        "displayName": "pre_sapients_eat",
+        "displayName": "Eat All Pre-Sapients",
         "desc": "",
         "policyCategory": "pre_sapients",
         "policyOption": "pre_sapients_eat",
@@ -1765,7 +1765,7 @@
     },
     {
         "varname": "pre_sapients_purge",
-        "displayName": "pre_sapients_purge",
+        "displayName": "Purge Pre-Sapients",
         "desc": "",
         "policyCategory": "pre_sapients",
         "policyOption": "pre_sapients_purge",
@@ -1787,7 +1787,7 @@
     },
     {
         "varname": "research_debris",
-        "displayName": "research_debris",
+        "displayName": "Research Debris",
         "desc": "",
         "policyCategory": "debris",
         "policyOption": "research_debris",
@@ -1808,7 +1808,7 @@
     },
     {
         "varname": "scavenge_debris",
-        "displayName": "scavenge_debris",
+        "displayName": "Scavenge Debris",
         "desc": "",
         "policyCategory": "debris",
         "policyOption": "scavenge_debris",
@@ -1829,7 +1829,7 @@
     },
     {
         "varname": "scavenge_and_research_debris",
-        "displayName": "scavenge_and_research_debris",
+        "displayName": "Scavenge and Research Debris",
         "desc": "",
         "policyCategory": "debris",
         "policyOption": "scavenge_and_research_debris",
@@ -1850,7 +1850,7 @@
     },
     {
         "varname": "refugees_not_allowed",
-        "displayName": "refugees_not_allowed",
+        "displayName": "Banned Refugees",
         "desc": "",
         "policyCategory": "refugees",
         "policyOption": "refugees_not_allowed",
@@ -1876,7 +1876,7 @@
     },
     {
         "varname": "refugees_only_citizens",
-        "displayName": "refugees_only_citizens",
+        "displayName": "Only Citizen Refugees",
         "desc": "",
         "policyCategory": "refugees",
         "policyOption": "refugees_only_citizens",
@@ -1902,7 +1902,7 @@
     },
     {
         "varname": "refugees_allowed",
-        "displayName": "refugees_allowed",
+        "displayName": "Refugees Allowed",
         "desc": "",
         "policyCategory": "refugees",
         "policyOption": "refugees_allowed",
@@ -1925,7 +1925,7 @@
     },
     {
         "varname": "population_controls_not_allowed",
-        "displayName": "population_controls_not_allowed",
+        "displayName": "Forbid Population Controls",
         "desc": "",
         "policyCategory": "population_controls",
         "policyOption": "population_controls_not_allowed",
@@ -1950,7 +1950,7 @@
     },
     {
         "varname": "population_controls_allowed",
-        "displayName": "population_controls_allowed",
+        "displayName": "Allow Population Controls",
         "desc": "",
         "policyCategory": "population_controls",
         "policyOption": "population_controls_allowed",
@@ -1972,7 +1972,7 @@
     },
     {
         "varname": "slavery_not_allowed",
-        "displayName": "slavery_not_allowed",
+        "displayName": "Slavery Not Allowed",
         "desc": "",
         "policyCategory": "slavery",
         "policyOption": "slavery_not_allowed",
@@ -1997,7 +1997,7 @@
     },
     {
         "varname": "slavery_allowed",
-        "displayName": "slavery_allowed",
+        "displayName": "Allow Slavery",
         "desc": "",
         "policyCategory": "slavery",
         "policyOption": "slavery_allowed",
@@ -2019,7 +2019,7 @@
     },
     {
         "varname": "purge_not_allowed",
-        "displayName": "purge_not_allowed",
+        "displayName": "Forbid Purging",
         "desc": "",
         "policyCategory": "purge",
         "policyOption": "purge_not_allowed",
@@ -2050,7 +2050,7 @@
     },
     {
         "varname": "purge_displacement_only",
-        "displayName": "purge_displacement_only",
+        "displayName": "Allow Displacement Purging",
         "desc": "",
         "policyCategory": "purge",
         "policyOption": "purge_displacement_only",
@@ -2078,7 +2078,7 @@
     },
     {
         "varname": "purge_allowed",
-        "displayName": "purge_allowed",
+        "displayName": "Purge Allowed",
         "desc": "",
         "policyCategory": "purge",
         "policyOption": "purge_allowed",
@@ -2106,7 +2106,7 @@
     },
     {
         "varname": "toxic_knights_questing",
-        "displayName": "toxic_knights_questing",
+        "displayName": "Questing Toxic Knights",
         "desc": "",
         "policyCategory": "knightly_duties",
         "policyOption": "toxic_knights_questing",
@@ -2128,7 +2128,7 @@
     },
     {
         "varname": "toxic_knights_military",
-        "displayName": "toxic_knights_military",
+        "displayName": "Military Toxic Knights",
         "desc": "",
         "policyCategory": "knightly_duties",
         "policyOption": "toxic_knights_military",
@@ -2150,7 +2150,7 @@
     },
     {
         "varname": "toxic_knights_diplomats",
-        "displayName": "toxic_knights_diplomats",
+        "displayName": "Diplomatic Toxic Knights",
         "desc": "",
         "policyCategory": "knightly_duties",
         "policyOption": "toxic_knights_diplomats",
@@ -2172,7 +2172,7 @@
     },
     {
         "varname": "toxic_knights_herald",
-        "displayName": "toxic_knights_herald",
+        "displayName": "Herald Toxic Knights",
         "desc": "",
         "policyCategory": "knightly_duties",
         "policyOption": "toxic_knights_herald",
@@ -2194,7 +2194,7 @@
     },
     {
         "varname": "leader_enhancement_natural_selection",
-        "displayName": "leader_enhancement_natural_selection",
+        "displayName": "Natural Selection",
         "desc": "",
         "policyCategory": "leader_enhancement",
         "policyOption": "leader_enhancement_natural_selection",
@@ -2215,7 +2215,7 @@
     },
     {
         "varname": "leader_enhancement_selected_lineages",
-        "displayName": "leader_enhancement_selected_lineages",
+        "displayName": "Selected Lineage",
         "desc": "",
         "policyCategory": "leader_enhancement",
         "policyOption": "leader_enhancement_selected_lineages",
@@ -2236,7 +2236,7 @@
     },
     {
         "varname": "leader_enhancement_capacity_boosters",
-        "displayName": "leader_enhancement_capacity_boosters",
+        "displayName": "Capacity Boosters",
         "desc": "",
         "policyCategory": "leader_enhancement",
         "policyOption": "leader_enhancement_capacity_boosters",
@@ -2346,7 +2346,7 @@
     },
     {
         "varname": "relentless_industrialists_full_steam_ahead",
-        "displayName": "relentless_industrialists_full_steam_ahead",
+        "displayName": "Full Steam Ahead",
         "desc": "",
         "policyCategory": "relentless_industrialists_policy",
         "policyOption": "relentless_industrialists_full_steam_ahead",
@@ -2367,7 +2367,7 @@
     },
     {
         "varname": "relentless_industrialists_study",
-        "displayName": "relentless_industrialists_study",
+        "displayName": "Study Industrialism",
         "desc": "",
         "policyCategory": "relentless_industrialists_policy",
         "policyOption": "relentless_industrialists_study",
@@ -2388,7 +2388,7 @@
     },
     {
         "varname": "relentless_industrialists_cleanup",
-        "displayName": "relentless_industrialists_cleanup",
+        "displayName": "Cleanup Industrialism",
         "desc": "",
         "policyCategory": "relentless_industrialists_policy",
         "policyOption": "relentless_industrialists_cleanup",

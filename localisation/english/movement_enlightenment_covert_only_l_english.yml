@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_enlightenment_covert_only.2.name:0 "Movement for enlightenment_covert_only"
+ movement_enlightenment_covert_only.2.name:0 "Movement for Covert Enlightenment Only"
  movement_enlightenment_covert_only.2.desc:0 "Support: [This.movement_enlightenment_covert_only_support]\nRadicalism: [This.movement_enlightenment_covert_only_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_enlightenment_covert_only_stats:0 "Support: [Owner.movement_enlightenment_covert_only_support] Radicalism: [Owner.movement_enlightenment_covert_only_radicalism] Inertia: [Owner.movement_enlightenment_covert_only_inertia]\nFaction Support [Owner.movement_enlightenment_covert_only_faction_support] \nFaction Radicalism: [Owner.movement_enlightenment_covert_only_faction_radicalism] \nNumerical Support: [Owner.enlightenment_covert_only_supporting_population]/[Owner.enlightenment_covert_only_population]=[Owner.movement_enlightenment_covert_only_numerical_support] \nNumerical Radicalism: [Owner.enlightenment_covert_only_radical_population]/[Owner.enlightenment_covert_only_population]=[Owner.movement_enlightenment_covert_only_numerical_radicalism]"
 
- situation_movement_enlightenment_covert_only_quickDesc:0 "The people are calling for §Benlightenment_covert_only§! as they believe ."
+ situation_movement_enlightenment_covert_only_quickDesc:0 "The people are calling for §BCovert Enlightenment Only§! as they believe ."
  situation_movement_enlightenment_covert_only_desc:0 "$situation_movement_enlightenment_covert_only_quickDesc$\n\n$situation_movement_enlightenment_covert_only_supporting$\n$situation_movement_enlightenment_covert_only_detracting$\n$situation_movement_enlightenment_covert_only_ethics$\n\n$situation_movement_enlightenment_covert_only_stats$"
- situation_movement_finisher_enlightenment_covert_only:0 "Revolution for enlightenment_covert_only."
+ situation_movement_finisher_enlightenment_covert_only:0 "Revolution for Covert Enlightenment Only."
  
  movement_enlightenment_covert_only_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_enlightenment_covert_only_radicalism]§! is above 25."
 
- movement_enlightenment_covert_only_revolution_appeased:0 "§GAppeased Revolution for enlightenment_covert_only§!"
- movement_enlightenment_covert_only_revolution:0 "§RRevolution for enlightenment_covert_only§!"
- movement_enlightenment_covert_only:0 "Movement for enlightenment_covert_only"
- movement_enlightenment_covert_only_appeased:0 "Appeased Movement for enlightenment_covert_only"
+ movement_enlightenment_covert_only_revolution_appeased:0 "§GAppeased Revolution for Covert Enlightenment Only§!"
+ movement_enlightenment_covert_only_revolution:0 "§RRevolution for Covert Enlightenment Only§!"
+ movement_enlightenment_covert_only:0 "Movement for Covert Enlightenment Only"
+ movement_enlightenment_covert_only_appeased:0 "Appeased Movement for Covert Enlightenment Only"
 
- movement_enlightenment_covert_only.6.title:0 "Secession over §Benlightenment_covert_only§!"
- movement_enlightenment_covert_only.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Benlightenment_covert_only§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Benlightenment_covert_only§!."
+ movement_enlightenment_covert_only.6.title:0 "Secession over §BCovert Enlightenment Only§!"
+ movement_enlightenment_covert_only.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BCovert Enlightenment Only§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BCovert Enlightenment Only§!."
  movement_enlightenment_covert_only.6.fight:0 "Make them drink vacuum!"
  movement_enlightenment_covert_only.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

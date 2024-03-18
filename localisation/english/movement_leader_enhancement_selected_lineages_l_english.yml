@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_leader_enhancement_selected_lineages.2.name:0 "Movement for leader_enhancement_selected_lineages"
+ movement_leader_enhancement_selected_lineages.2.name:0 "Movement for Selected Lineage"
  movement_leader_enhancement_selected_lineages.2.desc:0 "Support: [This.movement_leader_enhancement_selected_lineages_support]\nRadicalism: [This.movement_leader_enhancement_selected_lineages_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_leader_enhancement_selected_lineages_stats:0 "Support: [Owner.movement_leader_enhancement_selected_lineages_support] Radicalism: [Owner.movement_leader_enhancement_selected_lineages_radicalism] Inertia: [Owner.movement_leader_enhancement_selected_lineages_inertia]\nFaction Support [Owner.movement_leader_enhancement_selected_lineages_faction_support] \nFaction Radicalism: [Owner.movement_leader_enhancement_selected_lineages_faction_radicalism] \nNumerical Support: [Owner.leader_enhancement_selected_lineages_supporting_population]/[Owner.leader_enhancement_selected_lineages_population]=[Owner.movement_leader_enhancement_selected_lineages_numerical_support] \nNumerical Radicalism: [Owner.leader_enhancement_selected_lineages_radical_population]/[Owner.leader_enhancement_selected_lineages_population]=[Owner.movement_leader_enhancement_selected_lineages_numerical_radicalism]"
 
- situation_movement_leader_enhancement_selected_lineages_quickDesc:0 "The people are calling for §Bleader_enhancement_selected_lineages§! as they believe ."
+ situation_movement_leader_enhancement_selected_lineages_quickDesc:0 "The people are calling for §BSelected Lineage§! as they believe ."
  situation_movement_leader_enhancement_selected_lineages_desc:0 "$situation_movement_leader_enhancement_selected_lineages_quickDesc$\n\n$situation_movement_leader_enhancement_selected_lineages_supporting$\n$situation_movement_leader_enhancement_selected_lineages_detracting$\n$situation_movement_leader_enhancement_selected_lineages_ethics$\n\n$situation_movement_leader_enhancement_selected_lineages_stats$"
- situation_movement_finisher_leader_enhancement_selected_lineages:0 "Revolution for leader_enhancement_selected_lineages."
+ situation_movement_finisher_leader_enhancement_selected_lineages:0 "Revolution for Selected Lineage."
  
  movement_leader_enhancement_selected_lineages_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_leader_enhancement_selected_lineages_radicalism]§! is above 25."
 
- movement_leader_enhancement_selected_lineages_revolution_appeased:0 "§GAppeased Revolution for leader_enhancement_selected_lineages§!"
- movement_leader_enhancement_selected_lineages_revolution:0 "§RRevolution for leader_enhancement_selected_lineages§!"
- movement_leader_enhancement_selected_lineages:0 "Movement for leader_enhancement_selected_lineages"
- movement_leader_enhancement_selected_lineages_appeased:0 "Appeased Movement for leader_enhancement_selected_lineages"
+ movement_leader_enhancement_selected_lineages_revolution_appeased:0 "§GAppeased Revolution for Selected Lineage§!"
+ movement_leader_enhancement_selected_lineages_revolution:0 "§RRevolution for Selected Lineage§!"
+ movement_leader_enhancement_selected_lineages:0 "Movement for Selected Lineage"
+ movement_leader_enhancement_selected_lineages_appeased:0 "Appeased Movement for Selected Lineage"
 
- movement_leader_enhancement_selected_lineages.6.title:0 "Secession over §Bleader_enhancement_selected_lineages§!"
- movement_leader_enhancement_selected_lineages.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bleader_enhancement_selected_lineages§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bleader_enhancement_selected_lineages§!."
+ movement_leader_enhancement_selected_lineages.6.title:0 "Secession over §BSelected Lineage§!"
+ movement_leader_enhancement_selected_lineages.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BSelected Lineage§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BSelected Lineage§!."
  movement_leader_enhancement_selected_lineages.6.fight:0 "Make them drink vacuum!"
  movement_leader_enhancement_selected_lineages.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

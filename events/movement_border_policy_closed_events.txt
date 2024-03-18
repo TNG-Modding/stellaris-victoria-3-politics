@@ -425,7 +425,7 @@ situation_event = {
 					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
-						name = "Civil War over border_policy_closed"
+						name = "Civil War over Closed Borders"
 						attacker_war_goal = wg_conquest
 					}
 				}

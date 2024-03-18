@@ -1,0 +1,32 @@
+﻿l_english:
+ # Situation
+ situation_passPolicy_first_contact_protocol:0 "$first_contact_protocol$ Legislation"
+ situation_passPolicy_first_contact_protocol_type:0 "$first_contact_protocol$ Legislation"
+ situation_passPolicy_first_contact_protocol_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+ situation_passPolicy_first_contact_protocol_desc:0 "We are working on passing the policy §B$first_contact_protocol$§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_first_contact_protocol:0 "Pass §B$first_contact_protocol$§!."
+
+ situation_passPolicy_first_contact_protocol.7.name:0 "§B$first_contact_protocol$§! Passed!"
+ situation_passPolicy_first_contact_protocol.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §B$first_contact_protocol$§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_first_contact_protocol.7.a:0 "Finally!"
+
+ situation_passPolicy_first_contact_protocol.8.name:0 "§B$first_contact_protocol$§! Abandoned!"
+ situation_passPolicy_first_contact_protocol.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §B$first_contact_protocol$§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §B$first_contact_protocol$§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_first_contact_protocol.8.a:0 "It seems it was not §B$first_contact_protocol$'s§! time."
+
+ situation_passPolicy_first_contact_protocol.9.name:0 "§B$first_contact_protocol$§! Failed to Pass!"
+ situation_passPolicy_first_contact_protocol.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §B$first_contact_protocol$§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_first_contact_protocol.9.a:0 "Blast!"
+ 
+ # Event
+ situation_passPolicy_first_contact_protocol.1.name:0 "Legislation for $first_contact_protocol$"
+ situation_passPolicy_first_contact_protocol.1.desc:0 "We move that .\n\nSupport: §G[This.movement_first_contact_protocol_faction_support]%§!"
+
+ situation_passPolicy_first_contact_protocol.2.name:0 "$first_contact_protocol$ Support"
+ situation_passPolicy_first_contact_protocol.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
+
+ faction_supportPolicy_first_contact_protocol.1.name:0 "$first_contact_protocol$"
+ faction_supportPolicy_first_contact_protocol.1.desc:0 "Overall Support: [Root.faction_support_first_contact_protocol]\n\nSupporters:\n\nDetractors:\n"
+
+ edict_pass_first_contact_protocol:0 "Pass §B$first_contact_protocol$§!"
+ edict_pass_first_contact_protocol_desc:0 "We move that ."

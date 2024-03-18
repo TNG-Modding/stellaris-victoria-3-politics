@@ -1,32 +1,32 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_appropriation_not_allowed:0 "appropriation_not_allowed Legislation"
- situation_passPolicy_appropriation_not_allowed_type:0 "appropriation_not_allowed Legislation"
+ situation_passPolicy_appropriation_not_allowed:0 "Allow Appropriation Legislation"
+ situation_passPolicy_appropriation_not_allowed_type:0 "Allow Appropriation Legislation"
  situation_passPolicy_appropriation_not_allowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_appropriation_not_allowed_desc:0 "We are working on passing the policy §Bappropriation_not_allowed§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_appropriation_not_allowed:0 "Pass §Bappropriation_not_allowed§!."
+ situation_passPolicy_appropriation_not_allowed_desc:0 "We are working on passing the policy §BAllow Appropriation§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_appropriation_not_allowed:0 "Pass §BAllow Appropriation§!."
 
- situation_passPolicy_appropriation_not_allowed.7.name:0 "§Bappropriation_not_allowed§! Passed!"
- situation_passPolicy_appropriation_not_allowed.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §Bappropriation_not_allowed§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_appropriation_not_allowed.7.name:0 "§BAllow Appropriation§! Passed!"
+ situation_passPolicy_appropriation_not_allowed.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BAllow Appropriation§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_appropriation_not_allowed.7.a:0 "Finally!"
 
- situation_passPolicy_appropriation_not_allowed.8.name:0 "§Bappropriation_not_allowed§! Abandoned!"
- situation_passPolicy_appropriation_not_allowed.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §Bappropriation_not_allowed§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §Bappropriation_not_allowed§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_appropriation_not_allowed.8.a:0 "It seems it was not §Bappropriation_not_allowed's§! time."
+ situation_passPolicy_appropriation_not_allowed.8.name:0 "§BAllow Appropriation§! Abandoned!"
+ situation_passPolicy_appropriation_not_allowed.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BAllow Appropriation§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BAllow Appropriation§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_appropriation_not_allowed.8.a:0 "It seems it was not §BAllow Appropriation's§! time."
 
- situation_passPolicy_appropriation_not_allowed.9.name:0 "§Bappropriation_not_allowed§! Failed to Pass!"
- situation_passPolicy_appropriation_not_allowed.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §Bappropriation_not_allowed§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_appropriation_not_allowed.9.name:0 "§BAllow Appropriation§! Failed to Pass!"
+ situation_passPolicy_appropriation_not_allowed.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BAllow Appropriation§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_appropriation_not_allowed.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_appropriation_not_allowed.1.name:0 "Legislation for appropriation_not_allowed"
+ situation_passPolicy_appropriation_not_allowed.1.name:0 "Legislation for Allow Appropriation"
  situation_passPolicy_appropriation_not_allowed.1.desc:0 "We move that .\n\nSupport: §G[This.movement_appropriation_not_allowed_faction_support]%§!"
 
- situation_passPolicy_appropriation_not_allowed.2.name:0 "appropriation_not_allowed Support"
+ situation_passPolicy_appropriation_not_allowed.2.name:0 "Allow Appropriation Support"
  situation_passPolicy_appropriation_not_allowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_appropriation_not_allowed.1.name:0 "appropriation_not_allowed"
+ faction_supportPolicy_appropriation_not_allowed.1.name:0 "Allow Appropriation"
  faction_supportPolicy_appropriation_not_allowed.1.desc:0 "Overall Support: [Root.faction_support_appropriation_not_allowed]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_appropriation_not_allowed:0 "Pass §Bappropriation_not_allowed§!"
+ edict_pass_appropriation_not_allowed:0 "Pass §BAllow Appropriation§!"
  edict_pass_appropriation_not_allowed_desc:0 "We move that ."

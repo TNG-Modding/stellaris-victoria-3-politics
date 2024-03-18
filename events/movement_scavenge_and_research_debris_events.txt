@@ -425,7 +425,7 @@ situation_event = {
 					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
-						name = "Civil War over scavenge_and_research_debris"
+						name = "Civil War over Scavenge and Research Debris"
 						attacker_war_goal = wg_conquest
 					}
 				}

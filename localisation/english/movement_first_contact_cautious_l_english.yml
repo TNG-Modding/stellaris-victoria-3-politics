@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_first_contact_cautious.2.name:0 "Movement for first_contact_cautious"
+ movement_first_contact_cautious.2.name:0 "Movement for Cautious First Contact"
  movement_first_contact_cautious.2.desc:0 "Support: [This.movement_first_contact_cautious_support]\nRadicalism: [This.movement_first_contact_cautious_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_first_contact_cautious_stats:0 "Support: [Owner.movement_first_contact_cautious_support] Radicalism: [Owner.movement_first_contact_cautious_radicalism] Inertia: [Owner.movement_first_contact_cautious_inertia]\nFaction Support [Owner.movement_first_contact_cautious_faction_support] \nFaction Radicalism: [Owner.movement_first_contact_cautious_faction_radicalism] \nNumerical Support: [Owner.first_contact_cautious_supporting_population]/[Owner.first_contact_cautious_population]=[Owner.movement_first_contact_cautious_numerical_support] \nNumerical Radicalism: [Owner.first_contact_cautious_radical_population]/[Owner.first_contact_cautious_population]=[Owner.movement_first_contact_cautious_numerical_radicalism]"
 
- situation_movement_first_contact_cautious_quickDesc:0 "The people are calling for §Bfirst_contact_cautious§! as they believe ."
+ situation_movement_first_contact_cautious_quickDesc:0 "The people are calling for §BCautious First Contact§! as they believe ."
  situation_movement_first_contact_cautious_desc:0 "$situation_movement_first_contact_cautious_quickDesc$\n\n$situation_movement_first_contact_cautious_supporting$\n$situation_movement_first_contact_cautious_detracting$\n$situation_movement_first_contact_cautious_ethics$\n\n$situation_movement_first_contact_cautious_stats$"
- situation_movement_finisher_first_contact_cautious:0 "Revolution for first_contact_cautious."
+ situation_movement_finisher_first_contact_cautious:0 "Revolution for Cautious First Contact."
  
  movement_first_contact_cautious_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_first_contact_cautious_radicalism]§! is above 25."
 
- movement_first_contact_cautious_revolution_appeased:0 "§GAppeased Revolution for first_contact_cautious§!"
- movement_first_contact_cautious_revolution:0 "§RRevolution for first_contact_cautious§!"
- movement_first_contact_cautious:0 "Movement for first_contact_cautious"
- movement_first_contact_cautious_appeased:0 "Appeased Movement for first_contact_cautious"
+ movement_first_contact_cautious_revolution_appeased:0 "§GAppeased Revolution for Cautious First Contact§!"
+ movement_first_contact_cautious_revolution:0 "§RRevolution for Cautious First Contact§!"
+ movement_first_contact_cautious:0 "Movement for Cautious First Contact"
+ movement_first_contact_cautious_appeased:0 "Appeased Movement for Cautious First Contact"
 
- movement_first_contact_cautious.6.title:0 "Secession over §Bfirst_contact_cautious§!"
- movement_first_contact_cautious.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bfirst_contact_cautious§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bfirst_contact_cautious§!."
+ movement_first_contact_cautious.6.title:0 "Secession over §BCautious First Contact§!"
+ movement_first_contact_cautious.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BCautious First Contact§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BCautious First Contact§!."
  movement_first_contact_cautious.6.fight:0 "Make them drink vacuum!"
  movement_first_contact_cautious.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

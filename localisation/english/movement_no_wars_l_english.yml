@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_no_wars.2.name:0 "Movement for no_wars"
+ movement_no_wars.2.name:0 "Movement for No Wars"
  movement_no_wars.2.desc:0 "Support: [This.movement_no_wars_support]\nRadicalism: [This.movement_no_wars_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_no_wars_stats:0 "Support: [Owner.movement_no_wars_support] Radicalism: [Owner.movement_no_wars_radicalism] Inertia: [Owner.movement_no_wars_inertia]\nFaction Support [Owner.movement_no_wars_faction_support] \nFaction Radicalism: [Owner.movement_no_wars_faction_radicalism] \nNumerical Support: [Owner.no_wars_supporting_population]/[Owner.no_wars_population]=[Owner.movement_no_wars_numerical_support] \nNumerical Radicalism: [Owner.no_wars_radical_population]/[Owner.no_wars_population]=[Owner.movement_no_wars_numerical_radicalism]"
 
- situation_movement_no_wars_quickDesc:0 "The people are calling for §Bno_wars§! as they believe ."
+ situation_movement_no_wars_quickDesc:0 "The people are calling for §BNo Wars§! as they believe ."
  situation_movement_no_wars_desc:0 "$situation_movement_no_wars_quickDesc$\n\n$situation_movement_no_wars_supporting$\n$situation_movement_no_wars_detracting$\n$situation_movement_no_wars_ethics$\n\n$situation_movement_no_wars_stats$"
- situation_movement_finisher_no_wars:0 "Revolution for no_wars."
+ situation_movement_finisher_no_wars:0 "Revolution for No Wars."
  
  movement_no_wars_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_no_wars_radicalism]§! is above 25."
 
- movement_no_wars_revolution_appeased:0 "§GAppeased Revolution for no_wars§!"
- movement_no_wars_revolution:0 "§RRevolution for no_wars§!"
- movement_no_wars:0 "Movement for no_wars"
- movement_no_wars_appeased:0 "Appeased Movement for no_wars"
+ movement_no_wars_revolution_appeased:0 "§GAppeased Revolution for No Wars§!"
+ movement_no_wars_revolution:0 "§RRevolution for No Wars§!"
+ movement_no_wars:0 "Movement for No Wars"
+ movement_no_wars_appeased:0 "Appeased Movement for No Wars"
 
- movement_no_wars.6.title:0 "Secession over §Bno_wars§!"
- movement_no_wars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bno_wars§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bno_wars§!."
+ movement_no_wars.6.title:0 "Secession over §BNo Wars§!"
+ movement_no_wars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BNo Wars§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BNo Wars§!."
  movement_no_wars.6.fight:0 "Make them drink vacuum!"
  movement_no_wars.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

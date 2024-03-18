@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_liberation_wars.2.name:0 "Movement for liberation_wars"
+ movement_liberation_wars.2.name:0 "Movement for Liberation Wars"
  movement_liberation_wars.2.desc:0 "Support: [This.movement_liberation_wars_support]\nRadicalism: [This.movement_liberation_wars_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_liberation_wars_stats:0 "Support: [Owner.movement_liberation_wars_support] Radicalism: [Owner.movement_liberation_wars_radicalism] Inertia: [Owner.movement_liberation_wars_inertia]\nFaction Support [Owner.movement_liberation_wars_faction_support] \nFaction Radicalism: [Owner.movement_liberation_wars_faction_radicalism] \nNumerical Support: [Owner.liberation_wars_supporting_population]/[Owner.liberation_wars_population]=[Owner.movement_liberation_wars_numerical_support] \nNumerical Radicalism: [Owner.liberation_wars_radical_population]/[Owner.liberation_wars_population]=[Owner.movement_liberation_wars_numerical_radicalism]"
 
- situation_movement_liberation_wars_quickDesc:0 "The people are calling for §Bliberation_wars§! as they believe ."
+ situation_movement_liberation_wars_quickDesc:0 "The people are calling for §BLiberation Wars§! as they believe ."
  situation_movement_liberation_wars_desc:0 "$situation_movement_liberation_wars_quickDesc$\n\n$situation_movement_liberation_wars_supporting$\n$situation_movement_liberation_wars_detracting$\n$situation_movement_liberation_wars_ethics$\n\n$situation_movement_liberation_wars_stats$"
- situation_movement_finisher_liberation_wars:0 "Revolution for liberation_wars."
+ situation_movement_finisher_liberation_wars:0 "Revolution for Liberation Wars."
  
  movement_liberation_wars_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_liberation_wars_radicalism]§! is above 25."
 
- movement_liberation_wars_revolution_appeased:0 "§GAppeased Revolution for liberation_wars§!"
- movement_liberation_wars_revolution:0 "§RRevolution for liberation_wars§!"
- movement_liberation_wars:0 "Movement for liberation_wars"
- movement_liberation_wars_appeased:0 "Appeased Movement for liberation_wars"
+ movement_liberation_wars_revolution_appeased:0 "§GAppeased Revolution for Liberation Wars§!"
+ movement_liberation_wars_revolution:0 "§RRevolution for Liberation Wars§!"
+ movement_liberation_wars:0 "Movement for Liberation Wars"
+ movement_liberation_wars_appeased:0 "Appeased Movement for Liberation Wars"
 
- movement_liberation_wars.6.title:0 "Secession over §Bliberation_wars§!"
- movement_liberation_wars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bliberation_wars§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bliberation_wars§!."
+ movement_liberation_wars.6.title:0 "Secession over §BLiberation Wars§!"
+ movement_liberation_wars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BLiberation Wars§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BLiberation Wars§!."
  movement_liberation_wars.6.fight:0 "Make them drink vacuum!"
  movement_liberation_wars.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

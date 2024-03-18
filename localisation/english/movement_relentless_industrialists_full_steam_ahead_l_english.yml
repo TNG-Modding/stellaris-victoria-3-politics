@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_relentless_industrialists_full_steam_ahead.2.name:0 "Movement for relentless_industrialists_full_steam_ahead"
+ movement_relentless_industrialists_full_steam_ahead.2.name:0 "Movement for Full Steam Ahead"
  movement_relentless_industrialists_full_steam_ahead.2.desc:0 "Support: [This.movement_relentless_industrialists_full_steam_ahead_support]\nRadicalism: [This.movement_relentless_industrialists_full_steam_ahead_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_relentless_industrialists_full_steam_ahead_stats:0 "Support: [Owner.movement_relentless_industrialists_full_steam_ahead_support] Radicalism: [Owner.movement_relentless_industrialists_full_steam_ahead_radicalism] Inertia: [Owner.movement_relentless_industrialists_full_steam_ahead_inertia]\nFaction Support [Owner.movement_relentless_industrialists_full_steam_ahead_faction_support] \nFaction Radicalism: [Owner.movement_relentless_industrialists_full_steam_ahead_faction_radicalism] \nNumerical Support: [Owner.relentless_industrialists_full_steam_ahead_supporting_population]/[Owner.relentless_industrialists_full_steam_ahead_population]=[Owner.movement_relentless_industrialists_full_steam_ahead_numerical_support] \nNumerical Radicalism: [Owner.relentless_industrialists_full_steam_ahead_radical_population]/[Owner.relentless_industrialists_full_steam_ahead_population]=[Owner.movement_relentless_industrialists_full_steam_ahead_numerical_radicalism]"
 
- situation_movement_relentless_industrialists_full_steam_ahead_quickDesc:0 "The people are calling for §Brelentless_industrialists_full_steam_ahead§! as they believe ."
+ situation_movement_relentless_industrialists_full_steam_ahead_quickDesc:0 "The people are calling for §BFull Steam Ahead§! as they believe ."
  situation_movement_relentless_industrialists_full_steam_ahead_desc:0 "$situation_movement_relentless_industrialists_full_steam_ahead_quickDesc$\n\n$situation_movement_relentless_industrialists_full_steam_ahead_supporting$\n$situation_movement_relentless_industrialists_full_steam_ahead_detracting$\n$situation_movement_relentless_industrialists_full_steam_ahead_ethics$\n\n$situation_movement_relentless_industrialists_full_steam_ahead_stats$"
- situation_movement_finisher_relentless_industrialists_full_steam_ahead:0 "Revolution for relentless_industrialists_full_steam_ahead."
+ situation_movement_finisher_relentless_industrialists_full_steam_ahead:0 "Revolution for Full Steam Ahead."
  
  movement_relentless_industrialists_full_steam_ahead_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_relentless_industrialists_full_steam_ahead_radicalism]§! is above 25."
 
- movement_relentless_industrialists_full_steam_ahead_revolution_appeased:0 "§GAppeased Revolution for relentless_industrialists_full_steam_ahead§!"
- movement_relentless_industrialists_full_steam_ahead_revolution:0 "§RRevolution for relentless_industrialists_full_steam_ahead§!"
- movement_relentless_industrialists_full_steam_ahead:0 "Movement for relentless_industrialists_full_steam_ahead"
- movement_relentless_industrialists_full_steam_ahead_appeased:0 "Appeased Movement for relentless_industrialists_full_steam_ahead"
+ movement_relentless_industrialists_full_steam_ahead_revolution_appeased:0 "§GAppeased Revolution for Full Steam Ahead§!"
+ movement_relentless_industrialists_full_steam_ahead_revolution:0 "§RRevolution for Full Steam Ahead§!"
+ movement_relentless_industrialists_full_steam_ahead:0 "Movement for Full Steam Ahead"
+ movement_relentless_industrialists_full_steam_ahead_appeased:0 "Appeased Movement for Full Steam Ahead"
 
- movement_relentless_industrialists_full_steam_ahead.6.title:0 "Secession over §Brelentless_industrialists_full_steam_ahead§!"
- movement_relentless_industrialists_full_steam_ahead.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Brelentless_industrialists_full_steam_ahead§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Brelentless_industrialists_full_steam_ahead§!."
+ movement_relentless_industrialists_full_steam_ahead.6.title:0 "Secession over §BFull Steam Ahead§!"
+ movement_relentless_industrialists_full_steam_ahead.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BFull Steam Ahead§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BFull Steam Ahead§!."
  movement_relentless_industrialists_full_steam_ahead.6.fight:0 "Make them drink vacuum!"
  movement_relentless_industrialists_full_steam_ahead.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

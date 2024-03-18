@@ -425,7 +425,7 @@ situation_event = {
 					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
-						name = "Civil War over trade_policy_trade_league"
+						name = "Civil War over Trade League Trade Policy"
 						attacker_war_goal = wg_conquest
 					}
 				}

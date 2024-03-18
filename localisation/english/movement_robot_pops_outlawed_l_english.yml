@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_robot_pops_outlawed.2.name:0 "Movement for robot_pops_outlawed"
+ movement_robot_pops_outlawed.2.name:0 "Movement for Outlawed Robot Pops"
  movement_robot_pops_outlawed.2.desc:0 "Support: [This.movement_robot_pops_outlawed_support]\nRadicalism: [This.movement_robot_pops_outlawed_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_robot_pops_outlawed_stats:0 "Support: [Owner.movement_robot_pops_outlawed_support] Radicalism: [Owner.movement_robot_pops_outlawed_radicalism] Inertia: [Owner.movement_robot_pops_outlawed_inertia]\nFaction Support [Owner.movement_robot_pops_outlawed_faction_support] \nFaction Radicalism: [Owner.movement_robot_pops_outlawed_faction_radicalism] \nNumerical Support: [Owner.robot_pops_outlawed_supporting_population]/[Owner.robot_pops_outlawed_population]=[Owner.movement_robot_pops_outlawed_numerical_support] \nNumerical Radicalism: [Owner.robot_pops_outlawed_radical_population]/[Owner.robot_pops_outlawed_population]=[Owner.movement_robot_pops_outlawed_numerical_radicalism]"
 
- situation_movement_robot_pops_outlawed_quickDesc:0 "The people are calling for §Brobot_pops_outlawed§! as they believe ."
+ situation_movement_robot_pops_outlawed_quickDesc:0 "The people are calling for §BOutlawed Robot Pops§! as they believe ."
  situation_movement_robot_pops_outlawed_desc:0 "$situation_movement_robot_pops_outlawed_quickDesc$\n\n$situation_movement_robot_pops_outlawed_supporting$\n$situation_movement_robot_pops_outlawed_detracting$\n$situation_movement_robot_pops_outlawed_ethics$\n\n$situation_movement_robot_pops_outlawed_stats$"
- situation_movement_finisher_robot_pops_outlawed:0 "Revolution for robot_pops_outlawed."
+ situation_movement_finisher_robot_pops_outlawed:0 "Revolution for Outlawed Robot Pops."
  
  movement_robot_pops_outlawed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_robot_pops_outlawed_radicalism]§! is above 25."
 
- movement_robot_pops_outlawed_revolution_appeased:0 "§GAppeased Revolution for robot_pops_outlawed§!"
- movement_robot_pops_outlawed_revolution:0 "§RRevolution for robot_pops_outlawed§!"
- movement_robot_pops_outlawed:0 "Movement for robot_pops_outlawed"
- movement_robot_pops_outlawed_appeased:0 "Appeased Movement for robot_pops_outlawed"
+ movement_robot_pops_outlawed_revolution_appeased:0 "§GAppeased Revolution for Outlawed Robot Pops§!"
+ movement_robot_pops_outlawed_revolution:0 "§RRevolution for Outlawed Robot Pops§!"
+ movement_robot_pops_outlawed:0 "Movement for Outlawed Robot Pops"
+ movement_robot_pops_outlawed_appeased:0 "Appeased Movement for Outlawed Robot Pops"
 
- movement_robot_pops_outlawed.6.title:0 "Secession over §Brobot_pops_outlawed§!"
- movement_robot_pops_outlawed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Brobot_pops_outlawed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Brobot_pops_outlawed§!."
+ movement_robot_pops_outlawed.6.title:0 "Secession over §BOutlawed Robot Pops§!"
+ movement_robot_pops_outlawed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BOutlawed Robot Pops§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BOutlawed Robot Pops§!."
  movement_robot_pops_outlawed.6.fight:0 "Make them drink vacuum!"
  movement_robot_pops_outlawed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

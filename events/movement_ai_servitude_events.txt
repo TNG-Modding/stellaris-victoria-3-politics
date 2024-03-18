@@ -425,7 +425,7 @@ situation_event = {
 					create_fleet_from_naval_cap = 2
 					declare_war = {
 						target = Root.Owner
-						name = "Civil War over ai_servitude"
+						name = "Civil War over AI Servitude"
 						attacker_war_goal = wg_conquest
 					}
 				}

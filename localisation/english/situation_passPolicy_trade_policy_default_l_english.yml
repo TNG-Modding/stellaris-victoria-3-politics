@@ -1,32 +1,32 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_trade_policy_default:0 "trade_policy_default Legislation"
- situation_passPolicy_trade_policy_default_type:0 "trade_policy_default Legislation"
+ situation_passPolicy_trade_policy_default:0 "Default Trade Policy Legislation"
+ situation_passPolicy_trade_policy_default_type:0 "Default Trade Policy Legislation"
  situation_passPolicy_trade_policy_default_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_trade_policy_default_desc:0 "We are working on passing the policy §Btrade_policy_default§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_trade_policy_default:0 "Pass §Btrade_policy_default§!."
+ situation_passPolicy_trade_policy_default_desc:0 "We are working on passing the policy §BDefault Trade Policy§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_trade_policy_default:0 "Pass §BDefault Trade Policy§!."
 
- situation_passPolicy_trade_policy_default.7.name:0 "§Btrade_policy_default§! Passed!"
- situation_passPolicy_trade_policy_default.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §Btrade_policy_default§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_trade_policy_default.7.name:0 "§BDefault Trade Policy§! Passed!"
+ situation_passPolicy_trade_policy_default.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BDefault Trade Policy§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_trade_policy_default.7.a:0 "Finally!"
 
- situation_passPolicy_trade_policy_default.8.name:0 "§Btrade_policy_default§! Abandoned!"
- situation_passPolicy_trade_policy_default.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §Btrade_policy_default§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §Btrade_policy_default§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_trade_policy_default.8.a:0 "It seems it was not §Btrade_policy_default's§! time."
+ situation_passPolicy_trade_policy_default.8.name:0 "§BDefault Trade Policy§! Abandoned!"
+ situation_passPolicy_trade_policy_default.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BDefault Trade Policy§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BDefault Trade Policy§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_trade_policy_default.8.a:0 "It seems it was not §BDefault Trade Policy's§! time."
 
- situation_passPolicy_trade_policy_default.9.name:0 "§Btrade_policy_default§! Failed to Pass!"
- situation_passPolicy_trade_policy_default.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §Btrade_policy_default§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_trade_policy_default.9.name:0 "§BDefault Trade Policy§! Failed to Pass!"
+ situation_passPolicy_trade_policy_default.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BDefault Trade Policy§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_trade_policy_default.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_trade_policy_default.1.name:0 "Legislation for trade_policy_default"
+ situation_passPolicy_trade_policy_default.1.name:0 "Legislation for Default Trade Policy"
  situation_passPolicy_trade_policy_default.1.desc:0 "We move that .\n\nSupport: §G[This.movement_trade_policy_default_faction_support]%§!"
 
- situation_passPolicy_trade_policy_default.2.name:0 "trade_policy_default Support"
+ situation_passPolicy_trade_policy_default.2.name:0 "Default Trade Policy Support"
  situation_passPolicy_trade_policy_default.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_trade_policy_default.1.name:0 "trade_policy_default"
+ faction_supportPolicy_trade_policy_default.1.name:0 "Default Trade Policy"
  faction_supportPolicy_trade_policy_default.1.desc:0 "Overall Support: [Root.faction_support_trade_policy_default]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_trade_policy_default:0 "Pass §Btrade_policy_default§!"
+ edict_pass_trade_policy_default:0 "Pass §BDefault Trade Policy§!"
  edict_pass_trade_policy_default_desc:0 "We move that ."

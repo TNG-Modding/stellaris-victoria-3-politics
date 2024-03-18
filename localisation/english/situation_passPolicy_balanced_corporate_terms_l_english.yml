@@ -1,32 +1,32 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_balanced_corporate_terms:0 "balanced_corporate_terms Legislation"
- situation_passPolicy_balanced_corporate_terms_type:0 "balanced_corporate_terms Legislation"
+ situation_passPolicy_balanced_corporate_terms:0 "Balanced Corporate Terms Legislation"
+ situation_passPolicy_balanced_corporate_terms_type:0 "Balanced Corporate Terms Legislation"
  situation_passPolicy_balanced_corporate_terms_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_balanced_corporate_terms_desc:0 "We are working on passing the policy §Bbalanced_corporate_terms§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_balanced_corporate_terms:0 "Pass §Bbalanced_corporate_terms§!."
+ situation_passPolicy_balanced_corporate_terms_desc:0 "We are working on passing the policy §BBalanced Corporate Terms§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_balanced_corporate_terms:0 "Pass §BBalanced Corporate Terms§!."
 
- situation_passPolicy_balanced_corporate_terms.7.name:0 "§Bbalanced_corporate_terms§! Passed!"
- situation_passPolicy_balanced_corporate_terms.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §Bbalanced_corporate_terms§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_balanced_corporate_terms.7.name:0 "§BBalanced Corporate Terms§! Passed!"
+ situation_passPolicy_balanced_corporate_terms.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BBalanced Corporate Terms§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_balanced_corporate_terms.7.a:0 "Finally!"
 
- situation_passPolicy_balanced_corporate_terms.8.name:0 "§Bbalanced_corporate_terms§! Abandoned!"
- situation_passPolicy_balanced_corporate_terms.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §Bbalanced_corporate_terms§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §Bbalanced_corporate_terms§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_balanced_corporate_terms.8.a:0 "It seems it was not §Bbalanced_corporate_terms's§! time."
+ situation_passPolicy_balanced_corporate_terms.8.name:0 "§BBalanced Corporate Terms§! Abandoned!"
+ situation_passPolicy_balanced_corporate_terms.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BBalanced Corporate Terms§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BBalanced Corporate Terms§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_balanced_corporate_terms.8.a:0 "It seems it was not §BBalanced Corporate Terms's§! time."
 
- situation_passPolicy_balanced_corporate_terms.9.name:0 "§Bbalanced_corporate_terms§! Failed to Pass!"
- situation_passPolicy_balanced_corporate_terms.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §Bbalanced_corporate_terms§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_balanced_corporate_terms.9.name:0 "§BBalanced Corporate Terms§! Failed to Pass!"
+ situation_passPolicy_balanced_corporate_terms.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BBalanced Corporate Terms§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_balanced_corporate_terms.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_balanced_corporate_terms.1.name:0 "Legislation for balanced_corporate_terms"
+ situation_passPolicy_balanced_corporate_terms.1.name:0 "Legislation for Balanced Corporate Terms"
  situation_passPolicy_balanced_corporate_terms.1.desc:0 "We move that .\n\nSupport: §G[This.movement_balanced_corporate_terms_faction_support]%§!"
 
- situation_passPolicy_balanced_corporate_terms.2.name:0 "balanced_corporate_terms Support"
+ situation_passPolicy_balanced_corporate_terms.2.name:0 "Balanced Corporate Terms Support"
  situation_passPolicy_balanced_corporate_terms.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_balanced_corporate_terms.1.name:0 "balanced_corporate_terms"
+ faction_supportPolicy_balanced_corporate_terms.1.name:0 "Balanced Corporate Terms"
  faction_supportPolicy_balanced_corporate_terms.1.desc:0 "Overall Support: [Root.faction_support_balanced_corporate_terms]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_balanced_corporate_terms:0 "Pass §Bbalanced_corporate_terms§!"
+ edict_pass_balanced_corporate_terms:0 "Pass §BBalanced Corporate Terms§!"
  edict_pass_balanced_corporate_terms_desc:0 "We move that ."

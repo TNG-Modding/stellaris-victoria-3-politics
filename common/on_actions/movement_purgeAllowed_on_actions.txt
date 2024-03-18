@@ -1,5 +1,0 @@
-on_monthly_pulse = {
-	events = {
-		movement_purgeAllowed.1
-	}
-}

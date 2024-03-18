@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_pre_sapients_allow.2.name:0 "Movement for pre_sapients_allow"
+ movement_pre_sapients_allow.2.name:0 "Movement for Allowed Pre-Sapients"
  movement_pre_sapients_allow.2.desc:0 "Support: [This.movement_pre_sapients_allow_support]\nRadicalism: [This.movement_pre_sapients_allow_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_pre_sapients_allow_stats:0 "Support: [Owner.movement_pre_sapients_allow_support] Radicalism: [Owner.movement_pre_sapients_allow_radicalism] Inertia: [Owner.movement_pre_sapients_allow_inertia]\nFaction Support [Owner.movement_pre_sapients_allow_faction_support] \nFaction Radicalism: [Owner.movement_pre_sapients_allow_faction_radicalism] \nNumerical Support: [Owner.pre_sapients_allow_supporting_population]/[Owner.pre_sapients_allow_population]=[Owner.movement_pre_sapients_allow_numerical_support] \nNumerical Radicalism: [Owner.pre_sapients_allow_radical_population]/[Owner.pre_sapients_allow_population]=[Owner.movement_pre_sapients_allow_numerical_radicalism]"
 
- situation_movement_pre_sapients_allow_quickDesc:0 "The people are calling for §Bpre_sapients_allow§! as they believe ."
+ situation_movement_pre_sapients_allow_quickDesc:0 "The people are calling for §BAllowed Pre-Sapients§! as they believe ."
  situation_movement_pre_sapients_allow_desc:0 "$situation_movement_pre_sapients_allow_quickDesc$\n\n$situation_movement_pre_sapients_allow_supporting$\n$situation_movement_pre_sapients_allow_detracting$\n$situation_movement_pre_sapients_allow_ethics$\n\n$situation_movement_pre_sapients_allow_stats$"
- situation_movement_finisher_pre_sapients_allow:0 "Revolution for pre_sapients_allow."
+ situation_movement_finisher_pre_sapients_allow:0 "Revolution for Allowed Pre-Sapients."
  
  movement_pre_sapients_allow_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_pre_sapients_allow_radicalism]§! is above 25."
 
- movement_pre_sapients_allow_revolution_appeased:0 "§GAppeased Revolution for pre_sapients_allow§!"
- movement_pre_sapients_allow_revolution:0 "§RRevolution for pre_sapients_allow§!"
- movement_pre_sapients_allow:0 "Movement for pre_sapients_allow"
- movement_pre_sapients_allow_appeased:0 "Appeased Movement for pre_sapients_allow"
+ movement_pre_sapients_allow_revolution_appeased:0 "§GAppeased Revolution for Allowed Pre-Sapients§!"
+ movement_pre_sapients_allow_revolution:0 "§RRevolution for Allowed Pre-Sapients§!"
+ movement_pre_sapients_allow:0 "Movement for Allowed Pre-Sapients"
+ movement_pre_sapients_allow_appeased:0 "Appeased Movement for Allowed Pre-Sapients"
 
- movement_pre_sapients_allow.6.title:0 "Secession over §Bpre_sapients_allow§!"
- movement_pre_sapients_allow.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bpre_sapients_allow§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bpre_sapients_allow§!."
+ movement_pre_sapients_allow.6.title:0 "Secession over §BAllowed Pre-Sapients§!"
+ movement_pre_sapients_allow.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BAllowed Pre-Sapients§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BAllowed Pre-Sapients§!."
  movement_pre_sapients_allow.6.fight:0 "Make them drink vacuum!"
  movement_pre_sapients_allow.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_first_contact_proactive.2.name:0 "Movement for first_contact_proactive"
+ movement_first_contact_proactive.2.name:0 "Movement for Proactive First Contact"
  movement_first_contact_proactive.2.desc:0 "Support: [This.movement_first_contact_proactive_support]\nRadicalism: [This.movement_first_contact_proactive_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_first_contact_proactive_stats:0 "Support: [Owner.movement_first_contact_proactive_support] Radicalism: [Owner.movement_first_contact_proactive_radicalism] Inertia: [Owner.movement_first_contact_proactive_inertia]\nFaction Support [Owner.movement_first_contact_proactive_faction_support] \nFaction Radicalism: [Owner.movement_first_contact_proactive_faction_radicalism] \nNumerical Support: [Owner.first_contact_proactive_supporting_population]/[Owner.first_contact_proactive_population]=[Owner.movement_first_contact_proactive_numerical_support] \nNumerical Radicalism: [Owner.first_contact_proactive_radical_population]/[Owner.first_contact_proactive_population]=[Owner.movement_first_contact_proactive_numerical_radicalism]"
 
- situation_movement_first_contact_proactive_quickDesc:0 "The people are calling for §Bfirst_contact_proactive§! as they believe ."
+ situation_movement_first_contact_proactive_quickDesc:0 "The people are calling for §BProactive First Contact§! as they believe ."
  situation_movement_first_contact_proactive_desc:0 "$situation_movement_first_contact_proactive_quickDesc$\n\n$situation_movement_first_contact_proactive_supporting$\n$situation_movement_first_contact_proactive_detracting$\n$situation_movement_first_contact_proactive_ethics$\n\n$situation_movement_first_contact_proactive_stats$"
- situation_movement_finisher_first_contact_proactive:0 "Revolution for first_contact_proactive."
+ situation_movement_finisher_first_contact_proactive:0 "Revolution for Proactive First Contact."
  
  movement_first_contact_proactive_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_first_contact_proactive_radicalism]§! is above 25."
 
- movement_first_contact_proactive_revolution_appeased:0 "§GAppeased Revolution for first_contact_proactive§!"
- movement_first_contact_proactive_revolution:0 "§RRevolution for first_contact_proactive§!"
- movement_first_contact_proactive:0 "Movement for first_contact_proactive"
- movement_first_contact_proactive_appeased:0 "Appeased Movement for first_contact_proactive"
+ movement_first_contact_proactive_revolution_appeased:0 "§GAppeased Revolution for Proactive First Contact§!"
+ movement_first_contact_proactive_revolution:0 "§RRevolution for Proactive First Contact§!"
+ movement_first_contact_proactive:0 "Movement for Proactive First Contact"
+ movement_first_contact_proactive_appeased:0 "Appeased Movement for Proactive First Contact"
 
- movement_first_contact_proactive.6.title:0 "Secession over §Bfirst_contact_proactive§!"
- movement_first_contact_proactive.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bfirst_contact_proactive§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bfirst_contact_proactive§!."
+ movement_first_contact_proactive.6.title:0 "Secession over §BProactive First Contact§!"
+ movement_first_contact_proactive.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BProactive First Contact§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BProactive First Contact§!."
  movement_first_contact_proactive.6.fight:0 "Make them drink vacuum!"
  movement_first_contact_proactive.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

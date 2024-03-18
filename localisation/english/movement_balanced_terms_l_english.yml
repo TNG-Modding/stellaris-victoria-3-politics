@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_balanced_terms.2.name:0 "Movement for balanced_terms"
+ movement_balanced_terms.2.name:0 "Movement for Balanced Terms"
  movement_balanced_terms.2.desc:0 "Support: [This.movement_balanced_terms_support]\nRadicalism: [This.movement_balanced_terms_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_balanced_terms_stats:0 "Support: [Owner.movement_balanced_terms_support] Radicalism: [Owner.movement_balanced_terms_radicalism] Inertia: [Owner.movement_balanced_terms_inertia]\nFaction Support [Owner.movement_balanced_terms_faction_support] \nFaction Radicalism: [Owner.movement_balanced_terms_faction_radicalism] \nNumerical Support: [Owner.balanced_terms_supporting_population]/[Owner.balanced_terms_population]=[Owner.movement_balanced_terms_numerical_support] \nNumerical Radicalism: [Owner.balanced_terms_radical_population]/[Owner.balanced_terms_population]=[Owner.movement_balanced_terms_numerical_radicalism]"
 
- situation_movement_balanced_terms_quickDesc:0 "The people are calling for §Bbalanced_terms§! as they believe ."
+ situation_movement_balanced_terms_quickDesc:0 "The people are calling for §BBalanced Terms§! as they believe ."
  situation_movement_balanced_terms_desc:0 "$situation_movement_balanced_terms_quickDesc$\n\n$situation_movement_balanced_terms_supporting$\n$situation_movement_balanced_terms_detracting$\n$situation_movement_balanced_terms_ethics$\n\n$situation_movement_balanced_terms_stats$"
- situation_movement_finisher_balanced_terms:0 "Revolution for balanced_terms."
+ situation_movement_finisher_balanced_terms:0 "Revolution for Balanced Terms."
  
  movement_balanced_terms_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_balanced_terms_radicalism]§! is above 25."
 
- movement_balanced_terms_revolution_appeased:0 "§GAppeased Revolution for balanced_terms§!"
- movement_balanced_terms_revolution:0 "§RRevolution for balanced_terms§!"
- movement_balanced_terms:0 "Movement for balanced_terms"
- movement_balanced_terms_appeased:0 "Appeased Movement for balanced_terms"
+ movement_balanced_terms_revolution_appeased:0 "§GAppeased Revolution for Balanced Terms§!"
+ movement_balanced_terms_revolution:0 "§RRevolution for Balanced Terms§!"
+ movement_balanced_terms:0 "Movement for Balanced Terms"
+ movement_balanced_terms_appeased:0 "Appeased Movement for Balanced Terms"
 
- movement_balanced_terms.6.title:0 "Secession over §Bbalanced_terms§!"
- movement_balanced_terms.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bbalanced_terms§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bbalanced_terms§!."
+ movement_balanced_terms.6.title:0 "Secession over §BBalanced Terms§!"
+ movement_balanced_terms.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BBalanced Terms§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BBalanced Terms§!."
  movement_balanced_terms.6.fight:0 "Make them drink vacuum!"
  movement_balanced_terms.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

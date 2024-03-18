@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_toxic_knights_herald.2.name:0 "Movement for toxic_knights_herald"
+ movement_toxic_knights_herald.2.name:0 "Movement for Herald Toxic Knights"
  movement_toxic_knights_herald.2.desc:0 "Support: [This.movement_toxic_knights_herald_support]\nRadicalism: [This.movement_toxic_knights_herald_radicalism]"
 
  #  Situation
@@ -15,19 +15,19 @@
 
  situation_movement_toxic_knights_herald_stats:0 "Support: [Owner.movement_toxic_knights_herald_support] Radicalism: [Owner.movement_toxic_knights_herald_radicalism] Inertia: [Owner.movement_toxic_knights_herald_inertia]\nFaction Support [Owner.movement_toxic_knights_herald_faction_support] \nFaction Radicalism: [Owner.movement_toxic_knights_herald_faction_radicalism] \nNumerical Support: [Owner.toxic_knights_herald_supporting_population]/[Owner.toxic_knights_herald_population]=[Owner.movement_toxic_knights_herald_numerical_support] \nNumerical Radicalism: [Owner.toxic_knights_herald_radical_population]/[Owner.toxic_knights_herald_population]=[Owner.movement_toxic_knights_herald_numerical_radicalism]"
 
- situation_movement_toxic_knights_herald_quickDesc:0 "The people are calling for §Btoxic_knights_herald§! as they believe ."
+ situation_movement_toxic_knights_herald_quickDesc:0 "The people are calling for §BHerald Toxic Knights§! as they believe ."
  situation_movement_toxic_knights_herald_desc:0 "$situation_movement_toxic_knights_herald_quickDesc$\n\n$situation_movement_toxic_knights_herald_supporting$\n$situation_movement_toxic_knights_herald_detracting$\n$situation_movement_toxic_knights_herald_ethics$\n\n$situation_movement_toxic_knights_herald_stats$"
- situation_movement_finisher_toxic_knights_herald:0 "Revolution for toxic_knights_herald."
+ situation_movement_finisher_toxic_knights_herald:0 "Revolution for Herald Toxic Knights."
  
  movement_toxic_knights_herald_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_toxic_knights_herald_radicalism]§! is above 25."
 
- movement_toxic_knights_herald_revolution_appeased:0 "§GAppeased Revolution for toxic_knights_herald§!"
- movement_toxic_knights_herald_revolution:0 "§RRevolution for toxic_knights_herald§!"
- movement_toxic_knights_herald:0 "Movement for toxic_knights_herald"
- movement_toxic_knights_herald_appeased:0 "Appeased Movement for toxic_knights_herald"
+ movement_toxic_knights_herald_revolution_appeased:0 "§GAppeased Revolution for Herald Toxic Knights§!"
+ movement_toxic_knights_herald_revolution:0 "§RRevolution for Herald Toxic Knights§!"
+ movement_toxic_knights_herald:0 "Movement for Herald Toxic Knights"
+ movement_toxic_knights_herald_appeased:0 "Appeased Movement for Herald Toxic Knights"
 
- movement_toxic_knights_herald.6.title:0 "Secession over §Btoxic_knights_herald§!"
- movement_toxic_knights_herald.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Btoxic_knights_herald§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Btoxic_knights_herald§!."
+ movement_toxic_knights_herald.6.title:0 "Secession over §BHerald Toxic Knights§!"
+ movement_toxic_knights_herald.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BHerald Toxic Knights§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BHerald Toxic Knights§!."
  movement_toxic_knights_herald.6.fight:0 "Make them drink vacuum!"
  movement_toxic_knights_herald.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

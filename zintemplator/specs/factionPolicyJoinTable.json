@@ -1,16 +1,16 @@
 [
     {
-        "varname": "Spec generation",
+        "varname": "spec_generation",
         "policies": [
             {
                 "varname": "diplomatic_stance",
-                "displayName": "diplomatic_stance",
+                "displayName": "Diplomatic Stance",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "diplo_stance_belligerent",
-                        "displayName": "diplo_stance_belligerent",
+                        "displayName": "Belligerent",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -21,7 +21,7 @@
                     },
                     {
                         "varname": "diplo_stance_cooperative",
-                        "displayName": "diplo_stance_cooperative",
+                        "displayName": "Cooperative",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -32,7 +32,7 @@
                     },
                     {
                         "varname": "diplo_stance_isolationist",
-                        "displayName": "diplo_stance_isolationist",
+                        "displayName": "Isolationist",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -43,7 +43,7 @@
                     },
                     {
                         "varname": "diplo_stance_expansionist",
-                        "displayName": "diplo_stance_expansionist",
+                        "displayName": "Expansionist",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -54,7 +54,7 @@
                     },
                     {
                         "varname": "diplo_stance_mercantile",
-                        "displayName": "diplo_stance_mercantile",
+                        "displayName": "Mercantile",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -65,7 +65,7 @@
                     },
                     {
                         "varname": "diplo_stance_supremacist",
-                        "displayName": "diplo_stance_supremacist",
+                        "displayName": "Supremacist",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -76,7 +76,7 @@
                     },
                     {
                         "varname": "diplo_stance_animosity",
-                        "displayName": "diplo_stance_animosity",
+                        "displayName": "Animosity",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -87,7 +87,7 @@
                     },
                     {
                         "varname": "diplo_stance_hunger",
-                        "displayName": "diplo_stance_hunger",
+                        "displayName": "Hunger",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -98,7 +98,7 @@
                     },
                     {
                         "varname": "diplo_stance_extermination",
-                        "displayName": "diplo_stance_extermination",
+                        "displayName": "Extermination",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -109,7 +109,7 @@
                     },
                     {
                         "varname": "diplo_stance_purification",
-                        "displayName": "diplo_stance_purification",
+                        "displayName": "Purification",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -122,13 +122,13 @@
             },
             {
                 "varname": "war_philosophy",
-                "displayName": "war_philosophy",
+                "displayName": "War Philosophy",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "unrestricted_wars",
-                        "displayName": "unrestricted_wars",
+                        "displayName": "Unrestricted Wars",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -139,7 +139,7 @@
                     },
                     {
                         "varname": "liberation_wars",
-                        "displayName": "liberation_wars",
+                        "displayName": "Liberation Wars",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -150,7 +150,7 @@
                     },
                     {
                         "varname": "no_wars",
-                        "displayName": "no_wars",
+                        "displayName": "No Wars",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -163,13 +163,13 @@
             },
             {
                 "varname": "war_doctrine",
-                "displayName": "war_doctrine",
+                "displayName": "War Doctrine",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "defense_in_depth_doctrine",
-                        "displayName": "defense_in_depth_doctrine",
+                        "displayName": "Defense in Depth",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -180,7 +180,7 @@
                     },
                     {
                         "varname": "hit_and_run_doctrine",
-                        "displayName": "hit_and_run_doctrine",
+                        "displayName": "Hit and Run",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -191,7 +191,7 @@
                     },
                     {
                         "varname": "rapid_deployment_doctrine",
-                        "displayName": "rapid_deployment_doctrine",
+                        "displayName": "Rapid Deployment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -202,7 +202,7 @@
                     },
                     {
                         "varname": "no_retreat_doctrine",
-                        "displayName": "no_retreat_doctrine",
+                        "displayName": "No Retreat",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -215,13 +215,13 @@
             },
             {
                 "varname": "subjugation_war_terms",
-                "displayName": "subjugation_war_terms",
+                "displayName": "Subjugation War Terms",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "oppressive_terms",
-                        "displayName": "oppressive_terms",
+                        "displayName": "Opressive Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -232,7 +232,7 @@
                     },
                     {
                         "varname": "balanced_terms",
-                        "displayName": "balanced_terms",
+                        "displayName": "Balanced Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -243,7 +243,7 @@
                     },
                     {
                         "varname": "benevolent_terms",
-                        "displayName": "benevolent_terms",
+                        "displayName": "Benevolent Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -254,7 +254,7 @@
                     },
                     {
                         "varname": "oppressive_corporate_terms",
-                        "displayName": "oppressive_corporate_terms",
+                        "displayName": "Opressive Corporate Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -265,7 +265,7 @@
                     },
                     {
                         "varname": "balanced_corporate_terms",
-                        "displayName": "balanced_corporate_terms",
+                        "displayName": "Balanced Corporate Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -276,7 +276,7 @@
                     },
                     {
                         "varname": "benevolent_corporate_terms",
-                        "displayName": "benevolent_corporate_terms",
+                        "displayName": "Benevolent Corporate Terms",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -289,13 +289,13 @@
             },
             {
                 "varname": "orbital_bombardment",
-                "displayName": "orbital_bombardment",
+                "displayName": "Orbital Bombardment",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "orbital_bombardment_selective",
-                        "displayName": "orbital_bombardment_selective",
+                        "displayName": "Selective Orbital Bombadment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -306,7 +306,7 @@
                     },
                     {
                         "varname": "orbital_bombardment_indiscriminate",
-                        "displayName": "orbital_bombardment_indiscriminate",
+                        "displayName": "Indiscriminate Orbital Bombadment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -317,7 +317,7 @@
                     },
                     {
                         "varname": "orbital_bombardment_armageddon",
-                        "displayName": "orbital_bombardment_armageddon",
+                        "displayName": "Armageddon Orbital Bombardment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -330,13 +330,13 @@
             },
             {
                 "varname": "orbital_bombardment_accept_surrender",
-                "displayName": "orbital_bombardment_accept_surrender",
+                "displayName": "Bombardment Surrender Acceptable",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "orbital_bombardment_surrender_forbidden",
-                        "displayName": "orbital_bombardment_surrender_forbidden",
+                        "displayName": "Forbid Bombardment Surrender",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -347,7 +347,7 @@
                     },
                     {
                         "varname": "orbital_bombardment_surrender_allowed",
-                        "displayName": "orbital_bombardment_surrender_allowed",
+                        "displayName": "Allow Bombardment Surrender",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -360,13 +360,13 @@
             },
             {
                 "varname": "interference",
-                "displayName": "interference",
+                "displayName": "Interference",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "interference_not_allowed",
-                        "displayName": "interference_not_allowed",
+                        "displayName": "No Interference",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -377,7 +377,7 @@
                     },
                     {
                         "varname": "interference_subtle",
-                        "displayName": "interference_subtle",
+                        "displayName": "Subtle Interference",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -388,7 +388,7 @@
                     },
                     {
                         "varname": "interference_active",
-                        "displayName": "interference_active",
+                        "displayName": "Active Interference",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -399,7 +399,7 @@
                     },
                     {
                         "varname": "interference_aggressive",
-                        "displayName": "interference_aggressive",
+                        "displayName": "Aggressive Interference",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -412,13 +412,13 @@
             },
             {
                 "varname": "enlightenment",
-                "displayName": "enlightenment",
+                "displayName": "Enlightenment",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "enlightenment_not_allowed",
-                        "displayName": "enlightenment_not_allowed",
+                        "displayName": "Forbid Enlightment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -429,7 +429,7 @@
                     },
                     {
                         "varname": "enlightenment_covert_only",
-                        "displayName": "enlightenment_covert_only",
+                        "displayName": "Covert Enlightenment Only",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -440,7 +440,7 @@
                     },
                     {
                         "varname": "enlightenment_allowed",
-                        "displayName": "enlightenment_allowed",
+                        "displayName": "Allow Enlightment",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -453,13 +453,13 @@
             },
             {
                 "varname": "resettlement",
-                "displayName": "resettlement",
+                "displayName": "Resettlement",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "resettlement_not_allowed",
-                        "displayName": "resettlement_not_allowed",
+                        "displayName": "Forbid Resettlement",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -470,7 +470,7 @@
                     },
                     {
                         "varname": "resettlement_allowed",
-                        "displayName": "resettlement_allowed",
+                        "displayName": "Allow Resettlement",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -483,13 +483,13 @@
             },
             {
                 "varname": "appropriation",
-                "displayName": "appropriation",
+                "displayName": "Appropriation",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "appropriation_not_allowed",
-                        "displayName": "appropriation_not_allowed",
+                        "displayName": "Allow Appropriation",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -500,7 +500,7 @@
                     },
                     {
                         "varname": "appropriation_allowed",
-                        "displayName": "appropriation_allowed",
+                        "displayName": "Appropriation Allowed",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -513,13 +513,13 @@
             },
             {
                 "varname": "first_contact_protocol",
-                "displayName": "first_contact_protocol",
+                "displayName": "First Contact Protocol",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "first_contact_proactive",
-                        "displayName": "first_contact_proactive",
+                        "displayName": "Proactive First Contact",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -530,7 +530,7 @@
                     },
                     {
                         "varname": "first_contact_cautious",
-                        "displayName": "first_contact_cautious",
+                        "displayName": "Cautious First Contact",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -541,7 +541,7 @@
                     },
                     {
                         "varname": "first_contact_attack_allowed",
-                        "displayName": "first_contact_attack_allowed",
+                        "displayName": "Aggressive First Contact",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -554,13 +554,13 @@
             },
             {
                 "varname": "border_policy",
-                "displayName": "border_policy",
+                "displayName": "Border Policy",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "border_policy_open",
-                        "displayName": "border_policy_open",
+                        "displayName": "Open Borders",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -571,7 +571,7 @@
                     },
                     {
                         "varname": "border_policy_closed",
-                        "displayName": "border_policy_closed",
+                        "displayName": "Closed Borders",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -584,13 +584,13 @@
             },
             {
                 "varname": "economic_policy",
-                "displayName": "economic_policy",
+                "displayName": "Economic",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "economic_policy_civilian",
-                        "displayName": "economic_policy_civilian",
+                        "displayName": "Civilian Economics",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -601,7 +601,7 @@
                     },
                     {
                         "varname": "economic_policy_balanced",
-                        "displayName": "economic_policy_balanced",
+                        "displayName": "Balanced Economics",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -612,7 +612,7 @@
                     },
                     {
                         "varname": "economic_policy_military",
-                        "displayName": "economic_policy_military",
+                        "displayName": "Military Economics",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -625,13 +625,13 @@
             },
             {
                 "varname": "trade_policy",
-                "displayName": "trade_policy",
+                "displayName": "Trade",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "trade_policy_default",
-                        "displayName": "trade_policy_default",
+                        "displayName": "Default Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -642,7 +642,7 @@
                     },
                     {
                         "varname": "trade_policy_consumer_goods",
-                        "displayName": "trade_policy_consumer_goods",
+                        "displayName": "Consumer Goods Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -653,7 +653,7 @@
                     },
                     {
                         "varname": "trade_policy_unity",
-                        "displayName": "trade_policy_unity",
+                        "displayName": "Unity Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -664,7 +664,7 @@
                     },
                     {
                         "varname": "trade_policy_trade_league",
-                        "displayName": "trade_policy_trade_league",
+                        "displayName": "Trade League Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -675,7 +675,7 @@
                     },
                     {
                         "varname": "trade_policy_holy_covenant",
-                        "displayName": "trade_policy_holy_covenant",
+                        "displayName": "Holy Covenant Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -686,7 +686,7 @@
                     },
                     {
                         "varname": "trade_policy_mutual_aid",
-                        "displayName": "trade_policy_mutual_aid",
+                        "displayName": "Mutual Aid Trade Policy",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -699,13 +699,13 @@
             },
             {
                 "varname": "artificial_intelligence_policy",
-                "displayName": "artificial_intelligence_policy",
+                "displayName": "Artificial Intelligence",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "ai_outlawed",
-                        "displayName": "ai_outlawed",
+                        "displayName": "Outlawed AI",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -716,7 +716,7 @@
                     },
                     {
                         "varname": "ai_servitude",
-                        "displayName": "ai_servitude",
+                        "displayName": "AI Servitude",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -727,7 +727,7 @@
                     },
                     {
                         "varname": "ai_full_rights",
-                        "displayName": "ai_full_rights",
+                        "displayName": "Full AI Rights",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -740,13 +740,13 @@
             },
             {
                 "varname": "robot_pop_policy",
-                "displayName": "robot_pop_policy",
+                "displayName": "Robot Pop Policy",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "robot_pops_outlawed",
-                        "displayName": "robot_pops_outlawed",
+                        "displayName": "Outlawed Robot Pops",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -757,7 +757,7 @@
                     },
                     {
                         "varname": "robot_pops_allowed",
-                        "displayName": "robot_pops_allowed",
+                        "displayName": "Allowed Robot Pops",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -770,13 +770,13 @@
             },
             {
                 "varname": "pre_sapients",
-                "displayName": "pre_sapients",
+                "displayName": "Pre-Sapients",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "pre_sapients_protect",
-                        "displayName": "pre_sapients_protect",
+                        "displayName": "Protected Pre-Sapients",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -787,7 +787,7 @@
                     },
                     {
                         "varname": "pre_sapients_allow",
-                        "displayName": "pre_sapients_allow",
+                        "displayName": "Allowed Pre-Sapients",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -798,7 +798,7 @@
                     },
                     {
                         "varname": "pre_sapients_eat",
-                        "displayName": "pre_sapients_eat",
+                        "displayName": "Eat All Pre-Sapients",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -809,7 +809,7 @@
                     },
                     {
                         "varname": "pre_sapients_purge",
-                        "displayName": "pre_sapients_purge",
+                        "displayName": "Purge Pre-Sapients",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -822,13 +822,13 @@
             },
             {
                 "varname": "debris",
-                "displayName": "debris",
+                "displayName": "Debris",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "research_debris",
-                        "displayName": "research_debris",
+                        "displayName": "Research Debris",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -839,7 +839,7 @@
                     },
                     {
                         "varname": "scavenge_debris",
-                        "displayName": "scavenge_debris",
+                        "displayName": "Scavenge Debris",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -850,7 +850,7 @@
                     },
                     {
                         "varname": "scavenge_and_research_debris",
-                        "displayName": "scavenge_and_research_debris",
+                        "displayName": "Scavenge and Research Debris",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -863,13 +863,13 @@
             },
             {
                 "varname": "refugees",
-                "displayName": "refugees",
+                "displayName": "Refugees",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "refugees_not_allowed",
-                        "displayName": "refugees_not_allowed",
+                        "displayName": "Banned Refugees",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -880,7 +880,7 @@
                     },
                     {
                         "varname": "refugees_only_citizens",
-                        "displayName": "refugees_only_citizens",
+                        "displayName": "Only Citizen Refugees",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -891,7 +891,7 @@
                     },
                     {
                         "varname": "refugees_allowed",
-                        "displayName": "refugees_allowed",
+                        "displayName": "Refugees Allowed",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -904,13 +904,13 @@
             },
             {
                 "varname": "population_controls",
-                "displayName": "population_controls",
+                "displayName": "Population Controls",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "population_controls_not_allowed",
-                        "displayName": "population_controls_not_allowed",
+                        "displayName": "Forbid Population Controls",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -921,7 +921,7 @@
                     },
                     {
                         "varname": "population_controls_allowed",
-                        "displayName": "population_controls_allowed",
+                        "displayName": "Allow Population Controls",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -934,13 +934,13 @@
             },
             {
                 "varname": "slavery",
-                "displayName": "slavery",
+                "displayName": "Slavery",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "slavery_not_allowed",
-                        "displayName": "slavery_not_allowed",
+                        "displayName": "Slavery Not Allowed",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -951,7 +951,7 @@
                     },
                     {
                         "varname": "slavery_allowed",
-                        "displayName": "slavery_allowed",
+                        "displayName": "Allow Slavery",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -964,13 +964,13 @@
             },
             {
                 "varname": "purge",
-                "displayName": "purge",
+                "displayName": "Purge",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "purge_not_allowed",
-                        "displayName": "purge_not_allowed",
+                        "displayName": "Forbid Purging",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -981,7 +981,7 @@
                     },
                     {
                         "varname": "purge_displacement_only",
-                        "displayName": "purge_displacement_only",
+                        "displayName": "Allow Displacement Purging",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -992,7 +992,7 @@
                     },
                     {
                         "varname": "purge_allowed",
-                        "displayName": "purge_allowed",
+                        "displayName": "Purge Allowed",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1005,13 +1005,13 @@
             },
             {
                 "varname": "knightly_duties",
-                "displayName": "knightly_duties",
+                "displayName": "Knightly Duties",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "toxic_knights_questing",
-                        "displayName": "toxic_knights_questing",
+                        "displayName": "Questing Toxic Knights",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1022,7 +1022,7 @@
                     },
                     {
                         "varname": "toxic_knights_military",
-                        "displayName": "toxic_knights_military",
+                        "displayName": "Military Toxic Knights",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1033,7 +1033,7 @@
                     },
                     {
                         "varname": "toxic_knights_diplomats",
-                        "displayName": "toxic_knights_diplomats",
+                        "displayName": "Diplomatic Toxic Knights",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1044,7 +1044,7 @@
                     },
                     {
                         "varname": "toxic_knights_herald",
-                        "displayName": "toxic_knights_herald",
+                        "displayName": "Herald Toxic Knights",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1057,13 +1057,13 @@
             },
             {
                 "varname": "leader_enhancement",
-                "displayName": "leader_enhancement",
+                "displayName": "Leader Enhancement",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "leader_enhancement_natural_selection",
-                        "displayName": "leader_enhancement_natural_selection",
+                        "displayName": "Natural Selection",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1074,7 +1074,7 @@
                     },
                     {
                         "varname": "leader_enhancement_selected_lineages",
-                        "displayName": "leader_enhancement_selected_lineages",
+                        "displayName": "Selected Lineage",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1085,7 +1085,7 @@
                     },
                     {
                         "varname": "leader_enhancement_capacity_boosters",
-                        "displayName": "leader_enhancement_capacity_boosters",
+                        "displayName": "Capacity Boosters",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1153,13 +1153,13 @@
             },
             {
                 "varname": "relentless_industrialists_policy",
-                "displayName": "relentless_industrialists_policy",
+                "displayName": "Relentless Industrialization",
                 "desc": "",
                 "potential": "always = yes",
                 "options": [
                     {
                         "varname": "relentless_industrialists_full_steam_ahead",
-                        "displayName": "relentless_industrialists_full_steam_ahead",
+                        "displayName": "Full Steam Ahead",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1170,7 +1170,7 @@
                     },
                     {
                         "varname": "relentless_industrialists_study",
-                        "displayName": "relentless_industrialists_study",
+                        "displayName": "Study Industrialism",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
@@ -1181,7 +1181,7 @@
                     },
                     {
                         "varname": "relentless_industrialists_cleanup",
-                        "displayName": "relentless_industrialists_cleanup",
+                        "displayName": "Cleanup Industrialism",
                         "desc": "",
                         "description": "",
                         "ethicAdjective": "",
