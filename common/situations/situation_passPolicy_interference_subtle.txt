@@ -1,5 +1,5 @@
 situation_passPolicy_interference_subtle = {
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	complete_icon_frame = GFX_situation_outcome_frame_green
 	complete_icon = GFX_situation_outcome_positive
 

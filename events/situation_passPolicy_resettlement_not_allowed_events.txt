@@ -3,7 +3,7 @@ country_event = {
 	id = situation_passPolicy_resettlement_not_allowed.1
 	title = situation_passPolicy_resettlement_not_allowed.1.name
 	desc = situation_passPolicy_resettlement_not_allowed.1.desc
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	
 	show_sound = {
 		sound = advisor_notification_planet_in_revolt
@@ -178,7 +178,7 @@ situation_event = {
 	id = situation_passPolicy_resettlement_not_allowed.7
 	title = situation_passPolicy_resettlement_not_allowed.7.name
 	desc = situation_passPolicy_resettlement_not_allowed.7.desc
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	
 	is_triggered_only = yes
 	immediate = {
@@ -203,7 +203,7 @@ situation_event = {
 	id = situation_passPolicy_resettlement_not_allowed.8
 	title = situation_passPolicy_resettlement_not_allowed.8.name
 	desc = situation_passPolicy_resettlement_not_allowed.8.desc
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	
 	is_triggered_only = yes
 
@@ -223,7 +223,7 @@ situation_event = {
 	id = situation_passPolicy_resettlement_not_allowed.9
 	title = situation_passPolicy_resettlement_not_allowed.9.name
 	desc = situation_passPolicy_resettlement_not_allowed.9.desc
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	
 	is_triggered_only = yes
 	immediate = {

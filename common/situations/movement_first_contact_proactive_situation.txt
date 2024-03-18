@@ -1,5 +1,5 @@
 situation_movement_first_contact_proactive = {
-	picture = GFX_evt_
+	picture = GFX_evt_surrender
 	complete_icon_frame = GFX_situation_outcome_frame_red
 	complete_icon = GFX_situation_outcome_negative
 
