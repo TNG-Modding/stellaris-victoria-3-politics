@@ -5,22 +5,24 @@ pass_enlightenment_allowed = {
 	potential = {
 		NOT = { has_policy_flag = enlightenment_allowed }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_enlightenment_allowed
+				AND = {
+					is_variable_set = movement_enlightenment_allowed_faction_support
+					check_variable = { which = movement_enlightenment_allowed_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_enlightenment_allowed_faction_support
-			}
-			check_variable = { which = movement_enlightenment_allowed_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = enlightenment
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_enlightenment_allowed.1 }

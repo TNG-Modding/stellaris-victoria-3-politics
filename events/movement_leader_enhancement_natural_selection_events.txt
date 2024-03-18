@@ -1,5 +1,17 @@
 namespace = movement_leader_enhancement_natural_selection
 
+# varname leader_enhancement_natural_selection
+# displayName Natural Selection 
+# desc  
+# policyCategory leader_enhancement
+# policyOption leader_enhancement_natural_selection
+# description 
+# ethicAdjective 
+# picture surrender 
+# rebellionEthics 
+# supportingEthics []
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_leader_enhancement_natural_selection.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_leader_enhancement_natural_selection_faction_support value = 0 }
-		set_variable = { which = movement_leader_enhancement_natural_selection_faction_radicalism value = 0 }
-		set_variable = { which = movement_leader_enhancement_natural_selection_numerical_support value = 0 }
-		set_variable = { which = movement_leader_enhancement_natural_selection_numerical_radicalism value = 0 }
+		
+		calculate_leader_enhancement_natural_selection_movement_inertia = {
+			INERTIA = movement_leader_enhancement_natural_selection_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_leader_enhancement_natural_selection_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_leader_enhancement_natural_selection_faction_support
-				RADICALISM = movement_leader_enhancement_natural_selection_faction_radicalism
-			}
-			calculate_leader_enhancement_natural_selection_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_leader_enhancement_natural_selection_numerical_support
-				RADICALISM = movement_leader_enhancement_natural_selection_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_leader_enhancement_natural_selection_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_leader_enhancement_natural_selection  
-						has_country_flag = leader_enhancement_natural_selection_revolt
-					}
+				check_variable = {which = movement_leader_enhancement_natural_selection_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_leader_enhancement_natural_selection  
+					has_country_flag = leader_enhancement_natural_selection_revolt
 				}
-				country_event = { id = movement_leader_enhancement_natural_selection.5 }
-			}
-		}		
-		set_variable = { which = movement_leader_enhancement_natural_selection_support value = movement_leader_enhancement_natural_selection_faction_support }
-		change_variable = { which = movement_leader_enhancement_natural_selection_support value = movement_leader_enhancement_natural_selection_numerical_support }
-		divide_variable = { which = movement_leader_enhancement_natural_selection_support value = 2 }
-
-		set_variable = { which = movement_leader_enhancement_natural_selection_radicalism value = movement_leader_enhancement_natural_selection_faction_radicalism }
-		change_variable = { which = movement_leader_enhancement_natural_selection_radicalism value = movement_leader_enhancement_natural_selection_numerical_radicalism }
-		divide_variable = { which = movement_leader_enhancement_natural_selection_radicalism value = 2 }
-
-		set_variable = {which = movement_leader_enhancement_natural_selection_inertia value = movement_leader_enhancement_natural_selection_support}
-		multiply_variable = { which = movement_leader_enhancement_natural_selection_inertia value = movement_leader_enhancement_natural_selection_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_leader_enhancement_natural_selection.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_leader_enhancement_natural_selection
 				target = root
 			}
-		}
+		}	
 	}
 }
 

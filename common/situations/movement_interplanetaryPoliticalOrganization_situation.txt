@@ -84,6 +84,10 @@ situation_movement_interplanetaryPoliticalOrganization = {
 				NOT = { always = yes }
 				has_policy_flag = interplanetaryPoliticalOrganization
 			}
+			AND = {
+				is_variable_set = movement_interplanetaryPoliticalOrganization_inertia
+				check_variable = { which = movement_interplanetaryPoliticalOrganization_inertia value < 100}
+			}
 		}
 	}
 }

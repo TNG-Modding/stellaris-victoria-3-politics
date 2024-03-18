@@ -84,6 +84,10 @@ situation_movement_robot_pops_outlawed = {
 				NOT = { always = yes }
 				has_policy_flag = robot_pops_outlawed
 			}
+			AND = {
+				is_variable_set = movement_robot_pops_outlawed_inertia
+				check_variable = { which = movement_robot_pops_outlawed_inertia value < 100}
+			}
 		}
 	}
 }

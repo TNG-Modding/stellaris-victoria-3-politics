@@ -84,6 +84,10 @@ situation_movement_research_debris = {
 				NOT = { always = yes }
 				has_policy_flag = research_debris
 			}
+			AND = {
+				is_variable_set = movement_research_debris_inertia
+				check_variable = { which = movement_research_debris_inertia value < 100}
+			}
 		}
 	}
 }

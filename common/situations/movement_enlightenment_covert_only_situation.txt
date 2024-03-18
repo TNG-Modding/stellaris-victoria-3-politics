@@ -84,6 +84,10 @@ situation_movement_enlightenment_covert_only = {
 				NOT = { always = yes }
 				has_policy_flag = enlightenment_covert_only
 			}
+			AND = {
+				is_variable_set = movement_enlightenment_covert_only_inertia
+				check_variable = { which = movement_enlightenment_covert_only_inertia value < 100}
+			}
 		}
 	}
 }

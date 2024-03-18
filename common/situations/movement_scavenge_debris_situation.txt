@@ -84,6 +84,10 @@ situation_movement_scavenge_debris = {
 				NOT = { always = yes }
 				has_policy_flag = scavenge_debris
 			}
+			AND = {
+				is_variable_set = movement_scavenge_debris_inertia
+				check_variable = { which = movement_scavenge_debris_inertia value < 100}
+			}
 		}
 	}
 }

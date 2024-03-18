@@ -84,6 +84,10 @@ situation_movement_economic_policy_balanced = {
 				NOT = { always = yes }
 				has_policy_flag = economic_policy_balanced
 			}
+			AND = {
+				is_variable_set = movement_economic_policy_balanced_inertia
+				check_variable = { which = movement_economic_policy_balanced_inertia value < 100}
+			}
 		}
 	}
 }

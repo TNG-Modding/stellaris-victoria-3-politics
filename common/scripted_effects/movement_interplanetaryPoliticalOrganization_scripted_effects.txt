@@ -81,3 +81,30 @@ calculate_interplanetaryPoliticalOrganization_movement_support_and_radical_from_
 	divide_variable = { which = $RADICALISM$ value = interplanetaryPoliticalOrganization_population }
 	multiply_variable = {which = $RADICALISM$ value = 100}
 }
+
+calculate_interplanetaryPoliticalOrganization_movement_inertia = {
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_faction_support value = 0 }
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_faction_radicalism value = 0 }
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_numerical_support value = 0 }
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_numerical_radicalism value = 0 }
+
+	calculate_interplanetaryPoliticalOrganization_movement_support_and_radicalism_from_factions = {
+		SUPPORT = movement_interplanetaryPoliticalOrganization_faction_support
+		RADICALISM = movement_interplanetaryPoliticalOrganization_faction_radicalism
+	}
+	calculate_interplanetaryPoliticalOrganization_movement_support_and_radical_from_numbers = {
+		SUPPORT = movement_interplanetaryPoliticalOrganization_numerical_support
+		RADICALISM = movement_interplanetaryPoliticalOrganization_numerical_radicalism
+	}
+
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_support value = movement_interplanetaryPoliticalOrganization_faction_support }
+	change_variable = { which = movement_interplanetaryPoliticalOrganization_support value = movement_interplanetaryPoliticalOrganization_numerical_support }
+	divide_variable = { which = movement_interplanetaryPoliticalOrganization_support value = 2 }
+
+	set_variable = { which = movement_interplanetaryPoliticalOrganization_radicalism value = movement_interplanetaryPoliticalOrganization_faction_radicalism }
+	change_variable = { which = movement_interplanetaryPoliticalOrganization_radicalism value = movement_interplanetaryPoliticalOrganization_numerical_radicalism }
+	divide_variable = { which = movement_interplanetaryPoliticalOrganization_radicalism value = 2 }
+
+	set_variable = {which = $INERTIA$ value = movement_interplanetaryPoliticalOrganization_support}
+	multiply_variable = { which = $INERTIA$ value = movement_interplanetaryPoliticalOrganization_radicalism }
+}

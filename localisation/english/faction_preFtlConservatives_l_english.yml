@@ -4,4 +4,4 @@
  pft_preFtlConservatives:0 "Pre-FTL Conservatives Faction"
  pft_preFtlConservatives_desc:2 "§BThe Pre-FTL Conservatives Faction§! wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.\n\nSupports: \n§G  $preFtlPoliticalOrganization_name$\n  $dependentColonies_name$\n  $preFtlMilitaries_name$§!\n\nOpposes: \n§R§!"
 
- preFtlConservatives_visual_ethic:1 "£spiritualist£"
+ preFtlConservatives_visual_ethic:1 "£spiritualist£ "

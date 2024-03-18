@@ -84,6 +84,10 @@ situation_movement_ai_servitude = {
 				NOT = { always = yes }
 				has_policy_flag = ai_servitude
 			}
+			AND = {
+				is_variable_set = movement_ai_servitude_inertia
+				check_variable = { which = movement_ai_servitude_inertia value < 100}
+			}
 		}
 	}
 }

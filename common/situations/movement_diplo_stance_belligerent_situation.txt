@@ -84,6 +84,10 @@ situation_movement_diplo_stance_belligerent = {
 				NOT = { always = yes }
 				has_policy_flag = diplo_stance_belligerent
 			}
+			AND = {
+				is_variable_set = movement_diplo_stance_belligerent_inertia
+				check_variable = { which = movement_diplo_stance_belligerent_inertia value < 100}
+			}
 		}
 	}
 }

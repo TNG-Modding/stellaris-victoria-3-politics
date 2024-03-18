@@ -84,6 +84,10 @@ situation_movement_trade_policy_trade_league = {
 				NOT = { always = yes }
 				has_policy_flag = trade_policy_trade_league
 			}
+			AND = {
+				is_variable_set = movement_trade_policy_trade_league_inertia
+				check_variable = { which = movement_trade_policy_trade_league_inertia value < 100}
+			}
 		}
 	}
 }

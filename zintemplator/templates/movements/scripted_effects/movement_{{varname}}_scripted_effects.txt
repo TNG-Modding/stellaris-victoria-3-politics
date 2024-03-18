@@ -91,3 +91,30 @@ calculate_{{varname}}_movement_support_and_radical_from_numbers = {
 	divide_variable = { which = $RADICALISM$ value = {{varname}}_population }
 	multiply_variable = {which = $RADICALISM$ value = 100}
 }
+
+calculate_{{varname}}_movement_inertia = {
+	set_variable = { which = movement_{{varname}}_faction_support value = 0 }
+	set_variable = { which = movement_{{varname}}_faction_radicalism value = 0 }
+	set_variable = { which = movement_{{varname}}_numerical_support value = 0 }
+	set_variable = { which = movement_{{varname}}_numerical_radicalism value = 0 }
+
+	calculate_{{varname}}_movement_support_and_radicalism_from_factions = {
+		SUPPORT = movement_{{varname}}_faction_support
+		RADICALISM = movement_{{varname}}_faction_radicalism
+	}
+	calculate_{{varname}}_movement_support_and_radical_from_numbers = {
+		SUPPORT = movement_{{varname}}_numerical_support
+		RADICALISM = movement_{{varname}}_numerical_radicalism
+	}
+
+	set_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_faction_support }
+	change_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_numerical_support }
+	divide_variable = { which = movement_{{varname}}_support value = 2 }
+
+	set_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_faction_radicalism }
+	change_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_numerical_radicalism }
+	divide_variable = { which = movement_{{varname}}_radicalism value = 2 }
+
+	set_variable = {which = $INERTIA$ value = movement_{{varname}}_support}
+	multiply_variable = { which = $INERTIA$ value = movement_{{varname}}_radicalism }
+}

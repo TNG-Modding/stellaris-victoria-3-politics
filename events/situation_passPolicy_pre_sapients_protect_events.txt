@@ -63,7 +63,7 @@ situation_event = {
 			limit = {
 				check_variable = { which = debate_chance value < 0}
 			}
-			pre_sapients_protect_end_of_discussion = {}
+			# pre_sapients_protect_end_of_discussion = {}
 		}
 
 		ceiling_variable = success_chance

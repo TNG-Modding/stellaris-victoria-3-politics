@@ -84,6 +84,10 @@ situation_movement_population_controls_allowed = {
 				NOT = { always = yes }
 				has_policy_flag = population_controls_allowed
 			}
+			AND = {
+				is_variable_set = movement_population_controls_allowed_inertia
+				check_variable = { which = movement_population_controls_allowed_inertia value < 100}
+			}
 		}
 	}
 }

@@ -1,5 +1,17 @@
 namespace = movement_trade_policy_default
 
+# varname trade_policy_default
+# displayName Default Trade Policy 
+# desc  
+# policyCategory trade_policy
+# policyOption trade_policy_default
+# description 
+# ethicAdjective 
+# picture surrender 
+# rebellionEthics 
+# supportingEthics []
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_trade_policy_default.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_trade_policy_default_faction_support value = 0 }
-		set_variable = { which = movement_trade_policy_default_faction_radicalism value = 0 }
-		set_variable = { which = movement_trade_policy_default_numerical_support value = 0 }
-		set_variable = { which = movement_trade_policy_default_numerical_radicalism value = 0 }
+		
+		calculate_trade_policy_default_movement_inertia = {
+			INERTIA = movement_trade_policy_default_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_trade_policy_default_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_trade_policy_default_faction_support
-				RADICALISM = movement_trade_policy_default_faction_radicalism
-			}
-			calculate_trade_policy_default_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_trade_policy_default_numerical_support
-				RADICALISM = movement_trade_policy_default_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_trade_policy_default_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_trade_policy_default  
-						has_country_flag = trade_policy_default_revolt
-					}
+				check_variable = {which = movement_trade_policy_default_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_trade_policy_default  
+					has_country_flag = trade_policy_default_revolt
 				}
-				country_event = { id = movement_trade_policy_default.5 }
-			}
-		}		
-		set_variable = { which = movement_trade_policy_default_support value = movement_trade_policy_default_faction_support }
-		change_variable = { which = movement_trade_policy_default_support value = movement_trade_policy_default_numerical_support }
-		divide_variable = { which = movement_trade_policy_default_support value = 2 }
-
-		set_variable = { which = movement_trade_policy_default_radicalism value = movement_trade_policy_default_faction_radicalism }
-		change_variable = { which = movement_trade_policy_default_radicalism value = movement_trade_policy_default_numerical_radicalism }
-		divide_variable = { which = movement_trade_policy_default_radicalism value = 2 }
-
-		set_variable = {which = movement_trade_policy_default_inertia value = movement_trade_policy_default_support}
-		multiply_variable = { which = movement_trade_policy_default_inertia value = movement_trade_policy_default_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_trade_policy_default.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_trade_policy_default
 				target = root
 			}
-		}
+		}	
 	}
 }
 

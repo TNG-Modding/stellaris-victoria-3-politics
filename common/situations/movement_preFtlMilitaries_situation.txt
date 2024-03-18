@@ -84,6 +84,10 @@ situation_movement_preFtlMilitaries = {
 				NOT = { always = yes }
 				has_policy_flag = preFtlMilitaries
 			}
+			AND = {
+				is_variable_set = movement_preFtlMilitaries_inertia
+				check_variable = { which = movement_preFtlMilitaries_inertia value < 100}
+			}
 		}
 	}
 }

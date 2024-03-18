@@ -84,6 +84,10 @@ situation_movement_relentless_industrialists_cleanup = {
 				NOT = { always = yes }
 				has_policy_flag = relentless_industrialists_cleanup
 			}
+			AND = {
+				is_variable_set = movement_relentless_industrialists_cleanup_inertia
+				check_variable = { which = movement_relentless_industrialists_cleanup_inertia value < 100}
+			}
 		}
 	}
 }

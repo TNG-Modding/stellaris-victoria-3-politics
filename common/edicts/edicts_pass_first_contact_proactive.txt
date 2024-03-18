@@ -5,22 +5,24 @@ pass_first_contact_proactive = {
 	potential = {
 		NOT = { has_policy_flag = first_contact_proactive }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_first_contact_proactive
+				AND = {
+					is_variable_set = movement_first_contact_proactive_faction_support
+					check_variable = { which = movement_first_contact_proactive_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_first_contact_proactive_faction_support
-			}
-			check_variable = { which = movement_first_contact_proactive_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = first_contact_protocol
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_first_contact_proactive.1 }

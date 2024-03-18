@@ -84,6 +84,10 @@ situation_movement_benevolent_corporate_terms = {
 				NOT = { always = yes }
 				has_policy_flag = benevolent_corporate_terms
 			}
+			AND = {
+				is_variable_set = movement_benevolent_corporate_terms_inertia
+				check_variable = { which = movement_benevolent_corporate_terms_inertia value < 100}
+			}
 		}
 	}
 }

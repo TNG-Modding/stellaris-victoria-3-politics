@@ -84,6 +84,10 @@ situation_movement_interference_active = {
 				NOT = { always = yes }
 				has_policy_flag = interference_active
 			}
+			AND = {
+				is_variable_set = movement_interference_active_inertia
+				check_variable = { which = movement_interference_active_inertia value < 100}
+			}
 		}
 	}
 }

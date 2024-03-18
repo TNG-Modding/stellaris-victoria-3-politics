@@ -84,6 +84,10 @@ situation_movement_spacefaringStandingArmy = {
 				NOT = { always = yes }
 				has_policy_flag = spacefaringStandingArmy
 			}
+			AND = {
+				is_variable_set = movement_spacefaringStandingArmy_inertia
+				check_variable = { which = movement_spacefaringStandingArmy_inertia value < 100}
+			}
 		}
 	}
 }

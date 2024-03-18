@@ -84,6 +84,10 @@ situation_movement_appropriation_allowed = {
 				NOT = { always = yes }
 				has_policy_flag = appropriation_allowed
 			}
+			AND = {
+				is_variable_set = movement_appropriation_allowed_inertia
+				check_variable = { which = movement_appropriation_allowed_inertia value < 100}
+			}
 		}
 	}
 }

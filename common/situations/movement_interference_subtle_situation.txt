@@ -84,6 +84,10 @@ situation_movement_interference_subtle = {
 				NOT = { always = yes }
 				has_policy_flag = interference_subtle
 			}
+			AND = {
+				is_variable_set = movement_interference_subtle_inertia
+				check_variable = { which = movement_interference_subtle_inertia value < 100}
+			}
 		}
 	}
 }

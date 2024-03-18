@@ -84,6 +84,10 @@ situation_movement_toxic_knights_herald = {
 				NOT = { always = yes }
 				has_policy_flag = toxic_knights_herald
 			}
+			AND = {
+				is_variable_set = movement_toxic_knights_herald_inertia
+				check_variable = { which = movement_toxic_knights_herald_inertia value < 100}
+			}
 		}
 	}
 }

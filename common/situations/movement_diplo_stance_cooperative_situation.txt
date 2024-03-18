@@ -84,6 +84,10 @@ situation_movement_diplo_stance_cooperative = {
 				NOT = { always = yes }
 				has_policy_flag = diplo_stance_cooperative
 			}
+			AND = {
+				is_variable_set = movement_diplo_stance_cooperative_inertia
+				check_variable = { which = movement_diplo_stance_cooperative_inertia value < 100}
+			}
 		}
 	}
 }

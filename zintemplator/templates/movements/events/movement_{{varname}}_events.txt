@@ -1,5 +1,17 @@
 namespace = movement_{{varname}}
 
+# varname {{varname}}
+# displayName {{displayName}} 
+# desc {{desc}} 
+# policyCategory {{policyCategory}}
+# policyOption {{policyOption}}
+# description {{description}}
+# ethicAdjective {{ethicAdjective}}
+# picture {{picture}} 
+# rebellionEthics {{rebellionEthics}}
+# supportingEthics {{supportingEthics}}
+# potential {{potential}}
+
 # Called on monthly pulse
 event = {
 	id = movement_{{varname}}.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_{{varname}}_faction_support value = 0 }
-		set_variable = { which = movement_{{varname}}_faction_radicalism value = 0 }
-		set_variable = { which = movement_{{varname}}_numerical_support value = 0 }
-		set_variable = { which = movement_{{varname}}_numerical_radicalism value = 0 }
+		
+		calculate_{{varname}}_movement_inertia = {
+			INERTIA = movement_{{varname}}_inertia
+		}
 
 		if = {
 			limit = {
 				{{potential}}
-				
-			}
-			calculate_{{varname}}_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_{{varname}}_faction_support
-				RADICALISM = movement_{{varname}}_faction_radicalism
-			}
-			calculate_{{varname}}_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_{{varname}}_numerical_support
-				RADICALISM = movement_{{varname}}_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_{{varname}}_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_{{varname}}  
-						has_country_flag = {{varname}}_revolt
-					}
+				check_variable = {which = movement_{{varname}}_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_{{varname}}  
+					has_country_flag = {{varname}}_revolt
 				}
-				country_event = { id = movement_{{varname}}.5 }
-			}
-		}		
-		set_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_faction_support }
-		change_variable = { which = movement_{{varname}}_support value = movement_{{varname}}_numerical_support }
-		divide_variable = { which = movement_{{varname}}_support value = 2 }
-
-		set_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_faction_radicalism }
-		change_variable = { which = movement_{{varname}}_radicalism value = movement_{{varname}}_numerical_radicalism }
-		divide_variable = { which = movement_{{varname}}_radicalism value = 2 }
-
-		set_variable = {which = movement_{{varname}}_inertia value = movement_{{varname}}_support}
-		multiply_variable = { which = movement_{{varname}}_inertia value = movement_{{varname}}_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_{{varname}}.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				{{potential}}
-			}
+			}	
 			start_situation = {
 				type = situation_movement_{{varname}}
 				target = root
 			}
-		}
+		}	
 	}
 }
 

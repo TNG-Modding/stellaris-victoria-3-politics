@@ -84,6 +84,10 @@ situation_movement_border_policy_closed = {
 				NOT = { always = yes }
 				has_policy_flag = border_policy_closed
 			}
+			AND = {
+				is_variable_set = movement_border_policy_closed_inertia
+				check_variable = { which = movement_border_policy_closed_inertia value < 100}
+			}
 		}
 	}
 }

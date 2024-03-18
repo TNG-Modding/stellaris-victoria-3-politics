@@ -84,6 +84,10 @@ situation_movement_orbital_bombardment_armageddon = {
 				NOT = { always = yes }
 				has_policy_flag = orbital_bombardment_armageddon
 			}
+			AND = {
+				is_variable_set = movement_orbital_bombardment_armageddon_inertia
+				check_variable = { which = movement_orbital_bombardment_armageddon_inertia value < 100}
+			}
 		}
 	}
 }

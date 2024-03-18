@@ -84,6 +84,10 @@ situation_movement_hit_and_run_doctrine = {
 				NOT = { always = yes }
 				has_policy_flag = hit_and_run_doctrine
 			}
+			AND = {
+				is_variable_set = movement_hit_and_run_doctrine_inertia
+				check_variable = { which = movement_hit_and_run_doctrine_inertia value < 100}
+			}
 		}
 	}
 }

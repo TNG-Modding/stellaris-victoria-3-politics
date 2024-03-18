@@ -84,6 +84,10 @@ situation_movement_no_wars = {
 				NOT = { always = yes }
 				has_policy_flag = no_wars
 			}
+			AND = {
+				is_variable_set = movement_no_wars_inertia
+				check_variable = { which = movement_no_wars_inertia value < 100}
+			}
 		}
 	}
 }

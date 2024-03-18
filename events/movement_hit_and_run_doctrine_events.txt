@@ -1,5 +1,17 @@
 namespace = movement_hit_and_run_doctrine
 
+# varname hit_and_run_doctrine
+# displayName Hit and Run 
+# desc  
+# policyCategory war_doctrine
+# policyOption hit_and_run_doctrine
+# description 
+# ethicAdjective 
+# picture surrender 
+# rebellionEthics 
+# supportingEthics []
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_hit_and_run_doctrine.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_hit_and_run_doctrine_faction_support value = 0 }
-		set_variable = { which = movement_hit_and_run_doctrine_faction_radicalism value = 0 }
-		set_variable = { which = movement_hit_and_run_doctrine_numerical_support value = 0 }
-		set_variable = { which = movement_hit_and_run_doctrine_numerical_radicalism value = 0 }
+		
+		calculate_hit_and_run_doctrine_movement_inertia = {
+			INERTIA = movement_hit_and_run_doctrine_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_hit_and_run_doctrine_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_hit_and_run_doctrine_faction_support
-				RADICALISM = movement_hit_and_run_doctrine_faction_radicalism
-			}
-			calculate_hit_and_run_doctrine_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_hit_and_run_doctrine_numerical_support
-				RADICALISM = movement_hit_and_run_doctrine_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_hit_and_run_doctrine_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_hit_and_run_doctrine  
-						has_country_flag = hit_and_run_doctrine_revolt
-					}
+				check_variable = {which = movement_hit_and_run_doctrine_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_hit_and_run_doctrine  
+					has_country_flag = hit_and_run_doctrine_revolt
 				}
-				country_event = { id = movement_hit_and_run_doctrine.5 }
-			}
-		}		
-		set_variable = { which = movement_hit_and_run_doctrine_support value = movement_hit_and_run_doctrine_faction_support }
-		change_variable = { which = movement_hit_and_run_doctrine_support value = movement_hit_and_run_doctrine_numerical_support }
-		divide_variable = { which = movement_hit_and_run_doctrine_support value = 2 }
-
-		set_variable = { which = movement_hit_and_run_doctrine_radicalism value = movement_hit_and_run_doctrine_faction_radicalism }
-		change_variable = { which = movement_hit_and_run_doctrine_radicalism value = movement_hit_and_run_doctrine_numerical_radicalism }
-		divide_variable = { which = movement_hit_and_run_doctrine_radicalism value = 2 }
-
-		set_variable = {which = movement_hit_and_run_doctrine_inertia value = movement_hit_and_run_doctrine_support}
-		multiply_variable = { which = movement_hit_and_run_doctrine_inertia value = movement_hit_and_run_doctrine_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_hit_and_run_doctrine.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_hit_and_run_doctrine
 				target = root
 			}
-		}
+		}	
 	}
 }
 

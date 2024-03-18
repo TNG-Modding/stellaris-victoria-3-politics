@@ -68,3 +68,30 @@ calculate_appropriation_not_allowed_movement_support_and_radical_from_numbers = 
 	divide_variable = { which = $RADICALISM$ value = appropriation_not_allowed_population }
 	multiply_variable = {which = $RADICALISM$ value = 100}
 }
+
+calculate_appropriation_not_allowed_movement_inertia = {
+	set_variable = { which = movement_appropriation_not_allowed_faction_support value = 0 }
+	set_variable = { which = movement_appropriation_not_allowed_faction_radicalism value = 0 }
+	set_variable = { which = movement_appropriation_not_allowed_numerical_support value = 0 }
+	set_variable = { which = movement_appropriation_not_allowed_numerical_radicalism value = 0 }
+
+	calculate_appropriation_not_allowed_movement_support_and_radicalism_from_factions = {
+		SUPPORT = movement_appropriation_not_allowed_faction_support
+		RADICALISM = movement_appropriation_not_allowed_faction_radicalism
+	}
+	calculate_appropriation_not_allowed_movement_support_and_radical_from_numbers = {
+		SUPPORT = movement_appropriation_not_allowed_numerical_support
+		RADICALISM = movement_appropriation_not_allowed_numerical_radicalism
+	}
+
+	set_variable = { which = movement_appropriation_not_allowed_support value = movement_appropriation_not_allowed_faction_support }
+	change_variable = { which = movement_appropriation_not_allowed_support value = movement_appropriation_not_allowed_numerical_support }
+	divide_variable = { which = movement_appropriation_not_allowed_support value = 2 }
+
+	set_variable = { which = movement_appropriation_not_allowed_radicalism value = movement_appropriation_not_allowed_faction_radicalism }
+	change_variable = { which = movement_appropriation_not_allowed_radicalism value = movement_appropriation_not_allowed_numerical_radicalism }
+	divide_variable = { which = movement_appropriation_not_allowed_radicalism value = 2 }
+
+	set_variable = {which = $INERTIA$ value = movement_appropriation_not_allowed_support}
+	multiply_variable = { which = $INERTIA$ value = movement_appropriation_not_allowed_radicalism }
+}

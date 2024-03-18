@@ -84,6 +84,10 @@ situation_movement_pre_sapients_protect = {
 				NOT = { always = yes }
 				has_policy_flag = pre_sapients_protect
 			}
+			AND = {
+				is_variable_set = movement_pre_sapients_protect_inertia
+				check_variable = { which = movement_pre_sapients_protect_inertia value < 100}
+			}
 		}
 	}
 }

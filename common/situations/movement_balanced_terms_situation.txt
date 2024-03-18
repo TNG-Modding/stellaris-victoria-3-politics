@@ -84,6 +84,10 @@ situation_movement_balanced_terms = {
 				NOT = { always = yes }
 				has_policy_flag = balanced_terms
 			}
+			AND = {
+				is_variable_set = movement_balanced_terms_inertia
+				check_variable = { which = movement_balanced_terms_inertia value < 100}
+			}
 		}
 	}
 }

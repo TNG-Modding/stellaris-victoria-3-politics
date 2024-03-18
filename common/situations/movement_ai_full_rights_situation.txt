@@ -84,6 +84,10 @@ situation_movement_ai_full_rights = {
 				NOT = { always = yes }
 				has_policy_flag = ai_full_rights
 			}
+			AND = {
+				is_variable_set = movement_ai_full_rights_inertia
+				check_variable = { which = movement_ai_full_rights_inertia value < 100}
+			}
 		}
 	}
 }

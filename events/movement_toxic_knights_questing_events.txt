@@ -1,5 +1,17 @@
 namespace = movement_toxic_knights_questing
 
+# varname toxic_knights_questing
+# displayName Questing Toxic Knights 
+# desc  
+# policyCategory knightly_duties
+# policyOption toxic_knights_questing
+# description 
+# ethicAdjective 
+# picture surrender 
+# rebellionEthics 
+# supportingEthics []
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_toxic_knights_questing.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_toxic_knights_questing_faction_support value = 0 }
-		set_variable = { which = movement_toxic_knights_questing_faction_radicalism value = 0 }
-		set_variable = { which = movement_toxic_knights_questing_numerical_support value = 0 }
-		set_variable = { which = movement_toxic_knights_questing_numerical_radicalism value = 0 }
+		
+		calculate_toxic_knights_questing_movement_inertia = {
+			INERTIA = movement_toxic_knights_questing_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_toxic_knights_questing_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_toxic_knights_questing_faction_support
-				RADICALISM = movement_toxic_knights_questing_faction_radicalism
-			}
-			calculate_toxic_knights_questing_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_toxic_knights_questing_numerical_support
-				RADICALISM = movement_toxic_knights_questing_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_toxic_knights_questing_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_toxic_knights_questing  
-						has_country_flag = toxic_knights_questing_revolt
-					}
+				check_variable = {which = movement_toxic_knights_questing_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_toxic_knights_questing  
+					has_country_flag = toxic_knights_questing_revolt
 				}
-				country_event = { id = movement_toxic_knights_questing.5 }
-			}
-		}		
-		set_variable = { which = movement_toxic_knights_questing_support value = movement_toxic_knights_questing_faction_support }
-		change_variable = { which = movement_toxic_knights_questing_support value = movement_toxic_knights_questing_numerical_support }
-		divide_variable = { which = movement_toxic_knights_questing_support value = 2 }
-
-		set_variable = { which = movement_toxic_knights_questing_radicalism value = movement_toxic_knights_questing_faction_radicalism }
-		change_variable = { which = movement_toxic_knights_questing_radicalism value = movement_toxic_knights_questing_numerical_radicalism }
-		divide_variable = { which = movement_toxic_knights_questing_radicalism value = 2 }
-
-		set_variable = {which = movement_toxic_knights_questing_inertia value = movement_toxic_knights_questing_support}
-		multiply_variable = { which = movement_toxic_knights_questing_inertia value = movement_toxic_knights_questing_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_toxic_knights_questing.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_toxic_knights_questing
 				target = root
 			}
-		}
+		}	
 	}
 }
 

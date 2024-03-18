@@ -84,6 +84,10 @@ situation_movement_{{varname}} = {
 				NOT = { {{potential}} }
 				has_policy_flag = {{policyOption}}
 			}
+			AND = {
+				is_variable_set = movement_{{varname}}_inertia
+				check_variable = { which = movement_{{varname}}_inertia value < 100}
+			}
 		}
 	}
 }

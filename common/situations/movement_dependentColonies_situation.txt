@@ -84,6 +84,10 @@ situation_movement_dependentColonies = {
 				NOT = { always = yes }
 				has_policy_flag = dependentColonies
 			}
+			AND = {
+				is_variable_set = movement_dependentColonies_inertia
+				check_variable = { which = movement_dependentColonies_inertia value < 100}
+			}
 		}
 	}
 }

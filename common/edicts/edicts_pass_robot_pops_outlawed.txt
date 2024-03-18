@@ -5,22 +5,24 @@ pass_robot_pops_outlawed = {
 	potential = {
 		NOT = { has_policy_flag = robot_pops_outlawed }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_robot_pops_outlawed
+				AND = {
+					is_variable_set = movement_robot_pops_outlawed_faction_support
+					check_variable = { which = movement_robot_pops_outlawed_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_robot_pops_outlawed_faction_support
-			}
-			check_variable = { which = movement_robot_pops_outlawed_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = robot_pop_policy
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_robot_pops_outlawed.1 }

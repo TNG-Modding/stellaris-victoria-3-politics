@@ -84,6 +84,10 @@ situation_movement_leader_enhancement_natural_selection = {
 				NOT = { always = yes }
 				has_policy_flag = leader_enhancement_natural_selection
 			}
+			AND = {
+				is_variable_set = movement_leader_enhancement_natural_selection_inertia
+				check_variable = { which = movement_leader_enhancement_natural_selection_inertia value < 100}
+			}
 		}
 	}
 }

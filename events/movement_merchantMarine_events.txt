@@ -1,5 +1,17 @@
 namespace = movement_merchantMarine
 
+# varname merchantMarine
+# displayName Pre-FTL Merchant Marine 
+# desc A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates. 
+# policyCategory fleetFormation
+# policyOption merchantMarine
+# description the fleet should be comprised entirely of corvettes from the merchant marine
+# ethicAdjective Pacifist
+# picture surrender 
+# rebellionEthics { ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }
+# supportingEthics ['pacifist', 'spiritualist', 'materialist', 'egalitarian', 'authoritarian']
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_merchantMarine.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_merchantMarine_faction_support value = 0 }
-		set_variable = { which = movement_merchantMarine_faction_radicalism value = 0 }
-		set_variable = { which = movement_merchantMarine_numerical_support value = 0 }
-		set_variable = { which = movement_merchantMarine_numerical_radicalism value = 0 }
+		
+		calculate_merchantMarine_movement_inertia = {
+			INERTIA = movement_merchantMarine_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_merchantMarine_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_merchantMarine_faction_support
-				RADICALISM = movement_merchantMarine_faction_radicalism
-			}
-			calculate_merchantMarine_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_merchantMarine_numerical_support
-				RADICALISM = movement_merchantMarine_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_merchantMarine_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_merchantMarine  
-						has_country_flag = merchantMarine_revolt
-					}
+				check_variable = {which = movement_merchantMarine_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_merchantMarine  
+					has_country_flag = merchantMarine_revolt
 				}
-				country_event = { id = movement_merchantMarine.5 }
-			}
-		}		
-		set_variable = { which = movement_merchantMarine_support value = movement_merchantMarine_faction_support }
-		change_variable = { which = movement_merchantMarine_support value = movement_merchantMarine_numerical_support }
-		divide_variable = { which = movement_merchantMarine_support value = 2 }
-
-		set_variable = { which = movement_merchantMarine_radicalism value = movement_merchantMarine_faction_radicalism }
-		change_variable = { which = movement_merchantMarine_radicalism value = movement_merchantMarine_numerical_radicalism }
-		divide_variable = { which = movement_merchantMarine_radicalism value = 2 }
-
-		set_variable = {which = movement_merchantMarine_inertia value = movement_merchantMarine_support}
-		multiply_variable = { which = movement_merchantMarine_inertia value = movement_merchantMarine_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_merchantMarine.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_merchantMarine
 				target = root
 			}
-		}
+		}	
 	}
 }
 

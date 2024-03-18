@@ -84,6 +84,10 @@ situation_movement_unrestricted_wars = {
 				NOT = { always = yes }
 				has_policy_flag = unrestricted_wars
 			}
+			AND = {
+				is_variable_set = movement_unrestricted_wars_inertia
+				check_variable = { which = movement_unrestricted_wars_inertia value < 100}
+			}
 		}
 	}
 }

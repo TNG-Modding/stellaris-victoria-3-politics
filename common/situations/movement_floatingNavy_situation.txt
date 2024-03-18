@@ -84,6 +84,10 @@ situation_movement_floatingNavy = {
 				NOT = { always = yes }
 				has_policy_flag = floatingNavy
 			}
+			AND = {
+				is_variable_set = movement_floatingNavy_inertia
+				check_variable = { which = movement_floatingNavy_inertia value < 100}
+			}
 		}
 	}
 }

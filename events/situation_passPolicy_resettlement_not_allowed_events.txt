@@ -63,7 +63,7 @@ situation_event = {
 			limit = {
 				check_variable = { which = debate_chance value < 0}
 			}
-			resettlement_not_allowed_end_of_discussion = {}
+			# resettlement_not_allowed_end_of_discussion = {}
 		}
 
 		ceiling_variable = success_chance

@@ -81,3 +81,30 @@ calculate_first_contact_cautious_movement_support_and_radical_from_numbers = {
 	divide_variable = { which = $RADICALISM$ value = first_contact_cautious_population }
 	multiply_variable = {which = $RADICALISM$ value = 100}
 }
+
+calculate_first_contact_cautious_movement_inertia = {
+	set_variable = { which = movement_first_contact_cautious_faction_support value = 0 }
+	set_variable = { which = movement_first_contact_cautious_faction_radicalism value = 0 }
+	set_variable = { which = movement_first_contact_cautious_numerical_support value = 0 }
+	set_variable = { which = movement_first_contact_cautious_numerical_radicalism value = 0 }
+
+	calculate_first_contact_cautious_movement_support_and_radicalism_from_factions = {
+		SUPPORT = movement_first_contact_cautious_faction_support
+		RADICALISM = movement_first_contact_cautious_faction_radicalism
+	}
+	calculate_first_contact_cautious_movement_support_and_radical_from_numbers = {
+		SUPPORT = movement_first_contact_cautious_numerical_support
+		RADICALISM = movement_first_contact_cautious_numerical_radicalism
+	}
+
+	set_variable = { which = movement_first_contact_cautious_support value = movement_first_contact_cautious_faction_support }
+	change_variable = { which = movement_first_contact_cautious_support value = movement_first_contact_cautious_numerical_support }
+	divide_variable = { which = movement_first_contact_cautious_support value = 2 }
+
+	set_variable = { which = movement_first_contact_cautious_radicalism value = movement_first_contact_cautious_faction_radicalism }
+	change_variable = { which = movement_first_contact_cautious_radicalism value = movement_first_contact_cautious_numerical_radicalism }
+	divide_variable = { which = movement_first_contact_cautious_radicalism value = 2 }
+
+	set_variable = {which = $INERTIA$ value = movement_first_contact_cautious_support}
+	multiply_variable = { which = $INERTIA$ value = movement_first_contact_cautious_radicalism }
+}

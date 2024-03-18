@@ -84,6 +84,10 @@ situation_movement_armada = {
 				NOT = { always = yes }
 				has_policy_flag = armada
 			}
+			AND = {
+				is_variable_set = movement_armada_inertia
+				check_variable = { which = movement_armada_inertia value < 100}
+			}
 		}
 	}
 }

@@ -5,22 +5,24 @@ pass_interference_subtle = {
 	potential = {
 		NOT = { has_policy_flag = interference_subtle }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_interference_subtle
+				AND = {
+					is_variable_set = movement_interference_subtle_faction_support
+					check_variable = { which = movement_interference_subtle_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_interference_subtle_faction_support
-			}
-			check_variable = { which = movement_interference_subtle_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = interference
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_interference_subtle.1 }

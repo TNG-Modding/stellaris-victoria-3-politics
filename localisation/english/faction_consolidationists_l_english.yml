@@ -4,4 +4,4 @@
  pft_consolidationists:0 "Consolidationists Faction"
  pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\nSupports: \n§G  $resettlement_allowed_name$\n  $interplanetaryGoverance_name$§!\n\nOpposes: \n§R§!"
 
- consolidationists_visual_ethic:1 "£authoritarian££pacifist£"
+ consolidationists_visual_ethic:1 "£authoritarian£ £pacifist£ "

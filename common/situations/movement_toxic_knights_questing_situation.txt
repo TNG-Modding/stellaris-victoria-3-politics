@@ -84,6 +84,10 @@ situation_movement_toxic_knights_questing = {
 				NOT = { always = yes }
 				has_policy_flag = toxic_knights_questing
 			}
+			AND = {
+				is_variable_set = movement_toxic_knights_questing_inertia
+				check_variable = { which = movement_toxic_knights_questing_inertia value < 100}
+			}
 		}
 	}
 }

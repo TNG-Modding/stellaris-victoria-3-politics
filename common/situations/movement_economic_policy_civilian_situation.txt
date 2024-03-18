@@ -84,6 +84,10 @@ situation_movement_economic_policy_civilian = {
 				NOT = { always = yes }
 				has_policy_flag = economic_policy_civilian
 			}
+			AND = {
+				is_variable_set = movement_economic_policy_civilian_inertia
+				check_variable = { which = movement_economic_policy_civilian_inertia value < 100}
+			}
 		}
 	}
 }

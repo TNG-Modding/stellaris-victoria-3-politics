@@ -84,6 +84,10 @@ situation_movement_rapid_deployment_doctrine = {
 				NOT = { always = yes }
 				has_policy_flag = rapid_deployment_doctrine
 			}
+			AND = {
+				is_variable_set = movement_rapid_deployment_doctrine_inertia
+				check_variable = { which = movement_rapid_deployment_doctrine_inertia value < 100}
+			}
 		}
 	}
 }

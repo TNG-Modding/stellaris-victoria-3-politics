@@ -84,6 +84,10 @@ situation_movement_diplo_stance_purification = {
 				NOT = { always = yes }
 				has_policy_flag = diplo_stance_purification
 			}
+			AND = {
+				is_variable_set = movement_diplo_stance_purification_inertia
+				check_variable = { which = movement_diplo_stance_purification_inertia value < 100}
+			}
 		}
 	}
 }

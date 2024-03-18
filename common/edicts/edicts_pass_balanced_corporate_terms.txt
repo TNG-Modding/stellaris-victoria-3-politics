@@ -5,22 +5,24 @@ pass_balanced_corporate_terms = {
 	potential = {
 		NOT = { has_policy_flag = balanced_corporate_terms }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_balanced_corporate_terms
+				AND = {
+					is_variable_set = movement_balanced_corporate_terms_faction_support
+					check_variable = { which = movement_balanced_corporate_terms_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_balanced_corporate_terms_faction_support
-			}
-			check_variable = { which = movement_balanced_corporate_terms_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = subjugation_war_terms
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_balanced_corporate_terms.1 }

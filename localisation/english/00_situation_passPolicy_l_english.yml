@@ -8,4 +8,4 @@
  passPolicy_stageOneEffects:0 "Introduction"
  passPolicy_stageTwoEffects:0 "Consideration"
  passPolicy_stageThreeEffects:0 "Adoption"
- no_support_to_pass:0 "There are no factions that support this law."
+ no_support_to_pass:0 "There are no factions or movements that support this law."

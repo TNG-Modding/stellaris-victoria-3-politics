@@ -84,6 +84,10 @@ situation_movement_pre_sapients_purge = {
 				NOT = { always = yes }
 				has_policy_flag = pre_sapients_purge
 			}
+			AND = {
+				is_variable_set = movement_pre_sapients_purge_inertia
+				check_variable = { which = movement_pre_sapients_purge_inertia value < 100}
+			}
 		}
 	}
 }

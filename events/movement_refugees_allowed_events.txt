@@ -1,5 +1,17 @@
 namespace = movement_refugees_allowed
 
+# varname refugees_allowed
+# displayName Refugees Allowed 
+# desc  
+# policyCategory refugees
+# policyOption refugees_allowed
+# description 
+# ethicAdjective 
+# picture surrender 
+# rebellionEthics 
+# supportingEthics []
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_refugees_allowed.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_refugees_allowed_faction_support value = 0 }
-		set_variable = { which = movement_refugees_allowed_faction_radicalism value = 0 }
-		set_variable = { which = movement_refugees_allowed_numerical_support value = 0 }
-		set_variable = { which = movement_refugees_allowed_numerical_radicalism value = 0 }
+		
+		calculate_refugees_allowed_movement_inertia = {
+			INERTIA = movement_refugees_allowed_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_refugees_allowed_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_refugees_allowed_faction_support
-				RADICALISM = movement_refugees_allowed_faction_radicalism
-			}
-			calculate_refugees_allowed_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_refugees_allowed_numerical_support
-				RADICALISM = movement_refugees_allowed_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_refugees_allowed_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_refugees_allowed  
-						has_country_flag = refugees_allowed_revolt
-					}
+				check_variable = {which = movement_refugees_allowed_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_refugees_allowed  
+					has_country_flag = refugees_allowed_revolt
 				}
-				country_event = { id = movement_refugees_allowed.5 }
-			}
-		}		
-		set_variable = { which = movement_refugees_allowed_support value = movement_refugees_allowed_faction_support }
-		change_variable = { which = movement_refugees_allowed_support value = movement_refugees_allowed_numerical_support }
-		divide_variable = { which = movement_refugees_allowed_support value = 2 }
-
-		set_variable = { which = movement_refugees_allowed_radicalism value = movement_refugees_allowed_faction_radicalism }
-		change_variable = { which = movement_refugees_allowed_radicalism value = movement_refugees_allowed_numerical_radicalism }
-		divide_variable = { which = movement_refugees_allowed_radicalism value = 2 }
-
-		set_variable = {which = movement_refugees_allowed_inertia value = movement_refugees_allowed_support}
-		multiply_variable = { which = movement_refugees_allowed_inertia value = movement_refugees_allowed_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_refugees_allowed.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_refugees_allowed
 				target = root
 			}
-		}
+		}	
 	}
 }
 

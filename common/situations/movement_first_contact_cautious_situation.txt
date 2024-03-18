@@ -84,6 +84,10 @@ situation_movement_first_contact_cautious = {
 				NOT = { always = yes }
 				has_policy_flag = first_contact_cautious
 			}
+			AND = {
+				is_variable_set = movement_first_contact_cautious_inertia
+				check_variable = { which = movement_first_contact_cautious_inertia value < 100}
+			}
 		}
 	}
 }

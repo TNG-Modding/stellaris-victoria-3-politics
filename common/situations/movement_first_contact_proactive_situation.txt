@@ -84,6 +84,10 @@ situation_movement_first_contact_proactive = {
 				NOT = { always = yes }
 				has_policy_flag = first_contact_proactive
 			}
+			AND = {
+				is_variable_set = movement_first_contact_proactive_inertia
+				check_variable = { which = movement_first_contact_proactive_inertia value < 100}
+			}
 		}
 	}
 }

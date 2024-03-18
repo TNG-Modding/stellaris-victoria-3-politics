@@ -84,6 +84,10 @@ situation_movement_preFtlPoliticalOrganization = {
 				NOT = { always = yes }
 				has_policy_flag = preFtlPoliticalOrganization
 			}
+			AND = {
+				is_variable_set = movement_preFtlPoliticalOrganization_inertia
+				check_variable = { which = movement_preFtlPoliticalOrganization_inertia value < 100}
+			}
 		}
 	}
 }

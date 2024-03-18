@@ -5,22 +5,24 @@ pass_orbital_bombardment_indiscriminate = {
 	potential = {
 		NOT = { has_policy_flag = orbital_bombardment_indiscriminate }
 		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			OR = {
+				has_country_flag = movement_for_orbital_bombardment_indiscriminate
+				AND = {
+					is_variable_set = movement_orbital_bombardment_indiscriminate_faction_support
+					check_variable = { which = movement_orbital_bombardment_indiscriminate_faction_support value > 0 }
+				}
+			}
+		}
+		
 	}
 
 	allow = {
-		always = yes
-		custom_tooltip = {
-			fail_text = no_support_to_pass
-			AND = {
-				is_variable_set = movement_orbital_bombardment_indiscriminate_faction_support
-			}
-			check_variable = { which = movement_orbital_bombardment_indiscriminate_faction_support value > 0 }
-		}
 		custom_tooltip = {
 			fail_text = already_passing_policy
 			NOT = {has_country_flag = enacting_policy}
 		}
-		# can_change_policy = orbital_bombardment
 	}
 	effect = {
 		country_event = { id = situation_passPolicy_orbital_bombardment_indiscriminate.1 }

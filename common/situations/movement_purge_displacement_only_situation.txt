@@ -84,6 +84,10 @@ situation_movement_purge_displacement_only = {
 				NOT = { always = yes }
 				has_policy_flag = purge_displacement_only
 			}
+			AND = {
+				is_variable_set = movement_purge_displacement_only_inertia
+				check_variable = { which = movement_purge_displacement_only_inertia value < 100}
+			}
 		}
 	}
 }

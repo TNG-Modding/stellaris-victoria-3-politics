@@ -84,6 +84,10 @@ situation_movement_diplo_stance_animosity = {
 				NOT = { always = yes }
 				has_policy_flag = diplo_stance_animosity
 			}
+			AND = {
+				is_variable_set = movement_diplo_stance_animosity_inertia
+				check_variable = { which = movement_diplo_stance_animosity_inertia value < 100}
+			}
 		}
 	}
 }

@@ -84,6 +84,10 @@ situation_movement_leader_enhancement_selected_lineages = {
 				NOT = { always = yes }
 				has_policy_flag = leader_enhancement_selected_lineages
 			}
+			AND = {
+				is_variable_set = movement_leader_enhancement_selected_lineages_inertia
+				check_variable = { which = movement_leader_enhancement_selected_lineages_inertia value < 100}
+			}
 		}
 	}
 }

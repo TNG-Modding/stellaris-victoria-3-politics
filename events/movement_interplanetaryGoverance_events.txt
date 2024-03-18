@@ -1,5 +1,17 @@
 namespace = movement_interplanetaryGoverance
 
+# varname interplanetaryGoverance
+# displayName Interplanetary Governance 
+# desc A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax holdings. 
+# policyCategory colonialAdministration
+# policyOption interplanetaryGoverance
+# description our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies
+# ethicAdjective Pacifist
+# picture surrender 
+# rebellionEthics { ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }
+# supportingEthics ['authoritarian']
+# potential always = yes
+
 # Called on monthly pulse
 event = {
 	id = movement_interplanetaryGoverance.1
@@ -36,67 +48,25 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_variable = { which = movement_interplanetaryGoverance_faction_support value = 0 }
-		set_variable = { which = movement_interplanetaryGoverance_faction_radicalism value = 0 }
-		set_variable = { which = movement_interplanetaryGoverance_numerical_support value = 0 }
-		set_variable = { which = movement_interplanetaryGoverance_numerical_radicalism value = 0 }
+		
+		calculate_interplanetaryGoverance_movement_inertia = {
+			INERTIA = movement_interplanetaryGoverance_inertia
+		}
 
 		if = {
 			limit = {
 				always = yes
-				
-			}
-			calculate_interplanetaryGoverance_movement_support_and_radicalism_from_factions = {
-				SUPPORT = movement_interplanetaryGoverance_faction_support
-				RADICALISM = movement_interplanetaryGoverance_faction_radicalism
-			}
-			calculate_interplanetaryGoverance_movement_support_and_radical_from_numbers = {
-				SUPPORT = movement_interplanetaryGoverance_numerical_support
-				RADICALISM = movement_interplanetaryGoverance_numerical_radicalism
-			}
-			
-			if = {
-				limit = {
-					check_variable = {which = movement_interplanetaryGoverance_faction_support value > 0 }
-					NOR = { 
-						has_country_flag = movement_for_interplanetaryGoverance  
-						has_country_flag = interplanetaryGoverance_revolt
-					}
+				check_variable = {which = movement_interplanetaryGoverance_inertia value > 100 }
+				NOR = { 
+					has_country_flag = movement_for_interplanetaryGoverance  
+					has_country_flag = interplanetaryGoverance_revolt
 				}
-				country_event = { id = movement_interplanetaryGoverance.5 }
-			}
-		}		
-		set_variable = { which = movement_interplanetaryGoverance_support value = movement_interplanetaryGoverance_faction_support }
-		change_variable = { which = movement_interplanetaryGoverance_support value = movement_interplanetaryGoverance_numerical_support }
-		divide_variable = { which = movement_interplanetaryGoverance_support value = 2 }
-
-		set_variable = { which = movement_interplanetaryGoverance_radicalism value = movement_interplanetaryGoverance_faction_radicalism }
-		change_variable = { which = movement_interplanetaryGoverance_radicalism value = movement_interplanetaryGoverance_numerical_radicalism }
-		divide_variable = { which = movement_interplanetaryGoverance_radicalism value = 2 }
-
-		set_variable = {which = movement_interplanetaryGoverance_inertia value = movement_interplanetaryGoverance_support}
-		multiply_variable = { which = movement_interplanetaryGoverance_inertia value = movement_interplanetaryGoverance_radicalism }
-	}
-}
-
-
-# Create movement
-country_event = {
-	id = movement_interplanetaryGoverance.5
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				always = yes
-			}
+			}	
 			start_situation = {
 				type = situation_movement_interplanetaryGoverance
 				target = root
 			}
-		}
+		}	
 	}
 }
 
