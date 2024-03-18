@@ -4,7 +4,7 @@
 
 armedIsolationism = {
 	election_header = "GFX_faction_header_yellow"
-	guiding_ethic = ethic_xenophobe #only pops of this ethic can join the faction
+	guiding_ethic = ethic_xenophobe
 	use_guiding_ethic_as_pop_filter = yes
 	unique = yes
 	visual_ethic = "armedIsolationism_visual_ethic"

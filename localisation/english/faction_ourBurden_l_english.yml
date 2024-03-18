@@ -4,4 +4,4 @@
  pft_ourBurden:0 "Our Burden Faction"
  pft_ourBurden_desc:2 "§BThe Our Burden Faction§! believe that is our duty to enlighten the benighted galaxy with our shining ideals.\n\nSupports: \n§G  $diplo_stance_belligerent_name$\n  $liberation_wars_name$\n  $interference_aggressive_name$\n  $enlightenment_allowed_name$\n  $benevolent_terms_name$§!\n\nOpposes: \n§R  $diplo_stance_isolationist_name$\n  $no_wars_name$\n  $interference_not_allowed_name$\n  $enlightenment_not_allowed_name$§!"
 
- ourBurden_visual_ethic:1 "£xenophile£ £militarist£ "
+ ourBurden_visual_ethic:1 "£xenophile££militarist£"
