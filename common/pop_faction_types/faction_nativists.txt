@@ -4,8 +4,10 @@
 
 nativists = {
 	election_header = "GFX_faction_header_yellow"
-	guiding_ethic = ethic_militarist #only pops of this ethic can join the faction
-	visual_ethic = "imperialist_visual_ethic"
+	guiding_ethic = ethic_xenophobe #only pops of this ethic can join the faction
+	use_guiding_ethic_as_pop_filter = yes
+	unique = yes
+	visual_ethic = "nativists_visual_ethic"
 
 	unique = yes
 	support_multiplier = 1
@@ -19,7 +21,6 @@ nativists = {
 
 	#Note: number of potential or actual members is checked by POP_FACTION_MIN_POTENTIAL_MEMBERS define
 	is_potential = {
-		# is_faction_allowed = yes
 		NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
 
@@ -43,7 +44,31 @@ nativists = {
 	}
 
 	attraction = {
-		base = 10000
+		base = 100
+
+		
+		modifier = {
+			factor = 1.5
+			exists = from
+			pop_has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_ethic = ethic_fanatic_xenophobe
+		}
+		
+		modifier = {
+			factor = 1.5
+			exists = from
+			pop_has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_ethic = ethic_fanatic_egalitarian
+		}
+		 
 
 		modifier = {
 			factor = 1.25

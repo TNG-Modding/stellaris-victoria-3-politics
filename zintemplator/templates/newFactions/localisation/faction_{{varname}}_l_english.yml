@@ -3,3 +3,5 @@ l_english:
  {{varname}}_wrapped:0 "{{displayName}} Faction\n"
  pft_{{varname}}:0 "{{displayName}} Faction"
  pft_{{varname}}_desc:2 "§BThe {{displayName}} Faction§! {{desc}}\n\nSupports: \n§G{%for supportedPolicy in supportedPolicies %}  ${{supportedPolicy}}_name${%if loop.index < supportedPolicies|length %}\n{%endif%}{% endfor%}§!\n\nOpposes: \n§R{%for detractingPolicy in againstPolicies %}  ${{detractingPolicy}}_name${%if loop.index < againstPolicies|length %}\n{%endif%}{% endfor %}§!"
+
+ {{varname}}_visual_ethic:1 "{% for ethic in ethics %}£{{ethic}}£ {%endfor%}"

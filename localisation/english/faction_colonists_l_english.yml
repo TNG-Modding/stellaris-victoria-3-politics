@@ -3,3 +3,5 @@
  colonists_wrapped:0 "Colonialist Lobby Faction\n"
  pft_colonists:0 "Colonialist Lobby Faction"
  pft_colonists_desc:2 "§BThe Colonialist Lobby Faction§! see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.\n\nSupports: \n§G  $diplo_stance_expansionist_name$\n  $dependentColonies_name$\n  $merchantMarine_name$\n  $preFtlPoliticalOrganization_name$§!\n\nOpposes: \n§R  $diplo_stance_isolationist_name$§!"
+
+ colonists_visual_ethic:1 "£xenophobe£ £egalitarian£ "

@@ -4,7 +4,7 @@
         "displayName": "Pre-FTL Conservatives",
         "icon": "preftl_conservatives",
         "desc": "wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.",
-        "ethics": [],
+        "ethics": ["spiritualist"],
         "supportedPolicies": [
             "preFtlPoliticalOrganization",
             "dependentColonies",
@@ -19,8 +19,7 @@
         "desc": "see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.",
         "ethics": [
             "xenophobe",
-            "egalitarian",
-            "pacifist"
+            "egalitarian"
         ],
         "supportedPolicies": [
             "diplo_stance_expansionist",
@@ -38,8 +37,7 @@
         "icon": "galactic",
         "desc": "believe that the creation of a galactic bureuacracy is a matter of national security.",
         "ethics": [
-            "xenophobe",
-            "egalitarian",
+            "authoritarian",
             "pacifist"
         ],
         "supportedPolicies": [
