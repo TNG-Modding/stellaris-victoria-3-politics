@@ -89,6 +89,15 @@
         "dumpContents": true, 
         "isBom": false
     },
+    {
+        "name": "Movement Scripted Effects",
+        "specFilePath": "./specs/policies.json",
+        "templateDirectoryPath": "./templates/movements/scripted_effects",
+        "outputDirectoryPath": "../common/scripted_effects",
+        "disabled": false, 
+        "dumpContents": true, 
+        "isBom": false
+    },
 
     {
         "name": "Policy Localisation",

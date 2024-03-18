@@ -46,8 +46,14 @@ country_event = {
 				
 				
 			}
-			country_event = { id = movement_dependentColonies.3 }
-			country_event = { id = movement_dependentColonies.4 }
+			calculate_dependentColonies_movement_support_and_radicalism_from_factions = {
+				SUPPORT = movement_dependentColonies_faction_support
+				RADICALISM = movement_dependentColonies_faction_radicalism
+			}
+			calculate_dependentColonies_movement_support_and_radical_from_numbers = {
+				SUPPORT = movement_dependentColonies_numerical_support
+				RADICALISM = movement_dependentColonies_numerical_radicalism
+			}
 			
 			if = {
 				limit = {
@@ -73,133 +79,6 @@ country_event = {
 	}
 }
 
-# Calculate support from factions
-# Outputs:
-# - country.movement_dependentColonies_faction_support
-# - country.movement_dependentColonies_faction_radicalism
-country_event = {
-	id = movement_dependentColonies.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		
-		every_pop_faction = {
-			
-			if = {
-				limit = {
-					is_pop_faction_type = preFtlConservatives
-				}
-				export_trigger_value_to_variable = { trigger = support variable = dependentColonies_preFtlConservatives_support }
-				multiply_variable = {which = dependentColonies_preFtlConservatives_support value = 100}
-				# dependentColonies_preFtlConservatives_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = dependentColonies_preFtlConservatives_approval }
-				# dependentColonies_preFtlConservatives_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_dependentColonies_faction_support value = PREV.dependentColonies_preFtlConservatives_support }
-					
-					set_variable = { which = dependentColonies_preFtlConservatives_radicalism value = 1 }
-					subtract_variable = { which = dependentColonies_preFtlConservatives_radicalism value = PREV.dependentColonies_preFtlConservatives_approval }
-					
-					multiply_variable = { which = dependentColonies_preFtlConservatives_radicalism value = PREV.dependentColonies_preFtlConservatives_support }
-
-					change_variable = { which = movement_dependentColonies_faction_radicalism value = dependentColonies_preFtlConservatives_radicalism }
-				}
-			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = colonists
-				}
-				export_trigger_value_to_variable = { trigger = support variable = dependentColonies_colonists_support }
-				multiply_variable = {which = dependentColonies_colonists_support value = 100}
-				# dependentColonies_colonists_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = dependentColonies_colonists_approval }
-				# dependentColonies_colonists_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_dependentColonies_faction_support value = PREV.dependentColonies_colonists_support }
-					
-					set_variable = { which = dependentColonies_colonists_radicalism value = 1 }
-					subtract_variable = { which = dependentColonies_colonists_radicalism value = PREV.dependentColonies_colonists_approval }
-					
-					multiply_variable = { which = dependentColonies_colonists_radicalism value = PREV.dependentColonies_colonists_support }
-
-					change_variable = { which = movement_dependentColonies_faction_radicalism value = dependentColonies_colonists_radicalism }
-				}
-			}
-			
-		}
-	}
-}
-
-# Calculate support based on numbers
-# Outputs:
-# - country.movement_dependentColonies_numerical_support
-# - country.movement_dependentColonies_numerical_radicalism
-country_event = {
-	id = movement_dependentColonies.4
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { which = dependentColonies_population value = 0}
-		set_variable = { which = dependentColonies_supporting_population value = 0}
-		set_variable = { which = dependentColonies_radical_population value = 0}
-		
-		every_owned_pop = {
-			ROOT = {
-				change_variable = { which = dependentColonies_population value = 1}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-						
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-						
-						has_ethic = ethic_spiritualist
-						has_ethic = ethic_fanatic_spiritualist
-						
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-						
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-						
-						has_ethic = ethic_authoritarian
-						has_ethic = ethic_fanatic_authoritarian
-						
-					}
-				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
-				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				ROOT = {
-					set_variable = {which = pop_dependentColonies_radicalism value = 1}
-					subtract_variable = { which = pop_dependentColonies_radicalism value = PREV.pop_happiness }
-
-					change_variable = { which = dependentColonies_supporting_population value = 1 }
-					change_variable = { which = dependentColonies_radical_population value = pop_dependentColonies_radicalism }
-				}
-			}
-		}
-		
-		set_variable = { which = movement_dependentColonies_numerical_support value = dependentColonies_supporting_population}
-		divide_variable = { which = movement_dependentColonies_numerical_support value = dependentColonies_population }
-		multiply_variable = {which = movement_dependentColonies_numerical_support value = 100}
-
-		set_variable = { which = movement_dependentColonies_numerical_radicalism value = dependentColonies_radical_population}
-		divide_variable = { which = movement_dependentColonies_numerical_radicalism value = dependentColonies_population }
-		multiply_variable = {which = movement_dependentColonies_numerical_radicalism value = 100}
-	}
-}
 
 # Create movement
 country_event = {

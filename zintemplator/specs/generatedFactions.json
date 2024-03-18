@@ -10,7 +10,7 @@
             "preFtlPoliticalOrganization","dependentColonies","preFtlMilitaries"
         ],
         "againstPolicies": [
-            "interplanetaryPoliticalOrganization","interplanetaryGoverance","spacefaringStandingArmy","grandArmy"
+            
         ]
     },
     
@@ -24,7 +24,7 @@
             "diplo_stance_expansionist","dependentColonies","merchantMarine","preFtlPoliticalOrganization"
         ],
         "againstPolicies": [
-            "interplanetaryGoverance"
+            "diplo_stance_isolationist"
         ]
     },
     
@@ -38,7 +38,7 @@
             "resettlement_allowed","interplanetaryGoverance"
         ],
         "againstPolicies": [
-            "dependentColonies","resettlement_not_allowed"
+            
         ]
     },
     
@@ -49,7 +49,7 @@
         "desc": "believe that the fruits of empire should be enjoyed by our primary species alone.",
         "ethics": ["xenophobe","egalitarian"],
         "supportedPolicies": [
-            "purge_displacement_only","slavery_allowed","population_controls_allowed","refugees_not_allowed"
+            "purge_displacement_only","slavery_allowed","population_controls_allowed"
         ],
         "againstPolicies": [
             "purge_allowed","refugees_allowed"

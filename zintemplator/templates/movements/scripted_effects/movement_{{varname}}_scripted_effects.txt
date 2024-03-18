@@ -1,0 +1,93 @@
+
+calculate_{{varname}}_movement_support_and_radicalism_from_factions = {
+	every_pop_faction = {
+		
+		if = {
+			limit = {
+				OR = {
+					{% for supportingFaction in supportingFactions %}
+					is_pop_faction_type = {{supportingFaction}}
+					{% endfor %}
+					{% for factionHappyWithChange in factionsHappyWithChange %}
+					{% set isAlreadySupporting = "false" %}
+					{% for supportingFaction in supportingFactions %}
+						{%if factionHappyWithChange.faction == supportingFaction.varname %}
+							{% set isAlreadySupporting = "true" %}
+						{% endif %}
+					{% endfor %}
+					{%if isAlreadySupporting == "false" %}
+						AND = {
+							is_pop_faction_type = {{factionHappyWithChange.faction}}
+							ROOT = { has_policy_flag = {{factionHappyWithChange.fromPolicy}} }
+						}
+					{% endif %}
+					{% endfor %}
+				}
+				{% for factionAngryWithChange in factionsAngryWithChange %}
+				NAND = {
+					is_pop_faction_type = {{factionAngryWithChange.faction}}
+					ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+				}
+				{% endfor %}
+			}
+		
+			export_trigger_value_to_variable = { trigger = support variable = {{varname}}_support }
+			multiply_variable = {which = {{varname}}_support value = 100}
+			# {{varname}}_support is 0 to 100
+			
+			export_trigger_value_to_variable = { trigger = faction_approval variable = {{varname}}_approval }
+			# {{varname}}_approval is 0 to 1
+
+			ROOT = {
+				change_variable = { which = $SUPPORT$ value = PREV.{{varname}}_support }
+				
+				set_variable = { which = {{varname}}_radicalism value = 1 }
+				subtract_variable = { which = {{varname}}_radicalism value = PREV.{{varname}}_approval }
+				
+				multiply_variable = { which = {{varname}}_radicalism value = PREV.{{varname}}_support }
+
+				change_variable = { which = $RADICALISM$ value = {{varname}}_radicalism }
+			}
+		}
+	}
+}
+
+calculate_{{varname}}_movement_support_and_radical_from_numbers = {
+	set_variable = { which = {{varname}}_population value = 0}
+	set_variable = { which = {{varname}}_supporting_population value = 0}
+	set_variable = { which = {{varname}}_radical_population value = 0}
+	
+	every_owned_pop = {
+		ROOT = {
+			change_variable = { which = {{varname}}_population value = 1}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					{% for supportingEthic in supportingEthics%}
+					has_ethic = ethic_{{supportingEthic}}
+					has_ethic = ethic_fanatic_{{supportingEthic}}
+					{% endfor %}
+				}
+			}
+			# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
+			export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+			ROOT = {
+				set_variable = {which = pop_{{varname}}_radicalism value = 1}
+				subtract_variable = { which = pop_{{varname}}_radicalism value = PREV.pop_happiness }
+
+				change_variable = { which = {{varname}}_supporting_population value = 1 }
+				change_variable = { which = {{varname}}_radical_population value = pop_{{varname}}_radicalism }
+			}
+		}
+	}
+	
+	set_variable = { which = $SUPPORT$ value = {{varname}}_supporting_population}
+	divide_variable = { which = $SUPPORT$ value = {{varname}}_population }
+	multiply_variable = {which = $SUPPORT$ value = 100}
+
+	set_variable = { which = $RADICALISM$ value = {{varname}}_radical_population}
+	divide_variable = { which = $RADICALISM$ value = {{varname}}_population }
+	multiply_variable = {which = $RADICALISM$ value = 100}
+}

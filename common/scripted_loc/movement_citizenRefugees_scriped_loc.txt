@@ -29,3 +29,43 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_citizenRefugees_SupportingFactions
+	
+	text = {
+		localization_key = totalitarian
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = totalitarian }
+		}
+	}
+	
+	text = {
+		localization_key = imperialist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = imperialist }
+		}
+	}
+	
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_citizenRefugees_DetractingFactions
+	
+	text = {
+		localization_key = progressive
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = progressive }
+		}
+	}
+	
+	text = {
+		localization_key = prosperity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = prosperity }
+		}
+	}
+	
+	
+	default = ""
+}

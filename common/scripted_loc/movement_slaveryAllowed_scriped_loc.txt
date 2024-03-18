@@ -29,3 +29,50 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_slaveryAllowed_SupportingFactions
+	
+	text = {
+		localization_key = xenoist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = xenoist }
+		}
+	}
+	
+	text = {
+		localization_key = progressive
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = progressive }
+		}
+	}
+	
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_slaveryAllowed_DetractingFactions
+	
+	text = {
+		localization_key = supremacist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = supremacist }
+		}
+	}
+	
+	text = {
+		localization_key = imperialist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = imperialist }
+		}
+	}
+	
+	text = {
+		localization_key = totalitarian
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = totalitarian }
+		}
+	}
+	
+	
+	default = ""
+}

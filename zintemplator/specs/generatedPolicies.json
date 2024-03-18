@@ -1,251 +1,632 @@
-[
-    
-    {
-    
-        "varname": "fleetFormation",
-        "displayName": "Fleet Formation",
-        "desc": "The powers and extent of our navy.",
-        "potential": "",
-        "options": [
-            
-            {
-                "varname": "merchantMarine",
-                "displayName": "Pre-FTL Merchant Marine",
-                "desc": "A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates.",
-                "policyCategory": "fleetFormation",
-                "policyOption": "merchantMarine",
-                "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    "colonists",
-                ],
-                "detractingFactions": [
-                    
-                ]
-            },
-            
-            {
-                "varname": "floatingNavy",
-                "displayName": "Floating Navy",
-                "desc": "A modern navy without restrictions.",
-                "policyCategory": "fleetFormation",
-                "policyOption": "floatingNavy",
-                "description": "the fleet should be a modern navy without restrictions",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    
-                ],
-                "detractingFactions": [
-                    
-                ]
-            },
-            
-            {
-                "varname": "armada",
-                "displayName": "Armada",
-                "desc": "A fleet that is a civilization unto itself. Untold millions will live and die aboard our navy vessels.",
-                "policyCategory": "fleetFormation",
-                "policyOption": "armada",
-                "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["militarist"],
-                "potential": "",
-                "supportingFactions": [
-                    
-                ],
-                "detractingFactions": [
-                    
-                ]
-            }
-            
-        ]
+{
+    "policyGroups": [
         
-    },
-    
-    {
-    
-        "varname": "armyOrganization",
-        "displayName": "Army Organization",
-        "desc": "The powers and extent of our army.",
-        "potential": "",
-        "options": [
+        {
+            "varname": "fleetFormation",
+            "displayName": "Fleet Formation",
+            "desc": "The powers and extent of our navy.",
+            "potential": "",
+            "options": [
+                
+                {
+                    "varname": "merchantMarine",
+                    "displayName": "Pre-FTL Merchant Marine",
+                    "desc": "A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates.",
+                    "policyCategory": "fleetFormation",
+                    "policyOption": "merchantMarine",
+                    "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        "colonists",
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "floatingNavy", "armada", 
+                    ],
+                    "factionsAngryWithChange": [
+                        
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "floatingNavy",
+                    "displayName": "Floating Navy",
+                    "desc": "A modern navy without restrictions.",
+                    "policyCategory": "fleetFormation",
+                    "policyOption": "floatingNavy",
+                    "description": "the fleet should be a modern navy without restrictions",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "merchantMarine", "armada", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "colonists", "fromPolicy": "merchantMarine" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "armada",
+                    "displayName": "Armada",
+                    "desc": "A fleet that is a civilization unto itself. Untold millions will live and die aboard our navy vessels.",
+                    "policyCategory": "fleetFormation",
+                    "policyOption": "armada",
+                    "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["militarist"],
+                    "potential": "",
+                    "supportingFactions": [
+                        
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "merchantMarine", "floatingNavy", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "colonists", "fromPolicy": "merchantMarine" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                }
+                
+            ]
             
-            {
-                "varname": "preFtlMilitaries",
-                "displayName": "Pre-FTL Militaries",
-                "desc": "Landlocked soldiery for planetary defense.",
-                "policyCategory": "armyOrganization",
-                "policyOption": "preFtlMilitaries",
-                "description": "our army should remain planetary",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    "preFtlConservatives",
-                ],
-                "detractingFactions": [
-                    
-                ]
-            },
-            
-            {
-                "varname": "spacefaringStandingArmy",
-                "displayName": "Spacefaring Standing Army",
-                "desc": "A modern armu without restrictions. Allows building offensive armies.",
-                "policyCategory": "armyOrganization",
-                "policyOption": "spacefaringStandingArmy",
-                "description": "our army should be modern and without restriction",
-                "ethicAdjective": "Militarist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    
-                ],
-                "detractingFactions": [
-                    "preFtlConservatives",
-                ]
-            },
-            
-            {
-                "varname": "grandArmy",
-                "displayName": "Grand Army",
-                "desc": "An army that is a civilization unto itself. Untold millions live and die in defense of our soil.",
-                "policyCategory": "armyOrganization",
-                "policyOption": "grandArmy",
-                "description": "our army should be a cilivization unto itself",
-                "ethicAdjective": "Militarist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["militarist"],
-                "potential": "",
-                "supportingFactions": [
-                    
-                ],
-                "detractingFactions": [
-                    "preFtlConservatives",
-                ]
-            }
-            
-        ]
+        },
         
-    },
-    
-    {
-    
-        "varname": "colonialAdministration",
-        "displayName": "Colonial Administration",
-        "desc": "The structure of our colonial holdings.",
-        "potential": "",
-        "options": [
+        {
+            "varname": "armyOrganization",
+            "displayName": "Army Organization",
+            "desc": "The powers and extent of our army.",
+            "potential": "",
+            "options": [
+                
+                {
+                    "varname": "preFtlMilitaries",
+                    "displayName": "Pre-FTL Militaries",
+                    "desc": "Landlocked soldiery for planetary defense.",
+                    "policyCategory": "armyOrganization",
+                    "policyOption": "preFtlMilitaries",
+                    "description": "our army should remain planetary",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        "preFtlConservatives",
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "spacefaringStandingArmy", "grandArmy", 
+                    ],
+                    "factionsAngryWithChange": [
+                        
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "spacefaringStandingArmy",
+                    "displayName": "Spacefaring Standing Army",
+                    "desc": "A modern armu without restrictions. Allows building offensive armies.",
+                    "policyCategory": "armyOrganization",
+                    "policyOption": "spacefaringStandingArmy",
+                    "description": "our army should be modern and without restriction",
+                    "ethicAdjective": "Militarist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "preFtlMilitaries", "grandArmy", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "grandArmy",
+                    "displayName": "Grand Army",
+                    "desc": "An army that is a civilization unto itself. Untold millions live and die in defense of our soil.",
+                    "policyCategory": "armyOrganization",
+                    "policyOption": "grandArmy",
+                    "description": "our army should be a cilivization unto itself",
+                    "ethicAdjective": "Militarist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["militarist"],
+                    "potential": "",
+                    "supportingFactions": [
+                        
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "preFtlMilitaries", "spacefaringStandingArmy", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                }
+                
+            ]
             
-            {
-                "varname": "dependentColonies",
-                "displayName": "Pre-FTL Colonial Dependents",
-                "desc": "Colonial administration based off crude pre-ftl techniques of supporting the center at the expense of the periphery. Prevents upgrading Colonial Shelters and building non-resource extraction buildings and districts on planets other than the capital.",
-                "policyCategory": "colonialAdministration",
-                "policyOption": "dependentColonies",
-                "description": "extrastellar planetary holdings should be governed like colonies",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["egalitarian","pacifist","spiritualist","materialist","egalitarian","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    "preFtlConservatives","colonists",
-                ],
-                "detractingFactions": [
-                    "consolidationists",
-                ]
-            },
-            
-            {
-                "varname": "interplanetaryGoverance",
-                "displayName": "Interplanetary Governance",
-                "desc": "A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax holdings.",
-                "policyCategory": "colonialAdministration",
-                "policyOption": "interplanetaryGoverance",
-                "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    "consolidationists",
-                ],
-                "detractingFactions": [
-                    "preFtlConservatives","colonists",
-                ]
-            }
-            
-        ]
+        },
         
-    },
-    
-    {
-    
-        "varname": "politicalOrganization",
-        "displayName": "Political Organization",
-        "desc": "Our governmental powers and the abilities of factions within our empire.",
-        "potential": "",
-        "options": [
+        {
+            "varname": "colonialAdministration",
+            "displayName": "Colonial Administration",
+            "desc": "The structure of our colonial holdings.",
+            "potential": "",
+            "options": [
+                
+                {
+                    "varname": "dependentColonies",
+                    "displayName": "Pre-FTL Colonial Dependents",
+                    "desc": "Colonial administration based off crude pre-ftl techniques of supporting the center at the expense of the periphery. Prevents upgrading Colonial Shelters and building non-resource extraction buildings and districts on planets other than the capital.",
+                    "policyCategory": "colonialAdministration",
+                    "policyOption": "dependentColonies",
+                    "description": "extrastellar planetary holdings should be governed like colonies",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["egalitarian","pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        "preFtlConservatives","colonists",
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "interplanetaryGoverance", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "consolidationists", "fromPolicy": "interplanetaryGoverance" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "interplanetaryGoverance",
+                    "displayName": "Interplanetary Governance",
+                    "desc": "A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax holdings.",
+                    "policyCategory": "colonialAdministration",
+                    "policyOption": "interplanetaryGoverance",
+                    "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        "consolidationists",
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "dependentColonies", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "preFtlConservatives", "fromPolicy": "dependentColonies" },  { "faction": "colonists", "fromPolicy": "dependentColonies" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                }
+                
+            ]
             
-            {
-                "varname": "preFtlPoliticalOrganization",
-                "displayName": "Pre-FTL Political Units",
-                "desc": "Political organization styled after pre-FTL, mono-planetary representation.",
-                "policyCategory": "politicalOrganization",
-                "policyOption": "preFtlPoliticalOrganization",
-                "description": "the political organization of our pre-FTL days suffices",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["xenophobe","xenophile","militarist","pacifist","spiritualist","materialist","authoritarian"],
-                "potential": "",
-                "supportingFactions": [
-                    "preFtlConservatives","colonists",
-                ],
-                "detractingFactions": [
-                    
-                ]
-            },
-            
-            {
-                "varname": "interplanetaryPoliticalOrganization",
-                "displayName": "Interplanetary Politics",
-                "desc": "Modern political involvement for handling activism and propoganda.",
-                "policyCategory": "politicalOrganization",
-                "policyOption": "interplanetaryPoliticalOrganization",
-                "description": "we should embrace a modern interstellar political system",
-                "ethicAdjective": "Pacifist",
-                "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                "supportingEthics": ["egalitarian"],
-                "potential": "",
-                "supportingFactions": [
-                    
-                ],
-                "detractingFactions": [
-                    "preFtlConservatives",
-                ]
-            }
-            
-        ]
+        },
         
-    }
-    
-]
+        {
+            "varname": "politicalOrganization",
+            "displayName": "Political Organization",
+            "desc": "Our governmental powers and the abilities of factions within our empire.",
+            "potential": "",
+            "options": [
+                
+                {
+                    "varname": "preFtlPoliticalOrganization",
+                    "displayName": "Pre-FTL Political Units",
+                    "desc": "Political organization styled after pre-FTL, mono-planetary representation.",
+                    "policyCategory": "politicalOrganization",
+                    "policyOption": "preFtlPoliticalOrganization",
+                    "description": "the political organization of our pre-FTL days suffices",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["xenophobe","xenophile","militarist","pacifist","spiritualist","materialist","authoritarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        "preFtlConservatives","colonists",
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "interplanetaryPoliticalOrganization", 
+                    ],
+                    "factionsAngryWithChange": [
+                        
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                },
+                
+                {
+                    "varname": "interplanetaryPoliticalOrganization",
+                    "displayName": "Interplanetary Politics",
+                    "desc": "Modern political involvement for handling activism and propoganda.",
+                    "policyCategory": "politicalOrganization",
+                    "policyOption": "interplanetaryPoliticalOrganization",
+                    "description": "we should embrace a modern interstellar political system",
+                    "ethicAdjective": "Pacifist",
+                    "picture": "surrender",
+                    "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                    "supportingEthics": ["egalitarian"],
+                    "potential": "",
+                    "supportingFactions": [
+                        
+                    ],
+                    "detractingFactions": [
+                        
+                    ],
+                    "otherOptions": [
+                        "preFtlPoliticalOrganization", 
+                    ],
+                    "factionsAngryWithChange": [
+                        { "faction": "preFtlConservatives", "fromPolicy": "preFtlPoliticalOrganization" },  { "faction": "colonists", "fromPolicy": "preFtlPoliticalOrganization" },  
+                    ],
+                    "factionsHappyWithChange": [
+                        
+                    ]
+                }
+                
+            ]
+            
+        }
+        
+    ],
+    "policiesSpelledOut": [
+        
+        {
+            "varname": "merchantMarine",
+            "displayName": "Pre-FTL Merchant Marine",
+            "desc": "A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates.",
+            "policyCategory": "fleetFormation",
+            "policyOption": "merchantMarine",
+            "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                "colonists",
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "floatingNavy", "armada", 
+            ],
+            "factionsAngryWithChange": [
+                
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "floatingNavy",
+            "displayName": "Floating Navy",
+            "desc": "A modern navy without restrictions.",
+            "policyCategory": "fleetFormation",
+            "policyOption": "floatingNavy",
+            "description": "the fleet should be a modern navy without restrictions",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "merchantMarine", "armada", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "colonists", "fromPolicy": "merchantMarine" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "armada",
+            "displayName": "Armada",
+            "desc": "A fleet that is a civilization unto itself. Untold millions will live and die aboard our navy vessels.",
+            "policyCategory": "fleetFormation",
+            "policyOption": "armada",
+            "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["militarist"],
+            "potential": "",
+            "supportingFactions": [
+                
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "merchantMarine", "floatingNavy", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "colonists", "fromPolicy": "merchantMarine" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        }
+        
+        {
+            "varname": "preFtlMilitaries",
+            "displayName": "Pre-FTL Militaries",
+            "desc": "Landlocked soldiery for planetary defense.",
+            "policyCategory": "armyOrganization",
+            "policyOption": "preFtlMilitaries",
+            "description": "our army should remain planetary",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                "preFtlConservatives",
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "spacefaringStandingArmy", "grandArmy", 
+            ],
+            "factionsAngryWithChange": [
+                
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "spacefaringStandingArmy",
+            "displayName": "Spacefaring Standing Army",
+            "desc": "A modern armu without restrictions. Allows building offensive armies.",
+            "policyCategory": "armyOrganization",
+            "policyOption": "spacefaringStandingArmy",
+            "description": "our army should be modern and without restriction",
+            "ethicAdjective": "Militarist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "preFtlMilitaries", "grandArmy", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "grandArmy",
+            "displayName": "Grand Army",
+            "desc": "An army that is a civilization unto itself. Untold millions live and die in defense of our soil.",
+            "policyCategory": "armyOrganization",
+            "policyOption": "grandArmy",
+            "description": "our army should be a cilivization unto itself",
+            "ethicAdjective": "Militarist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["militarist"],
+            "potential": "",
+            "supportingFactions": [
+                
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "preFtlMilitaries", "spacefaringStandingArmy", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        }
+        
+        {
+            "varname": "dependentColonies",
+            "displayName": "Pre-FTL Colonial Dependents",
+            "desc": "Colonial administration based off crude pre-ftl techniques of supporting the center at the expense of the periphery. Prevents upgrading Colonial Shelters and building non-resource extraction buildings and districts on planets other than the capital.",
+            "policyCategory": "colonialAdministration",
+            "policyOption": "dependentColonies",
+            "description": "extrastellar planetary holdings should be governed like colonies",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["egalitarian","pacifist","spiritualist","materialist","egalitarian","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                "preFtlConservatives","colonists",
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "interplanetaryGoverance", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "consolidationists", "fromPolicy": "interplanetaryGoverance" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "interplanetaryGoverance",
+            "displayName": "Interplanetary Governance",
+            "desc": "A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax holdings.",
+            "policyCategory": "colonialAdministration",
+            "policyOption": "interplanetaryGoverance",
+            "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                "consolidationists",
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "dependentColonies", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "preFtlConservatives", "fromPolicy": "dependentColonies" },  { "faction": "colonists", "fromPolicy": "dependentColonies" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        }
+        
+        {
+            "varname": "preFtlPoliticalOrganization",
+            "displayName": "Pre-FTL Political Units",
+            "desc": "Political organization styled after pre-FTL, mono-planetary representation.",
+            "policyCategory": "politicalOrganization",
+            "policyOption": "preFtlPoliticalOrganization",
+            "description": "the political organization of our pre-FTL days suffices",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["xenophobe","xenophile","militarist","pacifist","spiritualist","materialist","authoritarian"],
+            "potential": "",
+            "supportingFactions": [
+                "preFtlConservatives","colonists",
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "interplanetaryPoliticalOrganization", 
+            ],
+            "factionsAngryWithChange": [
+                
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        },
+        
+        {
+            "varname": "interplanetaryPoliticalOrganization",
+            "displayName": "Interplanetary Politics",
+            "desc": "Modern political involvement for handling activism and propoganda.",
+            "policyCategory": "politicalOrganization",
+            "policyOption": "interplanetaryPoliticalOrganization",
+            "description": "we should embrace a modern interstellar political system",
+            "ethicAdjective": "Pacifist",
+            "picture": "surrender",
+            "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+            "supportingEthics": ["egalitarian"],
+            "potential": "",
+            "supportingFactions": [
+                
+            ],
+            "detractingFactions": [
+                
+            ],
+            "otherOptions": [
+                "preFtlPoliticalOrganization", 
+            ],
+            "factionsAngryWithChange": [
+                { "faction": "preFtlConservatives", "fromPolicy": "preFtlPoliticalOrganization" },  { "faction": "colonists", "fromPolicy": "preFtlPoliticalOrganization" },  
+            ],
+            "factionsHappyWithChange": [
+                
+            ]
+        }
+        
+    ]
+}

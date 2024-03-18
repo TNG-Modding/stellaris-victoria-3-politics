@@ -46,8 +46,14 @@ country_event = {
 				{{potential}}
 				
 			}
-			country_event = { id = movement_{{varname}}.3 }
-			country_event = { id = movement_{{varname}}.4 }
+			calculate_{{varname}}_movement_support_and_radicalism_from_factions = {
+				SUPPORT = movement_{{varname}}_faction_support
+				RADICALISM = movement_{{varname}}_faction_radicalism
+			}
+			calculate_{{varname}}_movement_support_and_radical_from_numbers = {
+				SUPPORT = movement_{{varname}}_numerical_support
+				RADICALISM = movement_{{varname}}_numerical_radicalism
+			}
 			
 			if = {
 				limit = {
@@ -73,95 +79,6 @@ country_event = {
 	}
 }
 
-# Calculate support from factions
-# Outputs:
-# - country.movement_{{varname}}_faction_support
-# - country.movement_{{varname}}_faction_radicalism
-country_event = {
-	id = movement_{{varname}}.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		
-		every_pop_faction = {
-			{% for supportingFaction in supportingFactions %}
-			if = {
-				limit = {
-					is_pop_faction_type = {{supportingFaction}}
-				}
-				export_trigger_value_to_variable = { trigger = support variable = {{varname}}_{{supportingFaction}}_support }
-				multiply_variable = {which = {{varname}}_{{supportingFaction}}_support value = 100}
-				# {{varname}}_{{supportingFaction}}_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = {{varname}}_{{supportingFaction}}_approval }
-				# {{varname}}_{{supportingFaction}}_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_{{varname}}_faction_support value = PREV.{{varname}}_{{supportingFaction}}_support }
-					
-					set_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = 1 }
-					subtract_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = PREV.{{varname}}_{{supportingFaction}}_approval }
-					
-					multiply_variable = { which = {{varname}}_{{supportingFaction}}_radicalism value = PREV.{{varname}}_{{supportingFaction}}_support }
-
-					change_variable = { which = movement_{{varname}}_faction_radicalism value = {{varname}}_{{supportingFaction}}_radicalism }
-				}
-			}
-			{% endfor %}
-		}
-	}
-}
-
-# Calculate support based on numbers
-# Outputs:
-# - country.movement_{{varname}}_numerical_support
-# - country.movement_{{varname}}_numerical_radicalism
-country_event = {
-	id = movement_{{varname}}.4
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { which = {{varname}}_population value = 0}
-		set_variable = { which = {{varname}}_supporting_population value = 0}
-		set_variable = { which = {{varname}}_radical_population value = 0}
-		
-		every_owned_pop = {
-			ROOT = {
-				change_variable = { which = {{varname}}_population value = 1}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						{% for supportingEthic in supportingEthics%}
-						has_ethic = ethic_{{supportingEthic}}
-						has_ethic = ethic_fanatic_{{supportingEthic}}
-						{% endfor %}
-					}
-				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
-				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				ROOT = {
-					set_variable = {which = pop_{{varname}}_radicalism value = 1}
-					subtract_variable = { which = pop_{{varname}}_radicalism value = PREV.pop_happiness }
-
-					change_variable = { which = {{varname}}_supporting_population value = 1 }
-					change_variable = { which = {{varname}}_radical_population value = pop_{{varname}}_radicalism }
-				}
-			}
-		}
-		
-		set_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_supporting_population}
-		divide_variable = { which = movement_{{varname}}_numerical_support value = {{varname}}_population }
-		multiply_variable = {which = movement_{{varname}}_numerical_support value = 100}
-
-		set_variable = { which = movement_{{varname}}_numerical_radicalism value = {{varname}}_radical_population}
-		divide_variable = { which = movement_{{varname}}_numerical_radicalism value = {{varname}}_population }
-		multiply_variable = {which = movement_{{varname}}_numerical_radicalism value = 100}
-	}
-}
 
 # Create movement
 country_event = {

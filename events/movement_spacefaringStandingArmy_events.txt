@@ -46,8 +46,14 @@ country_event = {
 				
 				
 			}
-			country_event = { id = movement_spacefaringStandingArmy.3 }
-			country_event = { id = movement_spacefaringStandingArmy.4 }
+			calculate_spacefaringStandingArmy_movement_support_and_radicalism_from_factions = {
+				SUPPORT = movement_spacefaringStandingArmy_faction_support
+				RADICALISM = movement_spacefaringStandingArmy_faction_radicalism
+			}
+			calculate_spacefaringStandingArmy_movement_support_and_radical_from_numbers = {
+				SUPPORT = movement_spacefaringStandingArmy_numerical_support
+				RADICALISM = movement_spacefaringStandingArmy_numerical_radicalism
+			}
 			
 			if = {
 				limit = {
@@ -73,84 +79,6 @@ country_event = {
 	}
 }
 
-# Calculate support from factions
-# Outputs:
-# - country.movement_spacefaringStandingArmy_faction_support
-# - country.movement_spacefaringStandingArmy_faction_radicalism
-country_event = {
-	id = movement_spacefaringStandingArmy.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		
-		every_pop_faction = {
-			
-		}
-	}
-}
-
-# Calculate support based on numbers
-# Outputs:
-# - country.movement_spacefaringStandingArmy_numerical_support
-# - country.movement_spacefaringStandingArmy_numerical_radicalism
-country_event = {
-	id = movement_spacefaringStandingArmy.4
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { which = spacefaringStandingArmy_population value = 0}
-		set_variable = { which = spacefaringStandingArmy_supporting_population value = 0}
-		set_variable = { which = spacefaringStandingArmy_radical_population value = 0}
-		
-		every_owned_pop = {
-			ROOT = {
-				change_variable = { which = spacefaringStandingArmy_population value = 1}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-						
-						has_ethic = ethic_spiritualist
-						has_ethic = ethic_fanatic_spiritualist
-						
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-						
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-						
-						has_ethic = ethic_authoritarian
-						has_ethic = ethic_fanatic_authoritarian
-						
-					}
-				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
-				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				ROOT = {
-					set_variable = {which = pop_spacefaringStandingArmy_radicalism value = 1}
-					subtract_variable = { which = pop_spacefaringStandingArmy_radicalism value = PREV.pop_happiness }
-
-					change_variable = { which = spacefaringStandingArmy_supporting_population value = 1 }
-					change_variable = { which = spacefaringStandingArmy_radical_population value = pop_spacefaringStandingArmy_radicalism }
-				}
-			}
-		}
-		
-		set_variable = { which = movement_spacefaringStandingArmy_numerical_support value = spacefaringStandingArmy_supporting_population}
-		divide_variable = { which = movement_spacefaringStandingArmy_numerical_support value = spacefaringStandingArmy_population }
-		multiply_variable = {which = movement_spacefaringStandingArmy_numerical_support value = 100}
-
-		set_variable = { which = movement_spacefaringStandingArmy_numerical_radicalism value = spacefaringStandingArmy_radical_population}
-		divide_variable = { which = movement_spacefaringStandingArmy_numerical_radicalism value = spacefaringStandingArmy_population }
-		multiply_variable = {which = movement_spacefaringStandingArmy_numerical_radicalism value = 100}
-	}
-}
 
 # Create movement
 country_event = {

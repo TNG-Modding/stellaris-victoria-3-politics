@@ -5,7 +5,25 @@ set_armada_base_success_chance = {
 
 	OWNER = {
 		every_pop_faction = {
-			
+			if = {
+				limit = {
+					OR = {
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						ROOT = { has_policy_flag = merchantMarine }
+					}
+					
+				}
+				export_trigger_value_to_variable = { trigger = support variable = support }
+				multiply_variable = {which = support value = 100}
+				ROOT = {
+					change_variable = { which = $WHICH$ value = PREV.support }		
+				}
+			}
 		}
 	}
 }
@@ -16,7 +34,34 @@ set_armada_base_stall_chance = {
 	set_variable = { which = $WHICH$ value = 0}
 	OWNER = {
 		every_pop_faction = {
-			
+			if = {
+				limit = {
+					OR = {
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = colonists
+								ROOT = { has_policy_flag = merchantMarine }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						ROOT = { has_policy_flag = merchantMarine }
+					}
+					
+				}
+				export_trigger_value_to_variable = { trigger = support variable = _support }
+				multiply_variable = {which = _support value = 100}
+				ROOT = {
+					change_variable = { which = $WHICH$ value = PREV._support }	
+				}
+			}
 		}
 	}
 }

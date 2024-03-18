@@ -29,3 +29,22 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_merchantMarine_SupportingFactions
+	
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+		}
+	}
+	
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_merchantMarine_DetractingFactions
+	
+	
+	default = ""
+}

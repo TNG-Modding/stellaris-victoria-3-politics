@@ -5,18 +5,40 @@ set_{{varname}}_base_success_chance = {
 
 	OWNER = {
 		every_pop_faction = {
-			{% for supportingFaction in supportingFactions %}
 			if = {
 				limit = {
-					is_pop_faction_type = {{supportingFaction}}
+					OR = {
+						{% for supportingFaction in supportingFactions %}
+						is_pop_faction_type = {{supportingFaction}}
+						{% endfor %}
+						{% for factionHappyWithChange in factionsHappyWithChange %}
+						{% set isAlreadySupporting = "false" %}
+						{% for supportingFaction in supportingFactions %}
+							{%if factionHappyWithChange.faction == supportingFaction.varname %}
+								{% set isAlreadySupporting = "true" %}
+							{% endif %}
+						{% endfor %}
+						{%if isAlreadySupporting == "false" %}
+							AND = {
+								is_pop_faction_type = {{factionHappyWithChange.faction}}
+								ROOT = { has_policy_flag = {{factionHappyWithChange.fromPolicy}} }
+							}
+						{% endif %}
+						{% endfor %}
+					}
+					{% for factionAngryWithChange in factionsAngryWithChange %}
+					NAND = {
+						is_pop_faction_type = {{factionAngryWithChange.faction}}
+						ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+					}
+					{% endfor %}
 				}
-				export_trigger_value_to_variable = { trigger = support variable = {{supportingFaction}}_support }
-				multiply_variable = {which = {{supportingFaction}}_support value = 100}
+				export_trigger_value_to_variable = { trigger = support variable = support }
+				multiply_variable = {which = support value = 100}
 				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.{{supportingFaction}}_support }		
+					change_variable = { which = $WHICH$ value = PREV.support }		
 				}
 			}
-			{% endfor %}
 		}
 	}
 }
@@ -27,10 +49,33 @@ set_{{varname}}_base_stall_chance = {
 	set_variable = { which = $WHICH$ value = 0}
 	OWNER = {
 		every_pop_faction = {
-			{% for detractingFaction in detractingFactions %}
 			if = {
 				limit = {
-					is_pop_faction_type = {{detractingFaction}}
+					OR = {
+						{% for detractingFaction in detractingFactions %}
+						is_pop_faction_type = {{detractingFaction}}
+						{% endfor %}
+						{% for factionAngryWithChange in factionsAngryWithChange %}
+						{% set isAlreadyAgainst = "false" %}
+						{% for detractingFaction in detractingFactions %}
+							{%if factionAngryWithChange.faction == detractingFaction.varname %}
+								{% set isAlreadyAgainst = "true" %}
+							{% endif %}
+						{% endfor %}
+						{%if isAlreadyAgainst == "false" %}
+							AND = {
+								is_pop_faction_type = {{factionAngryWithChange.faction}}
+								ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+							}
+						{% endif %}
+						{% endfor %}
+					}
+					{% for factionAngryWithChange in factionsAngryWithChange %}
+					NAND = {
+						is_pop_faction_type = {{factionAngryWithChange.faction}}
+						ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+					}
+					{% endfor %}
 				}
 				export_trigger_value_to_variable = { trigger = support variable = {{detractingFaction}}_support }
 				multiply_variable = {which = {{detractingFaction}}_support value = 100}
@@ -38,7 +83,6 @@ set_{{varname}}_base_stall_chance = {
 					change_variable = { which = $WHICH$ value = PREV.{{detractingFaction}}_support }	
 				}
 			}
-			{% endfor%}
 		}
 	}
 }

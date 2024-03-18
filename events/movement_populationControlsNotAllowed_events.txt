@@ -46,8 +46,14 @@ country_event = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 				
 			}
-			country_event = { id = movement_populationControlsNotAllowed.3 }
-			country_event = { id = movement_populationControlsNotAllowed.4 }
+			calculate_populationControlsNotAllowed_movement_support_and_radicalism_from_factions = {
+				SUPPORT = movement_populationControlsNotAllowed_faction_support
+				RADICALISM = movement_populationControlsNotAllowed_faction_radicalism
+			}
+			calculate_populationControlsNotAllowed_movement_support_and_radical_from_numbers = {
+				SUPPORT = movement_populationControlsNotAllowed_numerical_support
+				RADICALISM = movement_populationControlsNotAllowed_numerical_radicalism
+			}
 			
 			if = {
 				limit = {
@@ -73,121 +79,6 @@ country_event = {
 	}
 }
 
-# Calculate support from factions
-# Outputs:
-# - country.movement_populationControlsNotAllowed_faction_support
-# - country.movement_populationControlsNotAllowed_faction_radicalism
-country_event = {
-	id = movement_populationControlsNotAllowed.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		
-		every_pop_faction = {
-			
-			if = {
-				limit = {
-					is_pop_faction_type = imperialist
-				}
-				export_trigger_value_to_variable = { trigger = support variable = populationControlsNotAllowed_imperialist_support }
-				multiply_variable = {which = populationControlsNotAllowed_imperialist_support value = 100}
-				# populationControlsNotAllowed_imperialist_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = populationControlsNotAllowed_imperialist_approval }
-				# populationControlsNotAllowed_imperialist_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_populationControlsNotAllowed_faction_support value = PREV.populationControlsNotAllowed_imperialist_support }
-					
-					set_variable = { which = populationControlsNotAllowed_imperialist_radicalism value = 1 }
-					subtract_variable = { which = populationControlsNotAllowed_imperialist_radicalism value = PREV.populationControlsNotAllowed_imperialist_approval }
-					
-					multiply_variable = { which = populationControlsNotAllowed_imperialist_radicalism value = PREV.populationControlsNotAllowed_imperialist_support }
-
-					change_variable = { which = movement_populationControlsNotAllowed_faction_radicalism value = populationControlsNotAllowed_imperialist_radicalism }
-				}
-			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = progressive
-				}
-				export_trigger_value_to_variable = { trigger = support variable = populationControlsNotAllowed_progressive_support }
-				multiply_variable = {which = populationControlsNotAllowed_progressive_support value = 100}
-				# populationControlsNotAllowed_progressive_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = populationControlsNotAllowed_progressive_approval }
-				# populationControlsNotAllowed_progressive_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_populationControlsNotAllowed_faction_support value = PREV.populationControlsNotAllowed_progressive_support }
-					
-					set_variable = { which = populationControlsNotAllowed_progressive_radicalism value = 1 }
-					subtract_variable = { which = populationControlsNotAllowed_progressive_radicalism value = PREV.populationControlsNotAllowed_progressive_approval }
-					
-					multiply_variable = { which = populationControlsNotAllowed_progressive_radicalism value = PREV.populationControlsNotAllowed_progressive_support }
-
-					change_variable = { which = movement_populationControlsNotAllowed_faction_radicalism value = populationControlsNotAllowed_progressive_radicalism }
-				}
-			}
-			
-		}
-	}
-}
-
-# Calculate support based on numbers
-# Outputs:
-# - country.movement_populationControlsNotAllowed_numerical_support
-# - country.movement_populationControlsNotAllowed_numerical_radicalism
-country_event = {
-	id = movement_populationControlsNotAllowed.4
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { which = populationControlsNotAllowed_population value = 0}
-		set_variable = { which = populationControlsNotAllowed_supporting_population value = 0}
-		set_variable = { which = populationControlsNotAllowed_radical_population value = 0}
-		
-		every_owned_pop = {
-			ROOT = {
-				change_variable = { which = populationControlsNotAllowed_population value = 1}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-						
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-						
-					}
-				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
-				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				ROOT = {
-					set_variable = {which = pop_populationControlsNotAllowed_radicalism value = 1}
-					subtract_variable = { which = pop_populationControlsNotAllowed_radicalism value = PREV.pop_happiness }
-
-					change_variable = { which = populationControlsNotAllowed_supporting_population value = 1 }
-					change_variable = { which = populationControlsNotAllowed_radical_population value = pop_populationControlsNotAllowed_radicalism }
-				}
-			}
-		}
-		
-		set_variable = { which = movement_populationControlsNotAllowed_numerical_support value = populationControlsNotAllowed_supporting_population}
-		divide_variable = { which = movement_populationControlsNotAllowed_numerical_support value = populationControlsNotAllowed_population }
-		multiply_variable = {which = movement_populationControlsNotAllowed_numerical_support value = 100}
-
-		set_variable = { which = movement_populationControlsNotAllowed_numerical_radicalism value = populationControlsNotAllowed_radical_population}
-		divide_variable = { which = movement_populationControlsNotAllowed_numerical_radicalism value = populationControlsNotAllowed_population }
-		multiply_variable = {which = movement_populationControlsNotAllowed_numerical_radicalism value = 100}
-	}
-}
 
 # Create movement
 country_event = {

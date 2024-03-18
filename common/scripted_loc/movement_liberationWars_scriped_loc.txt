@@ -29,3 +29,50 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_liberationWars_SupportingFactions
+	
+	text = {
+		localization_key = imperialist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = imperialist }
+		}
+	}
+	
+	text = {
+		localization_key = xenoist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = xenoist }
+		}
+	}
+	
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_liberationWars_DetractingFactions
+	
+	text = {
+		localization_key = prosperity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = prosperity }
+		}
+	}
+	
+	text = {
+		localization_key = isolationist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = isolationist }
+		}
+	}
+	
+	text = {
+		localization_key = supremacist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = supremacist }
+		}
+	}
+	
+	
+	default = ""
+}

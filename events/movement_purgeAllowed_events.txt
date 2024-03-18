@@ -46,8 +46,14 @@ country_event = {
 				NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker }
 				
 			}
-			country_event = { id = movement_purgeAllowed.3 }
-			country_event = { id = movement_purgeAllowed.4 }
+			calculate_purgeAllowed_movement_support_and_radicalism_from_factions = {
+				SUPPORT = movement_purgeAllowed_faction_support
+				RADICALISM = movement_purgeAllowed_faction_radicalism
+			}
+			calculate_purgeAllowed_movement_support_and_radical_from_numbers = {
+				SUPPORT = movement_purgeAllowed_numerical_support
+				RADICALISM = movement_purgeAllowed_numerical_radicalism
+			}
 			
 			if = {
 				limit = {
@@ -73,147 +79,6 @@ country_event = {
 	}
 }
 
-# Calculate support from factions
-# Outputs:
-# - country.movement_purgeAllowed_faction_support
-# - country.movement_purgeAllowed_faction_radicalism
-country_event = {
-	id = movement_purgeAllowed.3
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		
-		every_pop_faction = {
-			
-			if = {
-				limit = {
-					is_pop_faction_type = supremacist
-				}
-				export_trigger_value_to_variable = { trigger = support variable = purgeAllowed_supremacist_support }
-				multiply_variable = {which = purgeAllowed_supremacist_support value = 100}
-				# purgeAllowed_supremacist_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = purgeAllowed_supremacist_approval }
-				# purgeAllowed_supremacist_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_purgeAllowed_faction_support value = PREV.purgeAllowed_supremacist_support }
-					
-					set_variable = { which = purgeAllowed_supremacist_radicalism value = 1 }
-					subtract_variable = { which = purgeAllowed_supremacist_radicalism value = PREV.purgeAllowed_supremacist_approval }
-					
-					multiply_variable = { which = purgeAllowed_supremacist_radicalism value = PREV.purgeAllowed_supremacist_support }
-
-					change_variable = { which = movement_purgeAllowed_faction_radicalism value = purgeAllowed_supremacist_radicalism }
-				}
-			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = imperialist
-				}
-				export_trigger_value_to_variable = { trigger = support variable = purgeAllowed_imperialist_support }
-				multiply_variable = {which = purgeAllowed_imperialist_support value = 100}
-				# purgeAllowed_imperialist_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = purgeAllowed_imperialist_approval }
-				# purgeAllowed_imperialist_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_purgeAllowed_faction_support value = PREV.purgeAllowed_imperialist_support }
-					
-					set_variable = { which = purgeAllowed_imperialist_radicalism value = 1 }
-					subtract_variable = { which = purgeAllowed_imperialist_radicalism value = PREV.purgeAllowed_imperialist_approval }
-					
-					multiply_variable = { which = purgeAllowed_imperialist_radicalism value = PREV.purgeAllowed_imperialist_support }
-
-					change_variable = { which = movement_purgeAllowed_faction_radicalism value = purgeAllowed_imperialist_radicalism }
-				}
-			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = totalitarian
-				}
-				export_trigger_value_to_variable = { trigger = support variable = purgeAllowed_totalitarian_support }
-				multiply_variable = {which = purgeAllowed_totalitarian_support value = 100}
-				# purgeAllowed_totalitarian_support is 0 to 100
-				
-				export_trigger_value_to_variable = { trigger = faction_approval variable = purgeAllowed_totalitarian_approval }
-				# purgeAllowed_totalitarian_approval is 0 to 1
-
-				ROOT = {
-					change_variable = { which = movement_purgeAllowed_faction_support value = PREV.purgeAllowed_totalitarian_support }
-					
-					set_variable = { which = purgeAllowed_totalitarian_radicalism value = 1 }
-					subtract_variable = { which = purgeAllowed_totalitarian_radicalism value = PREV.purgeAllowed_totalitarian_approval }
-					
-					multiply_variable = { which = purgeAllowed_totalitarian_radicalism value = PREV.purgeAllowed_totalitarian_support }
-
-					change_variable = { which = movement_purgeAllowed_faction_radicalism value = purgeAllowed_totalitarian_radicalism }
-				}
-			}
-			
-		}
-	}
-}
-
-# Calculate support based on numbers
-# Outputs:
-# - country.movement_purgeAllowed_numerical_support
-# - country.movement_purgeAllowed_numerical_radicalism
-country_event = {
-	id = movement_purgeAllowed.4
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { which = purgeAllowed_population value = 0}
-		set_variable = { which = purgeAllowed_supporting_population value = 0}
-		set_variable = { which = purgeAllowed_radical_population value = 0}
-		
-		every_owned_pop = {
-			ROOT = {
-				change_variable = { which = purgeAllowed_population value = 1}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						
-						has_ethic = ethic_xenophile
-						has_ethic = ethic_fanatic_xenophile
-						
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-						
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-						
-					}
-				}
-				# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
-				export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
-				ROOT = {
-					set_variable = {which = pop_purgeAllowed_radicalism value = 1}
-					subtract_variable = { which = pop_purgeAllowed_radicalism value = PREV.pop_happiness }
-
-					change_variable = { which = purgeAllowed_supporting_population value = 1 }
-					change_variable = { which = purgeAllowed_radical_population value = pop_purgeAllowed_radicalism }
-				}
-			}
-		}
-		
-		set_variable = { which = movement_purgeAllowed_numerical_support value = purgeAllowed_supporting_population}
-		divide_variable = { which = movement_purgeAllowed_numerical_support value = purgeAllowed_population }
-		multiply_variable = {which = movement_purgeAllowed_numerical_support value = 100}
-
-		set_variable = { which = movement_purgeAllowed_numerical_radicalism value = purgeAllowed_radical_population}
-		divide_variable = { which = movement_purgeAllowed_numerical_radicalism value = purgeAllowed_population }
-		multiply_variable = {which = movement_purgeAllowed_numerical_radicalism value = 100}
-	}
-}
 
 # Create movement
 country_event = {

@@ -29,3 +29,45 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_{{varname}}_SupportingFactions
+	{% for supportingFaction in supportingFactions %}
+	text = {
+		localization_key = {{supportingFaction}}
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = {{supportingFaction}} }
+		}
+	}
+	{% endfor %}
+	{% for factionHappyWithChange in factionsHappyWithChange %}
+	text = {
+		localization_key = {{factionHappyWithChange.faction}}
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = {{factionHappyWithChange.faction}} }
+			has_policy_flag = {{factionHappyWithChange.fromPolicy}}
+		}
+	}
+	{% endfor %}
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_{{varname}}_DetractingFactions
+	{% for detractingFaction in detractingFactions %}
+	text = {
+		localization_key = {{detractingFaction}}
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = {{detractingFaction}} }
+		}
+	}
+	{% endfor %}
+	{% for factionAngryWithChange in factionsAngryWithChange %}
+	text = {
+		localization_key = {{factionAngryWithChange.faction}}
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = {{factionAngryWithChange.faction}} }
+			has_policy_flag = {{factionAngryWithChange.fromPolicy}}
+		}
+	}
+	{% endfor %}
+	default = ""
+}

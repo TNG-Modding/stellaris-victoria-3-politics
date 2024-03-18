@@ -26,7 +26,13 @@
                 "supportingFactions": [
                     "colonists"
                 ],
-                "detractingFactions": []
+                "detractingFactions": [],
+                "otherOptions": [
+                    "floatingNavy",
+                    "armada"
+                ],
+                "factionsAngryWithChange": [],
+                "factionsHappyWithChange": []
             },
             {
                 "varname": "floatingNavy",
@@ -47,7 +53,18 @@
                 ],
                 "potential": "",
                 "supportingFactions": [],
-                "detractingFactions": []
+                "detractingFactions": [],
+                "otherOptions": [
+                    "merchantMarine",
+                    "armada"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "colonists",
+                        "fromPolicy": "merchantMarine"
+                    }
+                ],
+                "factionsHappyWithChange": []
             },
             {
                 "varname": "armada",
@@ -64,7 +81,18 @@
                 ],
                 "potential": "",
                 "supportingFactions": [],
-                "detractingFactions": []
+                "detractingFactions": [],
+                "otherOptions": [
+                    "merchantMarine",
+                    "floatingNavy"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "colonists",
+                        "fromPolicy": "merchantMarine"
+                    }
+                ],
+                "factionsHappyWithChange": []
             }
         ]
     },
@@ -95,7 +123,22 @@
                 "supportingFactions": [
                     "preFtlConservatives"
                 ],
-                "detractingFactions": []
+                "detractingFactions": [],
+                "otherOptions": [
+                    "spacefaringStandingArmy",
+                    "grandArmy"
+                ],
+                "factionsAngryWithChange": [],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "spacefaringStandingArmy"
+                    },
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "grandArmy"
+                    }
+                ]
             },
             {
                 "varname": "spacefaringStandingArmy",
@@ -118,6 +161,22 @@
                 "supportingFactions": [],
                 "detractingFactions": [
                     "preFtlConservatives"
+                ],
+                "otherOptions": [
+                    "preFtlMilitaries",
+                    "grandArmy"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "preFtlMilitaries"
+                    }
+                ],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "grandArmy"
+                    }
                 ]
             },
             {
@@ -137,6 +196,22 @@
                 "supportingFactions": [],
                 "detractingFactions": [
                     "preFtlConservatives"
+                ],
+                "otherOptions": [
+                    "preFtlMilitaries",
+                    "spacefaringStandingArmy"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "preFtlMilitaries"
+                    }
+                ],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "spacefaringStandingArmy"
+                    }
                 ]
             }
         ]
@@ -172,6 +247,25 @@
                 ],
                 "detractingFactions": [
                     "consolidationists"
+                ],
+                "otherOptions": [
+                    "interplanetaryGoverance"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "consolidationists",
+                        "fromPolicy": "interplanetaryGoverance"
+                    }
+                ],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "interplanetaryGoverance"
+                    },
+                    {
+                        "faction": "colonists",
+                        "fromPolicy": "interplanetaryGoverance"
+                    }
                 ]
             },
             {
@@ -194,6 +288,25 @@
                 "detractingFactions": [
                     "preFtlConservatives",
                     "colonists"
+                ],
+                "otherOptions": [
+                    "dependentColonies"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "dependentColonies"
+                    },
+                    {
+                        "faction": "colonists",
+                        "fromPolicy": "dependentColonies"
+                    }
+                ],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "consolidationists",
+                        "fromPolicy": "dependentColonies"
+                    }
                 ]
             }
         ]
@@ -228,7 +341,17 @@
                     "preFtlConservatives",
                     "colonists"
                 ],
-                "detractingFactions": []
+                "detractingFactions": [],
+                "otherOptions": [
+                    "interplanetaryPoliticalOrganization"
+                ],
+                "factionsAngryWithChange": [],
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "interplanetaryPoliticalOrganization"
+                    }
+                ]
             },
             {
                 "varname": "interplanetaryPoliticalOrganization",
@@ -247,7 +370,21 @@
                 "supportingFactions": [],
                 "detractingFactions": [
                     "preFtlConservatives"
-                ]
+                ],
+                "otherOptions": [
+                    "preFtlPoliticalOrganization"
+                ],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "preFtlConservatives",
+                        "fromPolicy": "preFtlPoliticalOrganization"
+                    },
+                    {
+                        "faction": "colonists",
+                        "fromPolicy": "preFtlPoliticalOrganization"
+                    }
+                ],
+                "factionsHappyWithChange": []
             }
         ]
     }

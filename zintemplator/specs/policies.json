@@ -8,10 +8,23 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
         "policyCategory": "war_philosophy",
         "policyOption": "no_wars",
-        "otherPoliciesInGroup": ["unrestricted_wars", "liberation_wars"],
-        "supportingEthics": [ "xenophobe", "pacifist" ],
-        "supportingFactions": [ "isolationist", "prosperity" ],
-        "detractingFactions": [ "imperialist", "supremacist", "xenoist"],
+        "otherPoliciesInGroup": [
+            "unrestricted_wars",
+            "liberation_wars"
+        ],
+        "supportingEthics": [
+            "xenophobe",
+            "pacifist"
+        ],
+        "supportingFactions": [
+            "isolationist",
+            "prosperity"
+        ],
+        "detractingFactions": [
+            "imperialist",
+            "supremacist",
+            "xenoist"
+        ],
         "potential": "NOR = { has_ethic = ethic_fanatic_militarist has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator has_civic = civic_crusader_spirit }"
     },
     {
@@ -23,9 +36,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_militarist ethic = ethic_egalitarian }",
         "policyCategory": "war_philosophy",
         "policyOption": "unrestricted_wars",
-        "supportingEthics": [ "militarist", "xenophobe" ],
-        "supportingFactions": [ "imperialist", "supremacist" ],
-        "detractingFactions": [ "prosperity", "isolationist"],
+        "supportingEthics": [
+            "militarist",
+            "xenophobe"
+        ],
+        "supportingFactions": [
+            "imperialist",
+            "supremacist"
+        ],
+        "detractingFactions": [
+            "prosperity",
+            "isolationist"
+        ],
         "potential": "NOR = { has_ethic = ethic_pacifist has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_inwards_perfection has_civic = civic_crusader_spirit }"
     },
     {
@@ -37,9 +59,19 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophile ethic = ethic_pacifist }",
         "policyCategory": "war_philosophy",
         "policyOption": "liberation_wars",
-        "supportingEthics": [ "militarist", "xenophile" ],
-        "supportingFactions": [ "imperialist", "xenoist" ],
-        "detractingFactions": [ "prosperity", "isolationist", "supremacist" ],
+        "supportingEthics": [
+            "militarist",
+            "xenophile"
+        ],
+        "supportingFactions": [
+            "imperialist",
+            "xenoist"
+        ],
+        "detractingFactions": [
+            "prosperity",
+            "isolationist",
+            "supremacist"
+        ],
         "potential": "NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers}"
     },
     {
@@ -50,9 +82,15 @@
         "picture": "organic_oppression",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_outlawed",
-        "supportingEthics": [ "spiritualist" ],
-        "supportingFactions": [ "traditionalist"],
-        "detractingFactions": [ "technologist" ],
+        "supportingEthics": [
+            "spiritualist"
+        ],
+        "supportingFactions": [
+            "traditionalist"
+        ],
+        "detractingFactions": [
+            "technologist"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist has_country_flag = synthetic_empire }"
     },
     {
@@ -63,12 +101,17 @@
         "picture": "organic_oppression",
         "policyCategory": "artificial_intelligence_policy",
         "policyOption": "ai_servitude",
-        "supportingEthics": [ "materialist", "spiritualist" ],
-        "supportingFactions": [ "technologist", "traditionalist"],
-        "detractingFactions": [ ],
+        "supportingEthics": [
+            "materialist",
+            "spiritualist"
+        ],
+        "supportingFactions": [
+            "technologist",
+            "traditionalist"
+        ],
+        "detractingFactions": [],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOT = { has_country_flag = synthetic_empire }"
     },
-
     {
         "varname": "purgeNotAllowed",
         "displayName": "Purge not Allowed",
@@ -78,9 +121,20 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophobe ethic = ethic_authoritarian }",
         "policyCategory": "purge",
         "policyOption": "purge_not_allowed",
-        "supportingEthics": [ "xenophile", "pacifist", "egalitarian" ],
-        "supportingFactions": [ "xenoist", "progressive" ],
-        "detractingFactions": [ "supremacist", "imperialist", "totalitarian"],
+        "supportingEthics": [
+            "xenophile",
+            "pacifist",
+            "egalitarian"
+        ],
+        "supportingFactions": [
+            "xenoist",
+            "progressive"
+        ],
+        "detractingFactions": [
+            "supremacist",
+            "imperialist",
+            "totalitarian"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness } NOT = { has_valid_civic = civic_fanatic_purifiers }"
     },
     {
@@ -92,9 +146,20 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophobe ethic = ethic_authoritarian }",
         "policyCategory": "purge",
         "policyOption": "purge_displacement_only",
-        "supportingEthics": [ "xenophile", "pacifist", "egalitarian" ],
-        "supportingFactions": [ "xenoist", "progressive" ],
-        "detractingFactions": [ "supremacist", "imperialist", "totalitarian"],
+        "supportingEthics": [
+            "xenophile",
+            "pacifist",
+            "egalitarian"
+        ],
+        "supportingFactions": [
+            "xenoist",
+            "progressive"
+        ],
+        "detractingFactions": [
+            "supremacist",
+            "imperialist",
+            "totalitarian"
+        ],
         "potential": "NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } is_homicidal = no"
     },
     {
@@ -106,9 +171,20 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophobe ethic = ethic_authoritarian }",
         "policyCategory": "purge",
         "policyOption": "purge_allowed",
-        "supportingEthics": [ "xenophile", "pacifist", "egalitarian" ],
-        "supportingFactions": [ "supremacist", "imperialist", "totalitarian" ],
-        "detractingFactions": [ "xenoist", "progressive" ],
+        "supportingEthics": [
+            "xenophile",
+            "pacifist",
+            "egalitarian"
+        ],
+        "supportingFactions": [
+            "supremacist",
+            "imperialist",
+            "totalitarian"
+        ],
+        "detractingFactions": [
+            "xenoist",
+            "progressive"
+        ],
         "potential": "NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker }"
     },
     {
@@ -120,9 +196,20 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_egalitarian ethic = ethic_pacifist }",
         "policyCategory": "slavery",
         "policyOption": "slavery_not_allowed",
-        "supportingEthics": [ "xenophile", "pacifist", "egalitarian" ],
-        "supportingFactions": [ "supremacist", "imperialist", "totalitarian" ],
-        "detractingFactions": [ "xenoist", "progressive" ],
+        "supportingEthics": [
+            "xenophile",
+            "pacifist",
+            "egalitarian"
+        ],
+        "supportingFactions": [
+            "supremacist",
+            "imperialist",
+            "totalitarian"
+        ],
+        "detractingFactions": [
+            "xenoist",
+            "progressive"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets }"
     },
     {
@@ -134,9 +221,20 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_authoritarian ethic = ethic_pacifist }",
         "policyCategory": "slavery",
         "policyOption": "slavery_not_allowed",
-        "supportingEthics": [ "xenophile", "pacifist", "egalitarian" ],
-        "supportingFactions": [ "xenoist", "progressive" ],
-        "detractingFactions": [ "supremacist", "imperialist", "totalitarian" ],
+        "supportingEthics": [
+            "xenophile",
+            "pacifist",
+            "egalitarian"
+        ],
+        "supportingFactions": [
+            "xenoist",
+            "progressive"
+        ],
+        "detractingFactions": [
+            "supremacist",
+            "imperialist",
+            "totalitarian"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }"
     },
     {
@@ -148,9 +246,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_egalitarian ethic = ethic_militarist }",
         "policyCategory": "population_controls",
         "policyOption": "population_controls_not_allowed",
-        "supportingEthics": [ "egalitarian", "militarist" ],
-        "supportingFactions": [ "imperialist", "progressive" ],
-        "detractingFactions": [ "prosperity", "totalitarian" ],
+        "supportingEthics": [
+            "egalitarian",
+            "militarist"
+        ],
+        "supportingFactions": [
+            "imperialist",
+            "progressive"
+        ],
+        "detractingFactions": [
+            "prosperity",
+            "totalitarian"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness }"
     },
     {
@@ -162,9 +269,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_authoritarian ethic = ethic_pacifist }",
         "policyCategory": "population_controls",
         "policyOption": "population_controls_allowed",
-        "supportingEthics": [ "authoritarian", "pacifist" ],
-        "supportingFactions": [ "totalitarian", "prosperity" ],
-        "detractingFactions": [ "imperialist", "progressive" ],
+        "supportingEthics": [
+            "authoritarian",
+            "pacifist"
+        ],
+        "supportingFactions": [
+            "totalitarian",
+            "prosperity"
+        ],
+        "detractingFactions": [
+            "imperialist",
+            "progressive"
+        ],
         "potential": "NOT = { has_ethic = ethic_gestalt_consciousness }"
     },
     {
@@ -176,9 +292,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophile ethic = ethic_authoritarian }",
         "policyCategory": "refugees",
         "policyOption": "refugees_allowed",
-        "supportingEthics": [ "authoritarian", "xenophile" ],
-        "supportingFactions": [ "totalitarian", "xenoist" ],
-        "detractingFactions": [ "supremacist", "progressive" ],
+        "supportingEthics": [
+            "authoritarian",
+            "xenophile"
+        ],
+        "supportingFactions": [
+            "totalitarian",
+            "xenoist"
+        ],
+        "detractingFactions": [
+            "supremacist",
+            "progressive"
+        ],
         "potential": "has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe }"
     },
     {
@@ -190,9 +315,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_authoritarian ethic = ethic_militarist }",
         "policyCategory": "refugees",
         "policyOption": "refugees_only_citizens",
-        "supportingEthics": [ "authoritarian", "militarist" ],
-        "supportingFactions": [ "totalitarian", "imperialist" ],
-        "detractingFactions": [ "progressive", "prosperity" ],
+        "supportingEthics": [
+            "authoritarian",
+            "militarist"
+        ],
+        "supportingFactions": [
+            "totalitarian",
+            "imperialist"
+        ],
+        "detractingFactions": [
+            "progressive",
+            "prosperity"
+        ],
         "potential": "has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOT = { has_authority = auth_hive_mind has_ethic = ethic_gestalt_consciousness }"
     },
     {
@@ -204,9 +338,18 @@
         "rebellionEthics": "{ ethic = ethic_fanatic_xenophobe ethic = ethic_pacifist }",
         "policyCategory": "refugees",
         "policyOption": "refugees_not_allowed",
-        "supportingEthics": [ "authoritarian", "militarist" ],
-        "supportingFactions": [ "isolationist", "prosperity" ],
-        "detractingFactions": [ "xenoist", "imperialist" ],
+        "supportingEthics": [
+            "authoritarian",
+            "militarist"
+        ],
+        "supportingFactions": [
+            "isolationist",
+            "prosperity"
+        ],
+        "detractingFactions": [
+            "xenoist",
+            "imperialist"
+        ],
         "potential": "has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile }"
     },
     {
@@ -230,7 +373,13 @@
         "supportingFactions": [
             "colonists"
         ],
-        "detractingFactions": []
+        "detractingFactions": [],
+        "otherOptions": [
+            "floatingNavy",
+            "armada"
+        ],
+        "factionsAngryWithChange": [],
+        "factionsHappyWithChange": []
     },
     {
         "varname": "floatingNavy",
@@ -251,7 +400,18 @@
         ],
         "potential": "",
         "supportingFactions": [],
-        "detractingFactions": []
+        "detractingFactions": [],
+        "otherOptions": [
+            "merchantMarine",
+            "armada"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "colonists",
+                "fromPolicy": "merchantMarine"
+            }
+        ],
+        "factionsHappyWithChange": []
     },
     {
         "varname": "armada",
@@ -268,7 +428,18 @@
         ],
         "potential": "",
         "supportingFactions": [],
-        "detractingFactions": []
+        "detractingFactions": [],
+        "otherOptions": [
+            "merchantMarine",
+            "floatingNavy"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "colonists",
+                "fromPolicy": "merchantMarine"
+            }
+        ],
+        "factionsHappyWithChange": []
     },
     {
         "varname": "preFtlMilitaries",
@@ -291,7 +462,22 @@
         "supportingFactions": [
             "preFtlConservatives"
         ],
-        "detractingFactions": []
+        "detractingFactions": [],
+        "otherOptions": [
+            "spacefaringStandingArmy",
+            "grandArmy"
+        ],
+        "factionsAngryWithChange": [],
+        "factionsHappyWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "spacefaringStandingArmy"
+            },
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "grandArmy"
+            }
+        ]
     },
     {
         "varname": "spacefaringStandingArmy",
@@ -314,6 +500,22 @@
         "supportingFactions": [],
         "detractingFactions": [
             "preFtlConservatives"
+        ],
+        "otherOptions": [
+            "preFtlMilitaries",
+            "grandArmy"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "preFtlMilitaries"
+            }
+        ],
+        "factionsHappyWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "grandArmy"
+            }
         ]
     },
     {
@@ -333,6 +535,22 @@
         "supportingFactions": [],
         "detractingFactions": [
             "preFtlConservatives"
+        ],
+        "otherOptions": [
+            "preFtlMilitaries",
+            "spacefaringStandingArmy"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "preFtlMilitaries"
+            }
+        ],
+        "factionsHappyWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "spacefaringStandingArmy"
+            }
         ]
     },
     {
@@ -360,6 +578,25 @@
         ],
         "detractingFactions": [
             "consolidationists"
+        ],
+        "otherOptions": [
+            "interplanetaryGoverance"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "consolidationists",
+                "fromPolicy": "interplanetaryGoverance"
+            }
+        ],
+        "factionsHappyWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "interplanetaryGoverance"
+            },
+            {
+                "faction": "colonists",
+                "fromPolicy": "interplanetaryGoverance"
+            }
         ]
     },
     {
@@ -382,6 +619,25 @@
         "detractingFactions": [
             "preFtlConservatives",
             "colonists"
+        ],
+        "otherOptions": [
+            "dependentColonies"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "dependentColonies"
+            },
+            {
+                "faction": "colonists",
+                "fromPolicy": "dependentColonies"
+            }
+        ],
+        "factionsHappyWithChange": [
+            {
+                "faction": "consolidationists",
+                "fromPolicy": "dependentColonies"
+            }
         ]
     },
     {
@@ -408,7 +664,17 @@
             "preFtlConservatives",
             "colonists"
         ],
-        "detractingFactions": []
+        "detractingFactions": [],
+        "otherOptions": [
+            "interplanetaryPoliticalOrganization"
+        ],
+        "factionsAngryWithChange": [],
+        "factionsHappyWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "interplanetaryPoliticalOrganization"
+            }
+        ]
     },
     {
         "varname": "interplanetaryPoliticalOrganization",
@@ -427,6 +693,20 @@
         "supportingFactions": [],
         "detractingFactions": [
             "preFtlConservatives"
-        ]
+        ],
+        "otherOptions": [
+            "preFtlPoliticalOrganization"
+        ],
+        "factionsAngryWithChange": [
+            {
+                "faction": "preFtlConservatives",
+                "fromPolicy": "preFtlPoliticalOrganization"
+            },
+            {
+                "faction": "colonists",
+                "fromPolicy": "preFtlPoliticalOrganization"
+            }
+        ],
+        "factionsHappyWithChange": []
     }
 ]

@@ -5,29 +5,24 @@ set_citizenRefugees_base_success_chance = {
 
 	OWNER = {
 		every_pop_faction = {
-			
 			if = {
 				limit = {
-					is_pop_faction_type = totalitarian
+					OR = {
+						
+						is_pop_faction_type = totalitarian
+						
+						is_pop_faction_type = imperialist
+						
+						
+					}
+					
 				}
-				export_trigger_value_to_variable = { trigger = support variable = totalitarian_support }
-				multiply_variable = {which = totalitarian_support value = 100}
+				export_trigger_value_to_variable = { trigger = support variable = support }
+				multiply_variable = {which = support value = 100}
 				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.totalitarian_support }		
+					change_variable = { which = $WHICH$ value = PREV.support }		
 				}
 			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = imperialist
-				}
-				export_trigger_value_to_variable = { trigger = support variable = imperialist_support }
-				multiply_variable = {which = imperialist_support value = 100}
-				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.imperialist_support }		
-				}
-			}
-			
 		}
 	}
 }
@@ -38,29 +33,24 @@ set_citizenRefugees_base_stall_chance = {
 	set_variable = { which = $WHICH$ value = 0}
 	OWNER = {
 		every_pop_faction = {
-			
 			if = {
 				limit = {
-					is_pop_faction_type = progressive
+					OR = {
+						
+						is_pop_faction_type = progressive
+						
+						is_pop_faction_type = prosperity
+						
+						
+					}
+					
 				}
-				export_trigger_value_to_variable = { trigger = support variable = progressive_support }
-				multiply_variable = {which = progressive_support value = 100}
+				export_trigger_value_to_variable = { trigger = support variable = _support }
+				multiply_variable = {which = _support value = 100}
 				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.progressive_support }	
+					change_variable = { which = $WHICH$ value = PREV._support }	
 				}
 			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = prosperity
-				}
-				export_trigger_value_to_variable = { trigger = support variable = prosperity_support }
-				multiply_variable = {which = prosperity_support value = 100}
-				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.prosperity_support }	
-				}
-			}
-			
 		}
 	}
 }

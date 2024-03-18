@@ -29,3 +29,29 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_aiServitude_SupportingFactions
+	
+	text = {
+		localization_key = technologist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = technologist }
+		}
+	}
+	
+	text = {
+		localization_key = traditionalist
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = traditionalist }
+		}
+	}
+	
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_aiServitude_DetractingFactions
+	
+	
+	default = ""
+}

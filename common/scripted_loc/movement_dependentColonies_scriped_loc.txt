@@ -29,3 +29,60 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = MovementDesc_dependentColonies_SupportingFactions
+	
+	text = {
+		localization_key = preFtlConservatives
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
+		}
+	}
+	
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+		}
+	}
+	
+	
+	text = {
+		localization_key = preFtlConservatives
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
+			has_policy_flag = interplanetaryGoverance
+		}
+	}
+	
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+			has_policy_flag = interplanetaryGoverance
+		}
+	}
+	
+	default = ""
+}
+defined_text = {
+	name = MovementDesc_dependentColonies_DetractingFactions
+	
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+		}
+	}
+	
+	
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = interplanetaryGoverance
+		}
+	}
+	
+	default = ""
+}

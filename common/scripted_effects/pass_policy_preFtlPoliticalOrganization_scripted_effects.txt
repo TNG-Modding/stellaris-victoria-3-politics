@@ -5,29 +5,37 @@ set_preFtlPoliticalOrganization_base_success_chance = {
 
 	OWNER = {
 		every_pop_faction = {
-			
 			if = {
 				limit = {
-					is_pop_faction_type = preFtlConservatives
+					OR = {
+						
+						is_pop_faction_type = preFtlConservatives
+						
+						is_pop_faction_type = colonists
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = preFtlConservatives
+								ROOT = { has_policy_flag = interplanetaryPoliticalOrganization }
+							}
+						
+						
+					}
+					
 				}
-				export_trigger_value_to_variable = { trigger = support variable = preFtlConservatives_support }
-				multiply_variable = {which = preFtlConservatives_support value = 100}
+				export_trigger_value_to_variable = { trigger = support variable = support }
+				multiply_variable = {which = support value = 100}
 				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.preFtlConservatives_support }		
+					change_variable = { which = $WHICH$ value = PREV.support }		
 				}
 			}
-			
-			if = {
-				limit = {
-					is_pop_faction_type = colonists
-				}
-				export_trigger_value_to_variable = { trigger = support variable = colonists_support }
-				multiply_variable = {which = colonists_support value = 100}
-				ROOT = {
-					change_variable = { which = $WHICH$ value = PREV.colonists_support }		
-				}
-			}
-			
 		}
 	}
 }
@@ -38,7 +46,20 @@ set_preFtlPoliticalOrganization_base_stall_chance = {
 	set_variable = { which = $WHICH$ value = 0}
 	OWNER = {
 		every_pop_faction = {
-			
+			if = {
+				limit = {
+					OR = {
+						
+						
+					}
+					
+				}
+				export_trigger_value_to_variable = { trigger = support variable = _support }
+				multiply_variable = {which = _support value = 100}
+				ROOT = {
+					change_variable = { which = $WHICH$ value = PREV._support }	
+				}
+			}
 		}
 	}
 }
