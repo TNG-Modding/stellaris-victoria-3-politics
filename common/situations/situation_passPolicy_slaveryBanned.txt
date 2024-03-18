@@ -10,6 +10,7 @@ situation_passPolicy_slaveryBanned = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_slaveryBanned.2 } 
+		log = "Started slaveryBanned"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_slaveryBanned = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_slaveryBanned.7 }
 		}
+		log = "Progressed Completed slaveryBanned"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_slaveryBanned
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted slaveryBanned"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_slaveryBanned = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets } } }
+			target.owner = { 
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { has_valid_civic = civic_slaver_guilds has_valid_civic = civic_indentured_assets } }
+			}
 		}
 	}
 }

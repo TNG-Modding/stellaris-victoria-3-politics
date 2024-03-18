@@ -10,6 +10,7 @@ situation_passPolicy_purgeDisplacementOnly = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_purgeDisplacementOnly.2 } 
+		log = "Started purgeDisplacementOnly"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_purgeDisplacementOnly = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_purgeDisplacementOnly.7 }
 		}
+		log = "Progressed Completed purgeDisplacementOnly"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_purgeDisplacementOnly
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted purgeDisplacementOnly"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_purgeDisplacementOnly = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } is_homicidal = no } }
+			target.owner = { 
+				NOT = { NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } is_homicidal = no }
+			}
 		}
 	}
 }

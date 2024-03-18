@@ -9,28 +9,6 @@ calculate_preFtlMilitaries_movement_support_and_radicalism_from_factions = {
 					is_pop_faction_type = preFtlConservatives
 					
 					
-					
-					
-						
-					
-					
-						AND = {
-							is_pop_faction_type = preFtlConservatives
-							ROOT = { has_policy_flag = spacefaringStandingArmy }
-						}
-					
-					
-					
-					
-						
-					
-					
-						AND = {
-							is_pop_faction_type = preFtlConservatives
-							ROOT = { has_policy_flag = grandArmy }
-						}
-					
-					
 				}
 				
 			}

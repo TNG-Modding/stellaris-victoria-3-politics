@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_dependentColonies
 	text = {
-		localization_key = movement_dependentColonies_revolution_preserve
+		localization_key = movement_dependentColonies_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_dependentColonies_radicalism value > 25 }
 			has_country_flag = enacting_dependentColonies
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_dependentColonies_preserve
+		localization_key = movement_dependentColonies_appeased
 		trigger = {
 			check_variable = { which = movement_dependentColonies_radicalism value < 25 }
 			has_country_flag = enacting_dependentColonies
@@ -29,53 +29,34 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_dependentColonies_SupportingFactions
-	
+	name = MovementDesc_dependentColonies_Support_preFtlConservatives
 	text = {
 		localization_key = preFtlConservatives
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
 		}
 	}
-	
-	text = {
-		localization_key = colonists
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = colonists }
-		}
-	}
-	
-	
-	text = {
-		localization_key = preFtlConservatives
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
-			has_policy_flag = interplanetaryGoverance
-		}
-	}
-	
-	text = {
-		localization_key = colonists
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = colonists }
-			has_policy_flag = interplanetaryGoverance
-		}
-	}
-	
 	default = ""
 }
+
 defined_text = {
-	name = MovementDesc_dependentColonies_DetractingFactions
-	
+	name = MovementDesc_dependentColonies_Support_colonists
 	text = {
-		localization_key = consolidationists
+		localization_key = colonists
 		trigger = {
-			any_pop_faction = { is_pop_faction_type = consolidationists }
+			any_pop_faction = { is_pop_faction_type = colonists }
 		}
 	}
-	
-	
+	default = ""
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_dependentColonies_DetractByChange_consolidationists
 	text = {
 		localization_key = consolidationists
 		trigger = {
@@ -83,6 +64,5 @@ defined_text = {
 			has_policy_flag = interplanetaryGoverance
 		}
 	}
-	
 	default = ""
 }

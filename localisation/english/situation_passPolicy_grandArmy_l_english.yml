@@ -26,7 +26,7 @@
  situation_passPolicy_grandArmy.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_grandArmy.1.name:0 "Grand Army"
- faction_supportPolicy_grandArmy.1.desc:0 "Overall Support: [Root.faction_support_grandArmy]\n\nSupporters:\n\nDetractors:\npreFtlConservatives: [Root.preFtlConservatives_support_grandArmy]\n"
+ faction_supportPolicy_grandArmy.1.desc:0 "Overall Support: [Root.faction_support_grandArmy]\n\nSupporters:\n\nDetractors:\n"
 
  edict_pass_grandArmy:0 "Pass §BGrand Army§!"
  edict_pass_grandArmy_desc:0 "We move that our army should be a cilivization unto itself."

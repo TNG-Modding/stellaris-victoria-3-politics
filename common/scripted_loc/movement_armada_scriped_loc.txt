@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_armada
 	text = {
-		localization_key = movement_armada_revolution_preserve
+		localization_key = movement_armada_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_armada_radicalism value > 25 }
 			has_country_flag = enacting_armada
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_armada_preserve
+		localization_key = movement_armada_appeased
 		trigger = {
 			check_variable = { which = movement_armada_radicalism value < 25 }
 			has_country_flag = enacting_armada
@@ -29,16 +29,12 @@ defined_text = {
 		}
 	}
 }
+
+
+
+
 defined_text = {
-	name = MovementDesc_armada_SupportingFactions
-	
-	
-	default = ""
-}
-defined_text = {
-	name = MovementDesc_armada_DetractingFactions
-	
-	
+	name = MovementDesc_armada_DetractByChange_colonists
 	text = {
 		localization_key = colonists
 		trigger = {
@@ -46,6 +42,5 @@ defined_text = {
 			has_policy_flag = merchantMarine
 		}
 	}
-	
 	default = ""
 }

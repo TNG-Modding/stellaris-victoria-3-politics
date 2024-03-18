@@ -21,7 +21,7 @@ set_{{varname}}_base_success_chance = {
 						{%if isAlreadySupporting == "false" %}
 							AND = {
 								is_pop_faction_type = {{factionHappyWithChange.faction}}
-								ROOT = { has_policy_flag = {{factionHappyWithChange.fromPolicy}} }
+								OWNER = { has_policy_flag = {{factionHappyWithChange.fromPolicy}} }
 							}
 						{% endif %}
 						{% endfor %}
@@ -29,7 +29,7 @@ set_{{varname}}_base_success_chance = {
 					{% for factionAngryWithChange in factionsAngryWithChange %}
 					NAND = {
 						is_pop_faction_type = {{factionAngryWithChange.faction}}
-						ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+						OWNER = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
 					}
 					{% endfor %}
 				}
@@ -65,7 +65,7 @@ set_{{varname}}_base_stall_chance = {
 						{%if isAlreadyAgainst == "false" %}
 							AND = {
 								is_pop_faction_type = {{factionAngryWithChange.faction}}
-								ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+								OWNER = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
 							}
 						{% endif %}
 						{% endfor %}
@@ -73,7 +73,7 @@ set_{{varname}}_base_stall_chance = {
 					{% for factionAngryWithChange in factionsAngryWithChange %}
 					NAND = {
 						is_pop_faction_type = {{factionAngryWithChange.faction}}
-						ROOT = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
+						OWNER = { has_policy_flag = {{factionAngryWithChange.fromPolicy}} }
 					}
 					{% endfor %}
 				}

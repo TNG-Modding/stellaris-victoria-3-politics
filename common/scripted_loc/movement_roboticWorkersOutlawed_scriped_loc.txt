@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_roboticWorkersOutlawed
 	text = {
-		localization_key = movement_roboticWorkersOutlawed_revolution_preserve
+		localization_key = movement_roboticWorkersOutlawed_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value > 25 }
 			has_country_flag = enacting_roboticWorkersOutlawed
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_roboticWorkersOutlawed_preserve
+		localization_key = movement_roboticWorkersOutlawed_appeased
 		trigger = {
 			check_variable = { which = movement_roboticWorkersOutlawed_radicalism value < 25 }
 			has_country_flag = enacting_roboticWorkersOutlawed
@@ -29,29 +29,28 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_roboticWorkersOutlawed_SupportingFactions
-	
+	name = MovementDesc_roboticWorkersOutlawed_Support_traditionalist
 	text = {
 		localization_key = traditionalist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = traditionalist }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_roboticWorkersOutlawed_DetractingFactions
-	
+	name = MovementDesc_roboticWorkersOutlawed_Detract_technologist
 	text = {
 		localization_key = technologist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = technologist }
 		}
 	}
-	
-	
 	default = ""
 }
+

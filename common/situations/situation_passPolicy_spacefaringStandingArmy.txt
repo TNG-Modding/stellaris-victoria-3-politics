@@ -10,6 +10,7 @@ situation_passPolicy_spacefaringStandingArmy = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_spacefaringStandingArmy.2 } 
+		log = "Started spacefaringStandingArmy"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_spacefaringStandingArmy = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_spacefaringStandingArmy.7 }
 		}
+		log = "Progressed Completed spacefaringStandingArmy"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_spacefaringStandingArmy
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted spacefaringStandingArmy"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_spacefaringStandingArmy = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = {  } }
+			target.owner = { 
+				NOT = { always = yes }
+			}
 		}
 	}
 }

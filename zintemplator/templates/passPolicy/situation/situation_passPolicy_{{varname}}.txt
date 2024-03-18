@@ -10,6 +10,7 @@ situation_passPolicy_{{varname}} = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_{{varname}}.2 } 
+		log = "Started {{varname}}"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_{{varname}} = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_{{varname}}.7 }
 		}
+		log = "Progressed Completed {{varname}}"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_{{varname}}
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted {{varname}}"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_{{varname}} = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { {{potential}} } }
+			target.owner = { 
+				NOT = { {{potential}} }
+			}
 		}
 	}
 }

@@ -10,6 +10,7 @@ situation_passPolicy_interplanetaryPoliticalOrganization = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_interplanetaryPoliticalOrganization.2 } 
+		log = "Started interplanetaryPoliticalOrganization"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_interplanetaryPoliticalOrganization = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_interplanetaryPoliticalOrganization.7 }
 		}
+		log = "Progressed Completed interplanetaryPoliticalOrganization"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_interplanetaryPoliticalOrganization
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted interplanetaryPoliticalOrganization"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_interplanetaryPoliticalOrganization = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = {  } }
+			target.owner = { 
+				NOT = { always = yes }
+			}
 		}
 	}
 }

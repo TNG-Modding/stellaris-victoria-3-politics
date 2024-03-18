@@ -10,6 +10,7 @@ situation_passPolicy_purgeAllowed = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_purgeAllowed.2 } 
+		log = "Started purgeAllowed"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_purgeAllowed = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_purgeAllowed.7 }
 		}
+		log = "Progressed Completed purgeAllowed"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_purgeAllowed
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted purgeAllowed"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_purgeAllowed = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker } } }
+			target.owner = { 
+				NOT = { NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_gestalt_consciousness has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe has_menace_perk = menp_undertaker } }
+			}
 		}
 	}
 }

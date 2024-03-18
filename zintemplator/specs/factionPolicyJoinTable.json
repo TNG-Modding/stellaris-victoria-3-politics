@@ -6,7 +6,7 @@
                 "varname": "fleetFormation",
                 "displayName": "Fleet Formation",
                 "desc": "The powers and extent of our navy.",
-                "potential": "",
+                "potential": "always = yes",
                 
                 "options": [
                     {
@@ -18,7 +18,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "floatingNavy",
@@ -29,7 +29,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "militarist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "armada",
@@ -40,7 +40,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "militarist" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     }
                 ]
             },
@@ -48,7 +48,7 @@
                 "varname": "armyOrganization",
                 "displayName": "Army Organization",
                 "desc": "The powers and extent of our army.",
-                "potential": "",
+                "potential": "always = yes",
                 "options": [
                     {
                         "varname": "preFtlMilitaries",
@@ -59,7 +59,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "spacefaringStandingArmy",
@@ -70,7 +70,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "militarist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "grandArmy",
@@ -81,7 +81,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "militarist" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     }
                 ]
             },
@@ -89,7 +89,7 @@
                 "varname": "colonialAdministration",
                 "displayName": "Colonial Administration",
                 "desc": "The structure of our colonial holdings.",
-                "potential": "",
+                "potential": "always = yes",
                 "options": [
                     {
                         "varname": "dependentColonies",
@@ -100,7 +100,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "egalitarian", "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "interplanetaryGoverance",
@@ -111,7 +111,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     }
                 ]
             },
@@ -119,7 +119,7 @@
                 "varname": "politicalOrganization",
                 "displayName": "Political Organization",
                 "desc": "Our governmental powers and the abilities of factions within our empire.",
-                "potential": "",
+                "potential": "always = yes",
                 "options": [
                     {
                         "varname": "preFtlPoliticalOrganization",
@@ -130,7 +130,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "xenophobe", "xenophile", "militarist", "pacifist", "spiritualist", "materialist", "authoritarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     },
                     {
                         "varname": "interplanetaryPoliticalOrganization",
@@ -141,7 +141,7 @@
                         "picture": "surrender",
                         "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
                         "supportingEthics": [ "egalitarian" ],
-                        "potential": ""
+                        "potential": "always = yes"
                     }
                 ]
             }

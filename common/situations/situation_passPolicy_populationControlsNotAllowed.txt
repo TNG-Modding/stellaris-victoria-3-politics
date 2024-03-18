@@ -10,6 +10,7 @@ situation_passPolicy_populationControlsNotAllowed = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_populationControlsNotAllowed.2 } 
+		log = "Started populationControlsNotAllowed"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_populationControlsNotAllowed = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_populationControlsNotAllowed.7 }
 		}
+		log = "Progressed Completed populationControlsNotAllowed"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_populationControlsNotAllowed
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted populationControlsNotAllowed"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_populationControlsNotAllowed = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } } }
+			target.owner = { 
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+			}
 		}
 	}
 }

@@ -7,15 +7,24 @@
  situation_movement_defensiveWarsOnly_type:0 "[Owner.MovementName_defensiveWarsOnly]"
  situation_movement_defensiveWarsOnly_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YPacifist§! presence in our empire."
 # 
- situation_movement_defensiveWarsOnly_desc:0 "The people are calling for §BDefensive Wars Only§! as they believe violence should be the last resort to ensure the integrity of our nation.\n\nSupporting Factions:\n§G[Owner.MovementDesc_defensiveWarsOnly_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_defensiveWarsOnly_DetractingFactions]§!\nEthics: §Y$ethic_xenophobe$ $ethic_pacifist$ §!\nSupport: [Owner.movement_defensiveWarsOnly_support] Radicalism: [Owner.movement_defensiveWarsOnly_radicalism] Inertia: [Owner.movement_defensiveWarsOnly_inertia]\nFaction Support [Owner.movement_defensiveWarsOnly_faction_support] \nFaction Radicalism: [Owner.movement_defensiveWarsOnly_faction_radicalism] \nNumerical Support: [Owner.defensiveWarsOnly_supporting_population]/[Owner.defensiveWarsOnly_population]=[Owner.movement_defensiveWarsOnly_numerical_support] \nNumerical Radicalism: [Owner.defensiveWarsOnly_radical_population]/[Owner.defensiveWarsOnly_population]=[Owner.movement_defensiveWarsOnly_numerical_radicalism]"
+ situation_movement_defensiveWarsOnly_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_defensiveWarsOnly_Support_isolationist]   [Owner.MovementDesc_defensiveWarsOnly_Support_prosperity]   §!"
+
+ situation_movement_defensiveWarsOnly_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_defensiveWarsOnly_Detract_imperialist]   [Owner.MovementDesc_defensiveWarsOnly_Detract_supremacist]   [Owner.MovementDesc_defensiveWarsOnly_Detract_xenoist]   §!"
+
+ situation_movement_defensiveWarsOnly_ethics:0 "Ethics: §Y$ethic_xenophobe$ $ethic_pacifist$ §!"
+
+ situation_movement_defensiveWarsOnly_stats:0 "Support: [Owner.movement_defensiveWarsOnly_support] Radicalism: [Owner.movement_defensiveWarsOnly_radicalism] Inertia: [Owner.movement_defensiveWarsOnly_inertia]\nFaction Support [Owner.movement_defensiveWarsOnly_faction_support] \nFaction Radicalism: [Owner.movement_defensiveWarsOnly_faction_radicalism] \nNumerical Support: [Owner.defensiveWarsOnly_supporting_population]/[Owner.defensiveWarsOnly_population]=[Owner.movement_defensiveWarsOnly_numerical_support] \nNumerical Radicalism: [Owner.defensiveWarsOnly_radical_population]/[Owner.defensiveWarsOnly_population]=[Owner.movement_defensiveWarsOnly_numerical_radicalism]"
+
+ situation_movement_defensiveWarsOnly_quickDesc:0 "The people are calling for §BDefensive Wars Only§! as they believe violence should be the last resort to ensure the integrity of our nation."
+ situation_movement_defensiveWarsOnly_desc:0 "$situation_movement_defensiveWarsOnly_quickDesc$\n\n$situation_movement_defensiveWarsOnly_supporting$\n$situation_movement_defensiveWarsOnly_detracting$\n$situation_movement_defensiveWarsOnly_ethics$\n\n$situation_movement_defensiveWarsOnly_stats$"
  situation_movement_finisher_defensiveWarsOnly:0 "Revolution for Defensive Wars Only."
  
  movement_defensiveWarsOnly_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_defensiveWarsOnly_radicalism]§! is above 25."
 
- movement_defensiveWarsOnly_revolution_preserve:0 "§RRevolution to Preserve Defensive Wars Only§!"
+ movement_defensiveWarsOnly_revolution_appeased:0 "§GAppeased Revolution for Defensive Wars Only§!"
  movement_defensiveWarsOnly_revolution:0 "§RRevolution for Defensive Wars Only§!"
  movement_defensiveWarsOnly:0 "Movement for Defensive Wars Only"
- movement_defensiveWarsOnly_preserve:0 "Movement to Preserve Defensive Wars Only"
+ movement_defensiveWarsOnly_appeased:0 "Appeased Movement for Defensive Wars Only"
 
  movement_defensiveWarsOnly.6.title:0 "Secession over §BDefensive Wars Only§!"
  movement_defensiveWarsOnly.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BDefensive Wars Only§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BDefensive Wars Only§!."

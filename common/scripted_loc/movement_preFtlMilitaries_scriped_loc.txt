@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_preFtlMilitaries
 	text = {
-		localization_key = movement_preFtlMilitaries_revolution_preserve
+		localization_key = movement_preFtlMilitaries_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_preFtlMilitaries_radicalism value > 25 }
 			has_country_flag = enacting_preFtlMilitaries
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_preFtlMilitaries_preserve
+		localization_key = movement_preFtlMilitaries_appeased
 		trigger = {
 			check_variable = { which = movement_preFtlMilitaries_radicalism value < 25 }
 			has_country_flag = enacting_preFtlMilitaries
@@ -29,38 +29,17 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_preFtlMilitaries_SupportingFactions
-	
+	name = MovementDesc_preFtlMilitaries_Support_preFtlConservatives
 	text = {
 		localization_key = preFtlConservatives
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
 		}
 	}
-	
-	
-	text = {
-		localization_key = preFtlConservatives
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
-			has_policy_flag = spacefaringStandingArmy
-		}
-	}
-	
-	text = {
-		localization_key = preFtlConservatives
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
-			has_policy_flag = grandArmy
-		}
-	}
-	
 	default = ""
 }
-defined_text = {
-	name = MovementDesc_preFtlMilitaries_DetractingFactions
-	
-	
-	default = ""
-}
+
+
+

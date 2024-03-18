@@ -10,6 +10,7 @@ situation_passPolicy_roboticWorkersOutlawed = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.2 } 
+		log = "Started roboticWorkersOutlawed"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_roboticWorkersOutlawed = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_roboticWorkersOutlawed.7 }
 		}
+		log = "Progressed Completed roboticWorkersOutlawed"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_roboticWorkersOutlawed
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted roboticWorkersOutlawed"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_roboticWorkersOutlawed = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist has_country_flag = synthetic_empire } } }
+			target.owner = { 
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOR = { has_ethic = ethic_materialist has_ethic = ethic_fanatic_materialist has_country_flag = synthetic_empire } }
+			}
 		}
 	}
 }

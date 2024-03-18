@@ -14,19 +14,6 @@ set_preFtlPoliticalOrganization_base_success_chance = {
 						is_pop_faction_type = colonists
 						
 						
-						
-						
-							
-						
-							
-						
-						
-							AND = {
-								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = interplanetaryPoliticalOrganization }
-							}
-						
-						
 					}
 					
 				}

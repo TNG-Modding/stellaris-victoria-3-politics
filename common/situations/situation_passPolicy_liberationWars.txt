@@ -10,6 +10,7 @@ situation_passPolicy_liberationWars = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_liberationWars.2 } 
+		log = "Started liberationWars"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_liberationWars = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_liberationWars.7 }
 		}
+		log = "Progressed Completed liberationWars"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_liberationWars
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted liberationWars"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_liberationWars = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers} } }
+			target.owner = { 
+				NOT = { NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers} }
+			}
 		}
 	}
 }

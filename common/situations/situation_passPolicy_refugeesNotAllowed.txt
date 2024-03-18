@@ -10,6 +10,7 @@ situation_passPolicy_refugeesNotAllowed = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_refugeesNotAllowed.2 } 
+		log = "Started refugeesNotAllowed"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_refugeesNotAllowed = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_refugeesNotAllowed.7 }
 		}
+		log = "Progressed Completed refugeesNotAllowed"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_refugeesNotAllowed
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted refugeesNotAllowed"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_refugeesNotAllowed = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } } }
+			target.owner = { 
+				NOT = { has_encountered_other_species = yes is_country_type = default OR = { NOT = { has_ethic = ethic_gestalt_consciousness } has_valid_civic = civic_machine_servitor } NOR = { has_ethic = ethic_xenophile has_ethic = ethic_fanatic_xenophile } }
+			}
 		}
 	}
 }

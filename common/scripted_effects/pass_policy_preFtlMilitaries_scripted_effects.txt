@@ -12,28 +12,6 @@ set_preFtlMilitaries_base_success_chance = {
 						is_pop_faction_type = preFtlConservatives
 						
 						
-						
-						
-							
-						
-						
-							AND = {
-								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = spacefaringStandingArmy }
-							}
-						
-						
-						
-						
-							
-						
-						
-							AND = {
-								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = grandArmy }
-							}
-						
-						
 					}
 					
 				}

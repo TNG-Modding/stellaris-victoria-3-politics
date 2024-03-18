@@ -7,15 +7,24 @@
  situation_movement_slaveryAllowed_type:0 "[Owner.MovementName_slaveryAllowed]"
  situation_movement_slaveryAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YAuthoritarian§! presence in our empire."
 # 
- situation_movement_slaveryAllowed_desc:0 "The people are calling for §BSlavery Allowed§! as they believe slavery is a natural part of life.\n\nSupporting Factions:\n§G[Owner.MovementDesc_slaveryAllowed_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_slaveryAllowed_DetractingFactions]§!\nEthics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!\nSupport: [Owner.movement_slaveryAllowed_support] Radicalism: [Owner.movement_slaveryAllowed_radicalism] Inertia: [Owner.movement_slaveryAllowed_inertia]\nFaction Support [Owner.movement_slaveryAllowed_faction_support] \nFaction Radicalism: [Owner.movement_slaveryAllowed_faction_radicalism] \nNumerical Support: [Owner.slaveryAllowed_supporting_population]/[Owner.slaveryAllowed_population]=[Owner.movement_slaveryAllowed_numerical_support] \nNumerical Radicalism: [Owner.slaveryAllowed_radical_population]/[Owner.slaveryAllowed_population]=[Owner.movement_slaveryAllowed_numerical_radicalism]"
+ situation_movement_slaveryAllowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_slaveryAllowed_Support_xenoist]   [Owner.MovementDesc_slaveryAllowed_Support_progressive]   §!"
+
+ situation_movement_slaveryAllowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_slaveryAllowed_Detract_supremacist]   [Owner.MovementDesc_slaveryAllowed_Detract_imperialist]   [Owner.MovementDesc_slaveryAllowed_Detract_totalitarian]   §!"
+
+ situation_movement_slaveryAllowed_ethics:0 "Ethics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!"
+
+ situation_movement_slaveryAllowed_stats:0 "Support: [Owner.movement_slaveryAllowed_support] Radicalism: [Owner.movement_slaveryAllowed_radicalism] Inertia: [Owner.movement_slaveryAllowed_inertia]\nFaction Support [Owner.movement_slaveryAllowed_faction_support] \nFaction Radicalism: [Owner.movement_slaveryAllowed_faction_radicalism] \nNumerical Support: [Owner.slaveryAllowed_supporting_population]/[Owner.slaveryAllowed_population]=[Owner.movement_slaveryAllowed_numerical_support] \nNumerical Radicalism: [Owner.slaveryAllowed_radical_population]/[Owner.slaveryAllowed_population]=[Owner.movement_slaveryAllowed_numerical_radicalism]"
+
+ situation_movement_slaveryAllowed_quickDesc:0 "The people are calling for §BSlavery Allowed§! as they believe slavery is a natural part of life."
+ situation_movement_slaveryAllowed_desc:0 "$situation_movement_slaveryAllowed_quickDesc$\n\n$situation_movement_slaveryAllowed_supporting$\n$situation_movement_slaveryAllowed_detracting$\n$situation_movement_slaveryAllowed_ethics$\n\n$situation_movement_slaveryAllowed_stats$"
  situation_movement_finisher_slaveryAllowed:0 "Revolution for Slavery Allowed."
  
  movement_slaveryAllowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_slaveryAllowed_radicalism]§! is above 25."
 
- movement_slaveryAllowed_revolution_preserve:0 "§RRevolution to Preserve Slavery Allowed§!"
+ movement_slaveryAllowed_revolution_appeased:0 "§GAppeased Revolution for Slavery Allowed§!"
  movement_slaveryAllowed_revolution:0 "§RRevolution for Slavery Allowed§!"
  movement_slaveryAllowed:0 "Movement for Slavery Allowed"
- movement_slaveryAllowed_preserve:0 "Movement to Preserve Slavery Allowed"
+ movement_slaveryAllowed_appeased:0 "Appeased Movement for Slavery Allowed"
 
  movement_slaveryAllowed.6.title:0 "Secession over §BSlavery Allowed§!"
  movement_slaveryAllowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BSlavery Allowed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BSlavery Allowed§!."

@@ -79,15 +79,11 @@ situation_movement_liberationWars = {
 		base = 0
 	}
 	abort_trigger = {
-		NOT = {
-			target.owner = { NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers} }
-		}
-		target.owner = {
-			has_policy_flag = liberation_wars
-		}
-		OR = {
-			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
+		target.owner = { 
+			OR = {
+				NOT = { NOR = {has_ethic = ethic_fanatic_pacifist has_valid_civic = civic_fanatic_purifiers} }
+				has_policy_flag = liberation_wars
+			}
 		}
 	}
 }

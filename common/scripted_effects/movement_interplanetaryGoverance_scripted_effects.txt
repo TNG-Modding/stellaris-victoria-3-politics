@@ -9,17 +9,6 @@ calculate_interplanetaryGoverance_movement_support_and_radicalism_from_factions 
 					is_pop_faction_type = consolidationists
 					
 					
-					
-					
-						
-					
-					
-						AND = {
-							is_pop_faction_type = consolidationists
-							ROOT = { has_policy_flag = dependentColonies }
-						}
-					
-					
 				}
 				
 				NAND = {

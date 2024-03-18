@@ -7,15 +7,24 @@
  situation_movement_liberationWars_type:0 "[Owner.MovementName_liberationWars]"
  situation_movement_liberationWars_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YXenophile§! presence in our empire."
 # 
- situation_movement_liberationWars_desc:0 "The people are calling for §BLiberation Wars Only§! as they believe we must further our own interests, even when they run contrary to the interests of others.\n\nSupporting Factions:\n§G[Owner.MovementDesc_liberationWars_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_liberationWars_DetractingFactions]§!\nEthics: §Y$ethic_militarist$ $ethic_xenophile$ §!\nSupport: [Owner.movement_liberationWars_support] Radicalism: [Owner.movement_liberationWars_radicalism] Inertia: [Owner.movement_liberationWars_inertia]\nFaction Support [Owner.movement_liberationWars_faction_support] \nFaction Radicalism: [Owner.movement_liberationWars_faction_radicalism] \nNumerical Support: [Owner.liberationWars_supporting_population]/[Owner.liberationWars_population]=[Owner.movement_liberationWars_numerical_support] \nNumerical Radicalism: [Owner.liberationWars_radical_population]/[Owner.liberationWars_population]=[Owner.movement_liberationWars_numerical_radicalism]"
+ situation_movement_liberationWars_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_liberationWars_Support_imperialist]   [Owner.MovementDesc_liberationWars_Support_xenoist]   §!"
+
+ situation_movement_liberationWars_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_liberationWars_Detract_prosperity]   [Owner.MovementDesc_liberationWars_Detract_isolationist]   [Owner.MovementDesc_liberationWars_Detract_supremacist]   §!"
+
+ situation_movement_liberationWars_ethics:0 "Ethics: §Y$ethic_militarist$ $ethic_xenophile$ §!"
+
+ situation_movement_liberationWars_stats:0 "Support: [Owner.movement_liberationWars_support] Radicalism: [Owner.movement_liberationWars_radicalism] Inertia: [Owner.movement_liberationWars_inertia]\nFaction Support [Owner.movement_liberationWars_faction_support] \nFaction Radicalism: [Owner.movement_liberationWars_faction_radicalism] \nNumerical Support: [Owner.liberationWars_supporting_population]/[Owner.liberationWars_population]=[Owner.movement_liberationWars_numerical_support] \nNumerical Radicalism: [Owner.liberationWars_radical_population]/[Owner.liberationWars_population]=[Owner.movement_liberationWars_numerical_radicalism]"
+
+ situation_movement_liberationWars_quickDesc:0 "The people are calling for §BLiberation Wars Only§! as they believe we must further our own interests, even when they run contrary to the interests of others."
+ situation_movement_liberationWars_desc:0 "$situation_movement_liberationWars_quickDesc$\n\n$situation_movement_liberationWars_supporting$\n$situation_movement_liberationWars_detracting$\n$situation_movement_liberationWars_ethics$\n\n$situation_movement_liberationWars_stats$"
  situation_movement_finisher_liberationWars:0 "Revolution for Liberation Wars Only."
  
  movement_liberationWars_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_liberationWars_radicalism]§! is above 25."
 
- movement_liberationWars_revolution_preserve:0 "§RRevolution to Preserve Liberation Wars Only§!"
+ movement_liberationWars_revolution_appeased:0 "§GAppeased Revolution for Liberation Wars Only§!"
  movement_liberationWars_revolution:0 "§RRevolution for Liberation Wars Only§!"
  movement_liberationWars:0 "Movement for Liberation Wars Only"
- movement_liberationWars_preserve:0 "Movement to Preserve Liberation Wars Only"
+ movement_liberationWars_appeased:0 "Appeased Movement for Liberation Wars Only"
 
  movement_liberationWars.6.title:0 "Secession over §BLiberation Wars Only§!"
  movement_liberationWars.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BLiberation Wars Only§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BLiberation Wars Only§!."

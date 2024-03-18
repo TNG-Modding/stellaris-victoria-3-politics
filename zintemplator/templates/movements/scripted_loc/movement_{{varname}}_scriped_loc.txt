@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_{{varname}}
 	text = {
-		localization_key = movement_{{varname}}_revolution_preserve
+		localization_key = movement_{{varname}}_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_{{varname}}_radicalism value > 25 }
 			has_country_flag = enacting_{{varname}}
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_{{varname}}_preserve
+		localization_key = movement_{{varname}}_appeased
 		trigger = {
 			check_variable = { which = movement_{{varname}}_radicalism value < 25 }
 			has_country_flag = enacting_{{varname}}
@@ -29,17 +29,21 @@ defined_text = {
 		}
 	}
 }
+{% for supportingFaction in supportingFactions %}
 defined_text = {
-	name = MovementDesc_{{varname}}_SupportingFactions
-	{% for supportingFaction in supportingFactions %}
+	name = MovementDesc_{{varname}}_Support_{{supportingFaction}}
 	text = {
 		localization_key = {{supportingFaction}}
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = {{supportingFaction}} }
 		}
 	}
-	{% endfor %}
-	{% for factionHappyWithChange in factionsHappyWithChange %}
+	default = ""
+}
+{% endfor %}
+{% for factionHappyWithChange in factionsHappyWithChange %}
+defined_text = {
+	name = MovementDesc_{{varname}}_SupportByChange_{{factionHappyWithChange.faction}}
 	text = {
 		localization_key = {{factionHappyWithChange.faction}}
 		trigger = {
@@ -47,20 +51,24 @@ defined_text = {
 			has_policy_flag = {{factionHappyWithChange.fromPolicy}}
 		}
 	}
-	{% endfor %}
 	default = ""
 }
+{% endfor %}
+{% for detractingFaction in detractingFactions %}
 defined_text = {
-	name = MovementDesc_{{varname}}_DetractingFactions
-	{% for detractingFaction in detractingFactions %}
+	name = MovementDesc_{{varname}}_Detract_{{detractingFaction}}
 	text = {
 		localization_key = {{detractingFaction}}
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = {{detractingFaction}} }
 		}
 	}
-	{% endfor %}
-	{% for factionAngryWithChange in factionsAngryWithChange %}
+	default = ""
+}
+{% endfor %}
+{% for factionAngryWithChange in factionsAngryWithChange %}
+defined_text = {
+	name = MovementDesc_{{varname}}_DetractByChange_{{factionAngryWithChange.faction}}
 	text = {
 		localization_key = {{factionAngryWithChange.faction}}
 		trigger = {
@@ -68,6 +76,6 @@ defined_text = {
 			has_policy_flag = {{factionAngryWithChange.fromPolicy}}
 		}
 	}
-	{% endfor %}
 	default = ""
 }
+{% endfor %}

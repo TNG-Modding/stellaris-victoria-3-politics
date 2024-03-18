@@ -79,15 +79,11 @@ situation_movement_{{varname}} = {
 		base = 0
 	}
 	abort_trigger = {
-		NOT = {
-			target.owner = { {{potential}} }
-		}
-		target.owner = {
-			has_policy_flag = {{policyOption}}
-		}
-		OR = {
-			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
+		target.owner = { 
+			OR = {
+				NOT = { {{potential}} }
+				has_policy_flag = {{policyOption}}
+			}
 		}
 	}
 }

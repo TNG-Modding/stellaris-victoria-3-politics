@@ -14,7 +14,7 @@ event = {
 		
 			if = {
 				limit = {
-					
+					always = yes
 					NOT = { has_policy_flag = interplanetaryPoliticalOrganization }
 				}
 				set_country_flag = suppress_vanilla_factions
@@ -43,7 +43,7 @@ country_event = {
 
 		if = {
 			limit = {
-				
+				always = yes
 				
 			}
 			calculate_interplanetaryPoliticalOrganization_movement_support_and_radicalism_from_factions = {
@@ -90,7 +90,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				
+				always = yes
 			}
 			start_situation = {
 				type = situation_movement_interplanetaryPoliticalOrganization

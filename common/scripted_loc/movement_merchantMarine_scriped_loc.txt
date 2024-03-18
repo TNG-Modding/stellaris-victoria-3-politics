@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_merchantMarine
 	text = {
-		localization_key = movement_merchantMarine_revolution_preserve
+		localization_key = movement_merchantMarine_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_merchantMarine_radicalism value > 25 }
 			has_country_flag = enacting_merchantMarine
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_merchantMarine_preserve
+		localization_key = movement_merchantMarine_appeased
 		trigger = {
 			check_variable = { which = movement_merchantMarine_radicalism value < 25 }
 			has_country_flag = enacting_merchantMarine
@@ -29,22 +29,17 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_merchantMarine_SupportingFactions
-	
+	name = MovementDesc_merchantMarine_Support_colonists
 	text = {
 		localization_key = colonists
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = colonists }
 		}
 	}
-	
-	
 	default = ""
 }
-defined_text = {
-	name = MovementDesc_merchantMarine_DetractingFactions
-	
-	
-	default = ""
-}
+
+
+

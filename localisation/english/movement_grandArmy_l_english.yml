@@ -7,15 +7,24 @@
  situation_movement_grandArmy_type:0 "[Owner.MovementName_grandArmy]"
  situation_movement_grandArmy_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YMilitarist§! presence in our empire."
 # 
- situation_movement_grandArmy_desc:0 "The people are calling for §BGrand Army§! as they believe our army should be a cilivization unto itself.\n\nSupporting Factions:\n§G[Owner.MovementDesc_grandArmy_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_grandArmy_DetractingFactions]§!\nEthics: §Y$ethic_militarist$ §!\nSupport: [Owner.movement_grandArmy_support] Radicalism: [Owner.movement_grandArmy_radicalism] Inertia: [Owner.movement_grandArmy_inertia]\nFaction Support [Owner.movement_grandArmy_faction_support] \nFaction Radicalism: [Owner.movement_grandArmy_faction_radicalism] \nNumerical Support: [Owner.grandArmy_supporting_population]/[Owner.grandArmy_population]=[Owner.movement_grandArmy_numerical_support] \nNumerical Radicalism: [Owner.grandArmy_radical_population]/[Owner.grandArmy_population]=[Owner.movement_grandArmy_numerical_radicalism]"
+ situation_movement_grandArmy_supporting:0 "Supporting Factions:\n§G§!"
+
+ situation_movement_grandArmy_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_grandArmy_DetractByChange_preFtlConservatives]   §!"
+
+ situation_movement_grandArmy_ethics:0 "Ethics: §Y$ethic_militarist$ §!"
+
+ situation_movement_grandArmy_stats:0 "Support: [Owner.movement_grandArmy_support] Radicalism: [Owner.movement_grandArmy_radicalism] Inertia: [Owner.movement_grandArmy_inertia]\nFaction Support [Owner.movement_grandArmy_faction_support] \nFaction Radicalism: [Owner.movement_grandArmy_faction_radicalism] \nNumerical Support: [Owner.grandArmy_supporting_population]/[Owner.grandArmy_population]=[Owner.movement_grandArmy_numerical_support] \nNumerical Radicalism: [Owner.grandArmy_radical_population]/[Owner.grandArmy_population]=[Owner.movement_grandArmy_numerical_radicalism]"
+
+ situation_movement_grandArmy_quickDesc:0 "The people are calling for §BGrand Army§! as they believe our army should be a cilivization unto itself."
+ situation_movement_grandArmy_desc:0 "$situation_movement_grandArmy_quickDesc$\n\n$situation_movement_grandArmy_supporting$\n$situation_movement_grandArmy_detracting$\n$situation_movement_grandArmy_ethics$\n\n$situation_movement_grandArmy_stats$"
  situation_movement_finisher_grandArmy:0 "Revolution for Grand Army."
  
  movement_grandArmy_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_grandArmy_radicalism]§! is above 25."
 
- movement_grandArmy_revolution_preserve:0 "§RRevolution to Preserve Grand Army§!"
+ movement_grandArmy_revolution_appeased:0 "§GAppeased Revolution for Grand Army§!"
  movement_grandArmy_revolution:0 "§RRevolution for Grand Army§!"
  movement_grandArmy:0 "Movement for Grand Army"
- movement_grandArmy_preserve:0 "Movement to Preserve Grand Army"
+ movement_grandArmy_appeased:0 "Appeased Movement for Grand Army"
 
  movement_grandArmy.6.title:0 "Secession over §BGrand Army§!"
  movement_grandArmy.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BGrand Army§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BGrand Army§!."

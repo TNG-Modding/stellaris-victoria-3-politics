@@ -27,10 +27,10 @@
                         {% for faction in factions %}{% for againstPolicy in faction.againstPolicies %}{%if againstPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
                     ],
                     "otherOptions": [
-                        {% for otherOption in policy.options %}{%if otherOption.varname != option.varname %}"{{otherOption.varname}}", {% endif %}{% endfor %}
+                        {% for otherOption in policy.options %}{%if otherOption.varname != option.varname %}"{{otherOption.varname}}",{% endif %}{% endfor %}
                     ],
                     "factionsAngryWithChange": [
-                        {% for potentiallyAngryFaction in factions %}{% for potentiallyAngryFactionsSupportedPolicy in potentiallyAngryFaction.supportedPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyAngryFactionsSupportedPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyAngryFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" },  {% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
+                        {% for potentiallyAngryFaction in factions %}{% for potentiallyAngryFactionsSupportedPolicy in potentiallyAngryFaction.supportedPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyAngryFactionsSupportedPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyAngryFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" },{% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
                     ],
                     "factionsHappyWithChange": [
                         {% for potentiallyHappyFaction in factions %}{% for potentiallyHappyFactionsAgainstPolicy in potentiallyHappyFaction.againstPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyHappyFactionsAgainstPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyHappyFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" }, 
@@ -64,10 +64,10 @@
                 {% for faction in factions %}{% for againstPolicy in faction.againstPolicies %}{%if againstPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
             ],
             "otherOptions": [
-                {% for otherOption in policy.options %}{%if otherOption.varname != option.varname %}"{{otherOption.varname}}", {% endif %}{% endfor %}
+                {% for otherOption in policy.options %}{%if otherOption.varname != option.varname %}"{{otherOption.varname}}",{% endif %}{% endfor %}
             ],
             "factionsAngryWithChange": [
-                {% for potentiallyAngryFaction in factions %}{% for potentiallyAngryFactionsSupportedPolicy in potentiallyAngryFaction.supportedPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyAngryFactionsSupportedPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyAngryFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" },  {% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
+                {% for potentiallyAngryFaction in factions %}{% for potentiallyAngryFactionsSupportedPolicy in potentiallyAngryFaction.supportedPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyAngryFactionsSupportedPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyAngryFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" },{% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
             ],
             "factionsHappyWithChange": [
                 {% for potentiallyHappyFaction in factions %}{% for potentiallyHappyFactionsAgainstPolicy in potentiallyHappyFaction.againstPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyHappyFactionsAgainstPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyHappyFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" }, 

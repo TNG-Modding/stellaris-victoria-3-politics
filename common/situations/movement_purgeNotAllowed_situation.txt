@@ -79,15 +79,11 @@ situation_movement_purgeNotAllowed = {
 		base = 0
 	}
 	abort_trigger = {
-		NOT = {
-			target.owner = { NOT = { has_ethic = ethic_gestalt_consciousness } NOT = { has_valid_civic = civic_fanatic_purifiers } }
-		}
-		target.owner = {
-			has_policy_flag = purge_not_allowed
-		}
-		OR = {
-			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
+		target.owner = { 
+			OR = {
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } NOT = { has_valid_civic = civic_fanatic_purifiers } }
+				has_policy_flag = purge_not_allowed
+			}
 		}
 	}
 }

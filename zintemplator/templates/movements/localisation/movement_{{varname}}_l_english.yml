@@ -7,15 +7,24 @@ l_english:
  situation_movement_{{varname}}_type:0 "[Owner.MovementName_{{varname}}]"
  situation_movement_{{varname}}_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y{{ethicAdjective}}§! presence in our empire."
 # 
- situation_movement_{{varname}}_desc:0 "The people are calling for §B{{displayName}}§! as they believe {{description}}.\n\nSupporting Factions:\n§G[Owner.MovementDesc_{{varname}}_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_{{varname}}_DetractingFactions]§!\nEthics: §Y{% for supportingEthic in supportingEthics %}$ethic_{{supportingEthic}}$ {% endfor %}§!\nSupport: [Owner.movement_{{varname}}_support] Radicalism: [Owner.movement_{{varname}}_radicalism] Inertia: [Owner.movement_{{varname}}_inertia]\nFaction Support [Owner.movement_{{varname}}_faction_support] \nFaction Radicalism: [Owner.movement_{{varname}}_faction_radicalism] \nNumerical Support: [Owner.{{varname}}_supporting_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_support] \nNumerical Radicalism: [Owner.{{varname}}_radical_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_radicalism]"
+ situation_movement_{{varname}}_supporting:0 "Supporting Factions:\n§G{% for supportingFaction in supportingFactions %}[Owner.MovementDesc_{{varname}}_Support_{{supportingFaction}}]   {% endfor %}{% for factionHappyWithChange in factionsHappyWithChange %}[Owner.MovementDesc_{{varname}}_SupportByChange_{{factionHappyWithChange.faction}}]   {% endfor %}§!"
+
+ situation_movement_{{varname}}_detracting:0 "Detracting Factions:\n§R{% for detractingFaction in detractingFactions %}[Owner.MovementDesc_{{varname}}_Detract_{{detractingFaction}}]   {% endfor %}{% for factionAngryWithChange in factionsAngryWithChange %}[Owner.MovementDesc_{{varname}}_DetractByChange_{{factionAngryWithChange.faction}}]   {% endfor %}§!"
+
+ situation_movement_{{varname}}_ethics:0 "Ethics: §Y{% for supportingEthic in supportingEthics %}$ethic_{{supportingEthic}}$ {% endfor %}§!"
+
+ situation_movement_{{varname}}_stats:0 "Support: [Owner.movement_{{varname}}_support] Radicalism: [Owner.movement_{{varname}}_radicalism] Inertia: [Owner.movement_{{varname}}_inertia]\nFaction Support [Owner.movement_{{varname}}_faction_support] \nFaction Radicalism: [Owner.movement_{{varname}}_faction_radicalism] \nNumerical Support: [Owner.{{varname}}_supporting_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_support] \nNumerical Radicalism: [Owner.{{varname}}_radical_population]/[Owner.{{varname}}_population]=[Owner.movement_{{varname}}_numerical_radicalism]"
+
+ situation_movement_{{varname}}_quickDesc:0 "The people are calling for §B{{displayName}}§! as they believe {{description}}."
+ situation_movement_{{varname}}_desc:0 "$situation_movement_{{varname}}_quickDesc$\n\n$situation_movement_{{varname}}_supporting$\n$situation_movement_{{varname}}_detracting$\n$situation_movement_{{varname}}_ethics$\n\n$situation_movement_{{varname}}_stats$"
  situation_movement_finisher_{{varname}}:0 "Revolution for {{displayName}}."
  
  movement_{{varname}}_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_{{varname}}_radicalism]§! is above 25."
 
- movement_{{varname}}_revolution_preserve:0 "§RRevolution to Preserve {{displayName}}§!"
+ movement_{{varname}}_revolution_appeased:0 "§GAppeased Revolution for {{displayName}}§!"
  movement_{{varname}}_revolution:0 "§RRevolution for {{displayName}}§!"
  movement_{{varname}}:0 "Movement for {{displayName}}"
- movement_{{varname}}_preserve:0 "Movement to Preserve {{displayName}}"
+ movement_{{varname}}_appeased:0 "Appeased Movement for {{displayName}}"
 
  movement_{{varname}}.6.title:0 "Secession over §B{{displayName}}§!"
  movement_{{varname}}.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B{{displayName}}§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B{{displayName}}§!."

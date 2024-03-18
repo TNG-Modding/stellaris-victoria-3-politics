@@ -14,37 +14,11 @@ set_dependentColonies_base_success_chance = {
 						is_pop_faction_type = colonists
 						
 						
-						
-						
-							
-						
-							
-						
-						
-							AND = {
-								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = interplanetaryGoverance }
-							}
-						
-						
-						
-						
-							
-						
-							
-						
-						
-							AND = {
-								is_pop_faction_type = colonists
-								ROOT = { has_policy_flag = interplanetaryGoverance }
-							}
-						
-						
 					}
 					
 					NAND = {
 						is_pop_faction_type = consolidationists
-						ROOT = { has_policy_flag = interplanetaryGoverance }
+						OWNER = { has_policy_flag = interplanetaryGoverance }
 					}
 					
 				}
@@ -68,17 +42,13 @@ set_dependentColonies_base_stall_chance = {
 				limit = {
 					OR = {
 						
-						is_pop_faction_type = consolidationists
 						
 						
-						
-						
-							
 						
 						
 							AND = {
 								is_pop_faction_type = consolidationists
-								ROOT = { has_policy_flag = interplanetaryGoverance }
+								OWNER = { has_policy_flag = interplanetaryGoverance }
 							}
 						
 						
@@ -86,7 +56,7 @@ set_dependentColonies_base_stall_chance = {
 					
 					NAND = {
 						is_pop_faction_type = consolidationists
-						ROOT = { has_policy_flag = interplanetaryGoverance }
+						OWNER = { has_policy_flag = interplanetaryGoverance }
 					}
 					
 				}

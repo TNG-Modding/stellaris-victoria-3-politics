@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_purgeAllowed
 	text = {
-		localization_key = movement_purgeAllowed_revolution_preserve
+		localization_key = movement_purgeAllowed_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_purgeAllowed_radicalism value > 25 }
 			has_country_flag = enacting_purgeAllowed
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_purgeAllowed_preserve
+		localization_key = movement_purgeAllowed_appeased
 		trigger = {
 			check_variable = { which = movement_purgeAllowed_radicalism value < 25 }
 			has_country_flag = enacting_purgeAllowed
@@ -29,50 +29,61 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_purgeAllowed_SupportingFactions
-	
+	name = MovementDesc_purgeAllowed_Support_supremacist
 	text = {
 		localization_key = supremacist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = supremacist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_purgeAllowed_Support_imperialist
 	text = {
 		localization_key = imperialist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = imperialist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_purgeAllowed_Support_totalitarian
 	text = {
 		localization_key = totalitarian
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = totalitarian }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_purgeAllowed_DetractingFactions
-	
+	name = MovementDesc_purgeAllowed_Detract_xenoist
 	text = {
 		localization_key = xenoist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = xenoist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_purgeAllowed_Detract_progressive
 	text = {
 		localization_key = progressive
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = progressive }
 		}
 	}
-	
-	
 	default = ""
 }
+

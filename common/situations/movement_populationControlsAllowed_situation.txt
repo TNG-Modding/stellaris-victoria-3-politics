@@ -79,15 +79,11 @@ situation_movement_populationControlsAllowed = {
 		base = 0
 	}
 	abort_trigger = {
-		NOT = {
-			target.owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
-		}
-		target.owner = {
-			has_policy_flag = population_controls_allowed
-		}
-		OR = {
-			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
+		target.owner = { 
+			OR = {
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+				has_policy_flag = population_controls_allowed
+			}
 		}
 	}
 }

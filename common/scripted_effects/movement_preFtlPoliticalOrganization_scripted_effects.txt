@@ -11,19 +11,6 @@ calculate_preFtlPoliticalOrganization_movement_support_and_radicalism_from_facti
 					is_pop_faction_type = colonists
 					
 					
-					
-					
-						
-					
-						
-					
-					
-						AND = {
-							is_pop_faction_type = preFtlConservatives
-							ROOT = { has_policy_flag = interplanetaryPoliticalOrganization }
-						}
-					
-					
 				}
 				
 			}

@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_citizenRefugees
 	text = {
-		localization_key = movement_citizenRefugees_revolution_preserve
+		localization_key = movement_citizenRefugees_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_citizenRefugees_radicalism value > 25 }
 			has_country_flag = enacting_citizenRefugees
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_citizenRefugees_preserve
+		localization_key = movement_citizenRefugees_appeased
 		trigger = {
 			check_variable = { which = movement_citizenRefugees_radicalism value < 25 }
 			has_country_flag = enacting_citizenRefugees
@@ -29,43 +29,50 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_citizenRefugees_SupportingFactions
-	
+	name = MovementDesc_citizenRefugees_Support_totalitarian
 	text = {
 		localization_key = totalitarian
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = totalitarian }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_citizenRefugees_Support_imperialist
 	text = {
 		localization_key = imperialist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = imperialist }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_citizenRefugees_DetractingFactions
-	
+	name = MovementDesc_citizenRefugees_Detract_progressive
 	text = {
 		localization_key = progressive
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = progressive }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_citizenRefugees_Detract_prosperity
 	text = {
 		localization_key = prosperity
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = prosperity }
 		}
 	}
-	
-	
 	default = ""
 }
+

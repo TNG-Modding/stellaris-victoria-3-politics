@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_populationControlsAllowed
 	text = {
-		localization_key = movement_populationControlsAllowed_revolution_preserve
+		localization_key = movement_populationControlsAllowed_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_populationControlsAllowed_radicalism value > 25 }
 			has_country_flag = enacting_populationControlsAllowed
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_populationControlsAllowed_preserve
+		localization_key = movement_populationControlsAllowed_appeased
 		trigger = {
 			check_variable = { which = movement_populationControlsAllowed_radicalism value < 25 }
 			has_country_flag = enacting_populationControlsAllowed
@@ -29,43 +29,50 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_populationControlsAllowed_SupportingFactions
-	
+	name = MovementDesc_populationControlsAllowed_Support_totalitarian
 	text = {
 		localization_key = totalitarian
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = totalitarian }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_populationControlsAllowed_Support_prosperity
 	text = {
 		localization_key = prosperity
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = prosperity }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_populationControlsAllowed_DetractingFactions
-	
+	name = MovementDesc_populationControlsAllowed_Detract_imperialist
 	text = {
 		localization_key = imperialist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = imperialist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_populationControlsAllowed_Detract_progressive
 	text = {
 		localization_key = progressive
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = progressive }
 		}
 	}
-	
-	
 	default = ""
 }
+

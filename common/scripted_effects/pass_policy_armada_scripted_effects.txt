@@ -14,7 +14,7 @@ set_armada_base_success_chance = {
 					
 					NAND = {
 						is_pop_faction_type = colonists
-						ROOT = { has_policy_flag = merchantMarine }
+						OWNER = { has_policy_flag = merchantMarine }
 					}
 					
 				}
@@ -44,7 +44,7 @@ set_armada_base_stall_chance = {
 						
 							AND = {
 								is_pop_faction_type = colonists
-								ROOT = { has_policy_flag = merchantMarine }
+								OWNER = { has_policy_flag = merchantMarine }
 							}
 						
 						
@@ -52,7 +52,7 @@ set_armada_base_stall_chance = {
 					
 					NAND = {
 						is_pop_faction_type = colonists
-						ROOT = { has_policy_flag = merchantMarine }
+						OWNER = { has_policy_flag = merchantMarine }
 					}
 					
 				}

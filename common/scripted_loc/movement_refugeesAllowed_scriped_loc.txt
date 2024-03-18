@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_refugeesAllowed
 	text = {
-		localization_key = movement_refugeesAllowed_revolution_preserve
+		localization_key = movement_refugeesAllowed_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_refugeesAllowed_radicalism value > 25 }
 			has_country_flag = enacting_refugeesAllowed
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_refugeesAllowed_preserve
+		localization_key = movement_refugeesAllowed_appeased
 		trigger = {
 			check_variable = { which = movement_refugeesAllowed_radicalism value < 25 }
 			has_country_flag = enacting_refugeesAllowed
@@ -29,43 +29,50 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_refugeesAllowed_SupportingFactions
-	
+	name = MovementDesc_refugeesAllowed_Support_totalitarian
 	text = {
 		localization_key = totalitarian
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = totalitarian }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_refugeesAllowed_Support_xenoist
 	text = {
 		localization_key = xenoist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = xenoist }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_refugeesAllowed_DetractingFactions
-	
+	name = MovementDesc_refugeesAllowed_Detract_supremacist
 	text = {
 		localization_key = supremacist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = supremacist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_refugeesAllowed_Detract_progressive
 	text = {
 		localization_key = progressive
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = progressive }
 		}
 	}
-	
-	
 	default = ""
 }
+

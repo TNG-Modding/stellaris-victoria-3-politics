@@ -1,6 +1,6 @@
 politicalOrganization = {
 	potential = {
-		
+		always = yes
 	}
 
 	

@@ -4,11 +4,11 @@ pass_preFtlPoliticalOrganization = {
 
 	potential = {
 		NOT = { has_policy_flag = preFtlPoliticalOrganization }
-		
+		always = yes
 	}
 
 	allow = {
-		
+		always = yes
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

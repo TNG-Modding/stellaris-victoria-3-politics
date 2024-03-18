@@ -10,6 +10,7 @@ situation_passPolicy_slaveryAllowed = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_slaveryAllowed.2 } 
+		log = "Started slaveryAllowed"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_slaveryAllowed = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_slaveryAllowed.7 }
 		}
+		log = "Progressed Completed slaveryAllowed"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_slaveryAllowed
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted slaveryAllowed"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_slaveryAllowed = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } } }
+			target.owner = { 
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } NOR = { any_agreement = { agreement_preset = preset_signatory } has_origin = origin_broken_shackles } OR = { has_ethic = ethic_authoritarian has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } }
+			}
 		}
 	}
 }

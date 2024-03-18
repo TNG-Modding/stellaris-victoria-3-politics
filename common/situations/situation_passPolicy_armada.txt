@@ -10,6 +10,7 @@ situation_passPolicy_armada = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_armada.2 } 
+		log = "Started armada"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_armada = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_armada.7 }
 		}
+		log = "Progressed Completed armada"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_armada
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted armada"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_armada = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = {  } }
+			target.owner = { 
+				NOT = { always = yes }
+			}
 		}
 	}
 }

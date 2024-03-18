@@ -7,15 +7,24 @@
  situation_movement_purgeNotAllowed_type:0 "[Owner.MovementName_purgeNotAllowed]"
  situation_movement_purgeNotAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSupremacist§! presence in our empire."
 # 
- situation_movement_purgeNotAllowed_desc:0 "The people are calling for §BPurge not Allowed§! as they believe purging is an atrocity and should always be treated as such.\n\nSupporting Factions:\n§G[Owner.MovementDesc_purgeNotAllowed_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_purgeNotAllowed_DetractingFactions]§!\nEthics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!\nSupport: [Owner.movement_purgeNotAllowed_support] Radicalism: [Owner.movement_purgeNotAllowed_radicalism] Inertia: [Owner.movement_purgeNotAllowed_inertia]\nFaction Support [Owner.movement_purgeNotAllowed_faction_support] \nFaction Radicalism: [Owner.movement_purgeNotAllowed_faction_radicalism] \nNumerical Support: [Owner.purgeNotAllowed_supporting_population]/[Owner.purgeNotAllowed_population]=[Owner.movement_purgeNotAllowed_numerical_support] \nNumerical Radicalism: [Owner.purgeNotAllowed_radical_population]/[Owner.purgeNotAllowed_population]=[Owner.movement_purgeNotAllowed_numerical_radicalism]"
+ situation_movement_purgeNotAllowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_purgeNotAllowed_Support_xenoist]   [Owner.MovementDesc_purgeNotAllowed_Support_progressive]   §!"
+
+ situation_movement_purgeNotAllowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_purgeNotAllowed_Detract_supremacist]   [Owner.MovementDesc_purgeNotAllowed_Detract_imperialist]   [Owner.MovementDesc_purgeNotAllowed_Detract_totalitarian]   §!"
+
+ situation_movement_purgeNotAllowed_ethics:0 "Ethics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!"
+
+ situation_movement_purgeNotAllowed_stats:0 "Support: [Owner.movement_purgeNotAllowed_support] Radicalism: [Owner.movement_purgeNotAllowed_radicalism] Inertia: [Owner.movement_purgeNotAllowed_inertia]\nFaction Support [Owner.movement_purgeNotAllowed_faction_support] \nFaction Radicalism: [Owner.movement_purgeNotAllowed_faction_radicalism] \nNumerical Support: [Owner.purgeNotAllowed_supporting_population]/[Owner.purgeNotAllowed_population]=[Owner.movement_purgeNotAllowed_numerical_support] \nNumerical Radicalism: [Owner.purgeNotAllowed_radical_population]/[Owner.purgeNotAllowed_population]=[Owner.movement_purgeNotAllowed_numerical_radicalism]"
+
+ situation_movement_purgeNotAllowed_quickDesc:0 "The people are calling for §BPurge not Allowed§! as they believe purging is an atrocity and should always be treated as such."
+ situation_movement_purgeNotAllowed_desc:0 "$situation_movement_purgeNotAllowed_quickDesc$\n\n$situation_movement_purgeNotAllowed_supporting$\n$situation_movement_purgeNotAllowed_detracting$\n$situation_movement_purgeNotAllowed_ethics$\n\n$situation_movement_purgeNotAllowed_stats$"
  situation_movement_finisher_purgeNotAllowed:0 "Revolution for Purge not Allowed."
  
  movement_purgeNotAllowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_purgeNotAllowed_radicalism]§! is above 25."
 
- movement_purgeNotAllowed_revolution_preserve:0 "§RRevolution to Preserve Purge not Allowed§!"
+ movement_purgeNotAllowed_revolution_appeased:0 "§GAppeased Revolution for Purge not Allowed§!"
  movement_purgeNotAllowed_revolution:0 "§RRevolution for Purge not Allowed§!"
  movement_purgeNotAllowed:0 "Movement for Purge not Allowed"
- movement_purgeNotAllowed_preserve:0 "Movement to Preserve Purge not Allowed"
+ movement_purgeNotAllowed_appeased:0 "Appeased Movement for Purge not Allowed"
 
  movement_purgeNotAllowed.6.title:0 "Secession over §BPurge not Allowed§!"
  movement_purgeNotAllowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BPurge not Allowed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BPurge not Allowed§!."

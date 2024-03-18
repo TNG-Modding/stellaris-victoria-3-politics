@@ -10,6 +10,7 @@ situation_passPolicy_aiServitude = {
 		}
 		set_situation_approach = passPolicy_approach.1
 		situation_event = { id = situation_passPolicy_aiServitude.2 } 
+		log = "Started aiServitude"
 	}
 
 	on_progress_complete = {
@@ -21,12 +22,14 @@ situation_passPolicy_aiServitude = {
 		hidden_effect = {
 			situation_event = { id = situation_passPolicy_aiServitude.7 }
 		}
+		log = "Progressed Completed aiServitude"
 	}
 	on_abort = {
 		OWNER = {
 			remove_country_flag = enacting_aiServitude
 			remove_country_flag = enacting_policy
 		}
+		log = "Aborted aiServitude"
 	}
 
 	stages = {
@@ -88,13 +91,11 @@ situation_passPolicy_aiServitude = {
 		# }
 	}
 	abort_trigger = {
-		NOT = {
-			
-		}
 		OR = {
 			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
-			target.owner = { NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOT = { has_country_flag = synthetic_empire } } }
+			target.owner = { 
+				NOT = { NOT = { has_ethic = ethic_gestalt_consciousness } OR = { can_set_ai_policy = yes has_country_flag = synthetic_empire } NOT = { has_country_flag = synthetic_empire } }
+			}
 		}
 	}
 }

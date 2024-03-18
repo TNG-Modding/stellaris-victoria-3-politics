@@ -7,15 +7,6 @@ calculate_grandArmy_movement_support_and_radicalism_from_factions = {
 				OR = {
 					
 					
-					
-					
-					
-						AND = {
-							is_pop_faction_type = preFtlConservatives
-							ROOT = { has_policy_flag = spacefaringStandingArmy }
-						}
-					
-					
 				}
 				
 				NAND = {

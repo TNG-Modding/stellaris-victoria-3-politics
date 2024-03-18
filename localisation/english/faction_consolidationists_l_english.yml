@@ -1,4 +1,5 @@
 ﻿l_english:
  consolidationists:0 "Consolidationists Faction"
+ consolidationists_wrapped:0 "Consolidationists Faction\n"
  pft_consolidationists:0 "Consolidationists Faction"
  pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\nSupports: \n§G  $resettlement_allowed_name$\n  $interplanetaryGoverance_name$§!\n\nOpposes: \n§R  $dependentColonies_name$\n  $resettlement_not_allowed_name$§!"

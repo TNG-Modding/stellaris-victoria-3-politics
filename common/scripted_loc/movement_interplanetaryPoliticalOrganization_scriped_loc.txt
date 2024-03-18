@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_interplanetaryPoliticalOrganization
 	text = {
-		localization_key = movement_interplanetaryPoliticalOrganization_revolution_preserve
+		localization_key = movement_interplanetaryPoliticalOrganization_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_interplanetaryPoliticalOrganization_radicalism value > 25 }
 			has_country_flag = enacting_interplanetaryPoliticalOrganization
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_interplanetaryPoliticalOrganization_preserve
+		localization_key = movement_interplanetaryPoliticalOrganization_appeased
 		trigger = {
 			check_variable = { which = movement_interplanetaryPoliticalOrganization_radicalism value < 25 }
 			has_country_flag = enacting_interplanetaryPoliticalOrganization
@@ -29,23 +29,12 @@ defined_text = {
 		}
 	}
 }
+
+
+
+
 defined_text = {
-	name = MovementDesc_interplanetaryPoliticalOrganization_SupportingFactions
-	
-	
-	default = ""
-}
-defined_text = {
-	name = MovementDesc_interplanetaryPoliticalOrganization_DetractingFactions
-	
-	text = {
-		localization_key = preFtlConservatives
-		trigger = {
-			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
-		}
-	}
-	
-	
+	name = MovementDesc_interplanetaryPoliticalOrganization_DetractByChange_preFtlConservatives
 	text = {
 		localization_key = preFtlConservatives
 		trigger = {
@@ -53,7 +42,11 @@ defined_text = {
 			has_policy_flag = preFtlPoliticalOrganization
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_interplanetaryPoliticalOrganization_DetractByChange_colonists
 	text = {
 		localization_key = colonists
 		trigger = {
@@ -61,6 +54,5 @@ defined_text = {
 			has_policy_flag = preFtlPoliticalOrganization
 		}
 	}
-	
 	default = ""
 }

@@ -1,7 +1,7 @@
 defined_text = {
 	name = MovementName_slaveryAllowed
 	text = {
-		localization_key = movement_slaveryAllowed_revolution_preserve
+		localization_key = movement_slaveryAllowed_revolution_appeased
 		trigger = {
 			check_variable = { which = movement_slaveryAllowed_radicalism value > 25 }
 			has_country_flag = enacting_slaveryAllowed
@@ -15,7 +15,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = movement_slaveryAllowed_preserve
+		localization_key = movement_slaveryAllowed_appeased
 		trigger = {
 			check_variable = { which = movement_slaveryAllowed_radicalism value < 25 }
 			has_country_flag = enacting_slaveryAllowed
@@ -29,50 +29,61 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
-	name = MovementDesc_slaveryAllowed_SupportingFactions
-	
+	name = MovementDesc_slaveryAllowed_Support_xenoist
 	text = {
 		localization_key = xenoist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = xenoist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_slaveryAllowed_Support_progressive
 	text = {
 		localization_key = progressive
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = progressive }
 		}
 	}
-	
-	
 	default = ""
 }
+
+
+
 defined_text = {
-	name = MovementDesc_slaveryAllowed_DetractingFactions
-	
+	name = MovementDesc_slaveryAllowed_Detract_supremacist
 	text = {
 		localization_key = supremacist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = supremacist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_slaveryAllowed_Detract_imperialist
 	text = {
 		localization_key = imperialist
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = imperialist }
 		}
 	}
-	
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_slaveryAllowed_Detract_totalitarian
 	text = {
 		localization_key = totalitarian
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = totalitarian }
 		}
 	}
-	
-	
 	default = ""
 }
+

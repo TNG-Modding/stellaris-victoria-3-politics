@@ -14,12 +14,12 @@ set_interplanetaryPoliticalOrganization_base_success_chance = {
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
-						ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+						OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 					}
 					
 					NAND = {
 						is_pop_faction_type = colonists
-						ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+						OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 					}
 					
 				}
@@ -43,28 +43,22 @@ set_interplanetaryPoliticalOrganization_base_stall_chance = {
 				limit = {
 					OR = {
 						
-						is_pop_faction_type = preFtlConservatives
 						
 						
-						
-						
-							
 						
 						
 							AND = {
 								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+								OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 							}
 						
 						
 						
 						
-							
-						
 						
 							AND = {
 								is_pop_faction_type = colonists
-								ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+								OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 							}
 						
 						
@@ -72,12 +66,12 @@ set_interplanetaryPoliticalOrganization_base_stall_chance = {
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
-						ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+						OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 					}
 					
 					NAND = {
 						is_pop_faction_type = colonists
-						ROOT = { has_policy_flag = preFtlPoliticalOrganization }
+						OWNER = { has_policy_flag = preFtlPoliticalOrganization }
 					}
 					
 				}

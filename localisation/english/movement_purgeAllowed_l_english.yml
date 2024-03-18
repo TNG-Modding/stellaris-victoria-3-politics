@@ -7,15 +7,24 @@
  situation_movement_purgeAllowed_type:0 "[Owner.MovementName_purgeAllowed]"
  situation_movement_purgeAllowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §YSupremacist§! presence in our empire."
 # 
- situation_movement_purgeAllowed_desc:0 "The people are calling for §BPurge Allowed§! as they believe we must allow efficient methods to regulate and control the spread of lesser lifeforms within our empire.\n\nSupporting Factions:\n§G[Owner.MovementDesc_purgeAllowed_SupportingFactions]§!\nDetracting Factions:\n§R[Owner.MovementDesc_purgeAllowed_DetractingFactions]§!\nEthics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!\nSupport: [Owner.movement_purgeAllowed_support] Radicalism: [Owner.movement_purgeAllowed_radicalism] Inertia: [Owner.movement_purgeAllowed_inertia]\nFaction Support [Owner.movement_purgeAllowed_faction_support] \nFaction Radicalism: [Owner.movement_purgeAllowed_faction_radicalism] \nNumerical Support: [Owner.purgeAllowed_supporting_population]/[Owner.purgeAllowed_population]=[Owner.movement_purgeAllowed_numerical_support] \nNumerical Radicalism: [Owner.purgeAllowed_radical_population]/[Owner.purgeAllowed_population]=[Owner.movement_purgeAllowed_numerical_radicalism]"
+ situation_movement_purgeAllowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_purgeAllowed_Support_supremacist]   [Owner.MovementDesc_purgeAllowed_Support_imperialist]   [Owner.MovementDesc_purgeAllowed_Support_totalitarian]   §!"
+
+ situation_movement_purgeAllowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_purgeAllowed_Detract_xenoist]   [Owner.MovementDesc_purgeAllowed_Detract_progressive]   §!"
+
+ situation_movement_purgeAllowed_ethics:0 "Ethics: §Y$ethic_xenophile$ $ethic_pacifist$ $ethic_egalitarian$ §!"
+
+ situation_movement_purgeAllowed_stats:0 "Support: [Owner.movement_purgeAllowed_support] Radicalism: [Owner.movement_purgeAllowed_radicalism] Inertia: [Owner.movement_purgeAllowed_inertia]\nFaction Support [Owner.movement_purgeAllowed_faction_support] \nFaction Radicalism: [Owner.movement_purgeAllowed_faction_radicalism] \nNumerical Support: [Owner.purgeAllowed_supporting_population]/[Owner.purgeAllowed_population]=[Owner.movement_purgeAllowed_numerical_support] \nNumerical Radicalism: [Owner.purgeAllowed_radical_population]/[Owner.purgeAllowed_population]=[Owner.movement_purgeAllowed_numerical_radicalism]"
+
+ situation_movement_purgeAllowed_quickDesc:0 "The people are calling for §BPurge Allowed§! as they believe we must allow efficient methods to regulate and control the spread of lesser lifeforms within our empire."
+ situation_movement_purgeAllowed_desc:0 "$situation_movement_purgeAllowed_quickDesc$\n\n$situation_movement_purgeAllowed_supporting$\n$situation_movement_purgeAllowed_detracting$\n$situation_movement_purgeAllowed_ethics$\n\n$situation_movement_purgeAllowed_stats$"
  situation_movement_finisher_purgeAllowed:0 "Revolution for Purge Allowed."
  
  movement_purgeAllowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_purgeAllowed_radicalism]§! is above 25."
 
- movement_purgeAllowed_revolution_preserve:0 "§RRevolution to Preserve Purge Allowed§!"
+ movement_purgeAllowed_revolution_appeased:0 "§GAppeased Revolution for Purge Allowed§!"
  movement_purgeAllowed_revolution:0 "§RRevolution for Purge Allowed§!"
  movement_purgeAllowed:0 "Movement for Purge Allowed"
- movement_purgeAllowed_preserve:0 "Movement to Preserve Purge Allowed"
+ movement_purgeAllowed_appeased:0 "Appeased Movement for Purge Allowed"
 
  movement_purgeAllowed.6.title:0 "Secession over §BPurge Allowed§!"
  movement_purgeAllowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BPurge Allowed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BPurge Allowed§!."

@@ -79,15 +79,11 @@ situation_movement_armada = {
 		base = 0
 	}
 	abort_trigger = {
-		NOT = {
-			target.owner = {  }
-		}
-		target.owner = {
-			has_policy_flag = armada
-		}
-		OR = {
-			NOT = { exists = target.owner }
-			target.owner = { NOT = { is_same_value = root.owner } }
+		target.owner = { 
+			OR = {
+				NOT = { always = yes }
+				has_policy_flag = armada
+			}
 		}
 	}
 }

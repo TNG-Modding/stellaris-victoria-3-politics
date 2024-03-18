@@ -10,20 +10,11 @@ set_spacefaringStandingArmy_base_success_chance = {
 					OR = {
 						
 						
-						
-						
-						
-							AND = {
-								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = grandArmy }
-							}
-						
-						
 					}
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
-						ROOT = { has_policy_flag = preFtlMilitaries }
+						OWNER = { has_policy_flag = preFtlMilitaries }
 					}
 					
 				}
@@ -47,17 +38,13 @@ set_spacefaringStandingArmy_base_stall_chance = {
 				limit = {
 					OR = {
 						
-						is_pop_faction_type = preFtlConservatives
 						
 						
-						
-						
-							
 						
 						
 							AND = {
 								is_pop_faction_type = preFtlConservatives
-								ROOT = { has_policy_flag = preFtlMilitaries }
+								OWNER = { has_policy_flag = preFtlMilitaries }
 							}
 						
 						
@@ -65,7 +52,7 @@ set_spacefaringStandingArmy_base_stall_chance = {
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
-						ROOT = { has_policy_flag = preFtlMilitaries }
+						OWNER = { has_policy_flag = preFtlMilitaries }
 					}
 					
 				}

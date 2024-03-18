@@ -4,11 +4,11 @@ pass_merchantMarine = {
 
 	potential = {
 		NOT = { has_policy_flag = merchantMarine }
-		
+		always = yes
 	}
 
 	allow = {
-		
+		always = yes
 		custom_tooltip = {
 			fail_text = no_support_to_pass
 			AND = {

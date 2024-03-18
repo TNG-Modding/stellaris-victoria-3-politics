@@ -369,7 +369,7 @@
             "egalitarian",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [
             "colonists"
         ],
@@ -398,7 +398,7 @@
             "egalitarian",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [],
         "detractingFactions": [],
         "otherOptions": [
@@ -426,7 +426,7 @@
         "supportingEthics": [
             "militarist"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [],
         "detractingFactions": [],
         "otherOptions": [
@@ -458,7 +458,7 @@
             "egalitarian",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [
             "preFtlConservatives"
         ],
@@ -468,16 +468,7 @@
             "grandArmy"
         ],
         "factionsAngryWithChange": [],
-        "factionsHappyWithChange": [
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "spacefaringStandingArmy"
-            },
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "grandArmy"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "spacefaringStandingArmy",
@@ -496,11 +487,9 @@
             "egalitarian",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [],
-        "detractingFactions": [
-            "preFtlConservatives"
-        ],
+        "detractingFactions": [],
         "otherOptions": [
             "preFtlMilitaries",
             "grandArmy"
@@ -511,12 +500,7 @@
                 "fromPolicy": "preFtlMilitaries"
             }
         ],
-        "factionsHappyWithChange": [
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "grandArmy"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "grandArmy",
@@ -531,11 +515,9 @@
         "supportingEthics": [
             "militarist"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [],
-        "detractingFactions": [
-            "preFtlConservatives"
-        ],
+        "detractingFactions": [],
         "otherOptions": [
             "preFtlMilitaries",
             "spacefaringStandingArmy"
@@ -546,12 +528,7 @@
                 "fromPolicy": "preFtlMilitaries"
             }
         ],
-        "factionsHappyWithChange": [
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "spacefaringStandingArmy"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "dependentColonies",
@@ -571,14 +548,12 @@
             "egalitarian",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [
             "preFtlConservatives",
             "colonists"
         ],
-        "detractingFactions": [
-            "consolidationists"
-        ],
+        "detractingFactions": [],
         "otherOptions": [
             "interplanetaryGoverance"
         ],
@@ -588,16 +563,7 @@
                 "fromPolicy": "interplanetaryGoverance"
             }
         ],
-        "factionsHappyWithChange": [
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "interplanetaryGoverance"
-            },
-            {
-                "faction": "colonists",
-                "fromPolicy": "interplanetaryGoverance"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "interplanetaryGoverance",
@@ -612,14 +578,11 @@
         "supportingEthics": [
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [
             "consolidationists"
         ],
-        "detractingFactions": [
-            "preFtlConservatives",
-            "colonists"
-        ],
+        "detractingFactions": [],
         "otherOptions": [
             "dependentColonies"
         ],
@@ -633,12 +596,7 @@
                 "fromPolicy": "dependentColonies"
             }
         ],
-        "factionsHappyWithChange": [
-            {
-                "faction": "consolidationists",
-                "fromPolicy": "dependentColonies"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "preFtlPoliticalOrganization",
@@ -659,7 +617,7 @@
             "materialist",
             "authoritarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [
             "preFtlConservatives",
             "colonists"
@@ -669,12 +627,7 @@
             "interplanetaryPoliticalOrganization"
         ],
         "factionsAngryWithChange": [],
-        "factionsHappyWithChange": [
-            {
-                "faction": "preFtlConservatives",
-                "fromPolicy": "interplanetaryPoliticalOrganization"
-            }
-        ]
+        "factionsHappyWithChange": []
     },
     {
         "varname": "interplanetaryPoliticalOrganization",
@@ -689,11 +642,9 @@
         "supportingEthics": [
             "egalitarian"
         ],
-        "potential": "",
+        "potential": "always = yes",
         "supportingFactions": [],
-        "detractingFactions": [
-            "preFtlConservatives"
-        ],
+        "detractingFactions": [],
         "otherOptions": [
             "preFtlPoliticalOrganization"
         ],
