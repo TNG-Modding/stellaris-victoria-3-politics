@@ -1,0 +1,45 @@
+defined_text = {
+	name = MovementName_defense_in_depth_doctrine
+	text = {
+		localization_key = movement_defense_in_depth_doctrine_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_defense_in_depth_doctrine_radicalism value > 25 }
+			has_country_flag = enacting_defense_in_depth_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_defense_in_depth_doctrine_revolution
+		trigger = {
+			check_variable = { which = movement_defense_in_depth_doctrine_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_defense_in_depth_doctrine}
+		}
+	}
+	text = {
+		localization_key = movement_defense_in_depth_doctrine_appeased
+		trigger = {
+			check_variable = { which = movement_defense_in_depth_doctrine_radicalism value < 25 }
+			has_country_flag = enacting_defense_in_depth_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_defense_in_depth_doctrine
+		trigger = {
+			check_variable = { which = movement_defense_in_depth_doctrine_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_defense_in_depth_doctrine}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_defense_in_depth_doctrine_Support_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
+
+
+

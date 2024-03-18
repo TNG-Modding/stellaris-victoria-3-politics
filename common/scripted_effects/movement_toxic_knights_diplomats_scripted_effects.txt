@@ -1,0 +1,70 @@
+
+calculate_toxic_knights_diplomats_movement_support_and_radicalism_from_factions = {
+	every_pop_faction = {
+		
+		if = {
+			limit = {
+				OR = {
+					
+					
+				}
+				
+			}
+		
+			export_trigger_value_to_variable = { trigger = support variable = toxic_knights_diplomats_support }
+			multiply_variable = {which = toxic_knights_diplomats_support value = 100}
+			# toxic_knights_diplomats_support is 0 to 100
+			
+			export_trigger_value_to_variable = { trigger = faction_approval variable = toxic_knights_diplomats_approval }
+			# toxic_knights_diplomats_approval is 0 to 1
+
+			ROOT = {
+				change_variable = { which = $SUPPORT$ value = PREV.toxic_knights_diplomats_support }
+				
+				set_variable = { which = toxic_knights_diplomats_radicalism value = 1 }
+				subtract_variable = { which = toxic_knights_diplomats_radicalism value = PREV.toxic_knights_diplomats_approval }
+				
+				multiply_variable = { which = toxic_knights_diplomats_radicalism value = PREV.toxic_knights_diplomats_support }
+
+				change_variable = { which = $RADICALISM$ value = toxic_knights_diplomats_radicalism }
+			}
+		}
+	}
+}
+
+calculate_toxic_knights_diplomats_movement_support_and_radical_from_numbers = {
+	set_variable = { which = toxic_knights_diplomats_population value = 0}
+	set_variable = { which = toxic_knights_diplomats_supporting_population value = 0}
+	set_variable = { which = toxic_knights_diplomats_radical_population value = 0}
+	
+	every_owned_pop = {
+		ROOT = {
+			change_variable = { which = toxic_knights_diplomats_population value = 1}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					
+				}
+			}
+			# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
+			export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+			ROOT = {
+				set_variable = {which = pop_toxic_knights_diplomats_radicalism value = 1}
+				subtract_variable = { which = pop_toxic_knights_diplomats_radicalism value = PREV.pop_happiness }
+
+				change_variable = { which = toxic_knights_diplomats_supporting_population value = 1 }
+				change_variable = { which = toxic_knights_diplomats_radical_population value = pop_toxic_knights_diplomats_radicalism }
+			}
+		}
+	}
+	
+	set_variable = { which = $SUPPORT$ value = toxic_knights_diplomats_supporting_population}
+	divide_variable = { which = $SUPPORT$ value = toxic_knights_diplomats_population }
+	multiply_variable = {which = $SUPPORT$ value = 100}
+
+	set_variable = { which = $RADICALISM$ value = toxic_knights_diplomats_radical_population}
+	divide_variable = { which = $RADICALISM$ value = toxic_knights_diplomats_population }
+	multiply_variable = {which = $RADICALISM$ value = 100}
+}

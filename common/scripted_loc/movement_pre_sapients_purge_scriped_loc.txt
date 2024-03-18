@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_pre_sapients_purge
+	text = {
+		localization_key = movement_pre_sapients_purge_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_pre_sapients_purge_radicalism value > 25 }
+			has_country_flag = enacting_pre_sapients_purge
+		}
+	}
+	text = {
+		localization_key = movement_pre_sapients_purge_revolution
+		trigger = {
+			check_variable = { which = movement_pre_sapients_purge_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_pre_sapients_purge}
+		}
+	}
+	text = {
+		localization_key = movement_pre_sapients_purge_appeased
+		trigger = {
+			check_variable = { which = movement_pre_sapients_purge_radicalism value < 25 }
+			has_country_flag = enacting_pre_sapients_purge
+		}
+	}
+	text = {
+		localization_key = movement_pre_sapients_purge
+		trigger = {
+			check_variable = { which = movement_pre_sapients_purge_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_pre_sapients_purge}
+		}
+	}
+}
+
+
+

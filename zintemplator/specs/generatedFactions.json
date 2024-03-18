@@ -54,6 +54,34 @@
         "againstPolicies": [
             "purge_allowed","refugees_allowed"
         ]
+    },
+    
+    {
+        "varname": "armedIsolationism",
+        "displayName": "Dark Forest",
+        "icon": "darkForest",
+        "desc": "believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.",
+        "ethics": ["xenophobe","pacifist"],
+        "supportedPolicies": [
+            "diplo_stance_isolationist","no_wars","defense_in_depth_doctrine","first_contact_cautious"
+        ],
+        "againstPolicies": [
+            "diplo_stance_expansion","first_contact_proactive"
+        ]
+    },
+    
+    {
+        "varname": "ourBurden",
+        "displayName": "Our Burden",
+        "icon": "ourBurden",
+        "desc": "believe that is our duty to enlighten the benighted galaxy with our shining ideals.",
+        "ethics": ["xenophile","militarist"],
+        "supportedPolicies": [
+            "diplo_stance_belligerent","liberation_wars","interference_aggressive","enlightenment_allowed","benevolent_terms"
+        ],
+        "againstPolicies": [
+            "diplo_stance_isolationist","no_wars","interference_not_allowed","enlightenment_not_allowed"
+        ]
     }
     
 ]

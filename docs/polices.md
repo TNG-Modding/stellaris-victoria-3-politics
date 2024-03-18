@@ -1,23 +1,14 @@
 
 diplomatic_stance = {
-	
-
 	diplo_stance_belligerent
-
 	diplo_stance_cooperative
-
 	diplo_stance_isolationist
-
 	diplo_stance_expansionist
-
 	diplo_stance_mercantile
-
 	diplo_stance_supremacist
 	diplo_stance_animosity
 	diplo_stance_hunger
-
 	diplo_stance_extermination
-
 	diplo_stance_purification
 }
 

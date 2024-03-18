@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_trade_policy_holy_covenant
+	text = {
+		localization_key = movement_trade_policy_holy_covenant_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_holy_covenant_radicalism value > 25 }
+			has_country_flag = enacting_trade_policy_holy_covenant
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_holy_covenant_revolution
+		trigger = {
+			check_variable = { which = movement_trade_policy_holy_covenant_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_trade_policy_holy_covenant}
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_holy_covenant_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_holy_covenant_radicalism value < 25 }
+			has_country_flag = enacting_trade_policy_holy_covenant
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_holy_covenant
+		trigger = {
+			check_variable = { which = movement_trade_policy_holy_covenant_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_trade_policy_holy_covenant}
+		}
+	}
+}
+
+
+

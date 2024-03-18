@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_scavenge_and_research_debris
+	text = {
+		localization_key = movement_scavenge_and_research_debris_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_scavenge_and_research_debris_radicalism value > 25 }
+			has_country_flag = enacting_scavenge_and_research_debris
+		}
+	}
+	text = {
+		localization_key = movement_scavenge_and_research_debris_revolution
+		trigger = {
+			check_variable = { which = movement_scavenge_and_research_debris_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_scavenge_and_research_debris}
+		}
+	}
+	text = {
+		localization_key = movement_scavenge_and_research_debris_appeased
+		trigger = {
+			check_variable = { which = movement_scavenge_and_research_debris_radicalism value < 25 }
+			has_country_flag = enacting_scavenge_and_research_debris
+		}
+	}
+	text = {
+		localization_key = movement_scavenge_and_research_debris
+		trigger = {
+			check_variable = { which = movement_scavenge_and_research_debris_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_scavenge_and_research_debris}
+		}
+	}
+}
+
+
+

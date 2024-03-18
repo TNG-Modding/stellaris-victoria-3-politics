@@ -1,0 +1,33 @@
+﻿l_english:
+ movement_ai_servitude.2.name:0 "Movement for ai_servitude"
+ movement_ai_servitude.2.desc:0 "Support: [This.movement_ai_servitude_support]\nRadicalism: [This.movement_ai_servitude_radicalism]"
+
+ #  Situation
+ situation_movement_ai_servitude:0 "[Owner.MovementName_ai_servitude]"
+ situation_movement_ai_servitude_type:0 "[Owner.MovementName_ai_servitude]"
+ situation_movement_ai_servitude_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+# 
+ situation_movement_ai_servitude_supporting:0 "Supporting Factions:\n§G§!"
+
+ situation_movement_ai_servitude_detracting:0 "Detracting Factions:\n§R§!"
+
+ situation_movement_ai_servitude_ethics:0 "Ethics: §Y§!"
+
+ situation_movement_ai_servitude_stats:0 "Support: [Owner.movement_ai_servitude_support] Radicalism: [Owner.movement_ai_servitude_radicalism] Inertia: [Owner.movement_ai_servitude_inertia]\nFaction Support [Owner.movement_ai_servitude_faction_support] \nFaction Radicalism: [Owner.movement_ai_servitude_faction_radicalism] \nNumerical Support: [Owner.ai_servitude_supporting_population]/[Owner.ai_servitude_population]=[Owner.movement_ai_servitude_numerical_support] \nNumerical Radicalism: [Owner.ai_servitude_radical_population]/[Owner.ai_servitude_population]=[Owner.movement_ai_servitude_numerical_radicalism]"
+
+ situation_movement_ai_servitude_quickDesc:0 "The people are calling for §Bai_servitude§! as they believe ."
+ situation_movement_ai_servitude_desc:0 "$situation_movement_ai_servitude_quickDesc$\n\n$situation_movement_ai_servitude_supporting$\n$situation_movement_ai_servitude_detracting$\n$situation_movement_ai_servitude_ethics$\n\n$situation_movement_ai_servitude_stats$"
+ situation_movement_finisher_ai_servitude:0 "Revolution for ai_servitude."
+ 
+ movement_ai_servitude_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_ai_servitude_radicalism]§! is above 25."
+
+ movement_ai_servitude_revolution_appeased:0 "§GAppeased Revolution for ai_servitude§!"
+ movement_ai_servitude_revolution:0 "§RRevolution for ai_servitude§!"
+ movement_ai_servitude:0 "Movement for ai_servitude"
+ movement_ai_servitude_appeased:0 "Appeased Movement for ai_servitude"
+
+ movement_ai_servitude.6.title:0 "Secession over §Bai_servitude§!"
+ movement_ai_servitude.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bai_servitude§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bai_servitude§!."
+ movement_ai_servitude.6.fight:0 "Make them drink vacuum!"
+ movement_ai_servitude.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

@@ -1,0 +1,89 @@
+situation_movement_interference_not_allowed = {
+	picture = GFX_evt_
+	complete_icon_frame = GFX_situation_outcome_frame_red
+	complete_icon = GFX_situation_outcome_negative
+
+	on_start = { 
+		set_situation_approach = movement_approach.1
+		# situation_event = { id = situation_movement_interference_not_allowed.2 } 
+		OWNER = {
+			set_country_flag = movement_for_interference_not_allowed
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		modifier = {
+			desc = movement_interference_not_allowed_gaining_revolutionary_progress
+			OWNER = {
+				check_variable = { which = movement_interference_not_allowed_radicalism value > 25}
+			}
+			add = 1
+		}
+		modifier = {
+			desc = movement_interference_not_allowed_gaining_revolutionary_progress
+			OWNER = {
+				check_variable = { which = movement_interference_not_allowed_radicalism value < 25}
+			}
+			situation_progress > 0
+			add = -1
+		}
+		modifier = {
+			desc = movement_satisfied_with_passing_law
+			OWNER = {
+				has_country_flag = enacting_interference_not_allowed
+			}
+			situation_progress > 0
+			add = -1
+		}
+		
+	}
+
+	on_progress_complete = {
+		custom_tooltip = situation_movement_finisher_interference_not_allowed
+		situation_event = { id = movement_interference_not_allowed.6 }
+		
+		OWNER = {
+			remove_country_flag = movement_for_interference_not_allowed
+		}
+	}
+	on_abort = {
+		OWNER = {
+			remove_country_flag = movement_for_interference_not_allowed
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			custom_tooltip = movement_stageOneEffects
+		}
+	}
+	approach = {
+		name = movement_approach.1
+		icon = GFX_situation_approach_influence
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = movement_approach.1.on_select
+		}
+	}
+	on_monthly = {
+		# random_events = {
+		# 	17 = situation_movement_interference_not_allowed.2 # Just recalculate
+		# 	83 = situation_movement_interference_not_allowed.3 # Recalc and Reroll
+		# }
+	}
+	monthly_progress = {
+		base = 0
+	}
+	abort_trigger = {
+		target.owner = { 
+			OR = {
+				NOT = { always = yes }
+				has_policy_flag = interference_not_allowed
+			}
+		}
+	}
+}

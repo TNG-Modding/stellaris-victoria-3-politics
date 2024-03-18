@@ -1,0 +1,33 @@
+﻿l_english:
+ movement_slavery_allowed.2.name:0 "Movement for slavery_allowed"
+ movement_slavery_allowed.2.desc:0 "Support: [This.movement_slavery_allowed_support]\nRadicalism: [This.movement_slavery_allowed_radicalism]"
+
+ #  Situation
+ situation_movement_slavery_allowed:0 "[Owner.MovementName_slavery_allowed]"
+ situation_movement_slavery_allowed_type:0 "[Owner.MovementName_slavery_allowed]"
+ situation_movement_slavery_allowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+# 
+ situation_movement_slavery_allowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_slavery_allowed_Support_nativists]   §!"
+
+ situation_movement_slavery_allowed_detracting:0 "Detracting Factions:\n§R§!"
+
+ situation_movement_slavery_allowed_ethics:0 "Ethics: §Y§!"
+
+ situation_movement_slavery_allowed_stats:0 "Support: [Owner.movement_slavery_allowed_support] Radicalism: [Owner.movement_slavery_allowed_radicalism] Inertia: [Owner.movement_slavery_allowed_inertia]\nFaction Support [Owner.movement_slavery_allowed_faction_support] \nFaction Radicalism: [Owner.movement_slavery_allowed_faction_radicalism] \nNumerical Support: [Owner.slavery_allowed_supporting_population]/[Owner.slavery_allowed_population]=[Owner.movement_slavery_allowed_numerical_support] \nNumerical Radicalism: [Owner.slavery_allowed_radical_population]/[Owner.slavery_allowed_population]=[Owner.movement_slavery_allowed_numerical_radicalism]"
+
+ situation_movement_slavery_allowed_quickDesc:0 "The people are calling for §Bslavery_allowed§! as they believe ."
+ situation_movement_slavery_allowed_desc:0 "$situation_movement_slavery_allowed_quickDesc$\n\n$situation_movement_slavery_allowed_supporting$\n$situation_movement_slavery_allowed_detracting$\n$situation_movement_slavery_allowed_ethics$\n\n$situation_movement_slavery_allowed_stats$"
+ situation_movement_finisher_slavery_allowed:0 "Revolution for slavery_allowed."
+ 
+ movement_slavery_allowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_slavery_allowed_radicalism]§! is above 25."
+
+ movement_slavery_allowed_revolution_appeased:0 "§GAppeased Revolution for slavery_allowed§!"
+ movement_slavery_allowed_revolution:0 "§RRevolution for slavery_allowed§!"
+ movement_slavery_allowed:0 "Movement for slavery_allowed"
+ movement_slavery_allowed_appeased:0 "Appeased Movement for slavery_allowed"
+
+ movement_slavery_allowed.6.title:0 "Secession over §Bslavery_allowed§!"
+ movement_slavery_allowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bslavery_allowed§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bslavery_allowed§!."
+ movement_slavery_allowed.6.fight:0 "Make them drink vacuum!"
+ movement_slavery_allowed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_interference_not_allowed.1
+	}
+}

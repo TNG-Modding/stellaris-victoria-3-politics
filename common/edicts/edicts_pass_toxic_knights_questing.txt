@@ -1,0 +1,32 @@
+pass_toxic_knights_questing = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = toxic_knights_questing }
+		always = yes
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_toxic_knights_questing_faction_support
+			}
+			check_variable = { which = movement_toxic_knights_questing_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = knightly_duties
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_toxic_knights_questing.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

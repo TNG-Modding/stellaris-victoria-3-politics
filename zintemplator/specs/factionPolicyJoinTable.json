@@ -3,11 +3,1104 @@
         "varname": "Spec generation",
         "policies": [
             {
+                "varname": "diplomatic_stance",
+                "displayName": "diplomatic_stance",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "diplo_stance_belligerent",
+                        "displayName": "diplo_stance_belligerent",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "surrender",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_cooperative",
+                        "displayName": "diplo_stance_cooperative",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_isolationist",
+                        "displayName": "diplo_stance_isolationist",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_expansionist",
+                        "displayName": "diplo_stance_expansionist",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_mercantile",
+                        "displayName": "diplo_stance_mercantile",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_supremacist",
+                        "displayName": "diplo_stance_supremacist",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_animosity",
+                        "displayName": "diplo_stance_animosity",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_hunger",
+                        "displayName": "diplo_stance_hunger",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_extermination",
+                        "displayName": "diplo_stance_extermination",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "diplo_stance_purification",
+                        "displayName": "diplo_stance_purification",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "war_philosophy",
+                "displayName": "war_philosophy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "unrestricted_wars",
+                        "displayName": "unrestricted_wars",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "liberation_wars",
+                        "displayName": "liberation_wars",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "no_wars",
+                        "displayName": "no_wars",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "war_doctrine",
+                "displayName": "war_doctrine",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "defense_in_depth_doctrine",
+                        "displayName": "defense_in_depth_doctrine",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "hit_and_run_doctrine",
+                        "displayName": "hit_and_run_doctrine",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "rapid_deployment_doctrine",
+                        "displayName": "rapid_deployment_doctrine",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "no_retreat_doctrine",
+                        "displayName": "no_retreat_doctrine",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "subjugation_war_terms",
+                "displayName": "subjugation_war_terms",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "oppressive_terms",
+                        "displayName": "oppressive_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "balanced_terms",
+                        "displayName": "balanced_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "benevolent_terms",
+                        "displayName": "benevolent_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "oppressive_corporate_terms",
+                        "displayName": "oppressive_corporate_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "balanced_corporate_terms",
+                        "displayName": "balanced_corporate_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "benevolent_corporate_terms",
+                        "displayName": "benevolent_corporate_terms",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "orbital_bombardment",
+                "displayName": "orbital_bombardment",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "orbital_bombardment_selective",
+                        "displayName": "orbital_bombardment_selective",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "orbital_bombardment_indiscriminate",
+                        "displayName": "orbital_bombardment_indiscriminate",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "orbital_bombardment_armageddon",
+                        "displayName": "orbital_bombardment_armageddon",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "orbital_bombardment_accept_surrender",
+                "displayName": "orbital_bombardment_accept_surrender",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "orbital_bombardment_surrender_forbidden",
+                        "displayName": "orbital_bombardment_surrender_forbidden",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "orbital_bombardment_surrender_allowed",
+                        "displayName": "orbital_bombardment_surrender_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "interference",
+                "displayName": "interference",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "interference_not_allowed",
+                        "displayName": "interference_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "interference_subtle",
+                        "displayName": "interference_subtle",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "interference_active",
+                        "displayName": "interference_active",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "interference_aggressive",
+                        "displayName": "interference_aggressive",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "enlightenment",
+                "displayName": "enlightenment",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "enlightenment_not_allowed",
+                        "displayName": "enlightenment_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "enlightenment_covert_only",
+                        "displayName": "enlightenment_covert_only",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "enlightenment_allowed",
+                        "displayName": "enlightenment_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "resettlement",
+                "displayName": "resettlement",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "resettlement_not_allowed",
+                        "displayName": "resettlement_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "resettlement_allowed",
+                        "displayName": "resettlement_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "appropriation",
+                "displayName": "appropriation",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "appropriation_not_allowed",
+                        "displayName": "appropriation_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "appropriation_allowed",
+                        "displayName": "appropriation_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "first_contact_protocol",
+                "displayName": "first_contact_protocol",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "first_contact_proactive",
+                        "displayName": "first_contact_proactive",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "first_contact_cautious",
+                        "displayName": "first_contact_cautious",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "first_contact_attack_allowed",
+                        "displayName": "first_contact_attack_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "border_policy",
+                "displayName": "border_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "border_policy_open",
+                        "displayName": "border_policy_open",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "border_policy_closed",
+                        "displayName": "border_policy_closed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "economic_policy",
+                "displayName": "economic_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "economic_policy_civilian",
+                        "displayName": "economic_policy_civilian",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "economic_policy_balanced",
+                        "displayName": "economic_policy_balanced",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "economic_policy_military",
+                        "displayName": "economic_policy_military",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "trade_policy",
+                "displayName": "trade_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "trade_policy_default",
+                        "displayName": "trade_policy_default",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "trade_policy_consumer_goods",
+                        "displayName": "trade_policy_consumer_goods",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "trade_policy_unity",
+                        "displayName": "trade_policy_unity",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "trade_policy_trade_league",
+                        "displayName": "trade_policy_trade_league",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "trade_policy_holy_covenant",
+                        "displayName": "trade_policy_holy_covenant",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "trade_policy_mutual_aid",
+                        "displayName": "trade_policy_mutual_aid",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "artificial_intelligence_policy",
+                "displayName": "artificial_intelligence_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "ai_outlawed",
+                        "displayName": "ai_outlawed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "ai_servitude",
+                        "displayName": "ai_servitude",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "ai_full_rights",
+                        "displayName": "ai_full_rights",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "robot_pop_policy",
+                "displayName": "robot_pop_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "robot_pops_outlawed",
+                        "displayName": "robot_pops_outlawed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "robot_pops_allowed",
+                        "displayName": "robot_pops_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "pre_sapients",
+                "displayName": "pre_sapients",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "pre_sapients_protect",
+                        "displayName": "pre_sapients_protect",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "pre_sapients_allow",
+                        "displayName": "pre_sapients_allow",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "pre_sapients_eat",
+                        "displayName": "pre_sapients_eat",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "pre_sapients_purge",
+                        "displayName": "pre_sapients_purge",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "debris",
+                "displayName": "debris",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "research_debris",
+                        "displayName": "research_debris",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "scavenge_debris",
+                        "displayName": "scavenge_debris",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "scavenge_and_research_debris",
+                        "displayName": "scavenge_and_research_debris",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "refugees",
+                "displayName": "refugees",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "refugees_not_allowed",
+                        "displayName": "refugees_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "refugees_only_citizens",
+                        "displayName": "refugees_only_citizens",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "refugees_allowed",
+                        "displayName": "refugees_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "population_controls",
+                "displayName": "population_controls",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "population_controls_not_allowed",
+                        "displayName": "population_controls_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "population_controls_allowed",
+                        "displayName": "population_controls_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "slavery",
+                "displayName": "slavery",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "slavery_not_allowed",
+                        "displayName": "slavery_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "slavery_allowed",
+                        "displayName": "slavery_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "purge",
+                "displayName": "purge",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "purge_not_allowed",
+                        "displayName": "purge_not_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "purge_displacement_only",
+                        "displayName": "purge_displacement_only",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "purge_allowed",
+                        "displayName": "purge_allowed",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "knightly_duties",
+                "displayName": "knightly_duties",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "toxic_knights_questing",
+                        "displayName": "toxic_knights_questing",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "toxic_knights_military",
+                        "displayName": "toxic_knights_military",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "toxic_knights_diplomats",
+                        "displayName": "toxic_knights_diplomats",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "toxic_knights_herald",
+                        "displayName": "toxic_knights_herald",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "leader_enhancement",
+                "displayName": "leader_enhancement",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "leader_enhancement_natural_selection",
+                        "displayName": "leader_enhancement_natural_selection",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "leader_enhancement_selected_lineages",
+                        "displayName": "leader_enhancement_selected_lineages",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "leader_enhancement_capacity_boosters",
+                        "displayName": "leader_enhancement_capacity_boosters",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
                 "varname": "fleetFormation",
                 "displayName": "Fleet Formation",
                 "desc": "The powers and extent of our navy.",
                 "potential": "always = yes",
-                
                 "options": [
                     {
                         "varname": "merchantMarine",
@@ -16,8 +1109,14 @@
                         "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "pacifist",
+                            "spiritualist",
+                            "materialist",
+                            "egalitarian",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -27,8 +1126,14 @@
                         "description": "the fleet should be a modern navy without restrictions",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "militarist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "militarist",
+                            "spiritualist",
+                            "materialist",
+                            "egalitarian",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -38,8 +1143,51 @@
                         "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "militarist" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "militarist"
+                        ],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
+                "varname": "relentless_industrialists_policy",
+                "displayName": "relentless_industrialists_policy",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "relentless_industrialists_full_steam_ahead",
+                        "displayName": "relentless_industrialists_full_steam_ahead",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "relentless_industrialists_study",
+                        "displayName": "relentless_industrialists_study",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "relentless_industrialists_cleanup",
+                        "displayName": "relentless_industrialists_cleanup",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
                         "potential": "always = yes"
                     }
                 ]
@@ -57,8 +1205,14 @@
                         "description": "our army should remain planetary",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "pacifist",
+                            "spiritualist",
+                            "materialist",
+                            "egalitarian",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -68,8 +1222,14 @@
                         "description": "our army should be modern and without restriction",
                         "ethicAdjective": "Militarist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "militarist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "militarist",
+                            "spiritualist",
+                            "materialist",
+                            "egalitarian",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -79,8 +1239,10 @@
                         "description": "our army should be a cilivization unto itself",
                         "ethicAdjective": "Militarist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "militarist" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "militarist"
+                        ],
                         "potential": "always = yes"
                     }
                 ]
@@ -98,8 +1260,15 @@
                         "description": "extrastellar planetary holdings should be governed like colonies",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "egalitarian", "pacifist", "spiritualist", "materialist", "egalitarian", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "egalitarian",
+                            "pacifist",
+                            "spiritualist",
+                            "materialist",
+                            "egalitarian",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -109,8 +1278,10 @@
                         "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     }
                 ]
@@ -128,8 +1299,16 @@
                         "description": "the political organization of our pre-FTL days suffices",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "xenophobe", "xenophile", "militarist", "pacifist", "spiritualist", "materialist", "authoritarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "xenophobe",
+                            "xenophile",
+                            "militarist",
+                            "pacifist",
+                            "spiritualist",
+                            "materialist",
+                            "authoritarian"
+                        ],
                         "potential": "always = yes"
                     },
                     {
@@ -139,8 +1318,10 @@
                         "description": "we should embrace a modern interstellar political system",
                         "ethicAdjective": "Pacifist",
                         "picture": "surrender",
-                        "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
-                        "supportingEthics": [ "egalitarian" ],
+                        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+                        "supportingEthics": [
+                            "egalitarian"
+                        ],
                         "potential": "always = yes"
                     }
                 ]
@@ -157,16 +1338,18 @@
                     "dependentColonies",
                     "preFtlMilitaries"
                 ],
-                "againstPolicies": [
-                    
-                ]
+                "againstPolicies": []
             },
             {
                 "varname": "colonists",
                 "displayName": "Colonialist Lobby",
                 "icon": "hand_planet",
                 "desc": "see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.",
-                "ethics": [ "xenophobe", "egalitarian", "pacifist" ],
+                "ethics": [
+                    "xenophobe",
+                    "egalitarian",
+                    "pacifist"
+                ],
                 "supportedPolicies": [
                     "diplo_stance_expansionist",
                     "dependentColonies",
@@ -182,20 +1365,26 @@
                 "displayName": "Consolidationists",
                 "icon": "galactic",
                 "desc": "believe that the creation of a galactic bureuacracy is a matter of national security.",
-                "ethics": [ "xenophobe", "egalitarian", "pacifist" ],
+                "ethics": [
+                    "xenophobe",
+                    "egalitarian",
+                    "pacifist"
+                ],
                 "supportedPolicies": [
                     "resettlement_allowed",
                     "interplanetaryGoverance"
                 ],
-                "againstPolicies": [
-                ]
+                "againstPolicies": []
             },
             {
                 "varname": "nativists",
                 "displayName": "Nativists",
                 "icon": "nativists",
                 "desc": "believe that the fruits of empire should be enjoyed by our primary species alone.",
-                "ethics": [ "xenophobe", "egalitarian" ],
+                "ethics": [
+                    "xenophobe",
+                    "egalitarian"
+                ],
                 "supportedPolicies": [
                     "purge_displacement_only",
                     "slavery_allowed",
@@ -204,6 +1393,49 @@
                 "againstPolicies": [
                     "purge_allowed",
                     "refugees_allowed"
+                ]
+            },
+            {
+                "varname": "armedIsolationism",
+                "displayName": "Dark Forest",
+                "icon": "darkForest",
+                "desc": "believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.",
+                "ethics": [
+                    "xenophobe",
+                    "pacifist"
+                ],
+                "supportedPolicies": [
+                    "diplo_stance_isolationist",
+                    "no_wars",
+                    "defense_in_depth_doctrine",
+                    "first_contact_cautious"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_expansion",
+                    "first_contact_proactive"
+                ]
+            },
+            {
+                "varname": "ourBurden",
+                "displayName": "Our Burden",
+                "icon": "ourBurden",
+                "desc": "believe that is our duty to enlighten the benighted galaxy with our shining ideals.",
+                "ethics": [
+                    "xenophile",
+                    "militarist"
+                ],
+                "supportedPolicies": [
+                    "diplo_stance_belligerent",
+                    "liberation_wars",
+                    "interference_aggressive",
+                    "enlightenment_allowed",
+                    "benevolent_terms"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_isolationist",
+                    "no_wars",
+                    "interference_not_allowed",
+                    "enlightenment_not_allowed"
                 ]
             }
         ]

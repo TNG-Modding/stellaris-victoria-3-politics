@@ -1,0 +1,240 @@
+namespace = situation_passPolicy_diplo_stance_cooperative
+country_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.1
+	title = situation_passPolicy_diplo_stance_cooperative.1.name
+	desc = situation_passPolicy_diplo_stance_cooperative.1.desc
+	picture = GFX_evt_
+	
+	show_sound = {
+		sound = advisor_notification_planet_in_revolt
+		sound_is_advisor = yes
+	}
+	hide_window = no
+	is_triggered_only = yes
+
+	option = {
+		name = passPolicy_ack
+		start_situation = {
+			type = situation_passPolicy_diplo_stance_cooperative
+			target = root
+		}
+	}
+	option = {
+		name = passPolicy_nevermind
+	}
+}
+
+# Determine advance fail or stall
+# situation.success_chance
+# situation.advance_chance
+# situation.stall_chance
+# situation.debate_chance
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.2	
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_to_value_if_missing = { WHICH = setback_count VALUE = 0 }
+		set_to_value_if_missing = { WHICH = swayed_to_support VALUE = 0 }
+	
+		set_diplo_stance_cooperative_base_success_chance = { WHICH = success_chance }
+		set_diplo_stance_cooperative_base_stall_chance = { WHICH = stall_chance }
+
+		# Add previous sways
+		change_variable = { which = success_chance value = swayed_to_support }
+
+		clamp = { WHICH = success_chance MIN = 0 MAX = 100}
+		clamp = { WHICH = stall_chance MIN = 0 MAX = 100}
+
+		# Advance chance is double success minus stall then clamped
+		set_variable = { which = advance_chance value = success_chance }
+		multiply_variable = { which = advance_chance value = 2 }
+		subtract_variable = { which = advance_chance value = stall_chance }
+		max = { WHICH = advance_chance MAX = 0 }
+
+		set_variable = {which = debate_chance value = 100}
+		subtract_variable = { which = debate_chance value = success_chance }
+		subtract_variable = { which = debate_chance value = stall_chance }
+		subtract_variable = { which = debate_chance value = advance_chance }
+		
+		# If the chance of debate would go to less than 0% an end-of-discussion factor is applied to scale the lower of success or stall chances so the sum chance remains 100%.
+		if = {
+			limit = {
+				check_variable = { which = debate_chance value < 0}
+			}
+			diplo_stance_cooperative_end_of_discussion = {}
+		}
+
+		ceiling_variable = success_chance
+		ceiling_variable = stall_chance
+		ceiling_variable = debate_chance
+		ceiling_variable = advance_chance
+
+		set_variable = {which = total_chance value = 0}
+		change_variable = { which = total_chance value = success_chance }
+		change_variable = { which = total_chance value = stall_chance }
+		change_variable = { which = total_chance value = advance_chance }
+		change_variable = { which = total_chance value = debate_chance }
+
+		# log = "POST MATH: diplo_stance_cooperative support: [THIS.success_chance] detraction: [THIS.stall_chance] ambivalence: [THIS.debate_chance]"	
+	}
+}
+# Decide whether or not to roll
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		# Update all values
+		situation_event = {
+			id = situation_passPolicy_diplo_stance_cooperative.2	
+		}
+		set_variable_to_random_value = { which = advancement_roll min = 0 max = 100 rounded = yes}
+		# log = "Rolled: [THIS.advancement_roll] [THIS.success_chance]:[THIS.stall_chance]:[THIS.debate_chance]"
+		if = {
+			limit = {
+				check_variable = { which = advancement_roll value < success_chance  }
+			}
+			# Advance!
+			situation_event = { id = situation_passPolicy_diplo_stance_cooperative.4}
+		}
+		else = {
+			subtract_variable = { which = advancement_roll value = success_chance }
+			if = {
+				limit = {
+					check_variable = { which = advancement_roll value < stall_chance }
+				}
+				# Fail!
+				situation_event = {id = situation_passPolicy_diplo_stance_cooperative.5}
+			}
+			else = {
+				# Ambivalence!
+				situation_event = {id = situation_passPolicy_diplo_stance_cooperative.6}
+			}
+		}	
+	}
+}
+
+# Advance
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.4
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		# log = "diplo_stance_cooperative success!"
+		add_situation_progress = 34
+	}
+}
+# Fail
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.5
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		change_variable = { which = setback_count value = 1 }
+		# log = "diplo_stance_cooperative fail! [this.setback_count]/3"
+		if = {
+			limit = { check_variable = { which = setback_count value = 3}}
+			# log = "diplo_stance_cooperative failed due to setbacks [this.setback_count]/3!"
+			situation_event = { id = situation_passPolicy_diplo_stance_cooperative.9}
+		}
+	}
+}
+
+# Ambivalent
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.6
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { which = debate_chance value > 10}
+			}
+			set_variable_to_random_value = { which = sway_roll min = 0 max = 100 rounded = yes}
+			if = {
+				limit = {
+					check_variable = { which = sway_roll value > 50 }
+				}
+				# log = "diplo_stance_cooperative ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence support."
+				change_variable = { which = swayed_to_support value = 10}
+			}
+			else = {
+				# log = "diplo_stance_cooperative ambivalent! Rolled [THIS.sway_roll]. Giving 10 ambivalence detraction."
+				subtract_variable = { which = swayed_to_support value = 10}
+			}
+			situation_event = {id = situation_passPolicy_diplo_stance_cooperative.2 }
+		}
+		else = {
+			# log = "diplo_stance_cooperative ambivalent! No ambivalence to give at [THIS.debate_chance]."
+		}
+	}
+}
+
+# Success
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.7
+	title = situation_passPolicy_diplo_stance_cooperative.7.name
+	desc = situation_passPolicy_diplo_stance_cooperative.7.desc
+	picture = GFX_evt_
+	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			set_policy = { 
+				policy = diplomatic_stance 
+				option = diplo_stance_cooperative 
+				cooldown = yes 
+			}
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_diplo_stance_cooperative
+		}
+		destroy_situation = this
+		
+	}
+	option = {
+		name = situation_passPolicy_diplo_stance_cooperative.7.a
+	}
+}
+# Failure due to abort
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.8
+	title = situation_passPolicy_diplo_stance_cooperative.8.name
+	desc = situation_passPolicy_diplo_stance_cooperative.8.desc
+	picture = GFX_evt_
+	
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_diplo_stance_cooperative
+		}
+		destroy_situation = this
+	}
+	option = {
+		name = situation_passPolicy_diplo_stance_cooperative.8.a
+	}
+}
+# Failure due to setbacks
+situation_event = {
+	id = situation_passPolicy_diplo_stance_cooperative.9
+	title = situation_passPolicy_diplo_stance_cooperative.9.name
+	desc = situation_passPolicy_diplo_stance_cooperative.9.desc
+	picture = GFX_evt_
+	
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			remove_country_flag = enacting_policy
+			remove_country_flag = enacting_diplo_stance_cooperative
+		}
+		destroy_situation = this
+	}
+	
+	option = {
+		name = situation_passPolicy_diplo_stance_cooperative.9.a
+	}
+}

@@ -1,0 +1,57 @@
+defined_text = {
+	name = MovementName_enlightenment_allowed
+	text = {
+		localization_key = movement_enlightenment_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_enlightenment_allowed_radicalism value > 25 }
+			has_country_flag = enacting_enlightenment_allowed
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_enlightenment_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_enlightenment_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_enlightenment_allowed_radicalism value < 25 }
+			has_country_flag = enacting_enlightenment_allowed
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_allowed
+		trigger = {
+			check_variable = { which = movement_enlightenment_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_enlightenment_allowed}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_enlightenment_allowed_Support_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_enlightenment_allowed_SupportByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = enlightenment_not_allowed
+		}
+	}
+	default = ""
+}
+
+

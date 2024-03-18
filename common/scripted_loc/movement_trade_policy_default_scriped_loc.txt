@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_trade_policy_default
+	text = {
+		localization_key = movement_trade_policy_default_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_default_radicalism value > 25 }
+			has_country_flag = enacting_trade_policy_default
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_default_revolution
+		trigger = {
+			check_variable = { which = movement_trade_policy_default_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_trade_policy_default}
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_default_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_default_radicalism value < 25 }
+			has_country_flag = enacting_trade_policy_default
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_default
+		trigger = {
+			check_variable = { which = movement_trade_policy_default_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_trade_policy_default}
+		}
+	}
+}
+
+
+

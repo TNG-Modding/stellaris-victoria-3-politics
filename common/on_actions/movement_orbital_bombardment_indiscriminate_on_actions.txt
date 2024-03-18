@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_orbital_bombardment_indiscriminate.1
+	}
+}

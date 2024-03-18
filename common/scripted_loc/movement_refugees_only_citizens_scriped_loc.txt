@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_refugees_only_citizens
+	text = {
+		localization_key = movement_refugees_only_citizens_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_refugees_only_citizens_radicalism value > 25 }
+			has_country_flag = enacting_refugees_only_citizens
+		}
+	}
+	text = {
+		localization_key = movement_refugees_only_citizens_revolution
+		trigger = {
+			check_variable = { which = movement_refugees_only_citizens_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_refugees_only_citizens}
+		}
+	}
+	text = {
+		localization_key = movement_refugees_only_citizens_appeased
+		trigger = {
+			check_variable = { which = movement_refugees_only_citizens_radicalism value < 25 }
+			has_country_flag = enacting_refugees_only_citizens
+		}
+	}
+	text = {
+		localization_key = movement_refugees_only_citizens
+		trigger = {
+			check_variable = { which = movement_refugees_only_citizens_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_refugees_only_citizens}
+		}
+	}
+}
+
+
+defined_text = {
+	name = MovementDesc_refugees_only_citizens_SupportByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = refugees_allowed
+		}
+	}
+	default = ""
+}
+
+

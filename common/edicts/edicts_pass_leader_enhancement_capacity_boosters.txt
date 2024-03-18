@@ -1,0 +1,32 @@
+pass_leader_enhancement_capacity_boosters = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = leader_enhancement_capacity_boosters }
+		always = yes
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_leader_enhancement_capacity_boosters_faction_support
+			}
+			check_variable = { which = movement_leader_enhancement_capacity_boosters_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = leader_enhancement
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_leader_enhancement_capacity_boosters.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

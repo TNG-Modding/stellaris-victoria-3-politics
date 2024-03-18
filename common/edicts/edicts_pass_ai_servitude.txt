@@ -1,0 +1,32 @@
+pass_ai_servitude = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = ai_servitude }
+		always = yes
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_ai_servitude_faction_support
+			}
+			check_variable = { which = movement_ai_servitude_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = artificial_intelligence_policy
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_ai_servitude.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

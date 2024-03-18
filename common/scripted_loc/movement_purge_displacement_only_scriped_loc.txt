@@ -1,0 +1,57 @@
+defined_text = {
+	name = MovementName_purge_displacement_only
+	text = {
+		localization_key = movement_purge_displacement_only_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_purge_displacement_only_radicalism value > 25 }
+			has_country_flag = enacting_purge_displacement_only
+		}
+	}
+	text = {
+		localization_key = movement_purge_displacement_only_revolution
+		trigger = {
+			check_variable = { which = movement_purge_displacement_only_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_purge_displacement_only}
+		}
+	}
+	text = {
+		localization_key = movement_purge_displacement_only_appeased
+		trigger = {
+			check_variable = { which = movement_purge_displacement_only_radicalism value < 25 }
+			has_country_flag = enacting_purge_displacement_only
+		}
+	}
+	text = {
+		localization_key = movement_purge_displacement_only
+		trigger = {
+			check_variable = { which = movement_purge_displacement_only_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_purge_displacement_only}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_purge_displacement_only_Support_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_purge_displacement_only_SupportByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = purge_allowed
+		}
+	}
+	default = ""
+}
+
+

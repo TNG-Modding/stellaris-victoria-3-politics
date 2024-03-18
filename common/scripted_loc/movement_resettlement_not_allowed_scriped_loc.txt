@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_resettlement_not_allowed
+	text = {
+		localization_key = movement_resettlement_not_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_resettlement_not_allowed_radicalism value > 25 }
+			has_country_flag = enacting_resettlement_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_resettlement_not_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_resettlement_not_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_resettlement_not_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_resettlement_not_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_resettlement_not_allowed_radicalism value < 25 }
+			has_country_flag = enacting_resettlement_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_resettlement_not_allowed
+		trigger = {
+			check_variable = { which = movement_resettlement_not_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_resettlement_not_allowed}
+		}
+	}
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_resettlement_not_allowed_DetractByChange_consolidationists
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = resettlement_allowed
+		}
+	}
+	default = ""
+}

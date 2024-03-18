@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_scavenge_and_research_debris.1
+	}
+}

@@ -1,0 +1,91 @@
+# situation
+# which
+set_no_retreat_doctrine_base_success_chance = {
+	set_variable = { which = $WHICH$ value = 0}
+
+	OWNER = {
+		every_pop_faction = {
+			if = {
+				limit = {
+					OR = {
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+				}
+				export_trigger_value_to_variable = { trigger = support variable = support }
+				multiply_variable = {which = support value = 100}
+				ROOT = {
+					change_variable = { which = $WHICH$ value = PREV.support }		
+				}
+			}
+		}
+	}
+}
+
+# situation
+# which
+set_no_retreat_doctrine_base_stall_chance = {
+	set_variable = { which = $WHICH$ value = 0}
+	OWNER = {
+		every_pop_faction = {
+			if = {
+				limit = {
+					OR = {
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = armedIsolationism
+								OWNER = { has_policy_flag = defense_in_depth_doctrine }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+				}
+				export_trigger_value_to_variable = { trigger = support variable = _support }
+				multiply_variable = {which = _support value = 100}
+				ROOT = {
+					change_variable = { which = $WHICH$ value = PREV._support }	
+				}
+			}
+		}
+	}
+}
+
+# Success, stall, and advance summed give greater than 100
+# debate_chance is equal to 100-success-stall-advance
+no_retreat_doctrine_end_of_discussion = {
+	set_variable = { which = old_advance_chance value = advance_chance }
+	change_variable = { which = advance_chance value = debate_chance}
+	max = { WHICH = advance_chance MAX = 0 }
+	
+	# if old advance chance was 5, but we need to give away -20 debate, then 5 - 0 = 5, -20 -> -15
+	# if old advance was 50, but we need to give away -20, then 50 - 30 = 20, -20 -> 0
+	subtract_variable = {which = old_advance_chance value = advance_chance }
+	change_variable = { which = debate_chance value = old_advance_chance }
+
+	if = {
+		limit = {
+			check_variable = { which = success_chance value > stall_chance }
+		}
+		change_variable = { which = stall_chance value = debate_chance } 
+	}
+	else = {
+		change_variable = { which = success_chance value = debate_chance } 
+	}
+	set_variable = { which = debate_chance value = 0 }
+}

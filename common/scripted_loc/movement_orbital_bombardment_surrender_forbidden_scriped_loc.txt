@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_orbital_bombardment_surrender_forbidden
+	text = {
+		localization_key = movement_orbital_bombardment_surrender_forbidden_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_orbital_bombardment_surrender_forbidden_radicalism value > 25 }
+			has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+		}
+	}
+	text = {
+		localization_key = movement_orbital_bombardment_surrender_forbidden_revolution
+		trigger = {
+			check_variable = { which = movement_orbital_bombardment_surrender_forbidden_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_orbital_bombardment_surrender_forbidden}
+		}
+	}
+	text = {
+		localization_key = movement_orbital_bombardment_surrender_forbidden_appeased
+		trigger = {
+			check_variable = { which = movement_orbital_bombardment_surrender_forbidden_radicalism value < 25 }
+			has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+		}
+	}
+	text = {
+		localization_key = movement_orbital_bombardment_surrender_forbidden
+		trigger = {
+			check_variable = { which = movement_orbital_bombardment_surrender_forbidden_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_orbital_bombardment_surrender_forbidden}
+		}
+	}
+}
+
+
+

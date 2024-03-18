@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_leader_enhancement_capacity_boosters.1
+	}
+}

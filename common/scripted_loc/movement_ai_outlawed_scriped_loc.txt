@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_ai_outlawed
+	text = {
+		localization_key = movement_ai_outlawed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_ai_outlawed_radicalism value > 25 }
+			has_country_flag = enacting_ai_outlawed
+		}
+	}
+	text = {
+		localization_key = movement_ai_outlawed_revolution
+		trigger = {
+			check_variable = { which = movement_ai_outlawed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_ai_outlawed}
+		}
+	}
+	text = {
+		localization_key = movement_ai_outlawed_appeased
+		trigger = {
+			check_variable = { which = movement_ai_outlawed_radicalism value < 25 }
+			has_country_flag = enacting_ai_outlawed
+		}
+	}
+	text = {
+		localization_key = movement_ai_outlawed
+		trigger = {
+			check_variable = { which = movement_ai_outlawed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_ai_outlawed}
+		}
+	}
+}
+
+
+

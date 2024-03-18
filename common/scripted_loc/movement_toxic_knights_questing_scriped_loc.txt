@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_toxic_knights_questing
+	text = {
+		localization_key = movement_toxic_knights_questing_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_toxic_knights_questing_radicalism value > 25 }
+			has_country_flag = enacting_toxic_knights_questing
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_questing_revolution
+		trigger = {
+			check_variable = { which = movement_toxic_knights_questing_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_toxic_knights_questing}
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_questing_appeased
+		trigger = {
+			check_variable = { which = movement_toxic_knights_questing_radicalism value < 25 }
+			has_country_flag = enacting_toxic_knights_questing
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_questing
+		trigger = {
+			check_variable = { which = movement_toxic_knights_questing_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_toxic_knights_questing}
+		}
+	}
+}
+
+
+

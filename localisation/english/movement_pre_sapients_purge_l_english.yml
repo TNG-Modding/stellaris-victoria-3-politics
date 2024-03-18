@@ -1,0 +1,33 @@
+﻿l_english:
+ movement_pre_sapients_purge.2.name:0 "Movement for pre_sapients_purge"
+ movement_pre_sapients_purge.2.desc:0 "Support: [This.movement_pre_sapients_purge_support]\nRadicalism: [This.movement_pre_sapients_purge_radicalism]"
+
+ #  Situation
+ situation_movement_pre_sapients_purge:0 "[Owner.MovementName_pre_sapients_purge]"
+ situation_movement_pre_sapients_purge_type:0 "[Owner.MovementName_pre_sapients_purge]"
+ situation_movement_pre_sapients_purge_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+# 
+ situation_movement_pre_sapients_purge_supporting:0 "Supporting Factions:\n§G§!"
+
+ situation_movement_pre_sapients_purge_detracting:0 "Detracting Factions:\n§R§!"
+
+ situation_movement_pre_sapients_purge_ethics:0 "Ethics: §Y§!"
+
+ situation_movement_pre_sapients_purge_stats:0 "Support: [Owner.movement_pre_sapients_purge_support] Radicalism: [Owner.movement_pre_sapients_purge_radicalism] Inertia: [Owner.movement_pre_sapients_purge_inertia]\nFaction Support [Owner.movement_pre_sapients_purge_faction_support] \nFaction Radicalism: [Owner.movement_pre_sapients_purge_faction_radicalism] \nNumerical Support: [Owner.pre_sapients_purge_supporting_population]/[Owner.pre_sapients_purge_population]=[Owner.movement_pre_sapients_purge_numerical_support] \nNumerical Radicalism: [Owner.pre_sapients_purge_radical_population]/[Owner.pre_sapients_purge_population]=[Owner.movement_pre_sapients_purge_numerical_radicalism]"
+
+ situation_movement_pre_sapients_purge_quickDesc:0 "The people are calling for §Bpre_sapients_purge§! as they believe ."
+ situation_movement_pre_sapients_purge_desc:0 "$situation_movement_pre_sapients_purge_quickDesc$\n\n$situation_movement_pre_sapients_purge_supporting$\n$situation_movement_pre_sapients_purge_detracting$\n$situation_movement_pre_sapients_purge_ethics$\n\n$situation_movement_pre_sapients_purge_stats$"
+ situation_movement_finisher_pre_sapients_purge:0 "Revolution for pre_sapients_purge."
+ 
+ movement_pre_sapients_purge_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_pre_sapients_purge_radicalism]§! is above 25."
+
+ movement_pre_sapients_purge_revolution_appeased:0 "§GAppeased Revolution for pre_sapients_purge§!"
+ movement_pre_sapients_purge_revolution:0 "§RRevolution for pre_sapients_purge§!"
+ movement_pre_sapients_purge:0 "Movement for pre_sapients_purge"
+ movement_pre_sapients_purge_appeased:0 "Appeased Movement for pre_sapients_purge"
+
+ movement_pre_sapients_purge.6.title:0 "Secession over §Bpre_sapients_purge§!"
+ movement_pre_sapients_purge.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Bpre_sapients_purge§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Bpre_sapients_purge§!."
+ movement_pre_sapients_purge.6.fight:0 "Make them drink vacuum!"
+ movement_pre_sapients_purge.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

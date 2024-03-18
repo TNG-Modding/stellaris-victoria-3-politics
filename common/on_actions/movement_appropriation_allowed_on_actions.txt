@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_appropriation_allowed.1
+	}
+}

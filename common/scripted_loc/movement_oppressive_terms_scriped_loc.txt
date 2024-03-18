@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_oppressive_terms
+	text = {
+		localization_key = movement_oppressive_terms_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_oppressive_terms_radicalism value > 25 }
+			has_country_flag = enacting_oppressive_terms
+		}
+	}
+	text = {
+		localization_key = movement_oppressive_terms_revolution
+		trigger = {
+			check_variable = { which = movement_oppressive_terms_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_oppressive_terms}
+		}
+	}
+	text = {
+		localization_key = movement_oppressive_terms_appeased
+		trigger = {
+			check_variable = { which = movement_oppressive_terms_radicalism value < 25 }
+			has_country_flag = enacting_oppressive_terms
+		}
+	}
+	text = {
+		localization_key = movement_oppressive_terms
+		trigger = {
+			check_variable = { which = movement_oppressive_terms_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_oppressive_terms}
+		}
+	}
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_oppressive_terms_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = benevolent_terms
+		}
+	}
+	default = ""
+}

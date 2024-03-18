@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_relentless_industrialists_full_steam_ahead
+	text = {
+		localization_key = movement_relentless_industrialists_full_steam_ahead_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_relentless_industrialists_full_steam_ahead_radicalism value > 25 }
+			has_country_flag = enacting_relentless_industrialists_full_steam_ahead
+		}
+	}
+	text = {
+		localization_key = movement_relentless_industrialists_full_steam_ahead_revolution
+		trigger = {
+			check_variable = { which = movement_relentless_industrialists_full_steam_ahead_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_relentless_industrialists_full_steam_ahead}
+		}
+	}
+	text = {
+		localization_key = movement_relentless_industrialists_full_steam_ahead_appeased
+		trigger = {
+			check_variable = { which = movement_relentless_industrialists_full_steam_ahead_radicalism value < 25 }
+			has_country_flag = enacting_relentless_industrialists_full_steam_ahead
+		}
+	}
+	text = {
+		localization_key = movement_relentless_industrialists_full_steam_ahead
+		trigger = {
+			check_variable = { which = movement_relentless_industrialists_full_steam_ahead_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_relentless_industrialists_full_steam_ahead}
+		}
+	}
+}
+
+
+

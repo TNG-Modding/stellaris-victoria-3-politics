@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_toxic_knights_herald
+	text = {
+		localization_key = movement_toxic_knights_herald_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_toxic_knights_herald_radicalism value > 25 }
+			has_country_flag = enacting_toxic_knights_herald
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_herald_revolution
+		trigger = {
+			check_variable = { which = movement_toxic_knights_herald_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_toxic_knights_herald}
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_herald_appeased
+		trigger = {
+			check_variable = { which = movement_toxic_knights_herald_radicalism value < 25 }
+			has_country_flag = enacting_toxic_knights_herald
+		}
+	}
+	text = {
+		localization_key = movement_toxic_knights_herald
+		trigger = {
+			check_variable = { which = movement_toxic_knights_herald_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_toxic_knights_herald}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,32 @@
+pass_trade_policy_default = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = trade_policy_default }
+		always = yes
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_trade_policy_default_faction_support
+			}
+			check_variable = { which = movement_trade_policy_default_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = trade_policy
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_trade_policy_default.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}

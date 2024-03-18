@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_armedIsolationism"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_darkForest.dds"
+		noOfFrames = 1
+	}
+}

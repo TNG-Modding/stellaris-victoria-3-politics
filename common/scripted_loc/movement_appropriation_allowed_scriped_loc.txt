@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_appropriation_allowed
+	text = {
+		localization_key = movement_appropriation_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_appropriation_allowed_radicalism value > 25 }
+			has_country_flag = enacting_appropriation_allowed
+		}
+	}
+	text = {
+		localization_key = movement_appropriation_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_appropriation_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_appropriation_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_appropriation_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_appropriation_allowed_radicalism value < 25 }
+			has_country_flag = enacting_appropriation_allowed
+		}
+	}
+	text = {
+		localization_key = movement_appropriation_allowed
+		trigger = {
+			check_variable = { which = movement_appropriation_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_appropriation_allowed}
+		}
+	}
+}
+
+
+

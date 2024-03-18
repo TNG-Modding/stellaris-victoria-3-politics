@@ -1,0 +1,57 @@
+defined_text = {
+	name = MovementName_interference_aggressive
+	text = {
+		localization_key = movement_interference_aggressive_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_interference_aggressive_radicalism value > 25 }
+			has_country_flag = enacting_interference_aggressive
+		}
+	}
+	text = {
+		localization_key = movement_interference_aggressive_revolution
+		trigger = {
+			check_variable = { which = movement_interference_aggressive_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_interference_aggressive}
+		}
+	}
+	text = {
+		localization_key = movement_interference_aggressive_appeased
+		trigger = {
+			check_variable = { which = movement_interference_aggressive_radicalism value < 25 }
+			has_country_flag = enacting_interference_aggressive
+		}
+	}
+	text = {
+		localization_key = movement_interference_aggressive
+		trigger = {
+			check_variable = { which = movement_interference_aggressive_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_interference_aggressive}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_interference_aggressive_Support_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_interference_aggressive_SupportByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = interference_not_allowed
+		}
+	}
+	default = ""
+}
+
+

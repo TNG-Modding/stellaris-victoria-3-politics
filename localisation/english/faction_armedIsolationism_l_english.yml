@@ -1,0 +1,5 @@
+﻿l_english:
+ armedIsolationism:0 "Dark Forest Faction"
+ armedIsolationism_wrapped:0 "Dark Forest Faction\n"
+ pft_armedIsolationism:0 "Dark Forest Faction"
+ pft_armedIsolationism_desc:2 "§BThe Dark Forest Faction§! believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.\n\nSupports: \n§G  $diplo_stance_isolationist_name$\n  $no_wars_name$\n  $defense_in_depth_doctrine_name$\n  $first_contact_cautious_name$§!\n\nOpposes: \n§R  $diplo_stance_expansion_name$\n  $first_contact_proactive_name$§!"

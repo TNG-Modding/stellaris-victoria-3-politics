@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_hit_and_run_doctrine
+	text = {
+		localization_key = movement_hit_and_run_doctrine_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_hit_and_run_doctrine_radicalism value > 25 }
+			has_country_flag = enacting_hit_and_run_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_hit_and_run_doctrine_revolution
+		trigger = {
+			check_variable = { which = movement_hit_and_run_doctrine_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_hit_and_run_doctrine}
+		}
+	}
+	text = {
+		localization_key = movement_hit_and_run_doctrine_appeased
+		trigger = {
+			check_variable = { which = movement_hit_and_run_doctrine_radicalism value < 25 }
+			has_country_flag = enacting_hit_and_run_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_hit_and_run_doctrine
+		trigger = {
+			check_variable = { which = movement_hit_and_run_doctrine_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_hit_and_run_doctrine}
+		}
+	}
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_hit_and_run_doctrine_DetractByChange_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+			has_policy_flag = defense_in_depth_doctrine
+		}
+	}
+	default = ""
+}

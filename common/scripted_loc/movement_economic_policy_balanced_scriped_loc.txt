@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_economic_policy_balanced
+	text = {
+		localization_key = movement_economic_policy_balanced_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_economic_policy_balanced_radicalism value > 25 }
+			has_country_flag = enacting_economic_policy_balanced
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_balanced_revolution
+		trigger = {
+			check_variable = { which = movement_economic_policy_balanced_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_economic_policy_balanced}
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_balanced_appeased
+		trigger = {
+			check_variable = { which = movement_economic_policy_balanced_radicalism value < 25 }
+			has_country_flag = enacting_economic_policy_balanced
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_balanced
+		trigger = {
+			check_variable = { which = movement_economic_policy_balanced_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_economic_policy_balanced}
+		}
+	}
+}
+
+
+

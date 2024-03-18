@@ -1,0 +1,45 @@
+defined_text = {
+	name = MovementName_slavery_allowed
+	text = {
+		localization_key = movement_slavery_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_slavery_allowed_radicalism value > 25 }
+			has_country_flag = enacting_slavery_allowed
+		}
+	}
+	text = {
+		localization_key = movement_slavery_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_slavery_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_slavery_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_slavery_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_slavery_allowed_radicalism value < 25 }
+			has_country_flag = enacting_slavery_allowed
+		}
+	}
+	text = {
+		localization_key = movement_slavery_allowed
+		trigger = {
+			check_variable = { which = movement_slavery_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_slavery_allowed}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_slavery_allowed_Support_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+		}
+	}
+	default = ""
+}
+
+
+

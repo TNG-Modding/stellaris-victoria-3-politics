@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_population_controls_not_allowed
+	text = {
+		localization_key = movement_population_controls_not_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_population_controls_not_allowed_radicalism value > 25 }
+			has_country_flag = enacting_population_controls_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_population_controls_not_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_population_controls_not_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_population_controls_not_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_population_controls_not_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_population_controls_not_allowed_radicalism value < 25 }
+			has_country_flag = enacting_population_controls_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_population_controls_not_allowed
+		trigger = {
+			check_variable = { which = movement_population_controls_not_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_population_controls_not_allowed}
+		}
+	}
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_population_controls_not_allowed_DetractByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = population_controls_allowed
+		}
+	}
+	default = ""
+}

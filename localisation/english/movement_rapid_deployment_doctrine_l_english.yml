@@ -1,0 +1,33 @@
+﻿l_english:
+ movement_rapid_deployment_doctrine.2.name:0 "Movement for rapid_deployment_doctrine"
+ movement_rapid_deployment_doctrine.2.desc:0 "Support: [This.movement_rapid_deployment_doctrine_support]\nRadicalism: [This.movement_rapid_deployment_doctrine_radicalism]"
+
+ #  Situation
+ situation_movement_rapid_deployment_doctrine:0 "[Owner.MovementName_rapid_deployment_doctrine]"
+ situation_movement_rapid_deployment_doctrine_type:0 "[Owner.MovementName_rapid_deployment_doctrine]"
+ situation_movement_rapid_deployment_doctrine_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+# 
+ situation_movement_rapid_deployment_doctrine_supporting:0 "Supporting Factions:\n§G§!"
+
+ situation_movement_rapid_deployment_doctrine_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_rapid_deployment_doctrine_DetractByChange_armedIsolationism]   §!"
+
+ situation_movement_rapid_deployment_doctrine_ethics:0 "Ethics: §Y§!"
+
+ situation_movement_rapid_deployment_doctrine_stats:0 "Support: [Owner.movement_rapid_deployment_doctrine_support] Radicalism: [Owner.movement_rapid_deployment_doctrine_radicalism] Inertia: [Owner.movement_rapid_deployment_doctrine_inertia]\nFaction Support [Owner.movement_rapid_deployment_doctrine_faction_support] \nFaction Radicalism: [Owner.movement_rapid_deployment_doctrine_faction_radicalism] \nNumerical Support: [Owner.rapid_deployment_doctrine_supporting_population]/[Owner.rapid_deployment_doctrine_population]=[Owner.movement_rapid_deployment_doctrine_numerical_support] \nNumerical Radicalism: [Owner.rapid_deployment_doctrine_radical_population]/[Owner.rapid_deployment_doctrine_population]=[Owner.movement_rapid_deployment_doctrine_numerical_radicalism]"
+
+ situation_movement_rapid_deployment_doctrine_quickDesc:0 "The people are calling for §Brapid_deployment_doctrine§! as they believe ."
+ situation_movement_rapid_deployment_doctrine_desc:0 "$situation_movement_rapid_deployment_doctrine_quickDesc$\n\n$situation_movement_rapid_deployment_doctrine_supporting$\n$situation_movement_rapid_deployment_doctrine_detracting$\n$situation_movement_rapid_deployment_doctrine_ethics$\n\n$situation_movement_rapid_deployment_doctrine_stats$"
+ situation_movement_finisher_rapid_deployment_doctrine:0 "Revolution for rapid_deployment_doctrine."
+ 
+ movement_rapid_deployment_doctrine_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_rapid_deployment_doctrine_radicalism]§! is above 25."
+
+ movement_rapid_deployment_doctrine_revolution_appeased:0 "§GAppeased Revolution for rapid_deployment_doctrine§!"
+ movement_rapid_deployment_doctrine_revolution:0 "§RRevolution for rapid_deployment_doctrine§!"
+ movement_rapid_deployment_doctrine:0 "Movement for rapid_deployment_doctrine"
+ movement_rapid_deployment_doctrine_appeased:0 "Appeased Movement for rapid_deployment_doctrine"
+
+ movement_rapid_deployment_doctrine.6.title:0 "Secession over §Brapid_deployment_doctrine§!"
+ movement_rapid_deployment_doctrine.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Brapid_deployment_doctrine§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Brapid_deployment_doctrine§!."
+ movement_rapid_deployment_doctrine.6.fight:0 "Make them drink vacuum!"
+ movement_rapid_deployment_doctrine.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

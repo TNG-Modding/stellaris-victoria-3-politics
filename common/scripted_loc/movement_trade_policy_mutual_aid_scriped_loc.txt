@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_trade_policy_mutual_aid
+	text = {
+		localization_key = movement_trade_policy_mutual_aid_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_mutual_aid_radicalism value > 25 }
+			has_country_flag = enacting_trade_policy_mutual_aid
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_mutual_aid_revolution
+		trigger = {
+			check_variable = { which = movement_trade_policy_mutual_aid_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_trade_policy_mutual_aid}
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_mutual_aid_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_mutual_aid_radicalism value < 25 }
+			has_country_flag = enacting_trade_policy_mutual_aid
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_mutual_aid
+		trigger = {
+			check_variable = { which = movement_trade_policy_mutual_aid_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_trade_policy_mutual_aid}
+		}
+	}
+}
+
+
+

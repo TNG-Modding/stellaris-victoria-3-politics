@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_relentless_industrialists_study.1
+	}
+}

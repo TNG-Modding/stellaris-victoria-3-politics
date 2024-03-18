@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_balanced_corporate_terms.1
+	}
+}

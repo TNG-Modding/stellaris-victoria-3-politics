@@ -1,0 +1,57 @@
+defined_text = {
+	name = MovementName_first_contact_proactive
+	text = {
+		localization_key = movement_first_contact_proactive_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_first_contact_proactive_radicalism value > 25 }
+			has_country_flag = enacting_first_contact_proactive
+		}
+	}
+	text = {
+		localization_key = movement_first_contact_proactive_revolution
+		trigger = {
+			check_variable = { which = movement_first_contact_proactive_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_first_contact_proactive}
+		}
+	}
+	text = {
+		localization_key = movement_first_contact_proactive_appeased
+		trigger = {
+			check_variable = { which = movement_first_contact_proactive_radicalism value < 25 }
+			has_country_flag = enacting_first_contact_proactive
+		}
+	}
+	text = {
+		localization_key = movement_first_contact_proactive
+		trigger = {
+			check_variable = { which = movement_first_contact_proactive_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_first_contact_proactive}
+		}
+	}
+}
+
+
+
+defined_text = {
+	name = MovementDesc_first_contact_proactive_Detract_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_first_contact_proactive_DetractByChange_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+			has_policy_flag = first_contact_cautious
+		}
+	}
+	default = ""
+}

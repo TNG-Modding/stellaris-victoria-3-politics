@@ -1,0 +1,68 @@
+defined_text = {
+	name = MovementName_no_wars
+	text = {
+		localization_key = movement_no_wars_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_no_wars_radicalism value > 25 }
+			has_country_flag = enacting_no_wars
+		}
+	}
+	text = {
+		localization_key = movement_no_wars_revolution
+		trigger = {
+			check_variable = { which = movement_no_wars_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_no_wars}
+		}
+	}
+	text = {
+		localization_key = movement_no_wars_appeased
+		trigger = {
+			check_variable = { which = movement_no_wars_radicalism value < 25 }
+			has_country_flag = enacting_no_wars
+		}
+	}
+	text = {
+		localization_key = movement_no_wars
+		trigger = {
+			check_variable = { which = movement_no_wars_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_no_wars}
+		}
+	}
+}
+
+defined_text = {
+	name = MovementDesc_no_wars_Support_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
+
+
+
+defined_text = {
+	name = MovementDesc_no_wars_Detract_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_no_wars_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = liberation_wars
+		}
+	}
+	default = ""
+}

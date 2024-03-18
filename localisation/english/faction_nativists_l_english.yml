@@ -2,4 +2,4 @@
  nativists:0 "Nativists Faction"
  nativists_wrapped:0 "Nativists Faction\n"
  pft_nativists:0 "Nativists Faction"
- pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\nSupports: \n§G  $purge_displacement_only_name$\n  $slavery_allowed_name$\n  $population_controls_allowed_name$\n  $refugees_not_allowed_name$§!\n\nOpposes: \n§R  $purge_allowed_name$\n  $refugees_allowed_name$§!"
+ pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\nSupports: \n§G  $purge_displacement_only_name$\n  $slavery_allowed_name$\n  $population_controls_allowed_name$§!\n\nOpposes: \n§R  $purge_allowed_name$\n  $refugees_allowed_name$§!"

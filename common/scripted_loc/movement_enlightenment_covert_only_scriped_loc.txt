@@ -1,0 +1,58 @@
+defined_text = {
+	name = MovementName_enlightenment_covert_only
+	text = {
+		localization_key = movement_enlightenment_covert_only_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_enlightenment_covert_only_radicalism value > 25 }
+			has_country_flag = enacting_enlightenment_covert_only
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_covert_only_revolution
+		trigger = {
+			check_variable = { which = movement_enlightenment_covert_only_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_enlightenment_covert_only}
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_covert_only_appeased
+		trigger = {
+			check_variable = { which = movement_enlightenment_covert_only_radicalism value < 25 }
+			has_country_flag = enacting_enlightenment_covert_only
+		}
+	}
+	text = {
+		localization_key = movement_enlightenment_covert_only
+		trigger = {
+			check_variable = { which = movement_enlightenment_covert_only_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_enlightenment_covert_only}
+		}
+	}
+}
+
+
+defined_text = {
+	name = MovementDesc_enlightenment_covert_only_SupportByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = enlightenment_not_allowed
+		}
+	}
+	default = ""
+}
+
+
+
+defined_text = {
+	name = MovementDesc_enlightenment_covert_only_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = enlightenment_allowed
+		}
+	}
+	default = ""
+}

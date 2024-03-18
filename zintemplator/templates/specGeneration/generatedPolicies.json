@@ -18,7 +18,7 @@
                     "ethicAdjective": "{{option.ethicAdjective}}",
                     "picture": "{{option.picture}}",
                     "rebellionEthics": "{{option.rebellionEthics}}",
-                    "supportingEthics": [{% for ethic in option.supportingEthics %}"{{ethic}}"{%if loop.index < option.supportingEthics|length %},{%endif%}{% endfor %}],
+                    "supportingEthics": [{% for ethic in option.supportingEthics %}"{{ethic}}",{% endfor %}],
                     "potential": "{{option.potential}}",
                     "supportingFactions": [
                         {% for faction in factions %}{% for supportedPolicy in faction.supportedPolicies %}{%if supportedPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
@@ -36,11 +36,11 @@
                         {% for potentiallyHappyFaction in factions %}{% for potentiallyHappyFactionsAgainstPolicy in potentiallyHappyFaction.againstPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyHappyFactionsAgainstPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyHappyFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" }, 
                         {% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
                     ]
-                }{%if loop.index < policy.options|length %},{%endif%}
+                },
                 {% endfor %}
             ]
             
-        }{%if loop.index < policies|length %},{%endif%}
+        },
         {% endfor %}
     ],
     "policiesSpelledOut": [
@@ -55,7 +55,7 @@
             "ethicAdjective": "{{option.ethicAdjective}}",
             "picture": "{{option.picture}}",
             "rebellionEthics": "{{option.rebellionEthics}}",
-            "supportingEthics": [{% for ethic in option.supportingEthics %}"{{ethic}}"{%if loop.index < option.supportingEthics|length %},{%endif%}{% endfor %}],
+            "supportingEthics": [{% for ethic in option.supportingEthics %}"{{ethic}}",{% endfor %}],
             "potential": "{{option.potential}}",
             "supportingFactions": [
                 {% for faction in factions %}{% for supportedPolicy in faction.supportedPolicies %}{%if supportedPolicy == option.varname %}"{{faction.varname}}",{%endif%}{% endfor %}{% endfor %}
@@ -73,7 +73,7 @@
                 {% for potentiallyHappyFaction in factions %}{% for potentiallyHappyFactionsAgainstPolicy in potentiallyHappyFaction.againstPolicies %}{% for otherPolicyOption in policy.options %}{% if potentiallyHappyFactionsAgainstPolicy == otherPolicyOption.varname %}{% if otherPolicyOption.varname != option.varname %}{ "faction": "{{potentiallyHappyFaction.varname}}", "fromPolicy": "{{otherPolicyOption.varname}}" }, 
                 {% endif %}{% endif %}{% endfor %}{% endfor %}{% endfor %}
             ]
-        }{%if loop.index < policy.options|length %},{%endif%}
+        },
         {% endfor %}{% endfor %}
     ]
 }

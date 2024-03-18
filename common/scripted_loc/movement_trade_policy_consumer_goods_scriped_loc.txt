@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_trade_policy_consumer_goods
+	text = {
+		localization_key = movement_trade_policy_consumer_goods_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_consumer_goods_radicalism value > 25 }
+			has_country_flag = enacting_trade_policy_consumer_goods
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_consumer_goods_revolution
+		trigger = {
+			check_variable = { which = movement_trade_policy_consumer_goods_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_trade_policy_consumer_goods}
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_consumer_goods_appeased
+		trigger = {
+			check_variable = { which = movement_trade_policy_consumer_goods_radicalism value < 25 }
+			has_country_flag = enacting_trade_policy_consumer_goods
+		}
+	}
+	text = {
+		localization_key = movement_trade_policy_consumer_goods
+		trigger = {
+			check_variable = { which = movement_trade_policy_consumer_goods_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_trade_policy_consumer_goods}
+		}
+	}
+}
+
+
+

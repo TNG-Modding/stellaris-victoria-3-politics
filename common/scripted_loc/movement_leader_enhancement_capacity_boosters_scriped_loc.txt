@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_leader_enhancement_capacity_boosters
+	text = {
+		localization_key = movement_leader_enhancement_capacity_boosters_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_leader_enhancement_capacity_boosters_radicalism value > 25 }
+			has_country_flag = enacting_leader_enhancement_capacity_boosters
+		}
+	}
+	text = {
+		localization_key = movement_leader_enhancement_capacity_boosters_revolution
+		trigger = {
+			check_variable = { which = movement_leader_enhancement_capacity_boosters_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_leader_enhancement_capacity_boosters}
+		}
+	}
+	text = {
+		localization_key = movement_leader_enhancement_capacity_boosters_appeased
+		trigger = {
+			check_variable = { which = movement_leader_enhancement_capacity_boosters_radicalism value < 25 }
+			has_country_flag = enacting_leader_enhancement_capacity_boosters
+		}
+	}
+	text = {
+		localization_key = movement_leader_enhancement_capacity_boosters
+		trigger = {
+			check_variable = { which = movement_leader_enhancement_capacity_boosters_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_leader_enhancement_capacity_boosters}
+		}
+	}
+}
+
+
+

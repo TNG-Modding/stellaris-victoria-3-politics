@@ -1,0 +1,83 @@
+
+calculate_purge_displacement_only_movement_support_and_radicalism_from_factions = {
+	every_pop_faction = {
+		
+		if = {
+			limit = {
+				OR = {
+					
+					is_pop_faction_type = nativists
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = nativists
+							ROOT = { has_policy_flag = purge_allowed }
+						}
+					
+					
+				}
+				
+			}
+		
+			export_trigger_value_to_variable = { trigger = support variable = purge_displacement_only_support }
+			multiply_variable = {which = purge_displacement_only_support value = 100}
+			# purge_displacement_only_support is 0 to 100
+			
+			export_trigger_value_to_variable = { trigger = faction_approval variable = purge_displacement_only_approval }
+			# purge_displacement_only_approval is 0 to 1
+
+			ROOT = {
+				change_variable = { which = $SUPPORT$ value = PREV.purge_displacement_only_support }
+				
+				set_variable = { which = purge_displacement_only_radicalism value = 1 }
+				subtract_variable = { which = purge_displacement_only_radicalism value = PREV.purge_displacement_only_approval }
+				
+				multiply_variable = { which = purge_displacement_only_radicalism value = PREV.purge_displacement_only_support }
+
+				change_variable = { which = $RADICALISM$ value = purge_displacement_only_radicalism }
+			}
+		}
+	}
+}
+
+calculate_purge_displacement_only_movement_support_and_radical_from_numbers = {
+	set_variable = { which = purge_displacement_only_population value = 0}
+	set_variable = { which = purge_displacement_only_supporting_population value = 0}
+	set_variable = { which = purge_displacement_only_radical_population value = 0}
+	
+	every_owned_pop = {
+		ROOT = {
+			change_variable = { which = purge_displacement_only_population value = 1}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					
+				}
+			}
+			# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
+			export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+			ROOT = {
+				set_variable = {which = pop_purge_displacement_only_radicalism value = 1}
+				subtract_variable = { which = pop_purge_displacement_only_radicalism value = PREV.pop_happiness }
+
+				change_variable = { which = purge_displacement_only_supporting_population value = 1 }
+				change_variable = { which = purge_displacement_only_radical_population value = pop_purge_displacement_only_radicalism }
+			}
+		}
+	}
+	
+	set_variable = { which = $SUPPORT$ value = purge_displacement_only_supporting_population}
+	divide_variable = { which = $SUPPORT$ value = purge_displacement_only_population }
+	multiply_variable = {which = $SUPPORT$ value = 100}
+
+	set_variable = { which = $RADICALISM$ value = purge_displacement_only_radical_population}
+	divide_variable = { which = $RADICALISM$ value = purge_displacement_only_population }
+	multiply_variable = {which = $RADICALISM$ value = 100}
+}

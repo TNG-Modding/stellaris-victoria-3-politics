@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_toxic_knights_diplomats.1
+	}
+}

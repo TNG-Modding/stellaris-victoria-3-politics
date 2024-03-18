@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_border_policy_closed
+	text = {
+		localization_key = movement_border_policy_closed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_border_policy_closed_radicalism value > 25 }
+			has_country_flag = enacting_border_policy_closed
+		}
+	}
+	text = {
+		localization_key = movement_border_policy_closed_revolution
+		trigger = {
+			check_variable = { which = movement_border_policy_closed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_border_policy_closed}
+		}
+	}
+	text = {
+		localization_key = movement_border_policy_closed_appeased
+		trigger = {
+			check_variable = { which = movement_border_policy_closed_radicalism value < 25 }
+			has_country_flag = enacting_border_policy_closed
+		}
+	}
+	text = {
+		localization_key = movement_border_policy_closed
+		trigger = {
+			check_variable = { which = movement_border_policy_closed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_border_policy_closed}
+		}
+	}
+}
+
+
+

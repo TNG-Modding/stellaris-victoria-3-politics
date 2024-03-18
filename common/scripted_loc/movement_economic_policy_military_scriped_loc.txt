@@ -1,0 +1,34 @@
+defined_text = {
+	name = MovementName_economic_policy_military
+	text = {
+		localization_key = movement_economic_policy_military_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_economic_policy_military_radicalism value > 25 }
+			has_country_flag = enacting_economic_policy_military
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_military_revolution
+		trigger = {
+			check_variable = { which = movement_economic_policy_military_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_economic_policy_military}
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_military_appeased
+		trigger = {
+			check_variable = { which = movement_economic_policy_military_radicalism value < 25 }
+			has_country_flag = enacting_economic_policy_military
+		}
+	}
+	text = {
+		localization_key = movement_economic_policy_military
+		trigger = {
+			check_variable = { which = movement_economic_policy_military_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_economic_policy_military}
+		}
+	}
+}
+
+
+

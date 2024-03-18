@@ -1,0 +1,94 @@
+defined_text = {
+	name = MovementName_diplo_stance_extermination
+	text = {
+		localization_key = movement_diplo_stance_extermination_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_diplo_stance_extermination_radicalism value > 25 }
+			has_country_flag = enacting_diplo_stance_extermination
+		}
+	}
+	text = {
+		localization_key = movement_diplo_stance_extermination_revolution
+		trigger = {
+			check_variable = { which = movement_diplo_stance_extermination_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_diplo_stance_extermination}
+		}
+	}
+	text = {
+		localization_key = movement_diplo_stance_extermination_appeased
+		trigger = {
+			check_variable = { which = movement_diplo_stance_extermination_radicalism value < 25 }
+			has_country_flag = enacting_diplo_stance_extermination
+		}
+	}
+	text = {
+		localization_key = movement_diplo_stance_extermination
+		trigger = {
+			check_variable = { which = movement_diplo_stance_extermination_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_diplo_stance_extermination}
+		}
+	}
+}
+
+
+defined_text = {
+	name = MovementDesc_diplo_stance_extermination_SupportByChange_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_extermination_SupportByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+
+
+defined_text = {
+	name = MovementDesc_diplo_stance_extermination_DetractByChange_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+			has_policy_flag = diplo_stance_expansionist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_extermination_DetractByChange_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_extermination_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = diplo_stance_belligerent
+		}
+	}
+	default = ""
+}

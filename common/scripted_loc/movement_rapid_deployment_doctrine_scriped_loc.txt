@@ -1,0 +1,46 @@
+defined_text = {
+	name = MovementName_rapid_deployment_doctrine
+	text = {
+		localization_key = movement_rapid_deployment_doctrine_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_rapid_deployment_doctrine_radicalism value > 25 }
+			has_country_flag = enacting_rapid_deployment_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_rapid_deployment_doctrine_revolution
+		trigger = {
+			check_variable = { which = movement_rapid_deployment_doctrine_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_rapid_deployment_doctrine}
+		}
+	}
+	text = {
+		localization_key = movement_rapid_deployment_doctrine_appeased
+		trigger = {
+			check_variable = { which = movement_rapid_deployment_doctrine_radicalism value < 25 }
+			has_country_flag = enacting_rapid_deployment_doctrine
+		}
+	}
+	text = {
+		localization_key = movement_rapid_deployment_doctrine
+		trigger = {
+			check_variable = { which = movement_rapid_deployment_doctrine_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_rapid_deployment_doctrine}
+		}
+	}
+}
+
+
+
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_DetractByChange_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+			has_policy_flag = defense_in_depth_doctrine
+		}
+	}
+	default = ""
+}

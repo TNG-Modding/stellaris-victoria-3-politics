@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_first_contact_attack_allowed.1
+	}
+}

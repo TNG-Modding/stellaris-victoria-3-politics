@@ -1,0 +1,33 @@
+﻿l_english:
+ movement_refugees_only_citizens.2.name:0 "Movement for refugees_only_citizens"
+ movement_refugees_only_citizens.2.desc:0 "Support: [This.movement_refugees_only_citizens_support]\nRadicalism: [This.movement_refugees_only_citizens_radicalism]"
+
+ #  Situation
+ situation_movement_refugees_only_citizens:0 "[Owner.MovementName_refugees_only_citizens]"
+ situation_movement_refugees_only_citizens_type:0 "[Owner.MovementName_refugees_only_citizens]"
+ situation_movement_refugees_only_citizens_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
+# 
+ situation_movement_refugees_only_citizens_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_refugees_only_citizens_SupportByChange_nativists]   §!"
+
+ situation_movement_refugees_only_citizens_detracting:0 "Detracting Factions:\n§R§!"
+
+ situation_movement_refugees_only_citizens_ethics:0 "Ethics: §Y§!"
+
+ situation_movement_refugees_only_citizens_stats:0 "Support: [Owner.movement_refugees_only_citizens_support] Radicalism: [Owner.movement_refugees_only_citizens_radicalism] Inertia: [Owner.movement_refugees_only_citizens_inertia]\nFaction Support [Owner.movement_refugees_only_citizens_faction_support] \nFaction Radicalism: [Owner.movement_refugees_only_citizens_faction_radicalism] \nNumerical Support: [Owner.refugees_only_citizens_supporting_population]/[Owner.refugees_only_citizens_population]=[Owner.movement_refugees_only_citizens_numerical_support] \nNumerical Radicalism: [Owner.refugees_only_citizens_radical_population]/[Owner.refugees_only_citizens_population]=[Owner.movement_refugees_only_citizens_numerical_radicalism]"
+
+ situation_movement_refugees_only_citizens_quickDesc:0 "The people are calling for §Brefugees_only_citizens§! as they believe ."
+ situation_movement_refugees_only_citizens_desc:0 "$situation_movement_refugees_only_citizens_quickDesc$\n\n$situation_movement_refugees_only_citizens_supporting$\n$situation_movement_refugees_only_citizens_detracting$\n$situation_movement_refugees_only_citizens_ethics$\n\n$situation_movement_refugees_only_citizens_stats$"
+ situation_movement_finisher_refugees_only_citizens:0 "Revolution for refugees_only_citizens."
+ 
+ movement_refugees_only_citizens_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_refugees_only_citizens_radicalism]§! is above 25."
+
+ movement_refugees_only_citizens_revolution_appeased:0 "§GAppeased Revolution for refugees_only_citizens§!"
+ movement_refugees_only_citizens_revolution:0 "§RRevolution for refugees_only_citizens§!"
+ movement_refugees_only_citizens:0 "Movement for refugees_only_citizens"
+ movement_refugees_only_citizens_appeased:0 "Appeased Movement for refugees_only_citizens"
+
+ movement_refugees_only_citizens.6.title:0 "Secession over §Brefugees_only_citizens§!"
+ movement_refugees_only_citizens.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §Brefugees_only_citizens§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §Brefugees_only_citizens§!."
+ movement_refugees_only_citizens.6.fight:0 "Make them drink vacuum!"
+ movement_refugees_only_citizens.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
+ 

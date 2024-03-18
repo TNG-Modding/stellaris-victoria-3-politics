@@ -1,0 +1,103 @@
+
+calculate_diplo_stance_mercantile_movement_support_and_radicalism_from_factions = {
+	every_pop_faction = {
+		
+		if = {
+			limit = {
+				OR = {
+					
+					
+					
+					
+					
+						AND = {
+							is_pop_faction_type = colonists
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+					
+					
+					
+						AND = {
+							is_pop_faction_type = ourBurden
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = colonists
+					ROOT = { has_policy_flag = diplo_stance_expansionist }
+				}
+				
+				NAND = {
+					is_pop_faction_type = armedIsolationism
+					ROOT = { has_policy_flag = diplo_stance_isolationist }
+				}
+				
+				NAND = {
+					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = diplo_stance_belligerent }
+				}
+				
+			}
+		
+			export_trigger_value_to_variable = { trigger = support variable = diplo_stance_mercantile_support }
+			multiply_variable = {which = diplo_stance_mercantile_support value = 100}
+			# diplo_stance_mercantile_support is 0 to 100
+			
+			export_trigger_value_to_variable = { trigger = faction_approval variable = diplo_stance_mercantile_approval }
+			# diplo_stance_mercantile_approval is 0 to 1
+
+			ROOT = {
+				change_variable = { which = $SUPPORT$ value = PREV.diplo_stance_mercantile_support }
+				
+				set_variable = { which = diplo_stance_mercantile_radicalism value = 1 }
+				subtract_variable = { which = diplo_stance_mercantile_radicalism value = PREV.diplo_stance_mercantile_approval }
+				
+				multiply_variable = { which = diplo_stance_mercantile_radicalism value = PREV.diplo_stance_mercantile_support }
+
+				change_variable = { which = $RADICALISM$ value = diplo_stance_mercantile_radicalism }
+			}
+		}
+	}
+}
+
+calculate_diplo_stance_mercantile_movement_support_and_radical_from_numbers = {
+	set_variable = { which = diplo_stance_mercantile_population value = 0}
+	set_variable = { which = diplo_stance_mercantile_supporting_population value = 0}
+	set_variable = { which = diplo_stance_mercantile_radical_population value = 0}
+	
+	every_owned_pop = {
+		ROOT = {
+			change_variable = { which = diplo_stance_mercantile_population value = 1}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					
+				}
+			}
+			# A perfectly happy pop has happiness 1, and unhappy 0. An perfectly unhappy pop in thise case provides 1 radicalism support whereas his happy cousin contributes none.
+			export_modifier_to_variable = { modifier = pop_happiness variable = pop_happiness }
+			ROOT = {
+				set_variable = {which = pop_diplo_stance_mercantile_radicalism value = 1}
+				subtract_variable = { which = pop_diplo_stance_mercantile_radicalism value = PREV.pop_happiness }
+
+				change_variable = { which = diplo_stance_mercantile_supporting_population value = 1 }
+				change_variable = { which = diplo_stance_mercantile_radical_population value = pop_diplo_stance_mercantile_radicalism }
+			}
+		}
+	}
+	
+	set_variable = { which = $SUPPORT$ value = diplo_stance_mercantile_supporting_population}
+	divide_variable = { which = $SUPPORT$ value = diplo_stance_mercantile_population }
+	multiply_variable = {which = $SUPPORT$ value = 100}
+
+	set_variable = { which = $RADICALISM$ value = diplo_stance_mercantile_radical_population}
+	divide_variable = { which = $RADICALISM$ value = diplo_stance_mercantile_population }
+	multiply_variable = {which = $RADICALISM$ value = 100}
+}

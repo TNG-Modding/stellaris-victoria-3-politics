@@ -1,0 +1,101 @@
+situation_passPolicy_purge_not_allowed = {
+	picture = GFX_evt_
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+
+	on_start = { 
+		OWNER = {
+			set_country_flag = enacting_policy
+			set_country_flag = enacting_purge_not_allowed
+		}
+		set_situation_approach = passPolicy_approach.1
+		situation_event = { id = situation_passPolicy_purge_not_allowed.2 } 
+		log = "Started purge_not_allowed"
+	}
+
+	on_progress_complete = {
+		OWNER = {
+			remove_country_flag = enacting_purge_not_allowed
+			remove_country_flag = enacting_policy
+		}
+		custom_tooltip = situation_passPolicy_finisher_purge_not_allowed
+		hidden_effect = {
+			situation_event = { id = situation_passPolicy_purge_not_allowed.7 }
+		}
+		log = "Progressed Completed purge_not_allowed"
+	}
+	on_abort = {
+		OWNER = {
+			remove_country_flag = enacting_purge_not_allowed
+			remove_country_flag = enacting_policy
+		}
+		log = "Aborted purge_not_allowed"
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 33
+			custom_tooltip = passPolicy_stageOneEffects
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			end = 66
+			on_first_enter = {
+				# situation_event = { id = situation.155 }
+			}
+			custom_tooltip = passPolicy_stageTwoEffects
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			on_first_enter = {
+				# situation_event = { id = situation.165 }
+			}
+			custom_tooltip = passPolicy_stageThreeEffects
+		}
+	}
+	approach = {
+		name = passPolicy_approach.1
+		icon = GFX_situation_approach_influence
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = passPolicy_approach.1.on_select
+		}
+	}
+	approach = {
+		name = passPolicy_approach.2
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+			situation_event = {id = situation_passPolicy_purge_not_allowed.8}			
+		}
+	}
+	on_monthly = {
+		# Advance every sixth month
+		random_events = {
+			17 = situation_passPolicy_purge_not_allowed.2 # Just recalculate
+			83 = situation_passPolicy_purge_not_allowed.3 # Recalc and Reroll
+		}
+	}
+	monthly_progress = {
+		base = 0
+		# modifier = {
+		# 	add = 5
+		# 	desc = situation_snow_very_hostile_tt
+		# 	current_situation_approach = situation_snow_hostile
+		# 	has_situation_flag = very_hostile
+		# }
+	}
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { 
+				NOT = { always = yes }
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+defined_text = {
+	name = MovementName_interference_not_allowed
+	text = {
+		localization_key = movement_interference_not_allowed_revolution_appeased
+		trigger = {
+			check_variable = { which = movement_interference_not_allowed_radicalism value > 25 }
+			has_country_flag = enacting_interference_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_interference_not_allowed_revolution
+		trigger = {
+			check_variable = { which = movement_interference_not_allowed_radicalism value > 25 }
+			NOT = {has_country_flag = enacting_interference_not_allowed}
+		}
+	}
+	text = {
+		localization_key = movement_interference_not_allowed_appeased
+		trigger = {
+			check_variable = { which = movement_interference_not_allowed_radicalism value < 25 }
+			has_country_flag = enacting_interference_not_allowed
+		}
+	}
+	text = {
+		localization_key = movement_interference_not_allowed
+		trigger = {
+			check_variable = { which = movement_interference_not_allowed_radicalism value < 25 }
+			NOT = {has_country_flag = enacting_interference_not_allowed}
+		}
+	}
+}
+
+
+
+defined_text = {
+	name = MovementDesc_interference_not_allowed_Detract_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_interference_not_allowed_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = interference_aggressive
+		}
+	}
+	default = ""
+}

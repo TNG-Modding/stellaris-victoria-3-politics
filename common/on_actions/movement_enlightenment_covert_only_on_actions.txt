@@ -1,0 +1,5 @@
+on_monthly_pulse = {
+	events = {
+		movement_enlightenment_covert_only.1
+	}
+}

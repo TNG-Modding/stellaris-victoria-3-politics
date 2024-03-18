@@ -1,0 +1,32 @@
+pass_orbital_bombardment_surrender_allowed = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		NOT = { has_policy_flag = orbital_bombardment_surrender_allowed }
+		always = yes
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			fail_text = no_support_to_pass
+			AND = {
+				is_variable_set = movement_orbital_bombardment_surrender_allowed_faction_support
+			}
+			check_variable = { which = movement_orbital_bombardment_surrender_allowed_faction_support value > 0 }
+		}
+		custom_tooltip = {
+			fail_text = already_passing_policy
+			NOT = {has_country_flag = enacting_policy}
+		}
+		# can_change_policy = orbital_bombardment_accept_surrender
+	}
+	effect = {
+		country_event = { id = situation_passPolicy_orbital_bombardment_surrender_allowed.1 }
+	}
+
+	ai_weight = {
+		# weight = 500
+	}
+}
