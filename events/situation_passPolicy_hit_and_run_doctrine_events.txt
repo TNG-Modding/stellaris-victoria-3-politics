@@ -63,7 +63,7 @@ situation_event = {
 			limit = {
 				check_variable = { which = debate_chance value < 0}
 			}
-			# hit_and_run_doctrine_end_of_discussion = {}
+			# hit_and_run_doctrine_end_of_discussion = {} 
 		}
 
 		ceiling_variable = success_chance
