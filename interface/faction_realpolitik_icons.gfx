@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_realpolitik"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_realpolitik.dds"
+		noOfFrames = 1
+	}
+}

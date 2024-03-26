@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_emergentSouls"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_emergentSouls.dds"
+		noOfFrames = 1
+	}
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ slavers:0 "Slavers Faction"
+ slavers_wrapped:0 "Slavers Faction\n"
+ pft_slavers:0 "Slavers Faction"
+ slavers_supports:0 "Supports: \n§G  $slavery_allowed_name$§!"
+ slavers_opposes:0 "Opposes: \n§R  $slavery_not_allowed_name$§!"
+ slavers_traits:0 "£trait_talented£ £trait_intelligent£ £trait_decadent£"
+ slavers_buildings:0 ""
+ slavers_ethics:0 "£authoritarian£ £spiritualist£ "
+ pft_slavers_desc:2 "§BThe Slavers Faction§! believe that slavery is the natural state of many.\n\n$slavers_ethics$$slavers_traits$\n\n$slavers_buildings$\n\n$slavers_supports$\n\n$slavers_opposes$"
+
+ slavers_visual_ethic:1 "£authoritarian£ £spiritualist£"

@@ -1,0 +1,3 @@
+has_weird_xeno_neighbor = {
+	always = yes
+}

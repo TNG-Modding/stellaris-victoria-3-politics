@@ -46,7 +46,6 @@ colonists = {
 	attraction = {
 		base = 100
 
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -57,7 +56,6 @@ colonists = {
 			exists = from
 			pop_has_ethic = ethic_fanatic_xenophobe
 		}
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -69,6 +67,65 @@ colonists = {
 			pop_has_ethic = ethic_fanatic_egalitarian
 		}
 		 
+
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_adaptive
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_extremely_adaptive
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_rapid_breeders
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_unruly
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_nomadic
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_solitary
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_invasive
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_agrarian
+		}
+		
+
+		modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_colony_shelter
+				}
+			}
+		}
+		
 
 		modifier = {
 			factor = 1.25

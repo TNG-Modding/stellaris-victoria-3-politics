@@ -46,7 +46,6 @@ consolidationists = {
 	attraction = {
 		base = 100
 
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -57,7 +56,6 @@ consolidationists = {
 			exists = from
 			pop_has_ethic = ethic_fanatic_authoritarian
 		}
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -69,6 +67,40 @@ consolidationists = {
 			pop_has_ethic = ethic_fanatic_pacifist
 		}
 		 
+
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_nonadaptive
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_slow_breeders
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_docile
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_sedentary
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_communal
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_natural_sociologists
+		}
+		
+
+		
 
 		modifier = {
 			factor = 1.25

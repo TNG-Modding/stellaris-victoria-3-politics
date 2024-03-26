@@ -1,0 +1,12 @@
+﻿l_english:
+ refugeeColonists:0 "Refugee Colonists Faction"
+ refugeeColonists_wrapped:0 "Refugee Colonists Faction\n"
+ pft_refugeeColonists:0 "Refugee Colonists Faction"
+ refugeeColonists_supports:0 "Supports: \n§G  $purge_not_allowed_name$\n  $refugees_allowed_name$\n  $border_policy_open_name$\n  $population_controls_not_allowed_name$\n  $pre_sapients_protect_name$\n  $first_contact_proactive_name$\n  $pre_sapients_allow_name$§!"
+ refugeeColonists_opposes:0 "Opposes: \n§R  $purge_allowed_name$\n  $refugees_not_allowed_name$\n  $pre_sapients_eat_name$\n  $pre_sapients_purge_name$\n  $appropriation_allowed_name$§!"
+ refugeeColonists_traits:0 "£trait_nonadaptive£ £trait_natural_sociologists£ £trait_slow_breeders£"
+ refugeeColonists_buildings:0 ""
+ refugeeColonists_ethics:0 "£xenophile£ £authoritarian£ "
+ pft_refugeeColonists_desc:2 "§BThe Refugee Colonists Faction§! believe that we might invite xenos to serve our empire to settler its odder climates.\n\n$refugeeColonists_ethics$$refugeeColonists_traits$\n\n$refugeeColonists_buildings$\n\n$refugeeColonists_supports$\n\n$refugeeColonists_opposes$"
+
+ refugeeColonists_visual_ethic:1 "£xenophile£ £authoritarian£"

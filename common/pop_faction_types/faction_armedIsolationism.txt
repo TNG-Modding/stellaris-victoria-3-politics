@@ -46,7 +46,6 @@ armedIsolationism = {
 	attraction = {
 		base = 100
 
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -57,7 +56,6 @@ armedIsolationism = {
 			exists = from
 			pop_has_ethic = ethic_fanatic_xenophobe
 		}
-		
 		modifier = {
 			factor = 1.5
 			exists = from
@@ -69,6 +67,65 @@ armedIsolationism = {
 			pop_has_ethic = ethic_fanatic_pacifist
 		}
 		 
+
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_weak
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_survivor
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_resilient
+		}
+		
+
+		modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_fortress
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_stronghold
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_shield_generator
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_military_academy
+				}
+			}
+		}
+		
 
 		modifier = {
 			factor = 1.25

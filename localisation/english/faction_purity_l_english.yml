@@ -1,0 +1,12 @@
+﻿l_english:
+ purity:0 "Purity Faction"
+ purity_wrapped:0 "Purity Faction\n"
+ pft_purity:0 "Purity Faction"
+ purity_supports:0 "Supports: \n§G  $diplo_stance_purification_name$\n  $diplo_stance_extermination_name$\n  $unrestricted_wars_name$\n  $interference_aggressive_name$\n  $enlightenment_not_allowed_name$\n  $armada_name$\n  $grandArmy_name$\n  $pre_sapients_eat_name$\n  $pre_sapients_purge_name$\n  $economic_policy_military_name$\n  $first_contact_attack_allowed_name$\n  $leader_enhancement_selected_lineages_name$\n  $appropriation_allowed_name$\n  $orbital_bombardment_surrender_forbidden_name$\n  $orbital_bombardment_armageddon_name$\n  $orbital_bombardment_indiscriminate_name$\n  $oppressive_terms_name$\n  $oppressive_corporate_terms_name$\n  $no_retreat_doctrine_name$\n  $purge_allowed_name$§!"
+ purity_opposes:0 "Opposes: \n§R§!"
+ purity_traits:0 "£trait_trait_very_strong£ £trait_trait_solitary£ £trait_trait_repugnant£ £trait_trait_invasive£ £trait_intelligent£ £trait_talented£ £trait_traditional£"
+ purity_buildings:0 ""
+ purity_ethics:0 "£spiritualist£ £militarist£ £xenophobe£ "
+ pft_purity_desc:2 "§BThe Purity Faction§! believe in creating a future for one species, our species, by any and every means necessary.\n\n$purity_ethics$$purity_traits$\n\n$purity_buildings$\n\n$purity_supports$\n\n$purity_opposes$"
+
+ purity_visual_ethic:1 "£spiritualist£ £militarist£ £xenophobe£"

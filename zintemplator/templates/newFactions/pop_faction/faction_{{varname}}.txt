@@ -46,8 +46,7 @@
 	attraction = {
 		base = 100
 
-		{% for ethic in ethics %}
-		modifier = {
+		{% for ethic in ethics %}modifier = {
 			factor = 1.5
 			exists = from
 			pop_has_ethic = ethic_{{ethic}}
@@ -58,6 +57,25 @@
 			pop_has_ethic = ethic_fanatic_{{ethic}}
 		}
 		{% endfor %} 
+
+		{% for trait in traits %}modifier = {
+			factor = 2
+			exists = from
+			pop_has_trait = trait_{{trait}}
+		}
+		{% endfor %}
+
+		{% for building in buildings %}modifier = {
+			factor = 2
+			exists = from
+			planet = {
+				num_buildings = {
+					value > 0
+					type = building_{{building}}
+				}
+			}
+		}
+		{% endfor %}
 
 		modifier = {
 			factor = 1.25

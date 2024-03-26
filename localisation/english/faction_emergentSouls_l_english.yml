@@ -1,0 +1,12 @@
+﻿l_english:
+ emergentSouls:0 "Emergent Souls Faction"
+ emergentSouls_wrapped:0 "Emergent Souls Faction\n"
+ pft_emergentSouls:0 "Emergent Souls Faction"
+ emergentSouls_supports:0 "Supports: \n§G  $ai_full_rights_name$§!"
+ emergentSouls_opposes:0 "Opposes: \n§R  $ai_servitude_name$§!"
+ emergentSouls_traits:0 "£trait_natural_engineers£ £trait_uplifted£"
+ emergentSouls_buildings:0 ""
+ emergentSouls_ethics:0 "£egalitarian£ £materialist£ "
+ pft_emergentSouls_desc:2 "§BThe Emergent Souls Faction§! believe artificial intelligence have earned their rights by virtue of their apparent conciousness.\n\n$emergentSouls_ethics$$emergentSouls_traits$\n\n$emergentSouls_buildings$\n\n$emergentSouls_supports$\n\n$emergentSouls_opposes$"
+
+ emergentSouls_visual_ethic:1 "£egalitarian£ £materialist£"

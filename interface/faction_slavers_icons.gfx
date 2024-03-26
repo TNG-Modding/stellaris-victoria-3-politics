@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_icon_slavers"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_slavers.dds"
+		noOfFrames = 1
+	}
+}

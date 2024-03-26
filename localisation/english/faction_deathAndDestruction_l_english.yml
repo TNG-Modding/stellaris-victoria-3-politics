@@ -1,0 +1,12 @@
+﻿l_english:
+ deathAndDestruction:0 "Conquest and Dominion Faction"
+ deathAndDestruction_wrapped:0 "Conquest and Dominion Faction\n"
+ pft_deathAndDestruction:0 "Conquest and Dominion Faction"
+ deathAndDestruction_supports:0 "Supports: \n§G  $diplo_stance_supremacist_name$\n  $diplo_stance_animosity_name$\n  $unrestricted_wars_name$\n  $armada_name$\n  $grandArmy_name$\n  $orbital_bombardment_armageddon_name$\n  $oppressive_terms_name$\n  $oppressive_corporate_terms_name$\n  $no_retreat_doctrine_name$\n  $economic_policy_military_name$\n  $first_contact_attack_allowed_name$\n  $orbital_bombardment_surrender_forbidden_name$\n  $orbital_bombardment_indiscriminate_name$§!"
+ deathAndDestruction_opposes:0 "Opposes: \n§R  $diplo_stance_isolationist_name$\n  $diplo_stance_cooperative_name$\n  $diplo_stance_mercantile_name$\n  $diplo_stance_purification_name$\n  $diplo_stance_extermination_name$\n  $no_wars_name$\n  $merchantMarine_name$\n  $preFtlMilitaries_name$\n  $orbital_bombardment_selective_name$\n  $benevolent_terms_name$\n  $benevolent_corporate_terms_name$\n  $defense_in_depth_doctrine_name$\n  $first_contact_proactive_name$§!"
+ deathAndDestruction_traits:0 "£trait_decadent£ £trait_quarrelsome£ £trait_unruly£ £trait_invasive£"
+ deathAndDestruction_buildings:0 ""
+ deathAndDestruction_ethics:0 "£authoritarian£ £militarist£ "
+ pft_deathAndDestruction_desc:2 "§BThe Conquest and Dominion Faction§! believe that we have been uniquely made for conquest, domination, and galactic consolidation.\n\n$deathAndDestruction_ethics$$deathAndDestruction_traits$\n\n$deathAndDestruction_buildings$\n\n$deathAndDestruction_supports$\n\n$deathAndDestruction_opposes$"
+
+ deathAndDestruction_visual_ethic:1 "£authoritarian£ £militarist£"

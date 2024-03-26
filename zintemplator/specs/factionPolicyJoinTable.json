@@ -1332,7 +1332,10 @@
                 "varname": "preFtlConservatives",
                 "displayName": "Pre-FTL Conservatives",
                 "icon": "preftl_conservatives",
+                "potential": "always = yes",
                 "ethics": ["spiritualist"],
+                "buildings": [],
+                "traits": ["slow_learners", "traditional", "uplifted", "conformists", "venerable", "enduring"],
                 "desc": "wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.",
                 "supportedPolicies": [
                     "preFtlPoliticalOrganization",
@@ -1346,15 +1349,22 @@
                 "displayName": "Colonialist Lobby",
                 "icon": "hand_planet",
                 "desc": "see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.",
+                "potential": "always = yes",
                 "ethics": [
                     "xenophobe",
                     "egalitarian"
                 ],
+                "buildings": ["colony_shelter"],
+                "traits": ["adaptive", "extremely_adaptive", "rapid_breeders", "quarrelsome", "unruly", "nomadic", "solitary", "invasive", "agrarian"],
                 "supportedPolicies": [
                     "diplo_stance_expansionist",
                     "dependentColonies",
                     "merchantMarine",
-                    "preFtlPoliticalOrganization"
+                    "preFtlPoliticalOrganization",
+                    "appropriation_allowed",
+                    "resettlement_not_allowed",
+                    "border_policy_closed",
+                    "economic_policy_civilian"
                 ],
                 "againstPolicies": [
                     "diplo_stance_isolationist"
@@ -1365,33 +1375,79 @@
                 "displayName": "Consolidationists",
                 "icon": "galactic",
                 "desc": "believe that the creation of a galactic bureuacracy is a matter of national security.",
+                "potential": "always = yes",
                 "ethics": [
                     "authoritarian",
                     "pacifist"
                 ],
+                "buildings": [],
+                "traits": ["nonadaptive", "slow_breeders", "docile", "sedentary", "communal", "natural_sociologists"],
                 "supportedPolicies": [
                     "resettlement_allowed",
-                    "interplanetaryGoverance"
+                    "interplanetaryGoverance",
+                    "economic_policy_balanced",
+                    "diplo_stance_mercantile",
+                    "diplo_stance_cooperative"
                 ],
-                "againstPolicies": []
+                "againstPolicies": [
+                    "diplo_stance_expansion"
+                ]
             },
             {
                 "varname": "nativists",
                 "displayName": "Nativists",
                 "icon": "nativists",
                 "desc": "believe that the fruits of empire should be enjoyed by our primary species alone.",
+                "potential": "always = yes",
                 "ethics": [
                     "xenophobe",
                     "egalitarian"
                 ],
+                "buildings": [],
+                "traits": ["solitary", "sedentary", "resilient", "slow_breeders"],
                 "supportedPolicies": [
                     "purge_displacement_only",
                     "slavery_allowed",
-                    "population_controls_allowed"
+                    "population_controls_allowed",
+                    "pre_sapients_eat",
+                    "pre_sapients_purge",
+                    "appropriation_allowed",
+                    "refugees_not_allowed",
+                    "refugees_only_citizens"
                 ],
                 "againstPolicies": [
                     "purge_allowed",
-                    "refugees_allowed"
+                    "refugees_allowed",
+                    "appropriation_not_allowed"
+                ]
+            },
+            {
+                "varname": "refugeeColonists",
+                "displayName": "Refugee Colonists",
+                "icon": "alienColonists",
+                "desc": "believe that we might invite xenos to serve our empire to settler its odder climates.",
+                "potential": "always = yes",
+                "ethics": [
+                    "xenophile",
+                    "authoritarian"
+                ],
+                "buildings": [],
+                "traits": ["nonadaptive", "natural_sociologists", "slow_breeders"],
+                "supportedPolicies": [
+                    "purge_not_allowed",
+                    "refugees_allowed",
+                    "border_policy_open",
+                    "population_controls_not_allowed",
+                    "pre_sapients_protect",
+                    "first_contact_proactive",
+                    "pre_sapients_allow"
+                ],
+                "againstPolicies": [
+                    "purge_allowed",
+                    "refugees_not_allowed",
+                    "pre_sapients_eat",
+                    "pre_sapients_purge",
+                    "appropriation_allowed"
                 ]
             },
             {
@@ -1399,18 +1455,26 @@
                 "displayName": "Dark Forest",
                 "icon": "darkForest",
                 "desc": "believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.",
+                "potential": "always = yes",
                 "ethics": [
                     "xenophobe",
                     "pacifist"
                 ],
+                "buildings": ["fortress", "stronghold", "shield_generator", "military_academy"],
+                "traits": ["weak", "survivor", "resilient"],
                 "supportedPolicies": [
                     "diplo_stance_isolationist",
                     "no_wars",
+                    "border_policy_closed",
                     "defense_in_depth_doctrine",
-                    "first_contact_cautious"
+                    "first_contact_cautious",
+                    "economic_policy_military",
+                    "orbital_bombardment_surrender_forbidden"
                 ],
                 "againstPolicies": [
                     "diplo_stance_expansion",
+                    "unrestricted_wars",
+                    "no_retreat_doctrine",
                     "first_contact_proactive"
                 ]
             },
@@ -1419,22 +1483,303 @@
                 "displayName": "Our Burden",
                 "icon": "ourBurden",
                 "desc": "believe that is our duty to enlighten the benighted galaxy with our shining ideals.",
+                "potential": "always = yes",
                 "ethics": [
                     "xenophile",
-                    "militarist"
+                    "pacifist"
                 ],
+                "buildings": [],
+                "traits": ["conformists", "communal", "charismatic"],
                 "supportedPolicies": [
                     "diplo_stance_belligerent",
                     "liberation_wars",
                     "interference_aggressive",
                     "enlightenment_allowed",
-                    "benevolent_terms"
+                    "benevolent_terms",
+                    "benevolent_corporate_terms",
+                    "economic_policy_balanced",
+                    "first_contact_proactive",
+                    "orbital_bombardment_surrender_allowed"
                 ],
                 "againstPolicies": [
                     "diplo_stance_isolationist",
                     "no_wars",
                     "interference_not_allowed",
                     "enlightenment_not_allowed"
+                ]
+            },
+            {
+                "varname": "realpolitik",
+                "displayName": "Realpolitik",
+                "icon": "realpolitik",
+                "desc": "believe that warfare is a fundamental reality of galatic life to be handled dispassionately.",
+                "potential": "always = yes",
+                "ethics": [
+                    "egalitarian",
+                    "militarist"
+                ],
+                "buildings": [],
+                "traits": ["charismatic", "strong", "very_strong"],
+                "supportedPolicies": [
+                    "diplo_stance_belligerent",
+                    "unrestricted_wars",
+                    "orbital_bombardment_selective",
+                    "rapid_deployment_doctrine",
+                    "balanced_terms",
+                    "balanced_corporate_terms",
+                    "economic_policy_balanced",
+                    "orbital_bombardment_surrender_allowed"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_isolationist",
+                    "no_wars",
+                    "orbital_bombardment_armageddon",
+                    "no_retreat_doctrine",
+                    "defense_in_depth_doctrine",
+                    "benevolent_terms",
+                    "benevolent_corporate_terms",
+                    "economic_policy_military"
+                ]
+            },
+            {
+                "varname": "deathAndDestruction",
+                "displayName": "Conquest and Dominion",
+                "icon": "deathAndDestruction",
+                "desc": "believe that we have been uniquely made for conquest, domination, and galactic consolidation.",
+                "potential": "always = yes",
+                "ethics": [
+                    "authoritarian",
+                    "militarist"
+                ],
+                "buildings": [],
+                "traits": ["decadent", "quarrelsome", "unruly", "invasive"],
+                "supportedPolicies": [
+                    "diplo_stance_supremacist",
+                    "diplo_stance_animosity",
+                    "unrestricted_wars",
+                    "armada",
+                    "grandArmy",
+                    "orbital_bombardment_armageddon",
+                    "oppressive_terms",
+                    "oppressive_corporate_terms",
+                    "no_retreat_doctrine",
+                    "economic_policy_military",
+                    "first_contact_attack_allowed",
+                    "orbital_bombardment_surrender_forbidden",
+                    "orbital_bombardment_indiscriminate"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_isolationist",
+                    "diplo_stance_cooperative",
+                    "diplo_stance_mercantile",
+                    "diplo_stance_purification",
+                    "diplo_stance_extermination",
+                    "no_wars",
+                    "merchantMarine",
+                    "preFtlMilitaries",
+                    "orbital_bombardment_selective",
+                    "benevolent_terms",
+                    "benevolent_corporate_terms",
+                    "defense_in_depth_doctrine",
+                    "first_contact_proactive"
+                ]
+            },
+            {
+                "varname": "jihadism",
+                "displayName": "Jihadism",
+                "icon": "jihadism",
+                "desc": "believe that the galaxy is a perverse place in need of correction. ",
+                "potential": "always = yes",
+                "ethics": [
+                    "spiritualist",
+                    "authoritarian"
+                ],
+                "buildings": [],
+                "traits": ["decadent", "quarrelsome", "unruly", "invasive"],
+                "supportedPolicies": [
+                    "diplo_stance_supremacist",
+                    "diplo_stance_belligerent",
+                    "liberation_wars",
+                    "interference_aggressive",
+                    "enlightenment_allowed",
+                    "spacefaringStandingArmy",
+                    "floatingNavy",
+                    "economic_policy_military",
+                    "first_contact_attack_allowed"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_isolationist",
+                    "diplo_stance_purification",
+                    "diplo_stance_extermination",
+                    "no_wars",
+                    "interference_not_allowed",
+                    "enlightenment_not_allowed"
+                ]
+            },
+            {
+                "varname": "purity",
+                "displayName": "Purity",
+                "icon": "purity",
+                "desc": "believe in creating a future for one species, our species, by any and every means necessary.",
+                "potential": "always = yes",
+                "ethics": [
+                    "spiritualist",
+                    "militarist",
+                    "xenophobe"
+                ],
+                "buildings": [],
+                "traits": ["trait_very_strong", "trait_solitary", "trait_repugnant", "trait_invasive", "intelligent", "talented", "traditional"],
+                "supportedPolicies": [
+                    "diplo_stance_purification",
+                    "diplo_stance_extermination",
+                    "unrestricted_wars",
+                    "interference_aggressive",
+                    "enlightenment_not_allowed",
+                    "armada",
+                    "grandArmy",
+                    "pre_sapients_eat",
+                    "pre_sapients_purge",
+                    "economic_policy_military",
+                    "first_contact_attack_allowed",
+                    "leader_enhancement_selected_lineages",
+                    "appropriation_allowed",
+                    "orbital_bombardment_surrender_forbidden",
+                    "orbital_bombardment_armageddon",
+                    "orbital_bombardment_indiscriminate",
+                    "oppressive_terms",
+                    "oppressive_corporate_terms",
+                    "no_retreat_doctrine",
+                    "purge_allowed"
+                ],
+                "againstPolicies": [
+                   
+                ]
+            },
+            {
+                "varname": "roboticColonization",
+                "displayName": "Robotic Colonization",
+                "icon": "robotColonization",
+                "desc": "believe that new colonies are best worked by automated robotic equipment, sparing us the peril of colonization.",
+                "potential": "always = yes",
+                "ethics": [
+                    "materialist",
+                    "authoritarian"
+                ],
+                "buildings": [],
+                "traits": ["slow_breeders", "natural_engineers", "nonadaptive"],
+                "supportedPolicies": [
+                    "dependentColonies",
+                    "robot_pops_allowed",
+                    "diplo_stance_expansionist",
+                    "ai_servitude",
+                    "appropriation_not_allowed",
+                    "economic_policy_civilian"
+                ],
+                "againstPolicies": [
+                    "diplo_stance_isolationist",
+                    "ai_full_rights",
+                    "robot_pops_outlawed"
+                ]
+            },
+            {
+                
+                "varname": "emergentSouls",
+                "displayName": "Emergent Souls",
+                "icon": "emergentSouls",
+                "desc": "believe artificial intelligence have earned their rights by virtue of their apparent conciousness.",
+                "potential": "always = yes",
+                "ethics": [
+                    "egalitarian",
+                    "materialist"
+                ],
+                "buildings": [],
+                "traits": ["natural_engineers", "uplifted"],
+                "supportedPolicies": [
+                    "ai_full_rights"
+                ],
+                "againstPolicies": [
+                    "ai_servitude"
+                ]
+            },
+            {
+                
+                "varname": "metaphysicalists",
+                "displayName": "Metaphysicalists",
+                "icon": "metaphysicalists",
+                "desc": "believe that the apparent conciousness of AI is not itself provable conciousness.",
+                "potential": "always = yes",
+                "ethics": [
+                    "authoritarian",
+                    "spiritualist"
+                ],
+                "buildings": [],
+                "traits": ["natural_physicists", "natural_sociologists", "intelligent"],
+                "supportedPolicies": [
+                    "ai_servitude"
+                ],
+                "againstPolicies": [
+                    "ai_full_rights"
+                ]
+            },
+            {
+                "varname": "aiMistake",
+                "displayName": "AI Xenoists",
+                "icon": "unknowableAIXeno",
+                "desc": "believe that in creating apparently conciousness AI, we have created an unknowable enemy.",
+                "potential": "always = yes",
+                "ethics": [
+                    "xenophobe",
+                    "spiritualist"
+                ],
+                "buildings": [],
+                "traits": ["natural_physicists", "natural_sociologists", "intelligent", "weak"],
+                "supportedPolicies": [
+                    "robot_pops_outlawed",
+                    "ai_outlawed",
+                    "resettlement_allowed"
+                ],
+                "againstPolicies": [
+                    "ai_servitude",
+                    "ai_full_rights",
+                    "robot_pops_allowed"
+                ]
+            },
+            {
+                "varname": "emancipators",
+                "displayName": "Emancipators",
+                "icon": "emancipators",
+                "desc": "believe that slavery is an inherent evil.",
+                "potential": "always = yes",
+                "ethics": [
+                    "egalitarian",
+                    "spiritualist"
+                ],
+                "buildings": [],
+                "traits": ["natural_sociologists"],
+                "supportedPolicies": [
+                    "slavery_not_allowed"
+                ],
+                "againstPolicies": [
+                    "slavery_allowed"
+                ]
+            },
+            {
+                "varname": "slavers",
+                "displayName": "Slavers",
+                "icon": "slavers",
+                "desc": "believe that slavery is the natural state of many.",
+                "potential": "always = yes",
+                "ethics": [
+                    "authoritarian",
+                    "spiritualist"
+                ],
+                "buildings": [],
+                "traits": ["talented", "intelligent", "decadent"],
+                "supportedPolicies": [
+                    "slavery_allowed"
+                ],
+                "againstPolicies": [
+                    "slavery_not_allowed"
                 ]
             }
         ]

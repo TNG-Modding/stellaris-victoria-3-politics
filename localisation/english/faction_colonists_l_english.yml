@@ -2,6 +2,11 @@
  colonists:0 "Colonialist Lobby Faction"
  colonists_wrapped:0 "Colonialist Lobby Faction\n"
  pft_colonists:0 "Colonialist Lobby Faction"
- pft_colonists_desc:2 "§BThe Colonialist Lobby Faction§! see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.\n\nSupports: \n§G  $diplo_stance_expansionist_name$\n  $dependentColonies_name$\n  $merchantMarine_name$\n  $preFtlPoliticalOrganization_name$§!\n\nOpposes: \n§R  $diplo_stance_isolationist_name$§!"
+ colonists_supports:0 "Supports: \n§G  $diplo_stance_expansionist_name$\n  $dependentColonies_name$\n  $merchantMarine_name$\n  $preFtlPoliticalOrganization_name$\n  $appropriation_allowed_name$\n  $resettlement_not_allowed_name$\n  $border_policy_closed_name$\n  $economic_policy_civilian_name$§!"
+ colonists_opposes:0 "Opposes: \n§R  $diplo_stance_isolationist_name$§!"
+ colonists_traits:0 "£trait_adaptive£ £trait_extremely_adaptive£ £trait_rapid_breeders£ £trait_quarrelsome£ £trait_unruly£ £trait_nomadic£ £trait_solitary£ £trait_invasive£ £trait_agrarian£"
+ colonists_buildings:0 "£building_colony_shelter£"
+ colonists_ethics:0 "£xenophobe£ £egalitarian£ "
+ pft_colonists_desc:2 "§BThe Colonialist Lobby Faction§! see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.\n\n$colonists_ethics$$colonists_traits$\n\n$colonists_buildings$\n\n$colonists_supports$\n\n$colonists_opposes$"
 
- colonists_visual_ethic:1 "£xenophobe£ £egalitarian£ "
+ colonists_visual_ethic:1 "£xenophobe£ £egalitarian£"

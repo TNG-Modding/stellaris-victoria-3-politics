@@ -6,6 +6,12 @@
         "icon": "{{faction.icon}}",
         "desc": "{{faction.desc}}",
         "ethics": [{% for ethic in faction.ethics %}"{{ethic}}"{%if loop.index < faction.ethics|length %},{%endif%}{% endfor %}],
+        "traits": [
+            {% for trait in faction.traits %}"{{trait}}"{%if loop.index < faction.traits|length %},{%endif%}{% endfor %}
+        ],
+        "buildings": [
+            {% for building in faction.buildings %}"{{building}}"{%if loop.index < faction.buildings|length %},{%endif%}{% endfor %}
+        ],
         "supportedPolicies": [
             {% for supportedPolicy in faction.supportedPolicies %}"{{supportedPolicy}}"{%if loop.index < faction.supportedPolicies|length %},{%endif%}{% endfor %}
         ],

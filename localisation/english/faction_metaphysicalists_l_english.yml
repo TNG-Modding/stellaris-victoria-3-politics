@@ -1,0 +1,12 @@
+﻿l_english:
+ metaphysicalists:0 "Metaphysicalists Faction"
+ metaphysicalists_wrapped:0 "Metaphysicalists Faction\n"
+ pft_metaphysicalists:0 "Metaphysicalists Faction"
+ metaphysicalists_supports:0 "Supports: \n§G  $ai_servitude_name$§!"
+ metaphysicalists_opposes:0 "Opposes: \n§R  $ai_full_rights_name$§!"
+ metaphysicalists_traits:0 "£trait_natural_physicists£ £trait_natural_sociologists£ £trait_intelligent£"
+ metaphysicalists_buildings:0 ""
+ metaphysicalists_ethics:0 "£authoritarian£ £spiritualist£ "
+ pft_metaphysicalists_desc:2 "§BThe Metaphysicalists Faction§! believe that the apparent conciousness of AI is not itself provable conciousness.\n\n$metaphysicalists_ethics$$metaphysicalists_traits$\n\n$metaphysicalists_buildings$\n\n$metaphysicalists_supports$\n\n$metaphysicalists_opposes$"
+
+ metaphysicalists_visual_ethic:1 "£authoritarian£ £spiritualist£"

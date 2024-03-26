@@ -63,7 +63,7 @@ situation_event = {
 			limit = {
 				check_variable = { which = debate_chance value < 0}
 			}
-			# border_policy_closed_end_of_discussion = {} 
+			border_policy_closed_end_of_discussion = {} 
 		}
 
 		ceiling_variable = success_chance
@@ -95,25 +95,41 @@ situation_event = {
 		# log = "Rolled: [THIS.advancement_roll] [THIS.success_chance]:[THIS.stall_chance]:[THIS.debate_chance]"
 		if = {
 			limit = {
-				check_variable = { which = advancement_roll value < success_chance  }
+				check_variable = { which = success_chance value <= 0  }
 			}
-			# Advance!
-			situation_event = { id = situation_passPolicy_border_policy_closed.4}
+			# No Success possible, take a setback and increase support!
+			change_variable = { which = swayed_to_support value = 10}
+			change_variable = { which = setback_count value = 1 }
+			if = {
+				limit = { check_variable = { which = setback_count value = 3}}
+				# log = "border_policy_closed failed due to setbacks [this.setback_count]/3!"
+				situation_event = { id = situation_passPolicy_border_policy_closed.9}
+			}
 		}
 		else = {
-			subtract_variable = { which = advancement_roll value = success_chance }
+
 			if = {
 				limit = {
-					check_variable = { which = advancement_roll value < stall_chance }
+					check_variable = { which = advancement_roll value < success_chance  }
 				}
-				# Fail!
-				situation_event = {id = situation_passPolicy_border_policy_closed.5}
+				# Advance!
+				situation_event = { id = situation_passPolicy_border_policy_closed.4}
 			}
 			else = {
-				# Ambivalence!
-				situation_event = {id = situation_passPolicy_border_policy_closed.6}
-			}
-		}	
+				subtract_variable = { which = advancement_roll value = success_chance }
+				if = {
+					limit = {
+						check_variable = { which = advancement_roll value < stall_chance }
+					}
+					# Fail!
+					situation_event = {id = situation_passPolicy_border_policy_closed.5}
+				}
+				else = {
+					# Ambivalence!
+					situation_event = {id = situation_passPolicy_border_policy_closed.6}
+				}
+			}	
+		}
 	}
 }
 

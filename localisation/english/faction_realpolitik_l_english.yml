@@ -1,0 +1,12 @@
+﻿l_english:
+ realpolitik:0 "Realpolitik Faction"
+ realpolitik_wrapped:0 "Realpolitik Faction\n"
+ pft_realpolitik:0 "Realpolitik Faction"
+ realpolitik_supports:0 "Supports: \n§G  $diplo_stance_belligerent_name$\n  $unrestricted_wars_name$\n  $orbital_bombardment_selective_name$\n  $rapid_deployment_doctrine_name$\n  $balanced_terms_name$\n  $balanced_corporate_terms_name$\n  $economic_policy_balanced_name$\n  $orbital_bombardment_surrender_allowed_name$§!"
+ realpolitik_opposes:0 "Opposes: \n§R  $diplo_stance_isolationist_name$\n  $no_wars_name$\n  $orbital_bombardment_armageddon_name$\n  $no_retreat_doctrine_name$\n  $defense_in_depth_doctrine_name$\n  $benevolent_terms_name$\n  $benevolent_corporate_terms_name$\n  $economic_policy_military_name$§!"
+ realpolitik_traits:0 "£trait_charismatic£ £trait_strong£ £trait_very_strong£"
+ realpolitik_buildings:0 ""
+ realpolitik_ethics:0 "£egalitarian£ £militarist£ "
+ pft_realpolitik_desc:2 "§BThe Realpolitik Faction§! believe that warfare is a fundamental reality of galatic life to be handled dispassionately.\n\n$realpolitik_ethics$$realpolitik_traits$\n\n$realpolitik_buildings$\n\n$realpolitik_supports$\n\n$realpolitik_opposes$"
+
+ realpolitik_visual_ethic:1 "£egalitarian£ £militarist£"

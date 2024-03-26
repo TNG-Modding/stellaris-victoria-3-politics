@@ -1,0 +1,12 @@
+﻿l_english:
+ aiMistake:0 "AI Xenoists Faction"
+ aiMistake_wrapped:0 "AI Xenoists Faction\n"
+ pft_aiMistake:0 "AI Xenoists Faction"
+ aiMistake_supports:0 "Supports: \n§G  $robot_pops_outlawed_name$\n  $ai_outlawed_name$\n  $resettlement_allowed_name$§!"
+ aiMistake_opposes:0 "Opposes: \n§R  $ai_servitude_name$\n  $ai_full_rights_name$\n  $robot_pops_allowed_name$§!"
+ aiMistake_traits:0 "£trait_natural_physicists£ £trait_natural_sociologists£ £trait_intelligent£ £trait_weak£"
+ aiMistake_buildings:0 ""
+ aiMistake_ethics:0 "£xenophobe£ £spiritualist£ "
+ pft_aiMistake_desc:2 "§BThe AI Xenoists Faction§! believe that in creating apparently conciousness AI, we have created an unknowable enemy.\n\n$aiMistake_ethics$$aiMistake_traits$\n\n$aiMistake_buildings$\n\n$aiMistake_supports$\n\n$aiMistake_opposes$"
+
+ aiMistake_visual_ethic:1 "£xenophobe£ £spiritualist£"

@@ -2,6 +2,11 @@
  consolidationists:0 "Consolidationists Faction"
  consolidationists_wrapped:0 "Consolidationists Faction\n"
  pft_consolidationists:0 "Consolidationists Faction"
- pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\nSupports: \n§G  $resettlement_allowed_name$\n  $interplanetaryGoverance_name$§!\n\nOpposes: \n§R§!"
+ consolidationists_supports:0 "Supports: \n§G  $resettlement_allowed_name$\n  $interplanetaryGoverance_name$\n  $economic_policy_balanced_name$\n  $diplo_stance_mercantile_name$\n  $diplo_stance_cooperative_name$§!"
+ consolidationists_opposes:0 "Opposes: \n§R  $diplo_stance_expansion_name$§!"
+ consolidationists_traits:0 "£trait_nonadaptive£ £trait_slow_breeders£ £trait_docile£ £trait_sedentary£ £trait_communal£ £trait_natural_sociologists£"
+ consolidationists_buildings:0 ""
+ consolidationists_ethics:0 "£authoritarian£ £pacifist£ "
+ pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\n$consolidationists_ethics$$consolidationists_traits$\n\n$consolidationists_buildings$\n\n$consolidationists_supports$\n\n$consolidationists_opposes$"
 
- consolidationists_visual_ethic:1 "£authoritarian£ £pacifist£ "
+ consolidationists_visual_ethic:1 "£authoritarian£ £pacifist£"

@@ -1,0 +1,12 @@
+﻿l_english:
+ jihadism:0 "Jihadism Faction"
+ jihadism_wrapped:0 "Jihadism Faction\n"
+ pft_jihadism:0 "Jihadism Faction"
+ jihadism_supports:0 "Supports: \n§G  $diplo_stance_supremacist_name$\n  $diplo_stance_belligerent_name$\n  $liberation_wars_name$\n  $interference_aggressive_name$\n  $enlightenment_allowed_name$\n  $spacefaringStandingArmy_name$\n  $floatingNavy_name$\n  $economic_policy_military_name$\n  $first_contact_attack_allowed_name$§!"
+ jihadism_opposes:0 "Opposes: \n§R  $diplo_stance_isolationist_name$\n  $diplo_stance_purification_name$\n  $diplo_stance_extermination_name$\n  $no_wars_name$\n  $interference_not_allowed_name$\n  $enlightenment_not_allowed_name$§!"
+ jihadism_traits:0 "£trait_decadent£ £trait_quarrelsome£ £trait_unruly£ £trait_invasive£"
+ jihadism_buildings:0 ""
+ jihadism_ethics:0 "£spiritualist£ £authoritarian£ "
+ pft_jihadism_desc:2 "§BThe Jihadism Faction§! believe that the galaxy is a perverse place in need of correction. \n\n$jihadism_ethics$$jihadism_traits$\n\n$jihadism_buildings$\n\n$jihadism_supports$\n\n$jihadism_opposes$"
+
+ jihadism_visual_ethic:1 "£spiritualist£ £authoritarian£"

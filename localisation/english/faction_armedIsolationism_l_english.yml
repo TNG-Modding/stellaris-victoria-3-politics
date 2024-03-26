@@ -2,6 +2,11 @@
  armedIsolationism:0 "Dark Forest Faction"
  armedIsolationism_wrapped:0 "Dark Forest Faction\n"
  pft_armedIsolationism:0 "Dark Forest Faction"
- pft_armedIsolationism_desc:2 "§BThe Dark Forest Faction§! believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.\n\nSupports: \n§G  $diplo_stance_isolationist_name$\n  $no_wars_name$\n  $defense_in_depth_doctrine_name$\n  $first_contact_cautious_name$§!\n\nOpposes: \n§R  $diplo_stance_expansion_name$\n  $first_contact_proactive_name$§!"
+ armedIsolationism_supports:0 "Supports: \n§G  $diplo_stance_isolationist_name$\n  $no_wars_name$\n  $border_policy_closed_name$\n  $defense_in_depth_doctrine_name$\n  $first_contact_cautious_name$\n  $economic_policy_military_name$\n  $orbital_bombardment_surrender_forbidden_name$§!"
+ armedIsolationism_opposes:0 "Opposes: \n§R  $diplo_stance_expansion_name$\n  $unrestricted_wars_name$\n  $no_retreat_doctrine_name$\n  $first_contact_proactive_name$§!"
+ armedIsolationism_traits:0 "£trait_weak£ £trait_survivor£ £trait_resilient£"
+ armedIsolationism_buildings:0 "£building_fortress£ £building_stronghold£ £building_shield_generator£ £building_military_academy£"
+ armedIsolationism_ethics:0 "£xenophobe£ £pacifist£ "
+ pft_armedIsolationism_desc:2 "§BThe Dark Forest Faction§! believe that if xenos were to discover us it would bring our instant annihilation, such is there unknowable malice.\n\n$armedIsolationism_ethics$$armedIsolationism_traits$\n\n$armedIsolationism_buildings$\n\n$armedIsolationism_supports$\n\n$armedIsolationism_opposes$"
 
- armedIsolationism_visual_ethic:1 "£xenophobe£ £pacifist£ "
+ armedIsolationism_visual_ethic:1 "£xenophobe£ £pacifist£"

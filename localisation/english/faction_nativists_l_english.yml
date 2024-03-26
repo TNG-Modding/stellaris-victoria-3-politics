@@ -2,6 +2,11 @@
  nativists:0 "Nativists Faction"
  nativists_wrapped:0 "Nativists Faction\n"
  pft_nativists:0 "Nativists Faction"
- pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\nSupports: \n§G  $purge_displacement_only_name$\n  $slavery_allowed_name$\n  $population_controls_allowed_name$§!\n\nOpposes: \n§R  $purge_allowed_name$\n  $refugees_allowed_name$§!"
+ nativists_supports:0 "Supports: \n§G  $purge_displacement_only_name$\n  $slavery_allowed_name$\n  $population_controls_allowed_name$\n  $pre_sapients_eat_name$\n  $pre_sapients_purge_name$\n  $appropriation_allowed_name$\n  $refugees_not_allowed_name$\n  $refugees_only_citizens_name$§!"
+ nativists_opposes:0 "Opposes: \n§R  $purge_allowed_name$\n  $refugees_allowed_name$\n  $appropriation_not_allowed_name$§!"
+ nativists_traits:0 "£trait_solitary£ £trait_sedentary£ £trait_resilient£ £trait_slow_breeders£"
+ nativists_buildings:0 ""
+ nativists_ethics:0 "£xenophobe£ £egalitarian£ "
+ pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\n$nativists_ethics$$nativists_traits$\n\n$nativists_buildings$\n\n$nativists_supports$\n\n$nativists_opposes$"
 
- nativists_visual_ethic:1 "£xenophobe£ £egalitarian£ "
+ nativists_visual_ethic:1 "£xenophobe£ £egalitarian£"
