@@ -26,7 +26,7 @@
  situation_passPolicy_resettlement_allowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_resettlement_allowed.1.name:0 "Allow Resettlement"
- faction_supportPolicy_resettlement_allowed.1.desc:0 "Overall Support: [Root.faction_support_resettlement_allowed]\n\nSupporters:\nconsolidationists: [Root.consolidationists_support_resettlement_allowed]\n\nDetractors:\n"
+ faction_supportPolicy_resettlement_allowed.1.desc:0 "Overall Support: [Root.faction_support_resettlement_allowed]\n\nSupporters:\nconsolidationists: [Root.consolidationists_support_resettlement_allowed]\naiMistake: [Root.aiMistake_support_resettlement_allowed]\n\nDetractors:\n"
 
- edict_pass_resettlement_allowed:0 "Pass §BAllow Resettlement§!"
+ edict_pass_resettlement_allowed:0 "Pass §B$resettlement_allowed_name$§!"
  edict_pass_resettlement_allowed_desc:0 "We move that ."

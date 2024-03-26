@@ -26,7 +26,7 @@
  situation_passPolicy_benevolent_terms.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_benevolent_terms.1.name:0 "Benevolent Terms"
- faction_supportPolicy_benevolent_terms.1.desc:0 "Overall Support: [Root.faction_support_benevolent_terms]\n\nSupporters:\nourBurden: [Root.ourBurden_support_benevolent_terms]\n\nDetractors:\n"
+ faction_supportPolicy_benevolent_terms.1.desc:0 "Overall Support: [Root.faction_support_benevolent_terms]\n\nSupporters:\nourBurden: [Root.ourBurden_support_benevolent_terms]\n\nDetractors:\nrealpolitik: [Root.realpolitik_support_benevolent_terms]\ndeathAndDestruction: [Root.deathAndDestruction_support_benevolent_terms]\n"
 
- edict_pass_benevolent_terms:0 "Pass §BBenevolent Terms§!"
+ edict_pass_benevolent_terms:0 "Pass §B$benevolent_terms_name$§!"
  edict_pass_benevolent_terms_desc:0 "We move that ."

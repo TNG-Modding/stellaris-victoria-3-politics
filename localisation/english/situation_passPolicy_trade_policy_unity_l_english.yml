@@ -28,5 +28,5 @@
  faction_supportPolicy_trade_policy_unity.1.name:0 "Unity Trade Policy"
  faction_supportPolicy_trade_policy_unity.1.desc:0 "Overall Support: [Root.faction_support_trade_policy_unity]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_trade_policy_unity:0 "Pass §BUnity Trade Policy§!"
+ edict_pass_trade_policy_unity:0 "Pass §B$trade_policy_unity_name$§!"
  edict_pass_trade_policy_unity_desc:0 "We move that ."

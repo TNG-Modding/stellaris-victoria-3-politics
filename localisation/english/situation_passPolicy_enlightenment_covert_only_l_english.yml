@@ -28,5 +28,5 @@
  faction_supportPolicy_enlightenment_covert_only.1.name:0 "Covert Enlightenment Only"
  faction_supportPolicy_enlightenment_covert_only.1.desc:0 "Overall Support: [Root.faction_support_enlightenment_covert_only]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_enlightenment_covert_only:0 "Pass §BCovert Enlightenment Only§!"
+ edict_pass_enlightenment_covert_only:0 "Pass §B$enlightenment_covert_only_name$§!"
  edict_pass_enlightenment_covert_only_desc:0 "We move that ."

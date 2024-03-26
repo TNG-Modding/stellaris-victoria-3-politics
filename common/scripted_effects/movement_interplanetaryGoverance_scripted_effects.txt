@@ -21,6 +21,11 @@ calculate_interplanetaryGoverance_movement_support_and_radicalism_from_factions 
 					ROOT = { has_policy_flag = dependentColonies }
 				}
 				
+				NAND = {
+					is_pop_faction_type = roboticColonization
+					ROOT = { has_policy_flag = dependentColonies }
+				}
+				
 			}
 		
 			export_trigger_value_to_variable = { trigger = support variable = interplanetaryGoverance_support }

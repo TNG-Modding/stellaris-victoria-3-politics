@@ -26,7 +26,7 @@
  situation_passPolicy_refugees_allowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_refugees_allowed.1.name:0 "Refugees Allowed"
- faction_supportPolicy_refugees_allowed.1.desc:0 "Overall Support: [Root.faction_support_refugees_allowed]\n\nSupporters:\n\nDetractors:\nnativists: [Root.nativists_support_refugees_allowed]\n"
+ faction_supportPolicy_refugees_allowed.1.desc:0 "Overall Support: [Root.faction_support_refugees_allowed]\n\nSupporters:\nrefugeeColonists: [Root.refugeeColonists_support_refugees_allowed]\n\nDetractors:\nnativists: [Root.nativists_support_refugees_allowed]\n"
 
- edict_pass_refugees_allowed:0 "Pass §BRefugees Allowed§!"
+ edict_pass_refugees_allowed:0 "Pass §B$refugees_allowed_name$§!"
  edict_pass_refugees_allowed_desc:0 "We move that ."

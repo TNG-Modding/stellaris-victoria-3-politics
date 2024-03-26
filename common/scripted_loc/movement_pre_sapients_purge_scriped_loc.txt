@@ -30,5 +30,98 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_Support_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_SupportByChange_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+			has_policy_flag = pre_sapients_eat
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_Detract_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_DetractByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = pre_sapients_eat
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_DetractByChange_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+			has_policy_flag = pre_sapients_protect
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_DetractByChange_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+			has_policy_flag = pre_sapients_allow
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_pre_sapients_purge_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = pre_sapients_eat
+		}
+	}
+	default = ""
+}

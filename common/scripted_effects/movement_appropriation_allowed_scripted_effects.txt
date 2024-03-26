@@ -6,7 +6,33 @@ calculate_appropriation_allowed_movement_support_and_radicalism_from_factions = 
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = colonists
 					
+					is_pop_faction_type = nativists
+					
+					is_pop_faction_type = purity
+					
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = nativists
+							ROOT = { has_policy_flag = appropriation_not_allowed }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = roboticColonization
+					ROOT = { has_policy_flag = appropriation_not_allowed }
 				}
 				
 			}

@@ -11,6 +11,11 @@ calculate_population_controls_allowed_movement_support_and_radicalism_from_facti
 					
 				}
 				
+				NAND = {
+					is_pop_faction_type = refugeeColonists
+					ROOT = { has_policy_flag = population_controls_not_allowed }
+				}
+				
 			}
 		
 			export_trigger_value_to_variable = { trigger = support variable = population_controls_allowed_support }

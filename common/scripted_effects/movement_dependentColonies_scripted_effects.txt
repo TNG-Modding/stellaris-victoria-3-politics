@@ -10,6 +10,8 @@ calculate_dependentColonies_movement_support_and_radicalism_from_factions = {
 					
 					is_pop_faction_type = colonists
 					
+					is_pop_faction_type = roboticColonization
+					
 					
 				}
 				

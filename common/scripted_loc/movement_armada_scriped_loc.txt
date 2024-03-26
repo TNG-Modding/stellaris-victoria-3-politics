@@ -30,6 +30,40 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_armada_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_armada_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_armada_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = merchantMarine
+		}
+	}
+	default = ""
+}
 
 
 
@@ -40,6 +74,18 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = colonists }
 			has_policy_flag = merchantMarine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_armada_DetractByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = floatingNavy
 		}
 	}
 	default = ""

@@ -26,7 +26,7 @@
  situation_passPolicy_ai_servitude.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_ai_servitude.1.name:0 "AI Servitude"
- faction_supportPolicy_ai_servitude.1.desc:0 "Overall Support: [Root.faction_support_ai_servitude]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_ai_servitude.1.desc:0 "Overall Support: [Root.faction_support_ai_servitude]\n\nSupporters:\nroboticColonization: [Root.roboticColonization_support_ai_servitude]\nmetaphysicalists: [Root.metaphysicalists_support_ai_servitude]\n\nDetractors:\nemergentSouls: [Root.emergentSouls_support_ai_servitude]\naiMistake: [Root.aiMistake_support_ai_servitude]\n"
 
- edict_pass_ai_servitude:0 "Pass §BAI Servitude§!"
+ edict_pass_ai_servitude:0 "Pass §B$ai_servitude_name$§!"
  edict_pass_ai_servitude_desc:0 "We move that ."

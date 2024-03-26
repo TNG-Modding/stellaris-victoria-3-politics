@@ -30,6 +30,40 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_grandArmy_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_grandArmy_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_grandArmy_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = preFtlMilitaries
+		}
+	}
+	default = ""
+}
 
 
 
@@ -40,6 +74,18 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = preFtlConservatives }
 			has_policy_flag = preFtlMilitaries
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_grandArmy_DetractByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = spacefaringStandingArmy
 		}
 	}
 	default = ""

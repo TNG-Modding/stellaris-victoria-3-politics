@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_orbital_bombardment_surrender_forbidden.2.name:0 "Movement for Forbid Bombardment Surrender"
+ movement_orbital_bombardment_surrender_forbidden.2.name:0 "Movement for $orbital_bombardment_surrender_forbidden_name$"
  movement_orbital_bombardment_surrender_forbidden.2.desc:0 "Support: [This.movement_orbital_bombardment_surrender_forbidden_support]\nRadicalism: [This.movement_orbital_bombardment_surrender_forbidden_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_orbital_bombardment_surrender_forbidden_type:0 "[Owner.MovementName_orbital_bombardment_surrender_forbidden]"
  situation_movement_orbital_bombardment_surrender_forbidden_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_orbital_bombardment_surrender_forbidden_supporting:0 "Supporting Factions:\n§G§!"
+ situation_movement_orbital_bombardment_surrender_forbidden_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_orbital_bombardment_surrender_forbidden_Support_armedIsolationism]   [Owner.MovementDesc_orbital_bombardment_surrender_forbidden_Support_deathAndDestruction]   [Owner.MovementDesc_orbital_bombardment_surrender_forbidden_Support_purity]   §!"
 
- situation_movement_orbital_bombardment_surrender_forbidden_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_orbital_bombardment_surrender_forbidden_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_orbital_bombardment_surrender_forbidden_DetractByChange_ourBurden]   [Owner.MovementDesc_orbital_bombardment_surrender_forbidden_DetractByChange_realpolitik]   §!"
 
- situation_movement_orbital_bombardment_surrender_forbidden_ethics:0 "Ethics: §Y§!"
+ situation_movement_orbital_bombardment_surrender_forbidden_ethics:0 ""
 
  situation_movement_orbital_bombardment_surrender_forbidden_stats:0 "Support: [Owner.movement_orbital_bombardment_surrender_forbidden_support] Radicalism: [Owner.movement_orbital_bombardment_surrender_forbidden_radicalism] Inertia: [Owner.movement_orbital_bombardment_surrender_forbidden_inertia]\nFaction Support [Owner.movement_orbital_bombardment_surrender_forbidden_faction_support] \nFaction Radicalism: [Owner.movement_orbital_bombardment_surrender_forbidden_faction_radicalism] \nNumerical Support: [Owner.orbital_bombardment_surrender_forbidden_supporting_population]/[Owner.orbital_bombardment_surrender_forbidden_population]=[Owner.movement_orbital_bombardment_surrender_forbidden_numerical_support] \nNumerical Radicalism: [Owner.orbital_bombardment_surrender_forbidden_radical_population]/[Owner.orbital_bombardment_surrender_forbidden_population]=[Owner.movement_orbital_bombardment_surrender_forbidden_numerical_radicalism]"
 
- situation_movement_orbital_bombardment_surrender_forbidden_quickDesc:0 "The people are calling for §BForbid Bombardment Surrender§! as they believe ."
- situation_movement_orbital_bombardment_surrender_forbidden_desc:0 "$situation_movement_orbital_bombardment_surrender_forbidden_quickDesc$\n\n$situation_movement_orbital_bombardment_surrender_forbidden_supporting$\n$situation_movement_orbital_bombardment_surrender_forbidden_detracting$\n$situation_movement_orbital_bombardment_surrender_forbidden_ethics$\n\n$situation_movement_orbital_bombardment_surrender_forbidden_stats$"
- situation_movement_finisher_orbital_bombardment_surrender_forbidden:0 "Revolution for Forbid Bombardment Surrender."
+ situation_movement_orbital_bombardment_surrender_forbidden_quickDesc:0 "The people are calling for §B$orbital_bombardment_surrender_forbidden_name$§! as they believe ."
+ situation_movement_orbital_bombardment_surrender_forbidden_desc:0 "$situation_movement_orbital_bombardment_surrender_forbidden_quickDesc$\n\n$situation_movement_orbital_bombardment_surrender_forbidden_supporting$\n$situation_movement_orbital_bombardment_surrender_forbidden_detracting$\n\n$situation_movement_orbital_bombardment_surrender_forbidden_ethics$\n\n$situation_movement_orbital_bombardment_surrender_forbidden_stats$"
+ situation_movement_finisher_orbital_bombardment_surrender_forbidden:0 "Revolution for $orbital_bombardment_surrender_forbidden_name$."
  
  movement_orbital_bombardment_surrender_forbidden_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_orbital_bombardment_surrender_forbidden_radicalism]§! is above 25."
 
- movement_orbital_bombardment_surrender_forbidden_revolution_appeased:0 "§GAppeased Revolution for Forbid Bombardment Surrender§!"
- movement_orbital_bombardment_surrender_forbidden_revolution:0 "§RRevolution for Forbid Bombardment Surrender§!"
- movement_orbital_bombardment_surrender_forbidden:0 "Movement for Forbid Bombardment Surrender"
- movement_orbital_bombardment_surrender_forbidden_appeased:0 "Appeased Movement for Forbid Bombardment Surrender"
+ movement_orbital_bombardment_surrender_forbidden_revolution_appeased:0 "§GAppeased Revolution for $orbital_bombardment_surrender_forbidden_name$§!"
+ movement_orbital_bombardment_surrender_forbidden_revolution:0 "§RRevolution for $orbital_bombardment_surrender_forbidden_name$§!"
+ movement_orbital_bombardment_surrender_forbidden:0 "Movement for $orbital_bombardment_surrender_forbidden_name$"
+ movement_orbital_bombardment_surrender_forbidden_appeased:0 "Appeased Movement for $orbital_bombardment_surrender_forbidden_name$"
 
- movement_orbital_bombardment_surrender_forbidden.6.title:0 "Secession over §BForbid Bombardment Surrender§!"
- movement_orbital_bombardment_surrender_forbidden.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BForbid Bombardment Surrender§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BForbid Bombardment Surrender§!."
+ movement_orbital_bombardment_surrender_forbidden.6.title:0 "Secession over §B$orbital_bombardment_surrender_forbidden_name$§!"
+ movement_orbital_bombardment_surrender_forbidden.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$orbital_bombardment_surrender_forbidden_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$orbital_bombardment_surrender_forbidden_name$§!."
  movement_orbital_bombardment_surrender_forbidden.6.fight:0 "Make them drink vacuum!"
  movement_orbital_bombardment_surrender_forbidden.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

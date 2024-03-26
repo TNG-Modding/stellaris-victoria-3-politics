@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_first_contact_attack_allowed.2.name:0 "Movement for Aggressive First Contact"
+ movement_first_contact_attack_allowed.2.name:0 "Movement for $first_contact_attack_allowed_name$"
  movement_first_contact_attack_allowed.2.desc:0 "Support: [This.movement_first_contact_attack_allowed_support]\nRadicalism: [This.movement_first_contact_attack_allowed_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_first_contact_attack_allowed_type:0 "[Owner.MovementName_first_contact_attack_allowed]"
  situation_movement_first_contact_attack_allowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_first_contact_attack_allowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_first_contact_attack_allowed_SupportByChange_armedIsolationism]   §!"
+ situation_movement_first_contact_attack_allowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_first_contact_attack_allowed_Support_deathAndDestruction]   [Owner.MovementDesc_first_contact_attack_allowed_Support_jihadism]   [Owner.MovementDesc_first_contact_attack_allowed_Support_purity]   [Owner.MovementDesc_first_contact_attack_allowed_SupportByChange_armedIsolationism]   [Owner.MovementDesc_first_contact_attack_allowed_SupportByChange_deathAndDestruction]   §!"
 
- situation_movement_first_contact_attack_allowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_first_contact_attack_allowed_DetractByChange_armedIsolationism]   §!"
+ situation_movement_first_contact_attack_allowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_first_contact_attack_allowed_DetractByChange_refugeeColonists]   [Owner.MovementDesc_first_contact_attack_allowed_DetractByChange_armedIsolationism]   [Owner.MovementDesc_first_contact_attack_allowed_DetractByChange_ourBurden]   §!"
 
- situation_movement_first_contact_attack_allowed_ethics:0 "Ethics: §Y§!"
+ situation_movement_first_contact_attack_allowed_ethics:0 ""
 
  situation_movement_first_contact_attack_allowed_stats:0 "Support: [Owner.movement_first_contact_attack_allowed_support] Radicalism: [Owner.movement_first_contact_attack_allowed_radicalism] Inertia: [Owner.movement_first_contact_attack_allowed_inertia]\nFaction Support [Owner.movement_first_contact_attack_allowed_faction_support] \nFaction Radicalism: [Owner.movement_first_contact_attack_allowed_faction_radicalism] \nNumerical Support: [Owner.first_contact_attack_allowed_supporting_population]/[Owner.first_contact_attack_allowed_population]=[Owner.movement_first_contact_attack_allowed_numerical_support] \nNumerical Radicalism: [Owner.first_contact_attack_allowed_radical_population]/[Owner.first_contact_attack_allowed_population]=[Owner.movement_first_contact_attack_allowed_numerical_radicalism]"
 
- situation_movement_first_contact_attack_allowed_quickDesc:0 "The people are calling for §BAggressive First Contact§! as they believe ."
- situation_movement_first_contact_attack_allowed_desc:0 "$situation_movement_first_contact_attack_allowed_quickDesc$\n\n$situation_movement_first_contact_attack_allowed_supporting$\n$situation_movement_first_contact_attack_allowed_detracting$\n$situation_movement_first_contact_attack_allowed_ethics$\n\n$situation_movement_first_contact_attack_allowed_stats$"
- situation_movement_finisher_first_contact_attack_allowed:0 "Revolution for Aggressive First Contact."
+ situation_movement_first_contact_attack_allowed_quickDesc:0 "The people are calling for §B$first_contact_attack_allowed_name$§! as they believe ."
+ situation_movement_first_contact_attack_allowed_desc:0 "$situation_movement_first_contact_attack_allowed_quickDesc$\n\n$situation_movement_first_contact_attack_allowed_supporting$\n$situation_movement_first_contact_attack_allowed_detracting$\n\n$situation_movement_first_contact_attack_allowed_ethics$\n\n$situation_movement_first_contact_attack_allowed_stats$"
+ situation_movement_finisher_first_contact_attack_allowed:0 "Revolution for $first_contact_attack_allowed_name$."
  
  movement_first_contact_attack_allowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_first_contact_attack_allowed_radicalism]§! is above 25."
 
- movement_first_contact_attack_allowed_revolution_appeased:0 "§GAppeased Revolution for Aggressive First Contact§!"
- movement_first_contact_attack_allowed_revolution:0 "§RRevolution for Aggressive First Contact§!"
- movement_first_contact_attack_allowed:0 "Movement for Aggressive First Contact"
- movement_first_contact_attack_allowed_appeased:0 "Appeased Movement for Aggressive First Contact"
+ movement_first_contact_attack_allowed_revolution_appeased:0 "§GAppeased Revolution for $first_contact_attack_allowed_name$§!"
+ movement_first_contact_attack_allowed_revolution:0 "§RRevolution for $first_contact_attack_allowed_name$§!"
+ movement_first_contact_attack_allowed:0 "Movement for $first_contact_attack_allowed_name$"
+ movement_first_contact_attack_allowed_appeased:0 "Appeased Movement for $first_contact_attack_allowed_name$"
 
- movement_first_contact_attack_allowed.6.title:0 "Secession over §BAggressive First Contact§!"
- movement_first_contact_attack_allowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BAggressive First Contact§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BAggressive First Contact§!."
+ movement_first_contact_attack_allowed.6.title:0 "Secession over §B$first_contact_attack_allowed_name$§!"
+ movement_first_contact_attack_allowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$first_contact_attack_allowed_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$first_contact_attack_allowed_name$§!."
  movement_first_contact_attack_allowed.6.fight:0 "Make them drink vacuum!"
  movement_first_contact_attack_allowed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

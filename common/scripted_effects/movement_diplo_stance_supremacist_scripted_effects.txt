@@ -6,8 +6,16 @@ calculate_diplo_stance_supremacist_movement_support_and_radicalism_from_factions
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = deathAndDestruction
+					
+					is_pop_faction_type = jihadism
 					
 					
+					
+					
+						
+					
+						
 					
 					
 						AND = {
@@ -18,9 +26,143 @@ calculate_diplo_stance_supremacist_movement_support_and_radicalism_from_factions
 					
 					
 					
+						
+					
+						
+					
 					
 						AND = {
 							is_pop_faction_type = ourBurden
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = realpolitik
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = diplo_stance_cooperative }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = diplo_stance_mercantile }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = diplo_stance_purification }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = diplo_stance_extermination }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = jihadism
+							ROOT = { has_policy_flag = diplo_stance_isolationist }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = jihadism
+							ROOT = { has_policy_flag = diplo_stance_purification }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = jihadism
+							ROOT = { has_policy_flag = diplo_stance_extermination }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = roboticColonization
 							ROOT = { has_policy_flag = diplo_stance_isolationist }
 						}
 					
@@ -33,6 +175,16 @@ calculate_diplo_stance_supremacist_movement_support_and_radicalism_from_factions
 				}
 				
 				NAND = {
+					is_pop_faction_type = consolidationists
+					ROOT = { has_policy_flag = diplo_stance_mercantile }
+				}
+				
+				NAND = {
+					is_pop_faction_type = consolidationists
+					ROOT = { has_policy_flag = diplo_stance_cooperative }
+				}
+				
+				NAND = {
 					is_pop_faction_type = armedIsolationism
 					ROOT = { has_policy_flag = diplo_stance_isolationist }
 				}
@@ -40,6 +192,36 @@ calculate_diplo_stance_supremacist_movement_support_and_radicalism_from_factions
 				NAND = {
 					is_pop_faction_type = ourBurden
 					ROOT = { has_policy_flag = diplo_stance_belligerent }
+				}
+				
+				NAND = {
+					is_pop_faction_type = realpolitik
+					ROOT = { has_policy_flag = diplo_stance_belligerent }
+				}
+				
+				NAND = {
+					is_pop_faction_type = deathAndDestruction
+					ROOT = { has_policy_flag = diplo_stance_animosity }
+				}
+				
+				NAND = {
+					is_pop_faction_type = jihadism
+					ROOT = { has_policy_flag = diplo_stance_belligerent }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = diplo_stance_purification }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = diplo_stance_extermination }
+				}
+				
+				NAND = {
+					is_pop_faction_type = roboticColonization
+					ROOT = { has_policy_flag = diplo_stance_expansionist }
 				}
 				
 			}

@@ -26,7 +26,7 @@
  situation_passPolicy_enlightenment_not_allowed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_enlightenment_not_allowed.1.name:0 "Forbid Enlightment"
- faction_supportPolicy_enlightenment_not_allowed.1.desc:0 "Overall Support: [Root.faction_support_enlightenment_not_allowed]\n\nSupporters:\n\nDetractors:\nourBurden: [Root.ourBurden_support_enlightenment_not_allowed]\n"
+ faction_supportPolicy_enlightenment_not_allowed.1.desc:0 "Overall Support: [Root.faction_support_enlightenment_not_allowed]\n\nSupporters:\npurity: [Root.purity_support_enlightenment_not_allowed]\n\nDetractors:\nourBurden: [Root.ourBurden_support_enlightenment_not_allowed]\njihadism: [Root.jihadism_support_enlightenment_not_allowed]\n"
 
- edict_pass_enlightenment_not_allowed:0 "Pass §BForbid Enlightment§!"
+ edict_pass_enlightenment_not_allowed:0 "Pass §B$enlightenment_not_allowed_name$§!"
  edict_pass_enlightenment_not_allowed_desc:0 "We move that ."

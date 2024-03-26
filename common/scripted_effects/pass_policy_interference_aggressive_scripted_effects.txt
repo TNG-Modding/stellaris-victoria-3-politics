@@ -11,14 +11,37 @@ set_interference_aggressive_base_success_chance = {
 						
 						is_pop_faction_type = ourBurden
 						
+						is_pop_faction_type = jihadism
+						
+						is_pop_faction_type = purity
 						
 						
+						
+						
+							
+						
+							
 						
 							
 						
 						
 							AND = {
 								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = interference_not_allowed }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
 								OWNER = { has_policy_flag = interference_not_allowed }
 							}
 						

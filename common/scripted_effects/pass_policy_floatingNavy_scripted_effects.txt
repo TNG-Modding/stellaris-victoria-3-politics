@@ -9,12 +9,35 @@ set_floatingNavy_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = jihadism
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = merchantMarine }
+							}
+						
 						
 					}
 					
 					NAND = {
 						is_pop_faction_type = colonists
 						OWNER = { has_policy_flag = merchantMarine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = armada }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = armada }
 					}
 					
 				}
@@ -48,11 +71,39 @@ set_floatingNavy_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = armada }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = armada }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = colonists
 						OWNER = { has_policy_flag = merchantMarine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = armada }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = armada }
 					}
 					
 				}

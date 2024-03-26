@@ -26,7 +26,7 @@
  situation_passPolicy_armada.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_armada.1.name:0 "Armada"
- faction_supportPolicy_armada.1.desc:0 "Overall Support: [Root.faction_support_armada]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_armada.1.desc:0 "Overall Support: [Root.faction_support_armada]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_armada]\npurity: [Root.purity_support_armada]\n\nDetractors:\n"
 
- edict_pass_armada:0 "Pass §BArmada§!"
+ edict_pass_armada:0 "Pass §B$armada_name$§!"
  edict_pass_armada_desc:0 "We move that the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels."

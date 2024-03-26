@@ -28,5 +28,5 @@
  faction_supportPolicy_interference_active.1.name:0 "Active Interference"
  faction_supportPolicy_interference_active.1.desc:0 "Overall Support: [Root.faction_support_interference_active]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_interference_active:0 "Pass §BActive Interference§!"
+ edict_pass_interference_active:0 "Pass §B$interference_active_name$§!"
  edict_pass_interference_active_desc:0 "We move that ."

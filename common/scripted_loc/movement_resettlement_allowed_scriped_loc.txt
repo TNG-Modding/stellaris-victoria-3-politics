@@ -41,5 +41,28 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_resettlement_allowed_Support_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+		}
+	}
+	default = ""
+}
 
 
+
+
+defined_text = {
+	name = MovementDesc_resettlement_allowed_DetractByChange_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+			has_policy_flag = resettlement_not_allowed
+		}
+	}
+	default = ""
+}

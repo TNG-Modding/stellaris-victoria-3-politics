@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_isolationist.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_isolationist.1.name:0 "Isolationist"
- faction_supportPolicy_diplo_stance_isolationist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_isolationist]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_diplo_stance_isolationist]\n\nDetractors:\ncolonists: [Root.colonists_support_diplo_stance_isolationist]\nourBurden: [Root.ourBurden_support_diplo_stance_isolationist]\n"
+ faction_supportPolicy_diplo_stance_isolationist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_isolationist]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_diplo_stance_isolationist]\n\nDetractors:\ncolonists: [Root.colonists_support_diplo_stance_isolationist]\nourBurden: [Root.ourBurden_support_diplo_stance_isolationist]\nrealpolitik: [Root.realpolitik_support_diplo_stance_isolationist]\ndeathAndDestruction: [Root.deathAndDestruction_support_diplo_stance_isolationist]\njihadism: [Root.jihadism_support_diplo_stance_isolationist]\nroboticColonization: [Root.roboticColonization_support_diplo_stance_isolationist]\n"
 
- edict_pass_diplo_stance_isolationist:0 "Pass §BIsolationist§!"
+ edict_pass_diplo_stance_isolationist:0 "Pass §B$diplo_stance_isolationist_name$§!"
  edict_pass_diplo_stance_isolationist_desc:0 "We move that ."

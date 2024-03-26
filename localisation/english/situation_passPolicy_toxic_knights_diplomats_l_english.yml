@@ -28,5 +28,5 @@
  faction_supportPolicy_toxic_knights_diplomats.1.name:0 "Diplomatic Toxic Knights"
  faction_supportPolicy_toxic_knights_diplomats.1.desc:0 "Overall Support: [Root.faction_support_toxic_knights_diplomats]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_toxic_knights_diplomats:0 "Pass §BDiplomatic Toxic Knights§!"
+ edict_pass_toxic_knights_diplomats:0 "Pass §B$toxic_knights_diplomats_name$§!"
  edict_pass_toxic_knights_diplomats_desc:0 "We move that ."

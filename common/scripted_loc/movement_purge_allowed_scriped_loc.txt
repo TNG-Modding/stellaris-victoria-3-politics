@@ -30,6 +30,17 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_purge_allowed_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
+
 
 
 defined_text = {
@@ -43,6 +54,17 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_purge_allowed_Detract_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+		}
+	}
+	default = ""
+}
+
 
 defined_text = {
 	name = MovementDesc_purge_allowed_DetractByChange_nativists
@@ -51,6 +73,18 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = nativists }
 			has_policy_flag = purge_displacement_only
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_purge_allowed_DetractByChange_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+			has_policy_flag = purge_not_allowed
 		}
 	}
 	default = ""

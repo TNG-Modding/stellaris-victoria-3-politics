@@ -11,8 +11,12 @@ set_enlightenment_allowed_base_success_chance = {
 						
 						is_pop_faction_type = ourBurden
 						
+						is_pop_faction_type = jihadism
 						
 						
+						
+						
+							
 						
 							
 						
@@ -23,6 +27,24 @@ set_enlightenment_allowed_base_success_chance = {
 							}
 						
 						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = enlightenment_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = enlightenment_not_allowed }
 					}
 					
 				}
@@ -47,6 +69,20 @@ set_enlightenment_allowed_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = enlightenment_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = enlightenment_not_allowed }
 					}
 					
 				}

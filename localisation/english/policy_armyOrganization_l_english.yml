@@ -1,18 +1,18 @@
 ﻿l_english:
 
- policy_armyOrganization:0 "Army Organization"
+ policy_armyOrganization:0 "£defense_army£ Army Organization"
  policy_armyOrganization_name:0 "Army Organization"
  policy_armyOrganization_desc:0 "The powers and extent of our army."
  
  preFtlMilitaries:0 "Pre-FTL Militaries"
- preFtlMilitaries_name:0 "Pre-FTL Militaries"
+ preFtlMilitaries_name:0 "£defense_army£ Pre-FTL Militaries"
  preFtlMilitaries_desc:0 "Landlocked soldiery for planetary defense."
  
  spacefaringStandingArmy:0 "Spacefaring Standing Army"
- spacefaringStandingArmy_name:0 "Spacefaring Standing Army"
+ spacefaringStandingArmy_name:0 "£defense_army£ Spacefaring Standing Army"
  spacefaringStandingArmy_desc:0 "A modern armu without restrictions. Allows building offensive armies."
  
  grandArmy:0 "Grand Army"
- grandArmy_name:0 "Grand Army"
+ grandArmy_name:0 "£defense_army£ Grand Army"
  grandArmy_desc:0 "An army that is a civilization unto itself. Untold millions live and die in defense of our soil."
  

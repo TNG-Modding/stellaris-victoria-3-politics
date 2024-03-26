@@ -26,7 +26,7 @@
  situation_passPolicy_economic_policy_balanced.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_economic_policy_balanced.1.name:0 "Balanced Economics"
- faction_supportPolicy_economic_policy_balanced.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_balanced]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_economic_policy_balanced.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_balanced]\n\nSupporters:\nconsolidationists: [Root.consolidationists_support_economic_policy_balanced]\nourBurden: [Root.ourBurden_support_economic_policy_balanced]\nrealpolitik: [Root.realpolitik_support_economic_policy_balanced]\n\nDetractors:\n"
 
- edict_pass_economic_policy_balanced:0 "Pass §BBalanced Economics§!"
+ edict_pass_economic_policy_balanced:0 "Pass §B$economic_policy_balanced_name$§!"
  edict_pass_economic_policy_balanced_desc:0 "We move that ."

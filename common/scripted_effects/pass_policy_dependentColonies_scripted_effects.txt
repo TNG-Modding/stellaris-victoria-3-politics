@@ -13,6 +13,8 @@ set_dependentColonies_base_success_chance = {
 						
 						is_pop_faction_type = colonists
 						
+						is_pop_faction_type = roboticColonization
+						
 						
 					}
 					

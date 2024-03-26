@@ -41,5 +41,51 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_slavery_allowed_Support_slavers
+	text = {
+		localization_key = slavers
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = slavers }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_slavery_allowed_SupportByChange_slavers
+	text = {
+		localization_key = slavers
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = slavers }
+			has_policy_flag = slavery_not_allowed
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_slavery_allowed_Detract_emancipators
+	text = {
+		localization_key = emancipators
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emancipators }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_slavery_allowed_DetractByChange_emancipators
+	text = {
+		localization_key = emancipators
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emancipators }
+			has_policy_flag = slavery_not_allowed
+		}
+	}
+	default = ""
+}

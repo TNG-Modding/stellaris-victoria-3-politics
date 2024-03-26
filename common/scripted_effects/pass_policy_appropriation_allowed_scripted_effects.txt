@@ -9,7 +9,33 @@ set_appropriation_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = colonists
 						
+						is_pop_faction_type = nativists
+						
+						is_pop_faction_type = purity
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = nativists
+								OWNER = { has_policy_flag = appropriation_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = roboticColonization
+						OWNER = { has_policy_flag = appropriation_not_allowed }
 					}
 					
 				}
@@ -33,7 +59,25 @@ set_appropriation_allowed_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
+								OWNER = { has_policy_flag = appropriation_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = roboticColonization
+						OWNER = { has_policy_flag = appropriation_not_allowed }
 					}
 					
 				}

@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_diplo_stance_supremacist.2.name:0 "Movement for Supremacist"
+ movement_diplo_stance_supremacist.2.name:0 "Movement for $diplo_stance_supremacist_name$"
  movement_diplo_stance_supremacist.2.desc:0 "Support: [This.movement_diplo_stance_supremacist_support]\nRadicalism: [This.movement_diplo_stance_supremacist_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_diplo_stance_supremacist_type:0 "[Owner.MovementName_diplo_stance_supremacist]"
  situation_movement_diplo_stance_supremacist_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_diplo_stance_supremacist_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_colonists]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_ourBurden]   §!"
+ situation_movement_diplo_stance_supremacist_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_diplo_stance_supremacist_Support_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_Support_jihadism]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_colonists]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_ourBurden]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_realpolitik]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_jihadism]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_jihadism]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_jihadism]   [Owner.MovementDesc_diplo_stance_supremacist_SupportByChange_roboticColonization]   §!"
 
- situation_movement_diplo_stance_supremacist_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_colonists]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_armedIsolationism]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_ourBurden]   §!"
+ situation_movement_diplo_stance_supremacist_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_colonists]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_consolidationists]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_consolidationists]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_armedIsolationism]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_ourBurden]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_realpolitik]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_deathAndDestruction]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_jihadism]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_purity]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_purity]   [Owner.MovementDesc_diplo_stance_supremacist_DetractByChange_roboticColonization]   §!"
 
- situation_movement_diplo_stance_supremacist_ethics:0 "Ethics: §Y§!"
+ situation_movement_diplo_stance_supremacist_ethics:0 ""
 
  situation_movement_diplo_stance_supremacist_stats:0 "Support: [Owner.movement_diplo_stance_supremacist_support] Radicalism: [Owner.movement_diplo_stance_supremacist_radicalism] Inertia: [Owner.movement_diplo_stance_supremacist_inertia]\nFaction Support [Owner.movement_diplo_stance_supremacist_faction_support] \nFaction Radicalism: [Owner.movement_diplo_stance_supremacist_faction_radicalism] \nNumerical Support: [Owner.diplo_stance_supremacist_supporting_population]/[Owner.diplo_stance_supremacist_population]=[Owner.movement_diplo_stance_supremacist_numerical_support] \nNumerical Radicalism: [Owner.diplo_stance_supremacist_radical_population]/[Owner.diplo_stance_supremacist_population]=[Owner.movement_diplo_stance_supremacist_numerical_radicalism]"
 
- situation_movement_diplo_stance_supremacist_quickDesc:0 "The people are calling for §BSupremacist§! as they believe ."
- situation_movement_diplo_stance_supremacist_desc:0 "$situation_movement_diplo_stance_supremacist_quickDesc$\n\n$situation_movement_diplo_stance_supremacist_supporting$\n$situation_movement_diplo_stance_supremacist_detracting$\n$situation_movement_diplo_stance_supremacist_ethics$\n\n$situation_movement_diplo_stance_supremacist_stats$"
- situation_movement_finisher_diplo_stance_supremacist:0 "Revolution for Supremacist."
+ situation_movement_diplo_stance_supremacist_quickDesc:0 "The people are calling for §B$diplo_stance_supremacist_name$§! as they believe ."
+ situation_movement_diplo_stance_supremacist_desc:0 "$situation_movement_diplo_stance_supremacist_quickDesc$\n\n$situation_movement_diplo_stance_supremacist_supporting$\n$situation_movement_diplo_stance_supremacist_detracting$\n\n$situation_movement_diplo_stance_supremacist_ethics$\n\n$situation_movement_diplo_stance_supremacist_stats$"
+ situation_movement_finisher_diplo_stance_supremacist:0 "Revolution for $diplo_stance_supremacist_name$."
  
  movement_diplo_stance_supremacist_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_diplo_stance_supremacist_radicalism]§! is above 25."
 
- movement_diplo_stance_supremacist_revolution_appeased:0 "§GAppeased Revolution for Supremacist§!"
- movement_diplo_stance_supremacist_revolution:0 "§RRevolution for Supremacist§!"
- movement_diplo_stance_supremacist:0 "Movement for Supremacist"
- movement_diplo_stance_supremacist_appeased:0 "Appeased Movement for Supremacist"
+ movement_diplo_stance_supremacist_revolution_appeased:0 "§GAppeased Revolution for $diplo_stance_supremacist_name$§!"
+ movement_diplo_stance_supremacist_revolution:0 "§RRevolution for $diplo_stance_supremacist_name$§!"
+ movement_diplo_stance_supremacist:0 "Movement for $diplo_stance_supremacist_name$"
+ movement_diplo_stance_supremacist_appeased:0 "Appeased Movement for $diplo_stance_supremacist_name$"
 
- movement_diplo_stance_supremacist.6.title:0 "Secession over §BSupremacist§!"
- movement_diplo_stance_supremacist.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BSupremacist§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BSupremacist§!."
+ movement_diplo_stance_supremacist.6.title:0 "Secession over §B$diplo_stance_supremacist_name$§!"
+ movement_diplo_stance_supremacist.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$diplo_stance_supremacist_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$diplo_stance_supremacist_name$§!."
  movement_diplo_stance_supremacist.6.fight:0 "Make them drink vacuum!"
  movement_diplo_stance_supremacist.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

@@ -26,7 +26,7 @@
  situation_passPolicy_floatingNavy.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_floatingNavy.1.name:0 "Floating Navy"
- faction_supportPolicy_floatingNavy.1.desc:0 "Overall Support: [Root.faction_support_floatingNavy]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_floatingNavy.1.desc:0 "Overall Support: [Root.faction_support_floatingNavy]\n\nSupporters:\njihadism: [Root.jihadism_support_floatingNavy]\n\nDetractors:\n"
 
- edict_pass_floatingNavy:0 "Pass §BFloating Navy§!"
+ edict_pass_floatingNavy:0 "Pass §B$floatingNavy_name$§!"
  edict_pass_floatingNavy_desc:0 "We move that the fleet should be a modern navy without restrictions."

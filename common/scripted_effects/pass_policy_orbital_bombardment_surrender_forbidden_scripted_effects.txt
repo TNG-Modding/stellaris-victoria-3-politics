@@ -9,7 +9,23 @@ set_orbital_bombardment_surrender_forbidden_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = armedIsolationism
 						
+						is_pop_faction_type = deathAndDestruction
+						
+						is_pop_faction_type = purity
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
 					}
 					
 				}
@@ -34,6 +50,34 @@ set_orbital_bombardment_surrender_forbidden_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = orbital_bombardment_surrender_allowed }
 					}
 					
 				}

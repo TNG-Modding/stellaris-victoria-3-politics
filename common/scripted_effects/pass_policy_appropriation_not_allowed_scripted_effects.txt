@@ -9,7 +9,35 @@ set_appropriation_not_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = roboticColonization
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = appropriation_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = appropriation_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = appropriation_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = appropriation_allowed }
 					}
 					
 				}
@@ -33,7 +61,57 @@ set_appropriation_not_allowed_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = nativists
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = colonists
+								OWNER = { has_policy_flag = appropriation_allowed }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = nativists
+								OWNER = { has_policy_flag = appropriation_allowed }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = appropriation_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = appropriation_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = appropriation_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = appropriation_allowed }
 					}
 					
 				}

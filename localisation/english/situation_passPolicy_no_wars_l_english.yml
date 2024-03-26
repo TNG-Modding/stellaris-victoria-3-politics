@@ -26,7 +26,7 @@
  situation_passPolicy_no_wars.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_no_wars.1.name:0 "No Wars"
- faction_supportPolicy_no_wars.1.desc:0 "Overall Support: [Root.faction_support_no_wars]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_no_wars]\n\nDetractors:\nourBurden: [Root.ourBurden_support_no_wars]\n"
+ faction_supportPolicy_no_wars.1.desc:0 "Overall Support: [Root.faction_support_no_wars]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_no_wars]\n\nDetractors:\nourBurden: [Root.ourBurden_support_no_wars]\nrealpolitik: [Root.realpolitik_support_no_wars]\ndeathAndDestruction: [Root.deathAndDestruction_support_no_wars]\njihadism: [Root.jihadism_support_no_wars]\n"
 
- edict_pass_no_wars:0 "Pass §BNo Wars§!"
+ edict_pass_no_wars:0 "Pass §B$no_wars_name$§!"
  edict_pass_no_wars_desc:0 "We move that ."

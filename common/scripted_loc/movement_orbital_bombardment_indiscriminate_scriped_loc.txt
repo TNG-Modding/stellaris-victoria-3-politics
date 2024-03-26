@@ -30,5 +30,87 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = orbital_bombardment_armageddon
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = orbital_bombardment_selective
+		}
+	}
+	default = ""
+}
+
+
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_DetractByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = orbital_bombardment_selective
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = orbital_bombardment_armageddon
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_indiscriminate_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = orbital_bombardment_armageddon
+		}
+	}
+	default = ""
+}

@@ -28,5 +28,5 @@
  faction_supportPolicy_interference_subtle.1.name:0 "Subtle Interference"
  faction_supportPolicy_interference_subtle.1.desc:0 "Overall Support: [Root.faction_support_interference_subtle]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_interference_subtle:0 "Pass §BSubtle Interference§!"
+ edict_pass_interference_subtle:0 "Pass §B$interference_subtle_name$§!"
  edict_pass_interference_subtle_desc:0 "We move that ."

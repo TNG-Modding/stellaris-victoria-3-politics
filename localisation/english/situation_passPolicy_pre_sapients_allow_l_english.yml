@@ -26,7 +26,7 @@
  situation_passPolicy_pre_sapients_allow.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_pre_sapients_allow.1.name:0 "Allowed Pre-Sapients"
- faction_supportPolicy_pre_sapients_allow.1.desc:0 "Overall Support: [Root.faction_support_pre_sapients_allow]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_pre_sapients_allow.1.desc:0 "Overall Support: [Root.faction_support_pre_sapients_allow]\n\nSupporters:\nrefugeeColonists: [Root.refugeeColonists_support_pre_sapients_allow]\n\nDetractors:\n"
 
- edict_pass_pre_sapients_allow:0 "Pass §BAllowed Pre-Sapients§!"
+ edict_pass_pre_sapients_allow:0 "Pass §B$pre_sapients_allow_name$§!"
  edict_pass_pre_sapients_allow_desc:0 "We move that ."

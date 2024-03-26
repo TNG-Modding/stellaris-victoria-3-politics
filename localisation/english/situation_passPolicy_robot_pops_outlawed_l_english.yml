@@ -26,7 +26,7 @@
  situation_passPolicy_robot_pops_outlawed.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_robot_pops_outlawed.1.name:0 "Outlawed Robot Pops"
- faction_supportPolicy_robot_pops_outlawed.1.desc:0 "Overall Support: [Root.faction_support_robot_pops_outlawed]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_robot_pops_outlawed.1.desc:0 "Overall Support: [Root.faction_support_robot_pops_outlawed]\n\nSupporters:\naiMistake: [Root.aiMistake_support_robot_pops_outlawed]\n\nDetractors:\nroboticColonization: [Root.roboticColonization_support_robot_pops_outlawed]\n"
 
- edict_pass_robot_pops_outlawed:0 "Pass §BOutlawed Robot Pops§!"
+ edict_pass_robot_pops_outlawed:0 "Pass §B$robot_pops_outlawed_name$§!"
  edict_pass_robot_pops_outlawed_desc:0 "We move that ."

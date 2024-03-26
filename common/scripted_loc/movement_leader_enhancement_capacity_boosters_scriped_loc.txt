@@ -32,3 +32,15 @@ defined_text = {
 
 
 
+
+defined_text = {
+	name = MovementDesc_leader_enhancement_capacity_boosters_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = leader_enhancement_selected_lineages
+		}
+	}
+	default = ""
+}

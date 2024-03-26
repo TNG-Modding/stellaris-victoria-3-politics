@@ -26,7 +26,7 @@
  situation_passPolicy_preFtlMilitaries.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_preFtlMilitaries.1.name:0 "Pre-FTL Militaries"
- faction_supportPolicy_preFtlMilitaries.1.desc:0 "Overall Support: [Root.faction_support_preFtlMilitaries]\n\nSupporters:\npreFtlConservatives: [Root.preFtlConservatives_support_preFtlMilitaries]\n\nDetractors:\n"
+ faction_supportPolicy_preFtlMilitaries.1.desc:0 "Overall Support: [Root.faction_support_preFtlMilitaries]\n\nSupporters:\npreFtlConservatives: [Root.preFtlConservatives_support_preFtlMilitaries]\n\nDetractors:\ndeathAndDestruction: [Root.deathAndDestruction_support_preFtlMilitaries]\n"
 
- edict_pass_preFtlMilitaries:0 "Pass §BPre-FTL Militaries§!"
+ edict_pass_preFtlMilitaries:0 "Pass §B$preFtlMilitaries_name$§!"
  edict_pass_preFtlMilitaries_desc:0 "We move that our army should remain planetary."

@@ -4,6 +4,7 @@
         "displayName": "Fleet Formation",
         "desc": "The powers and extent of our navy.",
         "potential": "always = yes",
+        "icon": "trade_protection",
         "options": [
             {
                 "varname": "merchantMarine",
@@ -14,7 +15,7 @@
                 "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "pacifist",
                     "spiritualist",
@@ -26,12 +27,27 @@
                 "supportingFactions": [
                     "colonists"
                 ],
-                "detractingFactions": [],
+                "detractingFactions": [
+                    "deathAndDestruction"
+                ],
                 "otherOptions": [
                     "floatingNavy",
                     "armada"
                 ],
-                "factionsAngryWithChange": [],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "armada"
+                    },
+                    {
+                        "faction": "jihadism",
+                        "fromPolicy": "floatingNavy"
+                    },
+                    {
+                        "faction": "purity",
+                        "fromPolicy": "armada"
+                    }
+                ],
                 "factionsHappyWithChange": []
             },
             {
@@ -43,7 +59,7 @@
                 "description": "the fleet should be a modern navy without restrictions",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "militarist",
                     "spiritualist",
@@ -52,7 +68,9 @@
                     "authoritarian"
                 ],
                 "potential": "always = yes",
-                "supportingFactions": [],
+                "supportingFactions": [
+                    "jihadism"
+                ],
                 "detractingFactions": [],
                 "otherOptions": [
                     "merchantMarine",
@@ -62,9 +80,22 @@
                     {
                         "faction": "colonists",
                         "fromPolicy": "merchantMarine"
+                    },
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "armada"
+                    },
+                    {
+                        "faction": "purity",
+                        "fromPolicy": "armada"
                     }
                 ],
-                "factionsHappyWithChange": []
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "merchantMarine"
+                    }
+                ]
             },
             {
                 "varname": "armada",
@@ -75,12 +106,15 @@
                 "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "militarist"
                 ],
                 "potential": "always = yes",
-                "supportingFactions": [],
+                "supportingFactions": [
+                    "deathAndDestruction",
+                    "purity"
+                ],
                 "detractingFactions": [],
                 "otherOptions": [
                     "merchantMarine",
@@ -90,9 +124,18 @@
                     {
                         "faction": "colonists",
                         "fromPolicy": "merchantMarine"
+                    },
+                    {
+                        "faction": "jihadism",
+                        "fromPolicy": "floatingNavy"
                     }
                 ],
-                "factionsHappyWithChange": []
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "merchantMarine"
+                    }
+                ]
             }
         ]
     },
@@ -101,6 +144,7 @@
         "displayName": "Army Organization",
         "desc": "The powers and extent of our army.",
         "potential": "always = yes",
+        "icon": "defense_army",
         "options": [
             {
                 "varname": "preFtlMilitaries",
@@ -111,7 +155,7 @@
                 "description": "our army should remain planetary",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "pacifist",
                     "spiritualist",
@@ -123,12 +167,27 @@
                 "supportingFactions": [
                     "preFtlConservatives"
                 ],
-                "detractingFactions": [],
+                "detractingFactions": [
+                    "deathAndDestruction"
+                ],
                 "otherOptions": [
                     "spacefaringStandingArmy",
                     "grandArmy"
                 ],
-                "factionsAngryWithChange": [],
+                "factionsAngryWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "grandArmy"
+                    },
+                    {
+                        "faction": "jihadism",
+                        "fromPolicy": "spacefaringStandingArmy"
+                    },
+                    {
+                        "faction": "purity",
+                        "fromPolicy": "grandArmy"
+                    }
+                ],
                 "factionsHappyWithChange": []
             },
             {
@@ -140,7 +199,7 @@
                 "description": "our army should be modern and without restriction",
                 "ethicAdjective": "Militarist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "militarist",
                     "spiritualist",
@@ -149,7 +208,9 @@
                     "authoritarian"
                 ],
                 "potential": "always = yes",
-                "supportingFactions": [],
+                "supportingFactions": [
+                    "jihadism"
+                ],
                 "detractingFactions": [],
                 "otherOptions": [
                     "preFtlMilitaries",
@@ -159,9 +220,22 @@
                     {
                         "faction": "preFtlConservatives",
                         "fromPolicy": "preFtlMilitaries"
+                    },
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "grandArmy"
+                    },
+                    {
+                        "faction": "purity",
+                        "fromPolicy": "grandArmy"
                     }
                 ],
-                "factionsHappyWithChange": []
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "preFtlMilitaries"
+                    }
+                ]
             },
             {
                 "varname": "grandArmy",
@@ -172,12 +246,15 @@
                 "description": "our army should be a cilivization unto itself",
                 "ethicAdjective": "Militarist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "militarist"
                 ],
                 "potential": "always = yes",
-                "supportingFactions": [],
+                "supportingFactions": [
+                    "deathAndDestruction",
+                    "purity"
+                ],
                 "detractingFactions": [],
                 "otherOptions": [
                     "preFtlMilitaries",
@@ -187,9 +264,18 @@
                     {
                         "faction": "preFtlConservatives",
                         "fromPolicy": "preFtlMilitaries"
+                    },
+                    {
+                        "faction": "jihadism",
+                        "fromPolicy": "spacefaringStandingArmy"
                     }
                 ],
-                "factionsHappyWithChange": []
+                "factionsHappyWithChange": [
+                    {
+                        "faction": "deathAndDestruction",
+                        "fromPolicy": "preFtlMilitaries"
+                    }
+                ]
             }
         ]
     },
@@ -198,6 +284,7 @@
         "displayName": "Colonial Administration",
         "desc": "The structure of our colonial holdings.",
         "potential": "always = yes",
+        "icon": "planet",
         "options": [
             {
                 "varname": "dependentColonies",
@@ -208,7 +295,7 @@
                 "description": "extrastellar planetary holdings should be governed like colonies",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "egalitarian",
                     "pacifist",
@@ -220,7 +307,8 @@
                 "potential": "always = yes",
                 "supportingFactions": [
                     "preFtlConservatives",
-                    "colonists"
+                    "colonists",
+                    "roboticColonization"
                 ],
                 "detractingFactions": [],
                 "otherOptions": [
@@ -243,7 +331,7 @@
                 "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "authoritarian"
                 ],
@@ -263,6 +351,10 @@
                     {
                         "faction": "colonists",
                         "fromPolicy": "dependentColonies"
+                    },
+                    {
+                        "faction": "roboticColonization",
+                        "fromPolicy": "dependentColonies"
                     }
                 ],
                 "factionsHappyWithChange": []
@@ -274,6 +366,7 @@
         "displayName": "Political Organization",
         "desc": "Our governmental powers and the abilities of factions within our empire.",
         "potential": "always = yes",
+        "icon": "galcom_endsession",
         "options": [
             {
                 "varname": "preFtlPoliticalOrganization",
@@ -284,7 +377,7 @@
                 "description": "the political organization of our pre-FTL days suffices",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "xenophobe",
                     "xenophile",
@@ -315,7 +408,7 @@
                 "description": "we should embrace a modern interstellar political system",
                 "ethicAdjective": "Pacifist",
                 "picture": "surrender",
-                "rebellionEthics": "{ ethic = ethic_fanatic_pacafist ethic = ethic_authoritarian }",
+                "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
                 "supportingEthics": [
                     "egalitarian"
                 ],

@@ -26,7 +26,7 @@
  situation_passPolicy_liberation_wars.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_liberation_wars.1.name:0 "Liberation Wars"
- faction_supportPolicy_liberation_wars.1.desc:0 "Overall Support: [Root.faction_support_liberation_wars]\n\nSupporters:\nourBurden: [Root.ourBurden_support_liberation_wars]\n\nDetractors:\n"
+ faction_supportPolicy_liberation_wars.1.desc:0 "Overall Support: [Root.faction_support_liberation_wars]\n\nSupporters:\nourBurden: [Root.ourBurden_support_liberation_wars]\njihadism: [Root.jihadism_support_liberation_wars]\n\nDetractors:\n"
 
- edict_pass_liberation_wars:0 "Pass §BLiberation Wars§!"
+ edict_pass_liberation_wars:0 "Pass §B$liberation_wars_name$§!"
  edict_pass_liberation_wars_desc:0 "We move that ."

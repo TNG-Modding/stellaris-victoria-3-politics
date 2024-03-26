@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_supremacist.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_supremacist.1.name:0 "Supremacist"
- faction_supportPolicy_diplo_stance_supremacist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_supremacist]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_supremacist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_supremacist]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_diplo_stance_supremacist]\njihadism: [Root.jihadism_support_diplo_stance_supremacist]\n\nDetractors:\n"
 
- edict_pass_diplo_stance_supremacist:0 "Pass §BSupremacist§!"
+ edict_pass_diplo_stance_supremacist:0 "Pass §B$diplo_stance_supremacist_name$§!"
  edict_pass_diplo_stance_supremacist_desc:0 "We move that ."

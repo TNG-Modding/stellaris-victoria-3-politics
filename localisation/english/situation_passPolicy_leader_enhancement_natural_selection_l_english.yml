@@ -28,5 +28,5 @@
  faction_supportPolicy_leader_enhancement_natural_selection.1.name:0 "Natural Selection"
  faction_supportPolicy_leader_enhancement_natural_selection.1.desc:0 "Overall Support: [Root.faction_support_leader_enhancement_natural_selection]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_leader_enhancement_natural_selection:0 "Pass §BNatural Selection§!"
+ edict_pass_leader_enhancement_natural_selection:0 "Pass §B$leader_enhancement_natural_selection_name$§!"
  edict_pass_leader_enhancement_natural_selection_desc:0 "We move that ."

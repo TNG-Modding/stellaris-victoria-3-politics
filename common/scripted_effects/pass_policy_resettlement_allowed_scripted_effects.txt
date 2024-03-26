@@ -11,7 +11,14 @@ set_resettlement_allowed_base_success_chance = {
 						
 						is_pop_faction_type = consolidationists
 						
+						is_pop_faction_type = aiMistake
 						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = resettlement_not_allowed }
 					}
 					
 				}
@@ -36,6 +43,20 @@ set_resettlement_allowed_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = colonists
+								OWNER = { has_policy_flag = resettlement_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = resettlement_not_allowed }
 					}
 					
 				}

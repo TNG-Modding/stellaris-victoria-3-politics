@@ -26,7 +26,7 @@
  situation_passPolicy_rapid_deployment_doctrine.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_rapid_deployment_doctrine.1.name:0 "Rapid Deployment"
- faction_supportPolicy_rapid_deployment_doctrine.1.desc:0 "Overall Support: [Root.faction_support_rapid_deployment_doctrine]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_rapid_deployment_doctrine.1.desc:0 "Overall Support: [Root.faction_support_rapid_deployment_doctrine]\n\nSupporters:\nrealpolitik: [Root.realpolitik_support_rapid_deployment_doctrine]\n\nDetractors:\n"
 
- edict_pass_rapid_deployment_doctrine:0 "Pass §BRapid Deployment§!"
+ edict_pass_rapid_deployment_doctrine:0 "Pass §B$rapid_deployment_doctrine_name$§!"
  edict_pass_rapid_deployment_doctrine_desc:0 "We move that ."

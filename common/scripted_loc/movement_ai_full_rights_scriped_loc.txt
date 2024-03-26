@@ -30,5 +30,109 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_ai_full_rights_Support_emergentSouls
+	text = {
+		localization_key = emergentSouls
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emergentSouls }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_ai_full_rights_SupportByChange_emergentSouls
+	text = {
+		localization_key = emergentSouls
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emergentSouls }
+			has_policy_flag = ai_servitude
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_SupportByChange_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+			has_policy_flag = ai_servitude
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_Detract_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_Detract_metaphysicalists
+	text = {
+		localization_key = metaphysicalists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = metaphysicalists }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_Detract_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = ai_servitude
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_DetractByChange_metaphysicalists
+	text = {
+		localization_key = metaphysicalists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = metaphysicalists }
+			has_policy_flag = ai_servitude
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_ai_full_rights_DetractByChange_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+			has_policy_flag = ai_outlawed
+		}
+	}
+	default = ""
+}

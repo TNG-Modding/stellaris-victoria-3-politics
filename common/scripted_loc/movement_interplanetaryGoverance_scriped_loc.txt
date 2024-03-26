@@ -67,3 +67,15 @@ defined_text = {
 	}
 	default = ""
 }
+
+defined_text = {
+	name = MovementDesc_interplanetaryGoverance_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = dependentColonies
+		}
+	}
+	default = ""
+}

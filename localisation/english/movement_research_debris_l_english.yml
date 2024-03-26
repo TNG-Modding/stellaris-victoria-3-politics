@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_research_debris.2.name:0 "Movement for Research Debris"
+ movement_research_debris.2.name:0 "Movement for $research_debris_name$"
  movement_research_debris.2.desc:0 "Support: [This.movement_research_debris_support]\nRadicalism: [This.movement_research_debris_radicalism]"
 
  #  Situation
@@ -11,23 +11,23 @@
 
  situation_movement_research_debris_detracting:0 "Detracting Factions:\n§R§!"
 
- situation_movement_research_debris_ethics:0 "Ethics: §Y§!"
+ situation_movement_research_debris_ethics:0 ""
 
  situation_movement_research_debris_stats:0 "Support: [Owner.movement_research_debris_support] Radicalism: [Owner.movement_research_debris_radicalism] Inertia: [Owner.movement_research_debris_inertia]\nFaction Support [Owner.movement_research_debris_faction_support] \nFaction Radicalism: [Owner.movement_research_debris_faction_radicalism] \nNumerical Support: [Owner.research_debris_supporting_population]/[Owner.research_debris_population]=[Owner.movement_research_debris_numerical_support] \nNumerical Radicalism: [Owner.research_debris_radical_population]/[Owner.research_debris_population]=[Owner.movement_research_debris_numerical_radicalism]"
 
- situation_movement_research_debris_quickDesc:0 "The people are calling for §BResearch Debris§! as they believe ."
- situation_movement_research_debris_desc:0 "$situation_movement_research_debris_quickDesc$\n\n$situation_movement_research_debris_supporting$\n$situation_movement_research_debris_detracting$\n$situation_movement_research_debris_ethics$\n\n$situation_movement_research_debris_stats$"
- situation_movement_finisher_research_debris:0 "Revolution for Research Debris."
+ situation_movement_research_debris_quickDesc:0 "The people are calling for §B$research_debris_name$§! as they believe ."
+ situation_movement_research_debris_desc:0 "$situation_movement_research_debris_quickDesc$\n\n$situation_movement_research_debris_supporting$\n$situation_movement_research_debris_detracting$\n\n$situation_movement_research_debris_ethics$\n\n$situation_movement_research_debris_stats$"
+ situation_movement_finisher_research_debris:0 "Revolution for $research_debris_name$."
  
  movement_research_debris_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_research_debris_radicalism]§! is above 25."
 
- movement_research_debris_revolution_appeased:0 "§GAppeased Revolution for Research Debris§!"
- movement_research_debris_revolution:0 "§RRevolution for Research Debris§!"
- movement_research_debris:0 "Movement for Research Debris"
- movement_research_debris_appeased:0 "Appeased Movement for Research Debris"
+ movement_research_debris_revolution_appeased:0 "§GAppeased Revolution for $research_debris_name$§!"
+ movement_research_debris_revolution:0 "§RRevolution for $research_debris_name$§!"
+ movement_research_debris:0 "Movement for $research_debris_name$"
+ movement_research_debris_appeased:0 "Appeased Movement for $research_debris_name$"
 
- movement_research_debris.6.title:0 "Secession over §BResearch Debris§!"
- movement_research_debris.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BResearch Debris§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BResearch Debris§!."
+ movement_research_debris.6.title:0 "Secession over §B$research_debris_name$§!"
+ movement_research_debris.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$research_debris_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$research_debris_name$§!."
  movement_research_debris.6.fight:0 "Make them drink vacuum!"
  movement_research_debris.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

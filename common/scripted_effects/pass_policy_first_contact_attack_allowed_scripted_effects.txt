@@ -9,8 +9,20 @@ set_first_contact_attack_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
+						
+						is_pop_faction_type = jihadism
+						
+						is_pop_faction_type = purity
 						
 						
+						
+						
+							
+						
+							
+						
+							
 						
 						
 							AND = {
@@ -19,11 +31,36 @@ set_first_contact_attack_allowed_base_success_chance = {
 							}
 						
 						
+						
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = first_contact_proactive }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = first_contact_proactive }
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = first_contact_cautious }
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = first_contact_proactive }
 					}
 					
 				}
@@ -52,16 +89,44 @@ set_first_contact_attack_allowed_base_stall_chance = {
 						
 						
 							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = first_contact_proactive }
+							}
+						
+						
+						
+						
+						
+							AND = {
 								is_pop_faction_type = armedIsolationism
 								OWNER = { has_policy_flag = first_contact_cautious }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = first_contact_proactive }
 							}
 						
 						
 					}
 					
 					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = first_contact_proactive }
+					}
+					
+					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = first_contact_cautious }
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = first_contact_proactive }
 					}
 					
 				}

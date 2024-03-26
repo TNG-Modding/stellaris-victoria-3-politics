@@ -30,6 +30,39 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_unrestricted_wars_Support_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
+
 
 defined_text = {
 	name = MovementDesc_unrestricted_wars_SupportByChange_ourBurden
@@ -43,6 +76,53 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_unrestricted_wars_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = no_wars
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = no_wars
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_SupportByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = no_wars
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_Detract_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
 
 
 defined_text = {
@@ -63,6 +143,18 @@ defined_text = {
 		localization_key = ourBurden
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = liberation_wars
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_unrestricted_wars_DetractByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
 			has_policy_flag = liberation_wars
 		}
 	}

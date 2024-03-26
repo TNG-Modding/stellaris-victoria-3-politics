@@ -6,8 +6,20 @@ calculate_first_contact_attack_allowed_movement_support_and_radicalism_from_fact
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = deathAndDestruction
+					
+					is_pop_faction_type = jihadism
+					
+					is_pop_faction_type = purity
 					
 					
+					
+					
+						
+					
+						
+					
+						
 					
 					
 						AND = {
@@ -16,11 +28,36 @@ calculate_first_contact_attack_allowed_movement_support_and_radicalism_from_fact
 						}
 					
 					
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = first_contact_proactive }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = refugeeColonists
+					ROOT = { has_policy_flag = first_contact_proactive }
 				}
 				
 				NAND = {
 					is_pop_faction_type = armedIsolationism
 					ROOT = { has_policy_flag = first_contact_cautious }
+				}
+				
+				NAND = {
+					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = first_contact_proactive }
 				}
 				
 			}

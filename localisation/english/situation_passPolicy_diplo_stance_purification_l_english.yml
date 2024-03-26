@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_purification.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_purification.1.name:0 "Purification"
- faction_supportPolicy_diplo_stance_purification.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_purification]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_purification.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_purification]\n\nSupporters:\npurity: [Root.purity_support_diplo_stance_purification]\n\nDetractors:\ndeathAndDestruction: [Root.deathAndDestruction_support_diplo_stance_purification]\njihadism: [Root.jihadism_support_diplo_stance_purification]\n"
 
- edict_pass_diplo_stance_purification:0 "Pass §BPurification§!"
+ edict_pass_diplo_stance_purification:0 "Pass §B$diplo_stance_purification_name$§!"
  edict_pass_diplo_stance_purification_desc:0 "We move that ."

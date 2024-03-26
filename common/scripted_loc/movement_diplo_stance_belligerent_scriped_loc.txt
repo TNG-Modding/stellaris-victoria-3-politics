@@ -41,6 +41,28 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_Support_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_Support_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+		}
+	}
+	default = ""
+}
+
 
 defined_text = {
 	name = MovementDesc_diplo_stance_belligerent_SupportByChange_colonists
@@ -66,6 +88,126 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_cooperative
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_mercantile
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_purification
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_extermination
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = diplo_stance_purification
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = diplo_stance_extermination
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_SupportByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
 
 
 defined_text = {
@@ -81,12 +223,108 @@ defined_text = {
 }
 
 defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_consolidationists
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = diplo_stance_mercantile
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_consolidationists
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = diplo_stance_cooperative
+		}
+	}
+	default = ""
+}
+
+defined_text = {
 	name = MovementDesc_diplo_stance_belligerent_DetractByChange_armedIsolationism
 	text = {
 		localization_key = armedIsolationism
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = armedIsolationism }
 			has_policy_flag = diplo_stance_isolationist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_supremacist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = diplo_stance_animosity
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = diplo_stance_supremacist
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = diplo_stance_purification
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = diplo_stance_extermination
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_diplo_stance_belligerent_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = diplo_stance_expansionist
 		}
 	}
 	default = ""

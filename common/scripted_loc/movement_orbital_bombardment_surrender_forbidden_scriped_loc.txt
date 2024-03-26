@@ -30,5 +30,62 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_orbital_bombardment_surrender_forbidden_Support_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_surrender_forbidden_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_surrender_forbidden_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
 
 
+
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_surrender_forbidden_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = orbital_bombardment_surrender_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_orbital_bombardment_surrender_forbidden_DetractByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = orbital_bombardment_surrender_allowed
+		}
+	}
+	default = ""
+}

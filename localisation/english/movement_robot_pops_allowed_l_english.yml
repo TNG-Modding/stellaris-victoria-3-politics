@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_robot_pops_allowed.2.name:0 "Movement for Allowed Robot Pops"
+ movement_robot_pops_allowed.2.name:0 "Movement for $robot_pops_allowed_name$"
  movement_robot_pops_allowed.2.desc:0 "Support: [This.movement_robot_pops_allowed_support]\nRadicalism: [This.movement_robot_pops_allowed_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_robot_pops_allowed_type:0 "[Owner.MovementName_robot_pops_allowed]"
  situation_movement_robot_pops_allowed_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_robot_pops_allowed_supporting:0 "Supporting Factions:\n§G§!"
+ situation_movement_robot_pops_allowed_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_robot_pops_allowed_Support_roboticColonization]   [Owner.MovementDesc_robot_pops_allowed_SupportByChange_roboticColonization]   §!"
 
- situation_movement_robot_pops_allowed_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_robot_pops_allowed_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_robot_pops_allowed_Detract_aiMistake]   [Owner.MovementDesc_robot_pops_allowed_DetractByChange_aiMistake]   §!"
 
- situation_movement_robot_pops_allowed_ethics:0 "Ethics: §Y§!"
+ situation_movement_robot_pops_allowed_ethics:0 ""
 
  situation_movement_robot_pops_allowed_stats:0 "Support: [Owner.movement_robot_pops_allowed_support] Radicalism: [Owner.movement_robot_pops_allowed_radicalism] Inertia: [Owner.movement_robot_pops_allowed_inertia]\nFaction Support [Owner.movement_robot_pops_allowed_faction_support] \nFaction Radicalism: [Owner.movement_robot_pops_allowed_faction_radicalism] \nNumerical Support: [Owner.robot_pops_allowed_supporting_population]/[Owner.robot_pops_allowed_population]=[Owner.movement_robot_pops_allowed_numerical_support] \nNumerical Radicalism: [Owner.robot_pops_allowed_radical_population]/[Owner.robot_pops_allowed_population]=[Owner.movement_robot_pops_allowed_numerical_radicalism]"
 
- situation_movement_robot_pops_allowed_quickDesc:0 "The people are calling for §BAllowed Robot Pops§! as they believe ."
- situation_movement_robot_pops_allowed_desc:0 "$situation_movement_robot_pops_allowed_quickDesc$\n\n$situation_movement_robot_pops_allowed_supporting$\n$situation_movement_robot_pops_allowed_detracting$\n$situation_movement_robot_pops_allowed_ethics$\n\n$situation_movement_robot_pops_allowed_stats$"
- situation_movement_finisher_robot_pops_allowed:0 "Revolution for Allowed Robot Pops."
+ situation_movement_robot_pops_allowed_quickDesc:0 "The people are calling for §B$robot_pops_allowed_name$§! as they believe ."
+ situation_movement_robot_pops_allowed_desc:0 "$situation_movement_robot_pops_allowed_quickDesc$\n\n$situation_movement_robot_pops_allowed_supporting$\n$situation_movement_robot_pops_allowed_detracting$\n\n$situation_movement_robot_pops_allowed_ethics$\n\n$situation_movement_robot_pops_allowed_stats$"
+ situation_movement_finisher_robot_pops_allowed:0 "Revolution for $robot_pops_allowed_name$."
  
  movement_robot_pops_allowed_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_robot_pops_allowed_radicalism]§! is above 25."
 
- movement_robot_pops_allowed_revolution_appeased:0 "§GAppeased Revolution for Allowed Robot Pops§!"
- movement_robot_pops_allowed_revolution:0 "§RRevolution for Allowed Robot Pops§!"
- movement_robot_pops_allowed:0 "Movement for Allowed Robot Pops"
- movement_robot_pops_allowed_appeased:0 "Appeased Movement for Allowed Robot Pops"
+ movement_robot_pops_allowed_revolution_appeased:0 "§GAppeased Revolution for $robot_pops_allowed_name$§!"
+ movement_robot_pops_allowed_revolution:0 "§RRevolution for $robot_pops_allowed_name$§!"
+ movement_robot_pops_allowed:0 "Movement for $robot_pops_allowed_name$"
+ movement_robot_pops_allowed_appeased:0 "Appeased Movement for $robot_pops_allowed_name$"
 
- movement_robot_pops_allowed.6.title:0 "Secession over §BAllowed Robot Pops§!"
- movement_robot_pops_allowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BAllowed Robot Pops§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BAllowed Robot Pops§!."
+ movement_robot_pops_allowed.6.title:0 "Secession over §B$robot_pops_allowed_name$§!"
+ movement_robot_pops_allowed.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$robot_pops_allowed_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$robot_pops_allowed_name$§!."
  movement_robot_pops_allowed.6.fight:0 "Make them drink vacuum!"
  movement_robot_pops_allowed.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

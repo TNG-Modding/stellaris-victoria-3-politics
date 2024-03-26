@@ -28,5 +28,5 @@
  faction_supportPolicy_relentless_industrialists_cleanup.1.name:0 "Cleanup Industrialism"
  faction_supportPolicy_relentless_industrialists_cleanup.1.desc:0 "Overall Support: [Root.faction_support_relentless_industrialists_cleanup]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_relentless_industrialists_cleanup:0 "Pass §BCleanup Industrialism§!"
+ edict_pass_relentless_industrialists_cleanup:0 "Pass §B$relentless_industrialists_cleanup_name$§!"
  edict_pass_relentless_industrialists_cleanup_desc:0 "We move that ."

@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_ai_full_rights.2.name:0 "Movement for Full AI Rights"
+ movement_ai_full_rights.2.name:0 "Movement for $ai_full_rights_name$"
  movement_ai_full_rights.2.desc:0 "Support: [This.movement_ai_full_rights_support]\nRadicalism: [This.movement_ai_full_rights_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_ai_full_rights_type:0 "[Owner.MovementName_ai_full_rights]"
  situation_movement_ai_full_rights_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_ai_full_rights_supporting:0 "Supporting Factions:\n§G§!"
+ situation_movement_ai_full_rights_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_ai_full_rights_Support_emergentSouls]   [Owner.MovementDesc_ai_full_rights_SupportByChange_emergentSouls]   [Owner.MovementDesc_ai_full_rights_SupportByChange_aiMistake]   §!"
 
- situation_movement_ai_full_rights_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_ai_full_rights_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_ai_full_rights_Detract_roboticColonization]   [Owner.MovementDesc_ai_full_rights_Detract_metaphysicalists]   [Owner.MovementDesc_ai_full_rights_Detract_aiMistake]   [Owner.MovementDesc_ai_full_rights_DetractByChange_roboticColonization]   [Owner.MovementDesc_ai_full_rights_DetractByChange_metaphysicalists]   [Owner.MovementDesc_ai_full_rights_DetractByChange_aiMistake]   §!"
 
- situation_movement_ai_full_rights_ethics:0 "Ethics: §Y§!"
+ situation_movement_ai_full_rights_ethics:0 ""
 
  situation_movement_ai_full_rights_stats:0 "Support: [Owner.movement_ai_full_rights_support] Radicalism: [Owner.movement_ai_full_rights_radicalism] Inertia: [Owner.movement_ai_full_rights_inertia]\nFaction Support [Owner.movement_ai_full_rights_faction_support] \nFaction Radicalism: [Owner.movement_ai_full_rights_faction_radicalism] \nNumerical Support: [Owner.ai_full_rights_supporting_population]/[Owner.ai_full_rights_population]=[Owner.movement_ai_full_rights_numerical_support] \nNumerical Radicalism: [Owner.ai_full_rights_radical_population]/[Owner.ai_full_rights_population]=[Owner.movement_ai_full_rights_numerical_radicalism]"
 
- situation_movement_ai_full_rights_quickDesc:0 "The people are calling for §BFull AI Rights§! as they believe ."
- situation_movement_ai_full_rights_desc:0 "$situation_movement_ai_full_rights_quickDesc$\n\n$situation_movement_ai_full_rights_supporting$\n$situation_movement_ai_full_rights_detracting$\n$situation_movement_ai_full_rights_ethics$\n\n$situation_movement_ai_full_rights_stats$"
- situation_movement_finisher_ai_full_rights:0 "Revolution for Full AI Rights."
+ situation_movement_ai_full_rights_quickDesc:0 "The people are calling for §B$ai_full_rights_name$§! as they believe ."
+ situation_movement_ai_full_rights_desc:0 "$situation_movement_ai_full_rights_quickDesc$\n\n$situation_movement_ai_full_rights_supporting$\n$situation_movement_ai_full_rights_detracting$\n\n$situation_movement_ai_full_rights_ethics$\n\n$situation_movement_ai_full_rights_stats$"
+ situation_movement_finisher_ai_full_rights:0 "Revolution for $ai_full_rights_name$."
  
  movement_ai_full_rights_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_ai_full_rights_radicalism]§! is above 25."
 
- movement_ai_full_rights_revolution_appeased:0 "§GAppeased Revolution for Full AI Rights§!"
- movement_ai_full_rights_revolution:0 "§RRevolution for Full AI Rights§!"
- movement_ai_full_rights:0 "Movement for Full AI Rights"
- movement_ai_full_rights_appeased:0 "Appeased Movement for Full AI Rights"
+ movement_ai_full_rights_revolution_appeased:0 "§GAppeased Revolution for $ai_full_rights_name$§!"
+ movement_ai_full_rights_revolution:0 "§RRevolution for $ai_full_rights_name$§!"
+ movement_ai_full_rights:0 "Movement for $ai_full_rights_name$"
+ movement_ai_full_rights_appeased:0 "Appeased Movement for $ai_full_rights_name$"
 
- movement_ai_full_rights.6.title:0 "Secession over §BFull AI Rights§!"
- movement_ai_full_rights.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BFull AI Rights§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BFull AI Rights§!."
+ movement_ai_full_rights.6.title:0 "Secession over §B$ai_full_rights_name$§!"
+ movement_ai_full_rights.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$ai_full_rights_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$ai_full_rights_name$§!."
  movement_ai_full_rights.6.fight:0 "Make them drink vacuum!"
  movement_ai_full_rights.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

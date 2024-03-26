@@ -12,6 +12,11 @@ set_leader_enhancement_natural_selection_base_success_chance = {
 						
 					}
 					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = leader_enhancement_selected_lineages }
+					}
+					
 				}
 				export_trigger_value_to_variable = { trigger = support variable = support }
 				multiply_variable = {which = support value = 100}
@@ -34,6 +39,20 @@ set_leader_enhancement_natural_selection_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = leader_enhancement_selected_lineages }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = leader_enhancement_selected_lineages }
 					}
 					
 				}

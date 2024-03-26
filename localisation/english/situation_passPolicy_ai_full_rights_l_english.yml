@@ -26,7 +26,7 @@
  situation_passPolicy_ai_full_rights.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_ai_full_rights.1.name:0 "Full AI Rights"
- faction_supportPolicy_ai_full_rights.1.desc:0 "Overall Support: [Root.faction_support_ai_full_rights]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_ai_full_rights.1.desc:0 "Overall Support: [Root.faction_support_ai_full_rights]\n\nSupporters:\nemergentSouls: [Root.emergentSouls_support_ai_full_rights]\n\nDetractors:\nroboticColonization: [Root.roboticColonization_support_ai_full_rights]\nmetaphysicalists: [Root.metaphysicalists_support_ai_full_rights]\naiMistake: [Root.aiMistake_support_ai_full_rights]\n"
 
- edict_pass_ai_full_rights:0 "Pass §BFull AI Rights§!"
+ edict_pass_ai_full_rights:0 "Pass §B$ai_full_rights_name$§!"
  edict_pass_ai_full_rights_desc:0 "We move that ."

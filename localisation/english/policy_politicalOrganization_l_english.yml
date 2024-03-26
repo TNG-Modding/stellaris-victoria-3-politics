@@ -1,14 +1,14 @@
 ﻿l_english:
 
- policy_politicalOrganization:0 "Political Organization"
+ policy_politicalOrganization:0 "£galcom_endsession£ Political Organization"
  policy_politicalOrganization_name:0 "Political Organization"
  policy_politicalOrganization_desc:0 "Our governmental powers and the abilities of factions within our empire."
  
  preFtlPoliticalOrganization:0 "Pre-FTL Political Units"
- preFtlPoliticalOrganization_name:0 "Pre-FTL Political Units"
+ preFtlPoliticalOrganization_name:0 "£galcom_endsession£ Pre-FTL Political Units"
  preFtlPoliticalOrganization_desc:0 "Political organization styled after pre-FTL, mono-planetary representation."
  
  interplanetaryPoliticalOrganization:0 "Interplanetary Politics"
- interplanetaryPoliticalOrganization_name:0 "Interplanetary Politics"
+ interplanetaryPoliticalOrganization_name:0 "£galcom_endsession£ Interplanetary Politics"
  interplanetaryPoliticalOrganization_desc:0 "Modern political involvement for handling activism and propoganda."
  

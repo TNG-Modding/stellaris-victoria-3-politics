@@ -26,7 +26,7 @@
  situation_passPolicy_balanced_corporate_terms.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_balanced_corporate_terms.1.name:0 "Balanced Corporate Terms"
- faction_supportPolicy_balanced_corporate_terms.1.desc:0 "Overall Support: [Root.faction_support_balanced_corporate_terms]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_balanced_corporate_terms.1.desc:0 "Overall Support: [Root.faction_support_balanced_corporate_terms]\n\nSupporters:\nrealpolitik: [Root.realpolitik_support_balanced_corporate_terms]\n\nDetractors:\n"
 
- edict_pass_balanced_corporate_terms:0 "Pass §BBalanced Corporate Terms§!"
+ edict_pass_balanced_corporate_terms:0 "Pass §B$balanced_corporate_terms_name$§!"
  edict_pass_balanced_corporate_terms_desc:0 "We move that ."

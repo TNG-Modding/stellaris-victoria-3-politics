@@ -11,7 +11,27 @@ set_slavery_allowed_base_success_chance = {
 						
 						is_pop_faction_type = nativists
 						
+						is_pop_faction_type = slavers
 						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = slavers
+								OWNER = { has_policy_flag = slavery_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = emancipators
+						OWNER = { has_policy_flag = slavery_not_allowed }
 					}
 					
 				}
@@ -35,7 +55,25 @@ set_slavery_allowed_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = emancipators
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = emancipators
+								OWNER = { has_policy_flag = slavery_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = emancipators
+						OWNER = { has_policy_flag = slavery_not_allowed }
 					}
 					
 				}

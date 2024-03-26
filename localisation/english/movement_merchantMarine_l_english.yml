@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_merchantMarine.2.name:0 "Movement for Pre-FTL Merchant Marine"
+ movement_merchantMarine.2.name:0 "Movement for $merchantMarine_name$"
  movement_merchantMarine.2.desc:0 "Support: [This.movement_merchantMarine_support]\nRadicalism: [This.movement_merchantMarine_radicalism]"
 
  #  Situation
@@ -9,25 +9,25 @@
 # 
  situation_movement_merchantMarine_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_merchantMarine_Support_colonists]   §!"
 
- situation_movement_merchantMarine_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_merchantMarine_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_merchantMarine_Detract_deathAndDestruction]   [Owner.MovementDesc_merchantMarine_DetractByChange_deathAndDestruction]   [Owner.MovementDesc_merchantMarine_DetractByChange_jihadism]   [Owner.MovementDesc_merchantMarine_DetractByChange_purity]   §!"
 
- situation_movement_merchantMarine_ethics:0 "Ethics: §Y$ethic_pacifist$ $ethic_spiritualist$ $ethic_materialist$ $ethic_egalitarian$ $ethic_authoritarian$ §!"
+ situation_movement_merchantMarine_ethics:0 "£pacifist£ £spiritualist£ £materialist£ £egalitarian£ £authoritarian£ "
 
  situation_movement_merchantMarine_stats:0 "Support: [Owner.movement_merchantMarine_support] Radicalism: [Owner.movement_merchantMarine_radicalism] Inertia: [Owner.movement_merchantMarine_inertia]\nFaction Support [Owner.movement_merchantMarine_faction_support] \nFaction Radicalism: [Owner.movement_merchantMarine_faction_radicalism] \nNumerical Support: [Owner.merchantMarine_supporting_population]/[Owner.merchantMarine_population]=[Owner.movement_merchantMarine_numerical_support] \nNumerical Radicalism: [Owner.merchantMarine_radical_population]/[Owner.merchantMarine_population]=[Owner.movement_merchantMarine_numerical_radicalism]"
 
- situation_movement_merchantMarine_quickDesc:0 "The people are calling for §BPre-FTL Merchant Marine§! as they believe the fleet should be comprised entirely of corvettes from the merchant marine."
- situation_movement_merchantMarine_desc:0 "$situation_movement_merchantMarine_quickDesc$\n\n$situation_movement_merchantMarine_supporting$\n$situation_movement_merchantMarine_detracting$\n$situation_movement_merchantMarine_ethics$\n\n$situation_movement_merchantMarine_stats$"
- situation_movement_finisher_merchantMarine:0 "Revolution for Pre-FTL Merchant Marine."
+ situation_movement_merchantMarine_quickDesc:0 "The people are calling for §B$merchantMarine_name$§! as they believe the fleet should be comprised entirely of corvettes from the merchant marine."
+ situation_movement_merchantMarine_desc:0 "$situation_movement_merchantMarine_quickDesc$\n\n$situation_movement_merchantMarine_supporting$\n$situation_movement_merchantMarine_detracting$\n\n$situation_movement_merchantMarine_ethics$\n\n$situation_movement_merchantMarine_stats$"
+ situation_movement_finisher_merchantMarine:0 "Revolution for $merchantMarine_name$."
  
  movement_merchantMarine_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_merchantMarine_radicalism]§! is above 25."
 
- movement_merchantMarine_revolution_appeased:0 "§GAppeased Revolution for Pre-FTL Merchant Marine§!"
- movement_merchantMarine_revolution:0 "§RRevolution for Pre-FTL Merchant Marine§!"
- movement_merchantMarine:0 "Movement for Pre-FTL Merchant Marine"
- movement_merchantMarine_appeased:0 "Appeased Movement for Pre-FTL Merchant Marine"
+ movement_merchantMarine_revolution_appeased:0 "§GAppeased Revolution for $merchantMarine_name$§!"
+ movement_merchantMarine_revolution:0 "§RRevolution for $merchantMarine_name$§!"
+ movement_merchantMarine:0 "Movement for $merchantMarine_name$"
+ movement_merchantMarine_appeased:0 "Appeased Movement for $merchantMarine_name$"
 
- movement_merchantMarine.6.title:0 "Secession over §BPre-FTL Merchant Marine§!"
- movement_merchantMarine.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BPre-FTL Merchant Marine§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BPre-FTL Merchant Marine§!."
+ movement_merchantMarine.6.title:0 "Secession over §B$merchantMarine_name$§!"
+ movement_merchantMarine.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$merchantMarine_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$merchantMarine_name$§!."
  movement_merchantMarine.6.fight:0 "Make them drink vacuum!"
  movement_merchantMarine.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

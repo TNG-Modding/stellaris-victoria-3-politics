@@ -6,7 +6,60 @@ calculate_ai_servitude_movement_support_and_radicalism_from_factions = {
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = roboticColonization
 					
+					is_pop_faction_type = metaphysicalists
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = roboticColonization
+							ROOT = { has_policy_flag = ai_full_rights }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = metaphysicalists
+							ROOT = { has_policy_flag = ai_full_rights }
+						}
+					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = aiMistake
+							ROOT = { has_policy_flag = ai_full_rights }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = emergentSouls
+					ROOT = { has_policy_flag = ai_full_rights }
+				}
+				
+				NAND = {
+					is_pop_faction_type = aiMistake
+					ROOT = { has_policy_flag = ai_outlawed }
 				}
 				
 			}

@@ -26,7 +26,7 @@
  situation_passPolicy_no_retreat_doctrine.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_no_retreat_doctrine.1.name:0 "No Retreat"
- faction_supportPolicy_no_retreat_doctrine.1.desc:0 "Overall Support: [Root.faction_support_no_retreat_doctrine]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_no_retreat_doctrine.1.desc:0 "Overall Support: [Root.faction_support_no_retreat_doctrine]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_no_retreat_doctrine]\npurity: [Root.purity_support_no_retreat_doctrine]\n\nDetractors:\narmedIsolationism: [Root.armedIsolationism_support_no_retreat_doctrine]\nrealpolitik: [Root.realpolitik_support_no_retreat_doctrine]\n"
 
- edict_pass_no_retreat_doctrine:0 "Pass §BNo Retreat§!"
+ edict_pass_no_retreat_doctrine:0 "Pass §B$no_retreat_doctrine_name$§!"
  edict_pass_no_retreat_doctrine_desc:0 "We move that ."

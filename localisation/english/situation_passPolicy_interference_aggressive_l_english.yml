@@ -26,7 +26,7 @@
  situation_passPolicy_interference_aggressive.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_interference_aggressive.1.name:0 "Aggressive Interference"
- faction_supportPolicy_interference_aggressive.1.desc:0 "Overall Support: [Root.faction_support_interference_aggressive]\n\nSupporters:\nourBurden: [Root.ourBurden_support_interference_aggressive]\n\nDetractors:\n"
+ faction_supportPolicy_interference_aggressive.1.desc:0 "Overall Support: [Root.faction_support_interference_aggressive]\n\nSupporters:\nourBurden: [Root.ourBurden_support_interference_aggressive]\njihadism: [Root.jihadism_support_interference_aggressive]\npurity: [Root.purity_support_interference_aggressive]\n\nDetractors:\n"
 
- edict_pass_interference_aggressive:0 "Pass §BAggressive Interference§!"
+ edict_pass_interference_aggressive:0 "Pass §B$interference_aggressive_name$§!"
  edict_pass_interference_aggressive_desc:0 "We move that ."

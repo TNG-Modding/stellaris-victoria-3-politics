@@ -28,5 +28,5 @@
  faction_supportPolicy_toxic_knights_herald.1.name:0 "Herald Toxic Knights"
  faction_supportPolicy_toxic_knights_herald.1.desc:0 "Overall Support: [Root.faction_support_toxic_knights_herald]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_toxic_knights_herald:0 "Pass §BHerald Toxic Knights§!"
+ edict_pass_toxic_knights_herald:0 "Pass §B$toxic_knights_herald_name$§!"
  edict_pass_toxic_knights_herald_desc:0 "We move that ."

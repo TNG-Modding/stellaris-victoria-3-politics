@@ -30,5 +30,120 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_economic_policy_military_Support_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_Support_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_Support_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
 
 
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_Detract_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_DetractByChange_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+			has_policy_flag = economic_policy_civilian
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_DetractByChange_consolidationists
+	text = {
+		localization_key = consolidationists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = economic_policy_balanced
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = economic_policy_balanced
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_DetractByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = economic_policy_balanced
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_economic_policy_military_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = economic_policy_civilian
+		}
+	}
+	default = ""
+}

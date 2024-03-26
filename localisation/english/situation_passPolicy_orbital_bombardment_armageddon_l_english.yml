@@ -26,7 +26,7 @@
  situation_passPolicy_orbital_bombardment_armageddon.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_orbital_bombardment_armageddon.1.name:0 "Armageddon Orbital Bombardment"
- faction_supportPolicy_orbital_bombardment_armageddon.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_armageddon]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_orbital_bombardment_armageddon.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_armageddon]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_orbital_bombardment_armageddon]\npurity: [Root.purity_support_orbital_bombardment_armageddon]\n\nDetractors:\nrealpolitik: [Root.realpolitik_support_orbital_bombardment_armageddon]\n"
 
- edict_pass_orbital_bombardment_armageddon:0 "Pass §BArmageddon Orbital Bombardment§!"
+ edict_pass_orbital_bombardment_armageddon:0 "Pass §B$orbital_bombardment_armageddon_name$§!"
  edict_pass_orbital_bombardment_armageddon_desc:0 "We move that ."

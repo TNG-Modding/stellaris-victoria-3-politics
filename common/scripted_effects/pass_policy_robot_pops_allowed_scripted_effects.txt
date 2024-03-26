@@ -9,7 +9,25 @@ set_robot_pops_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = roboticColonization
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
+								OWNER = { has_policy_flag = robot_pops_outlawed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = aiMistake
+						OWNER = { has_policy_flag = robot_pops_outlawed }
 					}
 					
 				}
@@ -33,7 +51,25 @@ set_robot_pops_allowed_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = aiMistake
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = aiMistake
+								OWNER = { has_policy_flag = robot_pops_outlawed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = aiMistake
+						OWNER = { has_policy_flag = robot_pops_outlawed }
 					}
 					
 				}

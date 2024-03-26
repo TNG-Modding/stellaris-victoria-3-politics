@@ -28,5 +28,5 @@
  faction_supportPolicy_trade_policy_consumer_goods.1.name:0 "Consumer Goods Trade Policy"
  faction_supportPolicy_trade_policy_consumer_goods.1.desc:0 "Overall Support: [Root.faction_support_trade_policy_consumer_goods]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_trade_policy_consumer_goods:0 "Pass §BConsumer Goods Trade Policy§!"
+ edict_pass_trade_policy_consumer_goods:0 "Pass §B$trade_policy_consumer_goods_name$§!"
  edict_pass_trade_policy_consumer_goods_desc:0 "We move that ."

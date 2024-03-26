@@ -26,7 +26,7 @@
  situation_passPolicy_defense_in_depth_doctrine.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_defense_in_depth_doctrine.1.name:0 "Defense in Depth"
- faction_supportPolicy_defense_in_depth_doctrine.1.desc:0 "Overall Support: [Root.faction_support_defense_in_depth_doctrine]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_defense_in_depth_doctrine]\n\nDetractors:\n"
+ faction_supportPolicy_defense_in_depth_doctrine.1.desc:0 "Overall Support: [Root.faction_support_defense_in_depth_doctrine]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_defense_in_depth_doctrine]\n\nDetractors:\nrealpolitik: [Root.realpolitik_support_defense_in_depth_doctrine]\ndeathAndDestruction: [Root.deathAndDestruction_support_defense_in_depth_doctrine]\n"
 
- edict_pass_defense_in_depth_doctrine:0 "Pass §BDefense in Depth§!"
+ edict_pass_defense_in_depth_doctrine:0 "Pass §B$defense_in_depth_doctrine_name$§!"
  edict_pass_defense_in_depth_doctrine_desc:0 "We move that ."

@@ -6,7 +6,23 @@ calculate_orbital_bombardment_surrender_forbidden_movement_support_and_radicalis
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = armedIsolationism
 					
+					is_pop_faction_type = deathAndDestruction
+					
+					is_pop_faction_type = purity
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = orbital_bombardment_surrender_allowed }
+				}
+				
+				NAND = {
+					is_pop_faction_type = realpolitik
+					ROOT = { has_policy_flag = orbital_bombardment_surrender_allowed }
 				}
 				
 			}

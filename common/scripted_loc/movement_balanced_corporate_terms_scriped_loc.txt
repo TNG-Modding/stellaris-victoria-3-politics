@@ -30,6 +30,65 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_Support_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = benevolent_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = benevolent_corporate_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = benevolent_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = benevolent_corporate_terms
+		}
+	}
+	default = ""
+}
 
 
 
@@ -40,6 +99,78 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = ourBurden }
 			has_policy_flag = benevolent_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_ourBurden
+	text = {
+		localization_key = ourBurden
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = ourBurden }
+			has_policy_flag = benevolent_corporate_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = balanced_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = oppressive_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = oppressive_corporate_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = oppressive_terms
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_balanced_corporate_terms_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = oppressive_corporate_terms
 		}
 	}
 	default = ""

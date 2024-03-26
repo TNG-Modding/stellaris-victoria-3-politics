@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_animosity.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_animosity.1.name:0 "Animosity"
- faction_supportPolicy_diplo_stance_animosity.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_animosity]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_animosity.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_animosity]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_diplo_stance_animosity]\n\nDetractors:\n"
 
- edict_pass_diplo_stance_animosity:0 "Pass §BAnimosity§!"
+ edict_pass_diplo_stance_animosity:0 "Pass §B$diplo_stance_animosity_name$§!"
  edict_pass_diplo_stance_animosity_desc:0 "We move that ."

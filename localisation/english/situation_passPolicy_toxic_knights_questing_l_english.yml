@@ -28,5 +28,5 @@
  faction_supportPolicy_toxic_knights_questing.1.name:0 "Questing Toxic Knights"
  faction_supportPolicy_toxic_knights_questing.1.desc:0 "Overall Support: [Root.faction_support_toxic_knights_questing]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_toxic_knights_questing:0 "Pass §BQuesting Toxic Knights§!"
+ edict_pass_toxic_knights_questing:0 "Pass §B$toxic_knights_questing_name$§!"
  edict_pass_toxic_knights_questing_desc:0 "We move that ."

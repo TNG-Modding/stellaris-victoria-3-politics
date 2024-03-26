@@ -9,12 +9,47 @@ set_no_retreat_doctrine_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
+						
+						is_pop_faction_type = purity
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = defense_in_depth_doctrine }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = defense_in_depth_doctrine }
+							}
+						
 						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = rapid_deployment_doctrine }
 					}
 					
 				}
@@ -38,8 +73,16 @@ set_no_retreat_doctrine_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = armedIsolationism
+						
+						is_pop_faction_type = realpolitik
 						
 						
+						
+						
+							
+						
+							
 						
 						
 							AND = {
@@ -48,11 +91,29 @@ set_no_retreat_doctrine_base_stall_chance = {
 							}
 						
 						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = rapid_deployment_doctrine }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = rapid_deployment_doctrine }
 					}
 					
 				}

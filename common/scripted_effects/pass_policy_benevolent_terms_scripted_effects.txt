@@ -12,6 +12,63 @@ set_benevolent_terms_base_success_chance = {
 						is_pop_faction_type = ourBurden
 						
 						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = benevolent_corporate_terms }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = benevolent_corporate_terms }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = benevolent_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = balanced_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = balanced_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = oppressive_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = oppressive_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = oppressive_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = oppressive_corporate_terms }
 					}
 					
 				}
@@ -35,7 +92,137 @@ set_benevolent_terms_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = realpolitik
 						
+						is_pop_faction_type = deathAndDestruction
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = benevolent_corporate_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = balanced_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = balanced_corporate_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = oppressive_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = oppressive_corporate_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = oppressive_terms }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = oppressive_corporate_terms }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = benevolent_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = balanced_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = balanced_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = oppressive_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = oppressive_corporate_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = oppressive_terms }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = oppressive_corporate_terms }
 					}
 					
 				}

@@ -26,7 +26,7 @@
  situation_passPolicy_refugees_only_citizens.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_refugees_only_citizens.1.name:0 "Only Citizen Refugees"
- faction_supportPolicy_refugees_only_citizens.1.desc:0 "Overall Support: [Root.faction_support_refugees_only_citizens]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_refugees_only_citizens.1.desc:0 "Overall Support: [Root.faction_support_refugees_only_citizens]\n\nSupporters:\nnativists: [Root.nativists_support_refugees_only_citizens]\n\nDetractors:\n"
 
- edict_pass_refugees_only_citizens:0 "Pass §BOnly Citizen Refugees§!"
+ edict_pass_refugees_only_citizens:0 "Pass §B$refugees_only_citizens_name$§!"
  edict_pass_refugees_only_citizens_desc:0 "We move that ."

@@ -14,6 +14,21 @@ set_merchantMarine_base_success_chance = {
 						
 					}
 					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = armada }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = floatingNavy }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = armada }
+					}
+					
 				}
 				export_trigger_value_to_variable = { trigger = support variable = support }
 				multiply_variable = {which = support value = 100}
@@ -35,7 +50,57 @@ set_merchantMarine_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = armada }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = floatingNavy }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = armada }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = armada }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = floatingNavy }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = armada }
 					}
 					
 				}

@@ -30,6 +30,17 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_resettlement_not_allowed_Support_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+		}
+	}
+	default = ""
+}
+
 
 
 
@@ -39,6 +50,18 @@ defined_text = {
 		localization_key = consolidationists
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = consolidationists }
+			has_policy_flag = resettlement_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_resettlement_not_allowed_DetractByChange_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
 			has_policy_flag = resettlement_allowed
 		}
 	}

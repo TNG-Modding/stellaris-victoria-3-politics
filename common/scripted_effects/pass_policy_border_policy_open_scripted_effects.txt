@@ -9,7 +9,19 @@ set_border_policy_open_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
 						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = border_policy_closed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = border_policy_closed }
 					}
 					
 				}
@@ -34,6 +46,34 @@ set_border_policy_open_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = colonists
+								OWNER = { has_policy_flag = border_policy_closed }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = armedIsolationism
+								OWNER = { has_policy_flag = border_policy_closed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = border_policy_closed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = border_policy_closed }
 					}
 					
 				}

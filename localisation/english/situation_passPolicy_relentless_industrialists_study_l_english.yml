@@ -28,5 +28,5 @@
  faction_supportPolicy_relentless_industrialists_study.1.name:0 "Study Industrialism"
  faction_supportPolicy_relentless_industrialists_study.1.desc:0 "Overall Support: [Root.faction_support_relentless_industrialists_study]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_relentless_industrialists_study:0 "Pass §BStudy Industrialism§!"
+ edict_pass_relentless_industrialists_study:0 "Pass §B$relentless_industrialists_study_name$§!"
  edict_pass_relentless_industrialists_study_desc:0 "We move that ."

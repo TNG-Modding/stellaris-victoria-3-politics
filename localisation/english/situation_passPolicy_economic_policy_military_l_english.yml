@@ -26,7 +26,7 @@
  situation_passPolicy_economic_policy_military.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_economic_policy_military.1.name:0 "Military Economics"
- faction_supportPolicy_economic_policy_military.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_military]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_economic_policy_military.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_military]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_economic_policy_military]\ndeathAndDestruction: [Root.deathAndDestruction_support_economic_policy_military]\njihadism: [Root.jihadism_support_economic_policy_military]\npurity: [Root.purity_support_economic_policy_military]\n\nDetractors:\nrealpolitik: [Root.realpolitik_support_economic_policy_military]\n"
 
- edict_pass_economic_policy_military:0 "Pass §BMilitary Economics§!"
+ edict_pass_economic_policy_military:0 "Pass §B$economic_policy_military_name$§!"
  edict_pass_economic_policy_military_desc:0 "We move that ."

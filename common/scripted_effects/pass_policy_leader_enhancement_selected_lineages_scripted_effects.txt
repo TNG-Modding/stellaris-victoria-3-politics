@@ -9,6 +9,8 @@ set_leader_enhancement_selected_lineages_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = purity
+						
 						
 					}
 					

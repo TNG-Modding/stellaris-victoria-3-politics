@@ -28,5 +28,5 @@
  faction_supportPolicy_preFtlPoliticalOrganization.1.name:0 "Pre-FTL Political Units"
  faction_supportPolicy_preFtlPoliticalOrganization.1.desc:0 "Overall Support: [Root.faction_support_preFtlPoliticalOrganization]\n\nSupporters:\npreFtlConservatives: [Root.preFtlConservatives_support_preFtlPoliticalOrganization]\ncolonists: [Root.colonists_support_preFtlPoliticalOrganization]\n\nDetractors:\n"
 
- edict_pass_preFtlPoliticalOrganization:0 "Pass §BPre-FTL Political Units§!"
+ edict_pass_preFtlPoliticalOrganization:0 "Pass §B$preFtlPoliticalOrganization_name$§!"
  edict_pass_preFtlPoliticalOrganization_desc:0 "We move that the political organization of our pre-FTL days suffices."

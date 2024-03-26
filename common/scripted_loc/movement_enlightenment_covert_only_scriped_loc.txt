@@ -43,6 +43,18 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_enlightenment_covert_only_SupportByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = enlightenment_not_allowed
+		}
+	}
+	default = ""
+}
+
 
 
 defined_text = {
@@ -52,6 +64,30 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = ourBurden }
 			has_policy_flag = enlightenment_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_enlightenment_covert_only_DetractByChange_jihadism
+	text = {
+		localization_key = jihadism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = jihadism }
+			has_policy_flag = enlightenment_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_enlightenment_covert_only_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = enlightenment_not_allowed
 		}
 	}
 	default = ""

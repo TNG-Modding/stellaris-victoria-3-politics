@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_trade_policy_default.2.name:0 "Movement for Default Trade Policy"
+ movement_trade_policy_default.2.name:0 "Movement for $trade_policy_default_name$"
  movement_trade_policy_default.2.desc:0 "Support: [This.movement_trade_policy_default_support]\nRadicalism: [This.movement_trade_policy_default_radicalism]"
 
  #  Situation
@@ -11,23 +11,23 @@
 
  situation_movement_trade_policy_default_detracting:0 "Detracting Factions:\n§R§!"
 
- situation_movement_trade_policy_default_ethics:0 "Ethics: §Y§!"
+ situation_movement_trade_policy_default_ethics:0 ""
 
  situation_movement_trade_policy_default_stats:0 "Support: [Owner.movement_trade_policy_default_support] Radicalism: [Owner.movement_trade_policy_default_radicalism] Inertia: [Owner.movement_trade_policy_default_inertia]\nFaction Support [Owner.movement_trade_policy_default_faction_support] \nFaction Radicalism: [Owner.movement_trade_policy_default_faction_radicalism] \nNumerical Support: [Owner.trade_policy_default_supporting_population]/[Owner.trade_policy_default_population]=[Owner.movement_trade_policy_default_numerical_support] \nNumerical Radicalism: [Owner.trade_policy_default_radical_population]/[Owner.trade_policy_default_population]=[Owner.movement_trade_policy_default_numerical_radicalism]"
 
- situation_movement_trade_policy_default_quickDesc:0 "The people are calling for §BDefault Trade Policy§! as they believe ."
- situation_movement_trade_policy_default_desc:0 "$situation_movement_trade_policy_default_quickDesc$\n\n$situation_movement_trade_policy_default_supporting$\n$situation_movement_trade_policy_default_detracting$\n$situation_movement_trade_policy_default_ethics$\n\n$situation_movement_trade_policy_default_stats$"
- situation_movement_finisher_trade_policy_default:0 "Revolution for Default Trade Policy."
+ situation_movement_trade_policy_default_quickDesc:0 "The people are calling for §B$trade_policy_default_name$§! as they believe ."
+ situation_movement_trade_policy_default_desc:0 "$situation_movement_trade_policy_default_quickDesc$\n\n$situation_movement_trade_policy_default_supporting$\n$situation_movement_trade_policy_default_detracting$\n\n$situation_movement_trade_policy_default_ethics$\n\n$situation_movement_trade_policy_default_stats$"
+ situation_movement_finisher_trade_policy_default:0 "Revolution for $trade_policy_default_name$."
  
  movement_trade_policy_default_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_trade_policy_default_radicalism]§! is above 25."
 
- movement_trade_policy_default_revolution_appeased:0 "§GAppeased Revolution for Default Trade Policy§!"
- movement_trade_policy_default_revolution:0 "§RRevolution for Default Trade Policy§!"
- movement_trade_policy_default:0 "Movement for Default Trade Policy"
- movement_trade_policy_default_appeased:0 "Appeased Movement for Default Trade Policy"
+ movement_trade_policy_default_revolution_appeased:0 "§GAppeased Revolution for $trade_policy_default_name$§!"
+ movement_trade_policy_default_revolution:0 "§RRevolution for $trade_policy_default_name$§!"
+ movement_trade_policy_default:0 "Movement for $trade_policy_default_name$"
+ movement_trade_policy_default_appeased:0 "Appeased Movement for $trade_policy_default_name$"
 
- movement_trade_policy_default.6.title:0 "Secession over §BDefault Trade Policy§!"
- movement_trade_policy_default.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BDefault Trade Policy§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BDefault Trade Policy§!."
+ movement_trade_policy_default.6.title:0 "Secession over §B$trade_policy_default_name$§!"
+ movement_trade_policy_default.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$trade_policy_default_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$trade_policy_default_name$§!."
  movement_trade_policy_default.6.fight:0 "Make them drink vacuum!"
  movement_trade_policy_default.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

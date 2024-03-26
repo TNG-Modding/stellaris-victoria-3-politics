@@ -8,7 +8,14 @@ calculate_resettlement_allowed_movement_support_and_radicalism_from_factions = {
 					
 					is_pop_faction_type = consolidationists
 					
+					is_pop_faction_type = aiMistake
 					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = colonists
+					ROOT = { has_policy_flag = resettlement_not_allowed }
 				}
 				
 			}

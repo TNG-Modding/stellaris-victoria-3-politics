@@ -28,5 +28,5 @@
  faction_supportPolicy_first_contact_cautious.1.name:0 "Cautious First Contact"
  faction_supportPolicy_first_contact_cautious.1.desc:0 "Overall Support: [Root.faction_support_first_contact_cautious]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_first_contact_cautious]\n\nDetractors:\n"
 
- edict_pass_first_contact_cautious:0 "Pass §BCautious First Contact§!"
+ edict_pass_first_contact_cautious:0 "Pass §B$first_contact_cautious_name$§!"
  edict_pass_first_contact_cautious_desc:0 "We move that ."

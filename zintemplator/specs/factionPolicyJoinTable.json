@@ -1097,10 +1097,52 @@
                 ]
             },
             {
+                "varname": "relentless_industrialists_policy",
+                "displayName": "Relentless Industrialization",
+                "desc": "",
+                "potential": "always = yes",
+                "options": [
+                    {
+                        "varname": "relentless_industrialists_full_steam_ahead",
+                        "displayName": "Full Steam Ahead",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "surrender",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "relentless_industrialists_study",
+                        "displayName": "Study Industrialism",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "surrender",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    },
+                    {
+                        "varname": "relentless_industrialists_cleanup",
+                        "displayName": "Cleanup Industrialism",
+                        "desc": "",
+                        "description": "",
+                        "ethicAdjective": "",
+                        "picture": "surrender",
+                        "rebellionEthics": "",
+                        "supportingEthics": [],
+                        "potential": "always = yes"
+                    }
+                ]
+            },
+            {
                 "varname": "fleetFormation",
                 "displayName": "Fleet Formation",
                 "desc": "The powers and extent of our navy.",
                 "potential": "always = yes",
+                "icon": "trade_protection",
                 "options": [
                     {
                         "varname": "merchantMarine",
@@ -1152,51 +1194,11 @@
                 ]
             },
             {
-                "varname": "relentless_industrialists_policy",
-                "displayName": "Relentless Industrialization",
-                "desc": "",
-                "potential": "always = yes",
-                "options": [
-                    {
-                        "varname": "relentless_industrialists_full_steam_ahead",
-                        "displayName": "Full Steam Ahead",
-                        "desc": "",
-                        "description": "",
-                        "ethicAdjective": "",
-                        "picture": "surrender",
-                        "rebellionEthics": "",
-                        "supportingEthics": [],
-                        "potential": "always = yes"
-                    },
-                    {
-                        "varname": "relentless_industrialists_study",
-                        "displayName": "Study Industrialism",
-                        "desc": "",
-                        "description": "",
-                        "ethicAdjective": "",
-                        "picture": "surrender",
-                        "rebellionEthics": "",
-                        "supportingEthics": [],
-                        "potential": "always = yes"
-                    },
-                    {
-                        "varname": "relentless_industrialists_cleanup",
-                        "displayName": "Cleanup Industrialism",
-                        "desc": "",
-                        "description": "",
-                        "ethicAdjective": "",
-                        "picture": "surrender",
-                        "rebellionEthics": "",
-                        "supportingEthics": [],
-                        "potential": "always = yes"
-                    }
-                ]
-            },
-            {
                 "varname": "armyOrganization",
                 "displayName": "Army Organization",
                 "desc": "The powers and extent of our army.",
                 "potential": "always = yes",
+                "icon": "defense_army",
                 "options": [
                     {
                         "varname": "preFtlMilitaries",
@@ -1252,6 +1254,7 @@
                 "displayName": "Colonial Administration",
                 "desc": "The structure of our colonial holdings.",
                 "potential": "always = yes",
+                "icon": "planet",
                 "options": [
                     {
                         "varname": "dependentColonies",
@@ -1291,6 +1294,7 @@
                 "displayName": "Political Organization",
                 "desc": "Our governmental powers and the abilities of factions within our empire.",
                 "potential": "always = yes",
+                "icon": "galcom_endsession",
                 "options": [
                     {
                         "varname": "preFtlPoliticalOrganization",

@@ -52,6 +52,17 @@ defined_text = {
 	default = ""
 }
 
+defined_text = {
+	name = MovementDesc_dependentColonies_Support_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+		}
+	}
+	default = ""
+}
+
 
 
 

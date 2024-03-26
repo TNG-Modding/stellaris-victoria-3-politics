@@ -28,5 +28,5 @@
  faction_supportPolicy_trade_policy_mutual_aid.1.name:0 "Mutual Aid Trade Policy"
  faction_supportPolicy_trade_policy_mutual_aid.1.desc:0 "Overall Support: [Root.faction_support_trade_policy_mutual_aid]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_trade_policy_mutual_aid:0 "Pass §BMutual Aid Trade Policy§!"
+ edict_pass_trade_policy_mutual_aid:0 "Pass §B$trade_policy_mutual_aid_name$§!"
  edict_pass_trade_policy_mutual_aid_desc:0 "We move that ."

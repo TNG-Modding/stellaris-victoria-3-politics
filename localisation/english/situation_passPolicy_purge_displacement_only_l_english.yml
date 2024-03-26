@@ -28,5 +28,5 @@
  faction_supportPolicy_purge_displacement_only.1.name:0 "Allow Displacement Purging"
  faction_supportPolicy_purge_displacement_only.1.desc:0 "Overall Support: [Root.faction_support_purge_displacement_only]\n\nSupporters:\nnativists: [Root.nativists_support_purge_displacement_only]\n\nDetractors:\n"
 
- edict_pass_purge_displacement_only:0 "Pass §BAllow Displacement Purging§!"
+ edict_pass_purge_displacement_only:0 "Pass §B$purge_displacement_only_name$§!"
  edict_pass_purge_displacement_only_desc:0 "We move that ."

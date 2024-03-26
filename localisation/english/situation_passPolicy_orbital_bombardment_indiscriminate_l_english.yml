@@ -26,7 +26,7 @@
  situation_passPolicy_orbital_bombardment_indiscriminate.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_orbital_bombardment_indiscriminate.1.name:0 "Indiscriminate Orbital Bombadment"
- faction_supportPolicy_orbital_bombardment_indiscriminate.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_indiscriminate]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_orbital_bombardment_indiscriminate.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_indiscriminate]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_orbital_bombardment_indiscriminate]\npurity: [Root.purity_support_orbital_bombardment_indiscriminate]\n\nDetractors:\n"
 
- edict_pass_orbital_bombardment_indiscriminate:0 "Pass §BIndiscriminate Orbital Bombadment§!"
+ edict_pass_orbital_bombardment_indiscriminate:0 "Pass §B$orbital_bombardment_indiscriminate_name$§!"
  edict_pass_orbital_bombardment_indiscriminate_desc:0 "We move that ."

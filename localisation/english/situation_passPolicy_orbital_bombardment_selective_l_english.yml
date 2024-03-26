@@ -26,7 +26,7 @@
  situation_passPolicy_orbital_bombardment_selective.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_orbital_bombardment_selective.1.name:0 "Selective Orbital Bombadment"
- faction_supportPolicy_orbital_bombardment_selective.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_selective]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_orbital_bombardment_selective.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_selective]\n\nSupporters:\nrealpolitik: [Root.realpolitik_support_orbital_bombardment_selective]\n\nDetractors:\ndeathAndDestruction: [Root.deathAndDestruction_support_orbital_bombardment_selective]\n"
 
- edict_pass_orbital_bombardment_selective:0 "Pass §BSelective Orbital Bombadment§!"
+ edict_pass_orbital_bombardment_selective:0 "Pass §B$orbital_bombardment_selective_name$§!"
  edict_pass_orbital_bombardment_selective_desc:0 "We move that ."

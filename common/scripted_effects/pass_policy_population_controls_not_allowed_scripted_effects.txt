@@ -9,6 +9,8 @@ set_population_controls_not_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
+						
 						
 					}
 					

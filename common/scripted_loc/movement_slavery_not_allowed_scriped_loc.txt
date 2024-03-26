@@ -30,7 +30,41 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_slavery_not_allowed_Support_emancipators
+	text = {
+		localization_key = emancipators
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emancipators }
+		}
+	}
+	default = ""
+}
 
+
+defined_text = {
+	name = MovementDesc_slavery_not_allowed_SupportByChange_emancipators
+	text = {
+		localization_key = emancipators
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = emancipators }
+			has_policy_flag = slavery_allowed
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_slavery_not_allowed_Detract_slavers
+	text = {
+		localization_key = slavers
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = slavers }
+		}
+	}
+	default = ""
+}
 
 
 defined_text = {
@@ -39,6 +73,18 @@ defined_text = {
 		localization_key = nativists
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = slavery_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_slavery_not_allowed_DetractByChange_slavers
+	text = {
+		localization_key = slavers
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = slavers }
 			has_policy_flag = slavery_allowed
 		}
 	}

@@ -9,11 +9,42 @@ calculate_no_wars_movement_support_and_radicalism_from_factions = {
 					is_pop_faction_type = armedIsolationism
 					
 					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = armedIsolationism
+							ROOT = { has_policy_flag = unrestricted_wars }
+						}
+					
+					
 				}
 				
 				NAND = {
 					is_pop_faction_type = ourBurden
 					ROOT = { has_policy_flag = liberation_wars }
+				}
+				
+				NAND = {
+					is_pop_faction_type = realpolitik
+					ROOT = { has_policy_flag = unrestricted_wars }
+				}
+				
+				NAND = {
+					is_pop_faction_type = deathAndDestruction
+					ROOT = { has_policy_flag = unrestricted_wars }
+				}
+				
+				NAND = {
+					is_pop_faction_type = jihadism
+					ROOT = { has_policy_flag = liberation_wars }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = unrestricted_wars }
 				}
 				
 			}

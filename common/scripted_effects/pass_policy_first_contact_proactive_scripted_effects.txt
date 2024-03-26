@@ -9,12 +9,31 @@ set_first_contact_proactive_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
+						
+						is_pop_faction_type = ourBurden
+						
 						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = first_contact_cautious }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
 					}
 					
 				}
@@ -40,8 +59,12 @@ set_first_contact_proactive_base_stall_chance = {
 						
 						is_pop_faction_type = armedIsolationism
 						
+						is_pop_faction_type = deathAndDestruction
 						
 						
+						
+						
+							
 						
 							
 						
@@ -52,11 +75,65 @@ set_first_contact_proactive_base_stall_chance = {
 							}
 						
 						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = first_contact_attack_allowed }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = first_contact_attack_allowed }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = first_contact_attack_allowed }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = first_contact_cautious }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = first_contact_attack_allowed }
 					}
 					
 				}

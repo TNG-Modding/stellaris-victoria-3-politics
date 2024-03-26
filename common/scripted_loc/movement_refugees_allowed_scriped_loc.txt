@@ -30,6 +30,29 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_refugees_allowed_Support_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_refugees_allowed_SupportByChange_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+			has_policy_flag = refugees_not_allowed
+		}
+	}
+	default = ""
+}
 
 
 defined_text = {
@@ -43,3 +66,27 @@ defined_text = {
 	default = ""
 }
 
+
+defined_text = {
+	name = MovementDesc_refugees_allowed_DetractByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = refugees_not_allowed
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_refugees_allowed_DetractByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = refugees_only_citizens
+		}
+	}
+	default = ""
+}

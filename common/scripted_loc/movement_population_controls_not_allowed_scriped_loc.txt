@@ -30,6 +30,17 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_population_controls_not_allowed_Support_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+		}
+	}
+	default = ""
+}
+
 
 
 

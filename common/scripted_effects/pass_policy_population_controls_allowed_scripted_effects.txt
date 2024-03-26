@@ -14,6 +14,11 @@ set_population_controls_allowed_base_success_chance = {
 						
 					}
 					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = population_controls_not_allowed }
+					}
+					
 				}
 				export_trigger_value_to_variable = { trigger = support variable = support }
 				multiply_variable = {which = support value = 100}
@@ -36,6 +41,20 @@ set_population_controls_allowed_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = population_controls_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = population_controls_not_allowed }
 					}
 					
 				}

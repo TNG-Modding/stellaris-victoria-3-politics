@@ -9,7 +9,60 @@ set_ai_servitude_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = roboticColonization
 						
+						is_pop_faction_type = metaphysicalists
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
+								OWNER = { has_policy_flag = ai_full_rights }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = metaphysicalists
+								OWNER = { has_policy_flag = ai_full_rights }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = aiMistake
+								OWNER = { has_policy_flag = ai_full_rights }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = emergentSouls
+						OWNER = { has_policy_flag = ai_full_rights }
+					}
+					
+					NAND = {
+						is_pop_faction_type = aiMistake
+						OWNER = { has_policy_flag = ai_outlawed }
 					}
 					
 				}
@@ -33,7 +86,47 @@ set_ai_servitude_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = emergentSouls
 						
+						is_pop_faction_type = aiMistake
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = emergentSouls
+								OWNER = { has_policy_flag = ai_full_rights }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = aiMistake
+								OWNER = { has_policy_flag = ai_outlawed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = emergentSouls
+						OWNER = { has_policy_flag = ai_full_rights }
+					}
+					
+					NAND = {
+						is_pop_faction_type = aiMistake
+						OWNER = { has_policy_flag = ai_outlawed }
 					}
 					
 				}

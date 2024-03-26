@@ -9,6 +9,11 @@ calculate_leader_enhancement_natural_selection_movement_support_and_radicalism_f
 					
 				}
 				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = leader_enhancement_selected_lineages }
+				}
+				
 			}
 		
 			export_trigger_value_to_variable = { trigger = support variable = leader_enhancement_natural_selection_support }

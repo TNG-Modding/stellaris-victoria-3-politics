@@ -9,7 +9,44 @@ set_pre_sapients_eat_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = nativists
 						
+						is_pop_faction_type = purity
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = pre_sapients_purge }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = pre_sapients_purge }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = pre_sapients_protect }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = pre_sapients_allow }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = pre_sapients_purge }
 					}
 					
 				}
@@ -33,7 +70,73 @@ set_pre_sapients_eat_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = nativists
+								OWNER = { has_policy_flag = pre_sapients_purge }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = pre_sapients_protect }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = pre_sapients_allow }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = pre_sapients_purge }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = pre_sapients_purge }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = pre_sapients_protect }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = pre_sapients_allow }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = pre_sapients_purge }
 					}
 					
 				}

@@ -28,5 +28,5 @@
  faction_supportPolicy_leader_enhancement_capacity_boosters.1.name:0 "Capacity Boosters"
  faction_supportPolicy_leader_enhancement_capacity_boosters.1.desc:0 "Overall Support: [Root.faction_support_leader_enhancement_capacity_boosters]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_leader_enhancement_capacity_boosters:0 "Pass §BCapacity Boosters§!"
+ edict_pass_leader_enhancement_capacity_boosters:0 "Pass §B$leader_enhancement_capacity_boosters_name$§!"
  edict_pass_leader_enhancement_capacity_boosters_desc:0 "We move that ."

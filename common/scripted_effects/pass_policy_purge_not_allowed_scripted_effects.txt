@@ -9,12 +9,27 @@ set_purge_not_allowed_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = refugeeColonists
 						
 						
+						
+						
+							
 						
 						
 							AND = {
 								is_pop_faction_type = nativists
+								OWNER = { has_policy_flag = purge_allowed }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
 								OWNER = { has_policy_flag = purge_allowed }
 							}
 						
@@ -24,6 +39,11 @@ set_purge_not_allowed_base_success_chance = {
 					NAND = {
 						is_pop_faction_type = nativists
 						OWNER = { has_policy_flag = purge_displacement_only }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = purge_allowed }
 					}
 					
 				}
@@ -57,11 +77,25 @@ set_purge_not_allowed_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = purge_allowed }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = nativists
 						OWNER = { has_policy_flag = purge_displacement_only }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = purge_allowed }
 					}
 					
 				}

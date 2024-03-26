@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_economic_policy_balanced.2.name:0 "Movement for Balanced Economics"
+ movement_economic_policy_balanced.2.name:0 "Movement for $economic_policy_balanced_name$"
  movement_economic_policy_balanced.2.desc:0 "Support: [This.movement_economic_policy_balanced_support]\nRadicalism: [This.movement_economic_policy_balanced_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_economic_policy_balanced_type:0 "[Owner.MovementName_economic_policy_balanced]"
  situation_movement_economic_policy_balanced_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_economic_policy_balanced_supporting:0 "Supporting Factions:\n§G§!"
+ situation_movement_economic_policy_balanced_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_economic_policy_balanced_Support_consolidationists]   [Owner.MovementDesc_economic_policy_balanced_Support_ourBurden]   [Owner.MovementDesc_economic_policy_balanced_Support_realpolitik]   [Owner.MovementDesc_economic_policy_balanced_SupportByChange_realpolitik]   §!"
 
- situation_movement_economic_policy_balanced_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_economic_policy_balanced_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_economic_policy_balanced_DetractByChange_colonists]   [Owner.MovementDesc_economic_policy_balanced_DetractByChange_armedIsolationism]   [Owner.MovementDesc_economic_policy_balanced_DetractByChange_deathAndDestruction]   [Owner.MovementDesc_economic_policy_balanced_DetractByChange_jihadism]   [Owner.MovementDesc_economic_policy_balanced_DetractByChange_purity]   [Owner.MovementDesc_economic_policy_balanced_DetractByChange_roboticColonization]   §!"
 
- situation_movement_economic_policy_balanced_ethics:0 "Ethics: §Y§!"
+ situation_movement_economic_policy_balanced_ethics:0 ""
 
  situation_movement_economic_policy_balanced_stats:0 "Support: [Owner.movement_economic_policy_balanced_support] Radicalism: [Owner.movement_economic_policy_balanced_radicalism] Inertia: [Owner.movement_economic_policy_balanced_inertia]\nFaction Support [Owner.movement_economic_policy_balanced_faction_support] \nFaction Radicalism: [Owner.movement_economic_policy_balanced_faction_radicalism] \nNumerical Support: [Owner.economic_policy_balanced_supporting_population]/[Owner.economic_policy_balanced_population]=[Owner.movement_economic_policy_balanced_numerical_support] \nNumerical Radicalism: [Owner.economic_policy_balanced_radical_population]/[Owner.economic_policy_balanced_population]=[Owner.movement_economic_policy_balanced_numerical_radicalism]"
 
- situation_movement_economic_policy_balanced_quickDesc:0 "The people are calling for §BBalanced Economics§! as they believe ."
- situation_movement_economic_policy_balanced_desc:0 "$situation_movement_economic_policy_balanced_quickDesc$\n\n$situation_movement_economic_policy_balanced_supporting$\n$situation_movement_economic_policy_balanced_detracting$\n$situation_movement_economic_policy_balanced_ethics$\n\n$situation_movement_economic_policy_balanced_stats$"
- situation_movement_finisher_economic_policy_balanced:0 "Revolution for Balanced Economics."
+ situation_movement_economic_policy_balanced_quickDesc:0 "The people are calling for §B$economic_policy_balanced_name$§! as they believe ."
+ situation_movement_economic_policy_balanced_desc:0 "$situation_movement_economic_policy_balanced_quickDesc$\n\n$situation_movement_economic_policy_balanced_supporting$\n$situation_movement_economic_policy_balanced_detracting$\n\n$situation_movement_economic_policy_balanced_ethics$\n\n$situation_movement_economic_policy_balanced_stats$"
+ situation_movement_finisher_economic_policy_balanced:0 "Revolution for $economic_policy_balanced_name$."
  
  movement_economic_policy_balanced_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_economic_policy_balanced_radicalism]§! is above 25."
 
- movement_economic_policy_balanced_revolution_appeased:0 "§GAppeased Revolution for Balanced Economics§!"
- movement_economic_policy_balanced_revolution:0 "§RRevolution for Balanced Economics§!"
- movement_economic_policy_balanced:0 "Movement for Balanced Economics"
- movement_economic_policy_balanced_appeased:0 "Appeased Movement for Balanced Economics"
+ movement_economic_policy_balanced_revolution_appeased:0 "§GAppeased Revolution for $economic_policy_balanced_name$§!"
+ movement_economic_policy_balanced_revolution:0 "§RRevolution for $economic_policy_balanced_name$§!"
+ movement_economic_policy_balanced:0 "Movement for $economic_policy_balanced_name$"
+ movement_economic_policy_balanced_appeased:0 "Appeased Movement for $economic_policy_balanced_name$"
 
- movement_economic_policy_balanced.6.title:0 "Secession over §BBalanced Economics§!"
- movement_economic_policy_balanced.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BBalanced Economics§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BBalanced Economics§!."
+ movement_economic_policy_balanced.6.title:0 "Secession over §B$economic_policy_balanced_name$§!"
+ movement_economic_policy_balanced.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$economic_policy_balanced_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$economic_policy_balanced_name$§!."
  movement_economic_policy_balanced.6.fight:0 "Make them drink vacuum!"
  movement_economic_policy_balanced.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

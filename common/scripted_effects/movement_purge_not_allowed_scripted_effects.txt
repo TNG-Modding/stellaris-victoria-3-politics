@@ -6,12 +6,27 @@ calculate_purge_not_allowed_movement_support_and_radicalism_from_factions = {
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = refugeeColonists
 					
 					
+					
+					
+						
 					
 					
 						AND = {
 							is_pop_faction_type = nativists
+							ROOT = { has_policy_flag = purge_allowed }
+						}
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = refugeeColonists
 							ROOT = { has_policy_flag = purge_allowed }
 						}
 					
@@ -21,6 +36,11 @@ calculate_purge_not_allowed_movement_support_and_radicalism_from_factions = {
 				NAND = {
 					is_pop_faction_type = nativists
 					ROOT = { has_policy_flag = purge_displacement_only }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = purge_allowed }
 				}
 				
 			}

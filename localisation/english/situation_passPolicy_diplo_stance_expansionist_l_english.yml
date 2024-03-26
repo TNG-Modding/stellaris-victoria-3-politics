@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_expansionist.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_expansionist.1.name:0 "Expansionist"
- faction_supportPolicy_diplo_stance_expansionist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_expansionist]\n\nSupporters:\ncolonists: [Root.colonists_support_diplo_stance_expansionist]\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_expansionist.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_expansionist]\n\nSupporters:\ncolonists: [Root.colonists_support_diplo_stance_expansionist]\nroboticColonization: [Root.roboticColonization_support_diplo_stance_expansionist]\n\nDetractors:\n"
 
- edict_pass_diplo_stance_expansionist:0 "Pass §BExpansionist§!"
+ edict_pass_diplo_stance_expansionist:0 "Pass §B$diplo_stance_expansionist_name$§!"
  edict_pass_diplo_stance_expansionist_desc:0 "We move that ."

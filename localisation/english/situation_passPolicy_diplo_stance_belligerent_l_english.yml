@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_belligerent.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_belligerent.1.name:0 "Belligerent"
- faction_supportPolicy_diplo_stance_belligerent.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_belligerent]\n\nSupporters:\nourBurden: [Root.ourBurden_support_diplo_stance_belligerent]\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_belligerent.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_belligerent]\n\nSupporters:\nourBurden: [Root.ourBurden_support_diplo_stance_belligerent]\nrealpolitik: [Root.realpolitik_support_diplo_stance_belligerent]\njihadism: [Root.jihadism_support_diplo_stance_belligerent]\n\nDetractors:\n"
 
- edict_pass_diplo_stance_belligerent:0 "Pass §BBelligerent§!"
+ edict_pass_diplo_stance_belligerent:0 "Pass §B$diplo_stance_belligerent_name$§!"
  edict_pass_diplo_stance_belligerent_desc:0 "We move that ."

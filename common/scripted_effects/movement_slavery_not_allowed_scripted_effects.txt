@@ -6,11 +6,29 @@ calculate_slavery_not_allowed_movement_support_and_radicalism_from_factions = {
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = emancipators
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = emancipators
+							ROOT = { has_policy_flag = slavery_allowed }
+						}
+					
 					
 				}
 				
 				NAND = {
 					is_pop_faction_type = nativists
+					ROOT = { has_policy_flag = slavery_allowed }
+				}
+				
+				NAND = {
+					is_pop_faction_type = slavers
 					ROOT = { has_policy_flag = slavery_allowed }
 				}
 				

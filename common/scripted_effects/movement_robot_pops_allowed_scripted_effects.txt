@@ -6,7 +6,25 @@ calculate_robot_pops_allowed_movement_support_and_radicalism_from_factions = {
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = roboticColonization
 					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = roboticColonization
+							ROOT = { has_policy_flag = robot_pops_outlawed }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = aiMistake
+					ROOT = { has_policy_flag = robot_pops_outlawed }
 				}
 				
 			}

@@ -26,7 +26,7 @@
  situation_passPolicy_first_contact_proactive.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_first_contact_proactive.1.name:0 "Proactive First Contact"
- faction_supportPolicy_first_contact_proactive.1.desc:0 "Overall Support: [Root.faction_support_first_contact_proactive]\n\nSupporters:\n\nDetractors:\narmedIsolationism: [Root.armedIsolationism_support_first_contact_proactive]\n"
+ faction_supportPolicy_first_contact_proactive.1.desc:0 "Overall Support: [Root.faction_support_first_contact_proactive]\n\nSupporters:\nrefugeeColonists: [Root.refugeeColonists_support_first_contact_proactive]\nourBurden: [Root.ourBurden_support_first_contact_proactive]\n\nDetractors:\narmedIsolationism: [Root.armedIsolationism_support_first_contact_proactive]\ndeathAndDestruction: [Root.deathAndDestruction_support_first_contact_proactive]\n"
 
- edict_pass_first_contact_proactive:0 "Pass §BProactive First Contact§!"
+ edict_pass_first_contact_proactive:0 "Pass §B$first_contact_proactive_name$§!"
  edict_pass_first_contact_proactive_desc:0 "We move that ."

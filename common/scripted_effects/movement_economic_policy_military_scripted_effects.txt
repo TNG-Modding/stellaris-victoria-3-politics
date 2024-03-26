@@ -6,7 +6,40 @@ calculate_economic_policy_military_movement_support_and_radicalism_from_factions
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = armedIsolationism
 					
+					is_pop_faction_type = deathAndDestruction
+					
+					is_pop_faction_type = jihadism
+					
+					is_pop_faction_type = purity
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = colonists
+					ROOT = { has_policy_flag = economic_policy_civilian }
+				}
+				
+				NAND = {
+					is_pop_faction_type = consolidationists
+					ROOT = { has_policy_flag = economic_policy_balanced }
+				}
+				
+				NAND = {
+					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = economic_policy_balanced }
+				}
+				
+				NAND = {
+					is_pop_faction_type = realpolitik
+					ROOT = { has_policy_flag = economic_policy_balanced }
+				}
+				
+				NAND = {
+					is_pop_faction_type = roboticColonization
+					ROOT = { has_policy_flag = economic_policy_civilian }
 				}
 				
 			}

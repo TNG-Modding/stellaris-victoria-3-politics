@@ -30,5 +30,51 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_robot_pops_outlawed_Support_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_robot_pops_outlawed_SupportByChange_aiMistake
+	text = {
+		localization_key = aiMistake
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = aiMistake }
+			has_policy_flag = robot_pops_allowed
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_robot_pops_outlawed_Detract_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_robot_pops_outlawed_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = robot_pops_allowed
+		}
+	}
+	default = ""
+}

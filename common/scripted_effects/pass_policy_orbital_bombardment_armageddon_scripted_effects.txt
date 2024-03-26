@@ -9,7 +9,39 @@ set_orbital_bombardment_armageddon_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
 						
+						is_pop_faction_type = purity
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = orbital_bombardment_selective }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = orbital_bombardment_selective }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
 					}
 					
 				}
@@ -33,7 +65,57 @@ set_orbital_bombardment_armageddon_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = realpolitik
 						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = orbital_bombardment_selective }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = orbital_bombardment_selective }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = orbital_bombardment_indiscriminate }
 					}
 					
 				}

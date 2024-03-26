@@ -9,12 +9,34 @@ set_grandArmy_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
+						
+						is_pop_faction_type = purity
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = preFtlMilitaries }
+							}
+						
 						
 					}
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
 						OWNER = { has_policy_flag = preFtlMilitaries }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = spacefaringStandingArmy }
 					}
 					
 				}
@@ -48,11 +70,25 @@ set_grandArmy_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = spacefaringStandingArmy }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = preFtlConservatives
 						OWNER = { has_policy_flag = preFtlMilitaries }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = spacefaringStandingArmy }
 					}
 					
 				}

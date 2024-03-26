@@ -24,6 +24,11 @@ set_interplanetaryGoverance_base_success_chance = {
 						OWNER = { has_policy_flag = dependentColonies }
 					}
 					
+					NAND = {
+						is_pop_faction_type = roboticColonization
+						OWNER = { has_policy_flag = dependentColonies }
+					}
+					
 				}
 				export_trigger_value_to_variable = { trigger = support variable = support }
 				multiply_variable = {which = support value = 100}
@@ -64,6 +69,15 @@ set_interplanetaryGoverance_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
+								OWNER = { has_policy_flag = dependentColonies }
+							}
+						
+						
 					}
 					
 					NAND = {
@@ -73,6 +87,11 @@ set_interplanetaryGoverance_base_stall_chance = {
 					
 					NAND = {
 						is_pop_faction_type = colonists
+						OWNER = { has_policy_flag = dependentColonies }
+					}
+					
+					NAND = {
+						is_pop_faction_type = roboticColonization
 						OWNER = { has_policy_flag = dependentColonies }
 					}
 					

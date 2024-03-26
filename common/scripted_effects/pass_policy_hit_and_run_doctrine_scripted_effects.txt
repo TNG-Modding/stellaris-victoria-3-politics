@@ -10,11 +10,62 @@ set_hit_and_run_doctrine_base_success_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = armedIsolationism
+								OWNER = { has_policy_flag = no_retreat_doctrine }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = no_retreat_doctrine }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = defense_in_depth_doctrine }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = defense_in_depth_doctrine }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = rapid_deployment_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = no_retreat_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = no_retreat_doctrine }
 					}
 					
 				}
@@ -48,11 +99,53 @@ set_hit_and_run_doctrine_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = rapid_deployment_doctrine }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = no_retreat_doctrine }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = no_retreat_doctrine }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = defense_in_depth_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = rapid_deployment_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = no_retreat_doctrine }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = no_retreat_doctrine }
 					}
 					
 				}

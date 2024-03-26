@@ -30,6 +30,65 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_Support_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_SupportByChange_armedIsolationism
+	text = {
+		localization_key = armedIsolationism
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = armedIsolationism }
+			has_policy_flag = no_retreat_doctrine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = no_retreat_doctrine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_SupportByChange_realpolitik
+	text = {
+		localization_key = realpolitik
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = realpolitik }
+			has_policy_flag = defense_in_depth_doctrine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_SupportByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = defense_in_depth_doctrine
+		}
+	}
+	default = ""
+}
 
 
 
@@ -40,6 +99,30 @@ defined_text = {
 		trigger = {
 			any_pop_faction = { is_pop_faction_type = armedIsolationism }
 			has_policy_flag = defense_in_depth_doctrine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_DetractByChange_deathAndDestruction
+	text = {
+		localization_key = deathAndDestruction
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = deathAndDestruction }
+			has_policy_flag = no_retreat_doctrine
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_rapid_deployment_doctrine_DetractByChange_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+			has_policy_flag = no_retreat_doctrine
 		}
 	}
 	default = ""

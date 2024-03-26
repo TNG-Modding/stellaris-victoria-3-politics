@@ -12,11 +12,42 @@ set_no_wars_base_success_chance = {
 						is_pop_faction_type = armedIsolationism
 						
 						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = armedIsolationism
+								OWNER = { has_policy_flag = unrestricted_wars }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = ourBurden
 						OWNER = { has_policy_flag = liberation_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = unrestricted_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = unrestricted_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = liberation_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = unrestricted_wars }
 					}
 					
 				}
@@ -42,8 +73,20 @@ set_no_wars_base_stall_chance = {
 						
 						is_pop_faction_type = ourBurden
 						
+						is_pop_faction_type = realpolitik
+						
+						is_pop_faction_type = deathAndDestruction
+						
+						is_pop_faction_type = jihadism
 						
 						
+						
+						
+							
+						
+							
+						
+							
 						
 							
 						
@@ -54,11 +97,99 @@ set_no_wars_base_stall_chance = {
 							}
 						
 						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = unrestricted_wars }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = unrestricted_wars }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = liberation_wars }
+							}
+						
+						
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = unrestricted_wars }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = ourBurden
 						OWNER = { has_policy_flag = liberation_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = unrestricted_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = unrestricted_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = liberation_wars }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = unrestricted_wars }
 					}
 					
 				}

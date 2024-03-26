@@ -8,8 +8,12 @@ calculate_enlightenment_allowed_movement_support_and_radicalism_from_factions = 
 					
 					is_pop_faction_type = ourBurden
 					
+					is_pop_faction_type = jihadism
 					
 					
+					
+					
+						
 					
 						
 					
@@ -20,6 +24,24 @@ calculate_enlightenment_allowed_movement_support_and_radicalism_from_factions = 
 						}
 					
 					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = jihadism
+							ROOT = { has_policy_flag = enlightenment_not_allowed }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = enlightenment_not_allowed }
 				}
 				
 			}

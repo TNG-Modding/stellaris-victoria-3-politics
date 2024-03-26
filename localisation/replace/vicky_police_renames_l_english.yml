@@ -1,2 +1,143 @@
 ﻿l_english:
  refugees_not_allowed_name:0 "Refugees Not Allowed"
+
+ policy_diplomatic_stance:0 "£federation£ Diplomatic Stance"
+ diplo_stance_belligerent_name:0 "£federation£ Belligerent"
+ diplo_stance_cooperative_name:0 "£federation£ Cooperative"
+ diplo_stance_isolationist_name:0 "£federation£ Isolationist"
+ diplo_stance_expansionist_name:0 "£federation£ Expansionist"
+ diplo_stance_mercantile_name:0 "£federation£ Mercantile"
+ diplo_stance_supremacist_name:0 "£federation£ Supremacist"
+ diplo_stance_animosity_name:0 "£federation£ Animosity"
+ diplo_stance_hunger_name:0 "£federation£ Hunger"
+ diplo_stance_extermination_name:0 "£federation£ Extermination"
+ diplo_stance_purification_name:0 "£federation£ Purification"
+
+ policy_war_philosophy:0 "£military_ship£ War Philosophy"
+ unrestricted_wars_name:0 "£military_ship£ Unrestricted Wars"
+ liberation_wars_name:0 "£military_ship£ Liberation Wars"
+ no_wars_name:0 "£military_ship£ No Wars"
+
+ policy_war_doctrine:0 "£ship_modifier£ War Doctrine"
+ defense_in_depth_doctrine_name:0 "£ship_modifier£ Defense in Depth"
+ hit_and_run_doctrine_name:0 "£ship_modifier£ Hit and Run"
+ rapid_deployment_doctrine_name:0 "£ship_modifier£ Rapid Deployment"
+ no_retreat_doctrine_name:0 "£ship_modifier£ No Retreat"
+
+ policy_subjugation_war_terms:0 "£vassal£ Subjugation Terms"
+ oppressive_terms_name:0 "£vassal£ Oppressive Terms"
+ balanced_terms_name:0 "£vassal£ Balanced Terms"
+ benevolent_terms_name:0 "£vassal£ Benevolent Terms"
+ oppressive_corporate_terms_name:0 "£vassal£ Oppressive Corporate Terms"
+ balanced_corporate_terms_name:0 "£vassal£ Balanced Corporate Terms"
+ benevolent_corporate_terms_name:0 "£vassal£ Benvolent Corporate Terms"
+
+ policy_orbital_bombardment:0 "£mod_planet_orbital_bombardment_damage£ Orbital Bombardment"
+ orbital_bombardment_selective_name:0 "£mod_planet_orbital_bombardment_damage£ Selective Bombadment"
+ orbital_bombardment_indiscriminate_name:0 "£mod_planet_orbital_bombardment_damage£ Indiscriminate Bombadment"
+ orbital_bombardment_armageddon_name:0 "£mod_planet_orbital_bombardment_damage£ Armageddon Bombadment"
+
+ policy_orbital_bombardment_accept_surrender:0 "£sector_capital£ Orbital Surrender Acceptance"
+ orbital_bombardment_surrender_forbidden_name:0 "£sector_capital£ Bombardment Surrender Forbidden"
+ orbital_bombardment_surrender_allowed_name:0 "£sector_capital£ Bombardment Surrender Forbidden"
+
+ policy_interference:0 "£awareness£ Pre-FTL Interference"
+ interference_not_allowed_name:0 "£awareness£ Interference Banned"
+ interference_subtle_name:0 "£awareness£ Subtle Interference Only"
+ interference_active_name:0 "£awareness£ Active Interference"
+ interference_aggressive_name:0 "£awareness£ Aggressive Interference Allowed"
+
+ policy_enlightenment:0 "£protectorate£ Pre-FTL Enlightment"
+ enlightenment_not_allowed_name:0 "£protectorate£ Enlightenment Banned"
+ enlightenment_covert_only_name:0 "£protectorate£ Covert Enlightenment Only"
+ enlightenment_allowed_name:0 "£protectorate£ Enlightenment Allowed"
+
+ policy_resettlement:0 "£mod_country_resettlement_cost_mult£ Resettlement"
+ resettlement_not_allowed_name:0 "£mod_country_resettlement_cost_mult£ Resettlement Banned"
+ resettlement_allowed_name:0 "£mod_country_resettlement_cost_mult£ Resettlement Allowed"
+
+ policy_appropriation:0 "£scion£ Appropriation"
+ appropriation_not_allowed_name:0 "£scion£ Appropriation Banned"
+ appropriation_allowed_name:0 "£scion£ Appropriation Allowed"
+
+ policy_leader_enhancement:0 "£leader£ Leader Enhancement"
+ leader_enhancement_natural_selection_name:0 "£leader£ Natural Selection"
+ leader_enhancement_selected_lineages_name:0 "£leader£ Selected Lineage"
+ leader_enhancement_capacity_boosters_name:0 "£leader£ Capacity Booster"
+
+ policy_first_contact_protocol:0 "£favor£ First Contact Protocol"
+ first_contact_proactive_name:0 "£favor£ Proactive First Contact"
+ first_contact_cautious_name:0 "£favor£ Cautious First Contact"
+ first_contact_attack_allowed_name:0 "£favor£ Aggressive First Contact"
+
+ policy_border_policy:0 "£empire_sprawl£ Initial Border Status"
+ border_policy_open_name:0 "£empire_sprawl£ Open Borders"
+ border_policy_closed_name:0 "£empire_sprawl£ Closed Borders"
+
+ policy_economic_policy:0 "£tributary£ Economic Policy"
+ economic_policy_civilian_name:0 "£tributary£ Civilian Economy"
+ economic_policy_balanced_name:0 "£tributary£ Balanced Economy"
+ economic_policy_military_name:0 "£tributary£ Military Economy"
+
+ policy_trade_policy:0 "£economy£ Trade Policy"
+ trade_policy_default_name:0 "£economy£ Default Trade Policy"
+ trade_policy_consumer_goods_name:0 "£economy£ Consumer Goods Trade Policy"
+ trade_policy_unity_name:0 "£economy£ Unity Trade Policy"
+ trade_policy_trade_league_name:0 "£economy£ Trade League Trade Policy"
+ trade_policy_holy_covenant_name:0 "£economy£ Holy Covenant Trade Policy"
+ trade_policy_mutual_aid_name:0 "£economy£ Mutual Aid Trade Policy"
+
+#  policy_drone_policy:0 "££ "
+#  drone_policy_balanced_name:0 ""
+#  drone_policy_worker_name:0 ""
+#  drone_policy_thinker_name:0 ""
+
+ policy_artificial_intelligence_policy:0 "£pop_cat_robot_servant£ Artificial Intelligence Policy"
+ ai_outlawed_name:0 "£pop_cat_robot_servant£ AI Outlawed"
+ ai_servitude_name:0 "£pop_cat_robot_servant£ AI Servitude"
+ ai_full_rights_name:0 "£pop_cat_robot_servant£ AI Enfranchised"
+
+ policy_robot_pop_policy:0 "£mod_planet_jobs_robotic_produces_mult£ Robotic Workers"
+ robot_pops_outlawed_name:0 "£mod_planet_jobs_robotic_produces_mult£ Robotic Workers Banned"
+ robot_pops_allowed_name:0 "£mod_planet_jobs_robotic_produces_mult£ Robotic Workers Allowed"
+
+ policy_pre_sapients:0 "£pop_cat_pre_sapients£ Pre-Sapients"
+ pre_sapients_protect_name:0 "£pop_cat_pre_sapients£ Pre-Sapients Protected"
+ pre_sapients_allow_name:0 "£pop_cat_pre_sapients£ Pre-Sapients Ignored"
+ pre_sapients_eat_name:0 "£pop_cat_pre_sapients£ Pre-Sapients Eaten"
+ pre_sapients_purge_name:0 "£pop_cat_pre_sapients£ Pre-Sapients Purge"
+
+ policy_debris:0 "£science_ship£ Debris"
+ research_debris_name:0 "£science_ship£ Research Debris"
+ scavenge_debris_name:0 "£science_ship£ Scavenge Debris"
+ scavenge_and_research_debris_name:0 "£science_ship£ Scavenge & Research Debris"
+
+ policy_refugees:0 "£colony_ship£ Refugees"
+ refugees_not_allowed_name:0 "£colony_ship£ Refugees Banned"
+ refugees_only_citizens_name:0 "£colony_ship£ Citizen Refugees Only"
+ refugees_allowed_name:0 "£colony_ship£ Refugees Allowed"
+
+ policy_population_controls:0 "£pop£ Population Controls"
+ population_controls_not_allowed_name:0 "£pop£ Population Controls Banned"
+ population_controls_allowed_name:0 "£pop£ Population Controls Allowed"
+
+ policy_slavery:0 "£slavery£ Slavery"
+ slavery_not_allowed_name:0 "£slavery£ Slavery Banned"
+ slavery_allowed_name:0 "£slavery£ Slavery Allowed"
+
+ policy_purge:0 "£pop_cat_purge£ Purge"
+ purge_not_allowed_name:0 "£pop_cat_purge£ Purge Banned"
+ purge_displacement_only_name:0 "£pop_cat_purge£ Displacement Only"
+ purge_allowed_name:0 "£pop_cat_purge£ Purge Banned"
+
+#  policy_knightly_duties:0 "££ "
+#  toxic_knights_questing_name:0 ""
+#  toxic_knights_military_name:0 ""
+#  toxic_knights_diplomats_name:0 ""
+#  toxic_knights_herald_name:0 ""
+
+#  policy_relentless_industrialists_policy:0 "££ "
+#  relentless_industrialists_full_steam_ahead_name:0 ""
+#  relentless_industrialists_study_name:0 ""
+#  relentless_industrialists_cleanup_name:0 ""
+

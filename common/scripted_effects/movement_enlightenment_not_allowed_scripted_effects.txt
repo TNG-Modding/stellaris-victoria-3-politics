@@ -6,11 +6,18 @@ calculate_enlightenment_not_allowed_movement_support_and_radicalism_from_faction
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = purity
+					
 					
 				}
 				
 				NAND = {
 					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = enlightenment_allowed }
+				}
+				
+				NAND = {
+					is_pop_faction_type = jihadism
 					ROOT = { has_policy_flag = enlightenment_allowed }
 				}
 				

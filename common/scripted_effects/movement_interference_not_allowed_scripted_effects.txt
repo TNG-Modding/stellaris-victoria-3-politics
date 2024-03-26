@@ -14,6 +14,16 @@ calculate_interference_not_allowed_movement_support_and_radicalism_from_factions
 					ROOT = { has_policy_flag = interference_aggressive }
 				}
 				
+				NAND = {
+					is_pop_faction_type = jihadism
+					ROOT = { has_policy_flag = interference_aggressive }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = interference_aggressive }
+				}
+				
 			}
 		
 			export_trigger_value_to_variable = { trigger = support variable = interference_not_allowed_support }

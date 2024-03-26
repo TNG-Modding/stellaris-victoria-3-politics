@@ -28,5 +28,5 @@
  faction_supportPolicy_interplanetaryPoliticalOrganization.1.name:0 "Interplanetary Politics"
  faction_supportPolicy_interplanetaryPoliticalOrganization.1.desc:0 "Overall Support: [Root.faction_support_interplanetaryPoliticalOrganization]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_interplanetaryPoliticalOrganization:0 "Pass §BInterplanetary Politics§!"
+ edict_pass_interplanetaryPoliticalOrganization:0 "Pass §B$interplanetaryPoliticalOrganization_name$§!"
  edict_pass_interplanetaryPoliticalOrganization_desc:0 "We move that we should embrace a modern interstellar political system."

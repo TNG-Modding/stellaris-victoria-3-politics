@@ -28,5 +28,5 @@
  faction_supportPolicy_hit_and_run_doctrine.1.name:0 "Hit and Run"
  faction_supportPolicy_hit_and_run_doctrine.1.desc:0 "Overall Support: [Root.faction_support_hit_and_run_doctrine]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_hit_and_run_doctrine:0 "Pass §BHit and Run§!"
+ edict_pass_hit_and_run_doctrine:0 "Pass §B$hit_and_run_doctrine_name$§!"
  edict_pass_hit_and_run_doctrine_desc:0 "We move that ."

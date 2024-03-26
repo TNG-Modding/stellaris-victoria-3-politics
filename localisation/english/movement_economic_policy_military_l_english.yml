@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_economic_policy_military.2.name:0 "Movement for Military Economics"
+ movement_economic_policy_military.2.name:0 "Movement for $economic_policy_military_name$"
  movement_economic_policy_military.2.desc:0 "Support: [This.movement_economic_policy_military_support]\nRadicalism: [This.movement_economic_policy_military_radicalism]"
 
  #  Situation
@@ -7,27 +7,27 @@
  situation_movement_economic_policy_military_type:0 "[Owner.MovementName_economic_policy_military]"
  situation_movement_economic_policy_military_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
 # 
- situation_movement_economic_policy_military_supporting:0 "Supporting Factions:\n§G§!"
+ situation_movement_economic_policy_military_supporting:0 "Supporting Factions:\n§G[Owner.MovementDesc_economic_policy_military_Support_armedIsolationism]   [Owner.MovementDesc_economic_policy_military_Support_deathAndDestruction]   [Owner.MovementDesc_economic_policy_military_Support_jihadism]   [Owner.MovementDesc_economic_policy_military_Support_purity]   §!"
 
- situation_movement_economic_policy_military_detracting:0 "Detracting Factions:\n§R§!"
+ situation_movement_economic_policy_military_detracting:0 "Detracting Factions:\n§R[Owner.MovementDesc_economic_policy_military_Detract_realpolitik]   [Owner.MovementDesc_economic_policy_military_DetractByChange_colonists]   [Owner.MovementDesc_economic_policy_military_DetractByChange_consolidationists]   [Owner.MovementDesc_economic_policy_military_DetractByChange_ourBurden]   [Owner.MovementDesc_economic_policy_military_DetractByChange_realpolitik]   [Owner.MovementDesc_economic_policy_military_DetractByChange_roboticColonization]   §!"
 
- situation_movement_economic_policy_military_ethics:0 "Ethics: §Y§!"
+ situation_movement_economic_policy_military_ethics:0 ""
 
  situation_movement_economic_policy_military_stats:0 "Support: [Owner.movement_economic_policy_military_support] Radicalism: [Owner.movement_economic_policy_military_radicalism] Inertia: [Owner.movement_economic_policy_military_inertia]\nFaction Support [Owner.movement_economic_policy_military_faction_support] \nFaction Radicalism: [Owner.movement_economic_policy_military_faction_radicalism] \nNumerical Support: [Owner.economic_policy_military_supporting_population]/[Owner.economic_policy_military_population]=[Owner.movement_economic_policy_military_numerical_support] \nNumerical Radicalism: [Owner.economic_policy_military_radical_population]/[Owner.economic_policy_military_population]=[Owner.movement_economic_policy_military_numerical_radicalism]"
 
- situation_movement_economic_policy_military_quickDesc:0 "The people are calling for §BMilitary Economics§! as they believe ."
- situation_movement_economic_policy_military_desc:0 "$situation_movement_economic_policy_military_quickDesc$\n\n$situation_movement_economic_policy_military_supporting$\n$situation_movement_economic_policy_military_detracting$\n$situation_movement_economic_policy_military_ethics$\n\n$situation_movement_economic_policy_military_stats$"
- situation_movement_finisher_economic_policy_military:0 "Revolution for Military Economics."
+ situation_movement_economic_policy_military_quickDesc:0 "The people are calling for §B$economic_policy_military_name$§! as they believe ."
+ situation_movement_economic_policy_military_desc:0 "$situation_movement_economic_policy_military_quickDesc$\n\n$situation_movement_economic_policy_military_supporting$\n$situation_movement_economic_policy_military_detracting$\n\n$situation_movement_economic_policy_military_ethics$\n\n$situation_movement_economic_policy_military_stats$"
+ situation_movement_finisher_economic_policy_military:0 "Revolution for $economic_policy_military_name$."
  
  movement_economic_policy_military_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_economic_policy_military_radicalism]§! is above 25."
 
- movement_economic_policy_military_revolution_appeased:0 "§GAppeased Revolution for Military Economics§!"
- movement_economic_policy_military_revolution:0 "§RRevolution for Military Economics§!"
- movement_economic_policy_military:0 "Movement for Military Economics"
- movement_economic_policy_military_appeased:0 "Appeased Movement for Military Economics"
+ movement_economic_policy_military_revolution_appeased:0 "§GAppeased Revolution for $economic_policy_military_name$§!"
+ movement_economic_policy_military_revolution:0 "§RRevolution for $economic_policy_military_name$§!"
+ movement_economic_policy_military:0 "Movement for $economic_policy_military_name$"
+ movement_economic_policy_military_appeased:0 "Appeased Movement for $economic_policy_military_name$"
 
- movement_economic_policy_military.6.title:0 "Secession over §BMilitary Economics§!"
- movement_economic_policy_military.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BMilitary Economics§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BMilitary Economics§!."
+ movement_economic_policy_military.6.title:0 "Secession over §B$economic_policy_military_name$§!"
+ movement_economic_policy_military.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$economic_policy_military_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$economic_policy_military_name$§!."
  movement_economic_policy_military.6.fight:0 "Make them drink vacuum!"
  movement_economic_policy_military.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

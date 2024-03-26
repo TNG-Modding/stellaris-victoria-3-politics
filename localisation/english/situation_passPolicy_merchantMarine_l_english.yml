@@ -26,7 +26,7 @@
  situation_passPolicy_merchantMarine.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_merchantMarine.1.name:0 "Pre-FTL Merchant Marine"
- faction_supportPolicy_merchantMarine.1.desc:0 "Overall Support: [Root.faction_support_merchantMarine]\n\nSupporters:\ncolonists: [Root.colonists_support_merchantMarine]\n\nDetractors:\n"
+ faction_supportPolicy_merchantMarine.1.desc:0 "Overall Support: [Root.faction_support_merchantMarine]\n\nSupporters:\ncolonists: [Root.colonists_support_merchantMarine]\n\nDetractors:\ndeathAndDestruction: [Root.deathAndDestruction_support_merchantMarine]\n"
 
- edict_pass_merchantMarine:0 "Pass §BPre-FTL Merchant Marine§!"
+ edict_pass_merchantMarine:0 "Pass §B$merchantMarine_name$§!"
  edict_pass_merchantMarine_desc:0 "We move that the fleet should be comprised entirely of corvettes from the merchant marine."

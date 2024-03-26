@@ -6,12 +6,68 @@ calculate_rapid_deployment_doctrine_movement_support_and_radicalism_from_faction
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = realpolitik
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = armedIsolationism
+							ROOT = { has_policy_flag = no_retreat_doctrine }
+						}
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = realpolitik
+							ROOT = { has_policy_flag = no_retreat_doctrine }
+						}
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = realpolitik
+							ROOT = { has_policy_flag = defense_in_depth_doctrine }
+						}
+					
+					
+					
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = deathAndDestruction
+							ROOT = { has_policy_flag = defense_in_depth_doctrine }
+						}
+					
 					
 				}
 				
 				NAND = {
 					is_pop_faction_type = armedIsolationism
 					ROOT = { has_policy_flag = defense_in_depth_doctrine }
+				}
+				
+				NAND = {
+					is_pop_faction_type = deathAndDestruction
+					ROOT = { has_policy_flag = no_retreat_doctrine }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
+					ROOT = { has_policy_flag = no_retreat_doctrine }
 				}
 				
 			}

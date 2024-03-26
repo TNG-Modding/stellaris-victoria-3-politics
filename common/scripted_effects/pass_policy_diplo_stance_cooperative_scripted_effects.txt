@@ -9,8 +9,12 @@ set_diplo_stance_cooperative_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = consolidationists
 						
 						
+						
+						
+							
 						
 						
 							AND = {
@@ -21,9 +25,110 @@ set_diplo_stance_cooperative_base_success_chance = {
 						
 						
 						
+							
+						
 						
 							AND = {
 								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = diplo_stance_isolationist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = diplo_stance_isolationist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_isolationist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_mercantile }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_purification }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_extermination }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = diplo_stance_isolationist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = diplo_stance_purification }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = diplo_stance_extermination }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
 								OWNER = { has_policy_flag = diplo_stance_isolationist }
 							}
 						
@@ -36,6 +141,11 @@ set_diplo_stance_cooperative_base_success_chance = {
 					}
 					
 					NAND = {
+						is_pop_faction_type = consolidationists
+						OWNER = { has_policy_flag = diplo_stance_mercantile }
+					}
+					
+					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = diplo_stance_isolationist }
 					}
@@ -43,6 +153,46 @@ set_diplo_stance_cooperative_base_success_chance = {
 					NAND = {
 						is_pop_faction_type = ourBurden
 						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = diplo_stance_supremacist }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = diplo_stance_animosity }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = diplo_stance_supremacist }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = diplo_stance_purification }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = diplo_stance_extermination }
+					}
+					
+					NAND = {
+						is_pop_faction_type = roboticColonization
+						OWNER = { has_policy_flag = diplo_stance_expansionist }
 					}
 					
 				}
@@ -66,8 +216,12 @@ set_diplo_stance_cooperative_base_stall_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = deathAndDestruction
 						
 						
+						
+						
+							
 						
 						
 							AND = {
@@ -78,6 +232,19 @@ set_diplo_stance_cooperative_base_stall_chance = {
 						
 						
 						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = consolidationists
+								OWNER = { has_policy_flag = diplo_stance_mercantile }
+							}
+						
+						
+						
+						
+							
+						
 						
 							AND = {
 								is_pop_faction_type = armedIsolationism
@@ -87,10 +254,100 @@ set_diplo_stance_cooperative_base_stall_chance = {
 						
 						
 						
+							
+						
 						
 							AND = {
 								is_pop_faction_type = ourBurden
 								OWNER = { has_policy_flag = diplo_stance_belligerent }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = diplo_stance_belligerent }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_supremacist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = diplo_stance_animosity }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = diplo_stance_supremacist }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = diplo_stance_belligerent }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = diplo_stance_purification }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = diplo_stance_extermination }
+							}
+						
+						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = roboticColonization
+								OWNER = { has_policy_flag = diplo_stance_expansionist }
 							}
 						
 						
@@ -102,6 +359,11 @@ set_diplo_stance_cooperative_base_stall_chance = {
 					}
 					
 					NAND = {
+						is_pop_faction_type = consolidationists
+						OWNER = { has_policy_flag = diplo_stance_mercantile }
+					}
+					
+					NAND = {
 						is_pop_faction_type = armedIsolationism
 						OWNER = { has_policy_flag = diplo_stance_isolationist }
 					}
@@ -109,6 +371,46 @@ set_diplo_stance_cooperative_base_stall_chance = {
 					NAND = {
 						is_pop_faction_type = ourBurden
 						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = diplo_stance_supremacist }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = diplo_stance_animosity }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = diplo_stance_supremacist }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = diplo_stance_belligerent }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = diplo_stance_purification }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = diplo_stance_extermination }
+					}
+					
+					NAND = {
+						is_pop_faction_type = roboticColonization
+						OWNER = { has_policy_flag = diplo_stance_expansionist }
 					}
 					
 				}

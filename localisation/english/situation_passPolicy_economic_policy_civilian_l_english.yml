@@ -26,7 +26,7 @@
  situation_passPolicy_economic_policy_civilian.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_economic_policy_civilian.1.name:0 "Civilian Economics"
- faction_supportPolicy_economic_policy_civilian.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_civilian]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_economic_policy_civilian.1.desc:0 "Overall Support: [Root.faction_support_economic_policy_civilian]\n\nSupporters:\ncolonists: [Root.colonists_support_economic_policy_civilian]\nroboticColonization: [Root.roboticColonization_support_economic_policy_civilian]\n\nDetractors:\n"
 
- edict_pass_economic_policy_civilian:0 "Pass §BCivilian Economics§!"
+ edict_pass_economic_policy_civilian:0 "Pass §B$economic_policy_civilian_name$§!"
  edict_pass_economic_policy_civilian_desc:0 "We move that ."

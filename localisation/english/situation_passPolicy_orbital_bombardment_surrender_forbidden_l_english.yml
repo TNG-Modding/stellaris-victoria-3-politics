@@ -26,7 +26,7 @@
  situation_passPolicy_orbital_bombardment_surrender_forbidden.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_orbital_bombardment_surrender_forbidden.1.name:0 "Forbid Bombardment Surrender"
- faction_supportPolicy_orbital_bombardment_surrender_forbidden.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_surrender_forbidden]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_orbital_bombardment_surrender_forbidden.1.desc:0 "Overall Support: [Root.faction_support_orbital_bombardment_surrender_forbidden]\n\nSupporters:\narmedIsolationism: [Root.armedIsolationism_support_orbital_bombardment_surrender_forbidden]\ndeathAndDestruction: [Root.deathAndDestruction_support_orbital_bombardment_surrender_forbidden]\npurity: [Root.purity_support_orbital_bombardment_surrender_forbidden]\n\nDetractors:\n"
 
- edict_pass_orbital_bombardment_surrender_forbidden:0 "Pass §BForbid Bombardment Surrender§!"
+ edict_pass_orbital_bombardment_surrender_forbidden:0 "Pass §B$orbital_bombardment_surrender_forbidden_name$§!"
  edict_pass_orbital_bombardment_surrender_forbidden_desc:0 "We move that ."

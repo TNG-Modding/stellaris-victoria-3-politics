@@ -1,10 +1,10 @@
 l_english:
 
- policy_{{varname}}:0 "{{displayName}}"
+ policy_{{varname}}:0 "£{{icon}}£ {{displayName}}"
  policy_{{varname}}_name:0 "{{displayName}}"
  policy_{{varname}}_desc:0 "{{desc}}"
  {% for option in options %}
  {{option.varname}}:0 "{{option.displayName}}"
- {{option.varname}}_name:0 "{{option.displayName}}"
+ {{option.varname}}_name:0 "£{{icon}}£ {{option.displayName}}"
  {{option.varname}}_desc:0 "{{option.desc}}"
  {% endfor %}

@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_scavenge_and_research_debris.2.name:0 "Movement for Scavenge and Research Debris"
+ movement_scavenge_and_research_debris.2.name:0 "Movement for $scavenge_and_research_debris_name$"
  movement_scavenge_and_research_debris.2.desc:0 "Support: [This.movement_scavenge_and_research_debris_support]\nRadicalism: [This.movement_scavenge_and_research_debris_radicalism]"
 
  #  Situation
@@ -11,23 +11,23 @@
 
  situation_movement_scavenge_and_research_debris_detracting:0 "Detracting Factions:\n§R§!"
 
- situation_movement_scavenge_and_research_debris_ethics:0 "Ethics: §Y§!"
+ situation_movement_scavenge_and_research_debris_ethics:0 ""
 
  situation_movement_scavenge_and_research_debris_stats:0 "Support: [Owner.movement_scavenge_and_research_debris_support] Radicalism: [Owner.movement_scavenge_and_research_debris_radicalism] Inertia: [Owner.movement_scavenge_and_research_debris_inertia]\nFaction Support [Owner.movement_scavenge_and_research_debris_faction_support] \nFaction Radicalism: [Owner.movement_scavenge_and_research_debris_faction_radicalism] \nNumerical Support: [Owner.scavenge_and_research_debris_supporting_population]/[Owner.scavenge_and_research_debris_population]=[Owner.movement_scavenge_and_research_debris_numerical_support] \nNumerical Radicalism: [Owner.scavenge_and_research_debris_radical_population]/[Owner.scavenge_and_research_debris_population]=[Owner.movement_scavenge_and_research_debris_numerical_radicalism]"
 
- situation_movement_scavenge_and_research_debris_quickDesc:0 "The people are calling for §BScavenge and Research Debris§! as they believe ."
- situation_movement_scavenge_and_research_debris_desc:0 "$situation_movement_scavenge_and_research_debris_quickDesc$\n\n$situation_movement_scavenge_and_research_debris_supporting$\n$situation_movement_scavenge_and_research_debris_detracting$\n$situation_movement_scavenge_and_research_debris_ethics$\n\n$situation_movement_scavenge_and_research_debris_stats$"
- situation_movement_finisher_scavenge_and_research_debris:0 "Revolution for Scavenge and Research Debris."
+ situation_movement_scavenge_and_research_debris_quickDesc:0 "The people are calling for §B$scavenge_and_research_debris_name$§! as they believe ."
+ situation_movement_scavenge_and_research_debris_desc:0 "$situation_movement_scavenge_and_research_debris_quickDesc$\n\n$situation_movement_scavenge_and_research_debris_supporting$\n$situation_movement_scavenge_and_research_debris_detracting$\n\n$situation_movement_scavenge_and_research_debris_ethics$\n\n$situation_movement_scavenge_and_research_debris_stats$"
+ situation_movement_finisher_scavenge_and_research_debris:0 "Revolution for $scavenge_and_research_debris_name$."
  
  movement_scavenge_and_research_debris_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_scavenge_and_research_debris_radicalism]§! is above 25."
 
- movement_scavenge_and_research_debris_revolution_appeased:0 "§GAppeased Revolution for Scavenge and Research Debris§!"
- movement_scavenge_and_research_debris_revolution:0 "§RRevolution for Scavenge and Research Debris§!"
- movement_scavenge_and_research_debris:0 "Movement for Scavenge and Research Debris"
- movement_scavenge_and_research_debris_appeased:0 "Appeased Movement for Scavenge and Research Debris"
+ movement_scavenge_and_research_debris_revolution_appeased:0 "§GAppeased Revolution for $scavenge_and_research_debris_name$§!"
+ movement_scavenge_and_research_debris_revolution:0 "§RRevolution for $scavenge_and_research_debris_name$§!"
+ movement_scavenge_and_research_debris:0 "Movement for $scavenge_and_research_debris_name$"
+ movement_scavenge_and_research_debris_appeased:0 "Appeased Movement for $scavenge_and_research_debris_name$"
 
- movement_scavenge_and_research_debris.6.title:0 "Secession over §BScavenge and Research Debris§!"
- movement_scavenge_and_research_debris.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BScavenge and Research Debris§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BScavenge and Research Debris§!."
+ movement_scavenge_and_research_debris.6.title:0 "Secession over §B$scavenge_and_research_debris_name$§!"
+ movement_scavenge_and_research_debris.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$scavenge_and_research_debris_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$scavenge_and_research_debris_name$§!."
  movement_scavenge_and_research_debris.6.fight:0 "Make them drink vacuum!"
  movement_scavenge_and_research_debris.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

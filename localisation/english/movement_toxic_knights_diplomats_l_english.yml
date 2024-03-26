@@ -1,5 +1,5 @@
 ﻿l_english:
- movement_toxic_knights_diplomats.2.name:0 "Movement for Diplomatic Toxic Knights"
+ movement_toxic_knights_diplomats.2.name:0 "Movement for $toxic_knights_diplomats_name$"
  movement_toxic_knights_diplomats.2.desc:0 "Support: [This.movement_toxic_knights_diplomats_support]\nRadicalism: [This.movement_toxic_knights_diplomats_radicalism]"
 
  #  Situation
@@ -11,23 +11,23 @@
 
  situation_movement_toxic_knights_diplomats_detracting:0 "Detracting Factions:\n§R§!"
 
- situation_movement_toxic_knights_diplomats_ethics:0 "Ethics: §Y§!"
+ situation_movement_toxic_knights_diplomats_ethics:0 ""
 
  situation_movement_toxic_knights_diplomats_stats:0 "Support: [Owner.movement_toxic_knights_diplomats_support] Radicalism: [Owner.movement_toxic_knights_diplomats_radicalism] Inertia: [Owner.movement_toxic_knights_diplomats_inertia]\nFaction Support [Owner.movement_toxic_knights_diplomats_faction_support] \nFaction Radicalism: [Owner.movement_toxic_knights_diplomats_faction_radicalism] \nNumerical Support: [Owner.toxic_knights_diplomats_supporting_population]/[Owner.toxic_knights_diplomats_population]=[Owner.movement_toxic_knights_diplomats_numerical_support] \nNumerical Radicalism: [Owner.toxic_knights_diplomats_radical_population]/[Owner.toxic_knights_diplomats_population]=[Owner.movement_toxic_knights_diplomats_numerical_radicalism]"
 
- situation_movement_toxic_knights_diplomats_quickDesc:0 "The people are calling for §BDiplomatic Toxic Knights§! as they believe ."
- situation_movement_toxic_knights_diplomats_desc:0 "$situation_movement_toxic_knights_diplomats_quickDesc$\n\n$situation_movement_toxic_knights_diplomats_supporting$\n$situation_movement_toxic_knights_diplomats_detracting$\n$situation_movement_toxic_knights_diplomats_ethics$\n\n$situation_movement_toxic_knights_diplomats_stats$"
- situation_movement_finisher_toxic_knights_diplomats:0 "Revolution for Diplomatic Toxic Knights."
+ situation_movement_toxic_knights_diplomats_quickDesc:0 "The people are calling for §B$toxic_knights_diplomats_name$§! as they believe ."
+ situation_movement_toxic_knights_diplomats_desc:0 "$situation_movement_toxic_knights_diplomats_quickDesc$\n\n$situation_movement_toxic_knights_diplomats_supporting$\n$situation_movement_toxic_knights_diplomats_detracting$\n\n$situation_movement_toxic_knights_diplomats_ethics$\n\n$situation_movement_toxic_knights_diplomats_stats$"
+ situation_movement_finisher_toxic_knights_diplomats:0 "Revolution for $toxic_knights_diplomats_name$."
  
  movement_toxic_knights_diplomats_gaining_revolutionary_progress:0 "Movement radicalism §R[Owner.movement_toxic_knights_diplomats_radicalism]§! is above 25."
 
- movement_toxic_knights_diplomats_revolution_appeased:0 "§GAppeased Revolution for Diplomatic Toxic Knights§!"
- movement_toxic_knights_diplomats_revolution:0 "§RRevolution for Diplomatic Toxic Knights§!"
- movement_toxic_knights_diplomats:0 "Movement for Diplomatic Toxic Knights"
- movement_toxic_knights_diplomats_appeased:0 "Appeased Movement for Diplomatic Toxic Knights"
+ movement_toxic_knights_diplomats_revolution_appeased:0 "§GAppeased Revolution for $toxic_knights_diplomats_name$§!"
+ movement_toxic_knights_diplomats_revolution:0 "§RRevolution for $toxic_knights_diplomats_name$§!"
+ movement_toxic_knights_diplomats:0 "Movement for $toxic_knights_diplomats_name$"
+ movement_toxic_knights_diplomats_appeased:0 "Appeased Movement for $toxic_knights_diplomats_name$"
 
- movement_toxic_knights_diplomats.6.title:0 "Secession over §BDiplomatic Toxic Knights§!"
- movement_toxic_knights_diplomats.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §BDiplomatic Toxic Knights§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §BDiplomatic Toxic Knights§!."
+ movement_toxic_knights_diplomats.6.title:0 "Secession over §B$toxic_knights_diplomats_name$§!"
+ movement_toxic_knights_diplomats.6.desc:0 "In the face of government inertia and a steadfast refusal to confront the problem of §B$toxic_knights_diplomats_name$§!, a tide of discontent has swollen into a formidable revolt. Frustrated by the persistent lack of action, a marginalized populace rises in defiance against the status quo. This uprising, born from the depths of desperation and the yearning for justice, marks a pivotal moment in the empires's history, as those long suppressed find the courage to challenge a system that has failed to address the moral imperatives of §B$toxic_knights_diplomats_name$§!."
  movement_toxic_knights_diplomats.6.fight:0 "Make them drink vacuum!"
  movement_toxic_knights_diplomats.6.join:0 "Truth is with [event_target:rebel_empire.GetName]"
  

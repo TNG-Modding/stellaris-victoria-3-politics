@@ -8,7 +8,27 @@ calculate_slavery_allowed_movement_support_and_radicalism_from_factions = {
 					
 					is_pop_faction_type = nativists
 					
+					is_pop_faction_type = slavers
 					
+					
+					
+					
+						
+					
+						
+					
+					
+						AND = {
+							is_pop_faction_type = slavers
+							ROOT = { has_policy_flag = slavery_not_allowed }
+						}
+					
+					
+				}
+				
+				NAND = {
+					is_pop_faction_type = emancipators
+					ROOT = { has_policy_flag = slavery_not_allowed }
 				}
 				
 			}

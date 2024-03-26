@@ -19,10 +19,29 @@ set_interference_subtle_base_success_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = interference_not_allowed }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = interference_aggressive }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = interference_aggressive }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
 						OWNER = { has_policy_flag = interference_aggressive }
 					}
 					
@@ -57,10 +76,38 @@ set_interference_subtle_base_stall_chance = {
 							}
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = interference_aggressive }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = interference_aggressive }
+							}
+						
+						
 					}
 					
 					NAND = {
 						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = interference_aggressive }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = interference_aggressive }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
 						OWNER = { has_policy_flag = interference_aggressive }
 					}
 					

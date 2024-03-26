@@ -28,5 +28,5 @@
  faction_supportPolicy_scavenge_debris.1.name:0 "Scavenge Debris"
  faction_supportPolicy_scavenge_debris.1.desc:0 "Overall Support: [Root.faction_support_scavenge_debris]\n\nSupporters:\n\nDetractors:\n"
 
- edict_pass_scavenge_debris:0 "Pass §BScavenge Debris§!"
+ edict_pass_scavenge_debris:0 "Pass §B$scavenge_debris_name$§!"
  edict_pass_scavenge_debris_desc:0 "We move that ."

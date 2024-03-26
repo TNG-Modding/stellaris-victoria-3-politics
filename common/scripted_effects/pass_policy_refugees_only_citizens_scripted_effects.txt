@@ -9,8 +9,12 @@ set_refugees_only_citizens_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = nativists
 						
 						
+						
+						
+							
 						
 						
 							AND = {
@@ -19,6 +23,27 @@ set_refugees_only_citizens_base_success_chance = {
 							}
 						
 						
+						
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = refugees_not_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = refugees_not_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = refugees_allowed }
 					}
 					
 				}
@@ -43,6 +68,34 @@ set_refugees_only_citizens_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = nativists
+								OWNER = { has_policy_flag = refugees_not_allowed }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = refugeeColonists
+								OWNER = { has_policy_flag = refugees_allowed }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = nativists
+						OWNER = { has_policy_flag = refugees_not_allowed }
+					}
+					
+					NAND = {
+						is_pop_faction_type = refugeeColonists
+						OWNER = { has_policy_flag = refugees_allowed }
 					}
 					
 				}

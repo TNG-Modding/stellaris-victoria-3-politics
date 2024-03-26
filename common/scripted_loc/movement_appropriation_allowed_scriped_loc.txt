@@ -30,5 +30,73 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = MovementDesc_appropriation_allowed_Support_colonists
+	text = {
+		localization_key = colonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = colonists }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_appropriation_allowed_Support_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+		}
+	}
+	default = ""
+}
+
+defined_text = {
+	name = MovementDesc_appropriation_allowed_Support_purity
+	text = {
+		localization_key = purity
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = purity }
+		}
+	}
+	default = ""
+}
 
 
+defined_text = {
+	name = MovementDesc_appropriation_allowed_SupportByChange_nativists
+	text = {
+		localization_key = nativists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = nativists }
+			has_policy_flag = appropriation_not_allowed
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_appropriation_allowed_Detract_refugeeColonists
+	text = {
+		localization_key = refugeeColonists
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = refugeeColonists }
+		}
+	}
+	default = ""
+}
+
+
+defined_text = {
+	name = MovementDesc_appropriation_allowed_DetractByChange_roboticColonization
+	text = {
+		localization_key = roboticColonization
+		trigger = {
+			any_pop_faction = { is_pop_faction_type = roboticColonization }
+			has_policy_flag = appropriation_not_allowed
+		}
+	}
+	default = ""
+}

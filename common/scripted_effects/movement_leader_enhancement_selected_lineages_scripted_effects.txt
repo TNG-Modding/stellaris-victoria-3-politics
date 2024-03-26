@@ -6,6 +6,8 @@ calculate_leader_enhancement_selected_lineages_movement_support_and_radicalism_f
 			limit = {
 				OR = {
 					
+					is_pop_faction_type = purity
+					
 					
 				}
 				

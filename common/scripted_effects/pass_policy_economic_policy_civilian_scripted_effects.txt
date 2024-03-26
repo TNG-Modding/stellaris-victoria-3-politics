@@ -9,7 +9,59 @@ set_economic_policy_civilian_base_success_chance = {
 				limit = {
 					OR = {
 						
+						is_pop_faction_type = colonists
 						
+						is_pop_faction_type = roboticColonization
+						
+						
+						
+						
+							
+						
+							
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = economic_policy_military }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = consolidationists
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = economic_policy_military }
 					}
 					
 				}
@@ -34,6 +86,104 @@ set_economic_policy_civilian_base_stall_chance = {
 					OR = {
 						
 						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = consolidationists
+								OWNER = { has_policy_flag = economic_policy_balanced }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = armedIsolationism
+								OWNER = { has_policy_flag = economic_policy_military }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = ourBurden
+								OWNER = { has_policy_flag = economic_policy_balanced }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = realpolitik
+								OWNER = { has_policy_flag = economic_policy_balanced }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = deathAndDestruction
+								OWNER = { has_policy_flag = economic_policy_military }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = jihadism
+								OWNER = { has_policy_flag = economic_policy_military }
+							}
+						
+						
+						
+						
+						
+							AND = {
+								is_pop_faction_type = purity
+								OWNER = { has_policy_flag = economic_policy_military }
+							}
+						
+						
+					}
+					
+					NAND = {
+						is_pop_faction_type = consolidationists
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = armedIsolationism
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = ourBurden
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = realpolitik
+						OWNER = { has_policy_flag = economic_policy_balanced }
+					}
+					
+					NAND = {
+						is_pop_faction_type = deathAndDestruction
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = jihadism
+						OWNER = { has_policy_flag = economic_policy_military }
+					}
+					
+					NAND = {
+						is_pop_faction_type = purity
+						OWNER = { has_policy_flag = economic_policy_military }
 					}
 					
 				}

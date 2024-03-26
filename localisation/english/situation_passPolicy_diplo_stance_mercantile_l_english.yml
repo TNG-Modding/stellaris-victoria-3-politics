@@ -26,7 +26,7 @@
  situation_passPolicy_diplo_stance_mercantile.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_diplo_stance_mercantile.1.name:0 "Mercantile"
- faction_supportPolicy_diplo_stance_mercantile.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_mercantile]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_diplo_stance_mercantile.1.desc:0 "Overall Support: [Root.faction_support_diplo_stance_mercantile]\n\nSupporters:\nconsolidationists: [Root.consolidationists_support_diplo_stance_mercantile]\n\nDetractors:\ndeathAndDestruction: [Root.deathAndDestruction_support_diplo_stance_mercantile]\n"
 
- edict_pass_diplo_stance_mercantile:0 "Pass §BMercantile§!"
+ edict_pass_diplo_stance_mercantile:0 "Pass §B$diplo_stance_mercantile_name$§!"
  edict_pass_diplo_stance_mercantile_desc:0 "We move that ."

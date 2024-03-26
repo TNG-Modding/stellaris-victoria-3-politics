@@ -16,10 +16,29 @@ calculate_interference_subtle_movement_support_and_radicalism_from_factions = {
 						}
 					
 					
+					
+					
+					
+						AND = {
+							is_pop_faction_type = jihadism
+							ROOT = { has_policy_flag = interference_not_allowed }
+						}
+					
+					
 				}
 				
 				NAND = {
 					is_pop_faction_type = ourBurden
+					ROOT = { has_policy_flag = interference_aggressive }
+				}
+				
+				NAND = {
+					is_pop_faction_type = jihadism
+					ROOT = { has_policy_flag = interference_aggressive }
+				}
+				
+				NAND = {
+					is_pop_faction_type = purity
 					ROOT = { has_policy_flag = interference_aggressive }
 				}
 				

@@ -1,0 +1,3057 @@
+[
+    
+    {
+        "varname": "diplo_stance_belligerent",
+        "displayName": "Belligerent",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_belligerent",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden","realpolitik","jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_cooperative",
+        "displayName": "Cooperative",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_cooperative",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "consolidationists",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction",
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_isolationist",
+        "displayName": "Isolationist",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_isolationist",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism",
+        ],
+        "detractingFactions": [
+            "colonists","ourBurden","realpolitik","deathAndDestruction","jihadism","roboticColonization",
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_expansionist",
+        "displayName": "Expansionist",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_expansionist",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists","roboticColonization",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_mercantile",
+        "displayName": "Mercantile",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_mercantile",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "consolidationists",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction",
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_supremacist",
+        "displayName": "Supremacist",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_supremacist",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_animosity",
+        "displayName": "Animosity",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_animosity",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_hunger","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_hunger",
+        "displayName": "Hunger",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_hunger",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_extermination","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_extermination",
+        "displayName": "Extermination",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_extermination",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "purity",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction","jihadism",
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_purification",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_purification" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_purification" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "diplo_stance_purification",
+        "displayName": "Purification",
+        "desc": "",
+        "policyCategory": "diplomatic_stance",
+        "policyOption": "diplo_stance_purification",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "purity",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction","jihadism",
+        ],
+        "otherOptions": [
+            "diplo_stance_belligerent","diplo_stance_cooperative","diplo_stance_isolationist","diplo_stance_expansionist","diplo_stance_mercantile","diplo_stance_supremacist","diplo_stance_animosity","diplo_stance_hunger","diplo_stance_extermination",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_expansionist" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_mercantile" },{ "faction": "consolidationists", "fromPolicy": "diplo_stance_cooperative" },{ "faction": "armedIsolationism", "fromPolicy": "diplo_stance_isolationist" },{ "faction": "ourBurden", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "realpolitik", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_animosity" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_supremacist" },{ "faction": "jihadism", "fromPolicy": "diplo_stance_belligerent" },{ "faction": "purity", "fromPolicy": "diplo_stance_extermination" },{ "faction": "roboticColonization", "fromPolicy": "diplo_stance_expansionist" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "colonists", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "ourBurden", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "realpolitik", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_cooperative" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_mercantile" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_isolationist" }, 
+            { "faction": "jihadism", "fromPolicy": "diplo_stance_extermination" }, 
+            { "faction": "roboticColonization", "fromPolicy": "diplo_stance_isolationist" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "unrestricted_wars",
+        "displayName": "Unrestricted Wars",
+        "desc": "",
+        "policyCategory": "war_philosophy",
+        "policyOption": "unrestricted_wars",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "realpolitik","deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            "armedIsolationism",
+        ],
+        "otherOptions": [
+            "liberation_wars","no_wars",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "no_wars" },{ "faction": "ourBurden", "fromPolicy": "liberation_wars" },{ "faction": "jihadism", "fromPolicy": "liberation_wars" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "no_wars" }, 
+            { "faction": "realpolitik", "fromPolicy": "no_wars" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "no_wars" }, 
+            { "faction": "jihadism", "fromPolicy": "no_wars" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "liberation_wars",
+        "displayName": "Liberation Wars",
+        "desc": "",
+        "policyCategory": "war_philosophy",
+        "policyOption": "liberation_wars",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden","jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "unrestricted_wars","no_wars",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "no_wars" },{ "faction": "realpolitik", "fromPolicy": "unrestricted_wars" },{ "faction": "deathAndDestruction", "fromPolicy": "unrestricted_wars" },{ "faction": "purity", "fromPolicy": "unrestricted_wars" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "unrestricted_wars" }, 
+            { "faction": "ourBurden", "fromPolicy": "no_wars" }, 
+            { "faction": "realpolitik", "fromPolicy": "no_wars" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "no_wars" }, 
+            { "faction": "jihadism", "fromPolicy": "no_wars" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "no_wars",
+        "displayName": "No Wars",
+        "desc": "",
+        "policyCategory": "war_philosophy",
+        "policyOption": "no_wars",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism",
+        ],
+        "detractingFactions": [
+            "ourBurden","realpolitik","deathAndDestruction","jihadism",
+        ],
+        "otherOptions": [
+            "unrestricted_wars","liberation_wars",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "liberation_wars" },{ "faction": "realpolitik", "fromPolicy": "unrestricted_wars" },{ "faction": "deathAndDestruction", "fromPolicy": "unrestricted_wars" },{ "faction": "jihadism", "fromPolicy": "liberation_wars" },{ "faction": "purity", "fromPolicy": "unrestricted_wars" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "unrestricted_wars" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "defense_in_depth_doctrine",
+        "displayName": "Defense in Depth",
+        "desc": "",
+        "policyCategory": "war_doctrine",
+        "policyOption": "defense_in_depth_doctrine",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism",
+        ],
+        "detractingFactions": [
+            "realpolitik","deathAndDestruction",
+        ],
+        "otherOptions": [
+            "hit_and_run_doctrine","rapid_deployment_doctrine","no_retreat_doctrine",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "rapid_deployment_doctrine" },{ "faction": "deathAndDestruction", "fromPolicy": "no_retreat_doctrine" },{ "faction": "purity", "fromPolicy": "no_retreat_doctrine" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "no_retreat_doctrine" }, 
+            { "faction": "realpolitik", "fromPolicy": "no_retreat_doctrine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "hit_and_run_doctrine",
+        "displayName": "Hit and Run",
+        "desc": "",
+        "policyCategory": "war_doctrine",
+        "policyOption": "hit_and_run_doctrine",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "defense_in_depth_doctrine","rapid_deployment_doctrine","no_retreat_doctrine",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "defense_in_depth_doctrine" },{ "faction": "realpolitik", "fromPolicy": "rapid_deployment_doctrine" },{ "faction": "deathAndDestruction", "fromPolicy": "no_retreat_doctrine" },{ "faction": "purity", "fromPolicy": "no_retreat_doctrine" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "no_retreat_doctrine" }, 
+            { "faction": "realpolitik", "fromPolicy": "no_retreat_doctrine" }, 
+            { "faction": "realpolitik", "fromPolicy": "defense_in_depth_doctrine" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "defense_in_depth_doctrine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "rapid_deployment_doctrine",
+        "displayName": "Rapid Deployment",
+        "desc": "",
+        "policyCategory": "war_doctrine",
+        "policyOption": "rapid_deployment_doctrine",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "realpolitik",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "defense_in_depth_doctrine","hit_and_run_doctrine","no_retreat_doctrine",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "defense_in_depth_doctrine" },{ "faction": "deathAndDestruction", "fromPolicy": "no_retreat_doctrine" },{ "faction": "purity", "fromPolicy": "no_retreat_doctrine" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "no_retreat_doctrine" }, 
+            { "faction": "realpolitik", "fromPolicy": "no_retreat_doctrine" }, 
+            { "faction": "realpolitik", "fromPolicy": "defense_in_depth_doctrine" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "defense_in_depth_doctrine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "no_retreat_doctrine",
+        "displayName": "No Retreat",
+        "desc": "",
+        "policyCategory": "war_doctrine",
+        "policyOption": "no_retreat_doctrine",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            "armedIsolationism","realpolitik",
+        ],
+        "otherOptions": [
+            "defense_in_depth_doctrine","hit_and_run_doctrine","rapid_deployment_doctrine",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "defense_in_depth_doctrine" },{ "faction": "realpolitik", "fromPolicy": "rapid_deployment_doctrine" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "defense_in_depth_doctrine" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "defense_in_depth_doctrine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "oppressive_terms",
+        "displayName": "Opressive Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "oppressive_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "balanced_terms","benevolent_terms","oppressive_corporate_terms","balanced_corporate_terms","benevolent_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_terms" },{ "faction": "ourBurden", "fromPolicy": "benevolent_corporate_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_corporate_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_corporate_terms" },{ "faction": "purity", "fromPolicy": "oppressive_corporate_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "realpolitik", "fromPolicy": "benevolent_corporate_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_corporate_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "balanced_terms",
+        "displayName": "Balanced Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "balanced_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "realpolitik",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "oppressive_terms","benevolent_terms","oppressive_corporate_terms","balanced_corporate_terms","benevolent_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_terms" },{ "faction": "ourBurden", "fromPolicy": "benevolent_corporate_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_corporate_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_corporate_terms" },{ "faction": "purity", "fromPolicy": "oppressive_terms" },{ "faction": "purity", "fromPolicy": "oppressive_corporate_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "realpolitik", "fromPolicy": "benevolent_corporate_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_corporate_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "benevolent_terms",
+        "displayName": "Benevolent Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "benevolent_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden",
+        ],
+        "detractingFactions": [
+            "realpolitik","deathAndDestruction",
+        ],
+        "otherOptions": [
+            "oppressive_terms","balanced_terms","oppressive_corporate_terms","balanced_corporate_terms","benevolent_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_corporate_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_corporate_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_corporate_terms" },{ "faction": "purity", "fromPolicy": "oppressive_terms" },{ "faction": "purity", "fromPolicy": "oppressive_corporate_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_corporate_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_corporate_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "oppressive_corporate_terms",
+        "displayName": "Opressive Corporate Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "oppressive_corporate_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "oppressive_terms","balanced_terms","benevolent_terms","balanced_corporate_terms","benevolent_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_terms" },{ "faction": "ourBurden", "fromPolicy": "benevolent_corporate_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_corporate_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_terms" },{ "faction": "purity", "fromPolicy": "oppressive_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "realpolitik", "fromPolicy": "benevolent_corporate_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_corporate_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "balanced_corporate_terms",
+        "displayName": "Balanced Corporate Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "balanced_corporate_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "realpolitik",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "oppressive_terms","balanced_terms","benevolent_terms","oppressive_corporate_terms","benevolent_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_terms" },{ "faction": "ourBurden", "fromPolicy": "benevolent_corporate_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_corporate_terms" },{ "faction": "purity", "fromPolicy": "oppressive_terms" },{ "faction": "purity", "fromPolicy": "oppressive_corporate_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "realpolitik", "fromPolicy": "benevolent_corporate_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_corporate_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "benevolent_corporate_terms",
+        "displayName": "Benevolent Corporate Terms",
+        "desc": "",
+        "policyCategory": "subjugation_war_terms",
+        "policyOption": "benevolent_corporate_terms",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden",
+        ],
+        "detractingFactions": [
+            "realpolitik","deathAndDestruction",
+        ],
+        "otherOptions": [
+            "oppressive_terms","balanced_terms","benevolent_terms","oppressive_corporate_terms","balanced_corporate_terms",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "benevolent_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_terms" },{ "faction": "realpolitik", "fromPolicy": "balanced_corporate_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_terms" },{ "faction": "deathAndDestruction", "fromPolicy": "oppressive_corporate_terms" },{ "faction": "purity", "fromPolicy": "oppressive_terms" },{ "faction": "purity", "fromPolicy": "oppressive_corporate_terms" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "benevolent_terms" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "benevolent_terms" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "orbital_bombardment_selective",
+        "displayName": "Selective Orbital Bombadment",
+        "desc": "",
+        "policyCategory": "orbital_bombardment",
+        "policyOption": "orbital_bombardment_selective",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "realpolitik",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction",
+        ],
+        "otherOptions": [
+            "orbital_bombardment_indiscriminate","orbital_bombardment_armageddon",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_armageddon" },{ "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_indiscriminate" },{ "faction": "purity", "fromPolicy": "orbital_bombardment_armageddon" },{ "faction": "purity", "fromPolicy": "orbital_bombardment_indiscriminate" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "orbital_bombardment_armageddon" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "orbital_bombardment_indiscriminate",
+        "displayName": "Indiscriminate Orbital Bombadment",
+        "desc": "",
+        "policyCategory": "orbital_bombardment",
+        "policyOption": "orbital_bombardment_indiscriminate",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "orbital_bombardment_selective","orbital_bombardment_armageddon",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "orbital_bombardment_selective" },{ "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_armageddon" },{ "faction": "purity", "fromPolicy": "orbital_bombardment_armageddon" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "orbital_bombardment_armageddon" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_selective" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "orbital_bombardment_armageddon",
+        "displayName": "Armageddon Orbital Bombardment",
+        "desc": "",
+        "policyCategory": "orbital_bombardment",
+        "policyOption": "orbital_bombardment_armageddon",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            "realpolitik",
+        ],
+        "otherOptions": [
+            "orbital_bombardment_selective","orbital_bombardment_indiscriminate",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "orbital_bombardment_selective" },{ "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_indiscriminate" },{ "faction": "purity", "fromPolicy": "orbital_bombardment_indiscriminate" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_selective" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "orbital_bombardment_surrender_forbidden",
+        "displayName": "Forbid Bombardment Surrender",
+        "desc": "",
+        "policyCategory": "orbital_bombardment_accept_surrender",
+        "policyOption": "orbital_bombardment_surrender_forbidden",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism","deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "orbital_bombardment_surrender_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "orbital_bombardment_surrender_allowed" },{ "faction": "realpolitik", "fromPolicy": "orbital_bombardment_surrender_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "orbital_bombardment_surrender_allowed",
+        "displayName": "Allow Bombardment Surrender",
+        "desc": "",
+        "policyCategory": "orbital_bombardment_accept_surrender",
+        "policyOption": "orbital_bombardment_surrender_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden","realpolitik",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "orbital_bombardment_surrender_forbidden",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "orbital_bombardment_surrender_forbidden" },{ "faction": "deathAndDestruction", "fromPolicy": "orbital_bombardment_surrender_forbidden" },{ "faction": "purity", "fromPolicy": "orbital_bombardment_surrender_forbidden" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "interference_not_allowed",
+        "displayName": "No Interference",
+        "desc": "",
+        "policyCategory": "interference",
+        "policyOption": "interference_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            "ourBurden","jihadism",
+        ],
+        "otherOptions": [
+            "interference_subtle","interference_active","interference_aggressive",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_aggressive" },{ "faction": "jihadism", "fromPolicy": "interference_aggressive" },{ "faction": "purity", "fromPolicy": "interference_aggressive" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "interference_subtle",
+        "displayName": "Subtle Interference",
+        "desc": "",
+        "policyCategory": "interference",
+        "policyOption": "interference_subtle",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "interference_not_allowed","interference_active","interference_aggressive",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_aggressive" },{ "faction": "jihadism", "fromPolicy": "interference_aggressive" },{ "faction": "purity", "fromPolicy": "interference_aggressive" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_not_allowed" }, 
+            { "faction": "jihadism", "fromPolicy": "interference_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "interference_active",
+        "displayName": "Active Interference",
+        "desc": "",
+        "policyCategory": "interference",
+        "policyOption": "interference_active",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "interference_not_allowed","interference_subtle","interference_aggressive",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_aggressive" },{ "faction": "jihadism", "fromPolicy": "interference_aggressive" },{ "faction": "purity", "fromPolicy": "interference_aggressive" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_not_allowed" }, 
+            { "faction": "jihadism", "fromPolicy": "interference_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "interference_aggressive",
+        "displayName": "Aggressive Interference",
+        "desc": "",
+        "policyCategory": "interference",
+        "policyOption": "interference_aggressive",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden","jihadism","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "interference_not_allowed","interference_subtle","interference_active",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "interference_not_allowed" }, 
+            { "faction": "jihadism", "fromPolicy": "interference_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "enlightenment_not_allowed",
+        "displayName": "Forbid Enlightment",
+        "desc": "",
+        "policyCategory": "enlightenment",
+        "policyOption": "enlightenment_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "purity",
+        ],
+        "detractingFactions": [
+            "ourBurden","jihadism",
+        ],
+        "otherOptions": [
+            "enlightenment_covert_only","enlightenment_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "enlightenment_allowed" },{ "faction": "jihadism", "fromPolicy": "enlightenment_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "enlightenment_covert_only",
+        "displayName": "Covert Enlightenment Only",
+        "desc": "",
+        "policyCategory": "enlightenment",
+        "policyOption": "enlightenment_covert_only",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "enlightenment_not_allowed","enlightenment_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "enlightenment_allowed" },{ "faction": "jihadism", "fromPolicy": "enlightenment_allowed" },{ "faction": "purity", "fromPolicy": "enlightenment_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "enlightenment_not_allowed" }, 
+            { "faction": "jihadism", "fromPolicy": "enlightenment_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "enlightenment_allowed",
+        "displayName": "Allow Enlightment",
+        "desc": "",
+        "policyCategory": "enlightenment",
+        "policyOption": "enlightenment_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "ourBurden","jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "enlightenment_not_allowed","enlightenment_covert_only",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "purity", "fromPolicy": "enlightenment_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "ourBurden", "fromPolicy": "enlightenment_not_allowed" }, 
+            { "faction": "jihadism", "fromPolicy": "enlightenment_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "resettlement_not_allowed",
+        "displayName": "Forbid Resettlement",
+        "desc": "",
+        "policyCategory": "resettlement",
+        "policyOption": "resettlement_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "resettlement_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "consolidationists", "fromPolicy": "resettlement_allowed" },{ "faction": "aiMistake", "fromPolicy": "resettlement_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "resettlement_allowed",
+        "displayName": "Allow Resettlement",
+        "desc": "",
+        "policyCategory": "resettlement",
+        "policyOption": "resettlement_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "consolidationists","aiMistake",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "resettlement_not_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "resettlement_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "appropriation_not_allowed",
+        "displayName": "Allow Appropriation",
+        "desc": "",
+        "policyCategory": "appropriation",
+        "policyOption": "appropriation_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "roboticColonization",
+        ],
+        "detractingFactions": [
+            "nativists",
+        ],
+        "otherOptions": [
+            "appropriation_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "appropriation_allowed" },{ "faction": "nativists", "fromPolicy": "appropriation_allowed" },{ "faction": "purity", "fromPolicy": "appropriation_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "appropriation_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "appropriation_allowed",
+        "displayName": "Appropriation Allowed",
+        "desc": "",
+        "policyCategory": "appropriation",
+        "policyOption": "appropriation_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists","nativists","purity",
+        ],
+        "detractingFactions": [
+            "refugeeColonists",
+        ],
+        "otherOptions": [
+            "appropriation_not_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "appropriation_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "nativists", "fromPolicy": "appropriation_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "first_contact_proactive",
+        "displayName": "Proactive First Contact",
+        "desc": "",
+        "policyCategory": "first_contact_protocol",
+        "policyOption": "first_contact_proactive",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists","ourBurden",
+        ],
+        "detractingFactions": [
+            "armedIsolationism","deathAndDestruction",
+        ],
+        "otherOptions": [
+            "first_contact_cautious","first_contact_attack_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "first_contact_cautious" },{ "faction": "deathAndDestruction", "fromPolicy": "first_contact_attack_allowed" },{ "faction": "jihadism", "fromPolicy": "first_contact_attack_allowed" },{ "faction": "purity", "fromPolicy": "first_contact_attack_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "first_contact_cautious",
+        "displayName": "Cautious First Contact",
+        "desc": "",
+        "policyCategory": "first_contact_protocol",
+        "policyOption": "first_contact_cautious",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "first_contact_proactive","first_contact_attack_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "first_contact_proactive" },{ "faction": "ourBurden", "fromPolicy": "first_contact_proactive" },{ "faction": "deathAndDestruction", "fromPolicy": "first_contact_attack_allowed" },{ "faction": "jihadism", "fromPolicy": "first_contact_attack_allowed" },{ "faction": "purity", "fromPolicy": "first_contact_attack_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "first_contact_proactive" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "first_contact_proactive" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "first_contact_attack_allowed",
+        "displayName": "Aggressive First Contact",
+        "desc": "",
+        "policyCategory": "first_contact_protocol",
+        "policyOption": "first_contact_attack_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","jihadism","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "first_contact_proactive","first_contact_cautious",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "first_contact_proactive" },{ "faction": "armedIsolationism", "fromPolicy": "first_contact_cautious" },{ "faction": "ourBurden", "fromPolicy": "first_contact_proactive" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "armedIsolationism", "fromPolicy": "first_contact_proactive" }, 
+            { "faction": "deathAndDestruction", "fromPolicy": "first_contact_proactive" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "border_policy_open",
+        "displayName": "Open Borders",
+        "desc": "",
+        "policyCategory": "border_policy",
+        "policyOption": "border_policy_open",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "border_policy_closed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "border_policy_closed" },{ "faction": "armedIsolationism", "fromPolicy": "border_policy_closed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "border_policy_closed",
+        "displayName": "Closed Borders",
+        "desc": "",
+        "policyCategory": "border_policy",
+        "policyOption": "border_policy_closed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists","armedIsolationism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "border_policy_open",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "border_policy_open" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "economic_policy_civilian",
+        "displayName": "Civilian Economics",
+        "desc": "",
+        "policyCategory": "economic_policy",
+        "policyOption": "economic_policy_civilian",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists","roboticColonization",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "economic_policy_balanced","economic_policy_military",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "consolidationists", "fromPolicy": "economic_policy_balanced" },{ "faction": "armedIsolationism", "fromPolicy": "economic_policy_military" },{ "faction": "ourBurden", "fromPolicy": "economic_policy_balanced" },{ "faction": "realpolitik", "fromPolicy": "economic_policy_balanced" },{ "faction": "deathAndDestruction", "fromPolicy": "economic_policy_military" },{ "faction": "jihadism", "fromPolicy": "economic_policy_military" },{ "faction": "purity", "fromPolicy": "economic_policy_military" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "economic_policy_military" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "economic_policy_balanced",
+        "displayName": "Balanced Economics",
+        "desc": "",
+        "policyCategory": "economic_policy",
+        "policyOption": "economic_policy_balanced",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "consolidationists","ourBurden","realpolitik",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "economic_policy_civilian","economic_policy_military",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "economic_policy_civilian" },{ "faction": "armedIsolationism", "fromPolicy": "economic_policy_military" },{ "faction": "deathAndDestruction", "fromPolicy": "economic_policy_military" },{ "faction": "jihadism", "fromPolicy": "economic_policy_military" },{ "faction": "purity", "fromPolicy": "economic_policy_military" },{ "faction": "roboticColonization", "fromPolicy": "economic_policy_civilian" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "realpolitik", "fromPolicy": "economic_policy_military" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "economic_policy_military",
+        "displayName": "Military Economics",
+        "desc": "",
+        "policyCategory": "economic_policy",
+        "policyOption": "economic_policy_military",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "armedIsolationism","deathAndDestruction","jihadism","purity",
+        ],
+        "detractingFactions": [
+            "realpolitik",
+        ],
+        "otherOptions": [
+            "economic_policy_civilian","economic_policy_balanced",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "economic_policy_civilian" },{ "faction": "consolidationists", "fromPolicy": "economic_policy_balanced" },{ "faction": "ourBurden", "fromPolicy": "economic_policy_balanced" },{ "faction": "realpolitik", "fromPolicy": "economic_policy_balanced" },{ "faction": "roboticColonization", "fromPolicy": "economic_policy_civilian" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_default",
+        "displayName": "Default Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_default",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_consumer_goods","trade_policy_unity","trade_policy_trade_league","trade_policy_holy_covenant","trade_policy_mutual_aid",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_consumer_goods",
+        "displayName": "Consumer Goods Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_consumer_goods",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_default","trade_policy_unity","trade_policy_trade_league","trade_policy_holy_covenant","trade_policy_mutual_aid",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_unity",
+        "displayName": "Unity Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_unity",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_default","trade_policy_consumer_goods","trade_policy_trade_league","trade_policy_holy_covenant","trade_policy_mutual_aid",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_trade_league",
+        "displayName": "Trade League Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_trade_league",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_default","trade_policy_consumer_goods","trade_policy_unity","trade_policy_holy_covenant","trade_policy_mutual_aid",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_holy_covenant",
+        "displayName": "Holy Covenant Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_holy_covenant",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_default","trade_policy_consumer_goods","trade_policy_unity","trade_policy_trade_league","trade_policy_mutual_aid",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "trade_policy_mutual_aid",
+        "displayName": "Mutual Aid Trade Policy",
+        "desc": "",
+        "policyCategory": "trade_policy",
+        "policyOption": "trade_policy_mutual_aid",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "trade_policy_default","trade_policy_consumer_goods","trade_policy_unity","trade_policy_trade_league","trade_policy_holy_covenant",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "ai_outlawed",
+        "displayName": "Outlawed AI",
+        "desc": "",
+        "policyCategory": "artificial_intelligence_policy",
+        "policyOption": "ai_outlawed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "aiMistake",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "ai_servitude","ai_full_rights",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "ai_servitude" },{ "faction": "emergentSouls", "fromPolicy": "ai_full_rights" },{ "faction": "metaphysicalists", "fromPolicy": "ai_servitude" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "ai_full_rights" }, 
+            { "faction": "emergentSouls", "fromPolicy": "ai_servitude" }, 
+            { "faction": "metaphysicalists", "fromPolicy": "ai_full_rights" }, 
+            { "faction": "aiMistake", "fromPolicy": "ai_servitude" }, 
+            { "faction": "aiMistake", "fromPolicy": "ai_full_rights" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "ai_servitude",
+        "displayName": "AI Servitude",
+        "desc": "",
+        "policyCategory": "artificial_intelligence_policy",
+        "policyOption": "ai_servitude",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "roboticColonization","metaphysicalists",
+        ],
+        "detractingFactions": [
+            "emergentSouls","aiMistake",
+        ],
+        "otherOptions": [
+            "ai_outlawed","ai_full_rights",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "emergentSouls", "fromPolicy": "ai_full_rights" },{ "faction": "aiMistake", "fromPolicy": "ai_outlawed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "ai_full_rights" }, 
+            { "faction": "metaphysicalists", "fromPolicy": "ai_full_rights" }, 
+            { "faction": "aiMistake", "fromPolicy": "ai_full_rights" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "ai_full_rights",
+        "displayName": "Full AI Rights",
+        "desc": "",
+        "policyCategory": "artificial_intelligence_policy",
+        "policyOption": "ai_full_rights",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "emergentSouls",
+        ],
+        "detractingFactions": [
+            "roboticColonization","metaphysicalists","aiMistake",
+        ],
+        "otherOptions": [
+            "ai_outlawed","ai_servitude",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "ai_servitude" },{ "faction": "metaphysicalists", "fromPolicy": "ai_servitude" },{ "faction": "aiMistake", "fromPolicy": "ai_outlawed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "emergentSouls", "fromPolicy": "ai_servitude" }, 
+            { "faction": "aiMistake", "fromPolicy": "ai_servitude" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "robot_pops_outlawed",
+        "displayName": "Outlawed Robot Pops",
+        "desc": "",
+        "policyCategory": "robot_pop_policy",
+        "policyOption": "robot_pops_outlawed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "aiMistake",
+        ],
+        "detractingFactions": [
+            "roboticColonization",
+        ],
+        "otherOptions": [
+            "robot_pops_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "robot_pops_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "aiMistake", "fromPolicy": "robot_pops_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "robot_pops_allowed",
+        "displayName": "Allowed Robot Pops",
+        "desc": "",
+        "policyCategory": "robot_pop_policy",
+        "policyOption": "robot_pops_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "roboticColonization",
+        ],
+        "detractingFactions": [
+            "aiMistake",
+        ],
+        "otherOptions": [
+            "robot_pops_outlawed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "aiMistake", "fromPolicy": "robot_pops_outlawed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "roboticColonization", "fromPolicy": "robot_pops_outlawed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "pre_sapients_protect",
+        "displayName": "Protected Pre-Sapients",
+        "desc": "",
+        "policyCategory": "pre_sapients",
+        "policyOption": "pre_sapients_protect",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "pre_sapients_allow","pre_sapients_eat","pre_sapients_purge",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "pre_sapients_eat" },{ "faction": "nativists", "fromPolicy": "pre_sapients_purge" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_allow" },{ "faction": "purity", "fromPolicy": "pre_sapients_eat" },{ "faction": "purity", "fromPolicy": "pre_sapients_purge" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_eat" }, 
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_purge" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "pre_sapients_allow",
+        "displayName": "Allowed Pre-Sapients",
+        "desc": "",
+        "policyCategory": "pre_sapients",
+        "policyOption": "pre_sapients_allow",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "pre_sapients_protect","pre_sapients_eat","pre_sapients_purge",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "pre_sapients_eat" },{ "faction": "nativists", "fromPolicy": "pre_sapients_purge" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_protect" },{ "faction": "purity", "fromPolicy": "pre_sapients_eat" },{ "faction": "purity", "fromPolicy": "pre_sapients_purge" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_eat" }, 
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_purge" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "pre_sapients_eat",
+        "displayName": "Eat All Pre-Sapients",
+        "desc": "",
+        "policyCategory": "pre_sapients",
+        "policyOption": "pre_sapients_eat",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists","purity",
+        ],
+        "detractingFactions": [
+            "refugeeColonists",
+        ],
+        "otherOptions": [
+            "pre_sapients_protect","pre_sapients_allow","pre_sapients_purge",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "pre_sapients_purge" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_protect" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_allow" },{ "faction": "purity", "fromPolicy": "pre_sapients_purge" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_purge" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "pre_sapients_purge",
+        "displayName": "Purge Pre-Sapients",
+        "desc": "",
+        "policyCategory": "pre_sapients",
+        "policyOption": "pre_sapients_purge",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists","purity",
+        ],
+        "detractingFactions": [
+            "refugeeColonists",
+        ],
+        "otherOptions": [
+            "pre_sapients_protect","pre_sapients_allow","pre_sapients_eat",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "pre_sapients_eat" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_protect" },{ "faction": "refugeeColonists", "fromPolicy": "pre_sapients_allow" },{ "faction": "purity", "fromPolicy": "pre_sapients_eat" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "pre_sapients_eat" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "research_debris",
+        "displayName": "Research Debris",
+        "desc": "",
+        "policyCategory": "debris",
+        "policyOption": "research_debris",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "scavenge_debris","scavenge_and_research_debris",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "scavenge_debris",
+        "displayName": "Scavenge Debris",
+        "desc": "",
+        "policyCategory": "debris",
+        "policyOption": "scavenge_debris",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "research_debris","scavenge_and_research_debris",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "scavenge_and_research_debris",
+        "displayName": "Scavenge and Research Debris",
+        "desc": "",
+        "policyCategory": "debris",
+        "policyOption": "scavenge_and_research_debris",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "research_debris","scavenge_debris",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "refugees_not_allowed",
+        "displayName": "Banned Refugees",
+        "desc": "",
+        "policyCategory": "refugees",
+        "policyOption": "refugees_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists",
+        ],
+        "detractingFactions": [
+            "refugeeColonists",
+        ],
+        "otherOptions": [
+            "refugees_only_citizens","refugees_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "refugees_only_citizens" },{ "faction": "refugeeColonists", "fromPolicy": "refugees_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "nativists", "fromPolicy": "refugees_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "refugees_only_citizens",
+        "displayName": "Only Citizen Refugees",
+        "desc": "",
+        "policyCategory": "refugees",
+        "policyOption": "refugees_only_citizens",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "refugees_not_allowed","refugees_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "refugees_not_allowed" },{ "faction": "refugeeColonists", "fromPolicy": "refugees_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "nativists", "fromPolicy": "refugees_allowed" }, 
+            { "faction": "refugeeColonists", "fromPolicy": "refugees_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "refugees_allowed",
+        "displayName": "Refugees Allowed",
+        "desc": "",
+        "policyCategory": "refugees",
+        "policyOption": "refugees_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            "nativists",
+        ],
+        "otherOptions": [
+            "refugees_not_allowed","refugees_only_citizens",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "refugees_not_allowed" },{ "faction": "nativists", "fromPolicy": "refugees_only_citizens" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "refugees_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "population_controls_not_allowed",
+        "displayName": "Forbid Population Controls",
+        "desc": "",
+        "policyCategory": "population_controls",
+        "policyOption": "population_controls_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "population_controls_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "population_controls_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "population_controls_allowed",
+        "displayName": "Allow Population Controls",
+        "desc": "",
+        "policyCategory": "population_controls",
+        "policyOption": "population_controls_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "population_controls_not_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "population_controls_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "slavery_not_allowed",
+        "displayName": "Slavery Not Allowed",
+        "desc": "",
+        "policyCategory": "slavery",
+        "policyOption": "slavery_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "emancipators",
+        ],
+        "detractingFactions": [
+            "slavers",
+        ],
+        "otherOptions": [
+            "slavery_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "slavery_allowed" },{ "faction": "slavers", "fromPolicy": "slavery_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "emancipators", "fromPolicy": "slavery_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "slavery_allowed",
+        "displayName": "Allow Slavery",
+        "desc": "",
+        "policyCategory": "slavery",
+        "policyOption": "slavery_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists","slavers",
+        ],
+        "detractingFactions": [
+            "emancipators",
+        ],
+        "otherOptions": [
+            "slavery_not_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "emancipators", "fromPolicy": "slavery_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "slavers", "fromPolicy": "slavery_not_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "purge_not_allowed",
+        "displayName": "Forbid Purging",
+        "desc": "",
+        "policyCategory": "purge",
+        "policyOption": "purge_not_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "refugeeColonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "purge_displacement_only","purge_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "purge_displacement_only" },{ "faction": "purity", "fromPolicy": "purge_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "nativists", "fromPolicy": "purge_allowed" }, 
+            { "faction": "refugeeColonists", "fromPolicy": "purge_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "purge_displacement_only",
+        "displayName": "Allow Displacement Purging",
+        "desc": "",
+        "policyCategory": "purge",
+        "policyOption": "purge_displacement_only",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "nativists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "purge_not_allowed","purge_allowed",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "refugeeColonists", "fromPolicy": "purge_not_allowed" },{ "faction": "purity", "fromPolicy": "purge_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "nativists", "fromPolicy": "purge_allowed" }, 
+            { "faction": "refugeeColonists", "fromPolicy": "purge_allowed" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "purge_allowed",
+        "displayName": "Purge Allowed",
+        "desc": "",
+        "policyCategory": "purge",
+        "policyOption": "purge_allowed",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "purity",
+        ],
+        "detractingFactions": [
+            "nativists","refugeeColonists",
+        ],
+        "otherOptions": [
+            "purge_not_allowed","purge_displacement_only",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "nativists", "fromPolicy": "purge_displacement_only" },{ "faction": "refugeeColonists", "fromPolicy": "purge_not_allowed" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "toxic_knights_questing",
+        "displayName": "Questing Toxic Knights",
+        "desc": "",
+        "policyCategory": "knightly_duties",
+        "policyOption": "toxic_knights_questing",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "toxic_knights_military","toxic_knights_diplomats","toxic_knights_herald",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "toxic_knights_military",
+        "displayName": "Military Toxic Knights",
+        "desc": "",
+        "policyCategory": "knightly_duties",
+        "policyOption": "toxic_knights_military",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "toxic_knights_questing","toxic_knights_diplomats","toxic_knights_herald",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "toxic_knights_diplomats",
+        "displayName": "Diplomatic Toxic Knights",
+        "desc": "",
+        "policyCategory": "knightly_duties",
+        "policyOption": "toxic_knights_diplomats",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "toxic_knights_questing","toxic_knights_military","toxic_knights_herald",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "toxic_knights_herald",
+        "displayName": "Herald Toxic Knights",
+        "desc": "",
+        "policyCategory": "knightly_duties",
+        "policyOption": "toxic_knights_herald",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "toxic_knights_questing","toxic_knights_military","toxic_knights_diplomats",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "leader_enhancement_natural_selection",
+        "displayName": "Natural Selection",
+        "desc": "",
+        "policyCategory": "leader_enhancement",
+        "policyOption": "leader_enhancement_natural_selection",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "leader_enhancement_selected_lineages","leader_enhancement_capacity_boosters",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "purity", "fromPolicy": "leader_enhancement_selected_lineages" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "leader_enhancement_selected_lineages",
+        "displayName": "Selected Lineage",
+        "desc": "",
+        "policyCategory": "leader_enhancement",
+        "policyOption": "leader_enhancement_selected_lineages",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "leader_enhancement_natural_selection","leader_enhancement_capacity_boosters",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "leader_enhancement_capacity_boosters",
+        "displayName": "Capacity Boosters",
+        "desc": "",
+        "policyCategory": "leader_enhancement",
+        "policyOption": "leader_enhancement_capacity_boosters",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "leader_enhancement_natural_selection","leader_enhancement_selected_lineages",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "purity", "fromPolicy": "leader_enhancement_selected_lineages" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "relentless_industrialists_full_steam_ahead",
+        "displayName": "Full Steam Ahead",
+        "desc": "",
+        "policyCategory": "relentless_industrialists_policy",
+        "policyOption": "relentless_industrialists_full_steam_ahead",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "relentless_industrialists_study","relentless_industrialists_cleanup",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "relentless_industrialists_study",
+        "displayName": "Study Industrialism",
+        "desc": "",
+        "policyCategory": "relentless_industrialists_policy",
+        "policyOption": "relentless_industrialists_study",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "relentless_industrialists_full_steam_ahead","relentless_industrialists_cleanup",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "relentless_industrialists_cleanup",
+        "displayName": "Cleanup Industrialism",
+        "desc": "",
+        "policyCategory": "relentless_industrialists_policy",
+        "policyOption": "relentless_industrialists_cleanup",
+        "description": "",
+        "ethicAdjective": "",
+        "picture": "surrender",
+        "icon": "",
+        "rebellionEthics": "",
+        "supportingEthics": [],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "relentless_industrialists_full_steam_ahead","relentless_industrialists_study",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "merchantMarine",
+        "displayName": "Pre-FTL Merchant Marine",
+        "desc": "A fleet comprised entirely of corvettes from the merchant marine for handling space fauna and pirates.",
+        "policyCategory": "fleetFormation",
+        "policyOption": "merchantMarine",
+        "description": "the fleet should be comprised entirely of corvettes from the merchant marine",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "trade_protection",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "colonists",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction",
+        ],
+        "otherOptions": [
+            "floatingNavy","armada",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "armada" },{ "faction": "jihadism", "fromPolicy": "floatingNavy" },{ "faction": "purity", "fromPolicy": "armada" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "floatingNavy",
+        "displayName": "Floating Navy",
+        "desc": "A modern navy without restrictions.",
+        "policyCategory": "fleetFormation",
+        "policyOption": "floatingNavy",
+        "description": "the fleet should be a modern navy without restrictions",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "trade_protection",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "merchantMarine","armada",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "merchantMarine" },{ "faction": "deathAndDestruction", "fromPolicy": "armada" },{ "faction": "purity", "fromPolicy": "armada" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "merchantMarine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "armada",
+        "displayName": "Armada",
+        "desc": "A fleet that is a civilization unto itself. Untold millions will live and die aboard our navy vessels.",
+        "policyCategory": "fleetFormation",
+        "policyOption": "armada",
+        "description": "the fleet should be a civilization unto itself. Untold millions will live and die aboard our navy vessels",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "trade_protection",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["militarist",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "merchantMarine","floatingNavy",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "colonists", "fromPolicy": "merchantMarine" },{ "faction": "jihadism", "fromPolicy": "floatingNavy" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "merchantMarine" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "preFtlMilitaries",
+        "displayName": "Pre-FTL Militaries",
+        "desc": "Landlocked soldiery for planetary defense.",
+        "policyCategory": "armyOrganization",
+        "policyOption": "preFtlMilitaries",
+        "description": "our army should remain planetary",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "defense_army",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["pacifist","spiritualist","materialist","egalitarian","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "preFtlConservatives",
+        ],
+        "detractingFactions": [
+            "deathAndDestruction",
+        ],
+        "otherOptions": [
+            "spacefaringStandingArmy","grandArmy",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "grandArmy" },{ "faction": "jihadism", "fromPolicy": "spacefaringStandingArmy" },{ "faction": "purity", "fromPolicy": "grandArmy" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "spacefaringStandingArmy",
+        "displayName": "Spacefaring Standing Army",
+        "desc": "A modern armu without restrictions. Allows building offensive armies.",
+        "policyCategory": "armyOrganization",
+        "policyOption": "spacefaringStandingArmy",
+        "description": "our army should be modern and without restriction",
+        "ethicAdjective": "Militarist",
+        "picture": "surrender",
+        "icon": "defense_army",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["militarist","spiritualist","materialist","egalitarian","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "jihadism",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "preFtlMilitaries","grandArmy",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },{ "faction": "deathAndDestruction", "fromPolicy": "grandArmy" },{ "faction": "purity", "fromPolicy": "grandArmy" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "preFtlMilitaries" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "grandArmy",
+        "displayName": "Grand Army",
+        "desc": "An army that is a civilization unto itself. Untold millions live and die in defense of our soil.",
+        "policyCategory": "armyOrganization",
+        "policyOption": "grandArmy",
+        "description": "our army should be a cilivization unto itself",
+        "ethicAdjective": "Militarist",
+        "picture": "surrender",
+        "icon": "defense_army",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["militarist",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "deathAndDestruction","purity",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "preFtlMilitaries","spacefaringStandingArmy",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "preFtlConservatives", "fromPolicy": "preFtlMilitaries" },{ "faction": "jihadism", "fromPolicy": "spacefaringStandingArmy" },
+        ],
+        "factionsHappyWithChange": [
+            { "faction": "deathAndDestruction", "fromPolicy": "preFtlMilitaries" }, 
+            
+        ]
+    },
+    
+    {
+        "varname": "dependentColonies",
+        "displayName": "Pre-FTL Colonial Dependents",
+        "desc": "Colonial administration based off crude pre-ftl techniques of supporting the center at the expense of the periphery. Prevents upgrading Colonial Shelters and building non-resource extraction buildings and districts on planets other than the capital.",
+        "policyCategory": "colonialAdministration",
+        "policyOption": "dependentColonies",
+        "description": "extrastellar planetary holdings should be governed like colonies",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "planet",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["egalitarian","pacifist","spiritualist","materialist","egalitarian","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "preFtlConservatives","colonists","roboticColonization",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "interplanetaryGoverance",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "consolidationists", "fromPolicy": "interplanetaryGoverance" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "interplanetaryGoverance",
+        "displayName": "Interplanetary Governance",
+        "desc": "A modern system of bureaucratic measures to enfranchise, incorporate, govern, and tax holdings.",
+        "policyCategory": "colonialAdministration",
+        "policyOption": "interplanetaryGoverance",
+        "description": "our empire should enfranchise, enfranchise, incorporate, govern, and tax holdings rather than govern them as colonies",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "planet",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "consolidationists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "dependentColonies",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "preFtlConservatives", "fromPolicy": "dependentColonies" },{ "faction": "colonists", "fromPolicy": "dependentColonies" },{ "faction": "roboticColonization", "fromPolicy": "dependentColonies" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "preFtlPoliticalOrganization",
+        "displayName": "Pre-FTL Political Units",
+        "desc": "Political organization styled after pre-FTL, mono-planetary representation.",
+        "policyCategory": "politicalOrganization",
+        "policyOption": "preFtlPoliticalOrganization",
+        "description": "the political organization of our pre-FTL days suffices",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "galcom_endsession",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["xenophobe","xenophile","militarist","pacifist","spiritualist","materialist","authoritarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            "preFtlConservatives","colonists",
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "interplanetaryPoliticalOrganization",
+        ],
+        "factionsAngryWithChange": [
+            
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+    {
+        "varname": "interplanetaryPoliticalOrganization",
+        "displayName": "Interplanetary Politics",
+        "desc": "Modern political involvement for handling activism and propoganda.",
+        "policyCategory": "politicalOrganization",
+        "policyOption": "interplanetaryPoliticalOrganization",
+        "description": "we should embrace a modern interstellar political system",
+        "ethicAdjective": "Pacifist",
+        "picture": "surrender",
+        "icon": "galcom_endsession",
+        "rebellionEthics": "{ ethic = ethic_fanatic_pacifist ethic = ethic_authoritarian }",
+        "supportingEthics": ["egalitarian",],
+        "potential": "always = yes",
+        "supportingFactions": [
+            
+        ],
+        "detractingFactions": [
+            
+        ],
+        "otherOptions": [
+            "preFtlPoliticalOrganization",
+        ],
+        "factionsAngryWithChange": [
+            { "faction": "preFtlConservatives", "fromPolicy": "preFtlPoliticalOrganization" },{ "faction": "colonists", "fromPolicy": "preFtlPoliticalOrganization" },
+        ],
+        "factionsHappyWithChange": [
+            
+        ]
+    },
+    
+]

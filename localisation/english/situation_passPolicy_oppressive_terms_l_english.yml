@@ -26,7 +26,7 @@
  situation_passPolicy_oppressive_terms.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
  faction_supportPolicy_oppressive_terms.1.name:0 "Opressive Terms"
- faction_supportPolicy_oppressive_terms.1.desc:0 "Overall Support: [Root.faction_support_oppressive_terms]\n\nSupporters:\n\nDetractors:\n"
+ faction_supportPolicy_oppressive_terms.1.desc:0 "Overall Support: [Root.faction_support_oppressive_terms]\n\nSupporters:\ndeathAndDestruction: [Root.deathAndDestruction_support_oppressive_terms]\npurity: [Root.purity_support_oppressive_terms]\n\nDetractors:\n"
 
- edict_pass_oppressive_terms:0 "Pass §BOpressive Terms§!"
+ edict_pass_oppressive_terms:0 "Pass §B$oppressive_terms_name$§!"
  edict_pass_oppressive_terms_desc:0 "We move that ."
