@@ -31,7 +31,7 @@ situation_movement_slavery_not_allowed = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_policy
+				has_country_flag = enacting_slavery_not_allowed
 			}
 			situation_progress > 0
 			add = -1

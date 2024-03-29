@@ -13,107 +13,212 @@
  
  
  deathAndDestruction_desires_diplo_stance_supremacist_fulfilled:0 "$diplo_stance_supremacist_name$" 
- deathAndDestruction_desires_diplo_stance_supremacist_unfulfilled:0 "$diplo_stance_supremacist_name$" 
- deathAndDestruction_desires_diplo_stance_supremacist_desc:0 "The Conquest and Dominion Faction likes the policy $diplo_stance_supremacist_name$."
+ deathAndDestruction_desires_diplo_stance_supremacist_unfulfilled:0 "" 
+ deathAndDestruction_desires_diplo_stance_supremacist_desc:0 "The Conquest and Dominion Faction likes $diplo_stance_supremacist_name$."
+
+ deathAndDestruction_happy_enacting_diplo_stance_supremacist_fulfilled:0 "Enacting $diplo_stance_supremacist_name$" 
+ deathAndDestruction_happy_enacting_diplo_stance_supremacist_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_diplo_stance_supremacist_desc:0 "The Conquest and Dominion Faction is happy you are enacting $diplo_stance_supremacist_name$."
  
  deathAndDestruction_desires_diplo_stance_animosity_fulfilled:0 "$diplo_stance_animosity_name$" 
- deathAndDestruction_desires_diplo_stance_animosity_unfulfilled:0 "$diplo_stance_animosity_name$" 
- deathAndDestruction_desires_diplo_stance_animosity_desc:0 "The Conquest and Dominion Faction likes the policy $diplo_stance_animosity_name$."
+ deathAndDestruction_desires_diplo_stance_animosity_unfulfilled:0 "" 
+ deathAndDestruction_desires_diplo_stance_animosity_desc:0 "The Conquest and Dominion Faction likes $diplo_stance_animosity_name$."
+
+ deathAndDestruction_happy_enacting_diplo_stance_animosity_fulfilled:0 "Enacting $diplo_stance_animosity_name$" 
+ deathAndDestruction_happy_enacting_diplo_stance_animosity_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_diplo_stance_animosity_desc:0 "The Conquest and Dominion Faction is happy you are enacting $diplo_stance_animosity_name$."
  
  deathAndDestruction_desires_unrestricted_wars_fulfilled:0 "$unrestricted_wars_name$" 
- deathAndDestruction_desires_unrestricted_wars_unfulfilled:0 "$unrestricted_wars_name$" 
- deathAndDestruction_desires_unrestricted_wars_desc:0 "The Conquest and Dominion Faction likes the policy $unrestricted_wars_name$."
+ deathAndDestruction_desires_unrestricted_wars_unfulfilled:0 "" 
+ deathAndDestruction_desires_unrestricted_wars_desc:0 "The Conquest and Dominion Faction likes $unrestricted_wars_name$."
+
+ deathAndDestruction_happy_enacting_unrestricted_wars_fulfilled:0 "Enacting $unrestricted_wars_name$" 
+ deathAndDestruction_happy_enacting_unrestricted_wars_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_unrestricted_wars_desc:0 "The Conquest and Dominion Faction is happy you are enacting $unrestricted_wars_name$."
  
  deathAndDestruction_desires_armada_fulfilled:0 "$armada_name$" 
- deathAndDestruction_desires_armada_unfulfilled:0 "$armada_name$" 
- deathAndDestruction_desires_armada_desc:0 "The Conquest and Dominion Faction likes the policy $armada_name$."
+ deathAndDestruction_desires_armada_unfulfilled:0 "" 
+ deathAndDestruction_desires_armada_desc:0 "The Conquest and Dominion Faction likes $armada_name$."
+
+ deathAndDestruction_happy_enacting_armada_fulfilled:0 "Enacting $armada_name$" 
+ deathAndDestruction_happy_enacting_armada_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_armada_desc:0 "The Conquest and Dominion Faction is happy you are enacting $armada_name$."
  
  deathAndDestruction_desires_grandArmy_fulfilled:0 "$grandArmy_name$" 
- deathAndDestruction_desires_grandArmy_unfulfilled:0 "$grandArmy_name$" 
- deathAndDestruction_desires_grandArmy_desc:0 "The Conquest and Dominion Faction likes the policy $grandArmy_name$."
+ deathAndDestruction_desires_grandArmy_unfulfilled:0 "" 
+ deathAndDestruction_desires_grandArmy_desc:0 "The Conquest and Dominion Faction likes $grandArmy_name$."
+
+ deathAndDestruction_happy_enacting_grandArmy_fulfilled:0 "Enacting $grandArmy_name$" 
+ deathAndDestruction_happy_enacting_grandArmy_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_grandArmy_desc:0 "The Conquest and Dominion Faction is happy you are enacting $grandArmy_name$."
  
  deathAndDestruction_desires_orbital_bombardment_armageddon_fulfilled:0 "$orbital_bombardment_armageddon_name$" 
- deathAndDestruction_desires_orbital_bombardment_armageddon_unfulfilled:0 "$orbital_bombardment_armageddon_name$" 
- deathAndDestruction_desires_orbital_bombardment_armageddon_desc:0 "The Conquest and Dominion Faction likes the policy $orbital_bombardment_armageddon_name$."
+ deathAndDestruction_desires_orbital_bombardment_armageddon_unfulfilled:0 "" 
+ deathAndDestruction_desires_orbital_bombardment_armageddon_desc:0 "The Conquest and Dominion Faction likes $orbital_bombardment_armageddon_name$."
+
+ deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_fulfilled:0 "Enacting $orbital_bombardment_armageddon_name$" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_desc:0 "The Conquest and Dominion Faction is happy you are enacting $orbital_bombardment_armageddon_name$."
  
  deathAndDestruction_desires_oppressive_terms_fulfilled:0 "$oppressive_terms_name$" 
- deathAndDestruction_desires_oppressive_terms_unfulfilled:0 "$oppressive_terms_name$" 
- deathAndDestruction_desires_oppressive_terms_desc:0 "The Conquest and Dominion Faction likes the policy $oppressive_terms_name$."
+ deathAndDestruction_desires_oppressive_terms_unfulfilled:0 "" 
+ deathAndDestruction_desires_oppressive_terms_desc:0 "The Conquest and Dominion Faction likes $oppressive_terms_name$."
+
+ deathAndDestruction_happy_enacting_oppressive_terms_fulfilled:0 "Enacting $oppressive_terms_name$" 
+ deathAndDestruction_happy_enacting_oppressive_terms_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_oppressive_terms_desc:0 "The Conquest and Dominion Faction is happy you are enacting $oppressive_terms_name$."
  
  deathAndDestruction_desires_oppressive_corporate_terms_fulfilled:0 "$oppressive_corporate_terms_name$" 
- deathAndDestruction_desires_oppressive_corporate_terms_unfulfilled:0 "$oppressive_corporate_terms_name$" 
- deathAndDestruction_desires_oppressive_corporate_terms_desc:0 "The Conquest and Dominion Faction likes the policy $oppressive_corporate_terms_name$."
+ deathAndDestruction_desires_oppressive_corporate_terms_unfulfilled:0 "" 
+ deathAndDestruction_desires_oppressive_corporate_terms_desc:0 "The Conquest and Dominion Faction likes $oppressive_corporate_terms_name$."
+
+ deathAndDestruction_happy_enacting_oppressive_corporate_terms_fulfilled:0 "Enacting $oppressive_corporate_terms_name$" 
+ deathAndDestruction_happy_enacting_oppressive_corporate_terms_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_oppressive_corporate_terms_desc:0 "The Conquest and Dominion Faction is happy you are enacting $oppressive_corporate_terms_name$."
  
  deathAndDestruction_desires_no_retreat_doctrine_fulfilled:0 "$no_retreat_doctrine_name$" 
- deathAndDestruction_desires_no_retreat_doctrine_unfulfilled:0 "$no_retreat_doctrine_name$" 
- deathAndDestruction_desires_no_retreat_doctrine_desc:0 "The Conquest and Dominion Faction likes the policy $no_retreat_doctrine_name$."
+ deathAndDestruction_desires_no_retreat_doctrine_unfulfilled:0 "" 
+ deathAndDestruction_desires_no_retreat_doctrine_desc:0 "The Conquest and Dominion Faction likes $no_retreat_doctrine_name$."
+
+ deathAndDestruction_happy_enacting_no_retreat_doctrine_fulfilled:0 "Enacting $no_retreat_doctrine_name$" 
+ deathAndDestruction_happy_enacting_no_retreat_doctrine_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_no_retreat_doctrine_desc:0 "The Conquest and Dominion Faction is happy you are enacting $no_retreat_doctrine_name$."
  
  deathAndDestruction_desires_economic_policy_military_fulfilled:0 "$economic_policy_military_name$" 
- deathAndDestruction_desires_economic_policy_military_unfulfilled:0 "$economic_policy_military_name$" 
- deathAndDestruction_desires_economic_policy_military_desc:0 "The Conquest and Dominion Faction likes the policy $economic_policy_military_name$."
+ deathAndDestruction_desires_economic_policy_military_unfulfilled:0 "" 
+ deathAndDestruction_desires_economic_policy_military_desc:0 "The Conquest and Dominion Faction likes $economic_policy_military_name$."
+
+ deathAndDestruction_happy_enacting_economic_policy_military_fulfilled:0 "Enacting $economic_policy_military_name$" 
+ deathAndDestruction_happy_enacting_economic_policy_military_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_economic_policy_military_desc:0 "The Conquest and Dominion Faction is happy you are enacting $economic_policy_military_name$."
  
  deathAndDestruction_desires_first_contact_attack_allowed_fulfilled:0 "$first_contact_attack_allowed_name$" 
- deathAndDestruction_desires_first_contact_attack_allowed_unfulfilled:0 "$first_contact_attack_allowed_name$" 
- deathAndDestruction_desires_first_contact_attack_allowed_desc:0 "The Conquest and Dominion Faction likes the policy $first_contact_attack_allowed_name$."
+ deathAndDestruction_desires_first_contact_attack_allowed_unfulfilled:0 "" 
+ deathAndDestruction_desires_first_contact_attack_allowed_desc:0 "The Conquest and Dominion Faction likes $first_contact_attack_allowed_name$."
+
+ deathAndDestruction_happy_enacting_first_contact_attack_allowed_fulfilled:0 "Enacting $first_contact_attack_allowed_name$" 
+ deathAndDestruction_happy_enacting_first_contact_attack_allowed_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_first_contact_attack_allowed_desc:0 "The Conquest and Dominion Faction is happy you are enacting $first_contact_attack_allowed_name$."
  
  deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_fulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
- deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_unfulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
- deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_desc:0 "The Conquest and Dominion Faction likes the policy $orbital_bombardment_surrender_forbidden_name$."
+ deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_unfulfilled:0 "" 
+ deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_desc:0 "The Conquest and Dominion Faction likes $orbital_bombardment_surrender_forbidden_name$."
+
+ deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_fulfilled:0 "Enacting $orbital_bombardment_surrender_forbidden_name$" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_desc:0 "The Conquest and Dominion Faction is happy you are enacting $orbital_bombardment_surrender_forbidden_name$."
  
  deathAndDestruction_desires_orbital_bombardment_indiscriminate_fulfilled:0 "$orbital_bombardment_indiscriminate_name$" 
- deathAndDestruction_desires_orbital_bombardment_indiscriminate_unfulfilled:0 "$orbital_bombardment_indiscriminate_name$" 
- deathAndDestruction_desires_orbital_bombardment_indiscriminate_desc:0 "The Conquest and Dominion Faction likes the policy $orbital_bombardment_indiscriminate_name$."
+ deathAndDestruction_desires_orbital_bombardment_indiscriminate_unfulfilled:0 "" 
+ deathAndDestruction_desires_orbital_bombardment_indiscriminate_desc:0 "The Conquest and Dominion Faction likes $orbital_bombardment_indiscriminate_name$."
+
+ deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_fulfilled:0 "Enacting $orbital_bombardment_indiscriminate_name$" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_unfulfilled:0 "" 
+ deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_desc:0 "The Conquest and Dominion Faction is happy you are enacting $orbital_bombardment_indiscriminate_name$."
  
+
  
- deathAndDestruction_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ deathAndDestruction_hates_diplo_stance_isolationist_avoided:0 "" 
  deathAndDestruction_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
  deathAndDestruction_hates_diplo_stance_isolationist_desc:0 "The Conquest and Dominion Faction hates the policy $diplo_stance_isolationist_name$."
+
+ deathAndDestruction_hates_enacting_diplo_stance_isolationist_avoided:0 "" 
+ deathAndDestruction_hates_enacting_diplo_stance_isolationist_unavoided:0 "Enacting $diplo_stance_isolationist_name$" 
+ deathAndDestruction_hates_enacting_diplo_stance_isolationist_desc:0 "The Conquest and Dominion Faction hates that you are enacting $diplo_stance_isolationist_name$."
  
- deathAndDestruction_hates_diplo_stance_cooperative_avoided:0 "$diplo_stance_cooperative_name$" 
+ deathAndDestruction_hates_diplo_stance_cooperative_avoided:0 "" 
  deathAndDestruction_hates_diplo_stance_cooperative_unavoided:0 "$diplo_stance_cooperative_name$" 
  deathAndDestruction_hates_diplo_stance_cooperative_desc:0 "The Conquest and Dominion Faction hates the policy $diplo_stance_cooperative_name$."
+
+ deathAndDestruction_hates_enacting_diplo_stance_cooperative_avoided:0 "" 
+ deathAndDestruction_hates_enacting_diplo_stance_cooperative_unavoided:0 "Enacting $diplo_stance_cooperative_name$" 
+ deathAndDestruction_hates_enacting_diplo_stance_cooperative_desc:0 "The Conquest and Dominion Faction hates that you are enacting $diplo_stance_cooperative_name$."
  
- deathAndDestruction_hates_diplo_stance_mercantile_avoided:0 "$diplo_stance_mercantile_name$" 
+ deathAndDestruction_hates_diplo_stance_mercantile_avoided:0 "" 
  deathAndDestruction_hates_diplo_stance_mercantile_unavoided:0 "$diplo_stance_mercantile_name$" 
  deathAndDestruction_hates_diplo_stance_mercantile_desc:0 "The Conquest and Dominion Faction hates the policy $diplo_stance_mercantile_name$."
+
+ deathAndDestruction_hates_enacting_diplo_stance_mercantile_avoided:0 "" 
+ deathAndDestruction_hates_enacting_diplo_stance_mercantile_unavoided:0 "Enacting $diplo_stance_mercantile_name$" 
+ deathAndDestruction_hates_enacting_diplo_stance_mercantile_desc:0 "The Conquest and Dominion Faction hates that you are enacting $diplo_stance_mercantile_name$."
  
- deathAndDestruction_hates_diplo_stance_purification_avoided:0 "$diplo_stance_purification_name$" 
+ deathAndDestruction_hates_diplo_stance_purification_avoided:0 "" 
  deathAndDestruction_hates_diplo_stance_purification_unavoided:0 "$diplo_stance_purification_name$" 
  deathAndDestruction_hates_diplo_stance_purification_desc:0 "The Conquest and Dominion Faction hates the policy $diplo_stance_purification_name$."
+
+ deathAndDestruction_hates_enacting_diplo_stance_purification_avoided:0 "" 
+ deathAndDestruction_hates_enacting_diplo_stance_purification_unavoided:0 "Enacting $diplo_stance_purification_name$" 
+ deathAndDestruction_hates_enacting_diplo_stance_purification_desc:0 "The Conquest and Dominion Faction hates that you are enacting $diplo_stance_purification_name$."
  
- deathAndDestruction_hates_diplo_stance_extermination_avoided:0 "$diplo_stance_extermination_name$" 
+ deathAndDestruction_hates_diplo_stance_extermination_avoided:0 "" 
  deathAndDestruction_hates_diplo_stance_extermination_unavoided:0 "$diplo_stance_extermination_name$" 
  deathAndDestruction_hates_diplo_stance_extermination_desc:0 "The Conquest and Dominion Faction hates the policy $diplo_stance_extermination_name$."
+
+ deathAndDestruction_hates_enacting_diplo_stance_extermination_avoided:0 "" 
+ deathAndDestruction_hates_enacting_diplo_stance_extermination_unavoided:0 "Enacting $diplo_stance_extermination_name$" 
+ deathAndDestruction_hates_enacting_diplo_stance_extermination_desc:0 "The Conquest and Dominion Faction hates that you are enacting $diplo_stance_extermination_name$."
  
- deathAndDestruction_hates_no_wars_avoided:0 "$no_wars_name$" 
+ deathAndDestruction_hates_no_wars_avoided:0 "" 
  deathAndDestruction_hates_no_wars_unavoided:0 "$no_wars_name$" 
  deathAndDestruction_hates_no_wars_desc:0 "The Conquest and Dominion Faction hates the policy $no_wars_name$."
+
+ deathAndDestruction_hates_enacting_no_wars_avoided:0 "" 
+ deathAndDestruction_hates_enacting_no_wars_unavoided:0 "Enacting $no_wars_name$" 
+ deathAndDestruction_hates_enacting_no_wars_desc:0 "The Conquest and Dominion Faction hates that you are enacting $no_wars_name$."
  
- deathAndDestruction_hates_merchantMarine_avoided:0 "$merchantMarine_name$" 
+ deathAndDestruction_hates_merchantMarine_avoided:0 "" 
  deathAndDestruction_hates_merchantMarine_unavoided:0 "$merchantMarine_name$" 
  deathAndDestruction_hates_merchantMarine_desc:0 "The Conquest and Dominion Faction hates the policy $merchantMarine_name$."
+
+ deathAndDestruction_hates_enacting_merchantMarine_avoided:0 "" 
+ deathAndDestruction_hates_enacting_merchantMarine_unavoided:0 "Enacting $merchantMarine_name$" 
+ deathAndDestruction_hates_enacting_merchantMarine_desc:0 "The Conquest and Dominion Faction hates that you are enacting $merchantMarine_name$."
  
- deathAndDestruction_hates_preFtlMilitaries_avoided:0 "$preFtlMilitaries_name$" 
+ deathAndDestruction_hates_preFtlMilitaries_avoided:0 "" 
  deathAndDestruction_hates_preFtlMilitaries_unavoided:0 "$preFtlMilitaries_name$" 
  deathAndDestruction_hates_preFtlMilitaries_desc:0 "The Conquest and Dominion Faction hates the policy $preFtlMilitaries_name$."
+
+ deathAndDestruction_hates_enacting_preFtlMilitaries_avoided:0 "" 
+ deathAndDestruction_hates_enacting_preFtlMilitaries_unavoided:0 "Enacting $preFtlMilitaries_name$" 
+ deathAndDestruction_hates_enacting_preFtlMilitaries_desc:0 "The Conquest and Dominion Faction hates that you are enacting $preFtlMilitaries_name$."
  
- deathAndDestruction_hates_orbital_bombardment_selective_avoided:0 "$orbital_bombardment_selective_name$" 
+ deathAndDestruction_hates_orbital_bombardment_selective_avoided:0 "" 
  deathAndDestruction_hates_orbital_bombardment_selective_unavoided:0 "$orbital_bombardment_selective_name$" 
  deathAndDestruction_hates_orbital_bombardment_selective_desc:0 "The Conquest and Dominion Faction hates the policy $orbital_bombardment_selective_name$."
+
+ deathAndDestruction_hates_enacting_orbital_bombardment_selective_avoided:0 "" 
+ deathAndDestruction_hates_enacting_orbital_bombardment_selective_unavoided:0 "Enacting $orbital_bombardment_selective_name$" 
+ deathAndDestruction_hates_enacting_orbital_bombardment_selective_desc:0 "The Conquest and Dominion Faction hates that you are enacting $orbital_bombardment_selective_name$."
  
- deathAndDestruction_hates_benevolent_terms_avoided:0 "$benevolent_terms_name$" 
+ deathAndDestruction_hates_benevolent_terms_avoided:0 "" 
  deathAndDestruction_hates_benevolent_terms_unavoided:0 "$benevolent_terms_name$" 
  deathAndDestruction_hates_benevolent_terms_desc:0 "The Conquest and Dominion Faction hates the policy $benevolent_terms_name$."
+
+ deathAndDestruction_hates_enacting_benevolent_terms_avoided:0 "" 
+ deathAndDestruction_hates_enacting_benevolent_terms_unavoided:0 "Enacting $benevolent_terms_name$" 
+ deathAndDestruction_hates_enacting_benevolent_terms_desc:0 "The Conquest and Dominion Faction hates that you are enacting $benevolent_terms_name$."
  
- deathAndDestruction_hates_benevolent_corporate_terms_avoided:0 "$benevolent_corporate_terms_name$" 
+ deathAndDestruction_hates_benevolent_corporate_terms_avoided:0 "" 
  deathAndDestruction_hates_benevolent_corporate_terms_unavoided:0 "$benevolent_corporate_terms_name$" 
  deathAndDestruction_hates_benevolent_corporate_terms_desc:0 "The Conquest and Dominion Faction hates the policy $benevolent_corporate_terms_name$."
+
+ deathAndDestruction_hates_enacting_benevolent_corporate_terms_avoided:0 "" 
+ deathAndDestruction_hates_enacting_benevolent_corporate_terms_unavoided:0 "Enacting $benevolent_corporate_terms_name$" 
+ deathAndDestruction_hates_enacting_benevolent_corporate_terms_desc:0 "The Conquest and Dominion Faction hates that you are enacting $benevolent_corporate_terms_name$."
  
- deathAndDestruction_hates_defense_in_depth_doctrine_avoided:0 "$defense_in_depth_doctrine_name$" 
+ deathAndDestruction_hates_defense_in_depth_doctrine_avoided:0 "" 
  deathAndDestruction_hates_defense_in_depth_doctrine_unavoided:0 "$defense_in_depth_doctrine_name$" 
  deathAndDestruction_hates_defense_in_depth_doctrine_desc:0 "The Conquest and Dominion Faction hates the policy $defense_in_depth_doctrine_name$."
+
+ deathAndDestruction_hates_enacting_defense_in_depth_doctrine_avoided:0 "" 
+ deathAndDestruction_hates_enacting_defense_in_depth_doctrine_unavoided:0 "Enacting $defense_in_depth_doctrine_name$" 
+ deathAndDestruction_hates_enacting_defense_in_depth_doctrine_desc:0 "The Conquest and Dominion Faction hates that you are enacting $defense_in_depth_doctrine_name$."
  
- deathAndDestruction_hates_first_contact_proactive_avoided:0 "$first_contact_proactive_name$" 
+ deathAndDestruction_hates_first_contact_proactive_avoided:0 "" 
  deathAndDestruction_hates_first_contact_proactive_unavoided:0 "$first_contact_proactive_name$" 
  deathAndDestruction_hates_first_contact_proactive_desc:0 "The Conquest and Dominion Faction hates the policy $first_contact_proactive_name$."
+
+ deathAndDestruction_hates_enacting_first_contact_proactive_avoided:0 "" 
+ deathAndDestruction_hates_enacting_first_contact_proactive_unavoided:0 "Enacting $first_contact_proactive_name$" 
+ deathAndDestruction_hates_enacting_first_contact_proactive_desc:0 "The Conquest and Dominion Faction hates that you are enacting $first_contact_proactive_name$."
  

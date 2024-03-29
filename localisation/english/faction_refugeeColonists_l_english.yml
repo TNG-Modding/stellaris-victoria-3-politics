@@ -13,51 +13,100 @@
  
  
  refugeeColonists_desires_purge_not_allowed_fulfilled:0 "$purge_not_allowed_name$" 
- refugeeColonists_desires_purge_not_allowed_unfulfilled:0 "$purge_not_allowed_name$" 
- refugeeColonists_desires_purge_not_allowed_desc:0 "The Refugee Colonists Faction likes the policy $purge_not_allowed_name$."
+ refugeeColonists_desires_purge_not_allowed_unfulfilled:0 "" 
+ refugeeColonists_desires_purge_not_allowed_desc:0 "The Refugee Colonists Faction likes $purge_not_allowed_name$."
+
+ refugeeColonists_happy_enacting_purge_not_allowed_fulfilled:0 "Enacting $purge_not_allowed_name$" 
+ refugeeColonists_happy_enacting_purge_not_allowed_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_purge_not_allowed_desc:0 "The Refugee Colonists Faction is happy you are enacting $purge_not_allowed_name$."
  
  refugeeColonists_desires_refugees_allowed_fulfilled:0 "$refugees_allowed_name$" 
- refugeeColonists_desires_refugees_allowed_unfulfilled:0 "$refugees_allowed_name$" 
- refugeeColonists_desires_refugees_allowed_desc:0 "The Refugee Colonists Faction likes the policy $refugees_allowed_name$."
+ refugeeColonists_desires_refugees_allowed_unfulfilled:0 "" 
+ refugeeColonists_desires_refugees_allowed_desc:0 "The Refugee Colonists Faction likes $refugees_allowed_name$."
+
+ refugeeColonists_happy_enacting_refugees_allowed_fulfilled:0 "Enacting $refugees_allowed_name$" 
+ refugeeColonists_happy_enacting_refugees_allowed_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_refugees_allowed_desc:0 "The Refugee Colonists Faction is happy you are enacting $refugees_allowed_name$."
  
  refugeeColonists_desires_border_policy_open_fulfilled:0 "$border_policy_open_name$" 
- refugeeColonists_desires_border_policy_open_unfulfilled:0 "$border_policy_open_name$" 
- refugeeColonists_desires_border_policy_open_desc:0 "The Refugee Colonists Faction likes the policy $border_policy_open_name$."
+ refugeeColonists_desires_border_policy_open_unfulfilled:0 "" 
+ refugeeColonists_desires_border_policy_open_desc:0 "The Refugee Colonists Faction likes $border_policy_open_name$."
+
+ refugeeColonists_happy_enacting_border_policy_open_fulfilled:0 "Enacting $border_policy_open_name$" 
+ refugeeColonists_happy_enacting_border_policy_open_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_border_policy_open_desc:0 "The Refugee Colonists Faction is happy you are enacting $border_policy_open_name$."
  
  refugeeColonists_desires_population_controls_not_allowed_fulfilled:0 "$population_controls_not_allowed_name$" 
- refugeeColonists_desires_population_controls_not_allowed_unfulfilled:0 "$population_controls_not_allowed_name$" 
- refugeeColonists_desires_population_controls_not_allowed_desc:0 "The Refugee Colonists Faction likes the policy $population_controls_not_allowed_name$."
+ refugeeColonists_desires_population_controls_not_allowed_unfulfilled:0 "" 
+ refugeeColonists_desires_population_controls_not_allowed_desc:0 "The Refugee Colonists Faction likes $population_controls_not_allowed_name$."
+
+ refugeeColonists_happy_enacting_population_controls_not_allowed_fulfilled:0 "Enacting $population_controls_not_allowed_name$" 
+ refugeeColonists_happy_enacting_population_controls_not_allowed_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_population_controls_not_allowed_desc:0 "The Refugee Colonists Faction is happy you are enacting $population_controls_not_allowed_name$."
  
  refugeeColonists_desires_pre_sapients_protect_fulfilled:0 "$pre_sapients_protect_name$" 
- refugeeColonists_desires_pre_sapients_protect_unfulfilled:0 "$pre_sapients_protect_name$" 
- refugeeColonists_desires_pre_sapients_protect_desc:0 "The Refugee Colonists Faction likes the policy $pre_sapients_protect_name$."
+ refugeeColonists_desires_pre_sapients_protect_unfulfilled:0 "" 
+ refugeeColonists_desires_pre_sapients_protect_desc:0 "The Refugee Colonists Faction likes $pre_sapients_protect_name$."
+
+ refugeeColonists_happy_enacting_pre_sapients_protect_fulfilled:0 "Enacting $pre_sapients_protect_name$" 
+ refugeeColonists_happy_enacting_pre_sapients_protect_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_pre_sapients_protect_desc:0 "The Refugee Colonists Faction is happy you are enacting $pre_sapients_protect_name$."
  
  refugeeColonists_desires_first_contact_proactive_fulfilled:0 "$first_contact_proactive_name$" 
- refugeeColonists_desires_first_contact_proactive_unfulfilled:0 "$first_contact_proactive_name$" 
- refugeeColonists_desires_first_contact_proactive_desc:0 "The Refugee Colonists Faction likes the policy $first_contact_proactive_name$."
+ refugeeColonists_desires_first_contact_proactive_unfulfilled:0 "" 
+ refugeeColonists_desires_first_contact_proactive_desc:0 "The Refugee Colonists Faction likes $first_contact_proactive_name$."
+
+ refugeeColonists_happy_enacting_first_contact_proactive_fulfilled:0 "Enacting $first_contact_proactive_name$" 
+ refugeeColonists_happy_enacting_first_contact_proactive_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_first_contact_proactive_desc:0 "The Refugee Colonists Faction is happy you are enacting $first_contact_proactive_name$."
  
  refugeeColonists_desires_pre_sapients_allow_fulfilled:0 "$pre_sapients_allow_name$" 
- refugeeColonists_desires_pre_sapients_allow_unfulfilled:0 "$pre_sapients_allow_name$" 
- refugeeColonists_desires_pre_sapients_allow_desc:0 "The Refugee Colonists Faction likes the policy $pre_sapients_allow_name$."
+ refugeeColonists_desires_pre_sapients_allow_unfulfilled:0 "" 
+ refugeeColonists_desires_pre_sapients_allow_desc:0 "The Refugee Colonists Faction likes $pre_sapients_allow_name$."
+
+ refugeeColonists_happy_enacting_pre_sapients_allow_fulfilled:0 "Enacting $pre_sapients_allow_name$" 
+ refugeeColonists_happy_enacting_pre_sapients_allow_unfulfilled:0 "" 
+ refugeeColonists_happy_enacting_pre_sapients_allow_desc:0 "The Refugee Colonists Faction is happy you are enacting $pre_sapients_allow_name$."
  
+
  
- refugeeColonists_hates_purge_allowed_avoided:0 "$purge_allowed_name$" 
+ refugeeColonists_hates_purge_allowed_avoided:0 "" 
  refugeeColonists_hates_purge_allowed_unavoided:0 "$purge_allowed_name$" 
  refugeeColonists_hates_purge_allowed_desc:0 "The Refugee Colonists Faction hates the policy $purge_allowed_name$."
+
+ refugeeColonists_hates_enacting_purge_allowed_avoided:0 "" 
+ refugeeColonists_hates_enacting_purge_allowed_unavoided:0 "Enacting $purge_allowed_name$" 
+ refugeeColonists_hates_enacting_purge_allowed_desc:0 "The Refugee Colonists Faction hates that you are enacting $purge_allowed_name$."
  
- refugeeColonists_hates_refugees_not_allowed_avoided:0 "$refugees_not_allowed_name$" 
+ refugeeColonists_hates_refugees_not_allowed_avoided:0 "" 
  refugeeColonists_hates_refugees_not_allowed_unavoided:0 "$refugees_not_allowed_name$" 
  refugeeColonists_hates_refugees_not_allowed_desc:0 "The Refugee Colonists Faction hates the policy $refugees_not_allowed_name$."
+
+ refugeeColonists_hates_enacting_refugees_not_allowed_avoided:0 "" 
+ refugeeColonists_hates_enacting_refugees_not_allowed_unavoided:0 "Enacting $refugees_not_allowed_name$" 
+ refugeeColonists_hates_enacting_refugees_not_allowed_desc:0 "The Refugee Colonists Faction hates that you are enacting $refugees_not_allowed_name$."
  
- refugeeColonists_hates_pre_sapients_eat_avoided:0 "$pre_sapients_eat_name$" 
+ refugeeColonists_hates_pre_sapients_eat_avoided:0 "" 
  refugeeColonists_hates_pre_sapients_eat_unavoided:0 "$pre_sapients_eat_name$" 
  refugeeColonists_hates_pre_sapients_eat_desc:0 "The Refugee Colonists Faction hates the policy $pre_sapients_eat_name$."
+
+ refugeeColonists_hates_enacting_pre_sapients_eat_avoided:0 "" 
+ refugeeColonists_hates_enacting_pre_sapients_eat_unavoided:0 "Enacting $pre_sapients_eat_name$" 
+ refugeeColonists_hates_enacting_pre_sapients_eat_desc:0 "The Refugee Colonists Faction hates that you are enacting $pre_sapients_eat_name$."
  
- refugeeColonists_hates_pre_sapients_purge_avoided:0 "$pre_sapients_purge_name$" 
+ refugeeColonists_hates_pre_sapients_purge_avoided:0 "" 
  refugeeColonists_hates_pre_sapients_purge_unavoided:0 "$pre_sapients_purge_name$" 
  refugeeColonists_hates_pre_sapients_purge_desc:0 "The Refugee Colonists Faction hates the policy $pre_sapients_purge_name$."
+
+ refugeeColonists_hates_enacting_pre_sapients_purge_avoided:0 "" 
+ refugeeColonists_hates_enacting_pre_sapients_purge_unavoided:0 "Enacting $pre_sapients_purge_name$" 
+ refugeeColonists_hates_enacting_pre_sapients_purge_desc:0 "The Refugee Colonists Faction hates that you are enacting $pre_sapients_purge_name$."
  
- refugeeColonists_hates_appropriation_allowed_avoided:0 "$appropriation_allowed_name$" 
+ refugeeColonists_hates_appropriation_allowed_avoided:0 "" 
  refugeeColonists_hates_appropriation_allowed_unavoided:0 "$appropriation_allowed_name$" 
  refugeeColonists_hates_appropriation_allowed_desc:0 "The Refugee Colonists Faction hates the policy $appropriation_allowed_name$."
+
+ refugeeColonists_hates_enacting_appropriation_allowed_avoided:0 "" 
+ refugeeColonists_hates_enacting_appropriation_allowed_unavoided:0 "Enacting $appropriation_allowed_name$" 
+ refugeeColonists_hates_enacting_appropriation_allowed_desc:0 "The Refugee Colonists Faction hates that you are enacting $appropriation_allowed_name$."
  

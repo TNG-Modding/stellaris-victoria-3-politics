@@ -420,7 +420,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_diplo_stance_isolationist_unfulfilled
 		desc = armedIsolationism_desires_diplo_stance_isolationist_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -435,6 +435,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_isolationist
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_diplo_stance_isolationist_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_diplo_stance_isolationist_unfulfilled
+		desc = armedIsolationism_happy_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_isolationist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_isolationist
 			}
 		}
 	}
@@ -444,7 +467,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_no_wars_unfulfilled
 		desc = armedIsolationism_desires_no_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -459,6 +482,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = no_wars
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_no_wars_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_no_wars_unfulfilled
+		desc = armedIsolationism_happy_enacting_no_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_no_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_no_wars
 			}
 		}
 	}
@@ -468,7 +514,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_border_policy_closed_unfulfilled
 		desc = armedIsolationism_desires_border_policy_closed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -483,6 +529,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = border_policy_closed
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_border_policy_closed_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_border_policy_closed_unfulfilled
+		desc = armedIsolationism_happy_enacting_border_policy_closed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_border_policy_closed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_border_policy_closed
 			}
 		}
 	}
@@ -492,7 +561,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_defense_in_depth_doctrine_unfulfilled
 		desc = armedIsolationism_desires_defense_in_depth_doctrine_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -507,6 +576,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = defense_in_depth_doctrine
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_defense_in_depth_doctrine_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_defense_in_depth_doctrine_unfulfilled
+		desc = armedIsolationism_happy_enacting_defense_in_depth_doctrine_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_defense_in_depth_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_defense_in_depth_doctrine
 			}
 		}
 	}
@@ -516,7 +608,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_first_contact_cautious_unfulfilled
 		desc = armedIsolationism_desires_first_contact_cautious_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -531,6 +623,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = first_contact_cautious
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_first_contact_cautious_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_first_contact_cautious_unfulfilled
+		desc = armedIsolationism_happy_enacting_first_contact_cautious_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_first_contact_cautious
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_first_contact_cautious
 			}
 		}
 	}
@@ -540,7 +655,7 @@ armedIsolationism = {
 		unfulfilled_title = armedIsolationism_desires_economic_policy_military_unfulfilled
 		desc = armedIsolationism_desires_economic_policy_military_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -558,13 +673,36 @@ armedIsolationism = {
 			}
 		}
 	}
+	demand = {
+		title = armedIsolationism_happy_enacting_economic_policy_military_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_economic_policy_military_unfulfilled
+		desc = armedIsolationism_happy_enacting_economic_policy_military_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+	}
 	
 	demand = {
 		title = armedIsolationism_desires_orbital_bombardment_surrender_forbidden_fulfilled
 		unfulfilled_title = armedIsolationism_desires_orbital_bombardment_surrender_forbidden_unfulfilled
 		desc = armedIsolationism_desires_orbital_bombardment_surrender_forbidden_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -579,6 +717,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_fulfilled
+		unfulfilled_title = armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_unfulfilled
+		desc = armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
 			}
 		}
 	}
@@ -607,6 +768,29 @@ armedIsolationism = {
 			}
 		}
 	}
+	demand = {
+		title = armedIsolationism_hates_enacting_diplo_stance_expansion_avoided
+		unfulfilled_title = armedIsolationism_hates_enacting_diplo_stance_expansion_unavoided
+		desc = armedIsolationism_hates_enacting_diplo_stance_expansion_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armedIsolationism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_armedIsolationism }
+			}
+		}
+	}
 	
 	demand = {
 		title = armedIsolationism_hates_unrestricted_wars_avoided
@@ -628,6 +812,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = unrestricted_wars }
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_hates_enacting_unrestricted_wars_avoided
+		unfulfilled_title = armedIsolationism_hates_enacting_unrestricted_wars_unavoided
+		desc = armedIsolationism_hates_enacting_unrestricted_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armedIsolationism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_armedIsolationism }
 			}
 		}
 	}
@@ -655,6 +862,29 @@ armedIsolationism = {
 			}
 		}
 	}
+	demand = {
+		title = armedIsolationism_hates_enacting_no_retreat_doctrine_avoided
+		unfulfilled_title = armedIsolationism_hates_enacting_no_retreat_doctrine_unavoided
+		desc = armedIsolationism_hates_enacting_no_retreat_doctrine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armedIsolationism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_armedIsolationism }
+			}
+		}
+	}
 	
 	demand = {
 		title = armedIsolationism_hates_first_contact_proactive_avoided
@@ -676,6 +906,29 @@ armedIsolationism = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = first_contact_proactive }
+			}
+		}
+	}
+	demand = {
+		title = armedIsolationism_hates_enacting_first_contact_proactive_avoided
+		unfulfilled_title = armedIsolationism_hates_enacting_first_contact_proactive_unavoided
+		desc = armedIsolationism_hates_enacting_first_contact_proactive_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armedIsolationism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_armedIsolationism }
 			}
 		}
 	}

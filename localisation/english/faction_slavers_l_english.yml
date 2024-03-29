@@ -13,11 +13,20 @@
  
  
  slavers_desires_slavery_allowed_fulfilled:0 "$slavery_allowed_name$" 
- slavers_desires_slavery_allowed_unfulfilled:0 "$slavery_allowed_name$" 
- slavers_desires_slavery_allowed_desc:0 "The Slavers Faction likes the policy $slavery_allowed_name$."
+ slavers_desires_slavery_allowed_unfulfilled:0 "" 
+ slavers_desires_slavery_allowed_desc:0 "The Slavers Faction likes $slavery_allowed_name$."
+
+ slavers_happy_enacting_slavery_allowed_fulfilled:0 "Enacting $slavery_allowed_name$" 
+ slavers_happy_enacting_slavery_allowed_unfulfilled:0 "" 
+ slavers_happy_enacting_slavery_allowed_desc:0 "The Slavers Faction is happy you are enacting $slavery_allowed_name$."
  
+
  
- slavers_hates_slavery_not_allowed_avoided:0 "$slavery_not_allowed_name$" 
+ slavers_hates_slavery_not_allowed_avoided:0 "" 
  slavers_hates_slavery_not_allowed_unavoided:0 "$slavery_not_allowed_name$" 
  slavers_hates_slavery_not_allowed_desc:0 "The Slavers Faction hates the policy $slavery_not_allowed_name$."
+
+ slavers_hates_enacting_slavery_not_allowed_avoided:0 "" 
+ slavers_hates_enacting_slavery_not_allowed_unavoided:0 "Enacting $slavery_not_allowed_name$" 
+ slavers_hates_enacting_slavery_not_allowed_desc:0 "The Slavers Faction hates that you are enacting $slavery_not_allowed_name$."
  

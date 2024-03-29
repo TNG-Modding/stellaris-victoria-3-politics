@@ -385,7 +385,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_diplo_stance_supremacist_unfulfilled
 		desc = deathAndDestruction_desires_diplo_stance_supremacist_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -400,6 +400,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_supremacist
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_diplo_stance_supremacist_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_diplo_stance_supremacist_unfulfilled
+		desc = deathAndDestruction_happy_enacting_diplo_stance_supremacist_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_supremacist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_supremacist
 			}
 		}
 	}
@@ -409,7 +432,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_diplo_stance_animosity_unfulfilled
 		desc = deathAndDestruction_desires_diplo_stance_animosity_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -424,6 +447,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_animosity
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_diplo_stance_animosity_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_diplo_stance_animosity_unfulfilled
+		desc = deathAndDestruction_happy_enacting_diplo_stance_animosity_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_animosity
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_animosity
 			}
 		}
 	}
@@ -433,7 +479,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_unrestricted_wars_unfulfilled
 		desc = deathAndDestruction_desires_unrestricted_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -448,6 +494,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = unrestricted_wars
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_unrestricted_wars_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_unrestricted_wars_unfulfilled
+		desc = deathAndDestruction_happy_enacting_unrestricted_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
 			}
 		}
 	}
@@ -457,7 +526,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_armada_unfulfilled
 		desc = deathAndDestruction_desires_armada_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -472,6 +541,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = armada
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_armada_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_armada_unfulfilled
+		desc = deathAndDestruction_happy_enacting_armada_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armada
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_armada
 			}
 		}
 	}
@@ -481,7 +573,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_grandArmy_unfulfilled
 		desc = deathAndDestruction_desires_grandArmy_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -496,6 +588,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = grandArmy
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_grandArmy_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_grandArmy_unfulfilled
+		desc = deathAndDestruction_happy_enacting_grandArmy_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_grandArmy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_grandArmy
 			}
 		}
 	}
@@ -505,7 +620,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_armageddon_unfulfilled
 		desc = deathAndDestruction_desires_orbital_bombardment_armageddon_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -520,6 +635,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_unfulfilled
+		desc = deathAndDestruction_happy_enacting_orbital_bombardment_armageddon_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_armageddon
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_armageddon
 			}
 		}
 	}
@@ -529,7 +667,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_oppressive_terms_unfulfilled
 		desc = deathAndDestruction_desires_oppressive_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -544,6 +682,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = oppressive_terms
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_oppressive_terms_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_oppressive_terms_unfulfilled
+		desc = deathAndDestruction_happy_enacting_oppressive_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_oppressive_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_oppressive_terms
 			}
 		}
 	}
@@ -553,7 +714,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_oppressive_corporate_terms_unfulfilled
 		desc = deathAndDestruction_desires_oppressive_corporate_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -568,6 +729,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_oppressive_corporate_terms_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_oppressive_corporate_terms_unfulfilled
+		desc = deathAndDestruction_happy_enacting_oppressive_corporate_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_oppressive_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_oppressive_corporate_terms
 			}
 		}
 	}
@@ -577,7 +761,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_no_retreat_doctrine_unfulfilled
 		desc = deathAndDestruction_desires_no_retreat_doctrine_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -592,6 +776,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = no_retreat_doctrine
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_no_retreat_doctrine_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_no_retreat_doctrine_unfulfilled
+		desc = deathAndDestruction_happy_enacting_no_retreat_doctrine_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_no_retreat_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_no_retreat_doctrine
 			}
 		}
 	}
@@ -601,7 +808,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_economic_policy_military_unfulfilled
 		desc = deathAndDestruction_desires_economic_policy_military_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -616,6 +823,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_military
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_economic_policy_military_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_economic_policy_military_unfulfilled
+		desc = deathAndDestruction_happy_enacting_economic_policy_military_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_military
 			}
 		}
 	}
@@ -625,7 +855,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_first_contact_attack_allowed_unfulfilled
 		desc = deathAndDestruction_desires_first_contact_attack_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -640,6 +870,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_first_contact_attack_allowed_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_first_contact_attack_allowed_unfulfilled
+		desc = deathAndDestruction_happy_enacting_first_contact_attack_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
 			}
 		}
 	}
@@ -649,7 +902,7 @@ deathAndDestruction = {
 		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_unfulfilled
 		desc = deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -667,13 +920,36 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_unfulfilled
+		desc = deathAndDestruction_happy_enacting_orbital_bombardment_surrender_forbidden_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_desires_orbital_bombardment_indiscriminate_fulfilled
 		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_indiscriminate_unfulfilled
 		desc = deathAndDestruction_desires_orbital_bombardment_indiscriminate_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -688,6 +964,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_fulfilled
+		unfulfilled_title = deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_unfulfilled
+		desc = deathAndDestruction_happy_enacting_orbital_bombardment_indiscriminate_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_indiscriminate
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_indiscriminate
 			}
 		}
 	}
@@ -716,6 +1015,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = deathAndDestruction_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_diplo_stance_cooperative_avoided
@@ -737,6 +1059,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = diplo_stance_cooperative }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_diplo_stance_cooperative_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_diplo_stance_cooperative_unavoided
+		desc = deathAndDestruction_hates_enacting_diplo_stance_cooperative_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}
@@ -764,6 +1109,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_diplo_stance_mercantile_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_diplo_stance_mercantile_unavoided
+		desc = deathAndDestruction_hates_enacting_diplo_stance_mercantile_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_diplo_stance_purification_avoided
@@ -785,6 +1153,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = diplo_stance_purification }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_diplo_stance_purification_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_diplo_stance_purification_unavoided
+		desc = deathAndDestruction_hates_enacting_diplo_stance_purification_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}
@@ -812,6 +1203,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_diplo_stance_extermination_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_diplo_stance_extermination_unavoided
+		desc = deathAndDestruction_hates_enacting_diplo_stance_extermination_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_no_wars_avoided
@@ -833,6 +1247,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = no_wars }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_no_wars_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_no_wars_unavoided
+		desc = deathAndDestruction_hates_enacting_no_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}
@@ -860,6 +1297,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_merchantMarine_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_merchantMarine_unavoided
+		desc = deathAndDestruction_hates_enacting_merchantMarine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_preFtlMilitaries_avoided
@@ -881,6 +1341,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = preFtlMilitaries }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_preFtlMilitaries_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_preFtlMilitaries_unavoided
+		desc = deathAndDestruction_hates_enacting_preFtlMilitaries_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}
@@ -908,6 +1391,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_orbital_bombardment_selective_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_orbital_bombardment_selective_unavoided
+		desc = deathAndDestruction_hates_enacting_orbital_bombardment_selective_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_benevolent_terms_avoided
@@ -929,6 +1435,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = benevolent_terms }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_benevolent_terms_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_benevolent_terms_unavoided
+		desc = deathAndDestruction_hates_enacting_benevolent_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}
@@ -956,6 +1485,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_benevolent_corporate_terms_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_benevolent_corporate_terms_unavoided
+		desc = deathAndDestruction_hates_enacting_benevolent_corporate_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_defense_in_depth_doctrine_avoided
@@ -980,6 +1532,29 @@ deathAndDestruction = {
 			}
 		}
 	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_defense_in_depth_doctrine_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_defense_in_depth_doctrine_unavoided
+		desc = deathAndDestruction_hates_enacting_defense_in_depth_doctrine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
+			}
+		}
+	}
 	
 	demand = {
 		title = deathAndDestruction_hates_first_contact_proactive_avoided
@@ -1001,6 +1576,29 @@ deathAndDestruction = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = first_contact_proactive }
+			}
+		}
+	}
+	demand = {
+		title = deathAndDestruction_hates_enacting_first_contact_proactive_avoided
+		unfulfilled_title = deathAndDestruction_hates_enacting_first_contact_proactive_unavoided
+		desc = deathAndDestruction_hates_enacting_first_contact_proactive_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_deathAndDestruction
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_deathAndDestruction }
 			}
 		}
 	}

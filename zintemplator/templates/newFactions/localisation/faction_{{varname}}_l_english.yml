@@ -13,11 +13,20 @@ l_english:
  
  {% for policy in supportedPolicies %}
  {{varname}}_desires_{{policy}}_fulfilled:0 "${{policy}}_name$" 
- {{varname}}_desires_{{policy}}_unfulfilled:0 "${{policy}}_name$" 
- {{varname}}_desires_{{policy}}_desc:0 "The {{displayName}} Faction likes the policy ${{policy}}_name$."
+ {{varname}}_desires_{{policy}}_unfulfilled:0 "" 
+ {{varname}}_desires_{{policy}}_desc:0 "The {{displayName}} Faction likes ${{policy}}_name$."
+
+ {{varname}}_happy_enacting_{{policy}}_fulfilled:0 "Enacting ${{policy}}_name$" 
+ {{varname}}_happy_enacting_{{policy}}_unfulfilled:0 "" 
+ {{varname}}_happy_enacting_{{policy}}_desc:0 "The {{displayName}} Faction is happy you are enacting ${{policy}}_name$."
  {% endfor %}
+
  {% for policy in againstPolicies %}
- {{varname}}_hates_{{policy}}_avoided:0 "${{policy}}_name$" 
+ {{varname}}_hates_{{policy}}_avoided:0 "" 
  {{varname}}_hates_{{policy}}_unavoided:0 "${{policy}}_name$" 
  {{varname}}_hates_{{policy}}_desc:0 "The {{displayName}} Faction hates the policy ${{policy}}_name$."
+
+ {{varname}}_hates_enacting_{{policy}}_avoided:0 "" 
+ {{varname}}_hates_enacting_{{policy}}_unavoided:0 "Enacting ${{policy}}_name$" 
+ {{varname}}_hates_enacting_{{policy}}_desc:0 "The {{displayName}} Faction hates that you are enacting ${{policy}}_name$."
  {% endfor %}

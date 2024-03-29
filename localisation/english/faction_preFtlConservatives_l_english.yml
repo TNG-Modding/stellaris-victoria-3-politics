@@ -13,15 +13,28 @@
  
  
  preFtlConservatives_desires_preFtlPoliticalOrganization_fulfilled:0 "$preFtlPoliticalOrganization_name$" 
- preFtlConservatives_desires_preFtlPoliticalOrganization_unfulfilled:0 "$preFtlPoliticalOrganization_name$" 
- preFtlConservatives_desires_preFtlPoliticalOrganization_desc:0 "The Pre-FTL Conservatives Faction likes the policy $preFtlPoliticalOrganization_name$."
+ preFtlConservatives_desires_preFtlPoliticalOrganization_unfulfilled:0 "" 
+ preFtlConservatives_desires_preFtlPoliticalOrganization_desc:0 "The Pre-FTL Conservatives Faction likes $preFtlPoliticalOrganization_name$."
+
+ preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_fulfilled:0 "Enacting $preFtlPoliticalOrganization_name$" 
+ preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_unfulfilled:0 "" 
+ preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_desc:0 "The Pre-FTL Conservatives Faction is happy you are enacting $preFtlPoliticalOrganization_name$."
  
  preFtlConservatives_desires_dependentColonies_fulfilled:0 "$dependentColonies_name$" 
- preFtlConservatives_desires_dependentColonies_unfulfilled:0 "$dependentColonies_name$" 
- preFtlConservatives_desires_dependentColonies_desc:0 "The Pre-FTL Conservatives Faction likes the policy $dependentColonies_name$."
+ preFtlConservatives_desires_dependentColonies_unfulfilled:0 "" 
+ preFtlConservatives_desires_dependentColonies_desc:0 "The Pre-FTL Conservatives Faction likes $dependentColonies_name$."
+
+ preFtlConservatives_happy_enacting_dependentColonies_fulfilled:0 "Enacting $dependentColonies_name$" 
+ preFtlConservatives_happy_enacting_dependentColonies_unfulfilled:0 "" 
+ preFtlConservatives_happy_enacting_dependentColonies_desc:0 "The Pre-FTL Conservatives Faction is happy you are enacting $dependentColonies_name$."
  
  preFtlConservatives_desires_preFtlMilitaries_fulfilled:0 "$preFtlMilitaries_name$" 
- preFtlConservatives_desires_preFtlMilitaries_unfulfilled:0 "$preFtlMilitaries_name$" 
- preFtlConservatives_desires_preFtlMilitaries_desc:0 "The Pre-FTL Conservatives Faction likes the policy $preFtlMilitaries_name$."
+ preFtlConservatives_desires_preFtlMilitaries_unfulfilled:0 "" 
+ preFtlConservatives_desires_preFtlMilitaries_desc:0 "The Pre-FTL Conservatives Faction likes $preFtlMilitaries_name$."
+
+ preFtlConservatives_happy_enacting_preFtlMilitaries_fulfilled:0 "Enacting $preFtlMilitaries_name$" 
+ preFtlConservatives_happy_enacting_preFtlMilitaries_unfulfilled:0 "" 
+ preFtlConservatives_happy_enacting_preFtlMilitaries_desc:0 "The Pre-FTL Conservatives Faction is happy you are enacting $preFtlMilitaries_name$."
  
+
  

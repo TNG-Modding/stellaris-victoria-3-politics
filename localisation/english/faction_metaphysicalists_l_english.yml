@@ -13,11 +13,20 @@
  
  
  metaphysicalists_desires_ai_servitude_fulfilled:0 "$ai_servitude_name$" 
- metaphysicalists_desires_ai_servitude_unfulfilled:0 "$ai_servitude_name$" 
- metaphysicalists_desires_ai_servitude_desc:0 "The Metaphysicalists Faction likes the policy $ai_servitude_name$."
+ metaphysicalists_desires_ai_servitude_unfulfilled:0 "" 
+ metaphysicalists_desires_ai_servitude_desc:0 "The Metaphysicalists Faction likes $ai_servitude_name$."
+
+ metaphysicalists_happy_enacting_ai_servitude_fulfilled:0 "Enacting $ai_servitude_name$" 
+ metaphysicalists_happy_enacting_ai_servitude_unfulfilled:0 "" 
+ metaphysicalists_happy_enacting_ai_servitude_desc:0 "The Metaphysicalists Faction is happy you are enacting $ai_servitude_name$."
  
+
  
- metaphysicalists_hates_ai_full_rights_avoided:0 "$ai_full_rights_name$" 
+ metaphysicalists_hates_ai_full_rights_avoided:0 "" 
  metaphysicalists_hates_ai_full_rights_unavoided:0 "$ai_full_rights_name$" 
  metaphysicalists_hates_ai_full_rights_desc:0 "The Metaphysicalists Faction hates the policy $ai_full_rights_name$."
+
+ metaphysicalists_hates_enacting_ai_full_rights_avoided:0 "" 
+ metaphysicalists_hates_enacting_ai_full_rights_unavoided:0 "Enacting $ai_full_rights_name$" 
+ metaphysicalists_hates_enacting_ai_full_rights_desc:0 "The Metaphysicalists Faction hates that you are enacting $ai_full_rights_name$."
  

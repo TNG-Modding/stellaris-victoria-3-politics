@@ -13,27 +13,52 @@
  
  
  consolidationists_desires_resettlement_allowed_fulfilled:0 "$resettlement_allowed_name$" 
- consolidationists_desires_resettlement_allowed_unfulfilled:0 "$resettlement_allowed_name$" 
- consolidationists_desires_resettlement_allowed_desc:0 "The Consolidationists Faction likes the policy $resettlement_allowed_name$."
+ consolidationists_desires_resettlement_allowed_unfulfilled:0 "" 
+ consolidationists_desires_resettlement_allowed_desc:0 "The Consolidationists Faction likes $resettlement_allowed_name$."
+
+ consolidationists_happy_enacting_resettlement_allowed_fulfilled:0 "Enacting $resettlement_allowed_name$" 
+ consolidationists_happy_enacting_resettlement_allowed_unfulfilled:0 "" 
+ consolidationists_happy_enacting_resettlement_allowed_desc:0 "The Consolidationists Faction is happy you are enacting $resettlement_allowed_name$."
  
  consolidationists_desires_interplanetaryGoverance_fulfilled:0 "$interplanetaryGoverance_name$" 
- consolidationists_desires_interplanetaryGoverance_unfulfilled:0 "$interplanetaryGoverance_name$" 
- consolidationists_desires_interplanetaryGoverance_desc:0 "The Consolidationists Faction likes the policy $interplanetaryGoverance_name$."
+ consolidationists_desires_interplanetaryGoverance_unfulfilled:0 "" 
+ consolidationists_desires_interplanetaryGoverance_desc:0 "The Consolidationists Faction likes $interplanetaryGoverance_name$."
+
+ consolidationists_happy_enacting_interplanetaryGoverance_fulfilled:0 "Enacting $interplanetaryGoverance_name$" 
+ consolidationists_happy_enacting_interplanetaryGoverance_unfulfilled:0 "" 
+ consolidationists_happy_enacting_interplanetaryGoverance_desc:0 "The Consolidationists Faction is happy you are enacting $interplanetaryGoverance_name$."
  
  consolidationists_desires_economic_policy_balanced_fulfilled:0 "$economic_policy_balanced_name$" 
- consolidationists_desires_economic_policy_balanced_unfulfilled:0 "$economic_policy_balanced_name$" 
- consolidationists_desires_economic_policy_balanced_desc:0 "The Consolidationists Faction likes the policy $economic_policy_balanced_name$."
+ consolidationists_desires_economic_policy_balanced_unfulfilled:0 "" 
+ consolidationists_desires_economic_policy_balanced_desc:0 "The Consolidationists Faction likes $economic_policy_balanced_name$."
+
+ consolidationists_happy_enacting_economic_policy_balanced_fulfilled:0 "Enacting $economic_policy_balanced_name$" 
+ consolidationists_happy_enacting_economic_policy_balanced_unfulfilled:0 "" 
+ consolidationists_happy_enacting_economic_policy_balanced_desc:0 "The Consolidationists Faction is happy you are enacting $economic_policy_balanced_name$."
  
  consolidationists_desires_diplo_stance_mercantile_fulfilled:0 "$diplo_stance_mercantile_name$" 
- consolidationists_desires_diplo_stance_mercantile_unfulfilled:0 "$diplo_stance_mercantile_name$" 
- consolidationists_desires_diplo_stance_mercantile_desc:0 "The Consolidationists Faction likes the policy $diplo_stance_mercantile_name$."
+ consolidationists_desires_diplo_stance_mercantile_unfulfilled:0 "" 
+ consolidationists_desires_diplo_stance_mercantile_desc:0 "The Consolidationists Faction likes $diplo_stance_mercantile_name$."
+
+ consolidationists_happy_enacting_diplo_stance_mercantile_fulfilled:0 "Enacting $diplo_stance_mercantile_name$" 
+ consolidationists_happy_enacting_diplo_stance_mercantile_unfulfilled:0 "" 
+ consolidationists_happy_enacting_diplo_stance_mercantile_desc:0 "The Consolidationists Faction is happy you are enacting $diplo_stance_mercantile_name$."
  
  consolidationists_desires_diplo_stance_cooperative_fulfilled:0 "$diplo_stance_cooperative_name$" 
- consolidationists_desires_diplo_stance_cooperative_unfulfilled:0 "$diplo_stance_cooperative_name$" 
- consolidationists_desires_diplo_stance_cooperative_desc:0 "The Consolidationists Faction likes the policy $diplo_stance_cooperative_name$."
+ consolidationists_desires_diplo_stance_cooperative_unfulfilled:0 "" 
+ consolidationists_desires_diplo_stance_cooperative_desc:0 "The Consolidationists Faction likes $diplo_stance_cooperative_name$."
+
+ consolidationists_happy_enacting_diplo_stance_cooperative_fulfilled:0 "Enacting $diplo_stance_cooperative_name$" 
+ consolidationists_happy_enacting_diplo_stance_cooperative_unfulfilled:0 "" 
+ consolidationists_happy_enacting_diplo_stance_cooperative_desc:0 "The Consolidationists Faction is happy you are enacting $diplo_stance_cooperative_name$."
  
+
  
- consolidationists_hates_diplo_stance_expansion_avoided:0 "$diplo_stance_expansion_name$" 
+ consolidationists_hates_diplo_stance_expansion_avoided:0 "" 
  consolidationists_hates_diplo_stance_expansion_unavoided:0 "$diplo_stance_expansion_name$" 
  consolidationists_hates_diplo_stance_expansion_desc:0 "The Consolidationists Faction hates the policy $diplo_stance_expansion_name$."
+
+ consolidationists_hates_enacting_diplo_stance_expansion_avoided:0 "" 
+ consolidationists_hates_enacting_diplo_stance_expansion_unavoided:0 "Enacting $diplo_stance_expansion_name$" 
+ consolidationists_hates_enacting_diplo_stance_expansion_desc:0 "The Consolidationists Faction hates that you are enacting $diplo_stance_expansion_name$."
  

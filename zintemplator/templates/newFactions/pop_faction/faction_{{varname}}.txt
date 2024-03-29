@@ -366,7 +366,7 @@
 		unfulfilled_title = {{varname}}_desires_{{policy}}_unfulfilled
 		desc = {{varname}}_desires_{{policy}}_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -381,6 +381,29 @@
 		trigger = {
 			owner = {
 				has_policy_flag = {{policy}}
+			}
+		}
+	}
+	demand = {
+		title = {{varname}}_happy_enacting_{{policy}}_fulfilled
+		unfulfilled_title = {{varname}}_happy_enacting_{{policy}}_unfulfilled
+		desc = {{varname}}_happy_enacting_{{policy}}_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_{{policy}}
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_{{policy}}
 			}
 		}
 	}
@@ -406,6 +429,29 @@
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = {{policy}} }
+			}
+		}
+	}
+	demand = {
+		title = {{varname}}_hates_enacting_{{policy}}_avoided
+		unfulfilled_title = {{varname}}_hates_enacting_{{policy}}_unavoided
+		desc = {{varname}}_hates_enacting_{{policy}}_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_{{varname}}
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_{{varname}} }
 			}
 		}
 	}

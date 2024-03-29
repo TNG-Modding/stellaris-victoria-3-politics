@@ -385,7 +385,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_diplo_stance_supremacist_unfulfilled
 		desc = jihadism_desires_diplo_stance_supremacist_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -400,6 +400,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_supremacist
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_diplo_stance_supremacist_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_diplo_stance_supremacist_unfulfilled
+		desc = jihadism_happy_enacting_diplo_stance_supremacist_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_supremacist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_supremacist
 			}
 		}
 	}
@@ -409,7 +432,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_diplo_stance_belligerent_unfulfilled
 		desc = jihadism_desires_diplo_stance_belligerent_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -424,6 +447,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_belligerent
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_diplo_stance_belligerent_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_diplo_stance_belligerent_unfulfilled
+		desc = jihadism_happy_enacting_diplo_stance_belligerent_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
 			}
 		}
 	}
@@ -433,7 +479,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_liberation_wars_unfulfilled
 		desc = jihadism_desires_liberation_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -448,6 +494,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = liberation_wars
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_liberation_wars_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_liberation_wars_unfulfilled
+		desc = jihadism_happy_enacting_liberation_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_liberation_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_liberation_wars
 			}
 		}
 	}
@@ -457,7 +526,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_interference_aggressive_unfulfilled
 		desc = jihadism_desires_interference_aggressive_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -472,6 +541,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = interference_aggressive
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_interference_aggressive_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_interference_aggressive_unfulfilled
+		desc = jihadism_happy_enacting_interference_aggressive_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_interference_aggressive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_interference_aggressive
 			}
 		}
 	}
@@ -481,7 +573,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_enlightenment_allowed_unfulfilled
 		desc = jihadism_desires_enlightenment_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -496,6 +588,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = enlightenment_allowed
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_enlightenment_allowed_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_enlightenment_allowed_unfulfilled
+		desc = jihadism_happy_enacting_enlightenment_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_enlightenment_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_enlightenment_allowed
 			}
 		}
 	}
@@ -505,7 +620,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_spacefaringStandingArmy_unfulfilled
 		desc = jihadism_desires_spacefaringStandingArmy_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -520,6 +635,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = spacefaringStandingArmy
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_spacefaringStandingArmy_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_spacefaringStandingArmy_unfulfilled
+		desc = jihadism_happy_enacting_spacefaringStandingArmy_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_spacefaringStandingArmy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_spacefaringStandingArmy
 			}
 		}
 	}
@@ -529,7 +667,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_floatingNavy_unfulfilled
 		desc = jihadism_desires_floatingNavy_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -544,6 +682,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = floatingNavy
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_floatingNavy_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_floatingNavy_unfulfilled
+		desc = jihadism_happy_enacting_floatingNavy_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_floatingNavy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_floatingNavy
 			}
 		}
 	}
@@ -553,7 +714,7 @@ jihadism = {
 		unfulfilled_title = jihadism_desires_economic_policy_military_unfulfilled
 		desc = jihadism_desires_economic_policy_military_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -571,13 +732,36 @@ jihadism = {
 			}
 		}
 	}
+	demand = {
+		title = jihadism_happy_enacting_economic_policy_military_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_economic_policy_military_unfulfilled
+		desc = jihadism_happy_enacting_economic_policy_military_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+	}
 	
 	demand = {
 		title = jihadism_desires_first_contact_attack_allowed_fulfilled
 		unfulfilled_title = jihadism_desires_first_contact_attack_allowed_unfulfilled
 		desc = jihadism_desires_first_contact_attack_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -592,6 +776,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+	}
+	demand = {
+		title = jihadism_happy_enacting_first_contact_attack_allowed_fulfilled
+		unfulfilled_title = jihadism_happy_enacting_first_contact_attack_allowed_unfulfilled
+		desc = jihadism_happy_enacting_first_contact_attack_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
 			}
 		}
 	}
@@ -620,6 +827,29 @@ jihadism = {
 			}
 		}
 	}
+	demand = {
+		title = jihadism_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = jihadism_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = jihadism_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
+			}
+		}
+	}
 	
 	demand = {
 		title = jihadism_hates_diplo_stance_purification_avoided
@@ -641,6 +871,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = diplo_stance_purification }
+			}
+		}
+	}
+	demand = {
+		title = jihadism_hates_enacting_diplo_stance_purification_avoided
+		unfulfilled_title = jihadism_hates_enacting_diplo_stance_purification_unavoided
+		desc = jihadism_hates_enacting_diplo_stance_purification_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
 			}
 		}
 	}
@@ -668,6 +921,29 @@ jihadism = {
 			}
 		}
 	}
+	demand = {
+		title = jihadism_hates_enacting_diplo_stance_extermination_avoided
+		unfulfilled_title = jihadism_hates_enacting_diplo_stance_extermination_unavoided
+		desc = jihadism_hates_enacting_diplo_stance_extermination_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
+			}
+		}
+	}
 	
 	demand = {
 		title = jihadism_hates_no_wars_avoided
@@ -689,6 +965,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = no_wars }
+			}
+		}
+	}
+	demand = {
+		title = jihadism_hates_enacting_no_wars_avoided
+		unfulfilled_title = jihadism_hates_enacting_no_wars_unavoided
+		desc = jihadism_hates_enacting_no_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
 			}
 		}
 	}
@@ -716,6 +1015,29 @@ jihadism = {
 			}
 		}
 	}
+	demand = {
+		title = jihadism_hates_enacting_interference_not_allowed_avoided
+		unfulfilled_title = jihadism_hates_enacting_interference_not_allowed_unavoided
+		desc = jihadism_hates_enacting_interference_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
+			}
+		}
+	}
 	
 	demand = {
 		title = jihadism_hates_enlightenment_not_allowed_avoided
@@ -737,6 +1059,29 @@ jihadism = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = enlightenment_not_allowed }
+			}
+		}
+	}
+	demand = {
+		title = jihadism_hates_enacting_enlightenment_not_allowed_avoided
+		unfulfilled_title = jihadism_hates_enacting_enlightenment_not_allowed_unavoided
+		desc = jihadism_hates_enacting_enlightenment_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_jihadism
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_jihadism }
 			}
 		}
 	}

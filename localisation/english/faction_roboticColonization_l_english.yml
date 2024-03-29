@@ -13,39 +13,76 @@
  
  
  roboticColonization_desires_dependentColonies_fulfilled:0 "$dependentColonies_name$" 
- roboticColonization_desires_dependentColonies_unfulfilled:0 "$dependentColonies_name$" 
- roboticColonization_desires_dependentColonies_desc:0 "The Robotic Colonization Faction likes the policy $dependentColonies_name$."
+ roboticColonization_desires_dependentColonies_unfulfilled:0 "" 
+ roboticColonization_desires_dependentColonies_desc:0 "The Robotic Colonization Faction likes $dependentColonies_name$."
+
+ roboticColonization_happy_enacting_dependentColonies_fulfilled:0 "Enacting $dependentColonies_name$" 
+ roboticColonization_happy_enacting_dependentColonies_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_dependentColonies_desc:0 "The Robotic Colonization Faction is happy you are enacting $dependentColonies_name$."
  
  roboticColonization_desires_robot_pops_allowed_fulfilled:0 "$robot_pops_allowed_name$" 
- roboticColonization_desires_robot_pops_allowed_unfulfilled:0 "$robot_pops_allowed_name$" 
- roboticColonization_desires_robot_pops_allowed_desc:0 "The Robotic Colonization Faction likes the policy $robot_pops_allowed_name$."
+ roboticColonization_desires_robot_pops_allowed_unfulfilled:0 "" 
+ roboticColonization_desires_robot_pops_allowed_desc:0 "The Robotic Colonization Faction likes $robot_pops_allowed_name$."
+
+ roboticColonization_happy_enacting_robot_pops_allowed_fulfilled:0 "Enacting $robot_pops_allowed_name$" 
+ roboticColonization_happy_enacting_robot_pops_allowed_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_robot_pops_allowed_desc:0 "The Robotic Colonization Faction is happy you are enacting $robot_pops_allowed_name$."
  
  roboticColonization_desires_diplo_stance_expansionist_fulfilled:0 "$diplo_stance_expansionist_name$" 
- roboticColonization_desires_diplo_stance_expansionist_unfulfilled:0 "$diplo_stance_expansionist_name$" 
- roboticColonization_desires_diplo_stance_expansionist_desc:0 "The Robotic Colonization Faction likes the policy $diplo_stance_expansionist_name$."
+ roboticColonization_desires_diplo_stance_expansionist_unfulfilled:0 "" 
+ roboticColonization_desires_diplo_stance_expansionist_desc:0 "The Robotic Colonization Faction likes $diplo_stance_expansionist_name$."
+
+ roboticColonization_happy_enacting_diplo_stance_expansionist_fulfilled:0 "Enacting $diplo_stance_expansionist_name$" 
+ roboticColonization_happy_enacting_diplo_stance_expansionist_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_diplo_stance_expansionist_desc:0 "The Robotic Colonization Faction is happy you are enacting $diplo_stance_expansionist_name$."
  
  roboticColonization_desires_ai_servitude_fulfilled:0 "$ai_servitude_name$" 
- roboticColonization_desires_ai_servitude_unfulfilled:0 "$ai_servitude_name$" 
- roboticColonization_desires_ai_servitude_desc:0 "The Robotic Colonization Faction likes the policy $ai_servitude_name$."
+ roboticColonization_desires_ai_servitude_unfulfilled:0 "" 
+ roboticColonization_desires_ai_servitude_desc:0 "The Robotic Colonization Faction likes $ai_servitude_name$."
+
+ roboticColonization_happy_enacting_ai_servitude_fulfilled:0 "Enacting $ai_servitude_name$" 
+ roboticColonization_happy_enacting_ai_servitude_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_ai_servitude_desc:0 "The Robotic Colonization Faction is happy you are enacting $ai_servitude_name$."
  
  roboticColonization_desires_appropriation_not_allowed_fulfilled:0 "$appropriation_not_allowed_name$" 
- roboticColonization_desires_appropriation_not_allowed_unfulfilled:0 "$appropriation_not_allowed_name$" 
- roboticColonization_desires_appropriation_not_allowed_desc:0 "The Robotic Colonization Faction likes the policy $appropriation_not_allowed_name$."
+ roboticColonization_desires_appropriation_not_allowed_unfulfilled:0 "" 
+ roboticColonization_desires_appropriation_not_allowed_desc:0 "The Robotic Colonization Faction likes $appropriation_not_allowed_name$."
+
+ roboticColonization_happy_enacting_appropriation_not_allowed_fulfilled:0 "Enacting $appropriation_not_allowed_name$" 
+ roboticColonization_happy_enacting_appropriation_not_allowed_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_appropriation_not_allowed_desc:0 "The Robotic Colonization Faction is happy you are enacting $appropriation_not_allowed_name$."
  
  roboticColonization_desires_economic_policy_civilian_fulfilled:0 "$economic_policy_civilian_name$" 
- roboticColonization_desires_economic_policy_civilian_unfulfilled:0 "$economic_policy_civilian_name$" 
- roboticColonization_desires_economic_policy_civilian_desc:0 "The Robotic Colonization Faction likes the policy $economic_policy_civilian_name$."
+ roboticColonization_desires_economic_policy_civilian_unfulfilled:0 "" 
+ roboticColonization_desires_economic_policy_civilian_desc:0 "The Robotic Colonization Faction likes $economic_policy_civilian_name$."
+
+ roboticColonization_happy_enacting_economic_policy_civilian_fulfilled:0 "Enacting $economic_policy_civilian_name$" 
+ roboticColonization_happy_enacting_economic_policy_civilian_unfulfilled:0 "" 
+ roboticColonization_happy_enacting_economic_policy_civilian_desc:0 "The Robotic Colonization Faction is happy you are enacting $economic_policy_civilian_name$."
  
+
  
- roboticColonization_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ roboticColonization_hates_diplo_stance_isolationist_avoided:0 "" 
  roboticColonization_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
  roboticColonization_hates_diplo_stance_isolationist_desc:0 "The Robotic Colonization Faction hates the policy $diplo_stance_isolationist_name$."
+
+ roboticColonization_hates_enacting_diplo_stance_isolationist_avoided:0 "" 
+ roboticColonization_hates_enacting_diplo_stance_isolationist_unavoided:0 "Enacting $diplo_stance_isolationist_name$" 
+ roboticColonization_hates_enacting_diplo_stance_isolationist_desc:0 "The Robotic Colonization Faction hates that you are enacting $diplo_stance_isolationist_name$."
  
- roboticColonization_hates_ai_full_rights_avoided:0 "$ai_full_rights_name$" 
+ roboticColonization_hates_ai_full_rights_avoided:0 "" 
  roboticColonization_hates_ai_full_rights_unavoided:0 "$ai_full_rights_name$" 
  roboticColonization_hates_ai_full_rights_desc:0 "The Robotic Colonization Faction hates the policy $ai_full_rights_name$."
+
+ roboticColonization_hates_enacting_ai_full_rights_avoided:0 "" 
+ roboticColonization_hates_enacting_ai_full_rights_unavoided:0 "Enacting $ai_full_rights_name$" 
+ roboticColonization_hates_enacting_ai_full_rights_desc:0 "The Robotic Colonization Faction hates that you are enacting $ai_full_rights_name$."
  
- roboticColonization_hates_robot_pops_outlawed_avoided:0 "$robot_pops_outlawed_name$" 
+ roboticColonization_hates_robot_pops_outlawed_avoided:0 "" 
  roboticColonization_hates_robot_pops_outlawed_unavoided:0 "$robot_pops_outlawed_name$" 
  roboticColonization_hates_robot_pops_outlawed_desc:0 "The Robotic Colonization Faction hates the policy $robot_pops_outlawed_name$."
+
+ roboticColonization_hates_enacting_robot_pops_outlawed_avoided:0 "" 
+ roboticColonization_hates_enacting_robot_pops_outlawed_unavoided:0 "Enacting $robot_pops_outlawed_name$" 
+ roboticColonization_hates_enacting_robot_pops_outlawed_desc:0 "The Robotic Colonization Faction hates that you are enacting $robot_pops_outlawed_name$."
  

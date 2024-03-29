@@ -380,7 +380,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_diplo_stance_belligerent_unfulfilled
 		desc = realpolitik_desires_diplo_stance_belligerent_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -395,6 +395,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_belligerent
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_diplo_stance_belligerent_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_diplo_stance_belligerent_unfulfilled
+		desc = realpolitik_happy_enacting_diplo_stance_belligerent_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
 			}
 		}
 	}
@@ -404,7 +427,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_unrestricted_wars_unfulfilled
 		desc = realpolitik_desires_unrestricted_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -419,6 +442,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = unrestricted_wars
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_unrestricted_wars_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_unrestricted_wars_unfulfilled
+		desc = realpolitik_happy_enacting_unrestricted_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
 			}
 		}
 	}
@@ -428,7 +474,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_orbital_bombardment_selective_unfulfilled
 		desc = realpolitik_desires_orbital_bombardment_selective_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -443,6 +489,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_selective
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_orbital_bombardment_selective_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_orbital_bombardment_selective_unfulfilled
+		desc = realpolitik_happy_enacting_orbital_bombardment_selective_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_selective
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_selective
 			}
 		}
 	}
@@ -452,7 +521,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_rapid_deployment_doctrine_unfulfilled
 		desc = realpolitik_desires_rapid_deployment_doctrine_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -467,6 +536,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = rapid_deployment_doctrine
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_rapid_deployment_doctrine_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_rapid_deployment_doctrine_unfulfilled
+		desc = realpolitik_happy_enacting_rapid_deployment_doctrine_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_rapid_deployment_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_rapid_deployment_doctrine
 			}
 		}
 	}
@@ -476,7 +568,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_balanced_terms_unfulfilled
 		desc = realpolitik_desires_balanced_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -491,6 +583,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = balanced_terms
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_balanced_terms_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_balanced_terms_unfulfilled
+		desc = realpolitik_happy_enacting_balanced_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_balanced_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_balanced_terms
 			}
 		}
 	}
@@ -500,7 +615,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_balanced_corporate_terms_unfulfilled
 		desc = realpolitik_desires_balanced_corporate_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -515,6 +630,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = balanced_corporate_terms
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_balanced_corporate_terms_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_balanced_corporate_terms_unfulfilled
+		desc = realpolitik_happy_enacting_balanced_corporate_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_balanced_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_balanced_corporate_terms
 			}
 		}
 	}
@@ -524,7 +662,7 @@ realpolitik = {
 		unfulfilled_title = realpolitik_desires_economic_policy_balanced_unfulfilled
 		desc = realpolitik_desires_economic_policy_balanced_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -542,13 +680,36 @@ realpolitik = {
 			}
 		}
 	}
+	demand = {
+		title = realpolitik_happy_enacting_economic_policy_balanced_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_economic_policy_balanced_unfulfilled
+		desc = realpolitik_happy_enacting_economic_policy_balanced_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
+			}
+		}
+	}
 	
 	demand = {
 		title = realpolitik_desires_orbital_bombardment_surrender_allowed_fulfilled
 		unfulfilled_title = realpolitik_desires_orbital_bombardment_surrender_allowed_unfulfilled
 		desc = realpolitik_desires_orbital_bombardment_surrender_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -563,6 +724,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_surrender_allowed
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_happy_enacting_orbital_bombardment_surrender_allowed_fulfilled
+		unfulfilled_title = realpolitik_happy_enacting_orbital_bombardment_surrender_allowed_unfulfilled
+		desc = realpolitik_happy_enacting_orbital_bombardment_surrender_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_allowed
 			}
 		}
 	}
@@ -591,6 +775,29 @@ realpolitik = {
 			}
 		}
 	}
+	demand = {
+		title = realpolitik_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = realpolitik_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = realpolitik_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
+			}
+		}
+	}
 	
 	demand = {
 		title = realpolitik_hates_no_wars_avoided
@@ -612,6 +819,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = no_wars }
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_hates_enacting_no_wars_avoided
+		unfulfilled_title = realpolitik_hates_enacting_no_wars_unavoided
+		desc = realpolitik_hates_enacting_no_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
 			}
 		}
 	}
@@ -639,6 +869,29 @@ realpolitik = {
 			}
 		}
 	}
+	demand = {
+		title = realpolitik_hates_enacting_orbital_bombardment_armageddon_avoided
+		unfulfilled_title = realpolitik_hates_enacting_orbital_bombardment_armageddon_unavoided
+		desc = realpolitik_hates_enacting_orbital_bombardment_armageddon_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
+			}
+		}
+	}
 	
 	demand = {
 		title = realpolitik_hates_no_retreat_doctrine_avoided
@@ -660,6 +913,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = no_retreat_doctrine }
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_hates_enacting_no_retreat_doctrine_avoided
+		unfulfilled_title = realpolitik_hates_enacting_no_retreat_doctrine_unavoided
+		desc = realpolitik_hates_enacting_no_retreat_doctrine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
 			}
 		}
 	}
@@ -687,6 +963,29 @@ realpolitik = {
 			}
 		}
 	}
+	demand = {
+		title = realpolitik_hates_enacting_defense_in_depth_doctrine_avoided
+		unfulfilled_title = realpolitik_hates_enacting_defense_in_depth_doctrine_unavoided
+		desc = realpolitik_hates_enacting_defense_in_depth_doctrine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
+			}
+		}
+	}
 	
 	demand = {
 		title = realpolitik_hates_benevolent_terms_avoided
@@ -708,6 +1007,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = benevolent_terms }
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_hates_enacting_benevolent_terms_avoided
+		unfulfilled_title = realpolitik_hates_enacting_benevolent_terms_unavoided
+		desc = realpolitik_hates_enacting_benevolent_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
 			}
 		}
 	}
@@ -735,6 +1057,29 @@ realpolitik = {
 			}
 		}
 	}
+	demand = {
+		title = realpolitik_hates_enacting_benevolent_corporate_terms_avoided
+		unfulfilled_title = realpolitik_hates_enacting_benevolent_corporate_terms_unavoided
+		desc = realpolitik_hates_enacting_benevolent_corporate_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
+			}
+		}
+	}
 	
 	demand = {
 		title = realpolitik_hates_economic_policy_military_avoided
@@ -756,6 +1101,29 @@ realpolitik = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = economic_policy_military }
+			}
+		}
+	}
+	demand = {
+		title = realpolitik_hates_enacting_economic_policy_military_avoided
+		unfulfilled_title = realpolitik_hates_enacting_economic_policy_military_unavoided
+		desc = realpolitik_hates_enacting_economic_policy_military_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_realpolitik
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_realpolitik }
 			}
 		}
 	}

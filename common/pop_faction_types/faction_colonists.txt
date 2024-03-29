@@ -420,7 +420,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_diplo_stance_expansionist_unfulfilled
 		desc = colonists_desires_diplo_stance_expansionist_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -435,6 +435,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_expansionist
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_diplo_stance_expansionist_fulfilled
+		unfulfilled_title = colonists_happy_enacting_diplo_stance_expansionist_unfulfilled
+		desc = colonists_happy_enacting_diplo_stance_expansionist_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_expansionist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_expansionist
 			}
 		}
 	}
@@ -444,7 +467,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_dependentColonies_unfulfilled
 		desc = colonists_desires_dependentColonies_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -459,6 +482,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = dependentColonies
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_dependentColonies_fulfilled
+		unfulfilled_title = colonists_happy_enacting_dependentColonies_unfulfilled
+		desc = colonists_happy_enacting_dependentColonies_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_dependentColonies
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_dependentColonies
 			}
 		}
 	}
@@ -468,7 +514,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_merchantMarine_unfulfilled
 		desc = colonists_desires_merchantMarine_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -483,6 +529,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = merchantMarine
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_merchantMarine_fulfilled
+		unfulfilled_title = colonists_happy_enacting_merchantMarine_unfulfilled
+		desc = colonists_happy_enacting_merchantMarine_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_merchantMarine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_merchantMarine
 			}
 		}
 	}
@@ -492,7 +561,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_preFtlPoliticalOrganization_unfulfilled
 		desc = colonists_desires_preFtlPoliticalOrganization_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -507,6 +576,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = preFtlPoliticalOrganization
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_preFtlPoliticalOrganization_fulfilled
+		unfulfilled_title = colonists_happy_enacting_preFtlPoliticalOrganization_unfulfilled
+		desc = colonists_happy_enacting_preFtlPoliticalOrganization_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_preFtlPoliticalOrganization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_preFtlPoliticalOrganization
 			}
 		}
 	}
@@ -516,7 +608,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_appropriation_allowed_unfulfilled
 		desc = colonists_desires_appropriation_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -531,6 +623,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = appropriation_allowed
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_appropriation_allowed_fulfilled
+		unfulfilled_title = colonists_happy_enacting_appropriation_allowed_unfulfilled
+		desc = colonists_happy_enacting_appropriation_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_appropriation_allowed
 			}
 		}
 	}
@@ -540,7 +655,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_resettlement_not_allowed_unfulfilled
 		desc = colonists_desires_resettlement_not_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -555,6 +670,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = resettlement_not_allowed
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_resettlement_not_allowed_fulfilled
+		unfulfilled_title = colonists_happy_enacting_resettlement_not_allowed_unfulfilled
+		desc = colonists_happy_enacting_resettlement_not_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_resettlement_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_resettlement_not_allowed
 			}
 		}
 	}
@@ -564,7 +702,7 @@ colonists = {
 		unfulfilled_title = colonists_desires_border_policy_closed_unfulfilled
 		desc = colonists_desires_border_policy_closed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -582,13 +720,36 @@ colonists = {
 			}
 		}
 	}
+	demand = {
+		title = colonists_happy_enacting_border_policy_closed_fulfilled
+		unfulfilled_title = colonists_happy_enacting_border_policy_closed_unfulfilled
+		desc = colonists_happy_enacting_border_policy_closed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_border_policy_closed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_border_policy_closed
+			}
+		}
+	}
 	
 	demand = {
 		title = colonists_desires_economic_policy_civilian_fulfilled
 		unfulfilled_title = colonists_desires_economic_policy_civilian_unfulfilled
 		desc = colonists_desires_economic_policy_civilian_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -603,6 +764,29 @@ colonists = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_civilian
+			}
+		}
+	}
+	demand = {
+		title = colonists_happy_enacting_economic_policy_civilian_fulfilled
+		unfulfilled_title = colonists_happy_enacting_economic_policy_civilian_unfulfilled
+		desc = colonists_happy_enacting_economic_policy_civilian_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_civilian
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_civilian
 			}
 		}
 	}
@@ -628,6 +812,29 @@ colonists = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = diplo_stance_isolationist }
+			}
+		}
+	}
+	demand = {
+		title = colonists_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = colonists_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = colonists_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_colonists
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_colonists }
 			}
 		}
 	}

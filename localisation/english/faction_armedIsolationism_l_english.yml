@@ -13,47 +13,92 @@
  
  
  armedIsolationism_desires_diplo_stance_isolationist_fulfilled:0 "$diplo_stance_isolationist_name$" 
- armedIsolationism_desires_diplo_stance_isolationist_unfulfilled:0 "$diplo_stance_isolationist_name$" 
- armedIsolationism_desires_diplo_stance_isolationist_desc:0 "The Dark Forest Faction likes the policy $diplo_stance_isolationist_name$."
+ armedIsolationism_desires_diplo_stance_isolationist_unfulfilled:0 "" 
+ armedIsolationism_desires_diplo_stance_isolationist_desc:0 "The Dark Forest Faction likes $diplo_stance_isolationist_name$."
+
+ armedIsolationism_happy_enacting_diplo_stance_isolationist_fulfilled:0 "Enacting $diplo_stance_isolationist_name$" 
+ armedIsolationism_happy_enacting_diplo_stance_isolationist_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_diplo_stance_isolationist_desc:0 "The Dark Forest Faction is happy you are enacting $diplo_stance_isolationist_name$."
  
  armedIsolationism_desires_no_wars_fulfilled:0 "$no_wars_name$" 
- armedIsolationism_desires_no_wars_unfulfilled:0 "$no_wars_name$" 
- armedIsolationism_desires_no_wars_desc:0 "The Dark Forest Faction likes the policy $no_wars_name$."
+ armedIsolationism_desires_no_wars_unfulfilled:0 "" 
+ armedIsolationism_desires_no_wars_desc:0 "The Dark Forest Faction likes $no_wars_name$."
+
+ armedIsolationism_happy_enacting_no_wars_fulfilled:0 "Enacting $no_wars_name$" 
+ armedIsolationism_happy_enacting_no_wars_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_no_wars_desc:0 "The Dark Forest Faction is happy you are enacting $no_wars_name$."
  
  armedIsolationism_desires_border_policy_closed_fulfilled:0 "$border_policy_closed_name$" 
- armedIsolationism_desires_border_policy_closed_unfulfilled:0 "$border_policy_closed_name$" 
- armedIsolationism_desires_border_policy_closed_desc:0 "The Dark Forest Faction likes the policy $border_policy_closed_name$."
+ armedIsolationism_desires_border_policy_closed_unfulfilled:0 "" 
+ armedIsolationism_desires_border_policy_closed_desc:0 "The Dark Forest Faction likes $border_policy_closed_name$."
+
+ armedIsolationism_happy_enacting_border_policy_closed_fulfilled:0 "Enacting $border_policy_closed_name$" 
+ armedIsolationism_happy_enacting_border_policy_closed_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_border_policy_closed_desc:0 "The Dark Forest Faction is happy you are enacting $border_policy_closed_name$."
  
  armedIsolationism_desires_defense_in_depth_doctrine_fulfilled:0 "$defense_in_depth_doctrine_name$" 
- armedIsolationism_desires_defense_in_depth_doctrine_unfulfilled:0 "$defense_in_depth_doctrine_name$" 
- armedIsolationism_desires_defense_in_depth_doctrine_desc:0 "The Dark Forest Faction likes the policy $defense_in_depth_doctrine_name$."
+ armedIsolationism_desires_defense_in_depth_doctrine_unfulfilled:0 "" 
+ armedIsolationism_desires_defense_in_depth_doctrine_desc:0 "The Dark Forest Faction likes $defense_in_depth_doctrine_name$."
+
+ armedIsolationism_happy_enacting_defense_in_depth_doctrine_fulfilled:0 "Enacting $defense_in_depth_doctrine_name$" 
+ armedIsolationism_happy_enacting_defense_in_depth_doctrine_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_defense_in_depth_doctrine_desc:0 "The Dark Forest Faction is happy you are enacting $defense_in_depth_doctrine_name$."
  
  armedIsolationism_desires_first_contact_cautious_fulfilled:0 "$first_contact_cautious_name$" 
- armedIsolationism_desires_first_contact_cautious_unfulfilled:0 "$first_contact_cautious_name$" 
- armedIsolationism_desires_first_contact_cautious_desc:0 "The Dark Forest Faction likes the policy $first_contact_cautious_name$."
+ armedIsolationism_desires_first_contact_cautious_unfulfilled:0 "" 
+ armedIsolationism_desires_first_contact_cautious_desc:0 "The Dark Forest Faction likes $first_contact_cautious_name$."
+
+ armedIsolationism_happy_enacting_first_contact_cautious_fulfilled:0 "Enacting $first_contact_cautious_name$" 
+ armedIsolationism_happy_enacting_first_contact_cautious_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_first_contact_cautious_desc:0 "The Dark Forest Faction is happy you are enacting $first_contact_cautious_name$."
  
  armedIsolationism_desires_economic_policy_military_fulfilled:0 "$economic_policy_military_name$" 
- armedIsolationism_desires_economic_policy_military_unfulfilled:0 "$economic_policy_military_name$" 
- armedIsolationism_desires_economic_policy_military_desc:0 "The Dark Forest Faction likes the policy $economic_policy_military_name$."
+ armedIsolationism_desires_economic_policy_military_unfulfilled:0 "" 
+ armedIsolationism_desires_economic_policy_military_desc:0 "The Dark Forest Faction likes $economic_policy_military_name$."
+
+ armedIsolationism_happy_enacting_economic_policy_military_fulfilled:0 "Enacting $economic_policy_military_name$" 
+ armedIsolationism_happy_enacting_economic_policy_military_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_economic_policy_military_desc:0 "The Dark Forest Faction is happy you are enacting $economic_policy_military_name$."
  
  armedIsolationism_desires_orbital_bombardment_surrender_forbidden_fulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
- armedIsolationism_desires_orbital_bombardment_surrender_forbidden_unfulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
- armedIsolationism_desires_orbital_bombardment_surrender_forbidden_desc:0 "The Dark Forest Faction likes the policy $orbital_bombardment_surrender_forbidden_name$."
+ armedIsolationism_desires_orbital_bombardment_surrender_forbidden_unfulfilled:0 "" 
+ armedIsolationism_desires_orbital_bombardment_surrender_forbidden_desc:0 "The Dark Forest Faction likes $orbital_bombardment_surrender_forbidden_name$."
+
+ armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_fulfilled:0 "Enacting $orbital_bombardment_surrender_forbidden_name$" 
+ armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_unfulfilled:0 "" 
+ armedIsolationism_happy_enacting_orbital_bombardment_surrender_forbidden_desc:0 "The Dark Forest Faction is happy you are enacting $orbital_bombardment_surrender_forbidden_name$."
  
+
  
- armedIsolationism_hates_diplo_stance_expansion_avoided:0 "$diplo_stance_expansion_name$" 
+ armedIsolationism_hates_diplo_stance_expansion_avoided:0 "" 
  armedIsolationism_hates_diplo_stance_expansion_unavoided:0 "$diplo_stance_expansion_name$" 
  armedIsolationism_hates_diplo_stance_expansion_desc:0 "The Dark Forest Faction hates the policy $diplo_stance_expansion_name$."
+
+ armedIsolationism_hates_enacting_diplo_stance_expansion_avoided:0 "" 
+ armedIsolationism_hates_enacting_diplo_stance_expansion_unavoided:0 "Enacting $diplo_stance_expansion_name$" 
+ armedIsolationism_hates_enacting_diplo_stance_expansion_desc:0 "The Dark Forest Faction hates that you are enacting $diplo_stance_expansion_name$."
  
- armedIsolationism_hates_unrestricted_wars_avoided:0 "$unrestricted_wars_name$" 
+ armedIsolationism_hates_unrestricted_wars_avoided:0 "" 
  armedIsolationism_hates_unrestricted_wars_unavoided:0 "$unrestricted_wars_name$" 
  armedIsolationism_hates_unrestricted_wars_desc:0 "The Dark Forest Faction hates the policy $unrestricted_wars_name$."
+
+ armedIsolationism_hates_enacting_unrestricted_wars_avoided:0 "" 
+ armedIsolationism_hates_enacting_unrestricted_wars_unavoided:0 "Enacting $unrestricted_wars_name$" 
+ armedIsolationism_hates_enacting_unrestricted_wars_desc:0 "The Dark Forest Faction hates that you are enacting $unrestricted_wars_name$."
  
- armedIsolationism_hates_no_retreat_doctrine_avoided:0 "$no_retreat_doctrine_name$" 
+ armedIsolationism_hates_no_retreat_doctrine_avoided:0 "" 
  armedIsolationism_hates_no_retreat_doctrine_unavoided:0 "$no_retreat_doctrine_name$" 
  armedIsolationism_hates_no_retreat_doctrine_desc:0 "The Dark Forest Faction hates the policy $no_retreat_doctrine_name$."
+
+ armedIsolationism_hates_enacting_no_retreat_doctrine_avoided:0 "" 
+ armedIsolationism_hates_enacting_no_retreat_doctrine_unavoided:0 "Enacting $no_retreat_doctrine_name$" 
+ armedIsolationism_hates_enacting_no_retreat_doctrine_desc:0 "The Dark Forest Faction hates that you are enacting $no_retreat_doctrine_name$."
  
- armedIsolationism_hates_first_contact_proactive_avoided:0 "$first_contact_proactive_name$" 
+ armedIsolationism_hates_first_contact_proactive_avoided:0 "" 
  armedIsolationism_hates_first_contact_proactive_unavoided:0 "$first_contact_proactive_name$" 
  armedIsolationism_hates_first_contact_proactive_desc:0 "The Dark Forest Faction hates the policy $first_contact_proactive_name$."
+
+ armedIsolationism_hates_enacting_first_contact_proactive_avoided:0 "" 
+ armedIsolationism_hates_enacting_first_contact_proactive_unavoided:0 "Enacting $first_contact_proactive_name$" 
+ armedIsolationism_hates_enacting_first_contact_proactive_desc:0 "The Dark Forest Faction hates that you are enacting $first_contact_proactive_name$."
  

@@ -395,7 +395,7 @@ consolidationists = {
 		unfulfilled_title = consolidationists_desires_resettlement_allowed_unfulfilled
 		desc = consolidationists_desires_resettlement_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -410,6 +410,29 @@ consolidationists = {
 		trigger = {
 			owner = {
 				has_policy_flag = resettlement_allowed
+			}
+		}
+	}
+	demand = {
+		title = consolidationists_happy_enacting_resettlement_allowed_fulfilled
+		unfulfilled_title = consolidationists_happy_enacting_resettlement_allowed_unfulfilled
+		desc = consolidationists_happy_enacting_resettlement_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_resettlement_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_resettlement_allowed
 			}
 		}
 	}
@@ -419,7 +442,7 @@ consolidationists = {
 		unfulfilled_title = consolidationists_desires_interplanetaryGoverance_unfulfilled
 		desc = consolidationists_desires_interplanetaryGoverance_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -434,6 +457,29 @@ consolidationists = {
 		trigger = {
 			owner = {
 				has_policy_flag = interplanetaryGoverance
+			}
+		}
+	}
+	demand = {
+		title = consolidationists_happy_enacting_interplanetaryGoverance_fulfilled
+		unfulfilled_title = consolidationists_happy_enacting_interplanetaryGoverance_unfulfilled
+		desc = consolidationists_happy_enacting_interplanetaryGoverance_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_interplanetaryGoverance
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_interplanetaryGoverance
 			}
 		}
 	}
@@ -443,7 +489,7 @@ consolidationists = {
 		unfulfilled_title = consolidationists_desires_economic_policy_balanced_unfulfilled
 		desc = consolidationists_desires_economic_policy_balanced_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -458,6 +504,29 @@ consolidationists = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_balanced
+			}
+		}
+	}
+	demand = {
+		title = consolidationists_happy_enacting_economic_policy_balanced_fulfilled
+		unfulfilled_title = consolidationists_happy_enacting_economic_policy_balanced_unfulfilled
+		desc = consolidationists_happy_enacting_economic_policy_balanced_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
 			}
 		}
 	}
@@ -467,7 +536,7 @@ consolidationists = {
 		unfulfilled_title = consolidationists_desires_diplo_stance_mercantile_unfulfilled
 		desc = consolidationists_desires_diplo_stance_mercantile_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -485,13 +554,36 @@ consolidationists = {
 			}
 		}
 	}
+	demand = {
+		title = consolidationists_happy_enacting_diplo_stance_mercantile_fulfilled
+		unfulfilled_title = consolidationists_happy_enacting_diplo_stance_mercantile_unfulfilled
+		desc = consolidationists_happy_enacting_diplo_stance_mercantile_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_mercantile
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_mercantile
+			}
+		}
+	}
 	
 	demand = {
 		title = consolidationists_desires_diplo_stance_cooperative_fulfilled
 		unfulfilled_title = consolidationists_desires_diplo_stance_cooperative_unfulfilled
 		desc = consolidationists_desires_diplo_stance_cooperative_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -506,6 +598,29 @@ consolidationists = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+	}
+	demand = {
+		title = consolidationists_happy_enacting_diplo_stance_cooperative_fulfilled
+		unfulfilled_title = consolidationists_happy_enacting_diplo_stance_cooperative_unfulfilled
+		desc = consolidationists_happy_enacting_diplo_stance_cooperative_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_cooperative
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_cooperative
 			}
 		}
 	}
@@ -531,6 +646,29 @@ consolidationists = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = diplo_stance_expansion }
+			}
+		}
+	}
+	demand = {
+		title = consolidationists_hates_enacting_diplo_stance_expansion_avoided
+		unfulfilled_title = consolidationists_hates_enacting_diplo_stance_expansion_unavoided
+		desc = consolidationists_hates_enacting_diplo_stance_expansion_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_consolidationists
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_consolidationists }
 			}
 		}
 	}

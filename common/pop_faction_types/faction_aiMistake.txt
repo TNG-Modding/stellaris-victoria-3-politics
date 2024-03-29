@@ -385,7 +385,7 @@ aiMistake = {
 		unfulfilled_title = aiMistake_desires_robot_pops_outlawed_unfulfilled
 		desc = aiMistake_desires_robot_pops_outlawed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -400,6 +400,29 @@ aiMistake = {
 		trigger = {
 			owner = {
 				has_policy_flag = robot_pops_outlawed
+			}
+		}
+	}
+	demand = {
+		title = aiMistake_happy_enacting_robot_pops_outlawed_fulfilled
+		unfulfilled_title = aiMistake_happy_enacting_robot_pops_outlawed_unfulfilled
+		desc = aiMistake_happy_enacting_robot_pops_outlawed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_robot_pops_outlawed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_robot_pops_outlawed
 			}
 		}
 	}
@@ -409,7 +432,7 @@ aiMistake = {
 		unfulfilled_title = aiMistake_desires_ai_outlawed_unfulfilled
 		desc = aiMistake_desires_ai_outlawed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -427,13 +450,36 @@ aiMistake = {
 			}
 		}
 	}
+	demand = {
+		title = aiMistake_happy_enacting_ai_outlawed_fulfilled
+		unfulfilled_title = aiMistake_happy_enacting_ai_outlawed_unfulfilled
+		desc = aiMistake_happy_enacting_ai_outlawed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ai_outlawed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_ai_outlawed
+			}
+		}
+	}
 	
 	demand = {
 		title = aiMistake_desires_resettlement_allowed_fulfilled
 		unfulfilled_title = aiMistake_desires_resettlement_allowed_unfulfilled
 		desc = aiMistake_desires_resettlement_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -448,6 +494,29 @@ aiMistake = {
 		trigger = {
 			owner = {
 				has_policy_flag = resettlement_allowed
+			}
+		}
+	}
+	demand = {
+		title = aiMistake_happy_enacting_resettlement_allowed_fulfilled
+		unfulfilled_title = aiMistake_happy_enacting_resettlement_allowed_unfulfilled
+		desc = aiMistake_happy_enacting_resettlement_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_resettlement_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_resettlement_allowed
 			}
 		}
 	}
@@ -476,6 +545,29 @@ aiMistake = {
 			}
 		}
 	}
+	demand = {
+		title = aiMistake_hates_enacting_ai_servitude_avoided
+		unfulfilled_title = aiMistake_hates_enacting_ai_servitude_unavoided
+		desc = aiMistake_hates_enacting_ai_servitude_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_aiMistake
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_aiMistake }
+			}
+		}
+	}
 	
 	demand = {
 		title = aiMistake_hates_ai_full_rights_avoided
@@ -500,6 +592,29 @@ aiMistake = {
 			}
 		}
 	}
+	demand = {
+		title = aiMistake_hates_enacting_ai_full_rights_avoided
+		unfulfilled_title = aiMistake_hates_enacting_ai_full_rights_unavoided
+		desc = aiMistake_hates_enacting_ai_full_rights_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_aiMistake
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_aiMistake }
+			}
+		}
+	}
 	
 	demand = {
 		title = aiMistake_hates_robot_pops_allowed_avoided
@@ -521,6 +636,29 @@ aiMistake = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = robot_pops_allowed }
+			}
+		}
+	}
+	demand = {
+		title = aiMistake_hates_enacting_robot_pops_allowed_avoided
+		unfulfilled_title = aiMistake_hates_enacting_robot_pops_allowed_unavoided
+		desc = aiMistake_hates_enacting_robot_pops_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_aiMistake
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_aiMistake }
 			}
 		}
 	}

@@ -13,39 +13,76 @@
  
  
  colonists_desires_diplo_stance_expansionist_fulfilled:0 "$diplo_stance_expansionist_name$" 
- colonists_desires_diplo_stance_expansionist_unfulfilled:0 "$diplo_stance_expansionist_name$" 
- colonists_desires_diplo_stance_expansionist_desc:0 "The Colonialist Lobby Faction likes the policy $diplo_stance_expansionist_name$."
+ colonists_desires_diplo_stance_expansionist_unfulfilled:0 "" 
+ colonists_desires_diplo_stance_expansionist_desc:0 "The Colonialist Lobby Faction likes $diplo_stance_expansionist_name$."
+
+ colonists_happy_enacting_diplo_stance_expansionist_fulfilled:0 "Enacting $diplo_stance_expansionist_name$" 
+ colonists_happy_enacting_diplo_stance_expansionist_unfulfilled:0 "" 
+ colonists_happy_enacting_diplo_stance_expansionist_desc:0 "The Colonialist Lobby Faction is happy you are enacting $diplo_stance_expansionist_name$."
  
  colonists_desires_dependentColonies_fulfilled:0 "$dependentColonies_name$" 
- colonists_desires_dependentColonies_unfulfilled:0 "$dependentColonies_name$" 
- colonists_desires_dependentColonies_desc:0 "The Colonialist Lobby Faction likes the policy $dependentColonies_name$."
+ colonists_desires_dependentColonies_unfulfilled:0 "" 
+ colonists_desires_dependentColonies_desc:0 "The Colonialist Lobby Faction likes $dependentColonies_name$."
+
+ colonists_happy_enacting_dependentColonies_fulfilled:0 "Enacting $dependentColonies_name$" 
+ colonists_happy_enacting_dependentColonies_unfulfilled:0 "" 
+ colonists_happy_enacting_dependentColonies_desc:0 "The Colonialist Lobby Faction is happy you are enacting $dependentColonies_name$."
  
  colonists_desires_merchantMarine_fulfilled:0 "$merchantMarine_name$" 
- colonists_desires_merchantMarine_unfulfilled:0 "$merchantMarine_name$" 
- colonists_desires_merchantMarine_desc:0 "The Colonialist Lobby Faction likes the policy $merchantMarine_name$."
+ colonists_desires_merchantMarine_unfulfilled:0 "" 
+ colonists_desires_merchantMarine_desc:0 "The Colonialist Lobby Faction likes $merchantMarine_name$."
+
+ colonists_happy_enacting_merchantMarine_fulfilled:0 "Enacting $merchantMarine_name$" 
+ colonists_happy_enacting_merchantMarine_unfulfilled:0 "" 
+ colonists_happy_enacting_merchantMarine_desc:0 "The Colonialist Lobby Faction is happy you are enacting $merchantMarine_name$."
  
  colonists_desires_preFtlPoliticalOrganization_fulfilled:0 "$preFtlPoliticalOrganization_name$" 
- colonists_desires_preFtlPoliticalOrganization_unfulfilled:0 "$preFtlPoliticalOrganization_name$" 
- colonists_desires_preFtlPoliticalOrganization_desc:0 "The Colonialist Lobby Faction likes the policy $preFtlPoliticalOrganization_name$."
+ colonists_desires_preFtlPoliticalOrganization_unfulfilled:0 "" 
+ colonists_desires_preFtlPoliticalOrganization_desc:0 "The Colonialist Lobby Faction likes $preFtlPoliticalOrganization_name$."
+
+ colonists_happy_enacting_preFtlPoliticalOrganization_fulfilled:0 "Enacting $preFtlPoliticalOrganization_name$" 
+ colonists_happy_enacting_preFtlPoliticalOrganization_unfulfilled:0 "" 
+ colonists_happy_enacting_preFtlPoliticalOrganization_desc:0 "The Colonialist Lobby Faction is happy you are enacting $preFtlPoliticalOrganization_name$."
  
  colonists_desires_appropriation_allowed_fulfilled:0 "$appropriation_allowed_name$" 
- colonists_desires_appropriation_allowed_unfulfilled:0 "$appropriation_allowed_name$" 
- colonists_desires_appropriation_allowed_desc:0 "The Colonialist Lobby Faction likes the policy $appropriation_allowed_name$."
+ colonists_desires_appropriation_allowed_unfulfilled:0 "" 
+ colonists_desires_appropriation_allowed_desc:0 "The Colonialist Lobby Faction likes $appropriation_allowed_name$."
+
+ colonists_happy_enacting_appropriation_allowed_fulfilled:0 "Enacting $appropriation_allowed_name$" 
+ colonists_happy_enacting_appropriation_allowed_unfulfilled:0 "" 
+ colonists_happy_enacting_appropriation_allowed_desc:0 "The Colonialist Lobby Faction is happy you are enacting $appropriation_allowed_name$."
  
  colonists_desires_resettlement_not_allowed_fulfilled:0 "$resettlement_not_allowed_name$" 
- colonists_desires_resettlement_not_allowed_unfulfilled:0 "$resettlement_not_allowed_name$" 
- colonists_desires_resettlement_not_allowed_desc:0 "The Colonialist Lobby Faction likes the policy $resettlement_not_allowed_name$."
+ colonists_desires_resettlement_not_allowed_unfulfilled:0 "" 
+ colonists_desires_resettlement_not_allowed_desc:0 "The Colonialist Lobby Faction likes $resettlement_not_allowed_name$."
+
+ colonists_happy_enacting_resettlement_not_allowed_fulfilled:0 "Enacting $resettlement_not_allowed_name$" 
+ colonists_happy_enacting_resettlement_not_allowed_unfulfilled:0 "" 
+ colonists_happy_enacting_resettlement_not_allowed_desc:0 "The Colonialist Lobby Faction is happy you are enacting $resettlement_not_allowed_name$."
  
  colonists_desires_border_policy_closed_fulfilled:0 "$border_policy_closed_name$" 
- colonists_desires_border_policy_closed_unfulfilled:0 "$border_policy_closed_name$" 
- colonists_desires_border_policy_closed_desc:0 "The Colonialist Lobby Faction likes the policy $border_policy_closed_name$."
+ colonists_desires_border_policy_closed_unfulfilled:0 "" 
+ colonists_desires_border_policy_closed_desc:0 "The Colonialist Lobby Faction likes $border_policy_closed_name$."
+
+ colonists_happy_enacting_border_policy_closed_fulfilled:0 "Enacting $border_policy_closed_name$" 
+ colonists_happy_enacting_border_policy_closed_unfulfilled:0 "" 
+ colonists_happy_enacting_border_policy_closed_desc:0 "The Colonialist Lobby Faction is happy you are enacting $border_policy_closed_name$."
  
  colonists_desires_economic_policy_civilian_fulfilled:0 "$economic_policy_civilian_name$" 
- colonists_desires_economic_policy_civilian_unfulfilled:0 "$economic_policy_civilian_name$" 
- colonists_desires_economic_policy_civilian_desc:0 "The Colonialist Lobby Faction likes the policy $economic_policy_civilian_name$."
+ colonists_desires_economic_policy_civilian_unfulfilled:0 "" 
+ colonists_desires_economic_policy_civilian_desc:0 "The Colonialist Lobby Faction likes $economic_policy_civilian_name$."
+
+ colonists_happy_enacting_economic_policy_civilian_fulfilled:0 "Enacting $economic_policy_civilian_name$" 
+ colonists_happy_enacting_economic_policy_civilian_unfulfilled:0 "" 
+ colonists_happy_enacting_economic_policy_civilian_desc:0 "The Colonialist Lobby Faction is happy you are enacting $economic_policy_civilian_name$."
  
+
  
- colonists_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ colonists_hates_diplo_stance_isolationist_avoided:0 "" 
  colonists_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
  colonists_hates_diplo_stance_isolationist_desc:0 "The Colonialist Lobby Faction hates the policy $diplo_stance_isolationist_name$."
+
+ colonists_hates_enacting_diplo_stance_isolationist_avoided:0 "" 
+ colonists_hates_enacting_diplo_stance_isolationist_unavoided:0 "Enacting $diplo_stance_isolationist_name$" 
+ colonists_hates_enacting_diplo_stance_isolationist_desc:0 "The Colonialist Lobby Faction hates that you are enacting $diplo_stance_isolationist_name$."
  

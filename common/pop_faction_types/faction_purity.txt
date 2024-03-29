@@ -414,7 +414,7 @@ purity = {
 		unfulfilled_title = purity_desires_diplo_stance_purification_unfulfilled
 		desc = purity_desires_diplo_stance_purification_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -429,6 +429,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_purification
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_diplo_stance_purification_fulfilled
+		unfulfilled_title = purity_happy_enacting_diplo_stance_purification_unfulfilled
+		desc = purity_happy_enacting_diplo_stance_purification_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_purification
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_purification
 			}
 		}
 	}
@@ -438,7 +461,7 @@ purity = {
 		unfulfilled_title = purity_desires_diplo_stance_extermination_unfulfilled
 		desc = purity_desires_diplo_stance_extermination_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -453,6 +476,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_extermination
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_diplo_stance_extermination_fulfilled
+		unfulfilled_title = purity_happy_enacting_diplo_stance_extermination_unfulfilled
+		desc = purity_happy_enacting_diplo_stance_extermination_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_extermination
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_extermination
 			}
 		}
 	}
@@ -462,7 +508,7 @@ purity = {
 		unfulfilled_title = purity_desires_unrestricted_wars_unfulfilled
 		desc = purity_desires_unrestricted_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -477,6 +523,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = unrestricted_wars
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_unrestricted_wars_fulfilled
+		unfulfilled_title = purity_happy_enacting_unrestricted_wars_unfulfilled
+		desc = purity_happy_enacting_unrestricted_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_unrestricted_wars
 			}
 		}
 	}
@@ -486,7 +555,7 @@ purity = {
 		unfulfilled_title = purity_desires_interference_aggressive_unfulfilled
 		desc = purity_desires_interference_aggressive_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -501,6 +570,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = interference_aggressive
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_interference_aggressive_fulfilled
+		unfulfilled_title = purity_happy_enacting_interference_aggressive_unfulfilled
+		desc = purity_happy_enacting_interference_aggressive_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_interference_aggressive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_interference_aggressive
 			}
 		}
 	}
@@ -510,7 +602,7 @@ purity = {
 		unfulfilled_title = purity_desires_enlightenment_not_allowed_unfulfilled
 		desc = purity_desires_enlightenment_not_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -525,6 +617,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = enlightenment_not_allowed
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_enlightenment_not_allowed_fulfilled
+		unfulfilled_title = purity_happy_enacting_enlightenment_not_allowed_unfulfilled
+		desc = purity_happy_enacting_enlightenment_not_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_enlightenment_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_enlightenment_not_allowed
 			}
 		}
 	}
@@ -534,7 +649,7 @@ purity = {
 		unfulfilled_title = purity_desires_armada_unfulfilled
 		desc = purity_desires_armada_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -549,6 +664,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = armada
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_armada_fulfilled
+		unfulfilled_title = purity_happy_enacting_armada_unfulfilled
+		desc = purity_happy_enacting_armada_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_armada
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_armada
 			}
 		}
 	}
@@ -558,7 +696,7 @@ purity = {
 		unfulfilled_title = purity_desires_grandArmy_unfulfilled
 		desc = purity_desires_grandArmy_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -573,6 +711,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = grandArmy
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_grandArmy_fulfilled
+		unfulfilled_title = purity_happy_enacting_grandArmy_unfulfilled
+		desc = purity_happy_enacting_grandArmy_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_grandArmy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_grandArmy
 			}
 		}
 	}
@@ -582,7 +743,7 @@ purity = {
 		unfulfilled_title = purity_desires_pre_sapients_eat_unfulfilled
 		desc = purity_desires_pre_sapients_eat_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -597,6 +758,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = pre_sapients_eat
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_pre_sapients_eat_fulfilled
+		unfulfilled_title = purity_happy_enacting_pre_sapients_eat_unfulfilled
+		desc = purity_happy_enacting_pre_sapients_eat_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_pre_sapients_eat
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_pre_sapients_eat
 			}
 		}
 	}
@@ -606,7 +790,7 @@ purity = {
 		unfulfilled_title = purity_desires_pre_sapients_purge_unfulfilled
 		desc = purity_desires_pre_sapients_purge_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -621,6 +805,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = pre_sapients_purge
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_pre_sapients_purge_fulfilled
+		unfulfilled_title = purity_happy_enacting_pre_sapients_purge_unfulfilled
+		desc = purity_happy_enacting_pre_sapients_purge_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_pre_sapients_purge
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_pre_sapients_purge
 			}
 		}
 	}
@@ -630,7 +837,7 @@ purity = {
 		unfulfilled_title = purity_desires_economic_policy_military_unfulfilled
 		desc = purity_desires_economic_policy_military_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -645,6 +852,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_military
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_economic_policy_military_fulfilled
+		unfulfilled_title = purity_happy_enacting_economic_policy_military_unfulfilled
+		desc = purity_happy_enacting_economic_policy_military_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_military
 			}
 		}
 	}
@@ -654,7 +884,7 @@ purity = {
 		unfulfilled_title = purity_desires_first_contact_attack_allowed_unfulfilled
 		desc = purity_desires_first_contact_attack_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -669,6 +899,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_first_contact_attack_allowed_fulfilled
+		unfulfilled_title = purity_happy_enacting_first_contact_attack_allowed_unfulfilled
+		desc = purity_happy_enacting_first_contact_attack_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_first_contact_attack_allowed
 			}
 		}
 	}
@@ -678,7 +931,7 @@ purity = {
 		unfulfilled_title = purity_desires_leader_enhancement_selected_lineages_unfulfilled
 		desc = purity_desires_leader_enhancement_selected_lineages_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -693,6 +946,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = leader_enhancement_selected_lineages
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_leader_enhancement_selected_lineages_fulfilled
+		unfulfilled_title = purity_happy_enacting_leader_enhancement_selected_lineages_unfulfilled
+		desc = purity_happy_enacting_leader_enhancement_selected_lineages_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_leader_enhancement_selected_lineages
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_leader_enhancement_selected_lineages
 			}
 		}
 	}
@@ -702,7 +978,7 @@ purity = {
 		unfulfilled_title = purity_desires_appropriation_allowed_unfulfilled
 		desc = purity_desires_appropriation_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -717,6 +993,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = appropriation_allowed
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_appropriation_allowed_fulfilled
+		unfulfilled_title = purity_happy_enacting_appropriation_allowed_unfulfilled
+		desc = purity_happy_enacting_appropriation_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_appropriation_allowed
 			}
 		}
 	}
@@ -726,7 +1025,7 @@ purity = {
 		unfulfilled_title = purity_desires_orbital_bombardment_surrender_forbidden_unfulfilled
 		desc = purity_desires_orbital_bombardment_surrender_forbidden_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -741,6 +1040,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_orbital_bombardment_surrender_forbidden_fulfilled
+		unfulfilled_title = purity_happy_enacting_orbital_bombardment_surrender_forbidden_unfulfilled
+		desc = purity_happy_enacting_orbital_bombardment_surrender_forbidden_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_forbidden
 			}
 		}
 	}
@@ -750,7 +1072,7 @@ purity = {
 		unfulfilled_title = purity_desires_orbital_bombardment_armageddon_unfulfilled
 		desc = purity_desires_orbital_bombardment_armageddon_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -765,6 +1087,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_orbital_bombardment_armageddon_fulfilled
+		unfulfilled_title = purity_happy_enacting_orbital_bombardment_armageddon_unfulfilled
+		desc = purity_happy_enacting_orbital_bombardment_armageddon_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_armageddon
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_armageddon
 			}
 		}
 	}
@@ -774,7 +1119,7 @@ purity = {
 		unfulfilled_title = purity_desires_orbital_bombardment_indiscriminate_unfulfilled
 		desc = purity_desires_orbital_bombardment_indiscriminate_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -789,6 +1134,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_orbital_bombardment_indiscriminate_fulfilled
+		unfulfilled_title = purity_happy_enacting_orbital_bombardment_indiscriminate_unfulfilled
+		desc = purity_happy_enacting_orbital_bombardment_indiscriminate_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_indiscriminate
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_indiscriminate
 			}
 		}
 	}
@@ -798,7 +1166,7 @@ purity = {
 		unfulfilled_title = purity_desires_oppressive_terms_unfulfilled
 		desc = purity_desires_oppressive_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -813,6 +1181,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = oppressive_terms
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_oppressive_terms_fulfilled
+		unfulfilled_title = purity_happy_enacting_oppressive_terms_unfulfilled
+		desc = purity_happy_enacting_oppressive_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_oppressive_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_oppressive_terms
 			}
 		}
 	}
@@ -822,7 +1213,7 @@ purity = {
 		unfulfilled_title = purity_desires_oppressive_corporate_terms_unfulfilled
 		desc = purity_desires_oppressive_corporate_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -837,6 +1228,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_oppressive_corporate_terms_fulfilled
+		unfulfilled_title = purity_happy_enacting_oppressive_corporate_terms_unfulfilled
+		desc = purity_happy_enacting_oppressive_corporate_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_oppressive_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_oppressive_corporate_terms
 			}
 		}
 	}
@@ -846,7 +1260,7 @@ purity = {
 		unfulfilled_title = purity_desires_no_retreat_doctrine_unfulfilled
 		desc = purity_desires_no_retreat_doctrine_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -864,13 +1278,36 @@ purity = {
 			}
 		}
 	}
+	demand = {
+		title = purity_happy_enacting_no_retreat_doctrine_fulfilled
+		unfulfilled_title = purity_happy_enacting_no_retreat_doctrine_unfulfilled
+		desc = purity_happy_enacting_no_retreat_doctrine_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_no_retreat_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_no_retreat_doctrine
+			}
+		}
+	}
 	
 	demand = {
 		title = purity_desires_purge_allowed_fulfilled
 		unfulfilled_title = purity_desires_purge_allowed_unfulfilled
 		desc = purity_desires_purge_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -885,6 +1322,29 @@ purity = {
 		trigger = {
 			owner = {
 				has_policy_flag = purge_allowed
+			}
+		}
+	}
+	demand = {
+		title = purity_happy_enacting_purge_allowed_fulfilled
+		unfulfilled_title = purity_happy_enacting_purge_allowed_unfulfilled
+		desc = purity_happy_enacting_purge_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_purge_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_purge_allowed
 			}
 		}
 	}

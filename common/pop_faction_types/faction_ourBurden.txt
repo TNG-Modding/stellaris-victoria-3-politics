@@ -380,7 +380,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_diplo_stance_belligerent_unfulfilled
 		desc = ourBurden_desires_diplo_stance_belligerent_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -395,6 +395,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_belligerent
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_diplo_stance_belligerent_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_diplo_stance_belligerent_unfulfilled
+		desc = ourBurden_happy_enacting_diplo_stance_belligerent_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_belligerent
 			}
 		}
 	}
@@ -404,7 +427,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_liberation_wars_unfulfilled
 		desc = ourBurden_desires_liberation_wars_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -419,6 +442,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = liberation_wars
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_liberation_wars_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_liberation_wars_unfulfilled
+		desc = ourBurden_happy_enacting_liberation_wars_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_liberation_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_liberation_wars
 			}
 		}
 	}
@@ -428,7 +474,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_interference_aggressive_unfulfilled
 		desc = ourBurden_desires_interference_aggressive_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -443,6 +489,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = interference_aggressive
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_interference_aggressive_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_interference_aggressive_unfulfilled
+		desc = ourBurden_happy_enacting_interference_aggressive_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_interference_aggressive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_interference_aggressive
 			}
 		}
 	}
@@ -452,7 +521,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_enlightenment_allowed_unfulfilled
 		desc = ourBurden_desires_enlightenment_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -467,6 +536,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = enlightenment_allowed
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_enlightenment_allowed_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_enlightenment_allowed_unfulfilled
+		desc = ourBurden_happy_enacting_enlightenment_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_enlightenment_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_enlightenment_allowed
 			}
 		}
 	}
@@ -476,7 +568,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_benevolent_terms_unfulfilled
 		desc = ourBurden_desires_benevolent_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -491,6 +583,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = benevolent_terms
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_benevolent_terms_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_benevolent_terms_unfulfilled
+		desc = ourBurden_happy_enacting_benevolent_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_benevolent_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_benevolent_terms
 			}
 		}
 	}
@@ -500,7 +615,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_benevolent_corporate_terms_unfulfilled
 		desc = ourBurden_desires_benevolent_corporate_terms_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -515,6 +630,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = benevolent_corporate_terms
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_benevolent_corporate_terms_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_benevolent_corporate_terms_unfulfilled
+		desc = ourBurden_happy_enacting_benevolent_corporate_terms_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_benevolent_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_benevolent_corporate_terms
 			}
 		}
 	}
@@ -524,7 +662,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_economic_policy_balanced_unfulfilled
 		desc = ourBurden_desires_economic_policy_balanced_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -539,6 +677,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_balanced
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_economic_policy_balanced_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_economic_policy_balanced_unfulfilled
+		desc = ourBurden_happy_enacting_economic_policy_balanced_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_balanced
 			}
 		}
 	}
@@ -548,7 +709,7 @@ ourBurden = {
 		unfulfilled_title = ourBurden_desires_first_contact_proactive_unfulfilled
 		desc = ourBurden_desires_first_contact_proactive_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -566,13 +727,36 @@ ourBurden = {
 			}
 		}
 	}
+	demand = {
+		title = ourBurden_happy_enacting_first_contact_proactive_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_first_contact_proactive_unfulfilled
+		desc = ourBurden_happy_enacting_first_contact_proactive_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_first_contact_proactive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_first_contact_proactive
+			}
+		}
+	}
 	
 	demand = {
 		title = ourBurden_desires_orbital_bombardment_surrender_allowed_fulfilled
 		unfulfilled_title = ourBurden_desires_orbital_bombardment_surrender_allowed_unfulfilled
 		desc = ourBurden_desires_orbital_bombardment_surrender_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -587,6 +771,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				has_policy_flag = orbital_bombardment_surrender_allowed
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_happy_enacting_orbital_bombardment_surrender_allowed_fulfilled
+		unfulfilled_title = ourBurden_happy_enacting_orbital_bombardment_surrender_allowed_unfulfilled
+		desc = ourBurden_happy_enacting_orbital_bombardment_surrender_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_orbital_bombardment_surrender_allowed
 			}
 		}
 	}
@@ -615,6 +822,29 @@ ourBurden = {
 			}
 		}
 	}
+	demand = {
+		title = ourBurden_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = ourBurden_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = ourBurden_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ourBurden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_ourBurden }
+			}
+		}
+	}
 	
 	demand = {
 		title = ourBurden_hates_no_wars_avoided
@@ -636,6 +866,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = no_wars }
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_hates_enacting_no_wars_avoided
+		unfulfilled_title = ourBurden_hates_enacting_no_wars_unavoided
+		desc = ourBurden_hates_enacting_no_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ourBurden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_ourBurden }
 			}
 		}
 	}
@@ -663,6 +916,29 @@ ourBurden = {
 			}
 		}
 	}
+	demand = {
+		title = ourBurden_hates_enacting_interference_not_allowed_avoided
+		unfulfilled_title = ourBurden_hates_enacting_interference_not_allowed_unavoided
+		desc = ourBurden_hates_enacting_interference_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ourBurden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_ourBurden }
+			}
+		}
+	}
 	
 	demand = {
 		title = ourBurden_hates_enlightenment_not_allowed_avoided
@@ -684,6 +960,29 @@ ourBurden = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = enlightenment_not_allowed }
+			}
+		}
+	}
+	demand = {
+		title = ourBurden_hates_enacting_enlightenment_not_allowed_avoided
+		unfulfilled_title = ourBurden_hates_enacting_enlightenment_not_allowed_unavoided
+		desc = ourBurden_hates_enacting_enlightenment_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ourBurden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_ourBurden }
 			}
 		}
 	}

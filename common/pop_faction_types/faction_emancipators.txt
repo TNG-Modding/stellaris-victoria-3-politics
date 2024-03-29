@@ -370,7 +370,7 @@ emancipators = {
 		unfulfilled_title = emancipators_desires_slavery_not_allowed_unfulfilled
 		desc = emancipators_desires_slavery_not_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -385,6 +385,29 @@ emancipators = {
 		trigger = {
 			owner = {
 				has_policy_flag = slavery_not_allowed
+			}
+		}
+	}
+	demand = {
+		title = emancipators_happy_enacting_slavery_not_allowed_fulfilled
+		unfulfilled_title = emancipators_happy_enacting_slavery_not_allowed_unfulfilled
+		desc = emancipators_happy_enacting_slavery_not_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_slavery_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_slavery_not_allowed
 			}
 		}
 	}
@@ -410,6 +433,29 @@ emancipators = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = slavery_allowed }
+			}
+		}
+	}
+	demand = {
+		title = emancipators_hates_enacting_slavery_allowed_avoided
+		unfulfilled_title = emancipators_hates_enacting_slavery_allowed_unavoided
+		desc = emancipators_hates_enacting_slavery_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_emancipators
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_emancipators }
 			}
 		}
 	}

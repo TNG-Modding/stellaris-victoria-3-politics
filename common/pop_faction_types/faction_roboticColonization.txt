@@ -380,7 +380,7 @@ roboticColonization = {
 		unfulfilled_title = roboticColonization_desires_dependentColonies_unfulfilled
 		desc = roboticColonization_desires_dependentColonies_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -395,6 +395,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				has_policy_flag = dependentColonies
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_happy_enacting_dependentColonies_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_dependentColonies_unfulfilled
+		desc = roboticColonization_happy_enacting_dependentColonies_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_dependentColonies
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_dependentColonies
 			}
 		}
 	}
@@ -404,7 +427,7 @@ roboticColonization = {
 		unfulfilled_title = roboticColonization_desires_robot_pops_allowed_unfulfilled
 		desc = roboticColonization_desires_robot_pops_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -419,6 +442,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				has_policy_flag = robot_pops_allowed
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_happy_enacting_robot_pops_allowed_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_robot_pops_allowed_unfulfilled
+		desc = roboticColonization_happy_enacting_robot_pops_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_robot_pops_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_robot_pops_allowed
 			}
 		}
 	}
@@ -428,7 +474,7 @@ roboticColonization = {
 		unfulfilled_title = roboticColonization_desires_diplo_stance_expansionist_unfulfilled
 		desc = roboticColonization_desires_diplo_stance_expansionist_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -443,6 +489,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				has_policy_flag = diplo_stance_expansionist
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_happy_enacting_diplo_stance_expansionist_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_diplo_stance_expansionist_unfulfilled
+		desc = roboticColonization_happy_enacting_diplo_stance_expansionist_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_diplo_stance_expansionist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_diplo_stance_expansionist
 			}
 		}
 	}
@@ -452,7 +521,7 @@ roboticColonization = {
 		unfulfilled_title = roboticColonization_desires_ai_servitude_unfulfilled
 		desc = roboticColonization_desires_ai_servitude_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -467,6 +536,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				has_policy_flag = ai_servitude
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_happy_enacting_ai_servitude_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_ai_servitude_unfulfilled
+		desc = roboticColonization_happy_enacting_ai_servitude_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ai_servitude
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_ai_servitude
 			}
 		}
 	}
@@ -476,7 +568,7 @@ roboticColonization = {
 		unfulfilled_title = roboticColonization_desires_appropriation_not_allowed_unfulfilled
 		desc = roboticColonization_desires_appropriation_not_allowed_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -494,13 +586,36 @@ roboticColonization = {
 			}
 		}
 	}
+	demand = {
+		title = roboticColonization_happy_enacting_appropriation_not_allowed_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_appropriation_not_allowed_unfulfilled
+		desc = roboticColonization_happy_enacting_appropriation_not_allowed_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_appropriation_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_appropriation_not_allowed
+			}
+		}
+	}
 	
 	demand = {
 		title = roboticColonization_desires_economic_policy_civilian_fulfilled
 		unfulfilled_title = roboticColonization_desires_economic_policy_civilian_unfulfilled
 		desc = roboticColonization_desires_economic_policy_civilian_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -515,6 +630,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				has_policy_flag = economic_policy_civilian
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_happy_enacting_economic_policy_civilian_fulfilled
+		unfulfilled_title = roboticColonization_happy_enacting_economic_policy_civilian_unfulfilled
+		desc = roboticColonization_happy_enacting_economic_policy_civilian_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_economic_policy_civilian
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_economic_policy_civilian
 			}
 		}
 	}
@@ -543,6 +681,29 @@ roboticColonization = {
 			}
 		}
 	}
+	demand = {
+		title = roboticColonization_hates_enacting_diplo_stance_isolationist_avoided
+		unfulfilled_title = roboticColonization_hates_enacting_diplo_stance_isolationist_unavoided
+		desc = roboticColonization_hates_enacting_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_roboticColonization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_roboticColonization }
+			}
+		}
+	}
 	
 	demand = {
 		title = roboticColonization_hates_ai_full_rights_avoided
@@ -567,6 +728,29 @@ roboticColonization = {
 			}
 		}
 	}
+	demand = {
+		title = roboticColonization_hates_enacting_ai_full_rights_avoided
+		unfulfilled_title = roboticColonization_hates_enacting_ai_full_rights_unavoided
+		desc = roboticColonization_hates_enacting_ai_full_rights_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_roboticColonization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_roboticColonization }
+			}
+		}
+	}
 	
 	demand = {
 		title = roboticColonization_hates_robot_pops_outlawed_avoided
@@ -588,6 +772,29 @@ roboticColonization = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = robot_pops_outlawed }
+			}
+		}
+	}
+	demand = {
+		title = roboticColonization_hates_enacting_robot_pops_outlawed_avoided
+		unfulfilled_title = roboticColonization_hates_enacting_robot_pops_outlawed_unavoided
+		desc = roboticColonization_hates_enacting_robot_pops_outlawed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_roboticColonization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_roboticColonization }
 			}
 		}
 	}

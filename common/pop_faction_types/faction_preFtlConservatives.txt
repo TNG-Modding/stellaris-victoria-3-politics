@@ -381,7 +381,7 @@ preFtlConservatives = {
 		unfulfilled_title = preFtlConservatives_desires_preFtlPoliticalOrganization_unfulfilled
 		desc = preFtlConservatives_desires_preFtlPoliticalOrganization_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -396,6 +396,29 @@ preFtlConservatives = {
 		trigger = {
 			owner = {
 				has_policy_flag = preFtlPoliticalOrganization
+			}
+		}
+	}
+	demand = {
+		title = preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_fulfilled
+		unfulfilled_title = preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_unfulfilled
+		desc = preFtlConservatives_happy_enacting_preFtlPoliticalOrganization_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_preFtlPoliticalOrganization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_preFtlPoliticalOrganization
 			}
 		}
 	}
@@ -405,7 +428,7 @@ preFtlConservatives = {
 		unfulfilled_title = preFtlConservatives_desires_dependentColonies_unfulfilled
 		desc = preFtlConservatives_desires_dependentColonies_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -423,13 +446,36 @@ preFtlConservatives = {
 			}
 		}
 	}
+	demand = {
+		title = preFtlConservatives_happy_enacting_dependentColonies_fulfilled
+		unfulfilled_title = preFtlConservatives_happy_enacting_dependentColonies_unfulfilled
+		desc = preFtlConservatives_happy_enacting_dependentColonies_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_dependentColonies
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_dependentColonies
+			}
+		}
+	}
 	
 	demand = {
 		title = preFtlConservatives_desires_preFtlMilitaries_fulfilled
 		unfulfilled_title = preFtlConservatives_desires_preFtlMilitaries_unfulfilled
 		desc = preFtlConservatives_desires_preFtlMilitaries_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -444,6 +490,29 @@ preFtlConservatives = {
 		trigger = {
 			owner = {
 				has_policy_flag = preFtlMilitaries
+			}
+		}
+	}
+	demand = {
+		title = preFtlConservatives_happy_enacting_preFtlMilitaries_fulfilled
+		unfulfilled_title = preFtlConservatives_happy_enacting_preFtlMilitaries_unfulfilled
+		desc = preFtlConservatives_happy_enacting_preFtlMilitaries_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_preFtlMilitaries
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_preFtlMilitaries
 			}
 		}
 	}

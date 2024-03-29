@@ -13,11 +13,20 @@
  
  
  emergentSouls_desires_ai_full_rights_fulfilled:0 "$ai_full_rights_name$" 
- emergentSouls_desires_ai_full_rights_unfulfilled:0 "$ai_full_rights_name$" 
- emergentSouls_desires_ai_full_rights_desc:0 "The Emergent Souls Faction likes the policy $ai_full_rights_name$."
+ emergentSouls_desires_ai_full_rights_unfulfilled:0 "" 
+ emergentSouls_desires_ai_full_rights_desc:0 "The Emergent Souls Faction likes $ai_full_rights_name$."
+
+ emergentSouls_happy_enacting_ai_full_rights_fulfilled:0 "Enacting $ai_full_rights_name$" 
+ emergentSouls_happy_enacting_ai_full_rights_unfulfilled:0 "" 
+ emergentSouls_happy_enacting_ai_full_rights_desc:0 "The Emergent Souls Faction is happy you are enacting $ai_full_rights_name$."
  
+
  
- emergentSouls_hates_ai_servitude_avoided:0 "$ai_servitude_name$" 
+ emergentSouls_hates_ai_servitude_avoided:0 "" 
  emergentSouls_hates_ai_servitude_unavoided:0 "$ai_servitude_name$" 
  emergentSouls_hates_ai_servitude_desc:0 "The Emergent Souls Faction hates the policy $ai_servitude_name$."
+
+ emergentSouls_hates_enacting_ai_servitude_avoided:0 "" 
+ emergentSouls_hates_enacting_ai_servitude_unavoided:0 "Enacting $ai_servitude_name$" 
+ emergentSouls_hates_enacting_ai_servitude_desc:0 "The Emergent Souls Faction hates that you are enacting $ai_servitude_name$."
  

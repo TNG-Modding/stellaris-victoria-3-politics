@@ -1,9 +1,6 @@
-- Make factions happy while enacting laws
+- Make factions not change mood when the enacting law isn't getting worse or better due to already supporting/hating both current and new law
 - Add positive and negative and debate events
 - Add revolution events
-- Each desired policy should be a demand using inline_script like faction demands
-- Add factions that support every policy option
-- Add factions that hate a policy option
 - Add potential for each faction to make natural progression
 - Add faction unique causes
 - Picking movements

@@ -375,7 +375,7 @@ emergentSouls = {
 		unfulfilled_title = emergentSouls_desires_ai_full_rights_unfulfilled
 		desc = emergentSouls_desires_ai_full_rights_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -390,6 +390,29 @@ emergentSouls = {
 		trigger = {
 			owner = {
 				has_policy_flag = ai_full_rights
+			}
+		}
+	}
+	demand = {
+		title = emergentSouls_happy_enacting_ai_full_rights_fulfilled
+		unfulfilled_title = emergentSouls_happy_enacting_ai_full_rights_unfulfilled
+		desc = emergentSouls_happy_enacting_ai_full_rights_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ai_full_rights
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_ai_full_rights
 			}
 		}
 	}
@@ -415,6 +438,29 @@ emergentSouls = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = ai_servitude }
+			}
+		}
+	}
+	demand = {
+		title = emergentSouls_hates_enacting_ai_servitude_avoided
+		unfulfilled_title = emergentSouls_hates_enacting_ai_servitude_unavoided
+		desc = emergentSouls_hates_enacting_ai_servitude_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_emergentSouls
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_emergentSouls }
 			}
 		}
 	}

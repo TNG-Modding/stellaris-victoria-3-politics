@@ -380,7 +380,7 @@ metaphysicalists = {
 		unfulfilled_title = metaphysicalists_desires_ai_servitude_unfulfilled
 		desc = metaphysicalists_desires_ai_servitude_desc
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		potential = {
@@ -395,6 +395,29 @@ metaphysicalists = {
 		trigger = {
 			owner = {
 				has_policy_flag = ai_servitude
+			}
+		}
+	}
+	demand = {
+		title = metaphysicalists_happy_enacting_ai_servitude_fulfilled
+		unfulfilled_title = metaphysicalists_happy_enacting_ai_servitude_unfulfilled
+		desc = metaphysicalists_happy_enacting_ai_servitude_desc
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_ai_servitude
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_country_flag = enacting_ai_servitude
 			}
 		}
 	}
@@ -420,6 +443,29 @@ metaphysicalists = {
 		trigger = {
 			owner = {
 				NOT = { has_policy_flag = ai_full_rights }
+			}
+		}
+	}
+	demand = {
+		title = metaphysicalists_hates_enacting_ai_full_rights_avoided
+		unfulfilled_title = metaphysicalists_hates_enacting_ai_full_rights_unavoided
+		desc = metaphysicalists_hates_enacting_ai_full_rights_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = enacting_metaphysicalists
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = enacting_metaphysicalists }
 			}
 		}
 	}
