@@ -6,3 +6,4 @@
 - Add factions that hate a policy option
 - Add potential for each faction to make natural progression
 - Add faction unique causes
+- Picking movements

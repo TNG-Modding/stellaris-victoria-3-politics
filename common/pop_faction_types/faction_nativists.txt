@@ -124,15 +124,6 @@ nativists = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -328,4 +319,331 @@ nativists = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_xenophobe
+					
+					has_ethic = ethic_egalitarian
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_xenophobe
+						
+						has_ethic = ethic_egalitarian
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_purge_displacement_only_fulfilled
+		unfulfilled_title = nativists_desires_purge_displacement_only_unfulfilled
+		desc = nativists_desires_purge_displacement_only_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = purge_displacement_only
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = purge_displacement_only
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_slavery_allowed_fulfilled
+		unfulfilled_title = nativists_desires_slavery_allowed_unfulfilled
+		desc = nativists_desires_slavery_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = slavery_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = slavery_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_population_controls_allowed_fulfilled
+		unfulfilled_title = nativists_desires_population_controls_allowed_unfulfilled
+		desc = nativists_desires_population_controls_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = population_controls_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = population_controls_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_pre_sapients_eat_fulfilled
+		unfulfilled_title = nativists_desires_pre_sapients_eat_unfulfilled
+		desc = nativists_desires_pre_sapients_eat_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_eat
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_eat
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_pre_sapients_purge_fulfilled
+		unfulfilled_title = nativists_desires_pre_sapients_purge_unfulfilled
+		desc = nativists_desires_pre_sapients_purge_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_purge
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_purge
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_appropriation_allowed_fulfilled
+		unfulfilled_title = nativists_desires_appropriation_allowed_unfulfilled
+		desc = nativists_desires_appropriation_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_refugees_not_allowed_fulfilled
+		unfulfilled_title = nativists_desires_refugees_not_allowed_unfulfilled
+		desc = nativists_desires_refugees_not_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = refugees_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = refugees_not_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_desires_refugees_only_citizens_fulfilled
+		unfulfilled_title = nativists_desires_refugees_only_citizens_unfulfilled
+		desc = nativists_desires_refugees_only_citizens_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = refugees_only_citizens
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = refugees_only_citizens
+			}
+		}
+	}
+	
+	
+	demand = {
+		title = nativists_hates_purge_allowed_avoided
+		unfulfilled_title = nativists_hates_purge_allowed_unavoided
+		desc = nativists_hates_purge_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = purge_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = purge_allowed }
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_hates_refugees_allowed_avoided
+		unfulfilled_title = nativists_hates_refugees_allowed_unavoided
+		desc = nativists_hates_refugees_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = refugees_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = refugees_allowed }
+			}
+		}
+	}
+	
+	demand = {
+		title = nativists_hates_appropriation_not_allowed_avoided
+		unfulfilled_title = nativists_hates_appropriation_not_allowed_unavoided
+		desc = nativists_hates_appropriation_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = appropriation_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = appropriation_not_allowed }
+			}
+		}
+	}
+	
+	
 }

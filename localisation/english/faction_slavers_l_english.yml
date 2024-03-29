@@ -7,6 +7,17 @@
  slavers_traits:0 "£trait_talented£ £trait_intelligent£ £trait_decadent£"
  slavers_buildings:0 ""
  slavers_ethics:0 "£authoritarian£ £spiritualist£ "
- pft_slavers_desc:2 "§BThe Slavers Faction§! believe that slavery is the natural state of many.\n\n$slavers_ethics$$slavers_traits$\n\n$slavers_buildings$\n\n$slavers_supports$\n\n$slavers_opposes$"
+ pft_slavers_desc:2 "§BThe Slavers Faction§! believe that slavery is the natural state of many.\n\n$slavers_ethics$$slavers_traits$\n\n$slavers_buildings$\n\n$slavers_supports$\n$slavers_opposes$"
 
  slavers_visual_ethic:1 "£authoritarian£ £spiritualist£"
+ 
+ 
+ slavers_desires_slavery_allowed_fulfilled:0 "$slavery_allowed_name$" 
+ slavers_desires_slavery_allowed_unfulfilled:0 "$slavery_allowed_name$" 
+ slavers_desires_slavery_allowed_desc:0 "The Slavers Faction likes the policy $slavery_allowed_name$."
+ 
+ 
+ slavers_hates_slavery_not_allowed_avoided:0 "$slavery_not_allowed_name$" 
+ slavers_hates_slavery_not_allowed_unavoided:0 "$slavery_not_allowed_name$" 
+ slavers_hates_slavery_not_allowed_desc:0 "The Slavers Faction hates the policy $slavery_not_allowed_name$."
+ 

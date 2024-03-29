@@ -31,7 +31,7 @@ situation_movement_pre_sapients_purge = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_pre_sapients_purge
+				has_country_flag = enacting_policy
 			}
 			situation_progress > 0
 			add = -1

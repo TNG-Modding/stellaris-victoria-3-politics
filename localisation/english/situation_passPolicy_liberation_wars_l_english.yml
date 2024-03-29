@@ -1,31 +1,31 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_liberation_wars:0 "Liberation Wars Legislation"
- situation_passPolicy_liberation_wars_type:0 "Liberation Wars Legislation"
+ situation_passPolicy_liberation_wars:0 "$liberation_wars_name$ Legislation"
+ situation_passPolicy_liberation_wars_type:0 "$liberation_wars_name$ Legislation"
  situation_passPolicy_liberation_wars_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_liberation_wars_desc:0 "We are working on passing the policy §BLiberation Wars§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_liberation_wars:0 "Pass §BLiberation Wars§!."
+ situation_passPolicy_liberation_wars_desc:0 "We are working on passing the policy §B$liberation_wars_name$§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_liberation_wars:0 "Pass §B$liberation_wars_name$§!."
 
- situation_passPolicy_liberation_wars.7.name:0 "§BLiberation Wars§! Passed!"
- situation_passPolicy_liberation_wars.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BLiberation Wars§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_liberation_wars.7.name:0 "§B$liberation_wars_name$§! Passed!"
+ situation_passPolicy_liberation_wars.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §B$liberation_wars_name$§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_liberation_wars.7.a:0 "Finally!"
 
- situation_passPolicy_liberation_wars.8.name:0 "§BLiberation Wars§! Abandoned!"
- situation_passPolicy_liberation_wars.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BLiberation Wars§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BLiberation Wars§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_liberation_wars.8.a:0 "It seems it was not §BLiberation Wars's§! time."
+ situation_passPolicy_liberation_wars.8.name:0 "§B$liberation_wars_name$§! Abandoned!"
+ situation_passPolicy_liberation_wars.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §B$liberation_wars_name$§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §B$liberation_wars_name$§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_liberation_wars.8.a:0 "It seems it was not §B$liberation_wars_name$'s§! time."
 
- situation_passPolicy_liberation_wars.9.name:0 "§BLiberation Wars§! Failed to Pass!"
- situation_passPolicy_liberation_wars.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BLiberation Wars§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_liberation_wars.9.name:0 "§B$liberation_wars_name$§! Failed to Pass!"
+ situation_passPolicy_liberation_wars.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §B$liberation_wars_name$§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_liberation_wars.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_liberation_wars.1.name:0 "Legislation for Liberation Wars"
+ situation_passPolicy_liberation_wars.1.name:0 "Legislation for $liberation_wars_name$"
  situation_passPolicy_liberation_wars.1.desc:0 "We move that .\n\nSupport: §G[This.movement_liberation_wars_faction_support]%§!"
 
- situation_passPolicy_liberation_wars.2.name:0 "Liberation Wars Support"
+ situation_passPolicy_liberation_wars.2.name:0 "$liberation_wars_name$ Support"
  situation_passPolicy_liberation_wars.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_liberation_wars.1.name:0 "Liberation Wars"
+ faction_supportPolicy_liberation_wars.1.name:0 "$liberation_wars_name$"
  faction_supportPolicy_liberation_wars.1.desc:0 "Overall Support: [Root.faction_support_liberation_wars]\n\nSupporters:\nourBurden: [Root.ourBurden_support_liberation_wars]\njihadism: [Root.jihadism_support_liberation_wars]\n\nDetractors:\n"
 
  edict_pass_liberation_wars:0 "Pass §B$liberation_wars_name$§!"

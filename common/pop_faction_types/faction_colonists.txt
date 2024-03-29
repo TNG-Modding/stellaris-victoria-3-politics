@@ -159,15 +159,6 @@ colonists = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -363,4 +354,283 @@ colonists = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_xenophobe
+					
+					has_ethic = ethic_egalitarian
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_xenophobe
+						
+						has_ethic = ethic_egalitarian
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_diplo_stance_expansionist_fulfilled
+		unfulfilled_title = colonists_desires_diplo_stance_expansionist_unfulfilled
+		desc = colonists_desires_diplo_stance_expansionist_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_expansionist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_expansionist
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_dependentColonies_fulfilled
+		unfulfilled_title = colonists_desires_dependentColonies_unfulfilled
+		desc = colonists_desires_dependentColonies_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = dependentColonies
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = dependentColonies
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_merchantMarine_fulfilled
+		unfulfilled_title = colonists_desires_merchantMarine_unfulfilled
+		desc = colonists_desires_merchantMarine_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = merchantMarine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = merchantMarine
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_preFtlPoliticalOrganization_fulfilled
+		unfulfilled_title = colonists_desires_preFtlPoliticalOrganization_unfulfilled
+		desc = colonists_desires_preFtlPoliticalOrganization_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = preFtlPoliticalOrganization
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = preFtlPoliticalOrganization
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_appropriation_allowed_fulfilled
+		unfulfilled_title = colonists_desires_appropriation_allowed_unfulfilled
+		desc = colonists_desires_appropriation_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_resettlement_not_allowed_fulfilled
+		unfulfilled_title = colonists_desires_resettlement_not_allowed_unfulfilled
+		desc = colonists_desires_resettlement_not_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = resettlement_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = resettlement_not_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_border_policy_closed_fulfilled
+		unfulfilled_title = colonists_desires_border_policy_closed_unfulfilled
+		desc = colonists_desires_border_policy_closed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = border_policy_closed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = border_policy_closed
+			}
+		}
+	}
+	
+	demand = {
+		title = colonists_desires_economic_policy_civilian_fulfilled
+		unfulfilled_title = colonists_desires_economic_policy_civilian_unfulfilled
+		desc = colonists_desires_economic_policy_civilian_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = economic_policy_civilian
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = economic_policy_civilian
+			}
+		}
+	}
+	
+	
+	demand = {
+		title = colonists_hates_diplo_stance_isolationist_avoided
+		unfulfilled_title = colonists_hates_diplo_stance_isolationist_unavoided
+		desc = colonists_hates_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_isolationist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_isolationist }
+			}
+		}
+	}
+	
+	
 }

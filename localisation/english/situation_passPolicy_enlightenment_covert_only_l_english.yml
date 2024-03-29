@@ -1,31 +1,31 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_enlightenment_covert_only:0 "Covert Enlightenment Only Legislation"
- situation_passPolicy_enlightenment_covert_only_type:0 "Covert Enlightenment Only Legislation"
+ situation_passPolicy_enlightenment_covert_only:0 "$enlightenment_covert_only_name$ Legislation"
+ situation_passPolicy_enlightenment_covert_only_type:0 "$enlightenment_covert_only_name$ Legislation"
  situation_passPolicy_enlightenment_covert_only_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_enlightenment_covert_only_desc:0 "We are working on passing the policy §BCovert Enlightenment Only§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_enlightenment_covert_only:0 "Pass §BCovert Enlightenment Only§!."
+ situation_passPolicy_enlightenment_covert_only_desc:0 "We are working on passing the policy §B$enlightenment_covert_only_name$§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_enlightenment_covert_only:0 "Pass §B$enlightenment_covert_only_name$§!."
 
- situation_passPolicy_enlightenment_covert_only.7.name:0 "§BCovert Enlightenment Only§! Passed!"
- situation_passPolicy_enlightenment_covert_only.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BCovert Enlightenment Only§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_enlightenment_covert_only.7.name:0 "§B$enlightenment_covert_only_name$§! Passed!"
+ situation_passPolicy_enlightenment_covert_only.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §B$enlightenment_covert_only_name$§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_enlightenment_covert_only.7.a:0 "Finally!"
 
- situation_passPolicy_enlightenment_covert_only.8.name:0 "§BCovert Enlightenment Only§! Abandoned!"
- situation_passPolicy_enlightenment_covert_only.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BCovert Enlightenment Only§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BCovert Enlightenment Only§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_enlightenment_covert_only.8.a:0 "It seems it was not §BCovert Enlightenment Only's§! time."
+ situation_passPolicy_enlightenment_covert_only.8.name:0 "§B$enlightenment_covert_only_name$§! Abandoned!"
+ situation_passPolicy_enlightenment_covert_only.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §B$enlightenment_covert_only_name$§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §B$enlightenment_covert_only_name$§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_enlightenment_covert_only.8.a:0 "It seems it was not §B$enlightenment_covert_only_name$'s§! time."
 
- situation_passPolicy_enlightenment_covert_only.9.name:0 "§BCovert Enlightenment Only§! Failed to Pass!"
- situation_passPolicy_enlightenment_covert_only.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BCovert Enlightenment Only§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_enlightenment_covert_only.9.name:0 "§B$enlightenment_covert_only_name$§! Failed to Pass!"
+ situation_passPolicy_enlightenment_covert_only.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §B$enlightenment_covert_only_name$§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_enlightenment_covert_only.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_enlightenment_covert_only.1.name:0 "Legislation for Covert Enlightenment Only"
+ situation_passPolicy_enlightenment_covert_only.1.name:0 "Legislation for $enlightenment_covert_only_name$"
  situation_passPolicy_enlightenment_covert_only.1.desc:0 "We move that .\n\nSupport: §G[This.movement_enlightenment_covert_only_faction_support]%§!"
 
- situation_passPolicy_enlightenment_covert_only.2.name:0 "Covert Enlightenment Only Support"
+ situation_passPolicy_enlightenment_covert_only.2.name:0 "$enlightenment_covert_only_name$ Support"
  situation_passPolicy_enlightenment_covert_only.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_enlightenment_covert_only.1.name:0 "Covert Enlightenment Only"
+ faction_supportPolicy_enlightenment_covert_only.1.name:0 "$enlightenment_covert_only_name$"
  faction_supportPolicy_enlightenment_covert_only.1.desc:0 "Overall Support: [Root.faction_support_enlightenment_covert_only]\n\nSupporters:\n\nDetractors:\n"
 
  edict_pass_enlightenment_covert_only:0 "Pass §B$enlightenment_covert_only_name$§!"

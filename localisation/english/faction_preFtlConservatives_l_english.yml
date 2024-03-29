@@ -7,6 +7,21 @@
  preFtlConservatives_traits:0 "£trait_slow_learners£ £trait_traditional£ £trait_uplifted£ £trait_conformists£ £trait_venerable£ £trait_enduring£"
  preFtlConservatives_buildings:0 ""
  preFtlConservatives_ethics:0 "£spiritualist£ "
- pft_preFtlConservatives_desc:2 "§BThe Pre-FTL Conservatives Faction§! wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.\n\n$preFtlConservatives_ethics$$preFtlConservatives_traits$\n\n$preFtlConservatives_buildings$\n\n$preFtlConservatives_supports$\n\n$preFtlConservatives_opposes$"
+ pft_preFtlConservatives_desc:2 "§BThe Pre-FTL Conservatives Faction§! wish to preserve the systems and ideals of our pre-ftl past. They oppose modernization efforts, particularly those opposed to our governing ethics. The more modern buildings and colonies we create, the more elusive this past will become.\n\n$preFtlConservatives_ethics$$preFtlConservatives_traits$\n\n$preFtlConservatives_buildings$\n\n$preFtlConservatives_supports$\n$preFtlConservatives_opposes$"
 
  preFtlConservatives_visual_ethic:1 "£spiritualist£"
+ 
+ 
+ preFtlConservatives_desires_preFtlPoliticalOrganization_fulfilled:0 "$preFtlPoliticalOrganization_name$" 
+ preFtlConservatives_desires_preFtlPoliticalOrganization_unfulfilled:0 "$preFtlPoliticalOrganization_name$" 
+ preFtlConservatives_desires_preFtlPoliticalOrganization_desc:0 "The Pre-FTL Conservatives Faction likes the policy $preFtlPoliticalOrganization_name$."
+ 
+ preFtlConservatives_desires_dependentColonies_fulfilled:0 "$dependentColonies_name$" 
+ preFtlConservatives_desires_dependentColonies_unfulfilled:0 "$dependentColonies_name$" 
+ preFtlConservatives_desires_dependentColonies_desc:0 "The Pre-FTL Conservatives Faction likes the policy $dependentColonies_name$."
+ 
+ preFtlConservatives_desires_preFtlMilitaries_fulfilled:0 "$preFtlMilitaries_name$" 
+ preFtlConservatives_desires_preFtlMilitaries_unfulfilled:0 "$preFtlMilitaries_name$" 
+ preFtlConservatives_desires_preFtlMilitaries_desc:0 "The Pre-FTL Conservatives Faction likes the policy $preFtlMilitaries_name$."
+ 
+ 

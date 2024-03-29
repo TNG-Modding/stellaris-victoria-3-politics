@@ -7,6 +7,17 @@
  emergentSouls_traits:0 "£trait_natural_engineers£ £trait_uplifted£"
  emergentSouls_buildings:0 ""
  emergentSouls_ethics:0 "£egalitarian£ £materialist£ "
- pft_emergentSouls_desc:2 "§BThe Emergent Souls Faction§! believe artificial intelligence have earned their rights by virtue of their apparent conciousness.\n\n$emergentSouls_ethics$$emergentSouls_traits$\n\n$emergentSouls_buildings$\n\n$emergentSouls_supports$\n\n$emergentSouls_opposes$"
+ pft_emergentSouls_desc:2 "§BThe Emergent Souls Faction§! believe artificial intelligence have earned their rights by virtue of their apparent conciousness.\n\n$emergentSouls_ethics$$emergentSouls_traits$\n\n$emergentSouls_buildings$\n\n$emergentSouls_supports$\n$emergentSouls_opposes$"
 
  emergentSouls_visual_ethic:1 "£egalitarian£ £materialist£"
+ 
+ 
+ emergentSouls_desires_ai_full_rights_fulfilled:0 "$ai_full_rights_name$" 
+ emergentSouls_desires_ai_full_rights_unfulfilled:0 "$ai_full_rights_name$" 
+ emergentSouls_desires_ai_full_rights_desc:0 "The Emergent Souls Faction likes the policy $ai_full_rights_name$."
+ 
+ 
+ emergentSouls_hates_ai_servitude_avoided:0 "$ai_servitude_name$" 
+ emergentSouls_hates_ai_servitude_unavoided:0 "$ai_servitude_name$" 
+ emergentSouls_hates_ai_servitude_desc:0 "The Emergent Souls Faction hates the policy $ai_servitude_name$."
+ 

@@ -31,7 +31,7 @@ situation_movement_relentless_industrialists_study = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_relentless_industrialists_study
+				has_country_flag = enacting_policy
 			}
 			situation_progress > 0
 			add = -1

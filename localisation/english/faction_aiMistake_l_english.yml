@@ -7,6 +7,33 @@
  aiMistake_traits:0 "£trait_natural_physicists£ £trait_natural_sociologists£ £trait_intelligent£ £trait_weak£"
  aiMistake_buildings:0 ""
  aiMistake_ethics:0 "£xenophobe£ £spiritualist£ "
- pft_aiMistake_desc:2 "§BThe AI Xenoists Faction§! believe that in creating apparently conciousness AI, we have created an unknowable enemy.\n\n$aiMistake_ethics$$aiMistake_traits$\n\n$aiMistake_buildings$\n\n$aiMistake_supports$\n\n$aiMistake_opposes$"
+ pft_aiMistake_desc:2 "§BThe AI Xenoists Faction§! believe that in creating apparently conciousness AI, we have created an unknowable enemy.\n\n$aiMistake_ethics$$aiMistake_traits$\n\n$aiMistake_buildings$\n\n$aiMistake_supports$\n$aiMistake_opposes$"
 
  aiMistake_visual_ethic:1 "£xenophobe£ £spiritualist£"
+ 
+ 
+ aiMistake_desires_robot_pops_outlawed_fulfilled:0 "$robot_pops_outlawed_name$" 
+ aiMistake_desires_robot_pops_outlawed_unfulfilled:0 "$robot_pops_outlawed_name$" 
+ aiMistake_desires_robot_pops_outlawed_desc:0 "The AI Xenoists Faction likes the policy $robot_pops_outlawed_name$."
+ 
+ aiMistake_desires_ai_outlawed_fulfilled:0 "$ai_outlawed_name$" 
+ aiMistake_desires_ai_outlawed_unfulfilled:0 "$ai_outlawed_name$" 
+ aiMistake_desires_ai_outlawed_desc:0 "The AI Xenoists Faction likes the policy $ai_outlawed_name$."
+ 
+ aiMistake_desires_resettlement_allowed_fulfilled:0 "$resettlement_allowed_name$" 
+ aiMistake_desires_resettlement_allowed_unfulfilled:0 "$resettlement_allowed_name$" 
+ aiMistake_desires_resettlement_allowed_desc:0 "The AI Xenoists Faction likes the policy $resettlement_allowed_name$."
+ 
+ 
+ aiMistake_hates_ai_servitude_avoided:0 "$ai_servitude_name$" 
+ aiMistake_hates_ai_servitude_unavoided:0 "$ai_servitude_name$" 
+ aiMistake_hates_ai_servitude_desc:0 "The AI Xenoists Faction hates the policy $ai_servitude_name$."
+ 
+ aiMistake_hates_ai_full_rights_avoided:0 "$ai_full_rights_name$" 
+ aiMistake_hates_ai_full_rights_unavoided:0 "$ai_full_rights_name$" 
+ aiMistake_hates_ai_full_rights_desc:0 "The AI Xenoists Faction hates the policy $ai_full_rights_name$."
+ 
+ aiMistake_hates_robot_pops_allowed_avoided:0 "$robot_pops_allowed_name$" 
+ aiMistake_hates_robot_pops_allowed_unavoided:0 "$robot_pops_allowed_name$" 
+ aiMistake_hates_robot_pops_allowed_desc:0 "The AI Xenoists Faction hates the policy $robot_pops_allowed_name$."
+ 

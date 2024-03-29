@@ -7,6 +7,17 @@ l_english:
  {{varname}}_traits:0 "{%for trait in traits %}£trait_{{trait}}£{%if loop.index < traits|length %} {%endif%}{% endfor%}"
  {{varname}}_buildings:0 "{%for building in buildings %}£building_{{building}}£{%if loop.index < buildings|length %} {%endif%}{% endfor%}"
  {{varname}}_ethics:0 "{%for ethic in ethics %}£{{ethic}}£ {% endfor%}"
- pft_{{varname}}_desc:2 "§BThe {{displayName}} Faction§! {{desc}}\n\n${{varname}}_ethics$${{varname}}_traits$\n\n${{varname}}_buildings$\n\n${{varname}}_supports$\n\n${{varname}}_opposes$"
+ pft_{{varname}}_desc:2 "§BThe {{displayName}} Faction§! {{desc}}\n\n${{varname}}_ethics$${{varname}}_traits$\n\n${{varname}}_buildings$\n\n${{varname}}_supports$\n${{varname}}_opposes$"
 
  {{varname}}_visual_ethic:1 "{% for ethic in ethics %}£{{ethic}}£{%if loop.index < ethics|length %} {%endif%}{%endfor%}"
+ 
+ {% for policy in supportedPolicies %}
+ {{varname}}_desires_{{policy}}_fulfilled:0 "${{policy}}_name$" 
+ {{varname}}_desires_{{policy}}_unfulfilled:0 "${{policy}}_name$" 
+ {{varname}}_desires_{{policy}}_desc:0 "The {{displayName}} Faction likes the policy ${{policy}}_name$."
+ {% endfor %}
+ {% for policy in againstPolicies %}
+ {{varname}}_hates_{{policy}}_avoided:0 "${{policy}}_name$" 
+ {{varname}}_hates_{{policy}}_unavoided:0 "${{policy}}_name$" 
+ {{varname}}_hates_{{policy}}_desc:0 "The {{displayName}} Faction hates the policy ${{policy}}_name$."
+ {% endfor %}

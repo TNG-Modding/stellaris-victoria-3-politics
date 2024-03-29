@@ -7,6 +7,73 @@
  realpolitik_traits:0 "£trait_charismatic£ £trait_strong£ £trait_very_strong£"
  realpolitik_buildings:0 ""
  realpolitik_ethics:0 "£egalitarian£ £militarist£ "
- pft_realpolitik_desc:2 "§BThe Realpolitik Faction§! believe that warfare is a fundamental reality of galatic life to be handled dispassionately.\n\n$realpolitik_ethics$$realpolitik_traits$\n\n$realpolitik_buildings$\n\n$realpolitik_supports$\n\n$realpolitik_opposes$"
+ pft_realpolitik_desc:2 "§BThe Realpolitik Faction§! believe that warfare is a fundamental reality of galatic life to be handled dispassionately.\n\n$realpolitik_ethics$$realpolitik_traits$\n\n$realpolitik_buildings$\n\n$realpolitik_supports$\n$realpolitik_opposes$"
 
  realpolitik_visual_ethic:1 "£egalitarian£ £militarist£"
+ 
+ 
+ realpolitik_desires_diplo_stance_belligerent_fulfilled:0 "$diplo_stance_belligerent_name$" 
+ realpolitik_desires_diplo_stance_belligerent_unfulfilled:0 "$diplo_stance_belligerent_name$" 
+ realpolitik_desires_diplo_stance_belligerent_desc:0 "The Realpolitik Faction likes the policy $diplo_stance_belligerent_name$."
+ 
+ realpolitik_desires_unrestricted_wars_fulfilled:0 "$unrestricted_wars_name$" 
+ realpolitik_desires_unrestricted_wars_unfulfilled:0 "$unrestricted_wars_name$" 
+ realpolitik_desires_unrestricted_wars_desc:0 "The Realpolitik Faction likes the policy $unrestricted_wars_name$."
+ 
+ realpolitik_desires_orbital_bombardment_selective_fulfilled:0 "$orbital_bombardment_selective_name$" 
+ realpolitik_desires_orbital_bombardment_selective_unfulfilled:0 "$orbital_bombardment_selective_name$" 
+ realpolitik_desires_orbital_bombardment_selective_desc:0 "The Realpolitik Faction likes the policy $orbital_bombardment_selective_name$."
+ 
+ realpolitik_desires_rapid_deployment_doctrine_fulfilled:0 "$rapid_deployment_doctrine_name$" 
+ realpolitik_desires_rapid_deployment_doctrine_unfulfilled:0 "$rapid_deployment_doctrine_name$" 
+ realpolitik_desires_rapid_deployment_doctrine_desc:0 "The Realpolitik Faction likes the policy $rapid_deployment_doctrine_name$."
+ 
+ realpolitik_desires_balanced_terms_fulfilled:0 "$balanced_terms_name$" 
+ realpolitik_desires_balanced_terms_unfulfilled:0 "$balanced_terms_name$" 
+ realpolitik_desires_balanced_terms_desc:0 "The Realpolitik Faction likes the policy $balanced_terms_name$."
+ 
+ realpolitik_desires_balanced_corporate_terms_fulfilled:0 "$balanced_corporate_terms_name$" 
+ realpolitik_desires_balanced_corporate_terms_unfulfilled:0 "$balanced_corporate_terms_name$" 
+ realpolitik_desires_balanced_corporate_terms_desc:0 "The Realpolitik Faction likes the policy $balanced_corporate_terms_name$."
+ 
+ realpolitik_desires_economic_policy_balanced_fulfilled:0 "$economic_policy_balanced_name$" 
+ realpolitik_desires_economic_policy_balanced_unfulfilled:0 "$economic_policy_balanced_name$" 
+ realpolitik_desires_economic_policy_balanced_desc:0 "The Realpolitik Faction likes the policy $economic_policy_balanced_name$."
+ 
+ realpolitik_desires_orbital_bombardment_surrender_allowed_fulfilled:0 "$orbital_bombardment_surrender_allowed_name$" 
+ realpolitik_desires_orbital_bombardment_surrender_allowed_unfulfilled:0 "$orbital_bombardment_surrender_allowed_name$" 
+ realpolitik_desires_orbital_bombardment_surrender_allowed_desc:0 "The Realpolitik Faction likes the policy $orbital_bombardment_surrender_allowed_name$."
+ 
+ 
+ realpolitik_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ realpolitik_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
+ realpolitik_hates_diplo_stance_isolationist_desc:0 "The Realpolitik Faction hates the policy $diplo_stance_isolationist_name$."
+ 
+ realpolitik_hates_no_wars_avoided:0 "$no_wars_name$" 
+ realpolitik_hates_no_wars_unavoided:0 "$no_wars_name$" 
+ realpolitik_hates_no_wars_desc:0 "The Realpolitik Faction hates the policy $no_wars_name$."
+ 
+ realpolitik_hates_orbital_bombardment_armageddon_avoided:0 "$orbital_bombardment_armageddon_name$" 
+ realpolitik_hates_orbital_bombardment_armageddon_unavoided:0 "$orbital_bombardment_armageddon_name$" 
+ realpolitik_hates_orbital_bombardment_armageddon_desc:0 "The Realpolitik Faction hates the policy $orbital_bombardment_armageddon_name$."
+ 
+ realpolitik_hates_no_retreat_doctrine_avoided:0 "$no_retreat_doctrine_name$" 
+ realpolitik_hates_no_retreat_doctrine_unavoided:0 "$no_retreat_doctrine_name$" 
+ realpolitik_hates_no_retreat_doctrine_desc:0 "The Realpolitik Faction hates the policy $no_retreat_doctrine_name$."
+ 
+ realpolitik_hates_defense_in_depth_doctrine_avoided:0 "$defense_in_depth_doctrine_name$" 
+ realpolitik_hates_defense_in_depth_doctrine_unavoided:0 "$defense_in_depth_doctrine_name$" 
+ realpolitik_hates_defense_in_depth_doctrine_desc:0 "The Realpolitik Faction hates the policy $defense_in_depth_doctrine_name$."
+ 
+ realpolitik_hates_benevolent_terms_avoided:0 "$benevolent_terms_name$" 
+ realpolitik_hates_benevolent_terms_unavoided:0 "$benevolent_terms_name$" 
+ realpolitik_hates_benevolent_terms_desc:0 "The Realpolitik Faction hates the policy $benevolent_terms_name$."
+ 
+ realpolitik_hates_benevolent_corporate_terms_avoided:0 "$benevolent_corporate_terms_name$" 
+ realpolitik_hates_benevolent_corporate_terms_unavoided:0 "$benevolent_corporate_terms_name$" 
+ realpolitik_hates_benevolent_corporate_terms_desc:0 "The Realpolitik Faction hates the policy $benevolent_corporate_terms_name$."
+ 
+ realpolitik_hates_economic_policy_military_avoided:0 "$economic_policy_military_name$" 
+ realpolitik_hates_economic_policy_military_unavoided:0 "$economic_policy_military_name$" 
+ realpolitik_hates_economic_policy_military_desc:0 "The Realpolitik Faction hates the policy $economic_policy_military_name$."
+ 

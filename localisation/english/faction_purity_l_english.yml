@@ -7,6 +7,89 @@
  purity_traits:0 "£trait_trait_very_strong£ £trait_trait_solitary£ £trait_trait_repugnant£ £trait_trait_invasive£ £trait_intelligent£ £trait_talented£ £trait_traditional£"
  purity_buildings:0 ""
  purity_ethics:0 "£spiritualist£ £militarist£ £xenophobe£ "
- pft_purity_desc:2 "§BThe Purity Faction§! believe in creating a future for one species, our species, by any and every means necessary.\n\n$purity_ethics$$purity_traits$\n\n$purity_buildings$\n\n$purity_supports$\n\n$purity_opposes$"
+ pft_purity_desc:2 "§BThe Purity Faction§! believe in creating a future for one species, our species, by any and every means necessary.\n\n$purity_ethics$$purity_traits$\n\n$purity_buildings$\n\n$purity_supports$\n$purity_opposes$"
 
  purity_visual_ethic:1 "£spiritualist£ £militarist£ £xenophobe£"
+ 
+ 
+ purity_desires_diplo_stance_purification_fulfilled:0 "$diplo_stance_purification_name$" 
+ purity_desires_diplo_stance_purification_unfulfilled:0 "$diplo_stance_purification_name$" 
+ purity_desires_diplo_stance_purification_desc:0 "The Purity Faction likes the policy $diplo_stance_purification_name$."
+ 
+ purity_desires_diplo_stance_extermination_fulfilled:0 "$diplo_stance_extermination_name$" 
+ purity_desires_diplo_stance_extermination_unfulfilled:0 "$diplo_stance_extermination_name$" 
+ purity_desires_diplo_stance_extermination_desc:0 "The Purity Faction likes the policy $diplo_stance_extermination_name$."
+ 
+ purity_desires_unrestricted_wars_fulfilled:0 "$unrestricted_wars_name$" 
+ purity_desires_unrestricted_wars_unfulfilled:0 "$unrestricted_wars_name$" 
+ purity_desires_unrestricted_wars_desc:0 "The Purity Faction likes the policy $unrestricted_wars_name$."
+ 
+ purity_desires_interference_aggressive_fulfilled:0 "$interference_aggressive_name$" 
+ purity_desires_interference_aggressive_unfulfilled:0 "$interference_aggressive_name$" 
+ purity_desires_interference_aggressive_desc:0 "The Purity Faction likes the policy $interference_aggressive_name$."
+ 
+ purity_desires_enlightenment_not_allowed_fulfilled:0 "$enlightenment_not_allowed_name$" 
+ purity_desires_enlightenment_not_allowed_unfulfilled:0 "$enlightenment_not_allowed_name$" 
+ purity_desires_enlightenment_not_allowed_desc:0 "The Purity Faction likes the policy $enlightenment_not_allowed_name$."
+ 
+ purity_desires_armada_fulfilled:0 "$armada_name$" 
+ purity_desires_armada_unfulfilled:0 "$armada_name$" 
+ purity_desires_armada_desc:0 "The Purity Faction likes the policy $armada_name$."
+ 
+ purity_desires_grandArmy_fulfilled:0 "$grandArmy_name$" 
+ purity_desires_grandArmy_unfulfilled:0 "$grandArmy_name$" 
+ purity_desires_grandArmy_desc:0 "The Purity Faction likes the policy $grandArmy_name$."
+ 
+ purity_desires_pre_sapients_eat_fulfilled:0 "$pre_sapients_eat_name$" 
+ purity_desires_pre_sapients_eat_unfulfilled:0 "$pre_sapients_eat_name$" 
+ purity_desires_pre_sapients_eat_desc:0 "The Purity Faction likes the policy $pre_sapients_eat_name$."
+ 
+ purity_desires_pre_sapients_purge_fulfilled:0 "$pre_sapients_purge_name$" 
+ purity_desires_pre_sapients_purge_unfulfilled:0 "$pre_sapients_purge_name$" 
+ purity_desires_pre_sapients_purge_desc:0 "The Purity Faction likes the policy $pre_sapients_purge_name$."
+ 
+ purity_desires_economic_policy_military_fulfilled:0 "$economic_policy_military_name$" 
+ purity_desires_economic_policy_military_unfulfilled:0 "$economic_policy_military_name$" 
+ purity_desires_economic_policy_military_desc:0 "The Purity Faction likes the policy $economic_policy_military_name$."
+ 
+ purity_desires_first_contact_attack_allowed_fulfilled:0 "$first_contact_attack_allowed_name$" 
+ purity_desires_first_contact_attack_allowed_unfulfilled:0 "$first_contact_attack_allowed_name$" 
+ purity_desires_first_contact_attack_allowed_desc:0 "The Purity Faction likes the policy $first_contact_attack_allowed_name$."
+ 
+ purity_desires_leader_enhancement_selected_lineages_fulfilled:0 "$leader_enhancement_selected_lineages_name$" 
+ purity_desires_leader_enhancement_selected_lineages_unfulfilled:0 "$leader_enhancement_selected_lineages_name$" 
+ purity_desires_leader_enhancement_selected_lineages_desc:0 "The Purity Faction likes the policy $leader_enhancement_selected_lineages_name$."
+ 
+ purity_desires_appropriation_allowed_fulfilled:0 "$appropriation_allowed_name$" 
+ purity_desires_appropriation_allowed_unfulfilled:0 "$appropriation_allowed_name$" 
+ purity_desires_appropriation_allowed_desc:0 "The Purity Faction likes the policy $appropriation_allowed_name$."
+ 
+ purity_desires_orbital_bombardment_surrender_forbidden_fulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
+ purity_desires_orbital_bombardment_surrender_forbidden_unfulfilled:0 "$orbital_bombardment_surrender_forbidden_name$" 
+ purity_desires_orbital_bombardment_surrender_forbidden_desc:0 "The Purity Faction likes the policy $orbital_bombardment_surrender_forbidden_name$."
+ 
+ purity_desires_orbital_bombardment_armageddon_fulfilled:0 "$orbital_bombardment_armageddon_name$" 
+ purity_desires_orbital_bombardment_armageddon_unfulfilled:0 "$orbital_bombardment_armageddon_name$" 
+ purity_desires_orbital_bombardment_armageddon_desc:0 "The Purity Faction likes the policy $orbital_bombardment_armageddon_name$."
+ 
+ purity_desires_orbital_bombardment_indiscriminate_fulfilled:0 "$orbital_bombardment_indiscriminate_name$" 
+ purity_desires_orbital_bombardment_indiscriminate_unfulfilled:0 "$orbital_bombardment_indiscriminate_name$" 
+ purity_desires_orbital_bombardment_indiscriminate_desc:0 "The Purity Faction likes the policy $orbital_bombardment_indiscriminate_name$."
+ 
+ purity_desires_oppressive_terms_fulfilled:0 "$oppressive_terms_name$" 
+ purity_desires_oppressive_terms_unfulfilled:0 "$oppressive_terms_name$" 
+ purity_desires_oppressive_terms_desc:0 "The Purity Faction likes the policy $oppressive_terms_name$."
+ 
+ purity_desires_oppressive_corporate_terms_fulfilled:0 "$oppressive_corporate_terms_name$" 
+ purity_desires_oppressive_corporate_terms_unfulfilled:0 "$oppressive_corporate_terms_name$" 
+ purity_desires_oppressive_corporate_terms_desc:0 "The Purity Faction likes the policy $oppressive_corporate_terms_name$."
+ 
+ purity_desires_no_retreat_doctrine_fulfilled:0 "$no_retreat_doctrine_name$" 
+ purity_desires_no_retreat_doctrine_unfulfilled:0 "$no_retreat_doctrine_name$" 
+ purity_desires_no_retreat_doctrine_desc:0 "The Purity Faction likes the policy $no_retreat_doctrine_name$."
+ 
+ purity_desires_purge_allowed_fulfilled:0 "$purge_allowed_name$" 
+ purity_desires_purge_allowed_unfulfilled:0 "$purge_allowed_name$" 
+ purity_desires_purge_allowed_desc:0 "The Purity Faction likes the policy $purge_allowed_name$."
+ 
+ 

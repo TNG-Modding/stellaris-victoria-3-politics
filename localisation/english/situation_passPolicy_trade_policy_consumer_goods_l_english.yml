@@ -1,31 +1,31 @@
 ﻿l_english:
  # Situation
- situation_passPolicy_trade_policy_consumer_goods:0 "Consumer Goods Trade Policy Legislation"
- situation_passPolicy_trade_policy_consumer_goods_type:0 "Consumer Goods Trade Policy Legislation"
+ situation_passPolicy_trade_policy_consumer_goods:0 "$trade_policy_consumer_goods_name$ Legislation"
+ situation_passPolicy_trade_policy_consumer_goods_type:0 "$trade_policy_consumer_goods_name$ Legislation"
  situation_passPolicy_trade_policy_consumer_goods_monthly_change_tooltip:0 "The progress of this §YSituation§! is dependent on the §YApproach§! we pick and the §Y§! presence in our empire."
- situation_passPolicy_trade_policy_consumer_goods_desc:0 "We are working on passing the policy §BConsumer Goods Trade Policy§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
- situation_passPolicy_finisher_trade_policy_consumer_goods:0 "Pass §BConsumer Goods Trade Policy§!."
+ situation_passPolicy_trade_policy_consumer_goods_desc:0 "We are working on passing the policy §B$trade_policy_consumer_goods_name$§! as .\n\n§GSuccess: [This.success_chance]% (+[This.swayed_to_support]) Advance: [This.advance_chance]%§! §RStall: [This.stall_chance]%§! §WDebate: [This.debate_chance]%§!\nTotal Chance: [This.total_chance]\n§RSetbacks: [This.setback_count]/3§!"
+ situation_passPolicy_finisher_trade_policy_consumer_goods:0 "Pass §B$trade_policy_consumer_goods_name$§!."
 
- situation_passPolicy_trade_policy_consumer_goods.7.name:0 "§BConsumer Goods Trade Policy§! Passed!"
- situation_passPolicy_trade_policy_consumer_goods.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §BConsumer Goods Trade Policy§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
+ situation_passPolicy_trade_policy_consumer_goods.7.name:0 "§B$trade_policy_consumer_goods_name$§! Passed!"
+ situation_passPolicy_trade_policy_consumer_goods.7.desc:0 "After enduring prolonged periods of political gridlock and impassable divides, we finally emerge triumphant over the legislative stalemate to enact §B$trade_policy_consumer_goods_name$§!. Against all odds, a breakthrough has emerged, ushering in a new era of progress. As the empire collectively exhales, this pivotal moment stands as a testament to the resilience our nation, showcasing our ability to navigate through the most entrenched challenges in the pursuit of a greater, stronger society."
  situation_passPolicy_trade_policy_consumer_goods.7.a:0 "Finally!"
 
- situation_passPolicy_trade_policy_consumer_goods.8.name:0 "§BConsumer Goods Trade Policy§! Abandoned!"
- situation_passPolicy_trade_policy_consumer_goods.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §BConsumer Goods Trade Policy§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §BConsumer Goods Trade Policy§! languishing in a sea of unfulfilled aspirations and unresolved debates."
- situation_passPolicy_trade_policy_consumer_goods.8.a:0 "It seems it was not §BConsumer Goods Trade Policy's§! time."
+ situation_passPolicy_trade_policy_consumer_goods.8.name:0 "§B$trade_policy_consumer_goods_name$§! Abandoned!"
+ situation_passPolicy_trade_policy_consumer_goods.8.desc:0 "Amidst mounting frustration and a palpable sense of exasperation, we have reluctantly abandoned the pursuit of §B$trade_policy_consumer_goods_name$§!. The arduous journey toward reform, marked by political gridlock and entrenched ideologies, has taken its toll on the empires's collective will to enact change. Exhausted by the relentless battles over legislation, we reluctantly concede to the challenges, leaving the crucial issue of §B$trade_policy_consumer_goods_name$§! languishing in a sea of unfulfilled aspirations and unresolved debates."
+ situation_passPolicy_trade_policy_consumer_goods.8.a:0 "It seems it was not §B$trade_policy_consumer_goods_name$'s§! time."
 
- situation_passPolicy_trade_policy_consumer_goods.9.name:0 "§BConsumer Goods Trade Policy§! Failed to Pass!"
- situation_passPolicy_trade_policy_consumer_goods.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §BConsumer Goods Trade Policy§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
+ situation_passPolicy_trade_policy_consumer_goods.9.name:0 "§B$trade_policy_consumer_goods_name$§! Failed to Pass!"
+ situation_passPolicy_trade_policy_consumer_goods.9.desc:0 "Entangled in a web of setbacks and political impasses, we have been unable to navigate the tumultuous terrain of §B$trade_policy_consumer_goods_name$§! reform. Despite fervent calls for change and heightened public awareness, the empire remains mired in a stalemate, unable to muster the consensus needed to enact meaningful and decisive regulations. As the debate rages on, the elusive quest for comprehensive laws continues to elude the grasp of a divided political landscape, leaving the empire ensnared in the complex web of its own contentious history and divergent perspectives."
  situation_passPolicy_trade_policy_consumer_goods.9.a:0 "Blast!"
  
  # Event
- situation_passPolicy_trade_policy_consumer_goods.1.name:0 "Legislation for Consumer Goods Trade Policy"
+ situation_passPolicy_trade_policy_consumer_goods.1.name:0 "Legislation for $trade_policy_consumer_goods_name$"
  situation_passPolicy_trade_policy_consumer_goods.1.desc:0 "We move that .\n\nSupport: §G[This.movement_trade_policy_consumer_goods_faction_support]%§!"
 
- situation_passPolicy_trade_policy_consumer_goods.2.name:0 "Consumer Goods Trade Policy Support"
+ situation_passPolicy_trade_policy_consumer_goods.2.name:0 "$trade_policy_consumer_goods_name$ Support"
  situation_passPolicy_trade_policy_consumer_goods.2.desc:0 "Support: [This.success_chance]%\nAdvance: [This.advance_chance]%\nStall: [This.stall_chance]%\nDebate: [This.debate_chance]%"
 
- faction_supportPolicy_trade_policy_consumer_goods.1.name:0 "Consumer Goods Trade Policy"
+ faction_supportPolicy_trade_policy_consumer_goods.1.name:0 "$trade_policy_consumer_goods_name$"
  faction_supportPolicy_trade_policy_consumer_goods.1.desc:0 "Overall Support: [Root.faction_support_trade_policy_consumer_goods]\n\nSupporters:\n\nDetractors:\n"
 
  edict_pass_trade_policy_consumer_goods:0 "Pass §B$trade_policy_consumer_goods_name$§!"

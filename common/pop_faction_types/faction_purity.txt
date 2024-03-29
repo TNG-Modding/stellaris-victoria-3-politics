@@ -149,15 +149,6 @@ purity = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -353,4 +344,551 @@ purity = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_spiritualist
+					
+					has_ethic = ethic_militarist
+					
+					has_ethic = ethic_xenophobe
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_spiritualist
+						
+						has_ethic = ethic_militarist
+						
+						has_ethic = ethic_xenophobe
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_diplo_stance_purification_fulfilled
+		unfulfilled_title = purity_desires_diplo_stance_purification_unfulfilled
+		desc = purity_desires_diplo_stance_purification_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_purification
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_purification
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_diplo_stance_extermination_fulfilled
+		unfulfilled_title = purity_desires_diplo_stance_extermination_unfulfilled
+		desc = purity_desires_diplo_stance_extermination_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_extermination
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_extermination
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_unrestricted_wars_fulfilled
+		unfulfilled_title = purity_desires_unrestricted_wars_unfulfilled
+		desc = purity_desires_unrestricted_wars_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = unrestricted_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = unrestricted_wars
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_interference_aggressive_fulfilled
+		unfulfilled_title = purity_desires_interference_aggressive_unfulfilled
+		desc = purity_desires_interference_aggressive_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = interference_aggressive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = interference_aggressive
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_enlightenment_not_allowed_fulfilled
+		unfulfilled_title = purity_desires_enlightenment_not_allowed_unfulfilled
+		desc = purity_desires_enlightenment_not_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = enlightenment_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = enlightenment_not_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_armada_fulfilled
+		unfulfilled_title = purity_desires_armada_unfulfilled
+		desc = purity_desires_armada_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = armada
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = armada
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_grandArmy_fulfilled
+		unfulfilled_title = purity_desires_grandArmy_unfulfilled
+		desc = purity_desires_grandArmy_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = grandArmy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = grandArmy
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_pre_sapients_eat_fulfilled
+		unfulfilled_title = purity_desires_pre_sapients_eat_unfulfilled
+		desc = purity_desires_pre_sapients_eat_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_eat
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_eat
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_pre_sapients_purge_fulfilled
+		unfulfilled_title = purity_desires_pre_sapients_purge_unfulfilled
+		desc = purity_desires_pre_sapients_purge_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_purge
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_purge
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_economic_policy_military_fulfilled
+		unfulfilled_title = purity_desires_economic_policy_military_unfulfilled
+		desc = purity_desires_economic_policy_military_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = economic_policy_military
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_first_contact_attack_allowed_fulfilled
+		unfulfilled_title = purity_desires_first_contact_attack_allowed_unfulfilled
+		desc = purity_desires_first_contact_attack_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_leader_enhancement_selected_lineages_fulfilled
+		unfulfilled_title = purity_desires_leader_enhancement_selected_lineages_unfulfilled
+		desc = purity_desires_leader_enhancement_selected_lineages_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = leader_enhancement_selected_lineages
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = leader_enhancement_selected_lineages
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_appropriation_allowed_fulfilled
+		unfulfilled_title = purity_desires_appropriation_allowed_unfulfilled
+		desc = purity_desires_appropriation_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_orbital_bombardment_surrender_forbidden_fulfilled
+		unfulfilled_title = purity_desires_orbital_bombardment_surrender_forbidden_unfulfilled
+		desc = purity_desires_orbital_bombardment_surrender_forbidden_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_orbital_bombardment_armageddon_fulfilled
+		unfulfilled_title = purity_desires_orbital_bombardment_armageddon_unfulfilled
+		desc = purity_desires_orbital_bombardment_armageddon_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_orbital_bombardment_indiscriminate_fulfilled
+		unfulfilled_title = purity_desires_orbital_bombardment_indiscriminate_unfulfilled
+		desc = purity_desires_orbital_bombardment_indiscriminate_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_oppressive_terms_fulfilled
+		unfulfilled_title = purity_desires_oppressive_terms_unfulfilled
+		desc = purity_desires_oppressive_terms_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = oppressive_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = oppressive_terms
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_oppressive_corporate_terms_fulfilled
+		unfulfilled_title = purity_desires_oppressive_corporate_terms_unfulfilled
+		desc = purity_desires_oppressive_corporate_terms_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_no_retreat_doctrine_fulfilled
+		unfulfilled_title = purity_desires_no_retreat_doctrine_unfulfilled
+		desc = purity_desires_no_retreat_doctrine_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = no_retreat_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = no_retreat_doctrine
+			}
+		}
+	}
+	
+	demand = {
+		title = purity_desires_purge_allowed_fulfilled
+		unfulfilled_title = purity_desires_purge_allowed_unfulfilled
+		desc = purity_desires_purge_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = purge_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = purge_allowed
+			}
+		}
+	}
+	
+	
+	
 }

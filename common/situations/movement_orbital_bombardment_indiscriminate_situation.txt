@@ -31,7 +31,7 @@ situation_movement_orbital_bombardment_indiscriminate = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_orbital_bombardment_indiscriminate
+				has_country_flag = enacting_policy
 			}
 			situation_progress > 0
 			add = -1

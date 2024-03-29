@@ -31,7 +31,7 @@ situation_movement_border_policy_open = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_border_policy_open
+				has_country_flag = enacting_policy
 			}
 			situation_progress > 0
 			add = -1

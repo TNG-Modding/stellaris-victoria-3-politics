@@ -7,6 +7,45 @@
  colonists_traits:0 "£trait_adaptive£ £trait_extremely_adaptive£ £trait_rapid_breeders£ £trait_quarrelsome£ £trait_unruly£ £trait_nomadic£ £trait_solitary£ £trait_invasive£ £trait_agrarian£"
  colonists_buildings:0 "£building_colony_shelter£"
  colonists_ethics:0 "£xenophobe£ £egalitarian£ "
- pft_colonists_desc:2 "§BThe Colonialist Lobby Faction§! see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.\n\n$colonists_ethics$$colonists_traits$\n\n$colonists_buildings$\n\n$colonists_supports$\n\n$colonists_opposes$"
+ pft_colonists_desc:2 "§BThe Colonialist Lobby Faction§! see the final frontier with a mix of hope and anxiety. What alien threats might await us? Will they gobble up all the good star systems? We must assume that any formal diplomacy will only serve to restrict our potential while the political landscape is still nascent.\n\n$colonists_ethics$$colonists_traits$\n\n$colonists_buildings$\n\n$colonists_supports$\n$colonists_opposes$"
 
  colonists_visual_ethic:1 "£xenophobe£ £egalitarian£"
+ 
+ 
+ colonists_desires_diplo_stance_expansionist_fulfilled:0 "$diplo_stance_expansionist_name$" 
+ colonists_desires_diplo_stance_expansionist_unfulfilled:0 "$diplo_stance_expansionist_name$" 
+ colonists_desires_diplo_stance_expansionist_desc:0 "The Colonialist Lobby Faction likes the policy $diplo_stance_expansionist_name$."
+ 
+ colonists_desires_dependentColonies_fulfilled:0 "$dependentColonies_name$" 
+ colonists_desires_dependentColonies_unfulfilled:0 "$dependentColonies_name$" 
+ colonists_desires_dependentColonies_desc:0 "The Colonialist Lobby Faction likes the policy $dependentColonies_name$."
+ 
+ colonists_desires_merchantMarine_fulfilled:0 "$merchantMarine_name$" 
+ colonists_desires_merchantMarine_unfulfilled:0 "$merchantMarine_name$" 
+ colonists_desires_merchantMarine_desc:0 "The Colonialist Lobby Faction likes the policy $merchantMarine_name$."
+ 
+ colonists_desires_preFtlPoliticalOrganization_fulfilled:0 "$preFtlPoliticalOrganization_name$" 
+ colonists_desires_preFtlPoliticalOrganization_unfulfilled:0 "$preFtlPoliticalOrganization_name$" 
+ colonists_desires_preFtlPoliticalOrganization_desc:0 "The Colonialist Lobby Faction likes the policy $preFtlPoliticalOrganization_name$."
+ 
+ colonists_desires_appropriation_allowed_fulfilled:0 "$appropriation_allowed_name$" 
+ colonists_desires_appropriation_allowed_unfulfilled:0 "$appropriation_allowed_name$" 
+ colonists_desires_appropriation_allowed_desc:0 "The Colonialist Lobby Faction likes the policy $appropriation_allowed_name$."
+ 
+ colonists_desires_resettlement_not_allowed_fulfilled:0 "$resettlement_not_allowed_name$" 
+ colonists_desires_resettlement_not_allowed_unfulfilled:0 "$resettlement_not_allowed_name$" 
+ colonists_desires_resettlement_not_allowed_desc:0 "The Colonialist Lobby Faction likes the policy $resettlement_not_allowed_name$."
+ 
+ colonists_desires_border_policy_closed_fulfilled:0 "$border_policy_closed_name$" 
+ colonists_desires_border_policy_closed_unfulfilled:0 "$border_policy_closed_name$" 
+ colonists_desires_border_policy_closed_desc:0 "The Colonialist Lobby Faction likes the policy $border_policy_closed_name$."
+ 
+ colonists_desires_economic_policy_civilian_fulfilled:0 "$economic_policy_civilian_name$" 
+ colonists_desires_economic_policy_civilian_unfulfilled:0 "$economic_policy_civilian_name$" 
+ colonists_desires_economic_policy_civilian_desc:0 "The Colonialist Lobby Faction likes the policy $economic_policy_civilian_name$."
+ 
+ 
+ colonists_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ colonists_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
+ colonists_hates_diplo_stance_isolationist_desc:0 "The Colonialist Lobby Faction hates the policy $diplo_stance_isolationist_name$."
+ 

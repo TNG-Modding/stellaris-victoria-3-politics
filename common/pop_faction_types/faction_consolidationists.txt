@@ -134,15 +134,6 @@ consolidationists = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -338,4 +329,211 @@ consolidationists = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_authoritarian
+					
+					has_ethic = ethic_pacifist
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_authoritarian
+						
+						has_ethic = ethic_pacifist
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = consolidationists_desires_resettlement_allowed_fulfilled
+		unfulfilled_title = consolidationists_desires_resettlement_allowed_unfulfilled
+		desc = consolidationists_desires_resettlement_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = resettlement_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = resettlement_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = consolidationists_desires_interplanetaryGoverance_fulfilled
+		unfulfilled_title = consolidationists_desires_interplanetaryGoverance_unfulfilled
+		desc = consolidationists_desires_interplanetaryGoverance_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = interplanetaryGoverance
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = interplanetaryGoverance
+			}
+		}
+	}
+	
+	demand = {
+		title = consolidationists_desires_economic_policy_balanced_fulfilled
+		unfulfilled_title = consolidationists_desires_economic_policy_balanced_unfulfilled
+		desc = consolidationists_desires_economic_policy_balanced_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = economic_policy_balanced
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = economic_policy_balanced
+			}
+		}
+	}
+	
+	demand = {
+		title = consolidationists_desires_diplo_stance_mercantile_fulfilled
+		unfulfilled_title = consolidationists_desires_diplo_stance_mercantile_unfulfilled
+		desc = consolidationists_desires_diplo_stance_mercantile_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_mercantile
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_mercantile
+			}
+		}
+	}
+	
+	demand = {
+		title = consolidationists_desires_diplo_stance_cooperative_fulfilled
+		unfulfilled_title = consolidationists_desires_diplo_stance_cooperative_unfulfilled
+		desc = consolidationists_desires_diplo_stance_cooperative_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+	}
+	
+	
+	demand = {
+		title = consolidationists_hates_diplo_stance_expansion_avoided
+		unfulfilled_title = consolidationists_hates_diplo_stance_expansion_unavoided
+		desc = consolidationists_hates_diplo_stance_expansion_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_expansion
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_expansion }
+			}
+		}
+	}
+	
+	
 }

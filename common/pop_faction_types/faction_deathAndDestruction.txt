@@ -124,15 +124,6 @@ deathAndDestruction = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -328,4 +319,691 @@ deathAndDestruction = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_authoritarian
+					
+					has_ethic = ethic_militarist
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_authoritarian
+						
+						has_ethic = ethic_militarist
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_diplo_stance_supremacist_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_diplo_stance_supremacist_unfulfilled
+		desc = deathAndDestruction_desires_diplo_stance_supremacist_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_supremacist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_supremacist
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_diplo_stance_animosity_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_diplo_stance_animosity_unfulfilled
+		desc = deathAndDestruction_desires_diplo_stance_animosity_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_animosity
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_animosity
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_unrestricted_wars_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_unrestricted_wars_unfulfilled
+		desc = deathAndDestruction_desires_unrestricted_wars_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = unrestricted_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = unrestricted_wars
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_armada_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_armada_unfulfilled
+		desc = deathAndDestruction_desires_armada_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = armada
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = armada
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_grandArmy_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_grandArmy_unfulfilled
+		desc = deathAndDestruction_desires_grandArmy_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = grandArmy
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = grandArmy
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_orbital_bombardment_armageddon_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_armageddon_unfulfilled
+		desc = deathAndDestruction_desires_orbital_bombardment_armageddon_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_oppressive_terms_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_oppressive_terms_unfulfilled
+		desc = deathAndDestruction_desires_oppressive_terms_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = oppressive_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = oppressive_terms
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_oppressive_corporate_terms_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_oppressive_corporate_terms_unfulfilled
+		desc = deathAndDestruction_desires_oppressive_corporate_terms_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = oppressive_corporate_terms
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_no_retreat_doctrine_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_no_retreat_doctrine_unfulfilled
+		desc = deathAndDestruction_desires_no_retreat_doctrine_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = no_retreat_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = no_retreat_doctrine
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_economic_policy_military_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_economic_policy_military_unfulfilled
+		desc = deathAndDestruction_desires_economic_policy_military_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = economic_policy_military
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = economic_policy_military
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_first_contact_attack_allowed_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_first_contact_attack_allowed_unfulfilled
+		desc = deathAndDestruction_desires_first_contact_attack_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = first_contact_attack_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_unfulfilled
+		desc = deathAndDestruction_desires_orbital_bombardment_surrender_forbidden_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_surrender_forbidden
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_desires_orbital_bombardment_indiscriminate_fulfilled
+		unfulfilled_title = deathAndDestruction_desires_orbital_bombardment_indiscriminate_unfulfilled
+		desc = deathAndDestruction_desires_orbital_bombardment_indiscriminate_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+			}
+		}
+	}
+	
+	
+	demand = {
+		title = deathAndDestruction_hates_diplo_stance_isolationist_avoided
+		unfulfilled_title = deathAndDestruction_hates_diplo_stance_isolationist_unavoided
+		desc = deathAndDestruction_hates_diplo_stance_isolationist_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_isolationist
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_isolationist }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_diplo_stance_cooperative_avoided
+		unfulfilled_title = deathAndDestruction_hates_diplo_stance_cooperative_unavoided
+		desc = deathAndDestruction_hates_diplo_stance_cooperative_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_cooperative }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_diplo_stance_mercantile_avoided
+		unfulfilled_title = deathAndDestruction_hates_diplo_stance_mercantile_unavoided
+		desc = deathAndDestruction_hates_diplo_stance_mercantile_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_mercantile
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_mercantile }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_diplo_stance_purification_avoided
+		unfulfilled_title = deathAndDestruction_hates_diplo_stance_purification_unavoided
+		desc = deathAndDestruction_hates_diplo_stance_purification_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_purification
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_purification }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_diplo_stance_extermination_avoided
+		unfulfilled_title = deathAndDestruction_hates_diplo_stance_extermination_unavoided
+		desc = deathAndDestruction_hates_diplo_stance_extermination_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = diplo_stance_extermination
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = diplo_stance_extermination }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_no_wars_avoided
+		unfulfilled_title = deathAndDestruction_hates_no_wars_unavoided
+		desc = deathAndDestruction_hates_no_wars_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = no_wars
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = no_wars }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_merchantMarine_avoided
+		unfulfilled_title = deathAndDestruction_hates_merchantMarine_unavoided
+		desc = deathAndDestruction_hates_merchantMarine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = merchantMarine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = merchantMarine }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_preFtlMilitaries_avoided
+		unfulfilled_title = deathAndDestruction_hates_preFtlMilitaries_unavoided
+		desc = deathAndDestruction_hates_preFtlMilitaries_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = preFtlMilitaries
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = preFtlMilitaries }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_orbital_bombardment_selective_avoided
+		unfulfilled_title = deathAndDestruction_hates_orbital_bombardment_selective_unavoided
+		desc = deathAndDestruction_hates_orbital_bombardment_selective_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = orbital_bombardment_selective
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = orbital_bombardment_selective }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_benevolent_terms_avoided
+		unfulfilled_title = deathAndDestruction_hates_benevolent_terms_unavoided
+		desc = deathAndDestruction_hates_benevolent_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = benevolent_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = benevolent_terms }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_benevolent_corporate_terms_avoided
+		unfulfilled_title = deathAndDestruction_hates_benevolent_corporate_terms_unavoided
+		desc = deathAndDestruction_hates_benevolent_corporate_terms_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = benevolent_corporate_terms
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = benevolent_corporate_terms }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_defense_in_depth_doctrine_avoided
+		unfulfilled_title = deathAndDestruction_hates_defense_in_depth_doctrine_unavoided
+		desc = deathAndDestruction_hates_defense_in_depth_doctrine_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = defense_in_depth_doctrine
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = defense_in_depth_doctrine }
+			}
+		}
+	}
+	
+	demand = {
+		title = deathAndDestruction_hates_first_contact_proactive_avoided
+		unfulfilled_title = deathAndDestruction_hates_first_contact_proactive_unavoided
+		desc = deathAndDestruction_hates_first_contact_proactive_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = first_contact_proactive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = first_contact_proactive }
+			}
+		}
+	}
+	
+	
 }

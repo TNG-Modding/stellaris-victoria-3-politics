@@ -7,6 +7,33 @@
  consolidationists_traits:0 "£trait_nonadaptive£ £trait_slow_breeders£ £trait_docile£ £trait_sedentary£ £trait_communal£ £trait_natural_sociologists£"
  consolidationists_buildings:0 ""
  consolidationists_ethics:0 "£authoritarian£ £pacifist£ "
- pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\n$consolidationists_ethics$$consolidationists_traits$\n\n$consolidationists_buildings$\n\n$consolidationists_supports$\n\n$consolidationists_opposes$"
+ pft_consolidationists_desc:2 "§BThe Consolidationists Faction§! believe that the creation of a galactic bureuacracy is a matter of national security.\n\n$consolidationists_ethics$$consolidationists_traits$\n\n$consolidationists_buildings$\n\n$consolidationists_supports$\n$consolidationists_opposes$"
 
  consolidationists_visual_ethic:1 "£authoritarian£ £pacifist£"
+ 
+ 
+ consolidationists_desires_resettlement_allowed_fulfilled:0 "$resettlement_allowed_name$" 
+ consolidationists_desires_resettlement_allowed_unfulfilled:0 "$resettlement_allowed_name$" 
+ consolidationists_desires_resettlement_allowed_desc:0 "The Consolidationists Faction likes the policy $resettlement_allowed_name$."
+ 
+ consolidationists_desires_interplanetaryGoverance_fulfilled:0 "$interplanetaryGoverance_name$" 
+ consolidationists_desires_interplanetaryGoverance_unfulfilled:0 "$interplanetaryGoverance_name$" 
+ consolidationists_desires_interplanetaryGoverance_desc:0 "The Consolidationists Faction likes the policy $interplanetaryGoverance_name$."
+ 
+ consolidationists_desires_economic_policy_balanced_fulfilled:0 "$economic_policy_balanced_name$" 
+ consolidationists_desires_economic_policy_balanced_unfulfilled:0 "$economic_policy_balanced_name$" 
+ consolidationists_desires_economic_policy_balanced_desc:0 "The Consolidationists Faction likes the policy $economic_policy_balanced_name$."
+ 
+ consolidationists_desires_diplo_stance_mercantile_fulfilled:0 "$diplo_stance_mercantile_name$" 
+ consolidationists_desires_diplo_stance_mercantile_unfulfilled:0 "$diplo_stance_mercantile_name$" 
+ consolidationists_desires_diplo_stance_mercantile_desc:0 "The Consolidationists Faction likes the policy $diplo_stance_mercantile_name$."
+ 
+ consolidationists_desires_diplo_stance_cooperative_fulfilled:0 "$diplo_stance_cooperative_name$" 
+ consolidationists_desires_diplo_stance_cooperative_unfulfilled:0 "$diplo_stance_cooperative_name$" 
+ consolidationists_desires_diplo_stance_cooperative_desc:0 "The Consolidationists Faction likes the policy $diplo_stance_cooperative_name$."
+ 
+ 
+ consolidationists_hates_diplo_stance_expansion_avoided:0 "$diplo_stance_expansion_name$" 
+ consolidationists_hates_diplo_stance_expansion_unavoided:0 "$diplo_stance_expansion_name$" 
+ consolidationists_hates_diplo_stance_expansion_desc:0 "The Consolidationists Faction hates the policy $diplo_stance_expansion_name$."
+ 

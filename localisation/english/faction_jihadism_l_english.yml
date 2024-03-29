@@ -7,6 +7,69 @@
  jihadism_traits:0 "£trait_decadent£ £trait_quarrelsome£ £trait_unruly£ £trait_invasive£"
  jihadism_buildings:0 ""
  jihadism_ethics:0 "£spiritualist£ £authoritarian£ "
- pft_jihadism_desc:2 "§BThe Jihadism Faction§! believe that the galaxy is a perverse place in need of correction. \n\n$jihadism_ethics$$jihadism_traits$\n\n$jihadism_buildings$\n\n$jihadism_supports$\n\n$jihadism_opposes$"
+ pft_jihadism_desc:2 "§BThe Jihadism Faction§! believe that the galaxy is a perverse place in need of correction. \n\n$jihadism_ethics$$jihadism_traits$\n\n$jihadism_buildings$\n\n$jihadism_supports$\n$jihadism_opposes$"
 
  jihadism_visual_ethic:1 "£spiritualist£ £authoritarian£"
+ 
+ 
+ jihadism_desires_diplo_stance_supremacist_fulfilled:0 "$diplo_stance_supremacist_name$" 
+ jihadism_desires_diplo_stance_supremacist_unfulfilled:0 "$diplo_stance_supremacist_name$" 
+ jihadism_desires_diplo_stance_supremacist_desc:0 "The Jihadism Faction likes the policy $diplo_stance_supremacist_name$."
+ 
+ jihadism_desires_diplo_stance_belligerent_fulfilled:0 "$diplo_stance_belligerent_name$" 
+ jihadism_desires_diplo_stance_belligerent_unfulfilled:0 "$diplo_stance_belligerent_name$" 
+ jihadism_desires_diplo_stance_belligerent_desc:0 "The Jihadism Faction likes the policy $diplo_stance_belligerent_name$."
+ 
+ jihadism_desires_liberation_wars_fulfilled:0 "$liberation_wars_name$" 
+ jihadism_desires_liberation_wars_unfulfilled:0 "$liberation_wars_name$" 
+ jihadism_desires_liberation_wars_desc:0 "The Jihadism Faction likes the policy $liberation_wars_name$."
+ 
+ jihadism_desires_interference_aggressive_fulfilled:0 "$interference_aggressive_name$" 
+ jihadism_desires_interference_aggressive_unfulfilled:0 "$interference_aggressive_name$" 
+ jihadism_desires_interference_aggressive_desc:0 "The Jihadism Faction likes the policy $interference_aggressive_name$."
+ 
+ jihadism_desires_enlightenment_allowed_fulfilled:0 "$enlightenment_allowed_name$" 
+ jihadism_desires_enlightenment_allowed_unfulfilled:0 "$enlightenment_allowed_name$" 
+ jihadism_desires_enlightenment_allowed_desc:0 "The Jihadism Faction likes the policy $enlightenment_allowed_name$."
+ 
+ jihadism_desires_spacefaringStandingArmy_fulfilled:0 "$spacefaringStandingArmy_name$" 
+ jihadism_desires_spacefaringStandingArmy_unfulfilled:0 "$spacefaringStandingArmy_name$" 
+ jihadism_desires_spacefaringStandingArmy_desc:0 "The Jihadism Faction likes the policy $spacefaringStandingArmy_name$."
+ 
+ jihadism_desires_floatingNavy_fulfilled:0 "$floatingNavy_name$" 
+ jihadism_desires_floatingNavy_unfulfilled:0 "$floatingNavy_name$" 
+ jihadism_desires_floatingNavy_desc:0 "The Jihadism Faction likes the policy $floatingNavy_name$."
+ 
+ jihadism_desires_economic_policy_military_fulfilled:0 "$economic_policy_military_name$" 
+ jihadism_desires_economic_policy_military_unfulfilled:0 "$economic_policy_military_name$" 
+ jihadism_desires_economic_policy_military_desc:0 "The Jihadism Faction likes the policy $economic_policy_military_name$."
+ 
+ jihadism_desires_first_contact_attack_allowed_fulfilled:0 "$first_contact_attack_allowed_name$" 
+ jihadism_desires_first_contact_attack_allowed_unfulfilled:0 "$first_contact_attack_allowed_name$" 
+ jihadism_desires_first_contact_attack_allowed_desc:0 "The Jihadism Faction likes the policy $first_contact_attack_allowed_name$."
+ 
+ 
+ jihadism_hates_diplo_stance_isolationist_avoided:0 "$diplo_stance_isolationist_name$" 
+ jihadism_hates_diplo_stance_isolationist_unavoided:0 "$diplo_stance_isolationist_name$" 
+ jihadism_hates_diplo_stance_isolationist_desc:0 "The Jihadism Faction hates the policy $diplo_stance_isolationist_name$."
+ 
+ jihadism_hates_diplo_stance_purification_avoided:0 "$diplo_stance_purification_name$" 
+ jihadism_hates_diplo_stance_purification_unavoided:0 "$diplo_stance_purification_name$" 
+ jihadism_hates_diplo_stance_purification_desc:0 "The Jihadism Faction hates the policy $diplo_stance_purification_name$."
+ 
+ jihadism_hates_diplo_stance_extermination_avoided:0 "$diplo_stance_extermination_name$" 
+ jihadism_hates_diplo_stance_extermination_unavoided:0 "$diplo_stance_extermination_name$" 
+ jihadism_hates_diplo_stance_extermination_desc:0 "The Jihadism Faction hates the policy $diplo_stance_extermination_name$."
+ 
+ jihadism_hates_no_wars_avoided:0 "$no_wars_name$" 
+ jihadism_hates_no_wars_unavoided:0 "$no_wars_name$" 
+ jihadism_hates_no_wars_desc:0 "The Jihadism Faction hates the policy $no_wars_name$."
+ 
+ jihadism_hates_interference_not_allowed_avoided:0 "$interference_not_allowed_name$" 
+ jihadism_hates_interference_not_allowed_unavoided:0 "$interference_not_allowed_name$" 
+ jihadism_hates_interference_not_allowed_desc:0 "The Jihadism Faction hates the policy $interference_not_allowed_name$."
+ 
+ jihadism_hates_enlightenment_not_allowed_avoided:0 "$enlightenment_not_allowed_name$" 
+ jihadism_hates_enlightenment_not_allowed_unavoided:0 "$enlightenment_not_allowed_name$" 
+ jihadism_hates_enlightenment_not_allowed_desc:0 "The Jihadism Faction hates the policy $enlightenment_not_allowed_name$."
+ 

@@ -7,6 +7,17 @@
  emancipators_traits:0 "£trait_natural_sociologists£"
  emancipators_buildings:0 ""
  emancipators_ethics:0 "£egalitarian£ £spiritualist£ "
- pft_emancipators_desc:2 "§BThe Emancipators Faction§! believe that slavery is an inherent evil.\n\n$emancipators_ethics$$emancipators_traits$\n\n$emancipators_buildings$\n\n$emancipators_supports$\n\n$emancipators_opposes$"
+ pft_emancipators_desc:2 "§BThe Emancipators Faction§! believe that slavery is an inherent evil.\n\n$emancipators_ethics$$emancipators_traits$\n\n$emancipators_buildings$\n\n$emancipators_supports$\n$emancipators_opposes$"
 
  emancipators_visual_ethic:1 "£egalitarian£ £spiritualist£"
+ 
+ 
+ emancipators_desires_slavery_not_allowed_fulfilled:0 "$slavery_not_allowed_name$" 
+ emancipators_desires_slavery_not_allowed_unfulfilled:0 "$slavery_not_allowed_name$" 
+ emancipators_desires_slavery_not_allowed_desc:0 "The Emancipators Faction likes the policy $slavery_not_allowed_name$."
+ 
+ 
+ emancipators_hates_slavery_allowed_avoided:0 "$slavery_allowed_name$" 
+ emancipators_hates_slavery_allowed_unavoided:0 "$slavery_allowed_name$" 
+ emancipators_hates_slavery_allowed_desc:0 "The Emancipators Faction hates the policy $slavery_allowed_name$."
+ 

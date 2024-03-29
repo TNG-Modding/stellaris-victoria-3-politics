@@ -7,6 +7,53 @@
  nativists_traits:0 "£trait_solitary£ £trait_sedentary£ £trait_resilient£ £trait_slow_breeders£"
  nativists_buildings:0 ""
  nativists_ethics:0 "£xenophobe£ £egalitarian£ "
- pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\n$nativists_ethics$$nativists_traits$\n\n$nativists_buildings$\n\n$nativists_supports$\n\n$nativists_opposes$"
+ pft_nativists_desc:2 "§BThe Nativists Faction§! believe that the fruits of empire should be enjoyed by our primary species alone.\n\n$nativists_ethics$$nativists_traits$\n\n$nativists_buildings$\n\n$nativists_supports$\n$nativists_opposes$"
 
  nativists_visual_ethic:1 "£xenophobe£ £egalitarian£"
+ 
+ 
+ nativists_desires_purge_displacement_only_fulfilled:0 "$purge_displacement_only_name$" 
+ nativists_desires_purge_displacement_only_unfulfilled:0 "$purge_displacement_only_name$" 
+ nativists_desires_purge_displacement_only_desc:0 "The Nativists Faction likes the policy $purge_displacement_only_name$."
+ 
+ nativists_desires_slavery_allowed_fulfilled:0 "$slavery_allowed_name$" 
+ nativists_desires_slavery_allowed_unfulfilled:0 "$slavery_allowed_name$" 
+ nativists_desires_slavery_allowed_desc:0 "The Nativists Faction likes the policy $slavery_allowed_name$."
+ 
+ nativists_desires_population_controls_allowed_fulfilled:0 "$population_controls_allowed_name$" 
+ nativists_desires_population_controls_allowed_unfulfilled:0 "$population_controls_allowed_name$" 
+ nativists_desires_population_controls_allowed_desc:0 "The Nativists Faction likes the policy $population_controls_allowed_name$."
+ 
+ nativists_desires_pre_sapients_eat_fulfilled:0 "$pre_sapients_eat_name$" 
+ nativists_desires_pre_sapients_eat_unfulfilled:0 "$pre_sapients_eat_name$" 
+ nativists_desires_pre_sapients_eat_desc:0 "The Nativists Faction likes the policy $pre_sapients_eat_name$."
+ 
+ nativists_desires_pre_sapients_purge_fulfilled:0 "$pre_sapients_purge_name$" 
+ nativists_desires_pre_sapients_purge_unfulfilled:0 "$pre_sapients_purge_name$" 
+ nativists_desires_pre_sapients_purge_desc:0 "The Nativists Faction likes the policy $pre_sapients_purge_name$."
+ 
+ nativists_desires_appropriation_allowed_fulfilled:0 "$appropriation_allowed_name$" 
+ nativists_desires_appropriation_allowed_unfulfilled:0 "$appropriation_allowed_name$" 
+ nativists_desires_appropriation_allowed_desc:0 "The Nativists Faction likes the policy $appropriation_allowed_name$."
+ 
+ nativists_desires_refugees_not_allowed_fulfilled:0 "$refugees_not_allowed_name$" 
+ nativists_desires_refugees_not_allowed_unfulfilled:0 "$refugees_not_allowed_name$" 
+ nativists_desires_refugees_not_allowed_desc:0 "The Nativists Faction likes the policy $refugees_not_allowed_name$."
+ 
+ nativists_desires_refugees_only_citizens_fulfilled:0 "$refugees_only_citizens_name$" 
+ nativists_desires_refugees_only_citizens_unfulfilled:0 "$refugees_only_citizens_name$" 
+ nativists_desires_refugees_only_citizens_desc:0 "The Nativists Faction likes the policy $refugees_only_citizens_name$."
+ 
+ 
+ nativists_hates_purge_allowed_avoided:0 "$purge_allowed_name$" 
+ nativists_hates_purge_allowed_unavoided:0 "$purge_allowed_name$" 
+ nativists_hates_purge_allowed_desc:0 "The Nativists Faction hates the policy $purge_allowed_name$."
+ 
+ nativists_hates_refugees_allowed_avoided:0 "$refugees_allowed_name$" 
+ nativists_hates_refugees_allowed_unavoided:0 "$refugees_allowed_name$" 
+ nativists_hates_refugees_allowed_desc:0 "The Nativists Faction hates the policy $refugees_allowed_name$."
+ 
+ nativists_hates_appropriation_not_allowed_avoided:0 "$appropriation_not_allowed_name$" 
+ nativists_hates_appropriation_not_allowed_unavoided:0 "$appropriation_not_allowed_name$" 
+ nativists_hates_appropriation_not_allowed_desc:0 "The Nativists Faction hates the policy $appropriation_not_allowed_name$."
+ 

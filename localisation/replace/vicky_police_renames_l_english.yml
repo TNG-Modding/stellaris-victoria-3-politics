@@ -128,7 +128,7 @@
  policy_purge:0 "£pop_cat_purge£ Purge"
  purge_not_allowed_name:0 "£pop_cat_purge£ Purge Banned"
  purge_displacement_only_name:0 "£pop_cat_purge£ Displacement Only"
- purge_allowed_name:0 "£pop_cat_purge£ Purge Banned"
+ purge_allowed_name:0 "£pop_cat_purge£ Purge Allowed"
 
 #  policy_knightly_duties:0 "££ "
 #  toxic_knights_questing_name:0 ""

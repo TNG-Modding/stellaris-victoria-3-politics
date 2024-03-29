@@ -31,7 +31,7 @@ situation_movement_leader_enhancement_selected_lineages = {
 		modifier = {
 			desc = movement_satisfied_with_passing_law
 			OWNER = {
-				has_country_flag = enacting_leader_enhancement_selected_lineages
+				has_country_flag = enacting_policy
 			}
 			situation_progress > 0
 			add = -1

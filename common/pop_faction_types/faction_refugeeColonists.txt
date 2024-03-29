@@ -119,15 +119,6 @@ refugeeColonists = {
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -323,4 +314,355 @@ refugeeColonists = {
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					
+					has_ethic = ethic_xenophile
+					
+					has_ethic = ethic_authoritarian
+					
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						
+						has_ethic = ethic_xenophile
+						
+						has_ethic = ethic_authoritarian
+						
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_purge_not_allowed_fulfilled
+		unfulfilled_title = refugeeColonists_desires_purge_not_allowed_unfulfilled
+		desc = refugeeColonists_desires_purge_not_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = purge_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = purge_not_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_refugees_allowed_fulfilled
+		unfulfilled_title = refugeeColonists_desires_refugees_allowed_unfulfilled
+		desc = refugeeColonists_desires_refugees_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = refugees_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = refugees_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_border_policy_open_fulfilled
+		unfulfilled_title = refugeeColonists_desires_border_policy_open_unfulfilled
+		desc = refugeeColonists_desires_border_policy_open_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = border_policy_open
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = border_policy_open
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_population_controls_not_allowed_fulfilled
+		unfulfilled_title = refugeeColonists_desires_population_controls_not_allowed_unfulfilled
+		desc = refugeeColonists_desires_population_controls_not_allowed_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = population_controls_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = population_controls_not_allowed
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_pre_sapients_protect_fulfilled
+		unfulfilled_title = refugeeColonists_desires_pre_sapients_protect_unfulfilled
+		desc = refugeeColonists_desires_pre_sapients_protect_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_protect
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_protect
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_first_contact_proactive_fulfilled
+		unfulfilled_title = refugeeColonists_desires_first_contact_proactive_unfulfilled
+		desc = refugeeColonists_desires_first_contact_proactive_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = first_contact_proactive
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = first_contact_proactive
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_desires_pre_sapients_allow_fulfilled
+		unfulfilled_title = refugeeColonists_desires_pre_sapients_allow_unfulfilled
+		desc = refugeeColonists_desires_pre_sapients_allow_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_allow
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = pre_sapients_allow
+			}
+		}
+	}
+	
+	
+	demand = {
+		title = refugeeColonists_hates_purge_allowed_avoided
+		unfulfilled_title = refugeeColonists_hates_purge_allowed_unavoided
+		desc = refugeeColonists_hates_purge_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = purge_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = purge_allowed }
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_hates_refugees_not_allowed_avoided
+		unfulfilled_title = refugeeColonists_hates_refugees_not_allowed_unavoided
+		desc = refugeeColonists_hates_refugees_not_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = refugees_not_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = refugees_not_allowed }
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_hates_pre_sapients_eat_avoided
+		unfulfilled_title = refugeeColonists_hates_pre_sapients_eat_unavoided
+		desc = refugeeColonists_hates_pre_sapients_eat_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_eat
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = pre_sapients_eat }
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_hates_pre_sapients_purge_avoided
+		unfulfilled_title = refugeeColonists_hates_pre_sapients_purge_unavoided
+		desc = refugeeColonists_hates_pre_sapients_purge_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = pre_sapients_purge
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = pre_sapients_purge }
+			}
+		}
+	}
+	
+	demand = {
+		title = refugeeColonists_hates_appropriation_allowed_avoided
+		unfulfilled_title = refugeeColonists_hates_appropriation_allowed_unavoided
+		desc = refugeeColonists_hates_appropriation_allowed_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = appropriation_allowed
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = appropriation_allowed }
+			}
+		}
+	}
+	
+	
 }

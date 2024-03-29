@@ -109,15 +109,6 @@
 		}
 	}
 
-
-	# Faction Demands for Ruler and Council positions.
-	inline_script = {
-		script = "paragon/global_faction_demands"
-		ETHIC = ethic_militarist
-		ETHIC_FANATIC = ethic_fanatic_militarist
-		ETHIC_OPPOSED = ethic_pacifist
-	} 
-
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -313,4 +304,111 @@
 			}
 		}
 	}
+
+	demand = {
+		title = faction_demand_HAPPY_WE_RULE
+		unfulfilled_title = LABEL_NA
+		desc = faction_demand_HAPPY_WE_RULE_desc
+
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = ruler
+			ruler = {
+				OR = {
+					{% for ethic in ethics %}
+					has_ethic = ethic_{{ethic}}
+					{% endfor %}
+				}
+			}
+		}
+
+		council_demand = yes
+		trigger = { always = yes }	# Always happy if Potential fulfilled.
+	}
+
+	demand = {
+		title = faction_demand_REPRESENTED_ON_COUNCIL
+		unfulfilled_title = faction_demand_REPRESENTED_ON_COUNCIL
+		desc = faction_demand_REPRESENTED_ON_COUNCIL_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -20
+
+		potential = {
+			exists = owner
+		}
+
+		council_demand = yes
+
+		# Check for any leader on the Council with Faction's Ethic.
+		trigger = {
+			owner = {
+				any_owned_leader = {
+					OR = {
+						is_ruler = yes
+						is_councilor = yes
+					}
+					OR = {
+
+						{% for ethic in ethics %}
+						has_ethic = ethic_{{ethic}}
+						{% endfor %}
+					}
+				}
+			}
+		}
+	}
+	{% for policy in supportedPolicies %}
+	demand = {
+		title = {{varname}}_desires_{{policy}}_fulfilled
+		unfulfilled_title = {{varname}}_desires_{{policy}}_unfulfilled
+		desc = {{varname}}_desires_{{policy}}_desc
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = {{policy}}
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				has_policy_flag = {{policy}}
+			}
+		}
+	}
+	{% endfor %}
+	{% for policy in againstPolicies %}
+	demand = {
+		title = {{varname}}_hates_{{policy}}_avoided
+		unfulfilled_title = {{varname}}_hates_{{policy}}_unavoided
+		desc = {{varname}}_hates_{{policy}}_desc
+
+		fulfilled_effect = 0
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = {{policy}}
+			}
+		}
+
+		council_demand = no
+
+		trigger = {
+			owner = {
+				NOT = { has_policy_flag = {{policy}} }
+			}
+		}
+	}
+	{% endfor %}
+	
 }
